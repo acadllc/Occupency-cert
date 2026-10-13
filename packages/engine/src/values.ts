@@ -107,7 +107,15 @@ function atom(expr: string, ctx: ValueContext): string {
   return asText(raw);
 }
 
+// "field=value ? exprIfTrue : exprIfFalse"
+const CONDITIONAL = /^\s*([a-z0-9_]+)=([a-z0-9_]*)\s*\?\s*(.+?)\s*:\s*(.+?)\s*$/;
+
 export function resolveValue(expr: string, ctx: ValueContext): string {
+  const cond = CONDITIONAL.exec(expr);
+  if (cond) {
+    const [, field, value, yes, no] = cond;
+    return resolveValue(asText(ctx.fields[field]) === value ? yes : no, ctx);
+  }
   if (!expr.includes('{')) return atom(expr, ctx);
   let anyFilled = false;
   const out = expr.replace(/\{([^}]+)\}/g, (_, inner: string) => {
@@ -120,6 +128,8 @@ export function resolveValue(expr: string, ctx: ValueContext): string {
 
 /** Project field keys an expression depends on (company constants excluded). */
 export function referencedFields(expr: string, registry: FieldRegistry): string[] {
+  const cond = CONDITIONAL.exec(expr);
+  if (cond) return [cond[1], ...referencedFields(cond[3], registry), ...referencedFields(cond[4], registry)];
   const atoms = expr.includes('{') ? [...expr.matchAll(/\{([^}]+)\}/g)].map((m) => m[1]) : [expr];
   const keys: string[] = [];
   for (const a of atoms) {

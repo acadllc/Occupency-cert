@@ -70,7 +70,7 @@
     {
       "slot": "date",
       "value": "date",
-      "font": "kufi",
+      "font": "din",
       "size": 14,
       "dir": "rtl",
       "align": "right",
@@ -140,7 +140,7 @@
     {
       "slot": "users",
       "value": "number_of_users_ar",
-      "font": "kufi",
+      "font": "din",
       "align": "right",
       "dir": "rtl",
       "padding": [

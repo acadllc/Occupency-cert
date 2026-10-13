@@ -41,6 +41,14 @@ export const sampleProject: ProjectFields = {
   permit_before_backfilling: 'yes',
   number_of_users_ar: 'أسرة واحدة فقط',
   applicant_role: 'consultant',
+  plumbing_photos: [
+    { path: 'test/photo1.jpg', details_ar: 'الواجهة الأمامية', notes_ar: 'تم تركيب خزانات المياه العلوية' },
+    { path: 'test/photo2.jpg', details_ar: 'صور داخلية لنسبة انجاز المشروع', notes_ar: '' },
+    { path: 'test/photo3.jpg', details_ar: 'واجهة السور الخلفية', notes_ar: 'غرفة التفتيش الرئيسية' },
+  ],
+  mechanical_photos: [
+    { path: 'test/photo3.jpg', details_ar: 'الواجهة اليمنى', notes_ar: 'وحدات التكييف الخارجية' },
+  ],
 };
 
 /** Stress data: long names/descriptions, mixed scripts and punctuation. */

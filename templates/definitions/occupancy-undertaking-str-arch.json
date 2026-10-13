@@ -1,0 +1,189 @@
+{
+  "key": "occupancy-undertaking-str-arch",
+  "version": 1,
+  "status": "verified",
+  "name": "Building Occupancy Undertaking – Architectural & Structural",
+  "nameAr": "تعهد إشغال مبنى – معماري وإنشائي",
+  "description": "Undertaking to the Building Permits Department that occupancy and operational loads match the approved architectural and structural design.",
+  "category": "Letters",
+  "source": "01UNDERTAKE STR ARCH.docx",
+  "format": "docx",
+  "sanitize": [
+    {
+      "op": "date_field",
+      "slot": "date"
+    },
+    {
+      "op": "cell",
+      "label": "رقم المشروع:",
+      "offset": 1,
+      "slot": "project_id"
+    },
+    {
+      "op": "cell",
+      "label": "رقم القسيمة:",
+      "offset": 1,
+      "slot": "plot"
+    },
+    {
+      "op": "cell",
+      "label": "اسم المالك:",
+      "offset": 1,
+      "slot": "owner"
+    },
+    {
+      "op": "cell",
+      "label": "المنطقة/الحي:",
+      "offset": 1,
+      "slot": "area"
+    },
+    {
+      "op": "replace_all",
+      "old": "☑",
+      "new": "☐"
+    },
+    {
+      "op": "cell_containing",
+      "contains": "آكاد للإستشارات الهندسية",
+      "slot": "applicant_name"
+    },
+    {
+      "op": "remove_image",
+      "target": "media/image1.png"
+    }
+  ],
+  "slots": {
+    "date": {
+      "kind": "inline",
+      "width": 120
+    },
+    "project_id": {
+      "kind": "cell"
+    },
+    "plot": {
+      "kind": "cell"
+    },
+    "owner": {
+      "kind": "cell"
+    },
+    "area": {
+      "kind": "cell"
+    },
+    "applicant_name": {
+      "kind": "cell"
+    },
+    "box_contractor": {
+      "kind": "find_text",
+      "text": "☐",
+      "occurrence": 1,
+      "_note": "RTL: each box sits to the right of its label; contractor label is on the right half"
+    },
+    "box_consultant": {
+      "kind": "find_text",
+      "text": "☐",
+      "occurrence": 0
+    }
+  },
+  "fields": [
+    {
+      "slot": "date",
+      "value": "date",
+      "font": "tajawal",
+      "dir": "rtl",
+      "align": "right",
+      "padding": [
+        0,
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "tajawal",
+      "size": 11,
+      "dir": "ltr",
+      "align": "center",
+      "padding": [
+        3,
+        1,
+        3,
+        1
+      ]
+    },
+    {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "tajawal",
+      "size": 11,
+      "dir": "ltr",
+      "align": "center",
+      "padding": [
+        3,
+        1,
+        3,
+        1
+      ]
+    },
+    {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "tajawal",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "padding": [
+        3,
+        1,
+        3,
+        1
+      ]
+    },
+    {
+      "slot": "area",
+      "value": "area_ar",
+      "font": "tajawal",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "padding": [
+        3,
+        1,
+        3,
+        1
+      ]
+    },
+    {
+      "slot": "applicant_name",
+      "value": "applicant_role=contractor ? contractor_name_ar : $consultant_name_ar",
+      "font": "tajawal",
+      "bold": true,
+      "size": 12,
+      "align": "center",
+      "multiline": true,
+      "padding": [
+        3,
+        1,
+        3,
+        1
+      ]
+    },
+    {
+      "slot": "box_contractor",
+      "check": {
+        "field": "applicant_role",
+        "equals": "contractor"
+      },
+      "style": "tick"
+    },
+    {
+      "slot": "box_consultant",
+      "check": {
+        "field": "applicant_role",
+        "equals": "consultant"
+      },
+      "style": "tick"
+    }
+  ]
+}

@@ -1,0 +1,793 @@
+{
+  "key": "elevators-testing",
+  "version": 1,
+  "status": "verified",
+  "name": "Undertaking – Testing, Commissioning & Safety of Elevators",
+  "nameAr": "تعهد بإتمام الاختبارات والسلامة الفنية للمصاعد",
+  "description": "DMT form 001/Elevator/occ-2024: elevator supplier/contractor undertaking with elevator system data (2 pages).",
+  "category": "DMT undertakings",
+  "source": "02Testing Commissioning and Safety Procedures of Elevatorsتعهد بإتمام الاختبارات والسلامة الفنية للمصاعد.pdf",
+  "format": "pdf",
+  "reviewNotes": "DMT (Department of Municipalities and Transport) form. English values are written after the English label and Arabic values before the Arabic label on the same dotted line.",
+  "sanitize": [
+    {
+      "op": "remove_image",
+      "page": 0,
+      "bbox": [
+        168,
+        700,
+        290,
+        822
+      ],
+      "label": "stamp+signature"
+    },
+    {
+      "op": "redact_spans",
+      "font": "Arial"
+    }
+  ],
+  "slots": {
+    "project_id_en": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        76.6,
+        121.4,
+        185.5,
+        135.3
+      ],
+      "baseline": 131.2
+    },
+    "project_id_ar": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        416.4,
+        121.4,
+        525.9,
+        135.3
+      ],
+      "baseline": 131.2
+    },
+    "date_en": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        53.5,
+        133.6,
+        184.1,
+        147.4
+      ],
+      "baseline": 143.3
+    },
+    "date_ar": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        417.3,
+        133.6,
+        544.3,
+        147.4
+      ],
+      "baseline": 143.3
+    },
+    "description": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        104.6,
+        156.8,
+        513.6,
+        170.7
+      ],
+      "baseline": 166.6
+    },
+    "address": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        92.9,
+        168.4,
+        517.1,
+        182.9
+      ],
+      "baseline": 178.8
+    },
+    "owner": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        92.4,
+        194.5,
+        529.3,
+        208.4
+      ],
+      "baseline": 204.2
+    },
+    "developer": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        139.2,
+        222.6,
+        495.2,
+        236.4
+      ],
+      "baseline": 232.3
+    },
+    "consultant": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        109.1,
+        249.4,
+        515.5,
+        263.2
+      ],
+      "baseline": 259.1
+    },
+    "contractor": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        105.4,
+        276.8,
+        525.9,
+        290.7
+      ],
+      "baseline": 286.6
+    },
+    "area": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        62.9,
+        303.0,
+        153.8,
+        316.8
+      ],
+      "baseline": 312.7
+    },
+    "sector": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        235.0,
+        303.0,
+        313.2,
+        316.8
+      ],
+      "baseline": 312.7
+    },
+    "plot": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        381.5,
+        296.9,
+        525.3,
+        310.7
+      ],
+      "baseline": 306.6
+    },
+    "usage": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        116.8,
+        332.4,
+        485.1,
+        346.2
+      ],
+      "baseline": 342.1
+    },
+    "auth_supply_installation_en": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        23.2,
+        370.7,
+        32.4,
+        379.9
+      ]
+    },
+    "auth_supply_installation_ar": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        558.4,
+        370.7,
+        567.6,
+        379.9
+      ]
+    },
+    "auth_installation_operation_en": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        23.2,
+        382.8,
+        32.4,
+        392.0
+      ]
+    },
+    "auth_installation_operation_ar": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        558.4,
+        382.8,
+        567.6,
+        392.0
+      ]
+    },
+    "auth_testing_maintenance_en": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        23.2,
+        395.0,
+        32.4,
+        404.2
+      ]
+    },
+    "auth_testing_maintenance_ar": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        558.4,
+        395.0,
+        567.6,
+        404.2
+      ]
+    },
+    "model_en": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        56.9,
+        418.1,
+        286.7,
+        431.9
+      ],
+      "baseline": 427.8
+    },
+    "model_ar": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        323.0,
+        417.4,
+        542.7,
+        431.2
+      ],
+      "baseline": 427.1
+    },
+    "capacity_en": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        65.2,
+        430.3,
+        287.3,
+        444.1
+      ],
+      "baseline": 440.0
+    },
+    "capacity_ar": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        323.5,
+        429.6,
+        548.3,
+        443.4
+      ],
+      "baseline": 439.3
+    },
+    "number_en": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        64.0,
+        442.4,
+        286.2,
+        456.3
+      ],
+      "baseline": 452.2
+    },
+    "number_ar": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        323.3,
+        441.7,
+        550.5,
+        455.6
+      ],
+      "baseline": 451.4
+    },
+    "specs_en": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        126.1,
+        454.7,
+        287.7,
+        468.5
+      ],
+      "baseline": 464.4
+    },
+    "specs_ar": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        323.5,
+        454.0,
+        510.5,
+        467.8
+      ],
+      "baseline": 463.7
+    },
+    "ack_en": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        79.9,
+        485.6,
+        223.7,
+        499.5
+      ],
+      "baseline": 495.4
+    },
+    "ack_ar": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        360.0,
+        485.5,
+        528.5,
+        499.5
+      ],
+      "baseline": 495.4
+    }
+  },
+  "fields": [
+    {
+      "slot": "project_id_en",
+      "value": "project_id",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left"
+    },
+    {
+      "slot": "project_id_ar",
+      "value": "project_id",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "dir": "ltr",
+      "align": "right"
+    },
+    {
+      "slot": "date_en",
+      "value": "date",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "knockoutSlot": true
+    },
+    {
+      "slot": "date_ar",
+      "value": "date",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "dir": "ltr",
+      "align": "right",
+      "knockoutSlot": true
+    },
+    {
+      "slot": "description",
+      "en": "project_description_en",
+      "ar": "project_description_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "gap": 14
+    },
+    {
+      "slot": "address",
+      "en": "@project_address_or_location_en",
+      "ar": "@project_address_or_location_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "gap": 14
+    },
+    {
+      "slot": "owner",
+      "en": "owner_name_en",
+      "ar": "owner_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "gap": 14
+    },
+    {
+      "slot": "developer",
+      "en": "developer_name_en",
+      "ar": "developer_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "gap": 14
+    },
+    {
+      "slot": "consultant",
+      "en": "$consultant_name_en",
+      "ar": "$consultant_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "gap": 14
+    },
+    {
+      "slot": "contractor",
+      "en": "contractor_name_en",
+      "ar": "contractor_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "gap": 14
+    },
+    {
+      "slot": "area",
+      "en": "area_en",
+      "ar": "area_ar",
+      "font": "carlito",
+      "size": 9,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "gap": 6
+    },
+    {
+      "slot": "sector",
+      "en": "sector_en",
+      "ar": "sector_ar",
+      "font": "carlito",
+      "size": 9,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "gap": 6
+    },
+    {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center"
+    },
+    {
+      "slot": "usage",
+      "en": "land_building_usage_en",
+      "ar": "land_building_usage_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "gap": 14
+    },
+    {
+      "slot": "auth_supply_installation_en",
+      "check": {
+        "field": "elevator_authorization_type",
+        "option": "supply_installation"
+      },
+      "style": "tick"
+    },
+    {
+      "slot": "auth_supply_installation_ar",
+      "check": {
+        "field": "elevator_authorization_type",
+        "option": "supply_installation"
+      },
+      "style": "tick"
+    },
+    {
+      "slot": "auth_installation_operation_en",
+      "check": {
+        "field": "elevator_authorization_type",
+        "option": "installation_operation"
+      },
+      "style": "tick"
+    },
+    {
+      "slot": "auth_installation_operation_ar",
+      "check": {
+        "field": "elevator_authorization_type",
+        "option": "installation_operation"
+      },
+      "style": "tick"
+    },
+    {
+      "slot": "auth_testing_maintenance_en",
+      "check": {
+        "field": "elevator_authorization_type",
+        "option": "testing_maintenance"
+      },
+      "style": "tick"
+    },
+    {
+      "slot": "auth_testing_maintenance_ar",
+      "check": {
+        "field": "elevator_authorization_type",
+        "option": "testing_maintenance"
+      },
+      "style": "tick"
+    },
+    {
+      "slot": "model_en",
+      "value": "elevator_model_en",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left"
+    },
+    {
+      "slot": "model_ar",
+      "value": "elevator_model_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right"
+    },
+    {
+      "slot": "capacity_en",
+      "value": "elevator_capacity_en",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left"
+    },
+    {
+      "slot": "capacity_ar",
+      "value": "elevator_capacity_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right"
+    },
+    {
+      "slot": "number_en",
+      "value": "elevator_number_en",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left"
+    },
+    {
+      "slot": "number_ar",
+      "value": "elevator_number_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right"
+    },
+    {
+      "slot": "specs_en",
+      "value": "elevator_specs_en",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left"
+    },
+    {
+      "slot": "specs_ar",
+      "value": "elevator_specs_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right"
+    },
+    {
+      "slot": "ack_en",
+      "value": "contractor_name_en",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "bold": true
+    },
+    {
+      "slot": "ack_ar",
+      "value": "contractor_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "bold": true
+    }
+  ]
+}

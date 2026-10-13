@@ -1,0 +1,75 @@
+{
+ "key": "no-swimming-pools",
+ "version": 1,
+ "format": "docx",
+ "sourceSha256": "7519a0bbb02e05f349290d8b61b44221ddb08e1bc5fcdfe6fbee2468bc7414bc",
+ "baseSha256": "363fb8417381df1e83d794c45531fa17317e5386c7b0b4990f1ea583df9bc7d5",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 595.3,
+   "height": 841.89
+  }
+ ],
+ "slots": {
+  "date": {
+   "page": 0,
+   "baseline": 103.15,
+   "size": 14.0,
+   "rect": [
+    376.09,
+    82.78,
+    496.09,
+    113.14
+   ]
+  },
+  "owner": {
+   "page": 0,
+   "baseline": 298.7,
+   "size": 12.0,
+   "rect": [
+    29.2,
+    279.55,
+    416.6,
+    317.35
+   ]
+  },
+  "consultant": {
+   "page": 0,
+   "baseline": 337.25,
+   "size": 14.0,
+   "rect": [
+    29.2,
+    317.35,
+    416.6,
+    355.15
+   ]
+  },
+  "location": {
+   "page": 0,
+   "baseline": 374.3,
+   "size": 12.0,
+   "rect": [
+    29.2,
+    355.15,
+    416.6,
+    392.95
+   ]
+  },
+  "components": {
+   "page": 0,
+   "baseline": 412.1,
+   "size": 12.0,
+   "rect": [
+    29.2,
+    392.95,
+    416.6,
+    430.75
+   ]
+  }
+ },
+ "build": {
+  "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+  "layoutDiff": 0.0
+ }
+}

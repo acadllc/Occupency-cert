@@ -44,6 +44,7 @@ import type {
   GenerationWarning,
   PhotoEntry,
   PhotoItem,
+  Placement,
   ProjectFields,
   SlotGeometry,
   TextItem,
@@ -67,6 +68,8 @@ const FAMILY_FILES: Record<string, { arabic: string; latin: string }> = {
   'kufi-bold': { arabic: 'NotoKufiArabic_700Bold.ttf', latin: 'Carlito_700Bold.ttf' },
   carlito: { arabic: 'NotoSansArabic_400Regular.ttf', latin: 'Carlito_400Regular.ttf' },
   'carlito-bold': { arabic: 'NotoSansArabic_700Bold.ttf', latin: 'Carlito_700Bold.ttf' },
+  din: { arabic: 'Cairo_400Regular.ttf', latin: 'Cairo_400Regular.ttf' },
+  'din-bold': { arabic: 'Cairo_700Bold.ttf', latin: 'Cairo_700Bold.ttf' },
   tajawal: { arabic: 'Tajawal_400Regular.ttf', latin: 'Tajawal_400Regular.ttf' },
   'tajawal-bold': { arabic: 'Tajawal_700Bold.ttf', latin: 'Tajawal_700Bold.ttf' },
   amiri: { arabic: 'Amiri_400Regular.ttf', latin: 'Amiri_400Regular.ttf' },
@@ -78,6 +81,8 @@ export const FONT_FILES = [...new Set(Object.values(FAMILY_FILES).flatMap((f) =>
 type Rect = [number, number, number, number];
 
 interface DrawCtx {
+  placements: Placement[];
+  pageIndex: number;
   doc: PDFDocument;
   page: PDFPage;
   pageHeight: number;
@@ -146,6 +151,7 @@ export class Engine {
     const doc = await PDFDocument.load(base, { updateMetadata: false });
     const fonts = new FontRegistry(doc);
     const warnings: GenerationWarning[] = [];
+    const placements: Placement[] = [];
     const ctx: ValueContext = { fields, registry: this.registry, company: this.company };
     const pages = doc.getPages();
     if (pages.length !== layout.pageCount) throw new Error(`Template ${templateKey}: base PDF page count mismatch`);
@@ -154,7 +160,7 @@ export class Engine {
       const slot = layout.slots[item.slot];
       if (!slot) throw new Error(`Template ${templateKey}: unknown slot ${item.slot}`);
       const page = pages[slot.page];
-      const dctx: DrawCtx = { doc, page, pageHeight: page.getHeight(), fonts, warnings };
+      const dctx: DrawCtx = { doc, page, pageHeight: page.getHeight(), fonts, warnings, placements, pageIndex: slot.page };
       if ('check' in item) this.drawCheck(dctx, slot, item, fields);
       else if ('photo' in item) await this.drawPhoto(dctx, slot, item, fields);
       else if ('photoText' in item) {
@@ -172,8 +178,9 @@ export class Engine {
 
     if (definition.trimEmptyPhotoPages) {
       const { field, slotsPerPage } = definition.trimEmptyPhotoPages;
-      const n = ((fields[field] as PhotoEntry[] | undefined) ?? []).length;
-      let keep = 1;
+      const n = ((fields[field] as PhotoEntry[] | undefined) ?? []).filter((p) => p?.path).length;
+      // no photos at all: keep the complete blank form
+      let keep = n === 0 ? slotsPerPage.length : 1;
       let cum = slotsPerPage[0] ?? 0;
       while (keep < slotsPerPage.length && cum < n) cum += slotsPerPage[keep++];
       for (let i = doc.getPageCount() - 1; i >= keep; i--) doc.removePage(i);
@@ -190,7 +197,7 @@ export class Engine {
     doc.setCreationDate(now);
     doc.setModificationDate(now);
     const bytes = await doc.save({ useObjectStreams: true });
-    return { templateKey, templateVersion: definition.version, bytes, pageCount: doc.getPageCount(), warnings };
+    return { templateKey, templateVersion: definition.version, bytes, pageCount: doc.getPageCount(), warnings, placements };
   }
 
   // ------------------------------------------------------------------ text
@@ -202,6 +209,10 @@ export class Engine {
 
   private async drawText(d: DrawCtx, slot: SlotGeometry, text: string, style: TextStyle, slotName: string) {
     const fam = await this.family(style.font ?? 'sans', style.bold);
+    if (style.knockoutSlot) {
+      const [x0, y0, x1, y1] = slot.rect;
+      this.knockout(d, x0, y0, x1 - x0, y1 - y0);
+    }
     const dir: Dir = !style.dir || style.dir === 'auto' ? detectDir(text, 'rtl') : style.dir;
     const inner = this.padded(slot, style);
     const innerW = inner[2] - inner[0];
@@ -245,6 +256,7 @@ export class Engine {
       const top = inner[1] + (innerH - blockH) / 2;
       baselines = lines.map((_, i) => top + size * asc + i * size * lh);
     }
+    d.placements.push({ slot: slotName, page: d.pageIndex, kind: 'text', text, size });
     lines.forEach((line, i) => {
       const w = line.width * size;
       const x = align === 'right' ? inner[2] - w : align === 'center' ? inner[0] + (innerW - w) / 2 : inner[0];
@@ -280,6 +292,8 @@ export class Engine {
       }
       this.drawLine(d, lineEn, inner[0], baseline, size, item.color);
       this.drawLine(d, lineAr, inner[2] - wAr, baseline, size, item.color);
+      d.placements.push({ slot: `${item.slot} (English)`, page: d.pageIndex, kind: 'text', text: en, size });
+      d.placements.push({ slot: `${item.slot} (Arabic)`, page: d.pageIndex, kind: 'text', text: ar, size });
       return;
     }
     // too long for one line: split the box and wrap each language in its own half
@@ -309,7 +323,7 @@ export class Engine {
     // ActualText gives extractors the logical Arabic string instead of visual-order glyphs
     const span = d.doc.context.obj({ ActualText: PDFHexString.fromText(line.text) });
     const ops = [
-      PDFOperator.of(PDFOperatorNames.BeginMarkedContentSequence, [PDFName.of('Span'), span]),
+      PDFOperator.of(PDFOperatorNames.BeginMarkedContentSequence, [PDFName.of('Span'), span as unknown as PDFName]),
       pushGraphicsState(),
       setFillingRgbColor(c[0], c[1], c[2]),
       beginText(),
@@ -334,10 +348,11 @@ export class Engine {
   // ------------------------------------------------------------------ marks
   private drawCheck(d: DrawCtx, slot: SlotGeometry, item: CheckItem, fields: ProjectFields) {
     if (!isChecked(item, fields)) return;
+    d.placements.push({ slot: item.slot, page: d.pageIndex, kind: 'check' });
     const [x0, y0, x1, y1] = slot.rect;
     const cx = (x0 + x1) / 2;
     const cy = d.pageHeight - (y0 + y1) / 2;
-    const s = item.size ?? Math.min(x1 - x0, y1 - y0);
+    const s = item.size ?? Math.min(x1 - x0, y1 - y0) * 0.8;
     const style = item.style ?? 'tick';
     if (style === 'dot') {
       const r = s / 2;
@@ -394,6 +409,7 @@ export class Engine {
       const x = x0 + pad + (bw - w) / 2;
       const yTop = y0 + pad + (bh - h) / 2;
       d.page.drawImage(img, { x, y: d.pageHeight - yTop - h, width: w, height: h });
+      d.placements.push({ slot: item.slot, page: d.pageIndex, kind: 'photo' });
     } catch (err) {
       d.warnings.push({ code: 'image_error', slot: item.slot, message: `Photo ${item.photo.index + 1} could not be embedded (${(err as Error).message}).` });
     }

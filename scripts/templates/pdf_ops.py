@@ -33,8 +33,10 @@ class PdfSanitizer:
         ]
         if not hits:
             raise PdfSanitizeError(f"image not found on page {op['page']} at {op['bbox']}")
+        # remove the drawing instruction itself (no placeholder left behind);
+        # only images overlapping this bbox are affected and logos are far away
         for info in hits:
-            page.delete_image(info["xref"])
+            self.pending_redactions.setdefault(op["page"], []).append((fitz.Rect(info["bbox"]), "image"))
         self.removed.append(f"[image p{op['page']} {op['label'] if 'label' in op else ''}]")
 
     def op_redact_spans(self, op: dict):
@@ -115,6 +117,15 @@ class PdfSanitizer:
             page = self.doc[pno]
             text_rects = [r for r, kind in items if kind == "text"]
             art_rects = [r for r, kind in items if kind == "lineart"]
+            img_rects = [r for r, kind in items if kind == "image"]
+            if img_rects:
+                for r in img_rects:
+                    page.add_redact_annot(r, fill=False)
+                page.apply_redactions(
+                    images=fitz.PDF_REDACT_IMAGE_REMOVE,
+                    graphics=fitz.PDF_REDACT_LINE_ART_NONE,
+                    text=fitz.PDF_REDACT_TEXT_NONE,
+                )
             if text_rects:
                 for r in text_rects:
                     page.add_redact_annot(r, fill=False)

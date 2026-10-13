@@ -100,7 +100,8 @@ def compare_geometry(clean: "fitz.Document", marked: "fitz.Document", dpi: int =
 
 def find_text_rect(page: "fitz.Page", text: str, occurrence: int = 0):
     hits = page.search_for(text)
-    hits.sort(key=lambda r: (round(r.y0), r.x0))
+    # same visual line (within 4pt) -> left-to-right
+    hits.sort(key=lambda r: (round(r.y0 / 4), r.x0))
     if len(hits) <= occurrence:
         return None
     r = hits[occurrence]

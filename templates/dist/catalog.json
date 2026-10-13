@@ -2,6 +2,3355 @@
  "templates": [
   {
    "definition": {
+    "key": "archive-drawings-explanation",
+    "version": 1,
+    "status": "verified",
+    "name": "Explanation of Architectural & Structural Archive Drawings",
+    "nameAr": "توضيح بخصوص مخططات الأرشيف المعمارية والإنشائية",
+    "description": "Letter explaining the archived architectural (ARCH.PDF) and structural (STRUC.PDF) drawings attached to the application.",
+    "category": "Letters",
+    "source": "03EXPLAIN FOR ARCHIVE.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "tajawal",
+      "dir": "rtl",
+      "align": "right",
+      "padding": [
+       0,
+       0,
+       2,
+       0
+      ]
+     },
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "tajawal",
+      "size": 11,
+      "dir": "ltr",
+      "align": "center",
+      "padding": [
+       3,
+       1,
+       3,
+       1
+      ]
+     },
+     {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "tajawal",
+      "size": 11,
+      "dir": "ltr",
+      "align": "center",
+      "padding": [
+       3,
+       1,
+       3,
+       1
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "tajawal",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "padding": [
+       3,
+       1,
+       3,
+       1
+      ]
+     },
+     {
+      "slot": "area",
+      "value": "area_ar",
+      "font": "tajawal",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "padding": [
+       3,
+       1,
+       3,
+       1
+      ]
+     }
+    ]
+   },
+   "layout": {
+    "key": "archive-drawings-explanation",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "b4781214e76d4973d92868e0f9336f3e6546041e0cb8b04f68d44535a28a5d8f",
+    "baseSha256": "845680c1a890dd19f26c86045695c6a1a004cb2f9f471e887341cb27bfe1a7d2",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 612,
+      "height": 792
+     }
+    ],
+    "slots": {
+     "date": {
+      "page": 0,
+      "baseline": 83.45,
+      "size": 12,
+      "rect": [
+       366.51,
+       70.59,
+       486.51,
+       87.98
+      ]
+     },
+     "project_id": {
+      "page": 0,
+      "baseline": 202.55,
+      "size": 12,
+      "rect": [
+       280.35,
+       188.55,
+       436.15,
+       205.05
+      ]
+     },
+     "plot": {
+      "page": 0,
+      "baseline": 199.8,
+      "size": 12,
+      "rect": [
+       90.3,
+       188.35,
+       207.3,
+       206.85
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 218.3,
+      "size": 12,
+      "rect": [
+       275,
+       206.85,
+       441.6,
+       238.85
+      ]
+     },
+     "area": {
+      "page": 0,
+      "baseline": 218.3,
+      "size": 12,
+      "rect": [
+       90.3,
+       206.85,
+       207.3,
+       238.85
+      ]
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "consultant-authorization",
+    "version": 1,
+    "status": "verified",
+    "name": "Consultant Authorization & Undertaking Letter (Takleef)",
+    "nameAr": "تكليف وتعهد الاستشاري",
+    "description": "DMT Form01-V02: owner's appointment of the consultant, backfilling questions, Abu Dhabi International Codes undertaking and consultant pledge (2 pages).",
+    "category": "DMT undertakings",
+    "source": "TAKLEEF.pdf",
+    "format": "pdf",
+    "reviewNotes": "Original AcroForm fields are reset and flattened; values are drawn as page content. Owner signature box is intentionally left blank.",
+    "fields": [
+     {
+      "slot": "project_id_en",
+      "value": "project_id",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "valign": "middle",
+      "padding": [
+       3,
+       0,
+       3,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left"
+     },
+     {
+      "slot": "project_id_ar",
+      "value": "project_id",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "valign": "middle",
+      "padding": [
+       3,
+       0,
+       3,
+       0
+      ],
+      "dir": "ltr",
+      "align": "right"
+     },
+     {
+      "slot": "date_en",
+      "value": "date",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "valign": "middle",
+      "padding": [
+       3,
+       0,
+       3,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left"
+     },
+     {
+      "slot": "date_ar",
+      "value": "date",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "valign": "middle",
+      "padding": [
+       3,
+       0,
+       3,
+       0
+      ],
+      "dir": "ltr",
+      "align": "right"
+     },
+     {
+      "slot": "description",
+      "en": "project_description_en",
+      "ar": "project_description_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "valign": "middle",
+      "padding": [
+       3,
+       0,
+       3,
+       0
+      ],
+      "gap": 14
+     },
+     {
+      "slot": "owner",
+      "en": "owner_name_en",
+      "ar": "owner_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "valign": "middle",
+      "padding": [
+       3,
+       0,
+       3,
+       0
+      ],
+      "gap": 14
+     },
+     {
+      "slot": "developer",
+      "en": "developer_name_en",
+      "ar": "developer_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "valign": "middle",
+      "padding": [
+       3,
+       0,
+       3,
+       0
+      ],
+      "gap": 14
+     },
+     {
+      "slot": "zone",
+      "en": "area_en",
+      "ar": "area_ar",
+      "font": "carlito",
+      "size": 9,
+      "minSize": 5.5,
+      "valign": "middle",
+      "padding": [
+       3,
+       0,
+       3,
+       0
+      ],
+      "gap": 6
+     },
+     {
+      "slot": "sector",
+      "en": "sector_en",
+      "ar": "sector_ar",
+      "font": "carlito",
+      "size": 8,
+      "minSize": 5.5,
+      "valign": "middle",
+      "padding": [
+       3,
+       0,
+       3,
+       0
+      ],
+      "gap": 4
+     },
+     {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "valign": "middle",
+      "padding": [
+       3,
+       0,
+       3,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "consultant_en",
+      "value": "$consultant_name_en",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "valign": "middle",
+      "padding": [
+       3,
+       0,
+       3,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left"
+     },
+     {
+      "slot": "consultant_ar",
+      "value": "$consultant_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "valign": "middle",
+      "padding": [
+       3,
+       0,
+       3,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right"
+     },
+     {
+      "slot": "consultant_en_p2",
+      "value": "$consultant_name_en",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "valign": "middle",
+      "padding": [
+       3,
+       0,
+       3,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left"
+     },
+     {
+      "slot": "consultant_ar_p2",
+      "value": "$consultant_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "valign": "middle",
+      "padding": [
+       3,
+       0,
+       3,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right"
+     },
+     {
+      "slot": "auth_design_supervision_en",
+      "check": {
+       "field": "takleef_authorization_type",
+       "equals": "design_supervision"
+      },
+      "style": "dot",
+      "size": 6
+     },
+     {
+      "slot": "auth_design_supervision_ar",
+      "check": {
+       "field": "takleef_authorization_type",
+       "equals": "design_supervision"
+      },
+      "style": "dot",
+      "size": 6
+     },
+     {
+      "slot": "auth_design_only_en",
+      "check": {
+       "field": "takleef_authorization_type",
+       "equals": "design_only"
+      },
+      "style": "dot",
+      "size": 6
+     },
+     {
+      "slot": "auth_design_only_ar",
+      "check": {
+       "field": "takleef_authorization_type",
+       "equals": "design_only"
+      },
+      "style": "dot",
+      "size": 6
+     },
+     {
+      "slot": "auth_supervision_only_en",
+      "check": {
+       "field": "takleef_authorization_type",
+       "equals": "supervision_only"
+      },
+      "style": "dot",
+      "size": 6
+     },
+     {
+      "slot": "auth_supervision_only_ar",
+      "check": {
+       "field": "takleef_authorization_type",
+       "equals": "supervision_only"
+      },
+      "style": "dot",
+      "size": 6
+     },
+     {
+      "slot": "backfill_yes_en",
+      "check": {
+       "field": "needs_backfilling",
+       "equals": "yes"
+      },
+      "style": "dot",
+      "size": 5
+     },
+     {
+      "slot": "backfill_yes_ar",
+      "check": {
+       "field": "needs_backfilling",
+       "equals": "yes"
+      },
+      "style": "dot",
+      "size": 5
+     },
+     {
+      "slot": "backfill_no_en",
+      "check": {
+       "field": "needs_backfilling",
+       "equals": "no"
+      },
+      "style": "dot",
+      "size": 5
+     },
+     {
+      "slot": "backfill_no_ar",
+      "check": {
+       "field": "needs_backfilling",
+       "equals": "no"
+      },
+      "style": "dot",
+      "size": 5
+     },
+     {
+      "slot": "permit_yes_en",
+      "check": {
+       "field": "permit_before_backfilling",
+       "equals": "yes"
+      },
+      "style": "dot",
+      "size": 5
+     },
+     {
+      "slot": "permit_yes_ar",
+      "check": {
+       "field": "permit_before_backfilling",
+       "equals": "yes"
+      },
+      "style": "dot",
+      "size": 5
+     },
+     {
+      "slot": "permit_no_en",
+      "check": {
+       "field": "permit_before_backfilling",
+       "equals": "no"
+      },
+      "style": "dot",
+      "size": 5
+     },
+     {
+      "slot": "permit_no_ar",
+      "check": {
+       "field": "permit_before_backfilling",
+       "equals": "no"
+      },
+      "style": "dot",
+      "size": 5
+     }
+    ]
+   },
+   "layout": {
+    "key": "consultant-authorization",
+    "version": 1,
+    "format": "pdf",
+    "sourceSha256": "46fb50eadc0ff02534f5874d798f10cf2671e2742097ec7bb2c461c7d07ae935",
+    "baseSha256": "c9dbc5d0e21cef3f7ca1169815803bfc87561153ad1c227cbb66d852781b1c0c",
+    "pageCount": 2,
+    "pages": [
+     {
+      "width": 595.44,
+      "height": 841.68
+     },
+     {
+      "width": 595.44,
+      "height": 841.68
+     }
+    ],
+    "slots": {
+     "project_id_en": {
+      "page": 0,
+      "rect": [
+       75.7,
+       68.8,
+       184.4,
+       81.2
+      ]
+     },
+     "project_id_ar": {
+      "page": 0,
+      "rect": [
+       416.4,
+       68.9,
+       525.2,
+       81.2
+      ]
+     },
+     "date_en": {
+      "page": 0,
+      "rect": [
+       53.2,
+       82.6,
+       185.3,
+       97.6
+      ]
+     },
+     "date_ar": {
+      "page": 0,
+      "rect": [
+       417.3,
+       82.7,
+       543.4,
+       97.6
+      ]
+     },
+     "description": {
+      "page": 0,
+      "rect": [
+       106.6,
+       100.6,
+       519.8,
+       115.1
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "rect": [
+       96.6,
+       128.6,
+       522.2,
+       143.6
+      ]
+     },
+     "developer": {
+      "page": 0,
+      "rect": [
+       137.2,
+       146.5,
+       491.1,
+       161.8
+      ]
+     },
+     "zone": {
+      "page": 0,
+      "rect": [
+       58.1,
+       166.3,
+       164.6,
+       180.8
+      ]
+     },
+     "sector": {
+      "page": 0,
+      "rect": [
+       247.6,
+       166.3,
+       298.2,
+       180
+      ]
+     },
+     "plot": {
+      "page": 0,
+      "rect": [
+       378.9,
+       165.4,
+       517.6,
+       180.2
+      ]
+     },
+     "auth_design_supervision_en": {
+      "page": 0,
+      "rect": [
+       19.9,
+       205.6,
+       35.5,
+       221.2
+      ]
+     },
+     "auth_design_supervision_ar": {
+      "page": 0,
+      "rect": [
+       559.9,
+       205.9,
+       575.5,
+       221.5
+      ]
+     },
+     "auth_design_only_en": {
+      "page": 0,
+      "rect": [
+       21.1,
+       222.2,
+       36.7,
+       237.2
+      ]
+     },
+     "auth_design_only_ar": {
+      "page": 0,
+      "rect": [
+       560.5,
+       222.8,
+       576.1,
+       237.8
+      ]
+     },
+     "auth_supervision_only_en": {
+      "page": 0,
+      "rect": [
+       21.1,
+       238.5,
+       36.7,
+       253.4
+      ]
+     },
+     "auth_supervision_only_ar": {
+      "page": 0,
+      "rect": [
+       559.9,
+       239,
+       575.5,
+       254
+      ]
+     },
+     "consultant_en": {
+      "page": 0,
+      "rect": [
+       22.9,
+       274.5,
+       300.5,
+       292.3
+      ]
+     },
+     "consultant_ar": {
+      "page": 0,
+      "rect": [
+       317.2,
+       274,
+       571.3,
+       291.5
+      ]
+     },
+     "backfill_yes_en": {
+      "page": 0,
+      "rect": [
+       23.8,
+       401.6,
+       35.2,
+       411.8
+      ]
+     },
+     "backfill_no_en": {
+      "page": 0,
+      "rect": [
+       77.4,
+       402.8,
+       87.6,
+       413
+      ]
+     },
+     "backfill_yes_ar": {
+      "page": 0,
+      "rect": [
+       558.7,
+       395.6,
+       570.1,
+       405.7
+      ]
+     },
+     "backfill_no_ar": {
+      "page": 0,
+      "rect": [
+       519.6,
+       395.6,
+       529.8,
+       405.7
+      ]
+     },
+     "permit_yes_en": {
+      "page": 0,
+      "rect": [
+       22.3,
+       444.4,
+       34.3,
+       460
+      ]
+     },
+     "permit_no_en": {
+      "page": 0,
+      "rect": [
+       76.5,
+       445.3,
+       87.3,
+       458.4
+      ]
+     },
+     "permit_yes_ar": {
+      "page": 0,
+      "rect": [
+       561.7,
+       439.5,
+       573.1,
+       453.3
+      ]
+     },
+     "permit_no_ar": {
+      "page": 0,
+      "rect": [
+       523.8,
+       440.7,
+       534.6,
+       453.9
+      ]
+     },
+     "consultant_en_p2": {
+      "page": 1,
+      "rect": [
+       22.5,
+       103.1,
+       302,
+       120.9
+      ]
+     },
+     "consultant_ar_p2": {
+      "page": 1,
+      "rect": [
+       315.3,
+       100.6,
+       572.2,
+       118.1
+      ]
+     }
+    },
+    "build": {
+     "engine": "pymupdf 1.28.2"
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "drainage-inspection-report",
+    "version": 1,
+    "status": "verified",
+    "name": "Internal Drainage Inspection Report",
+    "nameAr": "تقرير فحص شبكة الصرف الصحي الداخلي ووصلها بالمناهيل",
+    "description": "Consultant report confirming inspection of the internal drainage network and its connections to the manholes.",
+    "category": "Letters",
+    "source": "04Inspection report for the internal drainage system and its connection to the internal manholes تقرير فحص نظام الصرف الداخلي ووصلاته بغرف التفتيش ال.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "din",
+      "dir": "rtl",
+      "align": "right",
+      "padding": [
+       0,
+       0,
+       2,
+       0
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+       6,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+       6,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+       6,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "slot": "components",
+      "value": "project_components_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+       6,
+       2,
+       6,
+       2
+      ]
+     }
+    ]
+   },
+   "layout": {
+    "key": "drainage-inspection-report",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "5293cb8890a5167b185c95cb83d08dbc5b92486535268907d0e20177af73f09c",
+    "baseSha256": "be1a1e1652fc6d2d813a4bfd4b5c8ae49f5e768cb47c491390b637225c9bd4ce",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "date": {
+      "page": 0,
+      "baseline": 171.65,
+      "size": 14,
+      "rect": [
+       376.09,
+       151.28,
+       496.09,
+       181.64
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 367.2,
+      "size": 12,
+      "rect": [
+       29.2,
+       348.05,
+       416.6,
+       385.85
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 405.75,
+      "size": 14,
+      "rect": [
+       29.2,
+       385.85,
+       416.6,
+       423.65
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 442.8,
+      "size": 12,
+      "rect": [
+       29.2,
+       423.65,
+       416.6,
+       461.45
+      ]
+     },
+     "components": {
+      "page": 0,
+      "baseline": 480.6,
+      "size": 12,
+      "rect": [
+       29.2,
+       461.45,
+       416.6,
+       499.25
+      ]
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "elevators-testing",
+    "version": 1,
+    "status": "verified",
+    "name": "Undertaking – Testing, Commissioning & Safety of Elevators",
+    "nameAr": "تعهد بإتمام الاختبارات والسلامة الفنية للمصاعد",
+    "description": "DMT form 001/Elevator/occ-2024: elevator supplier/contractor undertaking with elevator system data (2 pages).",
+    "category": "DMT undertakings",
+    "source": "02Testing Commissioning and Safety Procedures of Elevatorsتعهد بإتمام الاختبارات والسلامة الفنية للمصاعد.pdf",
+    "format": "pdf",
+    "reviewNotes": "DMT (Department of Municipalities and Transport) form. English values are written after the English label and Arabic values before the Arabic label on the same dotted line.",
+    "fields": [
+     {
+      "slot": "project_id_en",
+      "value": "project_id",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left"
+     },
+     {
+      "slot": "project_id_ar",
+      "value": "project_id",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "ltr",
+      "align": "right"
+     },
+     {
+      "slot": "date_en",
+      "value": "date",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "knockoutSlot": true
+     },
+     {
+      "slot": "date_ar",
+      "value": "date",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "ltr",
+      "align": "right",
+      "knockoutSlot": true
+     },
+     {
+      "slot": "description",
+      "en": "project_description_en",
+      "ar": "project_description_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 14
+     },
+     {
+      "slot": "address",
+      "en": "@project_address_or_location_en",
+      "ar": "@project_address_or_location_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 14
+     },
+     {
+      "slot": "owner",
+      "en": "owner_name_en",
+      "ar": "owner_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 14
+     },
+     {
+      "slot": "developer",
+      "en": "developer_name_en",
+      "ar": "developer_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 14
+     },
+     {
+      "slot": "consultant",
+      "en": "$consultant_name_en",
+      "ar": "$consultant_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 14
+     },
+     {
+      "slot": "contractor",
+      "en": "contractor_name_en",
+      "ar": "contractor_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 14
+     },
+     {
+      "slot": "area",
+      "en": "area_en",
+      "ar": "area_ar",
+      "font": "carlito",
+      "size": 9,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 6
+     },
+     {
+      "slot": "sector",
+      "en": "sector_en",
+      "ar": "sector_ar",
+      "font": "carlito",
+      "size": 9,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 6
+     },
+     {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "usage",
+      "en": "land_building_usage_en",
+      "ar": "land_building_usage_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 14
+     },
+     {
+      "slot": "auth_supply_installation_en",
+      "check": {
+       "field": "elevator_authorization_type",
+       "option": "supply_installation"
+      },
+      "style": "tick"
+     },
+     {
+      "slot": "auth_supply_installation_ar",
+      "check": {
+       "field": "elevator_authorization_type",
+       "option": "supply_installation"
+      },
+      "style": "tick"
+     },
+     {
+      "slot": "auth_installation_operation_en",
+      "check": {
+       "field": "elevator_authorization_type",
+       "option": "installation_operation"
+      },
+      "style": "tick"
+     },
+     {
+      "slot": "auth_installation_operation_ar",
+      "check": {
+       "field": "elevator_authorization_type",
+       "option": "installation_operation"
+      },
+      "style": "tick"
+     },
+     {
+      "slot": "auth_testing_maintenance_en",
+      "check": {
+       "field": "elevator_authorization_type",
+       "option": "testing_maintenance"
+      },
+      "style": "tick"
+     },
+     {
+      "slot": "auth_testing_maintenance_ar",
+      "check": {
+       "field": "elevator_authorization_type",
+       "option": "testing_maintenance"
+      },
+      "style": "tick"
+     },
+     {
+      "slot": "model_en",
+      "value": "elevator_model_en",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left"
+     },
+     {
+      "slot": "model_ar",
+      "value": "elevator_model_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right"
+     },
+     {
+      "slot": "capacity_en",
+      "value": "elevator_capacity_en",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left"
+     },
+     {
+      "slot": "capacity_ar",
+      "value": "elevator_capacity_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right"
+     },
+     {
+      "slot": "number_en",
+      "value": "elevator_number_en",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left"
+     },
+     {
+      "slot": "number_ar",
+      "value": "elevator_number_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right"
+     },
+     {
+      "slot": "specs_en",
+      "value": "elevator_specs_en",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left"
+     },
+     {
+      "slot": "specs_ar",
+      "value": "elevator_specs_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right"
+     },
+     {
+      "slot": "ack_en",
+      "value": "contractor_name_en",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "bold": true
+     },
+     {
+      "slot": "ack_ar",
+      "value": "contractor_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "bold": true
+     }
+    ]
+   },
+   "layout": {
+    "key": "elevators-testing",
+    "version": 1,
+    "format": "pdf",
+    "sourceSha256": "d9f6af2998e5f19140b27c68d785c5899a301ff515c480bb9da2e58b433212f7",
+    "baseSha256": "d3c35ebbedd22d64e8138278ddc990dca499896acb769a015b434aca6a7e48af",
+    "pageCount": 2,
+    "pages": [
+     {
+      "width": 595.32,
+      "height": 841.92
+     },
+     {
+      "width": 595.32,
+      "height": 841.92
+     }
+    ],
+    "slots": {
+     "project_id_en": {
+      "page": 0,
+      "rect": [
+       76.6,
+       121.4,
+       185.5,
+       135.3
+      ],
+      "baseline": 131.2
+     },
+     "project_id_ar": {
+      "page": 0,
+      "rect": [
+       416.4,
+       121.4,
+       525.9,
+       135.3
+      ],
+      "baseline": 131.2
+     },
+     "date_en": {
+      "page": 0,
+      "rect": [
+       53.5,
+       133.6,
+       184.1,
+       147.4
+      ],
+      "baseline": 143.3
+     },
+     "date_ar": {
+      "page": 0,
+      "rect": [
+       417.3,
+       133.6,
+       544.3,
+       147.4
+      ],
+      "baseline": 143.3
+     },
+     "description": {
+      "page": 0,
+      "rect": [
+       104.6,
+       156.8,
+       513.6,
+       170.7
+      ],
+      "baseline": 166.6
+     },
+     "address": {
+      "page": 0,
+      "rect": [
+       92.9,
+       168.4,
+       517.1,
+       182.9
+      ],
+      "baseline": 178.8
+     },
+     "owner": {
+      "page": 0,
+      "rect": [
+       92.4,
+       194.5,
+       529.3,
+       208.4
+      ],
+      "baseline": 204.2
+     },
+     "developer": {
+      "page": 0,
+      "rect": [
+       139.2,
+       222.6,
+       495.2,
+       236.4
+      ],
+      "baseline": 232.3
+     },
+     "consultant": {
+      "page": 0,
+      "rect": [
+       109.1,
+       249.4,
+       515.5,
+       263.2
+      ],
+      "baseline": 259.1
+     },
+     "contractor": {
+      "page": 0,
+      "rect": [
+       105.4,
+       276.8,
+       525.9,
+       290.7
+      ],
+      "baseline": 286.6
+     },
+     "area": {
+      "page": 0,
+      "rect": [
+       62.9,
+       303,
+       153.8,
+       316.8
+      ],
+      "baseline": 312.7
+     },
+     "sector": {
+      "page": 0,
+      "rect": [
+       235,
+       303,
+       313.2,
+       316.8
+      ],
+      "baseline": 312.7
+     },
+     "plot": {
+      "page": 0,
+      "rect": [
+       381.5,
+       296.9,
+       525.3,
+       310.7
+      ],
+      "baseline": 306.6
+     },
+     "usage": {
+      "page": 0,
+      "rect": [
+       116.8,
+       332.4,
+       485.1,
+       346.2
+      ],
+      "baseline": 342.1
+     },
+     "auth_supply_installation_en": {
+      "page": 0,
+      "rect": [
+       23.2,
+       370.7,
+       32.4,
+       379.9
+      ]
+     },
+     "auth_supply_installation_ar": {
+      "page": 0,
+      "rect": [
+       558.4,
+       370.7,
+       567.6,
+       379.9
+      ]
+     },
+     "auth_installation_operation_en": {
+      "page": 0,
+      "rect": [
+       23.2,
+       382.8,
+       32.4,
+       392
+      ]
+     },
+     "auth_installation_operation_ar": {
+      "page": 0,
+      "rect": [
+       558.4,
+       382.8,
+       567.6,
+       392
+      ]
+     },
+     "auth_testing_maintenance_en": {
+      "page": 0,
+      "rect": [
+       23.2,
+       395,
+       32.4,
+       404.2
+      ]
+     },
+     "auth_testing_maintenance_ar": {
+      "page": 0,
+      "rect": [
+       558.4,
+       395,
+       567.6,
+       404.2
+      ]
+     },
+     "model_en": {
+      "page": 0,
+      "rect": [
+       56.9,
+       418.1,
+       286.7,
+       431.9
+      ],
+      "baseline": 427.8
+     },
+     "model_ar": {
+      "page": 0,
+      "rect": [
+       323,
+       417.4,
+       542.7,
+       431.2
+      ],
+      "baseline": 427.1
+     },
+     "capacity_en": {
+      "page": 0,
+      "rect": [
+       65.2,
+       430.3,
+       287.3,
+       444.1
+      ],
+      "baseline": 440
+     },
+     "capacity_ar": {
+      "page": 0,
+      "rect": [
+       323.5,
+       429.6,
+       548.3,
+       443.4
+      ],
+      "baseline": 439.3
+     },
+     "number_en": {
+      "page": 0,
+      "rect": [
+       64,
+       442.4,
+       286.2,
+       456.3
+      ],
+      "baseline": 452.2
+     },
+     "number_ar": {
+      "page": 0,
+      "rect": [
+       323.3,
+       441.7,
+       550.5,
+       455.6
+      ],
+      "baseline": 451.4
+     },
+     "specs_en": {
+      "page": 0,
+      "rect": [
+       126.1,
+       454.7,
+       287.7,
+       468.5
+      ],
+      "baseline": 464.4
+     },
+     "specs_ar": {
+      "page": 0,
+      "rect": [
+       323.5,
+       454,
+       510.5,
+       467.8
+      ],
+      "baseline": 463.7
+     },
+     "ack_en": {
+      "page": 0,
+      "rect": [
+       79.9,
+       485.6,
+       223.7,
+       499.5
+      ],
+      "baseline": 495.4
+     },
+     "ack_ar": {
+      "page": 0,
+      "rect": [
+       360,
+       485.5,
+       528.5,
+       499.5
+      ],
+      "baseline": 495.4
+     }
+    },
+    "build": {
+     "engine": "pymupdf 1.28.2"
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "gas-system-testing",
+    "version": 1,
+    "status": "verified",
+    "name": "Undertaking – Testing & Commissioning of Gas System",
+    "nameAr": "تعهد بإنجاز أعمال الاختبار والتشغيل لأنظمة الغاز",
+    "description": "DMT form 001/Gas/occ-2024: gas system contractor undertaking (ADIFGC compliance, ADNOC-licensed installer).",
+    "category": "DMT undertakings",
+    "source": "04Undertaking  the completion of Testing and commissioning of Gas System.pdf",
+    "format": "pdf",
+    "reviewNotes": "DMT (Department of Municipalities and Transport) form. English values are written after the English label and Arabic values before the Arabic label on the same dotted line.",
+    "fields": [
+     {
+      "slot": "project_id_en",
+      "value": "project_id",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left"
+     },
+     {
+      "slot": "project_id_ar",
+      "value": "project_id",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "ltr",
+      "align": "right"
+     },
+     {
+      "slot": "date_en",
+      "value": "date",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "knockoutSlot": true
+     },
+     {
+      "slot": "date_ar",
+      "value": "date",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "ltr",
+      "align": "right",
+      "knockoutSlot": true
+     },
+     {
+      "slot": "description",
+      "en": "project_description_en",
+      "ar": "project_description_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 14
+     },
+     {
+      "slot": "address",
+      "en": "@project_address_or_location_en",
+      "ar": "@project_address_or_location_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 14
+     },
+     {
+      "slot": "owner",
+      "en": "owner_name_en",
+      "ar": "owner_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 14
+     },
+     {
+      "slot": "developer",
+      "en": "developer_name_en",
+      "ar": "developer_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 14
+     },
+     {
+      "slot": "consultant",
+      "en": "$consultant_name_en",
+      "ar": "$consultant_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 14
+     },
+     {
+      "slot": "area",
+      "en": "area_en",
+      "ar": "area_ar",
+      "font": "carlito",
+      "size": 9,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 6
+     },
+     {
+      "slot": "sector",
+      "en": "sector_en",
+      "ar": "sector_ar",
+      "font": "carlito",
+      "size": 9,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 6
+     },
+     {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "usage",
+      "en": "land_building_usage_en",
+      "ar": "land_building_usage_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 14
+     },
+     {
+      "slot": "ack_en",
+      "value": "contractor_name_en",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "bold": true
+     },
+     {
+      "slot": "ack_ar",
+      "value": "contractor_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "bold": true
+     }
+    ]
+   },
+   "layout": {
+    "key": "gas-system-testing",
+    "version": 1,
+    "format": "pdf",
+    "sourceSha256": "34f67f6114b76f558db1f5e9476a8ed7f97d6fffe6bed816112dfedbef9f58e9",
+    "baseSha256": "ec3eacc1a7d0c864143347ffcacc0353879d51fce6bfeab80bf357214259836f",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.32,
+      "height": 841.92
+     }
+    ],
+    "slots": {
+     "project_id_en": {
+      "page": 0,
+      "rect": [
+       76.5,
+       136.1,
+       185.4,
+       149.9
+      ],
+      "baseline": 145.8
+     },
+     "project_id_ar": {
+      "page": 0,
+      "rect": [
+       416.2,
+       136.1,
+       525.8,
+       149.9
+      ],
+      "baseline": 145.8
+     },
+     "date_en": {
+      "page": 0,
+      "rect": [
+       53.4,
+       148.2,
+       183.9,
+       162
+      ],
+      "baseline": 157.9
+     },
+     "date_ar": {
+      "page": 0,
+      "rect": [
+       417.2,
+       148.2,
+       544.1,
+       162
+      ],
+      "baseline": 157.9
+     },
+     "description": {
+      "page": 0,
+      "rect": [
+       104.6,
+       171.5,
+       513.6,
+       185.3
+      ],
+      "baseline": 181.2
+     },
+     "address": {
+      "page": 0,
+      "rect": [
+       88.9,
+       183,
+       520.7,
+       197.5
+      ],
+      "baseline": 193.4
+     },
+     "owner": {
+      "page": 0,
+      "rect": [
+       96.1,
+       209.2,
+       533,
+       223
+      ],
+      "baseline": 218.9
+     },
+     "developer": {
+      "page": 0,
+      "rect": [
+       142.9,
+       237.2,
+       498.9,
+       251.1
+      ],
+      "baseline": 247
+     },
+     "consultant": {
+      "page": 0,
+      "rect": [
+       102.8,
+       263.6,
+       519.3,
+       277.8
+      ],
+      "baseline": 273.7
+     },
+     "area": {
+      "page": 0,
+      "rect": [
+       57.6,
+       288.8,
+       148.5,
+       302.7
+      ],
+      "baseline": 298.6
+     },
+     "sector": {
+      "page": 0,
+      "rect": [
+       225.6,
+       288.8,
+       303.8,
+       302.7
+      ],
+      "baseline": 298.6
+     },
+     "plot": {
+      "page": 0,
+      "rect": [
+       385.2,
+       288.8,
+       529.1,
+       302.7
+      ],
+      "baseline": 298.6
+     },
+     "usage": {
+      "page": 0,
+      "rect": [
+       120.1,
+       316.9,
+       491.1,
+       331.5
+      ],
+      "baseline": 327.4
+     },
+     "ack_en": {
+      "page": 0,
+      "rect": [
+       97.9,
+       347,
+       241.7,
+       360.9
+      ],
+      "baseline": 356.8
+     },
+     "ack_ar": {
+      "page": 0,
+      "rect": [
+       424.8,
+       346.2,
+       540.9,
+       360
+      ],
+      "baseline": 355.9
+     }
+    },
+    "build": {
+     "engine": "pymupdf 1.28.2"
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "mechanical-commitment",
+    "version": 1,
+    "status": "verified",
+    "name": "Commitment – Testing & Commissioning of Mechanical Systems",
+    "nameAr": "تعهد بإنجاز كافة الأعمال وإجراء الاختبارات والتشغيل للأنظمة الميكانيكية",
+    "description": "DMT form 001/HVAC/OCC-2024: contractor commitment and consultant pledge for HVAC/mechanical testing & commissioning (2 pages).",
+    "category": "DMT undertakings",
+    "source": "01Mechanical systemتعهد بالالتزام ببنود كود أبو ظبي للأعمال الميكانيكية.pdf",
+    "format": "pdf",
+    "reviewNotes": "DMT (Department of Municipalities and Transport) form. English values are written after the English label and Arabic values before the Arabic label on the same dotted line.",
+    "fields": [
+     {
+      "slot": "project_id_en",
+      "value": "project_id",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left"
+     },
+     {
+      "slot": "project_id_ar",
+      "value": "project_id",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "ltr",
+      "align": "right"
+     },
+     {
+      "slot": "date_en",
+      "value": "date",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "knockoutSlot": true
+     },
+     {
+      "slot": "date_ar",
+      "value": "date",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "ltr",
+      "align": "right",
+      "knockoutSlot": true
+     },
+     {
+      "slot": "description",
+      "en": "project_description_en",
+      "ar": "project_description_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 14
+     },
+     {
+      "slot": "address",
+      "en": "@project_address_or_location_en",
+      "ar": "@project_address_or_location_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 14
+     },
+     {
+      "slot": "owner",
+      "en": "owner_name_en",
+      "ar": "owner_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 14
+     },
+     {
+      "slot": "developer",
+      "en": "developer_name_en",
+      "ar": "developer_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 14
+     },
+     {
+      "slot": "consultant",
+      "en": "$consultant_name_en",
+      "ar": "$consultant_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 14
+     },
+     {
+      "slot": "contractor",
+      "en": "contractor_name_en",
+      "ar": "contractor_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 14
+     },
+     {
+      "slot": "area",
+      "en": "area_en",
+      "ar": "area_ar",
+      "font": "carlito",
+      "size": 9,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 6
+     },
+     {
+      "slot": "sector",
+      "en": "sector_en",
+      "ar": "sector_ar",
+      "font": "carlito",
+      "size": 9,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 6
+     },
+     {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "usage",
+      "en": "land_building_usage_en",
+      "ar": "land_building_usage_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 14
+     },
+     {
+      "slot": "auth_supply_en",
+      "check": {
+       "field": "mech_authorization_type",
+       "option": "supply"
+      },
+      "style": "tick"
+     },
+     {
+      "slot": "auth_supply_ar",
+      "check": {
+       "field": "mech_authorization_type",
+       "option": "supply"
+      },
+      "style": "tick"
+     },
+     {
+      "slot": "auth_installation_operation_en",
+      "check": {
+       "field": "mech_authorization_type",
+       "option": "installation_operation"
+      },
+      "style": "tick"
+     },
+     {
+      "slot": "auth_installation_operation_ar",
+      "check": {
+       "field": "mech_authorization_type",
+       "option": "installation_operation"
+      },
+      "style": "tick"
+     },
+     {
+      "slot": "auth_testing_maintenance_en",
+      "check": {
+       "field": "mech_authorization_type",
+       "option": "testing_maintenance"
+      },
+      "style": "tick"
+     },
+     {
+      "slot": "auth_testing_maintenance_ar",
+      "check": {
+       "field": "mech_authorization_type",
+       "option": "testing_maintenance"
+      },
+      "style": "tick"
+     },
+     {
+      "slot": "device_spare_parts_en",
+      "check": {
+       "field": "mech_device_condition",
+       "option": "spare_parts"
+      },
+      "style": "tick"
+     },
+     {
+      "slot": "device_spare_parts_ar",
+      "check": {
+       "field": "mech_device_condition",
+       "option": "spare_parts"
+      },
+      "style": "tick"
+     },
+     {
+      "slot": "device_complete_unit_en",
+      "check": {
+       "field": "mech_device_condition",
+       "option": "complete_unit"
+      },
+      "style": "tick"
+     },
+     {
+      "slot": "device_complete_unit_ar",
+      "check": {
+       "field": "mech_device_condition",
+       "option": "complete_unit"
+      },
+      "style": "tick"
+     },
+     {
+      "slot": "device_routine_inspection_en",
+      "check": {
+       "field": "mech_device_condition",
+       "option": "routine_inspection"
+      },
+      "style": "tick"
+     },
+     {
+      "slot": "device_routine_inspection_ar",
+      "check": {
+       "field": "mech_device_condition",
+       "option": "routine_inspection"
+      },
+      "style": "tick"
+     },
+     {
+      "slot": "ack_en",
+      "value": "contractor_name_en",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "bold": true
+     },
+     {
+      "slot": "ack_ar",
+      "value": "contractor_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "bold": true
+     },
+     {
+      "slot": "pledge_en",
+      "value": "$consultant_name_en",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left"
+     },
+     {
+      "slot": "pledge_ar",
+      "value": "$consultant_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right"
+     }
+    ]
+   },
+   "layout": {
+    "key": "mechanical-commitment",
+    "version": 1,
+    "format": "pdf",
+    "sourceSha256": "56638763a6d149dd41f3e75d5de05eb09ab9df777ceb66883c3cfc431fbe5206",
+    "baseSha256": "12e9c33a9746e041f8c798ded34e3b2f5caa27ac756b0a8b0c140cd99da52e25",
+    "pageCount": 2,
+    "pages": [
+     {
+      "width": 595.32,
+      "height": 841.92
+     },
+     {
+      "width": 595.32,
+      "height": 841.92
+     }
+    ],
+    "slots": {
+     "project_id_en": {
+      "page": 0,
+      "rect": [
+       76.6,
+       96,
+       185.5,
+       109.8
+      ],
+      "baseline": 105.7
+     },
+     "project_id_ar": {
+      "page": 0,
+      "rect": [
+       416.3,
+       96,
+       525.8,
+       109.8
+      ],
+      "baseline": 105.7
+     },
+     "date_en": {
+      "page": 0,
+      "rect": [
+       53.5,
+       108.1,
+       184.1,
+       121.9
+      ],
+      "baseline": 117.8
+     },
+     "date_ar": {
+      "page": 0,
+      "rect": [
+       417.3,
+       108.1,
+       544.2,
+       121.9
+      ],
+      "baseline": 117.8
+     },
+     "description": {
+      "page": 0,
+      "rect": [
+       104.6,
+       131.4,
+       513.6,
+       145.2
+      ],
+      "baseline": 141.1
+     },
+     "address": {
+      "page": 0,
+      "rect": [
+       108.7,
+       142.9,
+       520.2,
+       157.5
+      ],
+      "baseline": 152.6
+     },
+     "owner": {
+      "page": 0,
+      "rect": [
+       92.4,
+       169,
+       529.3,
+       182.8
+      ],
+      "baseline": 178.7
+     },
+     "developer": {
+      "page": 0,
+      "rect": [
+       139.2,
+       197.2,
+       495.2,
+       211
+      ],
+      "baseline": 206.9
+     },
+     "consultant": {
+      "page": 0,
+      "rect": [
+       108.8,
+       223.1,
+       517.8,
+       238.5
+      ],
+      "baseline": 234.4
+     },
+     "contractor": {
+      "page": 0,
+      "rect": [
+       110.4,
+       251.4,
+       448.5,
+       265.9
+      ],
+      "baseline": 261.8
+     },
+     "area": {
+      "page": 0,
+      "rect": [
+       53.3,
+       276.1,
+       144.2,
+       290
+      ],
+      "baseline": 285.8
+     },
+     "sector": {
+      "page": 0,
+      "rect": [
+       220.8,
+       276.1,
+       299,
+       290
+      ],
+      "baseline": 285.8
+     },
+     "plot": {
+      "page": 0,
+      "rect": [
+       373.9,
+       276.1,
+       525.3,
+       290.7
+      ],
+      "baseline": 286.6
+     },
+     "usage": {
+      "page": 0,
+      "rect": [
+       116.4,
+       304.2,
+       487.4,
+       318
+      ],
+      "baseline": 313.9
+     },
+     "auth_supply_en": {
+      "page": 0,
+      "rect": [
+       32,
+       342.5,
+       41.2,
+       351.7
+      ]
+     },
+     "auth_supply_ar": {
+      "page": 0,
+      "rect": [
+       558.4,
+       342.5,
+       567.6,
+       351.7
+      ]
+     },
+     "auth_installation_operation_en": {
+      "page": 0,
+      "rect": [
+       32,
+       354.6,
+       41.2,
+       363.8
+      ]
+     },
+     "auth_installation_operation_ar": {
+      "page": 0,
+      "rect": [
+       558.4,
+       354.6,
+       567.6,
+       363.8
+      ]
+     },
+     "auth_testing_maintenance_en": {
+      "page": 0,
+      "rect": [
+       32,
+       366.8,
+       41.2,
+       376
+      ]
+     },
+     "auth_testing_maintenance_ar": {
+      "page": 0,
+      "rect": [
+       558.4,
+       366.8,
+       567.6,
+       376
+      ]
+     },
+     "device_spare_parts_en": {
+      "page": 0,
+      "rect": [
+       23.7,
+       391.8,
+       32.9,
+       401
+      ]
+     },
+     "device_spare_parts_ar": {
+      "page": 0,
+      "rect": [
+       557.1,
+       394.8,
+       566.3,
+       404
+      ]
+     },
+     "device_complete_unit_en": {
+      "page": 0,
+      "rect": [
+       23.7,
+       403.9,
+       32.9,
+       413.1
+      ]
+     },
+     "device_complete_unit_ar": {
+      "page": 0,
+      "rect": [
+       557.1,
+       407,
+       566.3,
+       416.2
+      ]
+     },
+     "device_routine_inspection_en": {
+      "page": 0,
+      "rect": [
+       23.7,
+       416.2,
+       32.9,
+       425.4
+      ]
+     },
+     "device_routine_inspection_ar": {
+      "page": 0,
+      "rect": [
+       557.1,
+       419.3,
+       566.3,
+       428.5
+      ]
+     },
+     "ack_en": {
+      "page": 0,
+      "rect": [
+       101.8,
+       439,
+       251.3,
+       453.3
+      ],
+      "baseline": 448.8
+     },
+     "ack_ar": {
+      "page": 0,
+      "rect": [
+       409.4,
+       439,
+       534.8,
+       453.3
+      ],
+      "baseline": 448.8
+     },
+     "pledge_en": {
+      "page": 0,
+      "rect": [
+       25.8,
+       689,
+       260.5,
+       702.9
+      ],
+      "baseline": 698.8
+     },
+     "pledge_ar": {
+      "page": 0,
+      "rect": [
+       335.9,
+       689,
+       570.6,
+       702.9
+      ],
+      "baseline": 698.8
+     }
+    },
+    "build": {
+     "engine": "pymupdf 1.28.2"
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "no-elevators",
+    "version": 1,
+    "status": "verified",
+    "name": "No Elevators Letter",
+    "nameAr": "عدم وجود مصاعد",
+    "description": "Letter confirming that the project contains no electric elevators.",
+    "category": "Letters",
+    "source": "عدم وجود مصاعد في المشروع.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "din",
+      "dir": "rtl",
+      "align": "right",
+      "padding": [
+       0,
+       0,
+       2,
+       0
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+       6,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+       6,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+       6,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "slot": "components",
+      "value": "project_components_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+       6,
+       2,
+       6,
+       2
+      ]
+     }
+    ]
+   },
+   "layout": {
+    "key": "no-elevators",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "ba7e9b74ad286f1e3c0b67bb343fc6faeb44d2a3909ac7086ec8b70987116303",
+    "baseSha256": "7896e66c33318c454654a5d627f451cc61db336cefefe8e8dbaaf3a8a465c071",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "date": {
+      "page": 0,
+      "baseline": 103.15,
+      "size": 14,
+      "rect": [
+       379.19,
+       82.78,
+       499.19,
+       113.14
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 319.9,
+      "size": 12,
+      "rect": [
+       29.2,
+       300.75,
+       416.6,
+       338.55
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 358.45,
+      "size": 14,
+      "rect": [
+       29.2,
+       338.55,
+       416.6,
+       376.35
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 395.5,
+      "size": 12,
+      "rect": [
+       29.2,
+       376.35,
+       416.6,
+       414.15
+      ]
+     },
+     "components": {
+      "page": 0,
+      "baseline": 433.3,
+      "size": 12,
+      "rect": [
+       29.2,
+       414.15,
+       416.6,
+       451.95
+      ]
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "no-gas-systems",
+    "version": 1,
+    "status": "verified",
+    "name": "No Gas Systems Letter",
+    "nameAr": "عدم وجود أنظمة غاز",
+    "description": "Letter confirming that the project contains no gas systems.",
+    "category": "Letters",
+    "source": "عدم وجود أنظمة غاز في المشروع.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "din",
+      "dir": "rtl",
+      "align": "right",
+      "padding": [
+       0,
+       0,
+       2,
+       0
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+       6,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+       6,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+       6,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "slot": "components",
+      "value": "project_components_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+       6,
+       2,
+       6,
+       2
+      ]
+     }
+    ]
+   },
+   "layout": {
+    "key": "no-gas-systems",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "e568c374889cbdf10620472262e0aef0211e11f5e0638ab1afef20733d55cba1",
+    "baseSha256": "d1d17acd5b41ae232813af6a99886bd013812fd746608defe96e665868da06b7",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "date": {
+      "page": 0,
+      "baseline": 103.15,
+      "size": 14,
+      "rect": [
+       379.19,
+       82.78,
+       499.19,
+       113.14
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 298.7,
+      "size": 12,
+      "rect": [
+       29.2,
+       279.55,
+       416.6,
+       317.35
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 337.25,
+      "size": 14,
+      "rect": [
+       29.2,
+       317.35,
+       416.6,
+       355.15
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 374.3,
+      "size": 12,
+      "rect": [
+       29.2,
+       355.15,
+       416.6,
+       392.95
+      ]
+     },
+     "components": {
+      "page": 0,
+      "baseline": 412.1,
+      "size": 12,
+      "rect": [
+       29.2,
+       392.95,
+       416.6,
+       430.75
+      ]
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "no-swimming-pools",
+    "version": 1,
+    "status": "verified",
+    "name": "No Swimming Pools Letter",
+    "nameAr": "عدم وجود مسابح",
+    "description": "Letter confirming that the project contains no swimming pools.",
+    "category": "Letters",
+    "source": "عدم وجود مسابح في المشروع.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "din",
+      "dir": "rtl",
+      "align": "right",
+      "padding": [
+       0,
+       0,
+       2,
+       0
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+       6,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+       6,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+       6,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "slot": "components",
+      "value": "project_components_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+       6,
+       2,
+       6,
+       2
+      ]
+     }
+    ]
+   },
+   "layout": {
+    "key": "no-swimming-pools",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "7519a0bbb02e05f349290d8b61b44221ddb08e1bc5fcdfe6fbee2468bc7414bc",
+    "baseSha256": "363fb8417381df1e83d794c45531fa17317e5386c7b0b4990f1ea583df9bc7d5",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "date": {
+      "page": 0,
+      "baseline": 103.15,
+      "size": 14,
+      "rect": [
+       376.09,
+       82.78,
+       496.09,
+       113.14
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 298.7,
+      "size": 12,
+      "rect": [
+       29.2,
+       279.55,
+       416.6,
+       317.35
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 337.25,
+      "size": 14,
+      "rect": [
+       29.2,
+       317.35,
+       416.6,
+       355.15
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 374.3,
+      "size": 12,
+      "rect": [
+       29.2,
+       355.15,
+       416.6,
+       392.95
+      ]
+     },
+     "components": {
+      "page": 0,
+      "baseline": 412.1,
+      "size": 12,
+      "rect": [
+       29.2,
+       392.95,
+       416.6,
+       430.75
+      ]
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0
+    }
+   }
+  },
+  {
+   "definition": {
     "key": "number-of-users",
     "version": 1,
     "status": "verified",
@@ -15,7 +3364,7 @@
      {
       "slot": "date",
       "value": "date",
-      "font": "kufi",
+      "font": "din",
       "size": 14,
       "dir": "rtl",
       "align": "right",
@@ -85,7 +3434,7 @@
      {
       "slot": "users",
       "value": "number_of_users_ar",
-      "font": "kufi",
+      "font": "din",
       "align": "right",
       "dir": "rtl",
       "padding": [
@@ -102,7 +3451,7 @@
     "version": 1,
     "format": "docx",
     "sourceSha256": "0e1bcc42c9a35a87fcd83480f8c4ded71c37eda8b409dda81d62b38b6f5ce48e",
-    "baseSha256": "599735421397227007dd4c5abb389d6296332047049471dd2392222cf7fbd7d7",
+    "baseSha256": "2d99c634dc4c9b61cfd6b1097356c3ef2d3437ca9242d2dbd7828299ede7919d",
     "pageCount": 1,
     "pages": [
      {
@@ -116,71 +3465,4761 @@
       "baseline": 103.15,
       "size": 14,
       "rect": [
-       370.21,
-       80.05,
-       490.21,
-       114.25
+       376.09,
+       82.78,
+       496.09,
+       113.14
       ]
      },
      "owner": {
       "page": 0,
-      "baseline": 295.95,
+      "baseline": 292.9,
       "size": 14,
       "rect": [
        29.2,
-       276.35,
+       275.05,
        416.6,
-       314.15
+       312.85
       ]
      },
      "consultant": {
       "page": 0,
-      "baseline": 334.05,
+      "baseline": 332.75,
       "size": 14,
       "rect": [
        29.2,
-       314.15,
+       312.85,
        416.6,
-       351.95
+       350.65
       ]
      },
      "location": {
       "page": 0,
-      "baseline": 371.85,
+      "baseline": 370.55,
       "size": 14,
       "rect": [
        29.2,
-       351.95,
+       350.65,
        416.6,
-       389.75
+       388.45
       ]
      },
      "components": {
       "page": 0,
-      "baseline": 409.65,
+      "baseline": 408.35,
       "size": 14,
       "rect": [
        29.2,
-       389.75,
+       388.45,
        416.6,
-       427.55
+       426.25
       ]
      },
      "users": {
       "page": 0,
-      "baseline": 509.35,
+      "baseline": 507.8,
       "size": 16,
       "rect": [
-       148.68,
-       483.24,
-       348.68,
-       521.75
+       158.07,
+       484.81,
+       358.07,
+       518.94
       ]
      }
     },
     "build": {
      "engine": "LibreOffice 24.2.7.2 420(Build:2)",
-     "layoutDiff": 0.000124
+     "layoutDiff": 0.000132
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "occupancy-undertaking-str-arch",
+    "version": 1,
+    "status": "verified",
+    "name": "Building Occupancy Undertaking – Architectural & Structural",
+    "nameAr": "تعهد إشغال مبنى – معماري وإنشائي",
+    "description": "Undertaking to the Building Permits Department that occupancy and operational loads match the approved architectural and structural design.",
+    "category": "Letters",
+    "source": "01UNDERTAKE STR ARCH.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "tajawal",
+      "dir": "rtl",
+      "align": "right",
+      "padding": [
+       0,
+       0,
+       2,
+       0
+      ]
+     },
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "tajawal",
+      "size": 11,
+      "dir": "ltr",
+      "align": "center",
+      "padding": [
+       3,
+       1,
+       3,
+       1
+      ]
+     },
+     {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "tajawal",
+      "size": 11,
+      "dir": "ltr",
+      "align": "center",
+      "padding": [
+       3,
+       1,
+       3,
+       1
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "tajawal",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "padding": [
+       3,
+       1,
+       3,
+       1
+      ]
+     },
+     {
+      "slot": "area",
+      "value": "area_ar",
+      "font": "tajawal",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "padding": [
+       3,
+       1,
+       3,
+       1
+      ]
+     },
+     {
+      "slot": "applicant_name",
+      "value": "applicant_role=contractor ? contractor_name_ar : $consultant_name_ar",
+      "font": "tajawal",
+      "bold": true,
+      "size": 12,
+      "align": "center",
+      "multiline": true,
+      "padding": [
+       3,
+       1,
+       3,
+       1
+      ]
+     },
+     {
+      "slot": "box_contractor",
+      "check": {
+       "field": "applicant_role",
+       "equals": "contractor"
+      },
+      "style": "tick"
+     },
+     {
+      "slot": "box_consultant",
+      "check": {
+       "field": "applicant_role",
+       "equals": "consultant"
+      },
+      "style": "tick"
+     }
+    ]
+   },
+   "layout": {
+    "key": "occupancy-undertaking-str-arch",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "4ad608b7f6c207e63c8b2f7c54bf17082024d7e4a3ab54f9b4401025bb9aac89",
+    "baseSha256": "669964e76b1a0d33c2055b40ebb34c0d74a1974a540b607d90b1c5bbedc40858",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 612,
+      "height": 792
+     }
+    ],
+    "slots": {
+     "date": {
+      "page": 0,
+      "baseline": 83.45,
+      "size": 12,
+      "rect": [
+       366.51,
+       70.59,
+       486.51,
+       87.98
+      ]
+     },
+     "project_id": {
+      "page": 0,
+      "baseline": 202.55,
+      "size": 12,
+      "rect": [
+       280.35,
+       188.55,
+       436.15,
+       205.05
+      ]
+     },
+     "plot": {
+      "page": 0,
+      "baseline": 199.8,
+      "size": 12,
+      "rect": [
+       90.3,
+       188.35,
+       193.9,
+       206.85
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 218.3,
+      "size": 12,
+      "rect": [
+       275,
+       206.85,
+       441.6,
+       223.05
+      ]
+     },
+     "area": {
+      "page": 0,
+      "baseline": 218.3,
+      "size": 12,
+      "rect": [
+       90.3,
+       206.85,
+       193.9,
+       223.05
+      ]
+     },
+     "applicant_name": {
+      "page": 0,
+      "baseline": 436.5,
+      "size": 12,
+      "rect": [
+       90.3,
+       425.05,
+       521.8,
+       441.15
+      ]
+     },
+     "box_contractor": {
+      "page": 0,
+      "rect": [
+       247.9,
+       406.16,
+       260.44,
+       422.44
+      ]
+     },
+     "box_consultant": {
+      "page": 0,
+      "rect": [
+       183.55,
+       406.16,
+       196.09,
+       422.44
+      ]
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "owner-undertaking-cd-renewal",
+    "version": 1,
+    "status": "verified",
+    "name": "Owner Undertaking – Annual Completion Certificate Renewal",
+    "nameAr": "تعهد المالك بتجديد شهادة الإستيفاء سنوياً",
+    "description": "Owner undertaking to Abu Dhabi Civil Defence to renew the building completion (Estifaa) certificate annually.",
+    "category": "Letters",
+    "source": "01OWNER UNDERTAKE FOR CD ESTIFAA- تعهد المالك بتجديد شهادة الإستيفاء.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "din",
+      "dir": "rtl",
+      "align": "right",
+      "padding": [
+       0,
+       0,
+       2,
+       0
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+       6,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+       6,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+       6,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "slot": "components",
+      "value": "project_components_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+       6,
+       2,
+       6,
+       2
+      ]
+     }
+    ]
+   },
+   "layout": {
+    "key": "owner-undertaking-cd-renewal",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "3ab962ba5f0d89c627ff8ad6817e46421e1febb3ce45dd02782b56fb62b74603",
+    "baseSha256": "c2ec7a54c643fa0971578051d4a8fc09cef8ff156959bfa66d2837c1e29aefbc",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "date": {
+      "page": 0,
+      "baseline": 70.5,
+      "size": 14,
+      "rect": [
+       376.09,
+       50.13,
+       496.09,
+       80.49
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 240.35,
+      "size": 12,
+      "rect": [
+       29.2,
+       221.15,
+       416.6,
+       258.95
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 278.9,
+      "size": 14,
+      "rect": [
+       29.2,
+       258.95,
+       416.6,
+       296.75
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 315.95,
+      "size": 12,
+      "rect": [
+       29.2,
+       296.75,
+       416.6,
+       334.55
+      ]
+     },
+     "components": {
+      "page": 0,
+      "baseline": 353.75,
+      "size": 12,
+      "rect": [
+       29.2,
+       334.55,
+       416.6,
+       372.35
+      ]
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "owner-undertaking-no-sewage-rain-link",
+    "version": 1,
+    "status": "verified",
+    "name": "Owner Undertaking – No Sewage / Rainwater Connection",
+    "nameAr": "تعهد عدم ربط شبكة الصرف الصحي مع صرف مياه الأمطار",
+    "description": "Owner undertaking that the sewage network is not connected to the rainwater drainage network.",
+    "category": "Letters",
+    "source": "05OWNER UNDERTAKE - تعهد عدم ربط شبكة الصرف الصحي مع صرف مياه الأمطار.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "din",
+      "dir": "rtl",
+      "align": "right",
+      "padding": [
+       0,
+       0,
+       2,
+       0
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+       6,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+       6,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+       6,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "slot": "components",
+      "value": "project_components_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+       6,
+       2,
+       6,
+       2
+      ]
+     }
+    ]
+   },
+   "layout": {
+    "key": "owner-undertaking-no-sewage-rain-link",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "fb528d4c9d670d0a8a35e5c8c782afa75984eaf3d4409e90002eaa4ba250cd3f",
+    "baseSha256": "dbdc93ad5d5446bc56abc0d26b2124a94e9f19e1d2c67c78f9b4625ecc4f654d",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "date": {
+      "page": 0,
+      "baseline": 137.4,
+      "size": 14,
+      "rect": [
+       343.44,
+       117.03,
+       463.44,
+       147.39
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 357.65,
+      "size": 12,
+      "rect": [
+       29.2,
+       338.45,
+       416.6,
+       376.25
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 396.2,
+      "size": 14,
+      "rect": [
+       29.2,
+       376.25,
+       416.6,
+       414.05
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 433.25,
+      "size": 12,
+      "rect": [
+       29.2,
+       414.05,
+       416.6,
+       451.85
+      ]
+     },
+     "components": {
+      "page": 0,
+      "baseline": 471.05,
+      "size": 12,
+      "rect": [
+       29.2,
+       451.85,
+       416.6,
+       489.65
+      ]
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "photo-report-mechanical",
+    "version": 1,
+    "status": "verified",
+    "name": "Photo Technical Report – Mechanical Works",
+    "nameAr": "تقرير فني مصور للأعمال الميكانيكية",
+    "description": "Photo report of mechanical works with up to 14 captioned site photos (details and notes per photo).",
+    "category": "Photo reports",
+    "source": "تقرير فني مصور للأعمال الميكانيكية.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "naskh",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+       6,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "naskh",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+       6,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "naskh",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+       6,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "slot": "components",
+      "value": "project_components_ar",
+      "font": "naskh",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+       6,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "slot": "photo_0",
+      "photo": {
+       "field": "mechanical_photos",
+       "index": 0
+      },
+      "padding": 5
+     },
+     {
+      "slot": "details_0",
+      "photoText": {
+       "field": "mechanical_photos",
+       "index": 0,
+       "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "notes_0",
+      "photoText": {
+       "field": "mechanical_photos",
+       "index": 0,
+       "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "photo_1",
+      "photo": {
+       "field": "mechanical_photos",
+       "index": 1
+      },
+      "padding": 5
+     },
+     {
+      "slot": "details_1",
+      "photoText": {
+       "field": "mechanical_photos",
+       "index": 1,
+       "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "notes_1",
+      "photoText": {
+       "field": "mechanical_photos",
+       "index": 1,
+       "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "photo_2",
+      "photo": {
+       "field": "mechanical_photos",
+       "index": 2
+      },
+      "padding": 5
+     },
+     {
+      "slot": "details_2",
+      "photoText": {
+       "field": "mechanical_photos",
+       "index": 2,
+       "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "notes_2",
+      "photoText": {
+       "field": "mechanical_photos",
+       "index": 2,
+       "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "photo_3",
+      "photo": {
+       "field": "mechanical_photos",
+       "index": 3
+      },
+      "padding": 5
+     },
+     {
+      "slot": "details_3",
+      "photoText": {
+       "field": "mechanical_photos",
+       "index": 3,
+       "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "notes_3",
+      "photoText": {
+       "field": "mechanical_photos",
+       "index": 3,
+       "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "photo_4",
+      "photo": {
+       "field": "mechanical_photos",
+       "index": 4
+      },
+      "padding": 5
+     },
+     {
+      "slot": "details_4",
+      "photoText": {
+       "field": "mechanical_photos",
+       "index": 4,
+       "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "notes_4",
+      "photoText": {
+       "field": "mechanical_photos",
+       "index": 4,
+       "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "photo_5",
+      "photo": {
+       "field": "mechanical_photos",
+       "index": 5
+      },
+      "padding": 5
+     },
+     {
+      "slot": "details_5",
+      "photoText": {
+       "field": "mechanical_photos",
+       "index": 5,
+       "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "notes_5",
+      "photoText": {
+       "field": "mechanical_photos",
+       "index": 5,
+       "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "photo_6",
+      "photo": {
+       "field": "mechanical_photos",
+       "index": 6
+      },
+      "padding": 5
+     },
+     {
+      "slot": "details_6",
+      "photoText": {
+       "field": "mechanical_photos",
+       "index": 6,
+       "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "notes_6",
+      "photoText": {
+       "field": "mechanical_photos",
+       "index": 6,
+       "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "photo_7",
+      "photo": {
+       "field": "mechanical_photos",
+       "index": 7
+      },
+      "padding": 5
+     },
+     {
+      "slot": "details_7",
+      "photoText": {
+       "field": "mechanical_photos",
+       "index": 7,
+       "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "notes_7",
+      "photoText": {
+       "field": "mechanical_photos",
+       "index": 7,
+       "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "photo_8",
+      "photo": {
+       "field": "mechanical_photos",
+       "index": 8
+      },
+      "padding": 5
+     },
+     {
+      "slot": "details_8",
+      "photoText": {
+       "field": "mechanical_photos",
+       "index": 8,
+       "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "notes_8",
+      "photoText": {
+       "field": "mechanical_photos",
+       "index": 8,
+       "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "photo_9",
+      "photo": {
+       "field": "mechanical_photos",
+       "index": 9
+      },
+      "padding": 5
+     },
+     {
+      "slot": "details_9",
+      "photoText": {
+       "field": "mechanical_photos",
+       "index": 9,
+       "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "notes_9",
+      "photoText": {
+       "field": "mechanical_photos",
+       "index": 9,
+       "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "photo_10",
+      "photo": {
+       "field": "mechanical_photos",
+       "index": 10
+      },
+      "padding": 5
+     },
+     {
+      "slot": "details_10",
+      "photoText": {
+       "field": "mechanical_photos",
+       "index": 10,
+       "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "notes_10",
+      "photoText": {
+       "field": "mechanical_photos",
+       "index": 10,
+       "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "photo_11",
+      "photo": {
+       "field": "mechanical_photos",
+       "index": 11
+      },
+      "padding": 5
+     },
+     {
+      "slot": "details_11",
+      "photoText": {
+       "field": "mechanical_photos",
+       "index": 11,
+       "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "notes_11",
+      "photoText": {
+       "field": "mechanical_photos",
+       "index": 11,
+       "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "photo_12",
+      "photo": {
+       "field": "mechanical_photos",
+       "index": 12
+      },
+      "padding": 5
+     },
+     {
+      "slot": "details_12",
+      "photoText": {
+       "field": "mechanical_photos",
+       "index": 12,
+       "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "notes_12",
+      "photoText": {
+       "field": "mechanical_photos",
+       "index": 12,
+       "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "photo_13",
+      "photo": {
+       "field": "mechanical_photos",
+       "index": 13
+      },
+      "padding": 5
+     },
+     {
+      "slot": "details_13",
+      "photoText": {
+       "field": "mechanical_photos",
+       "index": 13,
+       "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "notes_13",
+      "photoText": {
+       "field": "mechanical_photos",
+       "index": 13,
+       "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     }
+    ],
+    "reviewNotes": "Nested floating tables of the original are anchored inline so LibreOffice can render them; photo area = fixed-height spacer above each details table.",
+    "trimEmptyPhotoPages": {
+     "field": "mechanical_photos",
+     "slotsPerPage": [
+      2,
+      4,
+      4,
+      4
+     ]
+    }
+   },
+   "layout": {
+    "key": "photo-report-mechanical",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "ceec78749c0962b0f2e5504724edfde0b8e840d634385eb8da47aa15aacf4669",
+    "baseSha256": "78caf6c026d2a60f9cf12fa67fe2456107bf19906a5dd383cd3696dc4ef40249",
+    "pageCount": 4,
+    "pages": [
+     {
+      "width": 612,
+      "height": 792
+     },
+     {
+      "width": 612,
+      "height": 792
+     },
+     {
+      "width": 612,
+      "height": 792
+     },
+     {
+      "width": 612,
+      "height": 792
+     }
+    ],
+    "slots": {
+     "owner": {
+      "page": 0,
+      "baseline": 169.8,
+      "size": 11,
+      "rect": [
+       29.2,
+       150.95,
+       416.6,
+       187.75
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 207.65,
+      "size": 14,
+      "rect": [
+       29.2,
+       187.75,
+       416.6,
+       224.45
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 243.3,
+      "size": 11,
+      "rect": [
+       29.2,
+       224.45,
+       416.6,
+       261.25
+      ]
+     },
+     "components": {
+      "page": 0,
+      "baseline": 280.05,
+      "size": 11,
+      "rect": [
+       29.2,
+       261.25,
+       416.6,
+       297.95
+      ]
+     },
+     "photo_0": {
+      "page": 0,
+      "baseline": 522.95,
+      "size": 12,
+      "rect": [
+       340.3,
+       369.65,
+       590.3,
+       560.25
+      ]
+     },
+     "details_0": {
+      "page": 0,
+      "baseline": 581.7,
+      "size": 11,
+      "rect": [
+       340.3,
+       560.25,
+       510.3,
+       604.75
+      ]
+     },
+     "notes_0": {
+      "page": 0,
+      "baseline": 624.6,
+      "size": 11,
+      "rect": [
+       340.3,
+       604.75,
+       510.3,
+       645.55
+      ]
+     },
+     "photo_1": {
+      "page": 0,
+      "baseline": 517.85,
+      "size": 12,
+      "rect": [
+       90.3,
+       369.65,
+       340.3,
+       555.15
+      ]
+     },
+     "details_1": {
+      "page": 0,
+      "baseline": 576.6,
+      "size": 11,
+      "rect": [
+       90.3,
+       555.15,
+       260.3,
+       599.65
+      ]
+     },
+     "notes_1": {
+      "page": 0,
+      "baseline": 619.5,
+      "size": 11,
+      "rect": [
+       90.3,
+       599.65,
+       260.3,
+       640.45
+      ]
+     },
+     "photo_2": {
+      "page": 1,
+      "baseline": 225.6,
+      "size": 12,
+      "rect": [
+       340.3,
+       72.25,
+       590.3,
+       262.85
+      ]
+     },
+     "details_2": {
+      "page": 1,
+      "baseline": 284.35,
+      "size": 11,
+      "rect": [
+       340.3,
+       262.85,
+       510.3,
+       307.35
+      ]
+     },
+     "notes_2": {
+      "page": 1,
+      "baseline": 327.25,
+      "size": 11,
+      "rect": [
+       340.3,
+       307.35,
+       510.3,
+       348.25
+      ]
+     },
+     "photo_3": {
+      "page": 1,
+      "baseline": 220.5,
+      "size": 12,
+      "rect": [
+       90.3,
+       72.25,
+       340.3,
+       257.75
+      ]
+     },
+     "details_3": {
+      "page": 1,
+      "baseline": 279.25,
+      "size": 11,
+      "rect": [
+       90.3,
+       257.75,
+       260.3,
+       302.25
+      ]
+     },
+     "notes_3": {
+      "page": 1,
+      "baseline": 322.15,
+      "size": 11,
+      "rect": [
+       90.3,
+       302.25,
+       260.3,
+       343.15
+      ]
+     },
+     "photo_4": {
+      "page": 1,
+      "baseline": 507.2,
+      "size": 12,
+      "rect": [
+       340.3,
+       353.85,
+       590.3,
+       544.45
+      ]
+     },
+     "details_4": {
+      "page": 1,
+      "baseline": 565.95,
+      "size": 11,
+      "rect": [
+       340.3,
+       544.45,
+       510.3,
+       588.95
+      ]
+     },
+     "notes_4": {
+      "page": 1,
+      "baseline": 608.85,
+      "size": 11,
+      "rect": [
+       340.3,
+       588.95,
+       510.3,
+       629.85
+      ]
+     },
+     "photo_5": {
+      "page": 1,
+      "baseline": 502.1,
+      "size": 12,
+      "rect": [
+       90.3,
+       353.85,
+       340.3,
+       539.35
+      ]
+     },
+     "details_5": {
+      "page": 1,
+      "baseline": 560.85,
+      "size": 11,
+      "rect": [
+       90.3,
+       539.35,
+       260.3,
+       583.85
+      ]
+     },
+     "notes_5": {
+      "page": 1,
+      "baseline": 603.75,
+      "size": 11,
+      "rect": [
+       90.3,
+       583.85,
+       260.3,
+       624.75
+      ]
+     },
+     "photo_6": {
+      "page": 2,
+      "baseline": 225.6,
+      "size": 12,
+      "rect": [
+       340.3,
+       72.25,
+       590.3,
+       262.85
+      ]
+     },
+     "details_6": {
+      "page": 2,
+      "baseline": 284.35,
+      "size": 11,
+      "rect": [
+       340.3,
+       262.85,
+       510.3,
+       307.35
+      ]
+     },
+     "notes_6": {
+      "page": 2,
+      "baseline": 327.25,
+      "size": 11,
+      "rect": [
+       340.3,
+       307.35,
+       510.3,
+       348.25
+      ]
+     },
+     "photo_7": {
+      "page": 2,
+      "baseline": 220.5,
+      "size": 12,
+      "rect": [
+       90.3,
+       72.25,
+       340.3,
+       257.75
+      ]
+     },
+     "details_7": {
+      "page": 2,
+      "baseline": 279.25,
+      "size": 11,
+      "rect": [
+       90.3,
+       257.75,
+       260.3,
+       302.25
+      ]
+     },
+     "notes_7": {
+      "page": 2,
+      "baseline": 322.15,
+      "size": 11,
+      "rect": [
+       90.3,
+       302.25,
+       260.3,
+       343.15
+      ]
+     },
+     "photo_8": {
+      "page": 2,
+      "baseline": 507.2,
+      "size": 12,
+      "rect": [
+       340.3,
+       353.85,
+       590.3,
+       544.45
+      ]
+     },
+     "details_8": {
+      "page": 2,
+      "baseline": 565.95,
+      "size": 11,
+      "rect": [
+       340.3,
+       544.45,
+       510.3,
+       588.95
+      ]
+     },
+     "notes_8": {
+      "page": 2,
+      "baseline": 608.85,
+      "size": 11,
+      "rect": [
+       340.3,
+       588.95,
+       510.3,
+       629.85
+      ]
+     },
+     "photo_9": {
+      "page": 2,
+      "baseline": 502.1,
+      "size": 12,
+      "rect": [
+       90.3,
+       353.85,
+       340.3,
+       539.35
+      ]
+     },
+     "details_9": {
+      "page": 2,
+      "baseline": 560.85,
+      "size": 11,
+      "rect": [
+       90.3,
+       539.35,
+       260.3,
+       583.85
+      ]
+     },
+     "notes_9": {
+      "page": 2,
+      "baseline": 603.75,
+      "size": 11,
+      "rect": [
+       90.3,
+       583.85,
+       260.3,
+       624.75
+      ]
+     },
+     "photo_10": {
+      "page": 3,
+      "baseline": 225.6,
+      "size": 12,
+      "rect": [
+       340.3,
+       72.25,
+       590.3,
+       262.85
+      ]
+     },
+     "details_10": {
+      "page": 3,
+      "baseline": 284.35,
+      "size": 11,
+      "rect": [
+       340.3,
+       262.85,
+       510.3,
+       307.35
+      ]
+     },
+     "notes_10": {
+      "page": 3,
+      "baseline": 327.25,
+      "size": 11,
+      "rect": [
+       340.3,
+       307.35,
+       510.3,
+       348.25
+      ]
+     },
+     "photo_11": {
+      "page": 3,
+      "baseline": 220.5,
+      "size": 12,
+      "rect": [
+       90.3,
+       72.25,
+       340.3,
+       257.75
+      ]
+     },
+     "details_11": {
+      "page": 3,
+      "baseline": 279.25,
+      "size": 11,
+      "rect": [
+       90.3,
+       257.75,
+       260.3,
+       302.25
+      ]
+     },
+     "notes_11": {
+      "page": 3,
+      "baseline": 322.15,
+      "size": 11,
+      "rect": [
+       90.3,
+       302.25,
+       260.3,
+       343.15
+      ]
+     },
+     "photo_12": {
+      "page": 3,
+      "baseline": 507.2,
+      "size": 12,
+      "rect": [
+       340.3,
+       353.85,
+       590.3,
+       544.45
+      ]
+     },
+     "details_12": {
+      "page": 3,
+      "baseline": 565.95,
+      "size": 11,
+      "rect": [
+       340.3,
+       544.45,
+       510.3,
+       588.95
+      ]
+     },
+     "notes_12": {
+      "page": 3,
+      "baseline": 608.85,
+      "size": 11,
+      "rect": [
+       340.3,
+       588.95,
+       510.3,
+       629.85
+      ]
+     },
+     "photo_13": {
+      "page": 3,
+      "baseline": 502.1,
+      "size": 12,
+      "rect": [
+       90.3,
+       353.85,
+       340.3,
+       539.35
+      ]
+     },
+     "details_13": {
+      "page": 3,
+      "baseline": 560.85,
+      "size": 11,
+      "rect": [
+       90.3,
+       539.35,
+       260.3,
+       583.85
+      ]
+     },
+     "notes_13": {
+      "page": 3,
+      "baseline": 603.75,
+      "size": 11,
+      "rect": [
+       90.3,
+       583.85,
+       260.3,
+       624.75
+      ]
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0.001172
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "photo-report-plumbing",
+    "version": 1,
+    "status": "verified",
+    "name": "Photo Technical Report – Plumbing & Drainage Works",
+    "nameAr": "تقرير فني مصور لأعمال السباكة والصرف الصحي",
+    "description": "Photo report of plumbing and drainage works with up to 14 captioned site photos (details and notes per photo).",
+    "category": "Photo reports",
+    "source": "تقرير فني مصور لأعمال السباكة.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "naskh",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+       6,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "naskh",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+       6,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "naskh",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+       6,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "slot": "components",
+      "value": "project_components_ar",
+      "font": "naskh",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+       6,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "slot": "photo_0",
+      "photo": {
+       "field": "plumbing_photos",
+       "index": 0
+      },
+      "padding": 5
+     },
+     {
+      "slot": "details_0",
+      "photoText": {
+       "field": "plumbing_photos",
+       "index": 0,
+       "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "notes_0",
+      "photoText": {
+       "field": "plumbing_photos",
+       "index": 0,
+       "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "photo_1",
+      "photo": {
+       "field": "plumbing_photos",
+       "index": 1
+      },
+      "padding": 5
+     },
+     {
+      "slot": "details_1",
+      "photoText": {
+       "field": "plumbing_photos",
+       "index": 1,
+       "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "notes_1",
+      "photoText": {
+       "field": "plumbing_photos",
+       "index": 1,
+       "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "photo_2",
+      "photo": {
+       "field": "plumbing_photos",
+       "index": 2
+      },
+      "padding": 5
+     },
+     {
+      "slot": "details_2",
+      "photoText": {
+       "field": "plumbing_photos",
+       "index": 2,
+       "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "notes_2",
+      "photoText": {
+       "field": "plumbing_photos",
+       "index": 2,
+       "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "photo_3",
+      "photo": {
+       "field": "plumbing_photos",
+       "index": 3
+      },
+      "padding": 5
+     },
+     {
+      "slot": "details_3",
+      "photoText": {
+       "field": "plumbing_photos",
+       "index": 3,
+       "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "notes_3",
+      "photoText": {
+       "field": "plumbing_photos",
+       "index": 3,
+       "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "photo_4",
+      "photo": {
+       "field": "plumbing_photos",
+       "index": 4
+      },
+      "padding": 5
+     },
+     {
+      "slot": "details_4",
+      "photoText": {
+       "field": "plumbing_photos",
+       "index": 4,
+       "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "notes_4",
+      "photoText": {
+       "field": "plumbing_photos",
+       "index": 4,
+       "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "photo_5",
+      "photo": {
+       "field": "plumbing_photos",
+       "index": 5
+      },
+      "padding": 5
+     },
+     {
+      "slot": "details_5",
+      "photoText": {
+       "field": "plumbing_photos",
+       "index": 5,
+       "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "notes_5",
+      "photoText": {
+       "field": "plumbing_photos",
+       "index": 5,
+       "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "photo_6",
+      "photo": {
+       "field": "plumbing_photos",
+       "index": 6
+      },
+      "padding": 5
+     },
+     {
+      "slot": "details_6",
+      "photoText": {
+       "field": "plumbing_photos",
+       "index": 6,
+       "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "notes_6",
+      "photoText": {
+       "field": "plumbing_photos",
+       "index": 6,
+       "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "photo_7",
+      "photo": {
+       "field": "plumbing_photos",
+       "index": 7
+      },
+      "padding": 5
+     },
+     {
+      "slot": "details_7",
+      "photoText": {
+       "field": "plumbing_photos",
+       "index": 7,
+       "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "notes_7",
+      "photoText": {
+       "field": "plumbing_photos",
+       "index": 7,
+       "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "photo_8",
+      "photo": {
+       "field": "plumbing_photos",
+       "index": 8
+      },
+      "padding": 5
+     },
+     {
+      "slot": "details_8",
+      "photoText": {
+       "field": "plumbing_photos",
+       "index": 8,
+       "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "notes_8",
+      "photoText": {
+       "field": "plumbing_photos",
+       "index": 8,
+       "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "photo_9",
+      "photo": {
+       "field": "plumbing_photos",
+       "index": 9
+      },
+      "padding": 5
+     },
+     {
+      "slot": "details_9",
+      "photoText": {
+       "field": "plumbing_photos",
+       "index": 9,
+       "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "notes_9",
+      "photoText": {
+       "field": "plumbing_photos",
+       "index": 9,
+       "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "photo_10",
+      "photo": {
+       "field": "plumbing_photos",
+       "index": 10
+      },
+      "padding": 5
+     },
+     {
+      "slot": "details_10",
+      "photoText": {
+       "field": "plumbing_photos",
+       "index": 10,
+       "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "notes_10",
+      "photoText": {
+       "field": "plumbing_photos",
+       "index": 10,
+       "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "photo_11",
+      "photo": {
+       "field": "plumbing_photos",
+       "index": 11
+      },
+      "padding": 5
+     },
+     {
+      "slot": "details_11",
+      "photoText": {
+       "field": "plumbing_photos",
+       "index": 11,
+       "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "notes_11",
+      "photoText": {
+       "field": "plumbing_photos",
+       "index": 11,
+       "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "photo_12",
+      "photo": {
+       "field": "plumbing_photos",
+       "index": 12
+      },
+      "padding": 5
+     },
+     {
+      "slot": "details_12",
+      "photoText": {
+       "field": "plumbing_photos",
+       "index": 12,
+       "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "notes_12",
+      "photoText": {
+       "field": "plumbing_photos",
+       "index": 12,
+       "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "photo_13",
+      "photo": {
+       "field": "plumbing_photos",
+       "index": 13
+      },
+      "padding": 5
+     },
+     {
+      "slot": "details_13",
+      "photoText": {
+       "field": "plumbing_photos",
+       "index": 13,
+       "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     },
+     {
+      "slot": "notes_13",
+      "photoText": {
+       "field": "plumbing_photos",
+       "index": 13,
+       "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+       3,
+       2,
+       3,
+       2
+      ]
+     }
+    ],
+    "reviewNotes": "Nested floating tables of the original are anchored inline so LibreOffice can render them; photo area = fixed-height spacer above each details table.",
+    "trimEmptyPhotoPages": {
+     "field": "plumbing_photos",
+     "slotsPerPage": [
+      2,
+      4,
+      4,
+      4
+     ]
+    }
+   },
+   "layout": {
+    "key": "photo-report-plumbing",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "29b5de04dc63c39ac234ab1e7ebdf33a9077518c3bcedf742f063eb68e5a41c2",
+    "baseSha256": "eb84b3c1a5e07b84bff87a437e7685ad585c93ea7a82f7736fbb2292abd5f076",
+    "pageCount": 4,
+    "pages": [
+     {
+      "width": 612,
+      "height": 792
+     },
+     {
+      "width": 612,
+      "height": 792
+     },
+     {
+      "width": 612,
+      "height": 792
+     },
+     {
+      "width": 612,
+      "height": 792
+     }
+    ],
+    "slots": {
+     "owner": {
+      "page": 0,
+      "baseline": 169.8,
+      "size": 11,
+      "rect": [
+       29.2,
+       150.95,
+       416.6,
+       187.75
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 207.65,
+      "size": 14,
+      "rect": [
+       29.2,
+       187.75,
+       416.6,
+       224.45
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 243.3,
+      "size": 11,
+      "rect": [
+       29.2,
+       224.45,
+       416.6,
+       261.25
+      ]
+     },
+     "components": {
+      "page": 0,
+      "baseline": 280.05,
+      "size": 11,
+      "rect": [
+       29.2,
+       261.25,
+       416.6,
+       297.95
+      ]
+     },
+     "photo_0": {
+      "page": 0,
+      "baseline": 522.95,
+      "size": 12,
+      "rect": [
+       340.3,
+       369.65,
+       590.3,
+       560.25
+      ]
+     },
+     "details_0": {
+      "page": 0,
+      "baseline": 581.7,
+      "size": 11,
+      "rect": [
+       340.3,
+       560.25,
+       510.3,
+       604.75
+      ]
+     },
+     "notes_0": {
+      "page": 0,
+      "baseline": 624.6,
+      "size": 11,
+      "rect": [
+       340.3,
+       604.75,
+       510.3,
+       645.55
+      ]
+     },
+     "photo_1": {
+      "page": 0,
+      "baseline": 517.85,
+      "size": 12,
+      "rect": [
+       90.3,
+       369.65,
+       340.3,
+       555.15
+      ]
+     },
+     "details_1": {
+      "page": 0,
+      "baseline": 576.6,
+      "size": 11,
+      "rect": [
+       90.3,
+       555.15,
+       260.3,
+       599.65
+      ]
+     },
+     "notes_1": {
+      "page": 0,
+      "baseline": 619.5,
+      "size": 11,
+      "rect": [
+       90.3,
+       599.65,
+       260.3,
+       640.45
+      ]
+     },
+     "photo_2": {
+      "page": 1,
+      "baseline": 225.6,
+      "size": 12,
+      "rect": [
+       340.3,
+       72.25,
+       590.3,
+       262.85
+      ]
+     },
+     "details_2": {
+      "page": 1,
+      "baseline": 284.35,
+      "size": 11,
+      "rect": [
+       340.3,
+       262.85,
+       510.3,
+       307.35
+      ]
+     },
+     "notes_2": {
+      "page": 1,
+      "baseline": 327.25,
+      "size": 11,
+      "rect": [
+       340.3,
+       307.35,
+       510.3,
+       348.25
+      ]
+     },
+     "photo_3": {
+      "page": 1,
+      "baseline": 220.5,
+      "size": 12,
+      "rect": [
+       90.3,
+       72.25,
+       340.3,
+       257.75
+      ]
+     },
+     "details_3": {
+      "page": 1,
+      "baseline": 279.25,
+      "size": 11,
+      "rect": [
+       90.3,
+       257.75,
+       260.3,
+       302.25
+      ]
+     },
+     "notes_3": {
+      "page": 1,
+      "baseline": 322.15,
+      "size": 11,
+      "rect": [
+       90.3,
+       302.25,
+       260.3,
+       343.15
+      ]
+     },
+     "photo_4": {
+      "page": 1,
+      "baseline": 507.2,
+      "size": 12,
+      "rect": [
+       340.3,
+       353.85,
+       590.3,
+       544.45
+      ]
+     },
+     "details_4": {
+      "page": 1,
+      "baseline": 565.95,
+      "size": 11,
+      "rect": [
+       340.3,
+       544.45,
+       510.3,
+       588.95
+      ]
+     },
+     "notes_4": {
+      "page": 1,
+      "baseline": 608.85,
+      "size": 11,
+      "rect": [
+       340.3,
+       588.95,
+       510.3,
+       629.85
+      ]
+     },
+     "photo_5": {
+      "page": 1,
+      "baseline": 502.1,
+      "size": 12,
+      "rect": [
+       90.3,
+       353.85,
+       340.3,
+       539.35
+      ]
+     },
+     "details_5": {
+      "page": 1,
+      "baseline": 560.85,
+      "size": 11,
+      "rect": [
+       90.3,
+       539.35,
+       260.3,
+       583.85
+      ]
+     },
+     "notes_5": {
+      "page": 1,
+      "baseline": 603.75,
+      "size": 11,
+      "rect": [
+       90.3,
+       583.85,
+       260.3,
+       624.75
+      ]
+     },
+     "photo_6": {
+      "page": 2,
+      "baseline": 225.6,
+      "size": 12,
+      "rect": [
+       340.3,
+       72.25,
+       590.3,
+       262.85
+      ]
+     },
+     "details_6": {
+      "page": 2,
+      "baseline": 284.35,
+      "size": 11,
+      "rect": [
+       340.3,
+       262.85,
+       510.3,
+       307.35
+      ]
+     },
+     "notes_6": {
+      "page": 2,
+      "baseline": 327.25,
+      "size": 11,
+      "rect": [
+       340.3,
+       307.35,
+       510.3,
+       348.25
+      ]
+     },
+     "photo_7": {
+      "page": 2,
+      "baseline": 220.5,
+      "size": 12,
+      "rect": [
+       90.3,
+       72.25,
+       340.3,
+       257.75
+      ]
+     },
+     "details_7": {
+      "page": 2,
+      "baseline": 279.25,
+      "size": 11,
+      "rect": [
+       90.3,
+       257.75,
+       260.3,
+       302.25
+      ]
+     },
+     "notes_7": {
+      "page": 2,
+      "baseline": 322.15,
+      "size": 11,
+      "rect": [
+       90.3,
+       302.25,
+       260.3,
+       343.15
+      ]
+     },
+     "photo_8": {
+      "page": 2,
+      "baseline": 507.2,
+      "size": 12,
+      "rect": [
+       340.3,
+       353.85,
+       590.3,
+       544.45
+      ]
+     },
+     "details_8": {
+      "page": 2,
+      "baseline": 565.95,
+      "size": 11,
+      "rect": [
+       340.3,
+       544.45,
+       510.3,
+       588.95
+      ]
+     },
+     "notes_8": {
+      "page": 2,
+      "baseline": 608.85,
+      "size": 11,
+      "rect": [
+       340.3,
+       588.95,
+       510.3,
+       629.85
+      ]
+     },
+     "photo_9": {
+      "page": 2,
+      "baseline": 502.1,
+      "size": 12,
+      "rect": [
+       90.3,
+       353.85,
+       340.3,
+       539.35
+      ]
+     },
+     "details_9": {
+      "page": 2,
+      "baseline": 560.85,
+      "size": 11,
+      "rect": [
+       90.3,
+       539.35,
+       260.3,
+       583.85
+      ]
+     },
+     "notes_9": {
+      "page": 2,
+      "baseline": 603.75,
+      "size": 11,
+      "rect": [
+       90.3,
+       583.85,
+       260.3,
+       624.75
+      ]
+     },
+     "photo_10": {
+      "page": 3,
+      "baseline": 225.6,
+      "size": 12,
+      "rect": [
+       340.3,
+       72.25,
+       590.3,
+       262.85
+      ]
+     },
+     "details_10": {
+      "page": 3,
+      "baseline": 284.35,
+      "size": 11,
+      "rect": [
+       340.3,
+       262.85,
+       510.3,
+       307.35
+      ]
+     },
+     "notes_10": {
+      "page": 3,
+      "baseline": 327.25,
+      "size": 11,
+      "rect": [
+       340.3,
+       307.35,
+       510.3,
+       348.25
+      ]
+     },
+     "photo_11": {
+      "page": 3,
+      "baseline": 220.5,
+      "size": 12,
+      "rect": [
+       90.3,
+       72.25,
+       340.3,
+       257.75
+      ]
+     },
+     "details_11": {
+      "page": 3,
+      "baseline": 279.25,
+      "size": 11,
+      "rect": [
+       90.3,
+       257.75,
+       260.3,
+       302.25
+      ]
+     },
+     "notes_11": {
+      "page": 3,
+      "baseline": 322.15,
+      "size": 11,
+      "rect": [
+       90.3,
+       302.25,
+       260.3,
+       343.15
+      ]
+     },
+     "photo_12": {
+      "page": 3,
+      "baseline": 507.2,
+      "size": 12,
+      "rect": [
+       340.3,
+       353.85,
+       590.3,
+       544.45
+      ]
+     },
+     "details_12": {
+      "page": 3,
+      "baseline": 565.95,
+      "size": 11,
+      "rect": [
+       340.3,
+       544.45,
+       510.3,
+       588.95
+      ]
+     },
+     "notes_12": {
+      "page": 3,
+      "baseline": 608.85,
+      "size": 11,
+      "rect": [
+       340.3,
+       588.95,
+       510.3,
+       629.85
+      ]
+     },
+     "photo_13": {
+      "page": 3,
+      "baseline": 502.1,
+      "size": 12,
+      "rect": [
+       90.3,
+       353.85,
+       340.3,
+       539.35
+      ]
+     },
+     "details_13": {
+      "page": 3,
+      "baseline": 560.85,
+      "size": 11,
+      "rect": [
+       90.3,
+       539.35,
+       260.3,
+       583.85
+      ]
+     },
+     "notes_13": {
+      "page": 3,
+      "baseline": 603.75,
+      "size": 11,
+      "rect": [
+       90.3,
+       583.85,
+       260.3,
+       624.75
+      ]
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0.001172
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "plumbing-works",
+    "version": 1,
+    "status": "verified",
+    "name": "Consultant Undertaking – Completion of Plumbing Works & Water Tanks",
+    "nameAr": "تعهد الاستشاري بإنجاز كافة الأعمال الصحية والخزانات",
+    "description": "DMT form 001/PLM/occ-2024: consultant undertaking for plumbing, drainage and water tank works.",
+    "category": "DMT undertakings",
+    "source": "03undertaking of the completion of all plumbing works and water tanks تعهد الاستشاري بإنجاز كافة أعمال تمديدات المياه والصرف الصحي والخزانات.pdf",
+    "format": "pdf",
+    "reviewNotes": "DMT (Department of Municipalities and Transport) form. English values are written after the English label and Arabic values before the Arabic label on the same dotted line.",
+    "fields": [
+     {
+      "slot": "project_id_en",
+      "value": "project_id",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left"
+     },
+     {
+      "slot": "project_id_ar",
+      "value": "project_id",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "ltr",
+      "align": "right"
+     },
+     {
+      "slot": "date_en",
+      "value": "date",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "knockoutSlot": true
+     },
+     {
+      "slot": "date_ar",
+      "value": "date",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "ltr",
+      "align": "right",
+      "knockoutSlot": true
+     },
+     {
+      "slot": "description",
+      "en": "project_description_en",
+      "ar": "project_description_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 14
+     },
+     {
+      "slot": "owner",
+      "en": "owner_name_en",
+      "ar": "owner_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 14
+     },
+     {
+      "slot": "developer",
+      "en": "developer_name_en",
+      "ar": "developer_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 14
+     },
+     {
+      "slot": "contractor",
+      "en": "contractor_name_en",
+      "ar": "contractor_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 14
+     },
+     {
+      "slot": "area",
+      "en": "area_en",
+      "ar": "area_ar",
+      "font": "carlito",
+      "size": 9,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 6
+     },
+     {
+      "slot": "sector",
+      "en": "sector_en",
+      "ar": "sector_ar",
+      "font": "carlito",
+      "size": 9,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 6
+     },
+     {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "usage",
+      "en": "land_building_usage_en",
+      "ar": "land_building_usage_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 14
+     },
+     {
+      "slot": "scope_water_supply_en",
+      "check": {
+       "field": "plumbing_scope",
+       "option": "water_supply"
+      },
+      "style": "tick"
+     },
+     {
+      "slot": "scope_water_supply_ar",
+      "check": {
+       "field": "plumbing_scope",
+       "option": "water_supply"
+      },
+      "style": "tick"
+     },
+     {
+      "slot": "scope_routine_maintenance_en",
+      "check": {
+       "field": "plumbing_scope",
+       "option": "routine_maintenance"
+      },
+      "style": "tick"
+     },
+     {
+      "slot": "scope_routine_maintenance_ar",
+      "check": {
+       "field": "plumbing_scope",
+       "option": "routine_maintenance"
+      },
+      "style": "tick"
+     },
+     {
+      "slot": "scope_sewage_en",
+      "check": {
+       "field": "plumbing_scope",
+       "option": "sewage"
+      },
+      "style": "tick"
+     },
+     {
+      "slot": "scope_sewage_ar",
+      "check": {
+       "field": "plumbing_scope",
+       "option": "sewage"
+      },
+      "style": "tick"
+     },
+     {
+      "slot": "scope_rainwater_en",
+      "check": {
+       "field": "plumbing_scope",
+       "option": "rainwater"
+      },
+      "style": "tick"
+     },
+     {
+      "slot": "scope_rainwater_ar",
+      "check": {
+       "field": "plumbing_scope",
+       "option": "rainwater"
+      },
+      "style": "tick"
+     },
+     {
+      "slot": "ack_en",
+      "value": "$consultant_name_en",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "bold": true
+     },
+     {
+      "slot": "ack_ar",
+      "value": "$consultant_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "bold": true
+     }
+    ]
+   },
+   "layout": {
+    "key": "plumbing-works",
+    "version": 1,
+    "format": "pdf",
+    "sourceSha256": "fcc7c8372b755132d5b7550ad3e0da7601d6879137e70070828d1c52110489a6",
+    "baseSha256": "aba4fd320d27645d8e628331473da50ff91222938750d1c254d14de7d26d325d",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.32,
+      "height": 841.92
+     }
+    ],
+    "slots": {
+     "project_id_en": {
+      "page": 0,
+      "rect": [
+       76.5,
+       121.4,
+       185.4,
+       135.3
+      ],
+      "baseline": 131.2
+     },
+     "project_id_ar": {
+      "page": 0,
+      "rect": [
+       416.2,
+       121.4,
+       525.7,
+       135.3
+      ],
+      "baseline": 131.2
+     },
+     "date_en": {
+      "page": 0,
+      "rect": [
+       53.5,
+       133.6,
+       184.1,
+       147.4
+      ],
+      "baseline": 143.3
+     },
+     "date_ar": {
+      "page": 0,
+      "rect": [
+       417.3,
+       133.6,
+       544.2,
+       147.4
+      ],
+      "baseline": 143.3
+     },
+     "description": {
+      "page": 0,
+      "rect": [
+       104.6,
+       156.8,
+       513.6,
+       170.7
+      ],
+      "baseline": 166.6
+     },
+     "owner": {
+      "page": 0,
+      "rect": [
+       99.7,
+       188.4,
+       536.6,
+       202.2
+      ],
+      "baseline": 198.1
+     },
+     "developer": {
+      "page": 0,
+      "rect": [
+       146.5,
+       216.5,
+       502.5,
+       230.3
+      ],
+      "baseline": 226.2
+     },
+     "contractor": {
+      "page": 0,
+      "rect": [
+       102.6,
+       243.2,
+       533.3,
+       257.1
+      ],
+      "baseline": 253
+     },
+     "area": {
+      "page": 0,
+      "rect": [
+       61.1,
+       268.1,
+       152,
+       281.9
+      ],
+      "baseline": 277.8
+     },
+     "sector": {
+      "page": 0,
+      "rect": [
+       229.1,
+       268.1,
+       307.3,
+       281.9
+      ],
+      "baseline": 277.8
+     },
+     "plot": {
+      "page": 0,
+      "rect": [
+       388.8,
+       268.1,
+       532.7,
+       281.9
+      ],
+      "baseline": 277.8
+     },
+     "usage": {
+      "page": 0,
+      "rect": [
+       87.6,
+       296.2,
+       521.9,
+       310
+      ],
+      "baseline": 305.9
+     },
+     "scope_water_supply_en": {
+      "page": 0,
+      "rect": [
+       15.8,
+       334.3,
+       25,
+       343.5
+      ]
+     },
+     "scope_water_supply_ar": {
+      "page": 0,
+      "rect": [
+       569.1,
+       334.3,
+       578.3,
+       343.5
+      ]
+     },
+     "scope_routine_maintenance_en": {
+      "page": 0,
+      "rect": [
+       15.8,
+       346.6,
+       25,
+       355.8
+      ]
+     },
+     "scope_routine_maintenance_ar": {
+      "page": 0,
+      "rect": [
+       569.1,
+       346.6,
+       578.3,
+       355.8
+      ]
+     },
+     "scope_sewage_en": {
+      "page": 0,
+      "rect": [
+       15.8,
+       358.8,
+       25,
+       368
+      ]
+     },
+     "scope_sewage_ar": {
+      "page": 0,
+      "rect": [
+       569.1,
+       358.8,
+       578.3,
+       368
+      ]
+     },
+     "scope_rainwater_en": {
+      "page": 0,
+      "rect": [
+       15.8,
+       370.9,
+       25,
+       380.1
+      ]
+     },
+     "scope_rainwater_ar": {
+      "page": 0,
+      "rect": [
+       569.1,
+       370.9,
+       578.3,
+       380.1
+      ]
+     },
+     "ack_en": {
+      "page": 0,
+      "rect": [
+       96.6,
+       387.7,
+       338,
+       401.5
+      ],
+      "baseline": 397.4
+     },
+     "ack_ar": {
+      "page": 0,
+      "rect": [
+       345,
+       386.9,
+       539.9,
+       401.2
+      ],
+      "baseline": 396.7
+     }
+    },
+    "build": {
+     "engine": "pymupdf 1.28.2"
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "swimming-pool-testing",
+    "version": 1,
+    "status": "verified",
+    "name": "Undertaking – Testing & Commissioning of Swimming Pool",
+    "nameAr": "تعهد بإنجاز أعمال الاختبار والتشغيل للمسابح",
+    "description": "DMT form 001/Pool/occ-2024: swimming pool contractor undertaking for testing, commissioning and water safety.",
+    "category": "DMT undertakings",
+    "source": "03Undertaking the Completiuon of Testing and Commissioning of Swimming Pool.pdf",
+    "format": "pdf",
+    "reviewNotes": "DMT (Department of Municipalities and Transport) form. English values are written after the English label and Arabic values before the Arabic label on the same dotted line.",
+    "fields": [
+     {
+      "slot": "project_id_en",
+      "value": "project_id",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left"
+     },
+     {
+      "slot": "project_id_ar",
+      "value": "project_id",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "ltr",
+      "align": "right"
+     },
+     {
+      "slot": "date_en",
+      "value": "date",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "knockoutSlot": true
+     },
+     {
+      "slot": "date_ar",
+      "value": "date",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "ltr",
+      "align": "right",
+      "knockoutSlot": true
+     },
+     {
+      "slot": "description",
+      "en": "project_description_en",
+      "ar": "project_description_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 14
+     },
+     {
+      "slot": "address",
+      "en": "@project_address_or_location_en",
+      "ar": "@project_address_or_location_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 14
+     },
+     {
+      "slot": "owner",
+      "en": "owner_name_en",
+      "ar": "owner_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 14
+     },
+     {
+      "slot": "developer",
+      "en": "developer_name_en",
+      "ar": "developer_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 14
+     },
+     {
+      "slot": "consultant",
+      "en": "$consultant_name_en",
+      "ar": "$consultant_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 14
+     },
+     {
+      "slot": "contractor",
+      "en": "contractor_name_en",
+      "ar": "contractor_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 14
+     },
+     {
+      "slot": "area",
+      "en": "area_en",
+      "ar": "area_ar",
+      "font": "carlito",
+      "size": 9,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 6
+     },
+     {
+      "slot": "sector",
+      "en": "sector_en",
+      "ar": "sector_ar",
+      "font": "carlito",
+      "size": 9,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 6
+     },
+     {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "usage",
+      "en": "land_building_usage_en",
+      "ar": "land_building_usage_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 14
+     },
+     {
+      "slot": "auth_supply_installation_en",
+      "check": {
+       "field": "pool_authorization_type",
+       "option": "supply_installation"
+      },
+      "style": "tick"
+     },
+     {
+      "slot": "auth_supply_installation_ar",
+      "check": {
+       "field": "pool_authorization_type",
+       "option": "supply_installation"
+      },
+      "style": "tick"
+     },
+     {
+      "slot": "auth_installation_operation_en",
+      "check": {
+       "field": "pool_authorization_type",
+       "option": "installation_operation"
+      },
+      "style": "tick"
+     },
+     {
+      "slot": "auth_installation_operation_ar",
+      "check": {
+       "field": "pool_authorization_type",
+       "option": "installation_operation"
+      },
+      "style": "tick"
+     },
+     {
+      "slot": "auth_testing_maintenance_en",
+      "check": {
+       "field": "pool_authorization_type",
+       "option": "testing_maintenance"
+      },
+      "style": "tick"
+     },
+     {
+      "slot": "auth_testing_maintenance_ar",
+      "check": {
+       "field": "pool_authorization_type",
+       "option": "testing_maintenance"
+      },
+      "style": "tick"
+     },
+     {
+      "slot": "ack_en",
+      "value": "contractor_name_en",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "bold": true
+     },
+     {
+      "slot": "ack_ar",
+      "value": "contractor_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "bold": true
+     }
+    ]
+   },
+   "layout": {
+    "key": "swimming-pool-testing",
+    "version": 1,
+    "format": "pdf",
+    "sourceSha256": "30b2de5e0893f430f13878a9332edc692296ae3c559be38b967f681846c0e47c",
+    "baseSha256": "d855cec19e04f55f616442fead0851cf8c7b58808bc9c3f9e420d162e3a1163f",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.32,
+      "height": 841.92
+     }
+    ],
+    "slots": {
+     "project_id_en": {
+      "page": 0,
+      "rect": [
+       76.5,
+       106.8,
+       185.4,
+       120.6
+      ],
+      "baseline": 116.5
+     },
+     "project_id_ar": {
+      "page": 0,
+      "rect": [
+       416.2,
+       106.8,
+       525.8,
+       120.6
+      ],
+      "baseline": 116.5
+     },
+     "date_en": {
+      "page": 0,
+      "rect": [
+       53.4,
+       118.9,
+       183.9,
+       132.7
+      ],
+      "baseline": 128.6
+     },
+     "date_ar": {
+      "page": 0,
+      "rect": [
+       417.2,
+       118.9,
+       544.1,
+       132.7
+      ],
+      "baseline": 128.6
+     },
+     "description": {
+      "page": 0,
+      "rect": [
+       104.6,
+       142.2,
+       513.6,
+       156
+      ],
+      "baseline": 151.9
+     },
+     "address": {
+      "page": 0,
+      "rect": [
+       100.3,
+       153.7,
+       511.8,
+       168.3
+      ],
+      "baseline": 163.4
+     },
+     "owner": {
+      "page": 0,
+      "rect": [
+       97.8,
+       179.8,
+       534.7,
+       193.6
+      ],
+      "baseline": 189.5
+     },
+     "developer": {
+      "page": 0,
+      "rect": [
+       144.6,
+       208,
+       500.6,
+       221.8
+      ],
+      "baseline": 217.7
+     },
+     "consultant": {
+      "page": 0,
+      "rect": [
+       102,
+       232.9,
+       521,
+       249.3
+      ],
+      "baseline": 245.2
+     },
+     "contractor": {
+      "page": 0,
+      "rect": [
+       102.1,
+       262.2,
+       531.3,
+       276.7
+      ],
+      "baseline": 272.6
+     },
+     "area": {
+      "page": 0,
+      "rect": [
+       55.9,
+       286.9,
+       146.9,
+       300.8
+      ],
+      "baseline": 296.6
+     },
+     "sector": {
+      "page": 0,
+      "rect": [
+       241.2,
+       286.9,
+       319.4,
+       300.8
+      ],
+      "baseline": 296.6
+     },
+     "plot": {
+      "page": 0,
+      "rect": [
+       404.5,
+       286.9,
+       530.7,
+       300.8
+      ],
+      "baseline": 296.6
+     },
+     "usage": {
+      "page": 0,
+      "rect": [
+       114.6,
+       310.9,
+       490.5,
+       324.8
+      ],
+      "baseline": 320.6
+     },
+     "auth_supply_installation_en": {
+      "page": 0,
+      "rect": [
+       17.7,
+       345,
+       26.9,
+       354.2
+      ]
+     },
+     "auth_supply_installation_ar": {
+      "page": 0,
+      "rect": [
+       566.7,
+       345,
+       575.9,
+       354.2
+      ]
+     },
+     "auth_installation_operation_en": {
+      "page": 0,
+      "rect": [
+       17.7,
+       357.2,
+       26.9,
+       366.4
+      ]
+     },
+     "auth_installation_operation_ar": {
+      "page": 0,
+      "rect": [
+       566.7,
+       357.2,
+       575.9,
+       366.4
+      ]
+     },
+     "auth_testing_maintenance_en": {
+      "page": 0,
+      "rect": [
+       17.7,
+       369.5,
+       26.9,
+       378.7
+      ]
+     },
+     "auth_testing_maintenance_ar": {
+      "page": 0,
+      "rect": [
+       566.7,
+       369.5,
+       575.9,
+       378.7
+      ]
+     },
+     "ack_en": {
+      "page": 0,
+      "rect": [
+       98.4,
+       386.3,
+       242.3,
+       400.1
+      ],
+      "baseline": 396
+     },
+     "ack_ar": {
+      "page": 0,
+      "rect": [
+       419.8,
+       386.3,
+       535.8,
+       400.1
+      ],
+      "baseline": 396
+     }
+    },
+    "build": {
+     "engine": "pymupdf 1.28.2"
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "water-validity",
+    "version": 1,
+    "status": "verified",
+    "name": "Consultant Undertaking – Water Validity for Human Use",
+    "nameAr": "تعهد الاستشاري بصلاحية المياه للاستخدام الآدمي",
+    "description": "DMT form 001/PLM-water/OCC-2024: consultant undertaking that domestic water tanks/networks were cleaned, flushed and are fit for human use.",
+    "category": "DMT undertakings",
+    "source": "01Undertaking of Water Validaity for Human Use تعهد الاستشاري بصلاحية المياه للاستخدام الآدمي.pdf",
+    "format": "pdf",
+    "reviewNotes": "DMT (Department of Municipalities and Transport) form. English values are written after the English label and Arabic values before the Arabic label on the same dotted line.",
+    "fields": [
+     {
+      "slot": "project_id_en",
+      "value": "project_id",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left"
+     },
+     {
+      "slot": "project_id_ar",
+      "value": "project_id",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "ltr",
+      "align": "right"
+     },
+     {
+      "slot": "date_en",
+      "value": "date",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "knockoutSlot": true
+     },
+     {
+      "slot": "date_ar",
+      "value": "date",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "ltr",
+      "align": "right",
+      "knockoutSlot": true
+     },
+     {
+      "slot": "description",
+      "en": "project_description_en",
+      "ar": "project_description_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 14
+     },
+     {
+      "slot": "address",
+      "en": "@project_address_or_location_en",
+      "ar": "@project_address_or_location_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 14
+     },
+     {
+      "slot": "owner",
+      "en": "owner_name_en",
+      "ar": "owner_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 14
+     },
+     {
+      "slot": "developer",
+      "en": "developer_name_en",
+      "ar": "developer_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 14
+     },
+     {
+      "slot": "contractor",
+      "en": "contractor_name_en",
+      "ar": "contractor_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 14
+     },
+     {
+      "slot": "area",
+      "en": "area_en",
+      "ar": "area_ar",
+      "font": "carlito",
+      "size": 9,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 6
+     },
+     {
+      "slot": "sector",
+      "en": "sector_en",
+      "ar": "sector_ar",
+      "font": "carlito",
+      "size": 9,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 6
+     },
+     {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "usage",
+      "en": "land_building_usage_en",
+      "ar": "land_building_usage_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "gap": 14
+     },
+     {
+      "slot": "scope_plumbing_installations_en",
+      "check": {
+       "field": "water_scope",
+       "option": "plumbing_installations"
+      },
+      "style": "tick"
+     },
+     {
+      "slot": "scope_plumbing_installations_ar",
+      "check": {
+       "field": "water_scope",
+       "option": "plumbing_installations"
+      },
+      "style": "tick"
+     },
+     {
+      "slot": "scope_routine_maintenance_en",
+      "check": {
+       "field": "water_scope",
+       "option": "routine_maintenance"
+      },
+      "style": "tick"
+     },
+     {
+      "slot": "scope_routine_maintenance_ar",
+      "check": {
+       "field": "water_scope",
+       "option": "routine_maintenance"
+      },
+      "style": "tick"
+     },
+     {
+      "slot": "scope_cleaning_disinfection_en",
+      "check": {
+       "field": "water_scope",
+       "option": "cleaning_disinfection"
+      },
+      "style": "tick"
+     },
+     {
+      "slot": "scope_cleaning_disinfection_ar",
+      "check": {
+       "field": "water_scope",
+       "option": "cleaning_disinfection"
+      },
+      "style": "tick"
+     },
+     {
+      "slot": "ack_en",
+      "value": "$consultant_name_en",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "bold": true
+     },
+     {
+      "slot": "ack_ar",
+      "value": "$consultant_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+       1.5,
+       0,
+       1.5,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "bold": true
+     }
+    ]
+   },
+   "layout": {
+    "key": "water-validity",
+    "version": 1,
+    "format": "pdf",
+    "sourceSha256": "baabfc76e5bfb20d367fb4a74c33e8b22ffc3f96789699d18e3b32907873b8d3",
+    "baseSha256": "b3be44abc1168a436cc4e9be7f986752ac9596df28de1180ae32f0f33174fd50",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.32,
+      "height": 841.92
+     }
+    ],
+    "slots": {
+     "project_id_en": {
+      "page": 0,
+      "rect": [
+       76.5,
+       136.1,
+       185.4,
+       149.9
+      ],
+      "baseline": 145.8
+     },
+     "project_id_ar": {
+      "page": 0,
+      "rect": [
+       416.2,
+       136.1,
+       525.7,
+       149.9
+      ],
+      "baseline": 145.8
+     },
+     "date_en": {
+      "page": 0,
+      "rect": [
+       53.4,
+       148.2,
+       183.9,
+       162
+      ],
+      "baseline": 157.9
+     },
+     "date_ar": {
+      "page": 0,
+      "rect": [
+       417.1,
+       148.2,
+       544.1,
+       162
+      ],
+      "baseline": 157.9
+     },
+     "description": {
+      "page": 0,
+      "rect": [
+       104.6,
+       171.5,
+       513.6,
+       185.3
+      ],
+      "baseline": 181.2
+     },
+     "address": {
+      "page": 0,
+      "rect": [
+       101.6,
+       182.9,
+       513.1,
+       197.4
+      ],
+      "baseline": 192.6
+     },
+     "owner": {
+      "page": 0,
+      "rect": [
+       99.1,
+       203,
+       536,
+       216.9
+      ],
+      "baseline": 212.8
+     },
+     "developer": {
+      "page": 0,
+      "rect": [
+       145.9,
+       231.1,
+       501.9,
+       244.9
+      ],
+      "baseline": 240.8
+     },
+     "contractor": {
+      "page": 0,
+      "rect": [
+       102,
+       257.9,
+       532.7,
+       271.7
+      ],
+      "baseline": 267.6
+     },
+     "area": {
+      "page": 0,
+      "rect": [
+       60.6,
+       282.7,
+       151.5,
+       296.6
+      ],
+      "baseline": 292.4
+     },
+     "sector": {
+      "page": 0,
+      "rect": [
+       228.5,
+       282.7,
+       306.7,
+       296.6
+      ],
+      "baseline": 292.4
+     },
+     "plot": {
+      "page": 0,
+      "rect": [
+       388.2,
+       282.7,
+       532.1,
+       296.6
+      ],
+      "baseline": 292.4
+     },
+     "usage": {
+      "page": 0,
+      "rect": [
+       112.7,
+       310.8,
+       496.4,
+       324.6
+      ],
+      "baseline": 320.5
+     },
+     "scope_plumbing_installations_en": {
+      "page": 0,
+      "rect": [
+       16.4,
+       349,
+       25.6,
+       358.2
+      ]
+     },
+     "scope_plumbing_installations_ar": {
+      "page": 0,
+      "rect": [
+       568.5,
+       355.1,
+       577.7,
+       364.3
+      ]
+     },
+     "scope_routine_maintenance_en": {
+      "page": 0,
+      "rect": [
+       16.4,
+       361.2,
+       25.6,
+       370.4
+      ]
+     },
+     "scope_routine_maintenance_ar": {
+      "page": 0,
+      "rect": [
+       568.5,
+       367.3,
+       577.7,
+       376.5
+      ]
+     },
+     "scope_cleaning_disinfection_en": {
+      "page": 0,
+      "rect": [
+       16.4,
+       373.4,
+       25.6,
+       382.6
+      ]
+     },
+     "scope_cleaning_disinfection_ar": {
+      "page": 0,
+      "rect": [
+       568.5,
+       379.4,
+       577.7,
+       388.6
+      ]
+     },
+     "ack_en": {
+      "page": 0,
+      "rect": [
+       94.9,
+       402.4,
+       352,
+       416.2
+      ],
+      "baseline": 412.1
+     },
+     "ack_ar": {
+      "page": 0,
+      "rect": [
+       366,
+       401.6,
+       543.9,
+       415.5
+      ],
+      "baseline": 411.4
+     }
+    },
+    "build": {
+     "engine": "pymupdf 1.28.2"
     }
    }
   }

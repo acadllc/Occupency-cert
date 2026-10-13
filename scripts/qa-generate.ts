@@ -20,7 +20,9 @@ const only = process.argv.slice(2);
 const out = join(root, 'templates', '.qa', 'out');
 mkdirSync(out, { recursive: true });
 
-const engine = await Engine.create(nodeAssets(root), registry, company, catalog);
+const photos: Record<string, Uint8Array> = {};
+for (const n of [1, 2, 3]) photos[`test/photo${n}.jpg`] = new Uint8Array(readFileSync(join(root, 'tests', 'fixtures', 'photos', `photo${n}.jpg`)));
+const engine = await Engine.create(nodeAssets(root, photos), registry, company, catalog);
 const variants: [string, ProjectFields][] = [
   ['sample', sampleProject],
   ['long', longProject],

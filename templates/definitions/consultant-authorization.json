@@ -1,0 +1,651 @@
+{
+  "key": "consultant-authorization",
+  "version": 1,
+  "status": "verified",
+  "name": "Consultant Authorization & Undertaking Letter (Takleef)",
+  "nameAr": "تكليف وتعهد الاستشاري",
+  "description": "DMT Form01-V02: owner's appointment of the consultant, backfilling questions, Abu Dhabi International Codes undertaking and consultant pledge (2 pages).",
+  "category": "DMT undertakings",
+  "source": "TAKLEEF.pdf",
+  "format": "pdf",
+  "reviewNotes": "Original AcroForm fields are reset and flattened; values are drawn as page content. Owner signature box is intentionally left blank.",
+  "sanitize": [
+    {
+      "op": "flatten_form"
+    }
+  ],
+  "slots": {
+    "project_id_en": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        75.7,
+        68.8,
+        184.4,
+        81.2
+      ]
+    },
+    "project_id_ar": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        416.4,
+        68.9,
+        525.2,
+        81.2
+      ]
+    },
+    "date_en": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        53.2,
+        82.6,
+        185.3,
+        97.6
+      ]
+    },
+    "date_ar": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        417.3,
+        82.7,
+        543.4,
+        97.6
+      ]
+    },
+    "description": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        106.6,
+        100.6,
+        519.8,
+        115.1
+      ]
+    },
+    "owner": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        96.6,
+        128.6,
+        522.2,
+        143.6
+      ]
+    },
+    "developer": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        137.2,
+        146.5,
+        491.1,
+        161.8
+      ]
+    },
+    "zone": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        58.1,
+        166.3,
+        164.6,
+        180.8
+      ]
+    },
+    "sector": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        247.6,
+        166.3,
+        298.2,
+        180.0
+      ]
+    },
+    "plot": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        378.9,
+        165.4,
+        517.6,
+        180.2
+      ]
+    },
+    "auth_design_supervision_en": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        19.9,
+        205.6,
+        35.5,
+        221.2
+      ]
+    },
+    "auth_design_supervision_ar": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        559.9,
+        205.9,
+        575.5,
+        221.5
+      ]
+    },
+    "auth_design_only_en": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        21.1,
+        222.2,
+        36.7,
+        237.2
+      ]
+    },
+    "auth_design_only_ar": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        560.5,
+        222.8,
+        576.1,
+        237.8
+      ]
+    },
+    "auth_supervision_only_en": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        21.1,
+        238.5,
+        36.7,
+        253.4
+      ]
+    },
+    "auth_supervision_only_ar": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        559.9,
+        239.0,
+        575.5,
+        254.0
+      ]
+    },
+    "consultant_en": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        22.9,
+        274.5,
+        300.5,
+        292.3
+      ]
+    },
+    "consultant_ar": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        317.2,
+        274.0,
+        571.3,
+        291.5
+      ]
+    },
+    "backfill_yes_en": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        23.8,
+        401.6,
+        35.2,
+        411.8
+      ]
+    },
+    "backfill_no_en": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        77.4,
+        402.8,
+        87.6,
+        413.0
+      ]
+    },
+    "backfill_yes_ar": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        558.7,
+        395.6,
+        570.1,
+        405.7
+      ]
+    },
+    "backfill_no_ar": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        519.6,
+        395.6,
+        529.8,
+        405.7
+      ]
+    },
+    "permit_yes_en": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        22.3,
+        444.4,
+        34.3,
+        460.0
+      ]
+    },
+    "permit_no_en": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        76.5,
+        445.3,
+        87.3,
+        458.4
+      ]
+    },
+    "permit_yes_ar": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        561.7,
+        439.5,
+        573.1,
+        453.3
+      ]
+    },
+    "permit_no_ar": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        523.8,
+        440.7,
+        534.6,
+        453.9
+      ]
+    },
+    "consultant_en_p2": {
+      "kind": "rect",
+      "page": 1,
+      "rect": [
+        22.5,
+        103.1,
+        302.0,
+        120.9
+      ]
+    },
+    "consultant_ar_p2": {
+      "kind": "rect",
+      "page": 1,
+      "rect": [
+        315.3,
+        100.6,
+        572.2,
+        118.1
+      ]
+    }
+  },
+  "fields": [
+    {
+      "slot": "project_id_en",
+      "value": "project_id",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "valign": "middle",
+      "padding": [
+        3,
+        0,
+        3,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left"
+    },
+    {
+      "slot": "project_id_ar",
+      "value": "project_id",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "valign": "middle",
+      "padding": [
+        3,
+        0,
+        3,
+        0
+      ],
+      "dir": "ltr",
+      "align": "right"
+    },
+    {
+      "slot": "date_en",
+      "value": "date",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "valign": "middle",
+      "padding": [
+        3,
+        0,
+        3,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left"
+    },
+    {
+      "slot": "date_ar",
+      "value": "date",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "valign": "middle",
+      "padding": [
+        3,
+        0,
+        3,
+        0
+      ],
+      "dir": "ltr",
+      "align": "right"
+    },
+    {
+      "slot": "description",
+      "en": "project_description_en",
+      "ar": "project_description_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "valign": "middle",
+      "padding": [
+        3,
+        0,
+        3,
+        0
+      ],
+      "gap": 14
+    },
+    {
+      "slot": "owner",
+      "en": "owner_name_en",
+      "ar": "owner_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "valign": "middle",
+      "padding": [
+        3,
+        0,
+        3,
+        0
+      ],
+      "gap": 14
+    },
+    {
+      "slot": "developer",
+      "en": "developer_name_en",
+      "ar": "developer_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "valign": "middle",
+      "padding": [
+        3,
+        0,
+        3,
+        0
+      ],
+      "gap": 14
+    },
+    {
+      "slot": "zone",
+      "en": "area_en",
+      "ar": "area_ar",
+      "font": "carlito",
+      "size": 9,
+      "minSize": 5.5,
+      "valign": "middle",
+      "padding": [
+        3,
+        0,
+        3,
+        0
+      ],
+      "gap": 6
+    },
+    {
+      "slot": "sector",
+      "en": "sector_en",
+      "ar": "sector_ar",
+      "font": "carlito",
+      "size": 8,
+      "minSize": 5.5,
+      "valign": "middle",
+      "padding": [
+        3,
+        0,
+        3,
+        0
+      ],
+      "gap": 4
+    },
+    {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "valign": "middle",
+      "padding": [
+        3,
+        0,
+        3,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center"
+    },
+    {
+      "slot": "consultant_en",
+      "value": "$consultant_name_en",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "valign": "middle",
+      "padding": [
+        3,
+        0,
+        3,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left"
+    },
+    {
+      "slot": "consultant_ar",
+      "value": "$consultant_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "valign": "middle",
+      "padding": [
+        3,
+        0,
+        3,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right"
+    },
+    {
+      "slot": "consultant_en_p2",
+      "value": "$consultant_name_en",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "valign": "middle",
+      "padding": [
+        3,
+        0,
+        3,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left"
+    },
+    {
+      "slot": "consultant_ar_p2",
+      "value": "$consultant_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "valign": "middle",
+      "padding": [
+        3,
+        0,
+        3,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right"
+    },
+    {
+      "slot": "auth_design_supervision_en",
+      "check": {
+        "field": "takleef_authorization_type",
+        "equals": "design_supervision"
+      },
+      "style": "dot",
+      "size": 6
+    },
+    {
+      "slot": "auth_design_supervision_ar",
+      "check": {
+        "field": "takleef_authorization_type",
+        "equals": "design_supervision"
+      },
+      "style": "dot",
+      "size": 6
+    },
+    {
+      "slot": "auth_design_only_en",
+      "check": {
+        "field": "takleef_authorization_type",
+        "equals": "design_only"
+      },
+      "style": "dot",
+      "size": 6
+    },
+    {
+      "slot": "auth_design_only_ar",
+      "check": {
+        "field": "takleef_authorization_type",
+        "equals": "design_only"
+      },
+      "style": "dot",
+      "size": 6
+    },
+    {
+      "slot": "auth_supervision_only_en",
+      "check": {
+        "field": "takleef_authorization_type",
+        "equals": "supervision_only"
+      },
+      "style": "dot",
+      "size": 6
+    },
+    {
+      "slot": "auth_supervision_only_ar",
+      "check": {
+        "field": "takleef_authorization_type",
+        "equals": "supervision_only"
+      },
+      "style": "dot",
+      "size": 6
+    },
+    {
+      "slot": "backfill_yes_en",
+      "check": {
+        "field": "needs_backfilling",
+        "equals": "yes"
+      },
+      "style": "dot",
+      "size": 5
+    },
+    {
+      "slot": "backfill_yes_ar",
+      "check": {
+        "field": "needs_backfilling",
+        "equals": "yes"
+      },
+      "style": "dot",
+      "size": 5
+    },
+    {
+      "slot": "backfill_no_en",
+      "check": {
+        "field": "needs_backfilling",
+        "equals": "no"
+      },
+      "style": "dot",
+      "size": 5
+    },
+    {
+      "slot": "backfill_no_ar",
+      "check": {
+        "field": "needs_backfilling",
+        "equals": "no"
+      },
+      "style": "dot",
+      "size": 5
+    },
+    {
+      "slot": "permit_yes_en",
+      "check": {
+        "field": "permit_before_backfilling",
+        "equals": "yes"
+      },
+      "style": "dot",
+      "size": 5
+    },
+    {
+      "slot": "permit_yes_ar",
+      "check": {
+        "field": "permit_before_backfilling",
+        "equals": "yes"
+      },
+      "style": "dot",
+      "size": 5
+    },
+    {
+      "slot": "permit_no_en",
+      "check": {
+        "field": "permit_before_backfilling",
+        "equals": "no"
+      },
+      "style": "dot",
+      "size": 5
+    },
+    {
+      "slot": "permit_no_ar",
+      "check": {
+        "field": "permit_before_backfilling",
+        "equals": "no"
+      },
+      "style": "dot",
+      "size": 5
+    }
+  ]
+}

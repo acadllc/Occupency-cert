@@ -1,0 +1,275 @@
+{
+ "key": "consultant-authorization",
+ "version": 1,
+ "format": "pdf",
+ "sourceSha256": "46fb50eadc0ff02534f5874d798f10cf2671e2742097ec7bb2c461c7d07ae935",
+ "baseSha256": "c9dbc5d0e21cef3f7ca1169815803bfc87561153ad1c227cbb66d852781b1c0c",
+ "pageCount": 2,
+ "pages": [
+  {
+   "width": 595.44,
+   "height": 841.68
+  },
+  {
+   "width": 595.44,
+   "height": 841.68
+  }
+ ],
+ "slots": {
+  "project_id_en": {
+   "page": 0,
+   "rect": [
+    75.7,
+    68.8,
+    184.4,
+    81.2
+   ]
+  },
+  "project_id_ar": {
+   "page": 0,
+   "rect": [
+    416.4,
+    68.9,
+    525.2,
+    81.2
+   ]
+  },
+  "date_en": {
+   "page": 0,
+   "rect": [
+    53.2,
+    82.6,
+    185.3,
+    97.6
+   ]
+  },
+  "date_ar": {
+   "page": 0,
+   "rect": [
+    417.3,
+    82.7,
+    543.4,
+    97.6
+   ]
+  },
+  "description": {
+   "page": 0,
+   "rect": [
+    106.6,
+    100.6,
+    519.8,
+    115.1
+   ]
+  },
+  "owner": {
+   "page": 0,
+   "rect": [
+    96.6,
+    128.6,
+    522.2,
+    143.6
+   ]
+  },
+  "developer": {
+   "page": 0,
+   "rect": [
+    137.2,
+    146.5,
+    491.1,
+    161.8
+   ]
+  },
+  "zone": {
+   "page": 0,
+   "rect": [
+    58.1,
+    166.3,
+    164.6,
+    180.8
+   ]
+  },
+  "sector": {
+   "page": 0,
+   "rect": [
+    247.6,
+    166.3,
+    298.2,
+    180.0
+   ]
+  },
+  "plot": {
+   "page": 0,
+   "rect": [
+    378.9,
+    165.4,
+    517.6,
+    180.2
+   ]
+  },
+  "auth_design_supervision_en": {
+   "page": 0,
+   "rect": [
+    19.9,
+    205.6,
+    35.5,
+    221.2
+   ]
+  },
+  "auth_design_supervision_ar": {
+   "page": 0,
+   "rect": [
+    559.9,
+    205.9,
+    575.5,
+    221.5
+   ]
+  },
+  "auth_design_only_en": {
+   "page": 0,
+   "rect": [
+    21.1,
+    222.2,
+    36.7,
+    237.2
+   ]
+  },
+  "auth_design_only_ar": {
+   "page": 0,
+   "rect": [
+    560.5,
+    222.8,
+    576.1,
+    237.8
+   ]
+  },
+  "auth_supervision_only_en": {
+   "page": 0,
+   "rect": [
+    21.1,
+    238.5,
+    36.7,
+    253.4
+   ]
+  },
+  "auth_supervision_only_ar": {
+   "page": 0,
+   "rect": [
+    559.9,
+    239.0,
+    575.5,
+    254.0
+   ]
+  },
+  "consultant_en": {
+   "page": 0,
+   "rect": [
+    22.9,
+    274.5,
+    300.5,
+    292.3
+   ]
+  },
+  "consultant_ar": {
+   "page": 0,
+   "rect": [
+    317.2,
+    274.0,
+    571.3,
+    291.5
+   ]
+  },
+  "backfill_yes_en": {
+   "page": 0,
+   "rect": [
+    23.8,
+    401.6,
+    35.2,
+    411.8
+   ]
+  },
+  "backfill_no_en": {
+   "page": 0,
+   "rect": [
+    77.4,
+    402.8,
+    87.6,
+    413.0
+   ]
+  },
+  "backfill_yes_ar": {
+   "page": 0,
+   "rect": [
+    558.7,
+    395.6,
+    570.1,
+    405.7
+   ]
+  },
+  "backfill_no_ar": {
+   "page": 0,
+   "rect": [
+    519.6,
+    395.6,
+    529.8,
+    405.7
+   ]
+  },
+  "permit_yes_en": {
+   "page": 0,
+   "rect": [
+    22.3,
+    444.4,
+    34.3,
+    460.0
+   ]
+  },
+  "permit_no_en": {
+   "page": 0,
+   "rect": [
+    76.5,
+    445.3,
+    87.3,
+    458.4
+   ]
+  },
+  "permit_yes_ar": {
+   "page": 0,
+   "rect": [
+    561.7,
+    439.5,
+    573.1,
+    453.3
+   ]
+  },
+  "permit_no_ar": {
+   "page": 0,
+   "rect": [
+    523.8,
+    440.7,
+    534.6,
+    453.9
+   ]
+  },
+  "consultant_en_p2": {
+   "page": 1,
+   "rect": [
+    22.5,
+    103.1,
+    302.0,
+    120.9
+   ]
+  },
+  "consultant_ar_p2": {
+   "page": 1,
+   "rect": [
+    315.3,
+    100.6,
+    572.2,
+    118.1
+   ]
+  }
+ },
+ "build": {
+  "engine": "pymupdf 1.28.2"
+ }
+}

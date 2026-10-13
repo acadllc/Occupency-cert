@@ -25,6 +25,8 @@ export interface FieldDef {
   optional?: boolean;
   maxLength?: number;
   maxItems?: number;
+  /** suggested captions for photo details */
+  detailOptions?: string[];
   placeholder?: string;
   help?: string;
   pair?: string;
@@ -62,7 +64,7 @@ export interface PhotoEntry {
 export type FieldValue = string | string[] | PhotoEntry[] | null | undefined;
 export type ProjectFields = Record<string, FieldValue>;
 
-export type FontFamily = 'sans' | 'naskh' | 'kufi' | 'carlito' | 'tajawal' | 'amiri';
+export type FontFamily = 'sans' | 'naskh' | 'kufi' | 'din' | 'carlito' | 'tajawal' | 'amiri';
 
 export interface TextStyle {
   font?: FontFamily;
@@ -76,6 +78,8 @@ export interface TextStyle {
   padding?: [number, number, number, number];
   /** Paint white behind the text (hides dotted leader lines under the value). */
   knockout?: boolean;
+  /** Paint white over the whole slot before drawing (e.g. replaces a dotted __/__/____ date line). */
+  knockoutSlot?: boolean;
   color?: [number, number, number];
   lineHeight?: number;
 }
@@ -165,7 +169,17 @@ export interface GenerationWarning {
   message: string;
 }
 
+/** What was drawn where (used by tests and the per-document checklist). */
+export interface Placement {
+  slot: string;
+  page: number;
+  kind: 'text' | 'check' | 'photo';
+  text?: string;
+  size?: number;
+}
+
 export interface GeneratedDocument {
+  placements: Placement[];
   templateKey: string;
   templateVersion: number;
   bytes: Uint8Array;
