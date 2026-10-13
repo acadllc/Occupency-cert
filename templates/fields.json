@@ -53,7 +53,8 @@
       "group": "identification",
       "scope": "shared",
       "maxLength": 60,
-      "help": "Municipality reference number (appended to the Arabic project location where used)."
+      "help": "Municipality reference number (appended to the Arabic project location where used).",
+      "optional": true
     },
     {
       "key": "owner_name_ar",
