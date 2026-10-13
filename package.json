@@ -8,8 +8,8 @@
     "apps/*"
   ],
   "scripts": {
-    "templates:build": "python3 scripts/templates/build.py && node scripts/catalog.mjs",
-    "templates:qa": "node --import tsx scripts/qa-generate.ts && python3 scripts/templates/qa.py",
+    "templates:build": "python3 scripts/templates/build.py && node scripts/catalog.mjs && npx tsx scripts/gen-template-seed.ts && npx tsx scripts/gen-inventory.ts",
+    "templates:qa": "npx tsx scripts/qa-generate.ts && python3 scripts/templates/qa.py",
     "dev": "npm run dev -w apps/web",
     "build": "npm run build -w apps/web",
     "test": "vitest run",
