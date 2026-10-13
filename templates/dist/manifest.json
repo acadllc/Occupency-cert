@@ -1,0 +1,11 @@
+{
+ "generated": "2026-10-13",
+ "templates": [
+  {
+   "key": "number-of-users",
+   "version": 1,
+   "baseSha256": "599735421397227007dd4c5abb389d6296332047049471dd2392222cf7fbd7d7",
+   "pageCount": 1
+  }
+ ]
+}

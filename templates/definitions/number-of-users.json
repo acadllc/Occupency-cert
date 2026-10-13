@@ -1,0 +1,154 @@
+{
+  "key": "number-of-users",
+  "version": 1,
+  "status": "verified",
+  "name": "Number of Users Letter",
+  "nameAr": "عدد المستخدمين",
+  "description": "Letter to the Department of Municipalities and Transport confirming the number of building users.",
+  "category": "Letters",
+  "source": "02NOMBER OF USERS.docx",
+  "format": "docx",
+  "sanitize": [
+    {
+      "op": "date_field",
+      "slot": "date"
+    },
+    {
+      "op": "cell",
+      "label": "اسم المالك",
+      "offset": -2,
+      "slot": "owner"
+    },
+    {
+      "op": "cell",
+      "label": "اسم الاستشاري",
+      "offset": -2,
+      "slot": "consultant"
+    },
+    {
+      "op": "cell",
+      "label": "موقع المشروع",
+      "offset": -2,
+      "slot": "location"
+    },
+    {
+      "op": "cell",
+      "label": "مكونات المشروع",
+      "offset": -2,
+      "slot": "components"
+    },
+    {
+      "op": "text",
+      "contains": "عدد المستخدين للمشروع",
+      "old": "أسره واحده فقط",
+      "slot": "users"
+    }
+  ],
+  "slots": {
+    "date": {
+      "kind": "inline",
+      "width": 120
+    },
+    "owner": {
+      "kind": "cell"
+    },
+    "consultant": {
+      "kind": "cell"
+    },
+    "location": {
+      "kind": "cell"
+    },
+    "components": {
+      "kind": "cell"
+    },
+    "users": {
+      "kind": "inline",
+      "width": 200
+    }
+  },
+  "fields": [
+    {
+      "slot": "date",
+      "value": "date",
+      "font": "kufi",
+      "size": 14,
+      "dir": "rtl",
+      "align": "right",
+      "padding": [
+        0,
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+        6,
+        2,
+        6,
+        2
+      ]
+    },
+    {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+        6,
+        2,
+        6,
+        2
+      ]
+    },
+    {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+        6,
+        2,
+        6,
+        2
+      ]
+    },
+    {
+      "slot": "components",
+      "value": "project_components_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+        6,
+        2,
+        6,
+        2
+      ]
+    },
+    {
+      "slot": "users",
+      "value": "number_of_users_ar",
+      "font": "kufi",
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}
