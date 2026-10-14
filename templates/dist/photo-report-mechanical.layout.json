@@ -1,9 +1,9 @@
 {
  "key": "photo-report-mechanical",
- "version": 1,
+ "version": 2,
  "format": "docx",
  "sourceSha256": "ceec78749c0962b0f2e5504724edfde0b8e840d634385eb8da47aa15aacf4669",
- "baseSha256": "48d14436a18a482d9610ada64718be33bb06935d92e752f81ec9be351f9722bf",
+ "baseSha256": "eea79e4088242e7f535912e4de5d3236f63618f2cde05744a4526a4ef42daefd",
  "pageCount": 4,
  "pages": [
   {

@@ -1,9 +1,9 @@
 {
  "key": "photo-report-plumbing",
- "version": 1,
+ "version": 2,
  "format": "docx",
  "sourceSha256": "29b5de04dc63c39ac234ab1e7ebdf33a9077518c3bcedf742f063eb68e5a41c2",
- "baseSha256": "3116eff41a869b5c3c0856231bb7ee8a8b3573bc0e5feed1e51f031dc434f3be",
+ "baseSha256": "8ec388f84fce7f06126930a08e62e8bba3ca28014139df8eb545a589ef960a83",
  "pageCount": 4,
  "pages": [
   {

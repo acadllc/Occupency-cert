@@ -1,6 +1,6 @@
 {
   "key": "photo-report-plumbing",
-  "version": 1,
+  "version": 2,
   "status": "verified",
   "name": "Photo Technical Report – Plumbing & Drainage Works",
   "nameAr": "تقرير فني مصور لأعمال السباكة والصرف الصحي",
@@ -41,6 +41,12 @@
     {
       "op": "remove_image",
       "target": "media/image1.png"
+    },
+    {
+      "op": "footer_align",
+      "pattern": "AACM-CP|^V\\d+\\.\\d|Page",
+      "align": "right",
+      "drop_border": true
     }
   ],
   "slots": {
