@@ -1,6 +1,6 @@
 {
  "key": "water-validity",
- "version": 1,
+ "version": 2,
  "format": "pdf",
  "sourceSha256": "baabfc76e5bfb20d367fb4a74c33e8b22ffc3f96789699d18e3b32907873b8d3",
  "baseSha256": "b3be44abc1168a436cc4e9be7f986752ac9596df28de1180ae32f0f33174fd50",
@@ -215,8 +215,18 @@
     415.5
    ],
    "baseline": 411.4
+  },
+  "stamp": {
+   "page": 0,
+   "rect": [
+    278.0,
+    638.0,
+    382.0,
+    742.0
+   ]
   }
  },
+ "docx": null,
  "build": {
   "engine": "pymupdf 1.28.2"
  }

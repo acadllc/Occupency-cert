@@ -86,6 +86,29 @@ def resolve_slot(name: str, spec: dict, markers_by_slot: dict, base: "fitz.Docum
         else:
             left = x0 + spec.get("shift", 0)
             out["rect"] = [round(left, 2), round(y0 - pad, 2), round(left + width, 2), round(y1 + pad, 2)]
+    elif kind == "line_leftmost":
+        # leftmost word group on the marker's line (e.g. the consultant signature label)
+        page = base[m["page"]]
+        allc = []
+        for b in page.get_text("rawdict")["blocks"]:
+            for line in b.get("lines", []):
+                for span in line["spans"]:
+                    for c in span["chars"]:
+                        if c["c"].strip() and "QZ" not in "".join(ch["c"] for ch in span["chars"]):
+                            allc.append((c["origin"][1], c["bbox"]))
+        # the marker may wrap onto its own line: use the nearest text line at or above it
+        bases = sorted({round(b_, 1) for b_, _ in allc if m["baseline"] - 40 <= b_ <= m["baseline"] + 2.5}, reverse=True)
+        chars = [r for b_, r in allc if bases and abs(b_ - bases[0]) < 2.5]
+        if not chars:
+            raise RuntimeError(f"slot {name}: no text on the marker line")
+        chars.sort(key=lambda r: r[0])
+        group = [chars[0]]
+        for r in chars[1:]:
+            if r[0] - max(g[2] for g in group) > spec.get("gap", 14):
+                break
+            group.append(r)
+        out["rect"] = [round(min(g[0] for g in group), 2), round(min(g[1] for g in group), 2),
+                       round(max(g[2] for g in group), 2), round(max(g[3] for g in group), 2)]
     else:
         raise RuntimeError(f"slot {name}: unknown kind {kind}")
     return out
@@ -118,7 +141,11 @@ def build_docx(defn: dict, src: bytes) -> tuple[bytes, dict, list[str], dict]:
         raise RuntimeError(f"markers not rendered for slots: {missing}")
     slots = {name: resolve_slot(name, spec, markers_by_slot, base) for name, spec in defn["slots"].items()}
     pdf_bytes = finalize_pdf(base)
-    return pdf_bytes, slots, clean.removed_values, {"engine": engine, "layoutDiff": round(drift, 6)}
+    # editable Word output: the marked DOCX is the template, markers are replaced at generation time
+    DIST.mkdir(parents=True, exist_ok=True)
+    (DIST / f"{defn['key']}.docx").write_bytes(marked.data)
+    info = {"engine": engine, "layoutDiff": round(drift, 6), "docxMarkers": marked.markers}
+    return pdf_bytes, slots, clean.removed_values, info
 
 
 def build_pdf(defn: dict, src: bytes) -> tuple[bytes, dict, list[str], dict]:
@@ -145,6 +172,7 @@ def build_one(defn: dict) -> dict:
         "pageCount": len(doc),
         "pages": [{"width": round(p.rect.width, 2), "height": round(p.rect.height, 2)} for p in doc],
         "slots": slots,
+        "docx": {"markers": info.pop("docxMarkers")} if "docxMarkers" in info else None,
         "build": info,
     }
     DIST.mkdir(parents=True, exist_ok=True)

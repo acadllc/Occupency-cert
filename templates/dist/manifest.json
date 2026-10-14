@@ -1,27 +1,27 @@
 {
- "generated": "2026-10-13",
+ "generated": "2026-10-14",
  "templates": [
   {
    "key": "archive-drawings-explanation",
-   "version": 1,
-   "baseSha256": "845680c1a890dd19f26c86045695c6a1a004cb2f9f471e887341cb27bfe1a7d2",
+   "version": 2,
+   "baseSha256": "664b97d6ceca13a33eda06c36de307ea30b3dac47c6109de14be3df930ace801",
    "pageCount": 1
   },
   {
    "key": "consultant-authorization",
-   "version": 1,
+   "version": 2,
    "baseSha256": "c9dbc5d0e21cef3f7ca1169815803bfc87561153ad1c227cbb66d852781b1c0c",
    "pageCount": 2
   },
   {
    "key": "drainage-inspection-report",
-   "version": 1,
-   "baseSha256": "be1a1e1652fc6d2d813a4bfd4b5c8ae49f5e768cb47c491390b637225c9bd4ce",
+   "version": 2,
+   "baseSha256": "0ed4116f3cdce58e711932455b7fa555f48657483c11c726e40417252081c871",
    "pageCount": 1
   },
   {
    "key": "elevators-testing",
-   "version": 1,
+   "version": 2,
    "baseSha256": "d3c35ebbedd22d64e8138278ddc990dca499896acb769a015b434aca6a7e48af",
    "pageCount": 2
   },
@@ -33,67 +33,67 @@
   },
   {
    "key": "mechanical-commitment",
-   "version": 1,
+   "version": 2,
    "baseSha256": "12e9c33a9746e041f8c798ded34e3b2f5caa27ac756b0a8b0c140cd99da52e25",
    "pageCount": 2
   },
   {
    "key": "no-elevators",
-   "version": 1,
-   "baseSha256": "7896e66c33318c454654a5d627f451cc61db336cefefe8e8dbaaf3a8a465c071",
+   "version": 2,
+   "baseSha256": "3140aa04099cfa8a037172525730a985dcf5f40e841e00c9dfb0e0065462dba9",
    "pageCount": 1
   },
   {
    "key": "no-gas-systems",
-   "version": 1,
-   "baseSha256": "d1d17acd5b41ae232813af6a99886bd013812fd746608defe96e665868da06b7",
+   "version": 2,
+   "baseSha256": "16e76e04895a191d451f73874758a78ae8410a36720f070fe709acd51359157f",
    "pageCount": 1
   },
   {
    "key": "no-swimming-pools",
-   "version": 1,
-   "baseSha256": "363fb8417381df1e83d794c45531fa17317e5386c7b0b4990f1ea583df9bc7d5",
+   "version": 2,
+   "baseSha256": "a7a89aa3c5349b7de69d89b0bb98d8c6945211d9981d97ecf361c4279f215640",
    "pageCount": 1
   },
   {
    "key": "number-of-users",
-   "version": 1,
-   "baseSha256": "2d99c634dc4c9b61cfd6b1097356c3ef2d3437ca9242d2dbd7828299ede7919d",
+   "version": 2,
+   "baseSha256": "5f6a61426450241007badcc586b8dd291a909fe9c24eff90eada8e2632db518a",
    "pageCount": 1
   },
   {
    "key": "occupancy-undertaking-str-arch",
-   "version": 1,
-   "baseSha256": "669964e76b1a0d33c2055b40ebb34c0d74a1974a540b607d90b1c5bbedc40858",
+   "version": 2,
+   "baseSha256": "5a37150cf8978207cf493ae90e005c50c143f4b3106050c713cb0d8861fe80cd",
    "pageCount": 1
   },
   {
    "key": "owner-undertaking-cd-renewal",
    "version": 1,
-   "baseSha256": "c2ec7a54c643fa0971578051d4a8fc09cef8ff156959bfa66d2837c1e29aefbc",
+   "baseSha256": "645baf42e6707c6f6d21c576720fc9bb384f01b9121ec077ec4ee3003f11d9ad",
    "pageCount": 1
   },
   {
    "key": "owner-undertaking-no-sewage-rain-link",
-   "version": 1,
-   "baseSha256": "dbdc93ad5d5446bc56abc0d26b2124a94e9f19e1d2c67c78f9b4625ecc4f654d",
+   "version": 2,
+   "baseSha256": "76cd32b557033b2df4e833a75fa73be215ef40452d6d8491b261a3c17fda3610",
    "pageCount": 1
   },
   {
    "key": "photo-report-mechanical",
    "version": 1,
-   "baseSha256": "78caf6c026d2a60f9cf12fa67fe2456107bf19906a5dd383cd3696dc4ef40249",
+   "baseSha256": "48d14436a18a482d9610ada64718be33bb06935d92e752f81ec9be351f9722bf",
    "pageCount": 4
   },
   {
    "key": "photo-report-plumbing",
    "version": 1,
-   "baseSha256": "eb84b3c1a5e07b84bff87a437e7685ad585c93ea7a82f7736fbb2292abd5f076",
+   "baseSha256": "3116eff41a869b5c3c0856231bb7ee8a8b3573bc0e5feed1e51f031dc434f3be",
    "pageCount": 4
   },
   {
    "key": "plumbing-works",
-   "version": 1,
+   "version": 2,
    "baseSha256": "aba4fd320d27645d8e628331473da50ff91222938750d1c254d14de7d26d325d",
    "pageCount": 1
   },
@@ -105,7 +105,7 @@
   },
   {
    "key": "water-validity",
-   "version": 1,
+   "version": 2,
    "baseSha256": "b3be44abc1168a436cc4e9be7f986752ac9596df28de1180ae32f0f33174fd50",
    "pageCount": 1
   }

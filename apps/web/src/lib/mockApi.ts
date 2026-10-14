@@ -5,7 +5,7 @@
  */
 import type { ProjectFields } from '@acad/engine';
 import type { DataApi, GeneratedDocumentRow, GenerationJob, NewDocument, Project, ProjectQuery } from './api';
-import { ConflictError } from './api';
+import { ConflictError, STAMP_PATH } from './api';
 
 interface Store {
   projects: Project[];
@@ -27,7 +27,7 @@ function load(): Store {
 }
 
 function searchable(f: ProjectFields) {
-  return ['project_id', 'owner_name_ar', 'owner_name_en', 'plot_number', 'area_ar', 'area_en', 'sector_ar', 'sector_en', 'reference_number']
+  return ['project_id', 'owner_name_ar', 'owner_name_en', 'plot_number', 'area_ar', 'area_en', 'sector_ar', 'sector_en']
     .map((k) => (typeof f[k] === 'string' ? (f[k] as string) : ''))
     .join(' ')
     .toLowerCase();
@@ -132,9 +132,9 @@ export class MockApi implements DataApi {
     if (j) Object.assign(j, { status, warnings, errors, completed_at: new Date().toISOString() });
     this.save();
   }
-  async uploadDocument(path: string, bytes: Uint8Array) {
-    if (files.has(path)) throw new Error('Uploading the PDF failed. Please try again.');
-    files.set(path, new Blob([bytes as BlobPart], { type: 'application/pdf' }));
+  async uploadDocument(path: string, bytes: Uint8Array, contentType: string) {
+    if (files.has(path)) throw new Error('Uploading the document failed. Please try again.');
+    files.set(path, new Blob([bytes as BlobPart], { type: contentType }));
   }
   async recordDocument(doc: NewDocument) {
     const row: GeneratedDocumentRow = { ...doc, id: crypto.randomUUID(), created_at: new Date().toISOString() };
@@ -176,5 +176,14 @@ export class MockApi implements DataApi {
   }
   async deletePhoto(path: string) {
     files.delete(path);
+  }
+  async getStampSignature() {
+    return files.get(`company-assets/${STAMP_PATH}`) ?? null;
+  }
+  async saveStampSignature(png: Blob) {
+    files.set(`company-assets/${STAMP_PATH}`, png);
+  }
+  async deleteStampSignature() {
+    files.delete(`company-assets/${STAMP_PATH}`);
   }
 }

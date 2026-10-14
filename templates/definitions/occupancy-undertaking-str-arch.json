@@ -1,6 +1,6 @@
 {
   "key": "occupancy-undertaking-str-arch",
-  "version": 1,
+  "version": 2,
   "status": "verified",
   "name": "Building Occupancy Undertaking – Architectural & Structural",
   "nameAr": "تعهد إشغال مبنى – معماري وإنشائي",
@@ -50,6 +50,12 @@
     {
       "op": "remove_image",
       "target": "media/image1.png"
+    },
+    {
+      "op": "insert_after",
+      "contains": "الختم والتوقيع",
+      "occurrence": -1,
+      "slot": "stamp"
     }
   ],
   "slots": {
@@ -82,6 +88,10 @@
       "kind": "find_text",
       "text": "☐",
       "occurrence": 0
+    },
+    "stamp": {
+      "kind": "inline",
+      "width": 8
     }
   },
   "fields": [
@@ -175,7 +185,8 @@
         "field": "applicant_role",
         "equals": "contractor"
       },
-      "style": "tick"
+      "style": "tick",
+      "docxGlyph": 0
     },
     {
       "slot": "box_consultant",
@@ -183,7 +194,17 @@
         "field": "applicant_role",
         "equals": "consultant"
       },
-      "style": "tick"
+      "style": "tick",
+      "docxGlyph": 1
+    },
+    {
+      "slot": "stamp",
+      "stamp": {
+        "size": 100,
+        "anchor": "marker",
+        "dx": 4.2,
+        "dy": 58
+      }
     }
   ]
 }

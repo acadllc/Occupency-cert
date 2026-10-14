@@ -1,6 +1,6 @@
 {
   "key": "plumbing-works",
-  "version": 1,
+  "version": 2,
   "status": "verified",
   "name": "Consultant Undertaking – Completion of Plumbing Works & Water Tanks",
   "nameAr": "تعهد الاستشاري بإنجاز كافة الأعمال الصحية والخزانات",
@@ -289,6 +289,16 @@
         401.2
       ],
       "baseline": 396.7
+    },
+    "stamp": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        225.0,
+        656.0,
+        325.0,
+        756.0
+      ]
     }
   },
   "fields": [
@@ -583,6 +593,14 @@
       "dir": "rtl",
       "align": "right",
       "bold": true
+    },
+    {
+      "slot": "stamp",
+      "stamp": {
+        "size": 100,
+        "anchor": "center",
+        "dy": -22
+      }
     }
   ]
 }

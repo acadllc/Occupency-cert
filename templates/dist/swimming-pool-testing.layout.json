@@ -227,6 +227,7 @@
    "baseline": 396.0
   }
  },
+ "docx": null,
  "build": {
   "engine": "pymupdf 1.28.2"
  }

@@ -295,9 +295,9 @@ class DocxSanitizer:
             for p in self.tree(name).getroot().iter(w("p")):
                 if target in _norm(_text_of(p)):
                     hits.append(p)
-        if len(hits) <= occurrence:
+        if not hits or len(hits) <= occurrence:
             raise SanitizeError(f"paragraph not found: {contains!r}")
-        return hits[occurrence]
+        return hits[occurrence]  # negative occurrence counts from the end
 
     def op_insert_after(self, op: dict):
         """Insert a marker right after the run that ends a given label."""
@@ -484,6 +484,23 @@ class DocxSanitizer:
             raise SanitizeError(f"photo_grid: found {n} cards, expected {op['expected']}")
         if n == 0:
             raise SanitizeError("photo_grid: no photo cards found")
+
+    def op_trim_leading_empty_paragraphs(self, op: dict):
+        """Remove empty paragraphs at the top of the body (pulls the letter up under the letterhead)."""
+        body = self.tree("word/document.xml").getroot().find(w("body"))
+        keep = int(op.get("keep", 0))
+        empties = []
+        for child in body:
+            if child.tag != w("p"):
+                break
+            has_content = _text_of(child).strip() or child.find(f".//{w('drawing')}") is not None or child.find(f".//{w('fldChar')}") is not None
+            if has_content:
+                break
+            empties.append(child)
+        for p in empties[keep:]:
+            body.remove(p)
+        if not empties and not op.get("optional"):
+            raise SanitizeError("no leading empty paragraphs")
 
     def op_remove_paragraph(self, op: dict):
         p = self._find_paragraph(op["contains"], int(op.get("occurrence", 0)))

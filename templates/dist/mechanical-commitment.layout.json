@@ -1,6 +1,6 @@
 {
  "key": "mechanical-commitment",
- "version": 1,
+ "version": 2,
  "format": "pdf",
  "sourceSha256": "56638763a6d149dd41f3e75d5de05eb09ab9df777ceb66883c3cfc431fbe5206",
  "baseSha256": "12e9c33a9746e041f8c798ded34e3b2f5caa27ac756b0a8b0c140cd99da52e25",
@@ -303,8 +303,18 @@
     702.9
    ],
    "baseline": 698.8
+  },
+  "stamp": {
+   "page": 0,
+   "rect": [
+    212.0,
+    718.0,
+    312.0,
+    818.0
+   ]
   }
  },
+ "docx": null,
  "build": {
   "engine": "pymupdf 1.28.2"
  }

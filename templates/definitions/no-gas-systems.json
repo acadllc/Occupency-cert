@@ -1,6 +1,6 @@
 {
   "key": "no-gas-systems",
-  "version": 1,
+  "version": 2,
   "status": "verified",
   "name": "No Gas Systems Letter",
   "nameAr": "عدم وجود أنظمة غاز",
@@ -9,6 +9,11 @@
   "source": "عدم وجود أنظمة غاز في المشروع.docx",
   "format": "docx",
   "sanitize": [
+    {
+      "op": "trim_leading_empty_paragraphs",
+      "keep": 1,
+      "optional": true
+    },
     {
       "op": "insert_after",
       "contains": "التاريخ:",
@@ -37,6 +42,12 @@
       "label": "مكونات المشروع",
       "offset": -2,
       "slot": "components"
+    },
+    {
+      "op": "insert_after",
+      "contains": "الإستشاري",
+      "occurrence": -1,
+      "slot": "stamp"
     }
   ],
   "slots": {
@@ -55,6 +66,9 @@
     },
     "components": {
       "kind": "cell"
+    },
+    "stamp": {
+      "kind": "line_leftmost"
     }
   },
   "fields": [
@@ -126,6 +140,15 @@
         6,
         2
       ]
+    },
+    {
+      "slot": "stamp",
+      "stamp": {
+        "size": 110,
+        "anchor": "right",
+        "dx": 6,
+        "dy": 0
+      }
     }
   ]
 }

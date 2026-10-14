@@ -1,9 +1,9 @@
 {
  "key": "no-elevators",
- "version": 1,
+ "version": 2,
  "format": "docx",
  "sourceSha256": "ba7e9b74ad286f1e3c0b67bb343fc6faeb44d2a3909ac7086ec8b70987116303",
- "baseSha256": "7896e66c33318c454654a5d627f451cc61db336cefefe8e8dbaaf3a8a465c071",
+ "baseSha256": "3140aa04099cfa8a037172525730a985dcf5f40e841e00c9dfb0e0065462dba9",
  "pageCount": 1,
  "pages": [
   {
@@ -66,6 +66,27 @@
     416.6,
     451.95
    ]
+  },
+  "stamp": {
+   "page": 0,
+   "baseline": 738.15,
+   "size": 16.0,
+   "rect": [
+    70.05,
+    687.16,
+    139.62,
+    717.29
+   ]
+  }
+ },
+ "docx": {
+  "markers": {
+   "QZ1ZQ": "date",
+   "QZ2ZQ": "owner",
+   "QZ3ZQ": "consultant",
+   "QZ4ZQ": "location",
+   "QZ5ZQ": "components",
+   "QZ6ZQ": "stamp"
   }
  },
  "build": {

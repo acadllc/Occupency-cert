@@ -181,6 +181,16 @@
     },
     "notes_13": {
       "kind": "cell"
+    },
+    "stamp": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        40,
+        183,
+        150,
+        219
+      ]
     }
   },
   "fields": [
@@ -883,6 +893,15 @@
         3,
         2
       ]
+    },
+    {
+      "slot": "stamp",
+      "stamp": {
+        "size": 105,
+        "anchor": "center",
+        "dx": 22,
+        "dy": 10
+      }
     }
   ],
   "reviewNotes": "Nested floating tables of the original are anchored inline so LibreOffice can render them; photo area = fixed-height spacer above each details table.",

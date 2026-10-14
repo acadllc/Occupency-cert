@@ -3,7 +3,7 @@
  "version": 1,
  "format": "docx",
  "sourceSha256": "3ab962ba5f0d89c627ff8ad6817e46421e1febb3ce45dd02782b56fb62b74603",
- "baseSha256": "c2ec7a54c643fa0971578051d4a8fc09cef8ff156959bfa66d2837c1e29aefbc",
+ "baseSha256": "645baf42e6707c6f6d21c576720fc9bb384f01b9121ec077ec4ee3003f11d9ad",
  "pageCount": 1,
  "pages": [
   {
@@ -66,6 +66,15 @@
     416.6,
     372.35
    ]
+  }
+ },
+ "docx": {
+  "markers": {
+   "QZ1ZQ": "date",
+   "QZ2ZQ": "owner",
+   "QZ3ZQ": "consultant",
+   "QZ4ZQ": "location",
+   "QZ5ZQ": "components"
   }
  },
  "build": {

@@ -31,6 +31,8 @@ import {
 import { FontRegistry, createSubsetter, type Subsetter } from './pdf/fonts';
 import { detectDir, familyKey, loadFontAsset, shapeLine, wrapText, type FamilyFonts, type FontAsset, type ShapedLine } from './text/shaper';
 import { isChecked, resolveValue, type ValueContext } from './values';
+import { stampBox } from './stamp';
+import { buildDocx } from './docx';
 import type {
   BilingualItem,
   Catalog,
@@ -43,8 +45,10 @@ import type {
   GeneratedDocument,
   GenerationWarning,
   PhotoEntry,
+  GenerateOptions,
   PhotoItem,
   Placement,
+  StampItem,
   ProjectFields,
   SlotGeometry,
   TextItem,
@@ -57,6 +61,10 @@ export interface EngineAssets {
   loadSubsetWasm(): Promise<Uint8Array>;
   /** Load a project photo (already normalised to JPEG/PNG by the app). */
   loadImage?(path: string): Promise<Uint8Array>;
+  /** Company stamp + signature PNG (kept in private storage, never bundled). */
+  loadStamp?(): Promise<Uint8Array>;
+  /** Editable Word template (templates/dist/<key>.docx) for Word-based templates. */
+  loadDocxTemplate?(key: string, version: number): Promise<Uint8Array>;
 }
 
 const FAMILY_FILES: Record<string, { arabic: string; latin: string }> = {
@@ -94,6 +102,7 @@ export class Engine {
   private assetsCache = new Map<string, Promise<FontAsset>>();
   private subsetter: Subsetter | null = null;
   private templateCache = new Map<string, Promise<Uint8Array>>();
+  private stampCache: Promise<Uint8Array> | undefined;
 
   private constructor(
     private assets: EngineAssets,
@@ -145,7 +154,7 @@ export class Engine {
     return p;
   }
 
-  async generate(templateKey: string, fields: ProjectFields, meta: { title?: string } = {}): Promise<GeneratedDocument> {
+  async generate(templateKey: string, fields: ProjectFields, meta: GenerateOptions = {}): Promise<GeneratedDocument> {
     const { definition, layout } = this.entry(templateKey);
     const base = await this.template(definition.key, definition.version);
     const doc = await PDFDocument.load(base, { updateMetadata: false });
@@ -161,7 +170,9 @@ export class Engine {
       if (!slot) throw new Error(`Template ${templateKey}: unknown slot ${item.slot}`);
       const page = pages[slot.page];
       const dctx: DrawCtx = { doc, page, pageHeight: page.getHeight(), fonts, warnings, placements, pageIndex: slot.page };
-      if ('check' in item) this.drawCheck(dctx, slot, item, fields);
+      if ('stamp' in item) {
+        if (meta.stamp) await this.drawStamp(dctx, slot, item);
+      } else if ('check' in item) this.drawCheck(dctx, slot, item, fields);
       else if ('photo' in item) await this.drawPhoto(dctx, slot, item, fields);
       else if ('photoText' in item) {
         const list = (fields[item.photoText.field] as PhotoEntry[] | undefined) ?? [];
@@ -197,7 +208,7 @@ export class Engine {
     doc.setCreationDate(now);
     doc.setModificationDate(now);
     const bytes = await doc.save({ useObjectStreams: true });
-    return { templateKey, templateVersion: definition.version, bytes, pageCount: doc.getPageCount(), warnings, placements };
+    return { format: 'pdf', templateKey, templateVersion: definition.version, bytes, pageCount: doc.getPageCount(), warnings, placements };
   }
 
   // ------------------------------------------------------------------ text
@@ -385,6 +396,65 @@ export class Engine {
     }
     ops.push(popGraphicsState());
     d.page.pushOperators(...ops);
+  }
+
+  /** Editable Word document (Word-based templates only). */
+  async generateDocx(templateKey: string, fields: ProjectFields, meta: GenerateOptions = {}): Promise<GeneratedDocument> {
+    const entry = this.entry(templateKey);
+    if (!entry.layout.docx || !this.assets.loadDocxTemplate) throw new Error('Word output is not available for this template');
+    const template = await this.assets.loadDocxTemplate(entry.definition.key, entry.definition.version);
+    const res = await buildDocx({
+      template,
+      entry,
+      fields,
+      ctx: { fields, registry: this.registry, company: this.company },
+      options: meta,
+      loadImage: this.assets.loadImage?.bind(this.assets),
+      loadStamp: this.assets.loadStamp ? () => this.stampBytes() : undefined,
+    });
+    return {
+      format: 'docx',
+      templateKey,
+      templateVersion: entry.definition.version,
+      bytes: res.bytes,
+      pageCount: entry.layout.pageCount,
+      warnings: res.warnings,
+      placements: res.filledSlots.map((slot) => ({
+        slot,
+        page: entry.layout.slots[slot]?.page ?? 0,
+        kind: entry.definition.fields.some((f) => f.slot === slot && 'stamp' in f) ? ('stamp' as const) : ('text' as const),
+      })),
+    };
+  }
+
+  supportsDocx(templateKey: string): boolean {
+    return Boolean(this.entry(templateKey).layout.docx);
+  }
+
+  stampBytes(): Promise<Uint8Array> {
+    if (!this.assets.loadStamp) return Promise.reject(new Error('Company stamp not available'));
+    this.stampCache ??= this.assets.loadStamp().catch((err) => {
+      this.stampCache = undefined;
+      throw err;
+    });
+    return this.stampCache;
+  }
+
+  /** Forget the cached stamp image (call after it is replaced). */
+  clearStampCache() {
+    this.stampCache = undefined;
+  }
+
+  private async drawStamp(d: DrawCtx, slot: SlotGeometry, item: StampItem) {
+    try {
+      const img = await d.doc.embedPng(await this.stampBytes());
+      const { cx, cy, size } = stampBox(slot, item);
+      const h = size * (img.height / img.width);
+      d.page.drawImage(img, { x: cx - size / 2, y: d.pageHeight - cy - h / 2, width: size, height: h, opacity: 0.92 });
+      d.placements.push({ slot: item.slot, page: d.pageIndex, kind: 'stamp' });
+    } catch (err) {
+      d.warnings.push({ code: 'image_error', slot: item.slot, message: `Stamp and signature could not be added (${(err as Error).message}).` });
+    }
   }
 
   private async drawPhoto(d: DrawCtx, slot: SlotGeometry, item: PhotoItem, fields: ProjectFields) {

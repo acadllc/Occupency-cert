@@ -30,9 +30,20 @@ depend on fonts installed on that server. Building the bases once, reviewing the
 deterministic output, and the engine can run anywhere (browser, Node tests). The DOCX → PDF conversion is a one-time
 developer step; an optional Word-export path gives exact proprietary fonts.
 
+### Word output, stamp and site plan import
+- **Word (.docx):** the build also keeps the *marked* sanitized DOCX (`templates/dist/<key>.docx`). In the browser the
+  engine (`packages/engine/src/docx.ts`, JSZip) replaces each invisible marker run with the value (same run
+  formatting), ticks check boxes, inlines photos and adds the stamp & signature as a page-anchored image. Official PDF forms have no
+  Word source and are always PDF.
+- **Stamp & signature:** uploaded in Settings to the private `company-assets` bucket (never bundled with the public
+  site), loaded with the signed-in session at generation time and placed only when the user ticks *Add the ACAD stamp
+  & signature*; positions are `"stamp"` items in each definition (`center`, `marker` or `right` = beside the label).
+- **Site plan import:** pdf.js reads the text layer of the uploaded site plan locally;
+  `packages/engine/src/siteplan.ts` maps the PROPERTY / OWNER DETAILS rows to fields. The file is not uploaded.
+
 ### Data flow during generation
 1. Project must be saved; generation uses the saved revision snapshot.
-2. `generation_jobs` row (RLS) → for each template: engine → PDF bytes → upload to `generated-documents/projects/<uuid>/<template>/<file>` (insert-only policy)
+2. `generation_jobs` row (RLS) → for each template: engine → PDF or DOCX bytes → upload to `generated-documents/projects/<uuid>/<template>/<file>` (insert-only policy)
    → `generated_documents` row (path is validated by a CHECK constraint) → job marked completed/partial/failed.
 3. Downloads: authenticated `storage.download` (or short-lived signed URL); ZIP assembled in the browser.
 

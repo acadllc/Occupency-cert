@@ -1,6 +1,6 @@
 {
   "key": "consultant-authorization",
-  "version": 1,
+  "version": 2,
   "status": "verified",
   "name": "Consultant Authorization & Undertaking Letter (Takleef)",
   "nameAr": "تكليف وتعهد الاستشاري",
@@ -293,6 +293,16 @@
         100.6,
         572.2,
         118.1
+      ]
+    },
+    "stamp": {
+      "kind": "rect",
+      "page": 1,
+      "rect": [
+        248.0,
+        298.0,
+        352.0,
+        402.0
       ]
     }
   },
@@ -646,6 +656,13 @@
       },
       "style": "dot",
       "size": 5
+    },
+    {
+      "slot": "stamp",
+      "stamp": {
+        "size": 104,
+        "anchor": "center"
+      }
     }
   ]
 }

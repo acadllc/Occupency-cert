@@ -1,6 +1,6 @@
 {
   "key": "water-validity",
-  "version": 1,
+  "version": 2,
   "status": "verified",
   "name": "Consultant Undertaking – Water Validity for Human Use",
   "nameAr": "تعهد الاستشاري بصلاحية المياه للاستخدام الآدمي",
@@ -262,6 +262,16 @@
         415.5
       ],
       "baseline": 411.4
+    },
+    "stamp": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        278.0,
+        638.0,
+        382.0,
+        742.0
+      ]
     }
   },
   "fields": [
@@ -556,6 +566,14 @@
       "dir": "rtl",
       "align": "right",
       "bold": true
+    },
+    {
+      "slot": "stamp",
+      "stamp": {
+        "size": 104,
+        "anchor": "center",
+        "dy": -22
+      }
     }
   ]
 }

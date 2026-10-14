@@ -1,9 +1,9 @@
 {
  "key": "no-gas-systems",
- "version": 1,
+ "version": 2,
  "format": "docx",
  "sourceSha256": "e568c374889cbdf10620472262e0aef0211e11f5e0638ab1afef20733d55cba1",
- "baseSha256": "d1d17acd5b41ae232813af6a99886bd013812fd746608defe96e665868da06b7",
+ "baseSha256": "16e76e04895a191d451f73874758a78ae8410a36720f070fe709acd51359157f",
  "pageCount": 1,
  "pages": [
   {
@@ -66,6 +66,27 @@
     416.6,
     430.75
    ]
+  },
+  "stamp": {
+   "page": 0,
+   "baseline": 716.95,
+   "size": 16.0,
+   "rect": [
+    70.05,
+    665.96,
+    139.62,
+    696.09
+   ]
+  }
+ },
+ "docx": {
+  "markers": {
+   "QZ1ZQ": "date",
+   "QZ2ZQ": "owner",
+   "QZ3ZQ": "consultant",
+   "QZ4ZQ": "location",
+   "QZ5ZQ": "components",
+   "QZ6ZQ": "stamp"
   }
  },
  "build": {

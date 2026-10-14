@@ -7,7 +7,7 @@ const links = [
   { to: '/projects', label: 'Projects', icon: '☰', end: true },
   { to: '/projects/new', label: 'New project', icon: '＋', end: true },
   { to: '/templates', label: 'Templates', icon: '❐', end: true },
-  { to: '/settings', label: 'Account & security', icon: '⚙', end: true },
+  { to: '/settings', label: 'Settings', icon: '⚙', end: true },
 ];
 
 export function Logo() {

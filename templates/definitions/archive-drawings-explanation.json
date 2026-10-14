@@ -1,6 +1,6 @@
 {
   "key": "archive-drawings-explanation",
-  "version": 1,
+  "version": 2,
   "status": "verified",
   "name": "Explanation of Architectural & Structural Archive Drawings",
   "nameAr": "توضيح بخصوص مخططات الأرشيف المعمارية والإنشائية",
@@ -40,6 +40,12 @@
     {
       "op": "remove_image",
       "target": "media/image1.png"
+    },
+    {
+      "op": "insert_after",
+      "contains": "الاستشاري",
+      "occurrence": -1,
+      "slot": "stamp"
     }
   ],
   "slots": {
@@ -58,6 +64,9 @@
     },
     "area": {
       "kind": "cell"
+    },
+    "stamp": {
+      "kind": "line_leftmost"
     }
   },
   "fields": [
@@ -129,6 +138,15 @@
         3,
         1
       ]
+    },
+    {
+      "slot": "stamp",
+      "stamp": {
+        "size": 110,
+        "anchor": "right",
+        "dx": 6,
+        "dy": 30
+      }
     }
   ]
 }

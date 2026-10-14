@@ -1,9 +1,9 @@
 {
  "key": "no-swimming-pools",
- "version": 1,
+ "version": 2,
  "format": "docx",
  "sourceSha256": "7519a0bbb02e05f349290d8b61b44221ddb08e1bc5fcdfe6fbee2468bc7414bc",
- "baseSha256": "363fb8417381df1e83d794c45531fa17317e5386c7b0b4990f1ea583df9bc7d5",
+ "baseSha256": "a7a89aa3c5349b7de69d89b0bb98d8c6945211d9981d97ecf361c4279f215640",
  "pageCount": 1,
  "pages": [
   {
@@ -66,6 +66,27 @@
     416.6,
     430.75
    ]
+  },
+  "stamp": {
+   "page": 0,
+   "baseline": 716.95,
+   "size": 16.0,
+   "rect": [
+    70.05,
+    665.96,
+    139.62,
+    696.09
+   ]
+  }
+ },
+ "docx": {
+  "markers": {
+   "QZ1ZQ": "date",
+   "QZ2ZQ": "owner",
+   "QZ3ZQ": "consultant",
+   "QZ4ZQ": "location",
+   "QZ5ZQ": "components",
+   "QZ6ZQ": "stamp"
   }
  },
  "build": {
