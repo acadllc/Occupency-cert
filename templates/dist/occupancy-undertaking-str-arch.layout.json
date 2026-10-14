@@ -1,9 +1,9 @@
 {
  "key": "occupancy-undertaking-str-arch",
- "version": 2,
+ "version": 3,
  "format": "docx",
  "sourceSha256": "4ad608b7f6c207e63c8b2f7c54bf17082024d7e4a3ab54f9b4401025bb9aac89",
- "baseSha256": "5a37150cf8978207cf493ae90e005c50c143f4b3106050c713cb0d8861fe80cd",
+ "baseSha256": "8b16c8850c715c77671107fe1e4ecc6c4a464bc1343186cb192bb4f79dae8f48",
  "pageCount": 1,
  "pages": [
   {

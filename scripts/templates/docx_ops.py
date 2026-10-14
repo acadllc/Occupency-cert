@@ -502,6 +502,39 @@ class DocxSanitizer:
         if not empties and not op.get("optional"):
             raise SanitizeError("no leading empty paragraphs")
 
+    def op_footer_align(self, op: dict):
+        """Re-align footer paragraphs matching a pattern (e.g. move the form code off the letterhead contact block)."""
+        pattern = re.compile(op["pattern"])
+        align = op.get("align", "right")
+        hits = 0
+        for name in self.story_parts():
+            if not re.match(r"word/footer\d*\.xml$", name):
+                continue
+            for p in self.tree(name).getroot().iter(w("p")):
+                if not pattern.search(_text_of(p)):
+                    continue
+                ppr = p.find(w("pPr"))
+                if ppr is None:
+                    ppr = etree.SubElement(p, w("pPr"))
+                    p.remove(ppr)
+                    p.insert(0, ppr)
+                for old in ppr.findall(w("jc")) + ppr.findall(w("tabs")) + (ppr.findall(w("pBdr")) if op.get("drop_border") else []):
+                    ppr.remove(old)
+                jc = etree.Element(w("jc"))
+                jc.set(w("val"), align)
+                # schema order: jc comes after spacing/ind and before rPr
+                rpr = ppr.find(w("rPr"))
+                if rpr is not None:
+                    rpr.addprevious(jc)
+                else:
+                    ppr.append(jc)
+                for r in list(p.iter(w("r"))):
+                    if r.find(w("tab")) is not None and not _text_of(r).strip():
+                        r.getparent().remove(r)
+                hits += 1
+        if not hits:
+            raise SanitizeError(f"no footer paragraph matches {op['pattern']!r}")
+
     def op_remove_paragraph(self, op: dict):
         p = self._find_paragraph(op["contains"], int(op.get("occurrence", 0)))
         self.removed.append(_text_of(p).strip())

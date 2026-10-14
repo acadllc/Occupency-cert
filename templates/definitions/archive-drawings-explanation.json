@@ -1,6 +1,6 @@
 {
   "key": "archive-drawings-explanation",
-  "version": 2,
+  "version": 3,
   "status": "verified",
   "name": "Explanation of Architectural & Structural Archive Drawings",
   "nameAr": "توضيح بخصوص مخططات الأرشيف المعمارية والإنشائية",
@@ -46,6 +46,11 @@
       "contains": "الاستشاري",
       "occurrence": -1,
       "slot": "stamp"
+    },
+    {
+      "op": "footer_align",
+      "pattern": "AACM-CP|^V\\d+\\.\\d",
+      "align": "right"
     }
   ],
   "slots": {

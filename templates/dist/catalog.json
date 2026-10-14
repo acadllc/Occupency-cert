@@ -3,7 +3,7 @@
   {
    "definition": {
     "key": "archive-drawings-explanation",
-    "version": 2,
+    "version": 3,
     "status": "verified",
     "name": "Explanation of Architectural & Structural Archive Drawings",
     "nameAr": "توضيح بخصوص مخططات الأرشيف المعمارية والإنشائية",
@@ -94,10 +94,10 @@
    },
    "layout": {
     "key": "archive-drawings-explanation",
-    "version": 2,
+    "version": 3,
     "format": "docx",
     "sourceSha256": "b4781214e76d4973d92868e0f9336f3e6546041e0cb8b04f68d44535a28a5d8f",
-    "baseSha256": "664b97d6ceca13a33eda06c36de307ea30b3dac47c6109de14be3df930ace801",
+    "baseSha256": "46656b9387b6b50f148ad973f654656ba57a6ae6b015cd455b64decb7560dcc9",
     "pageCount": 1,
     "pages": [
      {
@@ -3769,7 +3769,7 @@
   {
    "definition": {
     "key": "occupancy-undertaking-str-arch",
-    "version": 2,
+    "version": 3,
     "status": "verified",
     "name": "Building Occupancy Undertaking – Architectural & Structural",
     "nameAr": "تعهد إشغال مبنى – معماري وإنشائي",
@@ -3893,10 +3893,10 @@
    },
    "layout": {
     "key": "occupancy-undertaking-str-arch",
-    "version": 2,
+    "version": 3,
     "format": "docx",
     "sourceSha256": "4ad608b7f6c207e63c8b2f7c54bf17082024d7e4a3ab54f9b4401025bb9aac89",
-    "baseSha256": "5a37150cf8978207cf493ae90e005c50c143f4b3106050c713cb0d8861fe80cd",
+    "baseSha256": "8b16c8850c715c77671107fe1e4ecc6c4a464bc1343186cb192bb4f79dae8f48",
     "pageCount": 1,
     "pages": [
      {
@@ -4378,7 +4378,7 @@
   {
    "definition": {
     "key": "photo-report-mechanical",
-    "version": 1,
+    "version": 2,
     "status": "verified",
     "name": "Photo Technical Report – Mechanical Works",
     "nameAr": "تقرير فني مصور للأعمال الميكانيكية",
@@ -5110,10 +5110,10 @@
    },
    "layout": {
     "key": "photo-report-mechanical",
-    "version": 1,
+    "version": 2,
     "format": "docx",
     "sourceSha256": "ceec78749c0962b0f2e5504724edfde0b8e840d634385eb8da47aa15aacf4669",
-    "baseSha256": "48d14436a18a482d9610ada64718be33bb06935d92e752f81ec9be351f9722bf",
+    "baseSha256": "eea79e4088242e7f535912e4de5d3236f63618f2cde05744a4526a4ef42daefd",
     "pageCount": 4,
     "pages": [
      {
@@ -5709,7 +5709,7 @@
   {
    "definition": {
     "key": "photo-report-plumbing",
-    "version": 1,
+    "version": 2,
     "status": "verified",
     "name": "Photo Technical Report – Plumbing & Drainage Works",
     "nameAr": "تقرير فني مصور لأعمال السباكة والصرف الصحي",
@@ -6441,10 +6441,10 @@
    },
    "layout": {
     "key": "photo-report-plumbing",
-    "version": 1,
+    "version": 2,
     "format": "docx",
     "sourceSha256": "29b5de04dc63c39ac234ab1e7ebdf33a9077518c3bcedf742f063eb68e5a41c2",
-    "baseSha256": "3116eff41a869b5c3c0856231bb7ee8a8b3573bc0e5feed1e51f031dc434f3be",
+    "baseSha256": "8ec388f84fce7f06126930a08e62e8bba3ca28014139df8eb545a589ef960a83",
     "pageCount": 4,
     "pages": [
      {
