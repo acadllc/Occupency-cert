@@ -16,6 +16,8 @@ const registry = read('templates/fields.json') as FieldRegistry;
 const company = read('templates/company.json') as CompanyConfig;
 const catalog = read('templates/dist/catalog.json') as Catalog;
 
+// use the private local stamp/signature copy (templates/.qa/stamp-signature.png) for visual QA when present
+process.env.ACAD_LOCAL_STAMP ??= '1';
 const only = process.argv.slice(2);
 const out = join(root, 'templates', '.qa', 'out');
 mkdirSync(out, { recursive: true });

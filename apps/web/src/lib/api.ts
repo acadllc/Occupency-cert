@@ -98,7 +98,13 @@ export interface DataApi {
   uploadPhoto(path: string, file: Blob): Promise<void>;
   downloadPhoto(path: string): Promise<Blob>;
   deletePhoto(path: string): Promise<void>;
+  /** Company stamp + signature PNG (private bucket); null when none has been uploaded yet. */
+  getStampSignature(): Promise<Blob | null>;
+  saveStampSignature(png: Blob): Promise<void>;
+  deleteStampSignature(): Promise<void>;
 }
+
+export const STAMP_PATH = 'stamp-signature.png';
 
 export class ConflictError extends Error {}
 
@@ -260,6 +266,22 @@ export class SupabaseApi implements DataApi {
     if (error) fail('Uploading the photo', error);
   }
 
+  async getStampSignature() {
+    const { data, error } = await this.db.storage.from('company-assets').download(STAMP_PATH);
+    if (error) {
+      if (/not.?found|does not exist/i.test(error.message ?? '')) return null;
+      fail('Loading the stamp and signature', error);
+    }
+    return data;
+  }
+  async saveStampSignature(png: Blob) {
+    const { error } = await this.db.storage.from('company-assets').upload(STAMP_PATH, png, { contentType: 'image/png', upsert: true, cacheControl: '0' });
+    if (error) fail('Saving the stamp and signature', error);
+  }
+  async deleteStampSignature() {
+    const { error } = await this.db.storage.from('company-assets').remove([STAMP_PATH]);
+    if (error) fail('Removing the stamp and signature', error);
+  }
   async downloadPhoto(path: string) {
     const { data, error } = await this.db.storage.from('project-files').download(path);
     if (error || !data) fail('Loading a photo', error);

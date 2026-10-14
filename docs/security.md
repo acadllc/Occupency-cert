@@ -19,13 +19,22 @@
 - User input is rendered as React text (no HTML injection); control characters are rejected; lengths are bounded.
 - Uploaded photos are re-encoded to JPEG in the browser (drops EXIF/GPS) and limited to 10 MB in the bucket.
 
+## Stamp & signature
+- The ACAD stamp & signature image is never committed or bundled with the public site. It is uploaded from Settings
+  to the private `company-assets` bucket (PNG only, 2 MB, one fixed file name; read/replace only by allow-listed
+  sessions) and loaded with the signed-in session when a document is generated.
+- It is only added when the user ticks *Add the ACAD stamp & signature*, and only on templates with an ACAD signature
+  position. Generated files carrying it are stored privately like every other document.
+- Anyone who can sign in can generate signed documents — keep the shared password safe and enable two-step verification.
+
 ## Template privacy
 - `reference-documents/` holds the original samples **with real historical client data**. They are inputs for the
   build only and are never copied to the website. Sanitized outputs are checked by `scripts/templates/qa.py`
   (exact search in DOCX XML, NFKC/word-level search in PDF text and metadata, image inventory).
 - ⚠️ The GitHub repository is currently **public**, so the originals in `reference-documents/` are publicly visible.
   Make the repository private (GitHub Pages from a private repository needs a paid plan) or remove the originals from
-  the repository *and its history*, keeping them only locally / in a private location.
+  the repository *and its history*, keeping them only locally / in a private location. (They also contain earlier
+  stamps and signatures.)
 
 ## Shared account trade-off
 A single company login cannot attribute actions to individual employees; `created_by` identifies the account only.

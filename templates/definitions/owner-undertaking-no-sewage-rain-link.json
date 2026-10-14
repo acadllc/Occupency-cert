@@ -143,9 +143,10 @@
     {
       "slot": "stamp",
       "stamp": {
-        "size": 105,
-        "anchor": "center",
-        "dy": -30
+        "size": 110,
+        "anchor": "right",
+        "dx": 6,
+        "dy": 0
       }
     }
   ]

@@ -1,4 +1,5 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { analyzeMissing } from '@acad/engine';
 import { MIME, type Project } from '../lib/api';
 import { catalog, registry } from '../lib/config';
@@ -28,6 +29,14 @@ export function GenerateDialog({ project, templateKeys, onClose }: { project: Pr
   const [states, setStates] = useState<Record<string, ItemState>>(() => Object.fromEntries(templateKeys.map((k) => [k, { status: 'queued' } as ItemState])));
   const [summary, setSummary] = useState<string | null>(null);
   const [started, setStarted] = useState(false);
+  const [hasStamp, setHasStamp] = useState<boolean | null>(null);
+  useEffect(() => {
+    api
+      .getStampSignature()
+      .then((b) => setHasStamp(Boolean(b)))
+      .catch(() => setHasStamp(false));
+  }, [api]);
+  const useStamp = prefs.stamp && hasStamp === true;
   const pdfOnly = templateKeys.filter((k) => !entryOf(k)?.layout.docx);
   const withStamp = templateKeys.filter((k) => entryOf(k)?.definition.fields.some((f) => 'stamp' in f));
 
@@ -41,7 +50,7 @@ export function GenerateDialog({ project, templateKeys, onClose }: { project: Pr
       /* ignore */
     }
     try {
-      const res = await runGeneration(api, project, templateKeys, prefs, (k, s) => setStates((prev) => ({ ...prev, [k]: s })));
+      const res = await runGeneration(api, project, templateKeys, { ...prefs, stamp: useStamp }, (k, s) => setStates((prev) => ({ ...prev, [k]: s })));
       setSummary(res.status === 'completed' ? 'All documents were generated and saved privately.' : res.status === 'partial' ? 'Some documents failed — see below. The others were saved.' : 'Generation failed.');
     } catch (e) {
       setSummary((e as Error).message);
@@ -106,13 +115,19 @@ export function GenerateDialog({ project, templateKeys, onClose }: { project: Pr
               )}
             </div>
             <div className="field">
-              <span className="label">Company stamp</span>
-              <label className={`chip ${prefs.stamp ? 'on' : ''}`} style={{ alignSelf: 'flex-start' }}>
-                <input type="checkbox" checked={prefs.stamp} onChange={(e) => setPrefs({ ...prefs, stamp: e.target.checked })} />
-                Add the ACAD stamp
+              <span className="label">Stamp &amp; signature</span>
+              <label className={`chip ${useStamp ? 'on' : ''}`} style={{ alignSelf: 'flex-start', opacity: hasStamp === false ? 0.6 : 1 }}>
+                <input type="checkbox" checked={useStamp} disabled={!hasStamp} onChange={(e) => setPrefs({ ...prefs, stamp: e.target.checked })} />
+                Add the ACAD stamp &amp; signature
               </label>
               <span className="help">
-                {withStamp.length} of {templateKeys.length} selected document{templateKeys.length > 1 ? 's have' : ' has'} a consultant stamp position. Signatures are never added.
+                {hasStamp === false ? (
+                  <>
+                    Not uploaded yet — add the image under <Link to="/settings">Settings</Link>.
+                  </>
+                ) : (
+                  `${withStamp.length} of ${templateKeys.length} selected document${templateKeys.length > 1 ? 's have' : ' has'} an ACAD signature position.`
+                )}
               </span>
             </div>
           </div>

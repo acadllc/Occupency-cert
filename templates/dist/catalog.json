@@ -84,9 +84,10 @@
      {
       "slot": "stamp",
       "stamp": {
-       "size": 105,
-       "anchor": "center",
-       "dy": 38
+       "size": 110,
+       "anchor": "right",
+       "dx": 6,
+       "dy": 30
       }
      }
     ]
@@ -930,9 +931,10 @@
      {
       "slot": "stamp",
       "stamp": {
-       "size": 105,
-       "anchor": "center",
-       "dy": -30
+       "size": 110,
+       "anchor": "right",
+       "dx": 6,
+       "dy": 0
       }
      }
     ]
@@ -3066,9 +3068,10 @@
      {
       "slot": "stamp",
       "stamp": {
-       "size": 105,
-       "anchor": "center",
-       "dy": -30
+       "size": 110,
+       "anchor": "right",
+       "dx": 6,
+       "dy": 0
       }
      }
     ]
@@ -3254,9 +3257,10 @@
      {
       "slot": "stamp",
       "stamp": {
-       "size": 105,
-       "anchor": "center",
-       "dy": -30
+       "size": 110,
+       "anchor": "right",
+       "dx": 6,
+       "dy": 0
       }
      }
     ]
@@ -3442,9 +3446,10 @@
      {
       "slot": "stamp",
       "stamp": {
-       "size": 105,
-       "anchor": "center",
-       "dy": -30
+       "size": 110,
+       "anchor": "right",
+       "dx": 6,
+       "dy": 0
       }
      }
     ]
@@ -3644,9 +3649,10 @@
      {
       "slot": "stamp",
       "stamp": {
-       "size": 105,
-       "anchor": "center",
-       "dy": -30
+       "size": 110,
+       "anchor": "right",
+       "dx": 6,
+       "dy": 0
       }
      }
     ]
@@ -4264,9 +4270,10 @@
      {
       "slot": "stamp",
       "stamp": {
-       "size": 105,
-       "anchor": "center",
-       "dy": -30
+       "size": 110,
+       "anchor": "right",
+       "dx": 6,
+       "dy": 0
       }
      }
     ]
@@ -5079,6 +5086,15 @@
        3,
        2
       ]
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 105,
+       "anchor": "center",
+       "dx": 22,
+       "dy": 10
+      }
      }
     ],
     "reviewNotes": "Nested floating tables of the original are anchored inline so LibreOffice can render them; photo area = fixed-height spacer above each details table.",
@@ -5622,6 +5638,15 @@
        583.85,
        260.3,
        624.75
+      ]
+     },
+     "stamp": {
+      "page": 0,
+      "rect": [
+       40,
+       183,
+       150,
+       219
       ]
      }
     },
@@ -6392,6 +6417,15 @@
        3,
        2
       ]
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 105,
+       "anchor": "center",
+       "dx": 22,
+       "dy": 10
+      }
      }
     ],
     "reviewNotes": "Nested floating tables of the original are anchored inline so LibreOffice can render them; photo area = fixed-height spacer above each details table.",
@@ -6936,6 +6970,15 @@
        260.3,
        624.75
       ]
+     },
+     "stamp": {
+      "page": 0,
+      "rect": [
+       40,
+       183,
+       150,
+       219
+      ]
      }
     },
     "docx": {
@@ -7303,7 +7346,8 @@
       "slot": "stamp",
       "stamp": {
        "size": 100,
-       "anchor": "center"
+       "anchor": "center",
+       "dy": -22
       }
      }
     ]
@@ -8417,7 +8461,8 @@
       "slot": "stamp",
       "stamp": {
        "size": 104,
-       "anchor": "center"
+       "anchor": "center",
+       "dy": -22
       }
      }
     ]

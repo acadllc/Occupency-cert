@@ -5,7 +5,7 @@
  */
 import type { ProjectFields } from '@acad/engine';
 import type { DataApi, GeneratedDocumentRow, GenerationJob, NewDocument, Project, ProjectQuery } from './api';
-import { ConflictError } from './api';
+import { ConflictError, STAMP_PATH } from './api';
 
 interface Store {
   projects: Project[];
@@ -176,5 +176,14 @@ export class MockApi implements DataApi {
   }
   async deletePhoto(path: string) {
     files.delete(path);
+  }
+  async getStampSignature() {
+    return files.get(`company-assets/${STAMP_PATH}`) ?? null;
+  }
+  async saveStampSignature(png: Blob) {
+    files.set(`company-assets/${STAMP_PATH}`, png);
+  }
+  async deleteStampSignature() {
+    files.delete(`company-assets/${STAMP_PATH}`);
   }
 }

@@ -9,6 +9,7 @@ import {
   formatDate,
   isGeneratable,
   resolveValue,
+  stampBox,
   templateSpecificFields,
   validateFields,
   type Catalog,
@@ -198,6 +199,23 @@ describe('company stamp', () => {
     expect(without.placements.filter((p) => p.kind === 'stamp')).toHaveLength(0);
     const ownerOnly = await engine.generate('owner-undertaking-cd-renewal', sampleProject, { stamp: true });
     expect(ownerOnly.placements.filter((p) => p.kind === 'stamp')).toHaveLength(0);
+    const photoReport = await engine.generate('photo-report-mechanical', sampleProject, { stamp: true });
+    expect(photoReport.placements.filter((p) => p.kind === 'stamp')).toHaveLength(1);
+    const photoReportWord = await engine.generateDocx('photo-report-mechanical', sampleProject, { stamp: true });
+    expect(photoReportWord.placements.filter((p) => p.kind === 'stamp')).toHaveLength(1);
+  });
+
+  it('is placed beside the consultant label on letters', () => {
+    const slot = { page: 0, rect: [200, 380, 250, 400] as [number, number, number, number] };
+    expect(stampBox(slot, { slot: 'stamp', stamp: { size: 110, anchor: 'right', dx: 6 } })).toEqual({ cx: 311, cy: 390, size: 110 });
+  });
+
+  it('warns instead of failing when no stamp image has been uploaded', async () => {
+    const assets = nodeAssets(root, photos);
+    const bare = await Engine.create({ ...assets, loadStamp: () => Promise.reject(new Error('none uploaded')) }, registry, company, catalog);
+    const res = await bare.generate('number-of-users', sampleProject, { stamp: true });
+    expect(res.placements.filter((p) => p.kind === 'stamp')).toHaveLength(0);
+    expect(res.warnings.some((w) => /Stamp and signature could not be added/.test(w.message))).toBe(true);
   });
 });
 

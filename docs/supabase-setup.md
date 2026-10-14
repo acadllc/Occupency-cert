@@ -12,6 +12,7 @@ Dashboard → **SQL Editor** → *New query*. Paste the full content of each fil
 | 1 | `supabase/migrations/20261013000100_init.sql` | tables, triggers, RLS policies, private buckets `generated-documents` and `project-files`, storage policies |
 | 2 | `supabase/migrations/20261013000200_template_registry_seed.sql` | registers the 18 templates (metadata only) |
 | 3 | `supabase/migrations/20261014000100_word_output.sql` | allows Word (.docx) files in the `generated-documents` bucket and history |
+| 4 | `supabase/migrations/20261014000200_company_assets.sql` | private `company-assets` bucket for the stamp & signature image (uploaded from Settings) |
 
 Alternative with the Supabase CLI (on your own computer):
 

@@ -31,6 +31,14 @@ test('full workflow: create, generate, download, history, edit, search', async (
   page.on('pageerror', (e) => errors.push(e.message));
   await login(page);
 
+  // ---- stamp & signature are uploaded once in Settings (private storage; fictional test image)
+  await page.getByRole('navigation').getByRole('link', { name: 'Settings' }).click();
+  await expect(page.getByText('No stamp and signature uploaded yet')).toBeVisible();
+  await page.getByLabel('Stamp and signature image').setInputFiles(fileURLToPath(new URL('../fixtures/test-stamp.png', import.meta.url)));
+  await expect(page.getByText('Stamp and signature saved')).toBeVisible();
+  await expect(page.getByAltText('Current stamp and signature')).toBeVisible();
+  await page.getByRole('navigation').getByRole('link', { name: 'Dashboard' }).click();
+
   // ---- create a project
   await page.getByRole('link', { name: '＋ New project' }).first().click();
   await expect(page.getByRole('heading', { name: 'New project' })).toBeVisible();
@@ -82,7 +90,7 @@ test('full workflow: create, generate, download, history, edit, search', async (
   // Word output with the company stamp; the official mechanical form stays PDF
   await dialog.getByText('Word (.docx)').click();
   await expect(dialog.getByText(/only available as PDF/)).toBeVisible();
-  await expect(dialog.getByLabel('Add the ACAD stamp')).toBeChecked();
+  await expect(dialog.getByLabel('Add the ACAD stamp & signature')).toBeChecked();
   await dialog.getByRole('button', { name: 'Continue with blanks' }).click();
   await expect(dialog.getByText('All documents were generated and saved privately.')).toBeVisible({ timeout: 60_000 });
 

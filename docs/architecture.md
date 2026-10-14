@@ -33,10 +33,11 @@ developer step; an optional Word-export path gives exact proprietary fonts.
 ### Word output, stamp and site plan import
 - **Word (.docx):** the build also keeps the *marked* sanitized DOCX (`templates/dist/<key>.docx`). In the browser the
   engine (`packages/engine/src/docx.ts`, JSZip) replaces each invisible marker run with the value (same run
-  formatting), ticks check boxes, inlines photos and adds the stamp as a floating image. Official PDF forms have no
+  formatting), ticks check boxes, inlines photos and adds the stamp & signature as a page-anchored image. Official PDF forms have no
   Word source and are always PDF.
-- **Stamp:** `templates/company-stamp.png`, placed only when the user ticks *Add the ACAD stamp*; positions are
-  `"stamp"` items in each definition. Signatures are never added.
+- **Stamp & signature:** uploaded in Settings to the private `company-assets` bucket (never bundled with the public
+  site), loaded with the signed-in session at generation time and placed only when the user ticks *Add the ACAD stamp
+  & signature*; positions are `"stamp"` items in each definition (`center`, `marker` or `right` = beside the label).
 - **Site plan import:** pdf.js reads the text layer of the uploaded site plan locally;
   `packages/engine/src/siteplan.ts` maps the PROPERTY / OWNER DETAILS rows to fields. The file is not uploaded.
 

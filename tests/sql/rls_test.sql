@@ -30,6 +30,8 @@ do $$ begin
   exception when insufficient_privilege then null; end;
   begin insert into storage.objects (bucket_id, name) values ('generated-documents', 'projects/x/y.pdf'); raise exception 'stranger uploaded';
   exception when insufficient_privilege then null; end;
+  begin insert into storage.objects (bucket_id, name) values ('company-assets', 'stamp-signature.png'); raise exception 'stranger uploaded a stamp';
+  exception when insufficient_privilege then null; end;
 end $$;
 reset role;
 
@@ -101,6 +103,13 @@ begin
   delete from storage.objects where bucket_id = 'project-files';
   get diagnostics n = row_count;
   if n <> 1 then raise exception 'photo delete failed'; end if;
+  -- company stamp/signature: one fixed file name, replaceable
+  insert into storage.objects (bucket_id, name) values ('company-assets', 'stamp-signature.png');
+  update storage.objects set name = name where bucket_id = 'company-assets';
+  get diagnostics n = row_count;
+  if n <> 1 then raise exception 'stamp replace failed'; end if;
+  begin insert into storage.objects (bucket_id, name) values ('company-assets', 'other.png'); raise exception 'arbitrary company asset accepted';
+  exception when insufficient_privilege then null; end;
 end $$;
 reset role;
 

@@ -61,7 +61,7 @@ export interface EngineAssets {
   loadSubsetWasm(): Promise<Uint8Array>;
   /** Load a project photo (already normalised to JPEG/PNG by the app). */
   loadImage?(path: string): Promise<Uint8Array>;
-  /** Company stamp PNG (templates/company-stamp.png). */
+  /** Company stamp + signature PNG (kept in private storage, never bundled). */
   loadStamp?(): Promise<Uint8Array>;
   /** Editable Word template (templates/dist/<key>.docx) for Word-based templates. */
   loadDocxTemplate?(key: string, version: number): Promise<Uint8Array>;
@@ -419,7 +419,11 @@ export class Engine {
       bytes: res.bytes,
       pageCount: entry.layout.pageCount,
       warnings: res.warnings,
-      placements: res.filledSlots.map((slot) => ({ slot, page: entry.layout.slots[slot]?.page ?? 0, kind: 'text' as const })),
+      placements: res.filledSlots.map((slot) => ({
+        slot,
+        page: entry.layout.slots[slot]?.page ?? 0,
+        kind: entry.definition.fields.some((f) => f.slot === slot && 'stamp' in f) ? ('stamp' as const) : ('text' as const),
+      })),
     };
   }
 
@@ -429,8 +433,16 @@ export class Engine {
 
   stampBytes(): Promise<Uint8Array> {
     if (!this.assets.loadStamp) return Promise.reject(new Error('Company stamp not available'));
-    this.stampCache ??= this.assets.loadStamp();
+    this.stampCache ??= this.assets.loadStamp().catch((err) => {
+      this.stampCache = undefined;
+      throw err;
+    });
     return this.stampCache;
+  }
+
+  /** Forget the cached stamp image (call after it is replaced). */
+  clearStampCache() {
+    this.stampCache = undefined;
   }
 
   private async drawStamp(d: DrawCtx, slot: SlotGeometry, item: StampItem) {
@@ -441,7 +453,7 @@ export class Engine {
       d.page.drawImage(img, { x: cx - size / 2, y: d.pageHeight - cy - h / 2, width: size, height: h, opacity: 0.92 });
       d.placements.push({ slot: item.slot, page: d.pageIndex, kind: 'stamp' });
     } catch (err) {
-      d.warnings.push({ code: 'image_error', slot: item.slot, message: `Company stamp could not be added (${(err as Error).message}).` });
+      d.warnings.push({ code: 'image_error', slot: item.slot, message: `Stamp and signature could not be added (${(err as Error).message}).` });
     }
   }
 

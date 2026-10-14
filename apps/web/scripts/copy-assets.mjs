@@ -18,5 +18,4 @@ for (const { definition, layout } of catalog.templates) {
   copyFileSync(join(root, 'templates', 'dist', `${definition.key}.pdf`), join(pub, 'templates', `${definition.key}.v${definition.version}.pdf`));
   if (layout.docx) copyFileSync(join(root, 'templates', 'dist', `${definition.key}.docx`), join(pub, 'templates', `${definition.key}.v${definition.version}.docx`));
 }
-copyFileSync(join(root, 'templates', 'company-stamp.png'), join(pub, 'templates', 'company-stamp.png'));
 console.log(`copied ${catalog.templates.length} templates and fonts to public/`);

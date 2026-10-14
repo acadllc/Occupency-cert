@@ -571,7 +571,8 @@
       "slot": "stamp",
       "stamp": {
         "size": 104,
-        "anchor": "center"
+        "anchor": "center",
+        "dy": -22
       }
     }
   ]

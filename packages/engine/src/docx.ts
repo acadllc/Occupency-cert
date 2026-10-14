@@ -114,7 +114,7 @@ export async function buildDocx(d: DocxDeps): Promise<DocxResult> {
         const box = stampBox(slot, item);
         values.set(item.slot, { kind: 'stamp', bytes: await d.loadStamp(), slot, size: box.size, cx: box.cx, cy: box.cy });
       } catch (e) {
-        warnings.push({ code: 'image_error', slot: item.slot, message: `Company stamp could not be added (${(e as Error).message}).` });
+        warnings.push({ code: 'image_error', slot: item.slot, message: `Stamp and signature could not be added (${(e as Error).message}).` });
       }
     } else if ('photo' in item) {
       const p = ((fields[item.photo.field] as PhotoEntry[] | undefined) ?? [])[item.photo.index];
@@ -157,10 +157,28 @@ export async function buildDocx(d: DocxDeps): Promise<DocxResult> {
   const filled: string[] = [];
   const stampRuns: string[] = [];
   let drawingId = 9000;
+  // stamps are positioned on the page (they need no marker in the text)
+  for (const [slotName, v] of values) {
+    if (v.kind !== 'stamp') continue;
+    const size = imageSize(v.bytes);
+    const h = v.size * (size.height / size.width);
+    stampRuns.push(
+      anchoredDrawing(
+        addImage(v.bytes),
+        ++drawingId,
+        'Company stamp and signature',
+        Math.round((v.cx - v.size / 2) * EMU_PER_PT),
+        Math.round((v.cy - h / 2) * EMU_PER_PT),
+        Math.round(v.size * EMU_PER_PT),
+        Math.round(h * EMU_PER_PT),
+      ),
+    );
+    filled.push(slotName);
+  }
   const parts = Object.keys(zip.files).filter((n) => /^word\/(document|header\d*|footer\d*)\.xml$/.test(n));
   for (const name of parts) {
     let xml = await zip.file(name)!.async('string');
-    if (!xml.includes('QZ')) continue;
+    if (!xml.includes('QZ') && !(name === 'word/document.xml' && stampRuns.length)) continue;
     // paragraphs holding a photo: fixed line height would clip the picture
     xml = xml.replace(PARAGRAPH, (p) => {
       const m = /QZ\d+ZQ/.exec(p);
@@ -170,7 +188,7 @@ export async function buildDocx(d: DocxDeps): Promise<DocxResult> {
     xml = xml.replace(MARKER_RUN, (_all, inner: string, marker: string) => {
       const slotName = markers[marker];
       const v = slotName ? values.get(slotName) : undefined;
-      if (!v) return '';
+      if (!v || v.kind === 'stamp') return ''; // stamps are added as page-anchored pictures
       filled.push(slotName);
       if (v.kind === 'text') {
         const rPr = (/<w:rPr>.*?<\/w:rPr>/s.exec(inner)?.[0] ?? '').replace(/<w:color [^>]*\/>/g, '');
@@ -183,25 +201,12 @@ export async function buildDocx(d: DocxDeps): Promise<DocxResult> {
       const size = imageSize(v.bytes);
       const rid = addImage(v.bytes);
       drawingId++;
-      if (v.kind === 'photo') {
-        const [x0, y0, x1, y1] = v.slot.rect;
-        const pad = 6;
-        const scale = Math.min((x1 - x0 - 2 * pad) / size.width, (y1 - y0 - 2 * pad - 4) / size.height);
-        const cx = Math.round(size.width * scale * EMU_PER_PT);
-        const cy = Math.round(size.height * scale * EMU_PER_PT);
-        return inlineDrawing(rid, drawingId, `Photo ${drawingId}`, cx, cy);
-      }
-      const h = v.size * (size.height / size.width);
-      stampRuns.push(anchoredDrawing(
-        rid,
-        drawingId,
-        'Company stamp',
-        Math.round((v.cx - v.size / 2) * EMU_PER_PT),
-        Math.round((v.cy - h / 2) * EMU_PER_PT),
-        Math.round(v.size * EMU_PER_PT),
-        Math.round(h * EMU_PER_PT),
-      ));
-      return '';
+      const [x0, y0, x1, y1] = v.slot.rect;
+      const pad = 6;
+      const scale = Math.min((x1 - x0 - 2 * pad) / size.width, (y1 - y0 - 2 * pad - 4) / size.height);
+      const cx = Math.round(size.width * scale * EMU_PER_PT);
+      const cy = Math.round(size.height * scale * EMU_PER_PT);
+      return inlineDrawing(rid, drawingId, `Photo ${drawingId}`, cx, cy);
     });
     if (name === 'word/document.xml' && stampRuns.length) {
       // the stamp is positioned relative to the page; anchor it to the first body paragraph

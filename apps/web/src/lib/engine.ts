@@ -19,7 +19,12 @@ export function getEngine(): Promise<Engine> {
         loadFont: (file) => fetchBytes(assetUrl(`fonts/${file}`)),
         loadTemplate: (key, version) => fetchBytes(assetUrl(`templates/${key}.v${version}.pdf`)),
         loadSubsetWasm: () => fetchBytes(subsetWasmUrl),
-        loadStamp: () => fetchBytes(assetUrl('templates/company-stamp.png')),
+        loadStamp: async () => {
+          const { api } = await getBackend();
+          const blob = await api.getStampSignature();
+          if (!blob) throw new Error('no stamp and signature uploaded yet — add it under Settings');
+          return new Uint8Array(await blob.arrayBuffer());
+        },
         loadDocxTemplate: (key, version) => fetchBytes(assetUrl(`templates/${key}.v${version}.docx`)),
         loadImage: async (path) => {
           const { api } = await getBackend();
@@ -35,4 +40,9 @@ export function getEngine(): Promise<Engine> {
     });
   }
   return engine;
+}
+
+/** Drop the cached stamp/signature after it was replaced in Settings. */
+export function stampChanged() {
+  void engine?.then((e) => e.clearStampCache()).catch(() => undefined);
 }

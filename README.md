@@ -14,7 +14,7 @@ automatically. Every file is stored privately and kept in the project's history.
 | Area | Status |
 | --- | --- |
 | Template sanitization (old owners, IDs, dates, stamps, signatures, metadata removed) | ✅ 18/18, automated leak check passes ([report](docs/template-qa-report.md)) |
-| Field mappings, Arabic RTL shaping, check boxes, photos, optional company stamp | ✅ 18/18, rendered and visually reviewed; 56 automated tests |
+| Field mappings, Arabic RTL shaping, check boxes, photos, optional stamp & signature | ✅ 18/18, rendered and visually reviewed; 58 automated tests |
 | Word (.docx) output | ✅ for the 11 Word-based documents (the 7 official PDF forms are always PDF) |
 | Site plan import (fills location, plot, land use and owner from the site plan PDF) | ✅ read in the browser, never uploaded |
 | Dashboard: login, projects, search, bilingual inputs, dynamic fields, warnings, PDF/ZIP download, history | ✅ end-to-end tested (Playwright) |
@@ -98,8 +98,7 @@ npm run dev                                    # http://localhost:5173
    location preview updates live). Names are never machine-translated.
 2. Tick documents under **Documents to generate** (or *Select all*). Inputs needed only by those documents appear
    under **Document-specific details** (e.g. elevator data, check-box options, photos for photo reports).
-3. **Save & generate** → choose **PDF** or **Word (.docx)** and whether to **add the ACAD stamp** (signatures are never
-   added); a pre-flight list shows empty inputs and which documents use them → **Continue with blanks** or go back.
+3. **Save & generate** → choose **PDF** or **Word (.docx)** and whether to **add the ACAD stamp & signature**; a pre-flight list shows empty inputs and which documents use them → **Continue with blanks** or go back.
    Each file is generated, uploaded privately and recorded; download individually or as a ZIP. Official government
    PDF forms are always produced as PDF.
 4. **Generated documents** tab: every generation is immutable and tied to the saved project revision; re-download
@@ -113,9 +112,12 @@ copy the source file into `reference-documents/`, write `templates/definitions/<
 `verified`. New inputs are one entry in `templates/fields.json`. Step-by-step: **[docs/adding-templates.md](docs/adding-templates.md)**.
 
 Fixed company values (legal names, supported cities: Al Ain, Abu Dhabi) live in `templates/company.json`.
-The company stamp image is `templates/company-stamp.png` (transparent PNG, no signature); replace it with a clean
-scan of the official stamp and redeploy to change it. Stamp positions are per template (`"stamp"` items in the
-definitions).
+The company **stamp & signature** image is uploaded once under **Settings → Stamp & signature** and kept in the private
+`company-assets` bucket — it is deliberately **not** in this public repository or on the public website. It is placed on
+the consultant signature area of ACAD's documents (the letters beside «الاستشاري», the photo reports on the consultant
+row, the government forms on the consultant signature line). Positions are per template (`"stamp"` items in the
+definitions). Owner and contractor undertakings (owner renewal letter, gas and swimming-pool testing forms) have no
+ACAD signature place and never get it.
 
 ## 6. Security and privacy notes
 
@@ -135,7 +137,7 @@ definitions).
 - The two photo reports use nested floating tables that LibreOffice cannot lay out; they were re-anchored inline (same
   2-column card grid, photo area above each details table).
 - Word output keeps the original Word layout and fonts as named in the document; on computers without those fonts Word
-  substitutes them. Stamps in Word files are floating images that can be moved or deleted in Word.
+  substitutes them. The stamp & signature in Word files is a floating image that can be moved or deleted in Word.
 - Site plan import supports the Abu Dhabi Real Estate Centre "Land Site Plan / مخطط أرض" PDF (text-based, not scans).
 - Over-long values shrink to fit and, if still too long, the PDF is produced with a visible warning rather than being cut off.
 - `05Owner Undertaking for Temporary Occupancy certificate.pdf`, named in the original specification, is not in

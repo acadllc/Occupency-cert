@@ -142,9 +142,10 @@
     {
       "slot": "stamp",
       "stamp": {
-        "size": 105,
-        "anchor": "center",
-        "dy": 38
+        "size": 110,
+        "anchor": "right",
+        "dx": 6,
+        "dy": 30
       }
     }
   ]

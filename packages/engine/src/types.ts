@@ -122,7 +122,7 @@ export interface StampItem {
   stamp: {
     size: number;
     /** center of the slot rect, or right edge/baseline of a text marker plus dx/dy */
-    anchor?: 'center' | 'marker';
+    anchor?: 'center' | 'marker' | 'right';
     dx?: number;
     dy?: number;
   };

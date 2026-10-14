@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { StampSignatureSettings } from '../components/StampSignatureSettings';
 import { Confirm, Spinner, useToast } from '../components/ui';
 import type { TotpEnrollment } from '../lib/auth';
 import { company } from '../lib/config';
@@ -29,10 +30,11 @@ export default function SettingsPage() {
     <div className="stack">
       <div className="page-head">
         <div>
-          <h1>Account &amp; security</h1>
+          <h1>Settings</h1>
           <p>Shared company account: {session?.email}</p>
         </div>
       </div>
+      <StampSignatureSettings />
       <section className="card card-pad stack">
         <h2>Two-step verification (recommended)</h2>
         <p className="muted small" style={{ margin: 0 }}>
