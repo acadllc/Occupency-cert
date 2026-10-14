@@ -1,0 +1,431 @@
+{
+  "key": "gas-system-testing",
+  "version": 1,
+  "status": "verified",
+  "name": "Undertaking – Testing & Commissioning of Gas System",
+  "nameAr": "تعهد بإنجاز أعمال الاختبار والتشغيل لأنظمة الغاز",
+  "description": "DMT form 001/Gas/occ-2024: gas system contractor undertaking (ADIFGC compliance, ADNOC-licensed installer).",
+  "category": "DMT undertakings",
+  "source": "04Undertaking  the completion of Testing and commissioning of Gas System.pdf",
+  "format": "pdf",
+  "reviewNotes": "DMT (Department of Municipalities and Transport) form. English values are written after the English label and Arabic values before the Arabic label on the same dotted line.",
+  "sanitize": [
+    {
+      "op": "redact_spans",
+      "font": "Arial"
+    }
+  ],
+  "slots": {
+    "project_id_en": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        76.5,
+        136.1,
+        185.4,
+        149.9
+      ],
+      "baseline": 145.8
+    },
+    "project_id_ar": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        416.2,
+        136.1,
+        525.8,
+        149.9
+      ],
+      "baseline": 145.8
+    },
+    "date_en": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        53.4,
+        148.2,
+        183.9,
+        162.0
+      ],
+      "baseline": 157.9
+    },
+    "date_ar": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        417.2,
+        148.2,
+        544.1,
+        162.0
+      ],
+      "baseline": 157.9
+    },
+    "description": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        104.6,
+        171.5,
+        513.6,
+        185.3
+      ],
+      "baseline": 181.2
+    },
+    "address": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        88.9,
+        183.0,
+        520.7,
+        197.5
+      ],
+      "baseline": 193.4
+    },
+    "owner": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        96.1,
+        209.2,
+        533.0,
+        223.0
+      ],
+      "baseline": 218.9
+    },
+    "developer": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        142.9,
+        237.2,
+        498.9,
+        251.1
+      ],
+      "baseline": 247.0
+    },
+    "consultant": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        102.8,
+        263.6,
+        519.3,
+        277.8
+      ],
+      "baseline": 273.7
+    },
+    "area": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        57.6,
+        288.8,
+        148.5,
+        302.7
+      ],
+      "baseline": 298.6
+    },
+    "sector": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        225.6,
+        288.8,
+        303.8,
+        302.7
+      ],
+      "baseline": 298.6
+    },
+    "plot": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        385.2,
+        288.8,
+        529.1,
+        302.7
+      ],
+      "baseline": 298.6
+    },
+    "usage": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        120.1,
+        316.9,
+        491.1,
+        331.5
+      ],
+      "baseline": 327.4
+    },
+    "ack_en": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        97.9,
+        347.0,
+        241.7,
+        360.9
+      ],
+      "baseline": 356.8
+    },
+    "ack_ar": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        424.8,
+        346.2,
+        540.9,
+        360.0
+      ],
+      "baseline": 355.9
+    }
+  },
+  "fields": [
+    {
+      "slot": "project_id_en",
+      "value": "project_id",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left"
+    },
+    {
+      "slot": "project_id_ar",
+      "value": "project_id",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "dir": "ltr",
+      "align": "right"
+    },
+    {
+      "slot": "date_en",
+      "value": "date",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "knockoutSlot": true
+    },
+    {
+      "slot": "date_ar",
+      "value": "date",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "dir": "ltr",
+      "align": "right",
+      "knockoutSlot": true
+    },
+    {
+      "slot": "description",
+      "en": "project_description_en",
+      "ar": "project_description_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "gap": 14
+    },
+    {
+      "slot": "address",
+      "en": "@project_address_or_location_en",
+      "ar": "@project_address_or_location_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "gap": 14
+    },
+    {
+      "slot": "owner",
+      "en": "owner_name_en",
+      "ar": "owner_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "gap": 14
+    },
+    {
+      "slot": "developer",
+      "en": "developer_name_en",
+      "ar": "developer_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "gap": 14
+    },
+    {
+      "slot": "consultant",
+      "en": "$consultant_name_en",
+      "ar": "$consultant_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "gap": 14
+    },
+    {
+      "slot": "area",
+      "en": "area_en",
+      "ar": "area_ar",
+      "font": "carlito",
+      "size": 9,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "gap": 6
+    },
+    {
+      "slot": "sector",
+      "en": "sector_en",
+      "ar": "sector_ar",
+      "font": "carlito",
+      "size": 9,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "gap": 6
+    },
+    {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center"
+    },
+    {
+      "slot": "usage",
+      "en": "land_building_usage_en",
+      "ar": "land_building_usage_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "gap": 14
+    },
+    {
+      "slot": "ack_en",
+      "value": "contractor_name_en",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "bold": true
+    },
+    {
+      "slot": "ack_ar",
+      "value": "contractor_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "bold": true
+    }
+  ]
+}

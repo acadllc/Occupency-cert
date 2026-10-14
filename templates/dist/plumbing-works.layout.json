@@ -1,0 +1,231 @@
+{
+ "key": "plumbing-works",
+ "version": 1,
+ "format": "pdf",
+ "sourceSha256": "fcc7c8372b755132d5b7550ad3e0da7601d6879137e70070828d1c52110489a6",
+ "baseSha256": "aba4fd320d27645d8e628331473da50ff91222938750d1c254d14de7d26d325d",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 595.32,
+   "height": 841.92
+  }
+ ],
+ "slots": {
+  "project_id_en": {
+   "page": 0,
+   "rect": [
+    76.5,
+    121.4,
+    185.4,
+    135.3
+   ],
+   "baseline": 131.2
+  },
+  "project_id_ar": {
+   "page": 0,
+   "rect": [
+    416.2,
+    121.4,
+    525.7,
+    135.3
+   ],
+   "baseline": 131.2
+  },
+  "date_en": {
+   "page": 0,
+   "rect": [
+    53.5,
+    133.6,
+    184.1,
+    147.4
+   ],
+   "baseline": 143.3
+  },
+  "date_ar": {
+   "page": 0,
+   "rect": [
+    417.3,
+    133.6,
+    544.2,
+    147.4
+   ],
+   "baseline": 143.3
+  },
+  "description": {
+   "page": 0,
+   "rect": [
+    104.6,
+    156.8,
+    513.6,
+    170.7
+   ],
+   "baseline": 166.6
+  },
+  "owner": {
+   "page": 0,
+   "rect": [
+    99.7,
+    188.4,
+    536.6,
+    202.2
+   ],
+   "baseline": 198.1
+  },
+  "developer": {
+   "page": 0,
+   "rect": [
+    146.5,
+    216.5,
+    502.5,
+    230.3
+   ],
+   "baseline": 226.2
+  },
+  "contractor": {
+   "page": 0,
+   "rect": [
+    102.6,
+    243.2,
+    533.3,
+    257.1
+   ],
+   "baseline": 253.0
+  },
+  "area": {
+   "page": 0,
+   "rect": [
+    61.1,
+    268.1,
+    152.0,
+    281.9
+   ],
+   "baseline": 277.8
+  },
+  "sector": {
+   "page": 0,
+   "rect": [
+    229.1,
+    268.1,
+    307.3,
+    281.9
+   ],
+   "baseline": 277.8
+  },
+  "plot": {
+   "page": 0,
+   "rect": [
+    388.8,
+    268.1,
+    532.7,
+    281.9
+   ],
+   "baseline": 277.8
+  },
+  "usage": {
+   "page": 0,
+   "rect": [
+    87.6,
+    296.2,
+    521.9,
+    310.0
+   ],
+   "baseline": 305.9
+  },
+  "scope_water_supply_en": {
+   "page": 0,
+   "rect": [
+    15.8,
+    334.3,
+    25.0,
+    343.5
+   ]
+  },
+  "scope_water_supply_ar": {
+   "page": 0,
+   "rect": [
+    569.1,
+    334.3,
+    578.3,
+    343.5
+   ]
+  },
+  "scope_routine_maintenance_en": {
+   "page": 0,
+   "rect": [
+    15.8,
+    346.6,
+    25.0,
+    355.8
+   ]
+  },
+  "scope_routine_maintenance_ar": {
+   "page": 0,
+   "rect": [
+    569.1,
+    346.6,
+    578.3,
+    355.8
+   ]
+  },
+  "scope_sewage_en": {
+   "page": 0,
+   "rect": [
+    15.8,
+    358.8,
+    25.0,
+    368.0
+   ]
+  },
+  "scope_sewage_ar": {
+   "page": 0,
+   "rect": [
+    569.1,
+    358.8,
+    578.3,
+    368.0
+   ]
+  },
+  "scope_rainwater_en": {
+   "page": 0,
+   "rect": [
+    15.8,
+    370.9,
+    25.0,
+    380.1
+   ]
+  },
+  "scope_rainwater_ar": {
+   "page": 0,
+   "rect": [
+    569.1,
+    370.9,
+    578.3,
+    380.1
+   ]
+  },
+  "ack_en": {
+   "page": 0,
+   "rect": [
+    96.6,
+    387.7,
+    338,
+    401.5
+   ],
+   "baseline": 397.4
+  },
+  "ack_ar": {
+   "page": 0,
+   "rect": [
+    345.0,
+    386.9,
+    539.9,
+    401.2
+   ],
+   "baseline": 396.7
+  }
+ },
+ "build": {
+  "engine": "pymupdf 1.28.2"
+ }
+}

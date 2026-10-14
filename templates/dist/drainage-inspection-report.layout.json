@@ -1,0 +1,75 @@
+{
+ "key": "drainage-inspection-report",
+ "version": 1,
+ "format": "docx",
+ "sourceSha256": "5293cb8890a5167b185c95cb83d08dbc5b92486535268907d0e20177af73f09c",
+ "baseSha256": "be1a1e1652fc6d2d813a4bfd4b5c8ae49f5e768cb47c491390b637225c9bd4ce",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 595.3,
+   "height": 841.89
+  }
+ ],
+ "slots": {
+  "date": {
+   "page": 0,
+   "baseline": 171.65,
+   "size": 14.0,
+   "rect": [
+    376.09,
+    151.28,
+    496.09,
+    181.64
+   ]
+  },
+  "owner": {
+   "page": 0,
+   "baseline": 367.2,
+   "size": 12.0,
+   "rect": [
+    29.2,
+    348.05,
+    416.6,
+    385.85
+   ]
+  },
+  "consultant": {
+   "page": 0,
+   "baseline": 405.75,
+   "size": 14.0,
+   "rect": [
+    29.2,
+    385.85,
+    416.6,
+    423.65
+   ]
+  },
+  "location": {
+   "page": 0,
+   "baseline": 442.8,
+   "size": 12.0,
+   "rect": [
+    29.2,
+    423.65,
+    416.6,
+    461.45
+   ]
+  },
+  "components": {
+   "page": 0,
+   "baseline": 480.6,
+   "size": 12.0,
+   "rect": [
+    29.2,
+    461.45,
+    416.6,
+    499.25
+   ]
+  }
+ },
+ "build": {
+  "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+  "layoutDiff": 0.0
+ }
+}

@@ -1,0 +1,729 @@
+{
+  "_comment": "Declarative field registry. Adding a field here (and referencing it from a template definition) makes it appear in the dashboard automatically. scope=shared: entered once per project; scope=template: shown only when one of `templates` is selected.",
+  "groups": [
+    {
+      "key": "identification",
+      "label": "Project identification"
+    },
+    {
+      "key": "parties",
+      "label": "Owner, developer & contractor"
+    },
+    {
+      "key": "location",
+      "label": "Location"
+    },
+    {
+      "key": "description",
+      "label": "Description & usage"
+    },
+    {
+      "key": "document",
+      "label": "Document-specific details"
+    }
+  ],
+  "fields": [
+    {
+      "key": "project_id",
+      "label": "Project ID",
+      "labelAr": "رقم المشروع",
+      "type": "text",
+      "dir": "ltr",
+      "group": "identification",
+      "scope": "shared",
+      "maxLength": 60,
+      "placeholder": "e.g. B2N-2026-000123"
+    },
+    {
+      "key": "date",
+      "label": "Document date",
+      "labelAr": "التاريخ",
+      "type": "date",
+      "group": "identification",
+      "scope": "shared",
+      "default": "today",
+      "help": "Printed as DD/MM/YYYY."
+    },
+    {
+      "key": "reference_number",
+      "label": "Reference number",
+      "labelAr": "الرقم المرجعي",
+      "type": "text",
+      "dir": "ltr",
+      "group": "identification",
+      "scope": "shared",
+      "maxLength": 60,
+      "help": "Municipality reference number (appended to the Arabic project location where used).",
+      "optional": true
+    },
+    {
+      "key": "owner_name_ar",
+      "label": "Owner name (Arabic)",
+      "labelAr": "اسم المالك",
+      "type": "text",
+      "dir": "rtl",
+      "group": "parties",
+      "scope": "shared",
+      "maxLength": 160,
+      "pair": "owner_name_en"
+    },
+    {
+      "key": "owner_name_en",
+      "label": "Owner name (English)",
+      "type": "text",
+      "dir": "ltr",
+      "group": "parties",
+      "scope": "shared",
+      "maxLength": 160,
+      "pair": "owner_name_ar"
+    },
+    {
+      "key": "developer_name_ar",
+      "label": "Developer name (Arabic)",
+      "labelAr": "اسم المطور",
+      "type": "text",
+      "dir": "rtl",
+      "group": "parties",
+      "scope": "shared",
+      "maxLength": 160,
+      "optional": true,
+      "pair": "developer_name_en"
+    },
+    {
+      "key": "developer_name_en",
+      "label": "Developer name (English)",
+      "type": "text",
+      "dir": "ltr",
+      "group": "parties",
+      "scope": "shared",
+      "maxLength": 160,
+      "optional": true,
+      "pair": "developer_name_ar"
+    },
+    {
+      "key": "contractor_name_ar",
+      "label": "Contractor name (Arabic)",
+      "labelAr": "اسم المقاول",
+      "type": "text",
+      "dir": "rtl",
+      "group": "parties",
+      "scope": "shared",
+      "maxLength": 160,
+      "pair": "contractor_name_en"
+    },
+    {
+      "key": "contractor_name_en",
+      "label": "Contractor name (English)",
+      "type": "text",
+      "dir": "ltr",
+      "group": "parties",
+      "scope": "shared",
+      "maxLength": 160,
+      "pair": "contractor_name_ar"
+    },
+    {
+      "key": "city",
+      "label": "City",
+      "labelAr": "المدينة",
+      "type": "select",
+      "group": "location",
+      "scope": "shared",
+      "optionsFrom": "company.cities",
+      "default": "al_ain"
+    },
+    {
+      "key": "area_ar",
+      "label": "Area / zone (Arabic)",
+      "labelAr": "المنطقة",
+      "type": "text",
+      "dir": "rtl",
+      "group": "location",
+      "scope": "shared",
+      "maxLength": 120,
+      "pair": "area_en"
+    },
+    {
+      "key": "area_en",
+      "label": "Area / zone (English)",
+      "type": "text",
+      "dir": "ltr",
+      "group": "location",
+      "scope": "shared",
+      "maxLength": 120,
+      "pair": "area_ar"
+    },
+    {
+      "key": "sector_ar",
+      "label": "Sector (Arabic)",
+      "labelAr": "الحوض",
+      "type": "text",
+      "dir": "rtl",
+      "group": "location",
+      "scope": "shared",
+      "maxLength": 80,
+      "pair": "sector_en"
+    },
+    {
+      "key": "sector_en",
+      "label": "Sector (English)",
+      "type": "text",
+      "dir": "ltr",
+      "group": "location",
+      "scope": "shared",
+      "maxLength": 80,
+      "pair": "sector_ar"
+    },
+    {
+      "key": "plot_number",
+      "label": "Plot number",
+      "labelAr": "رقم القسيمة",
+      "type": "text",
+      "dir": "ltr",
+      "group": "location",
+      "scope": "shared",
+      "maxLength": 60,
+      "help": "Kept exactly as typed (leading zeros, dashes)."
+    },
+    {
+      "key": "project_address_ar",
+      "label": "Project address (Arabic, optional override)",
+      "labelAr": "عنوان المشروع",
+      "type": "text",
+      "dir": "rtl",
+      "group": "location",
+      "scope": "shared",
+      "maxLength": 200,
+      "optional": true,
+      "pair": "project_address_en",
+      "help": "Leave empty to use the derived location (city / area / sector - plot)."
+    },
+    {
+      "key": "project_address_en",
+      "label": "Project address (English, optional override)",
+      "type": "text",
+      "dir": "ltr",
+      "group": "location",
+      "scope": "shared",
+      "maxLength": 200,
+      "optional": true,
+      "pair": "project_address_ar"
+    },
+    {
+      "key": "project_description_ar",
+      "label": "Project description (Arabic)",
+      "labelAr": "وصف المشروع",
+      "type": "textarea",
+      "dir": "rtl",
+      "group": "description",
+      "scope": "shared",
+      "maxLength": 300,
+      "pair": "project_description_en"
+    },
+    {
+      "key": "project_description_en",
+      "label": "Project description (English)",
+      "type": "textarea",
+      "dir": "ltr",
+      "group": "description",
+      "scope": "shared",
+      "maxLength": 300,
+      "pair": "project_description_ar"
+    },
+    {
+      "key": "project_components_ar",
+      "label": "Project components (Arabic)",
+      "labelAr": "مكونات المشروع",
+      "type": "textarea",
+      "dir": "rtl",
+      "group": "description",
+      "scope": "shared",
+      "maxLength": 300,
+      "placeholder": "مثال: فيلا دورين + سور خارجي"
+    },
+    {
+      "key": "land_building_usage_ar",
+      "label": "Land / building usage (Arabic)",
+      "labelAr": "استخدام الأرض / المبنى",
+      "type": "text",
+      "dir": "rtl",
+      "group": "description",
+      "scope": "shared",
+      "maxLength": 120,
+      "pair": "land_building_usage_en"
+    },
+    {
+      "key": "land_building_usage_en",
+      "label": "Land / building usage (English)",
+      "type": "text",
+      "dir": "ltr",
+      "group": "description",
+      "scope": "shared",
+      "maxLength": 120,
+      "pair": "land_building_usage_ar"
+    },
+    {
+      "key": "mech_authorization_type",
+      "label": "Mechanical – authorization type",
+      "type": "multiselect",
+      "group": "document",
+      "scope": "template",
+      "templates": [
+        "mechanical-commitment"
+      ],
+      "options": [
+        {
+          "value": "supply",
+          "en": "Supply",
+          "ar": "توريد"
+        },
+        {
+          "value": "installation_operation",
+          "en": "Installation and Operation",
+          "ar": "تركيب وتشغيل"
+        },
+        {
+          "value": "testing_maintenance",
+          "en": "Testing and Maintenance",
+          "ar": "اختبار وصيانة"
+        }
+      ]
+    },
+    {
+      "key": "mech_device_condition",
+      "label": "Mechanical – device condition",
+      "type": "multiselect",
+      "group": "document",
+      "scope": "template",
+      "templates": [
+        "mechanical-commitment"
+      ],
+      "options": [
+        {
+          "value": "spare_parts",
+          "en": "Spare Parts Replacement",
+          "ar": "استبدال قطع غيار"
+        },
+        {
+          "value": "complete_unit",
+          "en": "Complete Unit Replacement",
+          "ar": "استبدال وحدة كاملة"
+        },
+        {
+          "value": "routine_inspection",
+          "en": "Comprehensive Routine Inspection",
+          "ar": "فحص دوري شامل"
+        }
+      ]
+    },
+    {
+      "key": "water_scope",
+      "label": "Water validity – scope of work reviewed",
+      "type": "multiselect",
+      "group": "document",
+      "scope": "template",
+      "templates": [
+        "water-validity"
+      ],
+      "options": [
+        {
+          "value": "plumbing_installations",
+          "en": "Plumbing Installations",
+          "ar": "تمديدات صحية"
+        },
+        {
+          "value": "routine_maintenance",
+          "en": "Routine Maintenance",
+          "ar": "صيانة دورية"
+        },
+        {
+          "value": "cleaning_disinfection",
+          "en": "Cleaning and Disinfection",
+          "ar": "تنظيف وتطهير"
+        }
+      ]
+    },
+    {
+      "key": "elevator_authorization_type",
+      "label": "Elevators – authorization type",
+      "type": "multiselect",
+      "group": "document",
+      "scope": "template",
+      "templates": [
+        "elevators-testing"
+      ],
+      "options": [
+        {
+          "value": "supply_installation",
+          "en": "Supply and Installation",
+          "ar": "توريد وتركيب"
+        },
+        {
+          "value": "installation_operation",
+          "en": "Installation and Operation",
+          "ar": "تركيب وتشغيل"
+        },
+        {
+          "value": "testing_maintenance",
+          "en": "Testing and Maintenance",
+          "ar": "اختبار وصيانة"
+        }
+      ]
+    },
+    {
+      "key": "elevator_model_en",
+      "label": "Elevator model (English)",
+      "type": "text",
+      "dir": "ltr",
+      "group": "document",
+      "scope": "template",
+      "templates": [
+        "elevators-testing"
+      ],
+      "maxLength": 80,
+      "pair": "elevator_model_ar"
+    },
+    {
+      "key": "elevator_model_ar",
+      "label": "Elevator model (Arabic)",
+      "labelAr": "الموديل",
+      "type": "text",
+      "dir": "rtl",
+      "group": "document",
+      "scope": "template",
+      "templates": [
+        "elevators-testing"
+      ],
+      "maxLength": 80,
+      "pair": "elevator_model_en"
+    },
+    {
+      "key": "elevator_capacity_en",
+      "label": "Elevator capacity (English)",
+      "type": "text",
+      "dir": "ltr",
+      "group": "document",
+      "scope": "template",
+      "templates": [
+        "elevators-testing"
+      ],
+      "maxLength": 80,
+      "pair": "elevator_capacity_ar"
+    },
+    {
+      "key": "elevator_capacity_ar",
+      "label": "Elevator capacity (Arabic)",
+      "labelAr": "السعة",
+      "type": "text",
+      "dir": "rtl",
+      "group": "document",
+      "scope": "template",
+      "templates": [
+        "elevators-testing"
+      ],
+      "maxLength": 80,
+      "pair": "elevator_capacity_en"
+    },
+    {
+      "key": "elevator_number_en",
+      "label": "Number of elevators (English)",
+      "type": "text",
+      "dir": "ltr",
+      "group": "document",
+      "scope": "template",
+      "templates": [
+        "elevators-testing"
+      ],
+      "maxLength": 40,
+      "pair": "elevator_number_ar"
+    },
+    {
+      "key": "elevator_number_ar",
+      "label": "Number of elevators (Arabic)",
+      "labelAr": "العدد",
+      "type": "text",
+      "dir": "rtl",
+      "group": "document",
+      "scope": "template",
+      "templates": [
+        "elevators-testing"
+      ],
+      "maxLength": 40,
+      "pair": "elevator_number_en"
+    },
+    {
+      "key": "elevator_specs_en",
+      "label": "Elevator technical specifications (English)",
+      "type": "textarea",
+      "dir": "ltr",
+      "group": "document",
+      "scope": "template",
+      "templates": [
+        "elevators-testing"
+      ],
+      "maxLength": 200,
+      "pair": "elevator_specs_ar"
+    },
+    {
+      "key": "elevator_specs_ar",
+      "label": "Elevator technical specifications (Arabic)",
+      "labelAr": "المواصفات الفنية",
+      "type": "textarea",
+      "dir": "rtl",
+      "group": "document",
+      "scope": "template",
+      "templates": [
+        "elevators-testing"
+      ],
+      "maxLength": 200,
+      "pair": "elevator_specs_en"
+    },
+    {
+      "key": "pool_authorization_type",
+      "label": "Swimming pool – authorization type",
+      "type": "multiselect",
+      "group": "document",
+      "scope": "template",
+      "templates": [
+        "swimming-pool-testing"
+      ],
+      "options": [
+        {
+          "value": "supply_installation",
+          "en": "Supply and Installation",
+          "ar": "توريد وتركيب"
+        },
+        {
+          "value": "installation_operation",
+          "en": "Installation and Operation",
+          "ar": "تركيب وتشغيل"
+        },
+        {
+          "value": "testing_maintenance",
+          "en": "Testing and Maintenance",
+          "ar": "اختبار وصيانة"
+        }
+      ]
+    },
+    {
+      "key": "plumbing_scope",
+      "label": "Plumbing works – scope of work reviewed",
+      "type": "multiselect",
+      "group": "document",
+      "scope": "template",
+      "templates": [
+        "plumbing-works"
+      ],
+      "options": [
+        {
+          "value": "water_supply",
+          "en": "Water Supply System",
+          "ar": "نظام تزويد المياه"
+        },
+        {
+          "value": "routine_maintenance",
+          "en": "Routine Maintenance",
+          "ar": "صيانة دورية"
+        },
+        {
+          "value": "sewage",
+          "en": "Sewage Pipes",
+          "ar": "نظام الصرف الصحي"
+        },
+        {
+          "value": "rainwater",
+          "en": "Rainwater Drainage Pipes",
+          "ar": "نظام صرف الأمطار"
+        }
+      ]
+    },
+    {
+      "key": "takleef_authorization_type",
+      "label": "Consultant authorization – type",
+      "type": "select",
+      "group": "document",
+      "scope": "template",
+      "templates": [
+        "consultant-authorization"
+      ],
+      "default": "design_supervision",
+      "options": [
+        {
+          "value": "design_supervision",
+          "en": "Design and Supervision",
+          "ar": "تصميم وإشراف"
+        },
+        {
+          "value": "design_only",
+          "en": "Design only",
+          "ar": "تصميم فقط"
+        },
+        {
+          "value": "supervision_only",
+          "en": "Supervision only",
+          "ar": "إشراف فقط"
+        }
+      ]
+    },
+    {
+      "key": "needs_backfilling",
+      "label": "Does the plot need backfilling / ground levelling work submitted by the municipality?",
+      "type": "yesno",
+      "group": "document",
+      "scope": "template",
+      "templates": [
+        "consultant-authorization"
+      ],
+      "optional": true
+    },
+    {
+      "key": "permit_before_backfilling",
+      "label": "If backfilling is needed and not started: issue the building permit before backfilling?",
+      "type": "yesno",
+      "group": "document",
+      "scope": "template",
+      "templates": [
+        "consultant-authorization"
+      ],
+      "optional": true
+    },
+    {
+      "key": "number_of_users_ar",
+      "label": "Number of users (Arabic wording)",
+      "labelAr": "عدد المستخدمين",
+      "type": "text",
+      "dir": "rtl",
+      "group": "document",
+      "scope": "template",
+      "templates": [
+        "number-of-users"
+      ],
+      "default": "أسرة واحدة فقط",
+      "maxLength": 60
+    },
+    {
+      "key": "applicant_role",
+      "label": "Applicant (structural/architectural undertaking)",
+      "type": "select",
+      "group": "document",
+      "scope": "template",
+      "templates": [
+        "occupancy-undertaking-str-arch"
+      ],
+      "default": "consultant",
+      "options": [
+        {
+          "value": "consultant",
+          "en": "Consultant",
+          "ar": "الاستشاري"
+        },
+        {
+          "value": "contractor",
+          "en": "Contractor",
+          "ar": "المقاول"
+        }
+      ]
+    },
+    {
+      "key": "plumbing_photos",
+      "label": "Plumbing photo report – photos",
+      "type": "photos",
+      "group": "document",
+      "scope": "template",
+      "templates": [
+        "photo-report-plumbing"
+      ],
+      "maxItems": 14,
+      "optional": true,
+      "detailOptions": [
+        "الواجهة الأمامية",
+        "الواجهة اليسرى",
+        "الواجهة الخلفية",
+        "الواجهة اليمنى",
+        "واجهة السور الأمامية",
+        "واجهة السور اليمنى",
+        "واجهة السور اليسرى",
+        "واجهة السور الخلفية",
+        "صور داخلية لنسبة انجاز المشروع"
+      ],
+      "help": "Up to 14 photos; each photo gets a 'details' caption and optional notes. Unused trailing pages are removed."
+    },
+    {
+      "key": "mechanical_photos",
+      "label": "Mechanical photo report – photos",
+      "type": "photos",
+      "group": "document",
+      "scope": "template",
+      "templates": [
+        "photo-report-mechanical"
+      ],
+      "maxItems": 14,
+      "optional": true,
+      "detailOptions": [
+        "الواجهة الأمامية",
+        "الواجهة اليسرى",
+        "الواجهة الخلفية",
+        "الواجهة اليمنى",
+        "واجهة السور الأمامية",
+        "واجهة السور اليمنى",
+        "واجهة السور اليسرى",
+        "واجهة السور الخلفية",
+        "صور داخلية لنسبة انجاز المشروع"
+      ],
+      "help": "Up to 14 photos; each photo gets a 'details' caption and optional notes. Unused trailing pages are removed."
+    }
+  ],
+  "derived": {
+    "city_ar": {
+      "label": "City (Arabic)",
+      "from": [
+        "city"
+      ]
+    },
+    "city_en": {
+      "label": "City (English)",
+      "from": [
+        "city"
+      ]
+    },
+    "project_location_ar": {
+      "label": "Project location (Arabic)",
+      "from": [
+        "city",
+        "area_ar",
+        "sector_ar",
+        "plot_number",
+        "reference_number"
+      ]
+    },
+    "project_location_en": {
+      "label": "Project location (English)",
+      "from": [
+        "city",
+        "area_en",
+        "sector_en",
+        "plot_number",
+        "reference_number"
+      ]
+    },
+    "project_address_or_location_ar": {
+      "label": "Project address (Arabic)",
+      "from": [
+        "project_address_ar",
+        "city",
+        "area_ar",
+        "sector_ar",
+        "plot_number"
+      ]
+    },
+    "project_address_or_location_en": {
+      "label": "Project address (English)",
+      "from": [
+        "project_address_en",
+        "city",
+        "area_en",
+        "sector_en",
+        "plot_number"
+      ]
+    }
+  }
+}

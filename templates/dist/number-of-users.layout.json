@@ -1,0 +1,86 @@
+{
+ "key": "number-of-users",
+ "version": 1,
+ "format": "docx",
+ "sourceSha256": "0e1bcc42c9a35a87fcd83480f8c4ded71c37eda8b409dda81d62b38b6f5ce48e",
+ "baseSha256": "2d99c634dc4c9b61cfd6b1097356c3ef2d3437ca9242d2dbd7828299ede7919d",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 595.3,
+   "height": 841.89
+  }
+ ],
+ "slots": {
+  "date": {
+   "page": 0,
+   "baseline": 103.15,
+   "size": 14.0,
+   "rect": [
+    376.09,
+    82.78,
+    496.09,
+    113.14
+   ]
+  },
+  "owner": {
+   "page": 0,
+   "baseline": 292.9,
+   "size": 14.0,
+   "rect": [
+    29.2,
+    275.05,
+    416.6,
+    312.85
+   ]
+  },
+  "consultant": {
+   "page": 0,
+   "baseline": 332.75,
+   "size": 14.0,
+   "rect": [
+    29.2,
+    312.85,
+    416.6,
+    350.65
+   ]
+  },
+  "location": {
+   "page": 0,
+   "baseline": 370.55,
+   "size": 14.0,
+   "rect": [
+    29.2,
+    350.65,
+    416.6,
+    388.45
+   ]
+  },
+  "components": {
+   "page": 0,
+   "baseline": 408.35,
+   "size": 14.0,
+   "rect": [
+    29.2,
+    388.45,
+    416.6,
+    426.25
+   ]
+  },
+  "users": {
+   "page": 0,
+   "baseline": 507.8,
+   "size": 16.0,
+   "rect": [
+    158.07,
+    484.81,
+    358.07,
+    518.94
+   ]
+  }
+ },
+ "build": {
+  "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+  "layoutDiff": 0.000132
+ }
+}

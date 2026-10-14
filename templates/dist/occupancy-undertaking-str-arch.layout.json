@@ -1,0 +1,104 @@
+{
+ "key": "occupancy-undertaking-str-arch",
+ "version": 1,
+ "format": "docx",
+ "sourceSha256": "4ad608b7f6c207e63c8b2f7c54bf17082024d7e4a3ab54f9b4401025bb9aac89",
+ "baseSha256": "669964e76b1a0d33c2055b40ebb34c0d74a1974a540b607d90b1c5bbedc40858",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 612.0,
+   "height": 792.0
+  }
+ ],
+ "slots": {
+  "date": {
+   "page": 0,
+   "baseline": 83.45,
+   "size": 12.0,
+   "rect": [
+    366.51,
+    70.59,
+    486.51,
+    87.98
+   ]
+  },
+  "project_id": {
+   "page": 0,
+   "baseline": 202.55,
+   "size": 12.0,
+   "rect": [
+    280.35,
+    188.55,
+    436.15,
+    205.05
+   ]
+  },
+  "plot": {
+   "page": 0,
+   "baseline": 199.8,
+   "size": 12.0,
+   "rect": [
+    90.3,
+    188.35,
+    193.9,
+    206.85
+   ]
+  },
+  "owner": {
+   "page": 0,
+   "baseline": 218.3,
+   "size": 12.0,
+   "rect": [
+    275.0,
+    206.85,
+    441.6,
+    223.05
+   ]
+  },
+  "area": {
+   "page": 0,
+   "baseline": 218.3,
+   "size": 12.0,
+   "rect": [
+    90.3,
+    206.85,
+    193.9,
+    223.05
+   ]
+  },
+  "applicant_name": {
+   "page": 0,
+   "baseline": 436.5,
+   "size": 12.0,
+   "rect": [
+    90.3,
+    425.05,
+    521.8,
+    441.15
+   ]
+  },
+  "box_contractor": {
+   "page": 0,
+   "rect": [
+    247.9,
+    406.16,
+    260.44,
+    422.44
+   ]
+  },
+  "box_consultant": {
+   "page": 0,
+   "rect": [
+    183.55,
+    406.16,
+    196.09,
+    422.44
+   ]
+  }
+ },
+ "build": {
+  "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+  "layoutDiff": 0.0
+ }
+}

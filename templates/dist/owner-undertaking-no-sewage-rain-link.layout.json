@@ -1,0 +1,75 @@
+{
+ "key": "owner-undertaking-no-sewage-rain-link",
+ "version": 1,
+ "format": "docx",
+ "sourceSha256": "fb528d4c9d670d0a8a35e5c8c782afa75984eaf3d4409e90002eaa4ba250cd3f",
+ "baseSha256": "dbdc93ad5d5446bc56abc0d26b2124a94e9f19e1d2c67c78f9b4625ecc4f654d",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 595.3,
+   "height": 841.89
+  }
+ ],
+ "slots": {
+  "date": {
+   "page": 0,
+   "baseline": 137.4,
+   "size": 14.0,
+   "rect": [
+    343.44,
+    117.03,
+    463.44,
+    147.39
+   ]
+  },
+  "owner": {
+   "page": 0,
+   "baseline": 357.65,
+   "size": 12.0,
+   "rect": [
+    29.2,
+    338.45,
+    416.6,
+    376.25
+   ]
+  },
+  "consultant": {
+   "page": 0,
+   "baseline": 396.2,
+   "size": 14.0,
+   "rect": [
+    29.2,
+    376.25,
+    416.6,
+    414.05
+   ]
+  },
+  "location": {
+   "page": 0,
+   "baseline": 433.25,
+   "size": 12.0,
+   "rect": [
+    29.2,
+    414.05,
+    416.6,
+    451.85
+   ]
+  },
+  "components": {
+   "page": 0,
+   "baseline": 471.05,
+   "size": 12.0,
+   "rect": [
+    29.2,
+    451.85,
+    416.6,
+    489.65
+   ]
+  }
+ },
+ "build": {
+  "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+  "layoutDiff": 0.0
+ }
+}

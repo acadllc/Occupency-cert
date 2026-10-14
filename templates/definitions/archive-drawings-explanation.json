@@ -1,0 +1,134 @@
+{
+  "key": "archive-drawings-explanation",
+  "version": 1,
+  "status": "verified",
+  "name": "Explanation of Architectural & Structural Archive Drawings",
+  "nameAr": "توضيح بخصوص مخططات الأرشيف المعمارية والإنشائية",
+  "description": "Letter explaining the archived architectural (ARCH.PDF) and structural (STRUC.PDF) drawings attached to the application.",
+  "category": "Letters",
+  "source": "03EXPLAIN FOR ARCHIVE.docx",
+  "format": "docx",
+  "sanitize": [
+    {
+      "op": "date_field",
+      "slot": "date"
+    },
+    {
+      "op": "cell",
+      "label": "رقم المشروع:",
+      "offset": 1,
+      "slot": "project_id"
+    },
+    {
+      "op": "cell",
+      "label": "رقم القسيمة:",
+      "offset": 1,
+      "slot": "plot"
+    },
+    {
+      "op": "cell",
+      "label": "اسم المالك:",
+      "offset": 1,
+      "slot": "owner"
+    },
+    {
+      "op": "cell",
+      "label": "المنطقة/الحي:",
+      "offset": 1,
+      "slot": "area"
+    },
+    {
+      "op": "remove_image",
+      "target": "media/image1.png"
+    }
+  ],
+  "slots": {
+    "date": {
+      "kind": "inline",
+      "width": 120
+    },
+    "project_id": {
+      "kind": "cell"
+    },
+    "plot": {
+      "kind": "cell"
+    },
+    "owner": {
+      "kind": "cell"
+    },
+    "area": {
+      "kind": "cell"
+    }
+  },
+  "fields": [
+    {
+      "slot": "date",
+      "value": "date",
+      "font": "tajawal",
+      "dir": "rtl",
+      "align": "right",
+      "padding": [
+        0,
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "tajawal",
+      "size": 11,
+      "dir": "ltr",
+      "align": "center",
+      "padding": [
+        3,
+        1,
+        3,
+        1
+      ]
+    },
+    {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "tajawal",
+      "size": 11,
+      "dir": "ltr",
+      "align": "center",
+      "padding": [
+        3,
+        1,
+        3,
+        1
+      ]
+    },
+    {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "tajawal",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "padding": [
+        3,
+        1,
+        3,
+        1
+      ]
+    },
+    {
+      "slot": "area",
+      "value": "area_ar",
+      "font": "tajawal",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "padding": [
+        3,
+        1,
+        3,
+        1
+      ]
+    }
+  ]
+}

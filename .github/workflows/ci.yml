@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  push:
+    branches: [main, 'claude/**']
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_HOST_AUTH_METHOD: trust
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd "pg_isready -U postgres" --health-interval 5s --health-timeout 5s --health-retries 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Type-check and lint
+        run: npm run typecheck && npm run lint
+      - name: Unit + template generation tests
+        run: npm test
+      - name: Catalog is in sync with template definitions
+        run: node scripts/catalog.mjs && git diff --exit-code templates/dist/catalog.json
+      - name: Supabase migration + RLS tests
+        env:
+          PGHOST: localhost
+          PGPORT: 5432
+        run: tests/sql/run.sh
+      - name: No secrets in the repository or bundle
+        run: |
+          ! git grep -nE 'sb_secret_[A-Za-z0-9_]{10,}|service_role.{0,5}eyJ' -- ':!*.md'
+      - name: End-to-end tests (mock backend)
+        run: npx playwright install --with-deps chromium && npm run e2e

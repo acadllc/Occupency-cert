@@ -1,1 +1,18 @@
-
+node_modules/
+apps/web/dist/
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
+# private QA artefacts (contain historical values / generated samples)
+templates/.qa/
+# licensed fonts must not be redistributed
+templates/fonts-licensed/
+templates/word-exports/*.pdf
+apps/web/public/templates/
+apps/web/public/fonts/
+test-results/
+playwright-report/
+__pycache__/
+apps/web/dist-e2e/

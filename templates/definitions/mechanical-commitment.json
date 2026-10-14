@@ -1,0 +1,750 @@
+{
+  "key": "mechanical-commitment",
+  "version": 1,
+  "status": "verified",
+  "name": "Commitment – Testing & Commissioning of Mechanical Systems",
+  "nameAr": "تعهد بإنجاز كافة الأعمال وإجراء الاختبارات والتشغيل للأنظمة الميكانيكية",
+  "description": "DMT form 001/HVAC/OCC-2024: contractor commitment and consultant pledge for HVAC/mechanical testing & commissioning (2 pages).",
+  "category": "DMT undertakings",
+  "source": "01Mechanical systemتعهد بالالتزام ببنود كود أبو ظبي للأعمال الميكانيكية.pdf",
+  "format": "pdf",
+  "reviewNotes": "DMT (Department of Municipalities and Transport) form. English values are written after the English label and Arabic values before the Arabic label on the same dotted line.",
+  "sanitize": [
+    {
+      "op": "remove_image",
+      "page": 0,
+      "bbox": [
+        188,
+        720,
+        310,
+        842
+      ],
+      "label": "stamp+signature"
+    },
+    {
+      "op": "remove_image",
+      "page": 0,
+      "bbox": [
+        312,
+        679,
+        577,
+        703
+      ],
+      "label": "pasted Arabic consultant name"
+    },
+    {
+      "op": "redact_spans",
+      "font": "Arial"
+    }
+  ],
+  "slots": {
+    "project_id_en": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        76.6,
+        96.0,
+        185.5,
+        109.8
+      ],
+      "baseline": 105.7
+    },
+    "project_id_ar": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        416.3,
+        96.0,
+        525.8,
+        109.8
+      ],
+      "baseline": 105.7
+    },
+    "date_en": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        53.5,
+        108.1,
+        184.1,
+        121.9
+      ],
+      "baseline": 117.8
+    },
+    "date_ar": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        417.3,
+        108.1,
+        544.2,
+        121.9
+      ],
+      "baseline": 117.8
+    },
+    "description": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        104.6,
+        131.4,
+        513.6,
+        145.2
+      ],
+      "baseline": 141.1
+    },
+    "address": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        108.7,
+        142.9,
+        520.2,
+        157.5
+      ],
+      "baseline": 152.6
+    },
+    "owner": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        92.4,
+        169.0,
+        529.3,
+        182.8
+      ],
+      "baseline": 178.7
+    },
+    "developer": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        139.2,
+        197.2,
+        495.2,
+        211.0
+      ],
+      "baseline": 206.9
+    },
+    "consultant": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        108.8,
+        223.1,
+        517.8,
+        238.5
+      ],
+      "baseline": 234.4
+    },
+    "contractor": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        110.4,
+        251.4,
+        448.5,
+        265.9
+      ],
+      "baseline": 261.8
+    },
+    "area": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        53.3,
+        276.1,
+        144.2,
+        290.0
+      ],
+      "baseline": 285.8
+    },
+    "sector": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        220.8,
+        276.1,
+        299.0,
+        290.0
+      ],
+      "baseline": 285.8
+    },
+    "plot": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        373.9,
+        276.1,
+        525.3,
+        290.7
+      ],
+      "baseline": 286.6
+    },
+    "usage": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        116.4,
+        304.2,
+        487.4,
+        318.0
+      ],
+      "baseline": 313.9
+    },
+    "auth_supply_en": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        32.0,
+        342.5,
+        41.2,
+        351.7
+      ]
+    },
+    "auth_supply_ar": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        558.4,
+        342.5,
+        567.6,
+        351.7
+      ]
+    },
+    "auth_installation_operation_en": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        32.0,
+        354.6,
+        41.2,
+        363.8
+      ]
+    },
+    "auth_installation_operation_ar": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        558.4,
+        354.6,
+        567.6,
+        363.8
+      ]
+    },
+    "auth_testing_maintenance_en": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        32.0,
+        366.8,
+        41.2,
+        376.0
+      ]
+    },
+    "auth_testing_maintenance_ar": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        558.4,
+        366.8,
+        567.6,
+        376.0
+      ]
+    },
+    "device_spare_parts_en": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        23.7,
+        391.8,
+        32.9,
+        401.0
+      ]
+    },
+    "device_spare_parts_ar": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        557.1,
+        394.8,
+        566.3,
+        404.0
+      ]
+    },
+    "device_complete_unit_en": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        23.7,
+        403.9,
+        32.9,
+        413.1
+      ]
+    },
+    "device_complete_unit_ar": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        557.1,
+        407.0,
+        566.3,
+        416.2
+      ]
+    },
+    "device_routine_inspection_en": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        23.7,
+        416.2,
+        32.9,
+        425.4
+      ]
+    },
+    "device_routine_inspection_ar": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        557.1,
+        419.3,
+        566.3,
+        428.5
+      ]
+    },
+    "ack_en": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        101.8,
+        439.0,
+        251.3,
+        453.3
+      ],
+      "baseline": 448.8
+    },
+    "ack_ar": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        409.4,
+        439.0,
+        534.8,
+        453.3
+      ],
+      "baseline": 448.8
+    },
+    "pledge_en": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        25.8,
+        689.0,
+        260.5,
+        702.9
+      ],
+      "baseline": 698.8
+    },
+    "pledge_ar": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        335.9,
+        689.0,
+        570.6,
+        702.9
+      ],
+      "baseline": 698.8
+    }
+  },
+  "fields": [
+    {
+      "slot": "project_id_en",
+      "value": "project_id",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left"
+    },
+    {
+      "slot": "project_id_ar",
+      "value": "project_id",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "dir": "ltr",
+      "align": "right"
+    },
+    {
+      "slot": "date_en",
+      "value": "date",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "knockoutSlot": true
+    },
+    {
+      "slot": "date_ar",
+      "value": "date",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "dir": "ltr",
+      "align": "right",
+      "knockoutSlot": true
+    },
+    {
+      "slot": "description",
+      "en": "project_description_en",
+      "ar": "project_description_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "gap": 14
+    },
+    {
+      "slot": "address",
+      "en": "@project_address_or_location_en",
+      "ar": "@project_address_or_location_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "gap": 14
+    },
+    {
+      "slot": "owner",
+      "en": "owner_name_en",
+      "ar": "owner_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "gap": 14
+    },
+    {
+      "slot": "developer",
+      "en": "developer_name_en",
+      "ar": "developer_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "gap": 14
+    },
+    {
+      "slot": "consultant",
+      "en": "$consultant_name_en",
+      "ar": "$consultant_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "gap": 14
+    },
+    {
+      "slot": "contractor",
+      "en": "contractor_name_en",
+      "ar": "contractor_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "gap": 14
+    },
+    {
+      "slot": "area",
+      "en": "area_en",
+      "ar": "area_ar",
+      "font": "carlito",
+      "size": 9,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "gap": 6
+    },
+    {
+      "slot": "sector",
+      "en": "sector_en",
+      "ar": "sector_ar",
+      "font": "carlito",
+      "size": 9,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "gap": 6
+    },
+    {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center"
+    },
+    {
+      "slot": "usage",
+      "en": "land_building_usage_en",
+      "ar": "land_building_usage_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "gap": 14
+    },
+    {
+      "slot": "auth_supply_en",
+      "check": {
+        "field": "mech_authorization_type",
+        "option": "supply"
+      },
+      "style": "tick"
+    },
+    {
+      "slot": "auth_supply_ar",
+      "check": {
+        "field": "mech_authorization_type",
+        "option": "supply"
+      },
+      "style": "tick"
+    },
+    {
+      "slot": "auth_installation_operation_en",
+      "check": {
+        "field": "mech_authorization_type",
+        "option": "installation_operation"
+      },
+      "style": "tick"
+    },
+    {
+      "slot": "auth_installation_operation_ar",
+      "check": {
+        "field": "mech_authorization_type",
+        "option": "installation_operation"
+      },
+      "style": "tick"
+    },
+    {
+      "slot": "auth_testing_maintenance_en",
+      "check": {
+        "field": "mech_authorization_type",
+        "option": "testing_maintenance"
+      },
+      "style": "tick"
+    },
+    {
+      "slot": "auth_testing_maintenance_ar",
+      "check": {
+        "field": "mech_authorization_type",
+        "option": "testing_maintenance"
+      },
+      "style": "tick"
+    },
+    {
+      "slot": "device_spare_parts_en",
+      "check": {
+        "field": "mech_device_condition",
+        "option": "spare_parts"
+      },
+      "style": "tick"
+    },
+    {
+      "slot": "device_spare_parts_ar",
+      "check": {
+        "field": "mech_device_condition",
+        "option": "spare_parts"
+      },
+      "style": "tick"
+    },
+    {
+      "slot": "device_complete_unit_en",
+      "check": {
+        "field": "mech_device_condition",
+        "option": "complete_unit"
+      },
+      "style": "tick"
+    },
+    {
+      "slot": "device_complete_unit_ar",
+      "check": {
+        "field": "mech_device_condition",
+        "option": "complete_unit"
+      },
+      "style": "tick"
+    },
+    {
+      "slot": "device_routine_inspection_en",
+      "check": {
+        "field": "mech_device_condition",
+        "option": "routine_inspection"
+      },
+      "style": "tick"
+    },
+    {
+      "slot": "device_routine_inspection_ar",
+      "check": {
+        "field": "mech_device_condition",
+        "option": "routine_inspection"
+      },
+      "style": "tick"
+    },
+    {
+      "slot": "ack_en",
+      "value": "contractor_name_en",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "bold": true
+    },
+    {
+      "slot": "ack_ar",
+      "value": "contractor_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "bold": true
+    },
+    {
+      "slot": "pledge_en",
+      "value": "$consultant_name_en",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left"
+    },
+    {
+      "slot": "pledge_ar",
+      "value": "$consultant_name_ar",
+      "font": "carlito",
+      "size": 10,
+      "minSize": 5.5,
+      "knockout": true,
+      "padding": [
+        1.5,
+        0,
+        1.5,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right"
+    }
+  ]
+}

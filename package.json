@@ -1,0 +1,32 @@
+{
+  "name": "acad-document-generator",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "templates:build": "python3 scripts/templates/build.py && node scripts/catalog.mjs && npx tsx scripts/gen-template-seed.ts && npx tsx scripts/gen-inventory.ts",
+    "templates:qa": "npx tsx scripts/qa-generate.ts && python3 scripts/templates/qa.py",
+    "dev": "npm run dev -w apps/web",
+    "build": "npm run build -w apps/web",
+    "test": "vitest run",
+    "typecheck": "tsc -p packages/engine && npm run typecheck -w apps/web",
+    "lint": "npm run lint -w apps/web",
+    "e2e:serve": "cd apps/web && npm run assets && VITE_DATA_MODE=mock VITE_BASE_PATH=/Occupency-cert/ vite build --outDir dist-e2e && VITE_BASE_PATH=/Occupency-cert/ vite preview --outDir dist-e2e --port 4173 --strictPort",
+    "e2e": "playwright test",
+    "test:sql": "tests/sql/run.sh"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.20.5",
+    "tsx": "^4.19.4",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.7"
+  }
+}

@@ -1,0 +1,75 @@
+{
+ "key": "no-gas-systems",
+ "version": 1,
+ "format": "docx",
+ "sourceSha256": "e568c374889cbdf10620472262e0aef0211e11f5e0638ab1afef20733d55cba1",
+ "baseSha256": "d1d17acd5b41ae232813af6a99886bd013812fd746608defe96e665868da06b7",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 595.3,
+   "height": 841.89
+  }
+ ],
+ "slots": {
+  "date": {
+   "page": 0,
+   "baseline": 103.15,
+   "size": 14.0,
+   "rect": [
+    379.19,
+    82.78,
+    499.19,
+    113.14
+   ]
+  },
+  "owner": {
+   "page": 0,
+   "baseline": 298.7,
+   "size": 12.0,
+   "rect": [
+    29.2,
+    279.55,
+    416.6,
+    317.35
+   ]
+  },
+  "consultant": {
+   "page": 0,
+   "baseline": 337.25,
+   "size": 14.0,
+   "rect": [
+    29.2,
+    317.35,
+    416.6,
+    355.15
+   ]
+  },
+  "location": {
+   "page": 0,
+   "baseline": 374.3,
+   "size": 12.0,
+   "rect": [
+    29.2,
+    355.15,
+    416.6,
+    392.95
+   ]
+  },
+  "components": {
+   "page": 0,
+   "baseline": 412.1,
+   "size": 12.0,
+   "rect": [
+    29.2,
+    392.95,
+    416.6,
+    430.75
+   ]
+  }
+ },
+ "build": {
+  "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+  "layoutDiff": 0.0
+ }
+}

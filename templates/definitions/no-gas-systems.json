@@ -1,0 +1,131 @@
+{
+  "key": "no-gas-systems",
+  "version": 1,
+  "status": "verified",
+  "name": "No Gas Systems Letter",
+  "nameAr": "عدم وجود أنظمة غاز",
+  "description": "Letter confirming that the project contains no gas systems.",
+  "category": "Letters",
+  "source": "عدم وجود أنظمة غاز في المشروع.docx",
+  "format": "docx",
+  "sanitize": [
+    {
+      "op": "insert_after",
+      "contains": "التاريخ:",
+      "slot": "date"
+    },
+    {
+      "op": "cell",
+      "label": "اسم المالك",
+      "offset": -2,
+      "slot": "owner"
+    },
+    {
+      "op": "cell",
+      "label": "اسم الاستشاري",
+      "offset": -2,
+      "slot": "consultant"
+    },
+    {
+      "op": "cell",
+      "label": "موقع المشروع",
+      "offset": -2,
+      "slot": "location"
+    },
+    {
+      "op": "cell",
+      "label": "مكونات المشروع",
+      "offset": -2,
+      "slot": "components"
+    }
+  ],
+  "slots": {
+    "date": {
+      "kind": "inline",
+      "width": 120
+    },
+    "owner": {
+      "kind": "cell"
+    },
+    "consultant": {
+      "kind": "cell"
+    },
+    "location": {
+      "kind": "cell"
+    },
+    "components": {
+      "kind": "cell"
+    }
+  },
+  "fields": [
+    {
+      "slot": "date",
+      "value": "date",
+      "font": "din",
+      "dir": "rtl",
+      "align": "right",
+      "padding": [
+        0,
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+        6,
+        2,
+        6,
+        2
+      ]
+    },
+    {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+        6,
+        2,
+        6,
+        2
+      ]
+    },
+    {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+        6,
+        2,
+        6,
+        2
+      ]
+    },
+    {
+      "slot": "components",
+      "value": "project_components_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+        6,
+        2,
+        6,
+        2
+      ]
+    }
+  ]
+}

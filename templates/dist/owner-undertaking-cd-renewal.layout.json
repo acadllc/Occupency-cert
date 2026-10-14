@@ -1,0 +1,75 @@
+{
+ "key": "owner-undertaking-cd-renewal",
+ "version": 1,
+ "format": "docx",
+ "sourceSha256": "3ab962ba5f0d89c627ff8ad6817e46421e1febb3ce45dd02782b56fb62b74603",
+ "baseSha256": "c2ec7a54c643fa0971578051d4a8fc09cef8ff156959bfa66d2837c1e29aefbc",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 595.3,
+   "height": 841.89
+  }
+ ],
+ "slots": {
+  "date": {
+   "page": 0,
+   "baseline": 70.5,
+   "size": 14.0,
+   "rect": [
+    376.09,
+    50.13,
+    496.09,
+    80.49
+   ]
+  },
+  "owner": {
+   "page": 0,
+   "baseline": 240.35,
+   "size": 12.0,
+   "rect": [
+    29.2,
+    221.15,
+    416.6,
+    258.95
+   ]
+  },
+  "consultant": {
+   "page": 0,
+   "baseline": 278.9,
+   "size": 14.0,
+   "rect": [
+    29.2,
+    258.95,
+    416.6,
+    296.75
+   ]
+  },
+  "location": {
+   "page": 0,
+   "baseline": 315.95,
+   "size": 12.0,
+   "rect": [
+    29.2,
+    296.75,
+    416.6,
+    334.55
+   ]
+  },
+  "components": {
+   "page": 0,
+   "baseline": 353.75,
+   "size": 12.0,
+   "rect": [
+    29.2,
+    334.55,
+    416.6,
+    372.35
+   ]
+  }
+ },
+ "build": {
+  "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+  "layoutDiff": 0.0
+ }
+}

@@ -1,0 +1,898 @@
+{
+  "key": "photo-report-mechanical",
+  "version": 1,
+  "status": "verified",
+  "name": "Photo Technical Report – Mechanical Works",
+  "nameAr": "تقرير فني مصور للأعمال الميكانيكية",
+  "description": "Photo report of mechanical works with up to 14 captioned site photos (details and notes per photo).",
+  "category": "Photo reports",
+  "source": "تقرير فني مصور للأعمال الميكانيكية.docx",
+  "format": "docx",
+  "sanitize": [
+    {
+      "op": "cell",
+      "label": "اسم المالك",
+      "offset": -2,
+      "slot": "owner"
+    },
+    {
+      "op": "cell",
+      "label": "اسم الاستشاري",
+      "offset": -2,
+      "slot": "consultant"
+    },
+    {
+      "op": "cell",
+      "label": "موقع المشروع",
+      "offset": -2,
+      "slot": "location"
+    },
+    {
+      "op": "cell",
+      "label": "مكونات المشروع",
+      "offset": -2,
+      "slot": "components"
+    },
+    {
+      "op": "photo_grid",
+      "expected": 14,
+      "spacer_twips": 3700
+    },
+    {
+      "op": "remove_image",
+      "target": "media/image1.png"
+    }
+  ],
+  "slots": {
+    "owner": {
+      "kind": "cell"
+    },
+    "consultant": {
+      "kind": "cell"
+    },
+    "location": {
+      "kind": "cell"
+    },
+    "components": {
+      "kind": "cell"
+    },
+    "photo_0": {
+      "kind": "cell"
+    },
+    "details_0": {
+      "kind": "cell"
+    },
+    "notes_0": {
+      "kind": "cell"
+    },
+    "photo_1": {
+      "kind": "cell"
+    },
+    "details_1": {
+      "kind": "cell"
+    },
+    "notes_1": {
+      "kind": "cell"
+    },
+    "photo_2": {
+      "kind": "cell"
+    },
+    "details_2": {
+      "kind": "cell"
+    },
+    "notes_2": {
+      "kind": "cell"
+    },
+    "photo_3": {
+      "kind": "cell"
+    },
+    "details_3": {
+      "kind": "cell"
+    },
+    "notes_3": {
+      "kind": "cell"
+    },
+    "photo_4": {
+      "kind": "cell"
+    },
+    "details_4": {
+      "kind": "cell"
+    },
+    "notes_4": {
+      "kind": "cell"
+    },
+    "photo_5": {
+      "kind": "cell"
+    },
+    "details_5": {
+      "kind": "cell"
+    },
+    "notes_5": {
+      "kind": "cell"
+    },
+    "photo_6": {
+      "kind": "cell"
+    },
+    "details_6": {
+      "kind": "cell"
+    },
+    "notes_6": {
+      "kind": "cell"
+    },
+    "photo_7": {
+      "kind": "cell"
+    },
+    "details_7": {
+      "kind": "cell"
+    },
+    "notes_7": {
+      "kind": "cell"
+    },
+    "photo_8": {
+      "kind": "cell"
+    },
+    "details_8": {
+      "kind": "cell"
+    },
+    "notes_8": {
+      "kind": "cell"
+    },
+    "photo_9": {
+      "kind": "cell"
+    },
+    "details_9": {
+      "kind": "cell"
+    },
+    "notes_9": {
+      "kind": "cell"
+    },
+    "photo_10": {
+      "kind": "cell"
+    },
+    "details_10": {
+      "kind": "cell"
+    },
+    "notes_10": {
+      "kind": "cell"
+    },
+    "photo_11": {
+      "kind": "cell"
+    },
+    "details_11": {
+      "kind": "cell"
+    },
+    "notes_11": {
+      "kind": "cell"
+    },
+    "photo_12": {
+      "kind": "cell"
+    },
+    "details_12": {
+      "kind": "cell"
+    },
+    "notes_12": {
+      "kind": "cell"
+    },
+    "photo_13": {
+      "kind": "cell"
+    },
+    "details_13": {
+      "kind": "cell"
+    },
+    "notes_13": {
+      "kind": "cell"
+    }
+  },
+  "fields": [
+    {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "naskh",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+        6,
+        2,
+        6,
+        2
+      ]
+    },
+    {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "naskh",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+        6,
+        2,
+        6,
+        2
+      ]
+    },
+    {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "naskh",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+        6,
+        2,
+        6,
+        2
+      ]
+    },
+    {
+      "slot": "components",
+      "value": "project_components_ar",
+      "font": "naskh",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+        6,
+        2,
+        6,
+        2
+      ]
+    },
+    {
+      "slot": "photo_0",
+      "photo": {
+        "field": "mechanical_photos",
+        "index": 0
+      },
+      "padding": 5
+    },
+    {
+      "slot": "details_0",
+      "photoText": {
+        "field": "mechanical_photos",
+        "index": 0,
+        "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+        3,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "slot": "notes_0",
+      "photoText": {
+        "field": "mechanical_photos",
+        "index": 0,
+        "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+        3,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "slot": "photo_1",
+      "photo": {
+        "field": "mechanical_photos",
+        "index": 1
+      },
+      "padding": 5
+    },
+    {
+      "slot": "details_1",
+      "photoText": {
+        "field": "mechanical_photos",
+        "index": 1,
+        "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+        3,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "slot": "notes_1",
+      "photoText": {
+        "field": "mechanical_photos",
+        "index": 1,
+        "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+        3,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "slot": "photo_2",
+      "photo": {
+        "field": "mechanical_photos",
+        "index": 2
+      },
+      "padding": 5
+    },
+    {
+      "slot": "details_2",
+      "photoText": {
+        "field": "mechanical_photos",
+        "index": 2,
+        "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+        3,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "slot": "notes_2",
+      "photoText": {
+        "field": "mechanical_photos",
+        "index": 2,
+        "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+        3,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "slot": "photo_3",
+      "photo": {
+        "field": "mechanical_photos",
+        "index": 3
+      },
+      "padding": 5
+    },
+    {
+      "slot": "details_3",
+      "photoText": {
+        "field": "mechanical_photos",
+        "index": 3,
+        "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+        3,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "slot": "notes_3",
+      "photoText": {
+        "field": "mechanical_photos",
+        "index": 3,
+        "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+        3,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "slot": "photo_4",
+      "photo": {
+        "field": "mechanical_photos",
+        "index": 4
+      },
+      "padding": 5
+    },
+    {
+      "slot": "details_4",
+      "photoText": {
+        "field": "mechanical_photos",
+        "index": 4,
+        "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+        3,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "slot": "notes_4",
+      "photoText": {
+        "field": "mechanical_photos",
+        "index": 4,
+        "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+        3,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "slot": "photo_5",
+      "photo": {
+        "field": "mechanical_photos",
+        "index": 5
+      },
+      "padding": 5
+    },
+    {
+      "slot": "details_5",
+      "photoText": {
+        "field": "mechanical_photos",
+        "index": 5,
+        "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+        3,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "slot": "notes_5",
+      "photoText": {
+        "field": "mechanical_photos",
+        "index": 5,
+        "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+        3,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "slot": "photo_6",
+      "photo": {
+        "field": "mechanical_photos",
+        "index": 6
+      },
+      "padding": 5
+    },
+    {
+      "slot": "details_6",
+      "photoText": {
+        "field": "mechanical_photos",
+        "index": 6,
+        "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+        3,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "slot": "notes_6",
+      "photoText": {
+        "field": "mechanical_photos",
+        "index": 6,
+        "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+        3,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "slot": "photo_7",
+      "photo": {
+        "field": "mechanical_photos",
+        "index": 7
+      },
+      "padding": 5
+    },
+    {
+      "slot": "details_7",
+      "photoText": {
+        "field": "mechanical_photos",
+        "index": 7,
+        "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+        3,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "slot": "notes_7",
+      "photoText": {
+        "field": "mechanical_photos",
+        "index": 7,
+        "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+        3,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "slot": "photo_8",
+      "photo": {
+        "field": "mechanical_photos",
+        "index": 8
+      },
+      "padding": 5
+    },
+    {
+      "slot": "details_8",
+      "photoText": {
+        "field": "mechanical_photos",
+        "index": 8,
+        "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+        3,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "slot": "notes_8",
+      "photoText": {
+        "field": "mechanical_photos",
+        "index": 8,
+        "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+        3,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "slot": "photo_9",
+      "photo": {
+        "field": "mechanical_photos",
+        "index": 9
+      },
+      "padding": 5
+    },
+    {
+      "slot": "details_9",
+      "photoText": {
+        "field": "mechanical_photos",
+        "index": 9,
+        "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+        3,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "slot": "notes_9",
+      "photoText": {
+        "field": "mechanical_photos",
+        "index": 9,
+        "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+        3,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "slot": "photo_10",
+      "photo": {
+        "field": "mechanical_photos",
+        "index": 10
+      },
+      "padding": 5
+    },
+    {
+      "slot": "details_10",
+      "photoText": {
+        "field": "mechanical_photos",
+        "index": 10,
+        "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+        3,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "slot": "notes_10",
+      "photoText": {
+        "field": "mechanical_photos",
+        "index": 10,
+        "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+        3,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "slot": "photo_11",
+      "photo": {
+        "field": "mechanical_photos",
+        "index": 11
+      },
+      "padding": 5
+    },
+    {
+      "slot": "details_11",
+      "photoText": {
+        "field": "mechanical_photos",
+        "index": 11,
+        "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+        3,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "slot": "notes_11",
+      "photoText": {
+        "field": "mechanical_photos",
+        "index": 11,
+        "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+        3,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "slot": "photo_12",
+      "photo": {
+        "field": "mechanical_photos",
+        "index": 12
+      },
+      "padding": 5
+    },
+    {
+      "slot": "details_12",
+      "photoText": {
+        "field": "mechanical_photos",
+        "index": 12,
+        "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+        3,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "slot": "notes_12",
+      "photoText": {
+        "field": "mechanical_photos",
+        "index": 12,
+        "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+        3,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "slot": "photo_13",
+      "photo": {
+        "field": "mechanical_photos",
+        "index": 13
+      },
+      "padding": 5
+    },
+    {
+      "slot": "details_13",
+      "photoText": {
+        "field": "mechanical_photos",
+        "index": 13,
+        "prop": "details_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+        3,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "slot": "notes_13",
+      "photoText": {
+        "field": "mechanical_photos",
+        "index": 13,
+        "prop": "notes_ar"
+      },
+      "font": "naskh",
+      "size": 11,
+      "align": "center",
+      "multiline": true,
+      "valign": "middle",
+      "padding": [
+        3,
+        2,
+        3,
+        2
+      ]
+    }
+  ],
+  "reviewNotes": "Nested floating tables of the original are anchored inline so LibreOffice can render them; photo area = fixed-height spacer above each details table.",
+  "trimEmptyPhotoPages": {
+    "field": "mechanical_photos",
+    "slotsPerPage": [
+      2,
+      4,
+      4,
+      4
+    ]
+  }
+}
