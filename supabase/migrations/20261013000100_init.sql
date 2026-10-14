@@ -1,4 +1,5 @@
 -- ACAD Document Generator — initial schema, RLS and private storage.
+-- Safe to run more than once (re-running repairs a partially applied run).
 --
 -- Access model
 --   * Supabase Auth email/password; public sign-ups must be DISABLED in the dashboard.
@@ -12,7 +13,7 @@
 create extension if not exists pg_trgm with schema extensions;
 
 -- ---------------------------------------------------------------- allow-list
-create table public.app_users (
+create table if not exists public.app_users (
   user_id    uuid primary key references auth.users (id) on delete cascade,
   label      text not null default 'ACAD shared company account',
   created_at timestamptz not null default now()
@@ -20,6 +21,7 @@ create table public.app_users (
 comment on table public.app_users is 'Auth users allowed to use the dashboard. Managed only from the SQL editor / service role.';
 alter table public.app_users enable row level security;
 
+drop policy if exists "app_users: read own membership" on public.app_users;
 create policy "app_users: read own membership"
   on public.app_users for select to authenticated
   using (user_id = (select auth.uid()));
@@ -45,7 +47,7 @@ revoke all on function public.is_app_user() from public, anon;
 grant execute on function public.is_app_user() to authenticated;
 
 -- ---------------------------------------------------------------- projects
-create table public.projects (
+create table if not exists public.projects (
   id            uuid primary key default gen_random_uuid(),
   fields        jsonb not null default '{}'::jsonb check (jsonb_typeof(fields) = 'object'),
   status        text not null default 'active' check (status in ('active', 'archived')),
@@ -74,19 +76,28 @@ create table public.projects (
   ) stored,
   constraint projects_fields_size check (pg_column_size(fields) < 200000)
 );
-create index projects_updated_at_idx on public.projects (updated_at desc);
-create index projects_project_id_idx on public.projects (project_id);
-create index projects_search_trgm_idx on public.projects using gin (search_text extensions.gin_trgm_ops);
+create index if not exists projects_updated_at_idx on public.projects (updated_at desc);
+create index if not exists projects_project_id_idx on public.projects (project_id);
+-- pg_trgm may live in "extensions" (new projects) or "public" (older projects)
+do $$
+declare s text;
+begin
+  select n.nspname into s from pg_extension e join pg_namespace n on n.oid = e.extnamespace where e.extname = 'pg_trgm';
+  execute format('create index if not exists projects_search_trgm_idx on public.projects using gin (search_text %I.gin_trgm_ops)', s);
+end $$;
 alter table public.projects enable row level security;
 
+drop policy if exists "projects: select" on public.projects;
 create policy "projects: select" on public.projects for select to authenticated using ((select public.is_app_user()));
+drop policy if exists "projects: insert" on public.projects;
 create policy "projects: insert" on public.projects for insert to authenticated with check ((select public.is_app_user()));
+drop policy if exists "projects: update" on public.projects;
 create policy "projects: update" on public.projects for update to authenticated
   using ((select public.is_app_user())) with check ((select public.is_app_user()));
 -- no delete policy: projects are archived (status = 'archived'), never hard-deleted from the browser
 
 -- immutable snapshots of every saved version
-create table public.project_revisions (
+create table if not exists public.project_revisions (
   id         bigint generated always as identity primary key,
   project_id uuid not null references public.projects (id) on delete cascade,
   revision   integer not null,
@@ -96,6 +107,7 @@ create table public.project_revisions (
   unique (project_id, revision)
 );
 alter table public.project_revisions enable row level security;
+drop policy if exists "project_revisions: select" on public.project_revisions;
 create policy "project_revisions: select" on public.project_revisions for select to authenticated using ((select public.is_app_user()));
 -- rows are written only by the trigger below (security definer)
 
@@ -140,13 +152,15 @@ end;
 $$;
 revoke all on function public.projects_after_write() from public, anon, authenticated;
 
+drop trigger if exists projects_before_write on public.projects;
 create trigger projects_before_write before insert or update on public.projects
   for each row execute function public.projects_before_write();
+drop trigger if exists projects_after_write on public.projects;
 create trigger projects_after_write after insert or update on public.projects
   for each row execute function public.projects_after_write();
 
 -- ---------------------------------------------------------------- templates
-create table public.template_registry (
+create table if not exists public.template_registry (
   template_key     text primary key,
   name             text not null,
   name_ar          text,
@@ -161,10 +175,11 @@ create table public.template_registry (
 );
 comment on table public.template_registry is 'Public-safe template metadata (no secrets). Seeded from templates/dist by scripts/gen-template-seed.mjs.';
 alter table public.template_registry enable row level security;
+drop policy if exists "template_registry: select" on public.template_registry;
 create policy "template_registry: select" on public.template_registry for select to authenticated using ((select public.is_app_user()));
 
 -- ---------------------------------------------------------------- generation history
-create table public.generation_jobs (
+create table if not exists public.generation_jobs (
   id                  uuid primary key default gen_random_uuid(),
   project_id          uuid not null references public.projects (id) on delete cascade,
   project_revision    integer not null,
@@ -177,10 +192,13 @@ create table public.generation_jobs (
   completed_at        timestamptz,
   created_by          uuid default auth.uid() references auth.users (id) on delete set null
 );
-create index generation_jobs_project_idx on public.generation_jobs (project_id, created_at desc);
+create index if not exists generation_jobs_project_idx on public.generation_jobs (project_id, created_at desc);
 alter table public.generation_jobs enable row level security;
+drop policy if exists "generation_jobs: select" on public.generation_jobs;
 create policy "generation_jobs: select" on public.generation_jobs for select to authenticated using ((select public.is_app_user()));
+drop policy if exists "generation_jobs: insert" on public.generation_jobs;
 create policy "generation_jobs: insert" on public.generation_jobs for insert to authenticated with check ((select public.is_app_user()));
+drop policy if exists "generation_jobs: update" on public.generation_jobs;
 create policy "generation_jobs: update" on public.generation_jobs for update to authenticated
   using ((select public.is_app_user())) with check ((select public.is_app_user()));
 
@@ -212,10 +230,11 @@ begin
   return new;
 end;
 $$;
+drop trigger if exists generation_jobs_guard on public.generation_jobs;
 create trigger generation_jobs_guard before insert or update on public.generation_jobs
   for each row execute function public.generation_jobs_guard();
 
-create table public.generated_documents (
+create table if not exists public.generated_documents (
   id               uuid primary key default gen_random_uuid(),
   job_id           uuid not null references public.generation_jobs (id) on delete cascade,
   project_id       uuid not null references public.projects (id) on delete cascade,
@@ -233,9 +252,11 @@ create table public.generated_documents (
   created_by       uuid default auth.uid() references auth.users (id) on delete set null,
   constraint generated_documents_path check (storage_path = 'projects/' || project_id::text || '/' || template_key || '/' || file_name)
 );
-create index generated_documents_project_idx on public.generated_documents (project_id, created_at desc);
+create index if not exists generated_documents_project_idx on public.generated_documents (project_id, created_at desc);
 alter table public.generated_documents enable row level security;
+drop policy if exists "generated_documents: select" on public.generated_documents;
 create policy "generated_documents: select" on public.generated_documents for select to authenticated using ((select public.is_app_user()));
+drop policy if exists "generated_documents: insert" on public.generated_documents;
 create policy "generated_documents: insert" on public.generated_documents for insert to authenticated
   with check (
     (select public.is_app_user())
@@ -254,6 +275,7 @@ begin
   return new;
 end;
 $$;
+drop trigger if exists generated_documents_guard on public.generated_documents;
 create trigger generated_documents_guard before insert on public.generated_documents
   for each row execute function public.generated_documents_guard();
 
@@ -278,9 +300,11 @@ on conflict (id) do update
       allowed_mime_types = excluded.allowed_mime_types;
 
 -- generated PDFs: read + create only (no overwrite, no delete) under projects/<project uuid>/...
+drop policy if exists "generated-documents: read" on storage.objects;
 create policy "generated-documents: read"
   on storage.objects for select to authenticated
   using (bucket_id = 'generated-documents' and (select public.is_app_user()));
+drop policy if exists "generated-documents: create" on storage.objects;
 create policy "generated-documents: create"
   on storage.objects for insert to authenticated
   with check (
@@ -291,9 +315,11 @@ create policy "generated-documents: create"
   );
 
 -- project photos: read, create and delete (photos can be replaced); never public
+drop policy if exists "project-files: read" on storage.objects;
 create policy "project-files: read"
   on storage.objects for select to authenticated
   using (bucket_id = 'project-files' and (select public.is_app_user()));
+drop policy if exists "project-files: create" on storage.objects;
 create policy "project-files: create"
   on storage.objects for insert to authenticated
   with check (
@@ -302,6 +328,7 @@ create policy "project-files: create"
     and (storage.foldername(name))[1] = 'projects'
     and exists (select 1 from public.projects p where p.id::text = (storage.foldername(name))[2])
   );
+drop policy if exists "project-files: delete" on storage.objects;
 create policy "project-files: delete"
   on storage.objects for delete to authenticated
   using (bucket_id = 'project-files' and (select public.is_app_user()));
