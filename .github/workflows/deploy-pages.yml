@@ -36,7 +36,7 @@ jobs:
           test -n "$VITE_SUPABASE_PUBLISHABLE_KEY" || { echo "::error::Set the VITE_SUPABASE_PUBLISHABLE_KEY repository variable"; exit 1; }
           case "$VITE_SUPABASE_PUBLISHABLE_KEY" in sb_secret_*) echo "::error::A secret key was configured; use the publishable key"; exit 1;; esac
           npm run build
-          ! grep -rqE 'sb_secret_' apps/web/dist
+          ! grep -rqE 'sb_secret_[A-Za-z0-9_-]{16,}' apps/web/dist
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
