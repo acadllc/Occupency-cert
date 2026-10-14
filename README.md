@@ -3,7 +3,8 @@
 Internal web dashboard for **ACAD Engineering Consultants - One Person Company LLC**
 (اكاد للاستشارات الهندسيه - شركة الشخص الواحد ذ.م.م). Staff enter each project once — Arabic and
 English separately — save it to Supabase, choose individual documents or all of them, and get
-completed PDFs. Every PDF is stored privately and kept in the project's history.
+completed PDF or Word files. A new project can start from the **Land Site Plan PDF**, which fills most fields
+automatically. Every file is stored privately and kept in the project's history.
 
 - **Frontend:** React + TypeScript + Vite, hosted on GitHub Pages (`https://acadllc.github.io/Occupency-cert/`)
 - **Backend:** Supabase Auth (one shared company login, optional TOTP 2-step), Postgres with Row Level Security, private Storage
@@ -13,10 +14,12 @@ completed PDFs. Every PDF is stored privately and kept in the project's history.
 | Area | Status |
 | --- | --- |
 | Template sanitization (old owners, IDs, dates, stamps, signatures, metadata removed) | ✅ 18/18, automated leak check passes ([report](docs/template-qa-report.md)) |
-| Field mappings, Arabic RTL shaping, check boxes, photos | ✅ 18/18, rendered and visually reviewed; 38 automated tests |
+| Field mappings, Arabic RTL shaping, check boxes, photos, optional company stamp | ✅ 18/18, rendered and visually reviewed; 56 automated tests |
+| Word (.docx) output | ✅ for the 11 Word-based documents (the 7 official PDF forms are always PDF) |
+| Site plan import (fills location, plot, land use and owner from the site plan PDF) | ✅ read in the browser, never uploaded |
 | Dashboard: login, projects, search, bilingual inputs, dynamic fields, warnings, PDF/ZIP download, history | ✅ end-to-end tested (Playwright) |
 | Supabase schema, RLS, private buckets | ✅ migrations + RLS test suite (run on PostgreSQL 16) |
-| Live Supabase project | ⏳ needs the one-time setup below (run the migrations, create the user, add the allow-list row) |
+| Live Supabase project | ✅ connected (run new migrations from `supabase/migrations/` when they are added) |
 
 ## How it works
 
@@ -88,14 +91,19 @@ npm run dev                                    # http://localhost:5173
 
 ## 4. Using the dashboard
 
-1. **New project** → fill the shared information once (Arabic and English side by side; the derived Arabic/English
+1. **New project** → optionally **Upload site plan (PDF)**: the city, area, sector, plot number, land use and owner
+   names (Arabic and English) are read from the site plan on your computer (the file is not uploaded), shown for
+   review, and filled into the form. Existing projects have a **Fill from site plan** button; values you already typed
+   are only replaced if you tick them. Then fill the remaining shared information once (Arabic and English side by side; the derived Arabic/English
    location preview updates live). Names are never machine-translated.
 2. Tick documents under **Documents to generate** (or *Select all*). Inputs needed only by those documents appear
    under **Document-specific details** (e.g. elevator data, check-box options, photos for photo reports).
-3. **Save & generate PDFs** → a pre-flight list shows empty inputs and which documents use them → **Continue with
-   blanks** or go back. Each PDF is generated, uploaded privately and recorded; download individually or as a ZIP.
+3. **Save & generate** → choose **PDF** or **Word (.docx)** and whether to **add the ACAD stamp** (signatures are never
+   added); a pre-flight list shows empty inputs and which documents use them → **Continue with blanks** or go back.
+   Each file is generated, uploaded privately and recorded; download individually or as a ZIP. Official government
+   PDF forms are always produced as PDF.
 4. **Generated documents** tab: every generation is immutable and tied to the saved project revision; re-download
-   any older file. Editing a project creates a new revision and never changes old PDFs.
+   any older file. Editing a project creates a new revision and never changes old files.
 
 ## 5. Adding templates and fields
 
@@ -105,6 +113,9 @@ copy the source file into `reference-documents/`, write `templates/definitions/<
 `verified`. New inputs are one entry in `templates/fields.json`. Step-by-step: **[docs/adding-templates.md](docs/adding-templates.md)**.
 
 Fixed company values (legal names, supported cities: Al Ain, Abu Dhabi) live in `templates/company.json`.
+The company stamp image is `templates/company-stamp.png` (transparent PNG, no signature); replace it with a clean
+scan of the official stamp and redeploy to change it. Stamp positions are per template (`"stamp"` items in the
+definitions).
 
 ## 6. Security and privacy notes
 
@@ -123,6 +134,9 @@ Fixed company values (legal names, supported cities: Al Ain, Abu Dhabi) live in 
   sanitized DOCX files from Microsoft Word (see docs/adding-templates.md → *High-fidelity Word export*).
 - The two photo reports use nested floating tables that LibreOffice cannot lay out; they were re-anchored inline (same
   2-column card grid, photo area above each details table).
+- Word output keeps the original Word layout and fonts as named in the document; on computers without those fonts Word
+  substitutes them. Stamps in Word files are floating images that can be moved or deleted in Word.
+- Site plan import supports the Abu Dhabi Real Estate Centre "Land Site Plan / مخطط أرض" PDF (text-based, not scans).
 - Over-long values shrink to fit and, if still too long, the PDF is produced with a visible warning rather than being cut off.
 - `05Owner Undertaking for Temporary Occupancy certificate.pdf`, named in the original specification, is not in
   `reference-documents/` and is therefore not implemented.

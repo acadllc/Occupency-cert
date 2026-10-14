@@ -98,6 +98,8 @@ export interface BilingualItem extends TextStyle {
 
 export interface CheckItem {
   slot: string;
+  /** Word output: index of the "☐" glyph (document order) that this check replaces */
+  docxGlyph?: number;
   check: { field: string; option?: string; equals?: string };
   style?: 'tick' | 'dot' | 'cross';
   size?: number;
@@ -114,7 +116,25 @@ export interface PhotoTextItem extends TextStyle {
   photoText: { field: string; index: number; prop: 'details_ar' | 'notes_ar' };
 }
 
-export type MappingItem = TextItem | BilingualItem | CheckItem | PhotoItem | PhotoTextItem;
+/** Company stamp (drawn only when the stamp option is on). */
+export interface StampItem {
+  slot: string;
+  stamp: {
+    size: number;
+    /** center of the slot rect, or right edge/baseline of a text marker plus dx/dy */
+    anchor?: 'center' | 'marker';
+    dx?: number;
+    dy?: number;
+  };
+}
+
+export type MappingItem = TextItem | BilingualItem | CheckItem | PhotoItem | PhotoTextItem | StampItem;
+
+export interface GenerateOptions {
+  title?: string;
+  /** add the company stamp where the template defines a stamp position */
+  stamp?: boolean;
+}
 
 export type TemplateStatus = 'draft' | 'needs_review' | 'verified' | 'active' | 'retired';
 
@@ -143,6 +163,8 @@ export interface SlotGeometry {
 }
 
 export interface TemplateLayout {
+  /** present for Word-based templates: marker text -> slot name in the editable DOCX */
+  docx?: { markers: Record<string, string> } | null;
   key: string;
   version: number;
   format: 'pdf' | 'docx';
@@ -173,12 +195,13 @@ export interface GenerationWarning {
 export interface Placement {
   slot: string;
   page: number;
-  kind: 'text' | 'check' | 'photo';
+  kind: 'text' | 'check' | 'photo' | 'stamp';
   text?: string;
   size?: number;
 }
 
 export interface GeneratedDocument {
+  format: 'pdf' | 'docx';
   placements: Placement[];
   templateKey: string;
   templateVersion: number;

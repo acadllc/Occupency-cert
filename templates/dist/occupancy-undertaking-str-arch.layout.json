@@ -1,9 +1,9 @@
 {
  "key": "occupancy-undertaking-str-arch",
- "version": 1,
+ "version": 2,
  "format": "docx",
  "sourceSha256": "4ad608b7f6c207e63c8b2f7c54bf17082024d7e4a3ab54f9b4401025bb9aac89",
- "baseSha256": "669964e76b1a0d33c2055b40ebb34c0d74a1974a540b607d90b1c5bbedc40858",
+ "baseSha256": "5a37150cf8978207cf493ae90e005c50c143f4b3106050c713cb0d8861fe80cd",
  "pageCount": 1,
  "pages": [
   {
@@ -95,10 +95,32 @@
     196.09,
     422.44
    ]
+  },
+  "stamp": {
+   "page": 0,
+   "baseline": 452.6,
+   "size": 12.0,
+   "rect": [
+    285.37,
+    439.91,
+    293.37,
+    457.19
+   ]
+  }
+ },
+ "docx": {
+  "markers": {
+   "QZ1ZQ": "date",
+   "QZ2ZQ": "project_id",
+   "QZ3ZQ": "plot",
+   "QZ4ZQ": "owner",
+   "QZ5ZQ": "area",
+   "QZ6ZQ": "applicant_name",
+   "QZ7ZQ": "stamp"
   }
  },
  "build": {
   "engine": "LibreOffice 24.2.7.2 420(Build:2)",
-  "layoutDiff": 0.0
+  "layoutDiff": 0.000712
  }
 }

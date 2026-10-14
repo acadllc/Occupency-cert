@@ -1,9 +1,9 @@
 {
  "key": "drainage-inspection-report",
- "version": 1,
+ "version": 2,
  "format": "docx",
  "sourceSha256": "5293cb8890a5167b185c95cb83d08dbc5b92486535268907d0e20177af73f09c",
- "baseSha256": "be1a1e1652fc6d2d813a4bfd4b5c8ae49f5e768cb47c491390b637225c9bd4ce",
+ "baseSha256": "0ed4116f3cdce58e711932455b7fa555f48657483c11c726e40417252081c871",
  "pageCount": 1,
  "pages": [
   {
@@ -14,58 +14,79 @@
  "slots": {
   "date": {
    "page": 0,
-   "baseline": 171.65,
+   "baseline": 103.15,
    "size": 14.0,
    "rect": [
     376.09,
-    151.28,
+    82.78,
     496.09,
-    181.64
+    113.14
    ]
   },
   "owner": {
    "page": 0,
-   "baseline": 367.2,
+   "baseline": 298.7,
    "size": 12.0,
    "rect": [
     29.2,
-    348.05,
+    279.55,
     416.6,
-    385.85
+    317.35
    ]
   },
   "consultant": {
    "page": 0,
-   "baseline": 405.75,
+   "baseline": 337.25,
    "size": 14.0,
    "rect": [
     29.2,
-    385.85,
+    317.35,
     416.6,
-    423.65
+    355.15
    ]
   },
   "location": {
    "page": 0,
-   "baseline": 442.8,
+   "baseline": 374.3,
    "size": 12.0,
    "rect": [
     29.2,
-    423.65,
+    355.15,
     416.6,
-    461.45
+    392.95
    ]
   },
   "components": {
    "page": 0,
-   "baseline": 480.6,
+   "baseline": 412.1,
    "size": 12.0,
    "rect": [
     29.2,
-    461.45,
+    392.95,
     416.6,
-    499.25
+    430.75
    ]
+  },
+  "stamp": {
+   "page": 0,
+   "baseline": 686.95,
+   "size": 16.0,
+   "rect": [
+    142.05,
+    665.96,
+    211.62,
+    696.09
+   ]
+  }
+ },
+ "docx": {
+  "markers": {
+   "QZ1ZQ": "date",
+   "QZ2ZQ": "owner",
+   "QZ3ZQ": "consultant",
+   "QZ4ZQ": "location",
+   "QZ5ZQ": "components",
+   "QZ6ZQ": "stamp"
   }
  },
  "build": {

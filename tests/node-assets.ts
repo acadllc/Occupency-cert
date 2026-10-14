@@ -13,6 +13,8 @@ export function nodeAssets(root: string, images: Record<string, Uint8Array> = {}
     loadSubsetWasm: async () => {
       return new Uint8Array(readFileSync(require.resolve('harfbuzzjs/dist/harfbuzz-subset.wasm')));
     },
+    loadStamp: async () => new Uint8Array(readFileSync(join(root, 'templates', 'company-stamp.png'))),
+    loadDocxTemplate: async (key) => new Uint8Array(readFileSync(join(root, 'templates', 'dist', `${key}.docx`))),
     loadImage: async (path) => {
       const img = images[path];
       if (!img) throw new Error(`no test image for ${path}`);

@@ -1,6 +1,6 @@
 {
   "key": "number-of-users",
-  "version": 1,
+  "version": 2,
   "status": "verified",
   "name": "Number of Users Letter",
   "nameAr": "عدد المستخدمين",
@@ -9,6 +9,11 @@
   "source": "02NOMBER OF USERS.docx",
   "format": "docx",
   "sanitize": [
+    {
+      "op": "trim_leading_empty_paragraphs",
+      "keep": 1,
+      "optional": true
+    },
     {
       "op": "date_field",
       "slot": "date"
@@ -42,6 +47,12 @@
       "contains": "عدد المستخدين للمشروع",
       "old": "أسره واحده فقط",
       "slot": "users"
+    },
+    {
+      "op": "insert_after",
+      "contains": "الإستشاري",
+      "occurrence": -1,
+      "slot": "stamp"
     }
   ],
   "slots": {
@@ -64,6 +75,9 @@
     "users": {
       "kind": "inline",
       "width": 200
+    },
+    "stamp": {
+      "kind": "line_leftmost"
     }
   },
   "fields": [
@@ -149,6 +163,14 @@
         0,
         0
       ]
+    },
+    {
+      "slot": "stamp",
+      "stamp": {
+        "size": 105,
+        "anchor": "center",
+        "dy": -30
+      }
     }
   ]
 }

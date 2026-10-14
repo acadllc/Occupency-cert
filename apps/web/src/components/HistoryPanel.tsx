@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react';
-import type { GeneratedDocumentRow, GenerationJob, Project } from '../lib/api';
+import { MIME, type GeneratedDocumentRow, type GenerationJob, type Project } from '../lib/api';
 import { catalog } from '../lib/config';
 import { formatBytes, formatDateTime, safeSegment, saveBlob, zipFiles } from '../lib/files';
 import { useApi } from '../lib/session';
 import { Empty, Spinner, StatusBadge, useToast } from './ui';
 
 const nameOf = (key: string) => catalog.templates.find((t) => t.definition.key === key)?.definition.name ?? key;
+const isWord = (d: GeneratedDocumentRow) => d.mime_type === MIME.docx || d.file_name.endsWith('.docx');
 
 export function HistoryPanel({ project }: { project: Project }) {
   const api = useApi();
@@ -52,7 +53,7 @@ export function HistoryPanel({ project }: { project: Project }) {
   return (
     <div className="stack">
       <p className="muted small" style={{ margin: 0 }}>
-        Every generation is stored as an immutable, private PDF linked to the project revision it was made from. Editing the project never changes older
+        Every generation is stored as an immutable, private file (PDF or Word) linked to the project revision it was made from. Editing the project never changes older
         files.
       </p>
       {jobs.map((job) => {
@@ -80,7 +81,8 @@ export function HistoryPanel({ project }: { project: Project }) {
                   <div style={{ minWidth: 0 }}>
                     <div>{nameOf(d.template_key)}</div>
                     <div className="cell-sub">
-                      v{d.template_version} · {d.page_count} p · {formatBytes(d.size_bytes)} · <span className="mono">{d.file_name}</span>
+                      <span className="badge badge-muted">{isWord(d) ? 'Word' : 'PDF'}</span> v{d.template_version} · {!isWord(d) && `${d.page_count} p · `}
+                      {formatBytes(d.size_bytes)} · <span className="mono">{d.file_name}</span>
                     </div>
                     {d.warnings?.length > 0 && <div className="cell-sub">⚠ {d.warnings.map((w) => w.message).join(' · ')}</div>}
                   </div>

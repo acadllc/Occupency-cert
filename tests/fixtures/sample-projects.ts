@@ -4,7 +4,6 @@ import type { ProjectFields } from '@acad/engine';
 export const sampleProject: ProjectFields = {
   project_id: 'B2N-2026-000123',
   date: '2026-10-13',
-  reference_number: '0-128-000-777',
   owner_name_ar: 'سالم خليفة راشد المنصوري',
   owner_name_en: 'Salem Khalifa Rashed Al Mansouri',
   developer_name_ar: 'شركة الواحة للتطوير العقاري',

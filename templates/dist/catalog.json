@@ -3,7 +3,7 @@
   {
    "definition": {
     "key": "archive-drawings-explanation",
-    "version": 1,
+    "version": 2,
     "status": "verified",
     "name": "Explanation of Architectural & Structural Archive Drawings",
     "nameAr": "توضيح بخصوص مخططات الأرشيف المعمارية والإنشائية",
@@ -80,15 +80,23 @@
        3,
        1
       ]
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 105,
+       "anchor": "center",
+       "dy": 38
+      }
      }
     ]
    },
    "layout": {
     "key": "archive-drawings-explanation",
-    "version": 1,
+    "version": 2,
     "format": "docx",
     "sourceSha256": "b4781214e76d4973d92868e0f9336f3e6546041e0cb8b04f68d44535a28a5d8f",
-    "baseSha256": "845680c1a890dd19f26c86045695c6a1a004cb2f9f471e887341cb27bfe1a7d2",
+    "baseSha256": "664b97d6ceca13a33eda06c36de307ea30b3dac47c6109de14be3df930ace801",
     "pageCount": 1,
     "pages": [
      {
@@ -151,18 +159,39 @@
        207.3,
        238.85
       ]
+     },
+     "stamp": {
+      "page": 0,
+      "baseline": 398.55,
+      "size": 12,
+      "rect": [
+       214.85,
+       381.69,
+       251.66,
+       406.16
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "date",
+      "QZ2ZQ": "project_id",
+      "QZ3ZQ": "plot",
+      "QZ4ZQ": "owner",
+      "QZ5ZQ": "area",
+      "QZ6ZQ": "stamp"
      }
     },
     "build": {
      "engine": "LibreOffice 24.2.7.2 420(Build:2)",
-     "layoutDiff": 0
+     "layoutDiff": 0.00047
     }
    }
   },
   {
    "definition": {
     "key": "consultant-authorization",
-    "version": 1,
+    "version": 2,
     "status": "verified",
     "name": "Consultant Authorization & Undertaking Letter (Takleef)",
     "nameAr": "تكليف وتعهد الاستشاري",
@@ -521,12 +550,19 @@
       },
       "style": "dot",
       "size": 5
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 104,
+       "anchor": "center"
+      }
      }
     ]
    },
    "layout": {
     "key": "consultant-authorization",
-    "version": 1,
+    "version": 2,
     "format": "pdf",
     "sourceSha256": "46fb50eadc0ff02534f5874d798f10cf2671e2742097ec7bb2c461c7d07ae935",
     "baseSha256": "c9dbc5d0e21cef3f7ca1169815803bfc87561153ad1c227cbb66d852781b1c0c",
@@ -793,8 +829,18 @@
        572.2,
        118.1
       ]
+     },
+     "stamp": {
+      "page": 1,
+      "rect": [
+       248,
+       298,
+       352,
+       402
+      ]
      }
     },
+    "docx": null,
     "build": {
      "engine": "pymupdf 1.28.2"
     }
@@ -803,7 +849,7 @@
   {
    "definition": {
     "key": "drainage-inspection-report",
-    "version": 1,
+    "version": 2,
     "status": "verified",
     "name": "Internal Drainage Inspection Report",
     "nameAr": "تقرير فحص شبكة الصرف الصحي الداخلي ووصلها بالمناهيل",
@@ -880,15 +926,23 @@
        6,
        2
       ]
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 105,
+       "anchor": "center",
+       "dy": -30
+      }
      }
     ]
    },
    "layout": {
     "key": "drainage-inspection-report",
-    "version": 1,
+    "version": 2,
     "format": "docx",
     "sourceSha256": "5293cb8890a5167b185c95cb83d08dbc5b92486535268907d0e20177af73f09c",
-    "baseSha256": "be1a1e1652fc6d2d813a4bfd4b5c8ae49f5e768cb47c491390b637225c9bd4ce",
+    "baseSha256": "0ed4116f3cdce58e711932455b7fa555f48657483c11c726e40417252081c871",
     "pageCount": 1,
     "pages": [
      {
@@ -899,58 +953,79 @@
     "slots": {
      "date": {
       "page": 0,
-      "baseline": 171.65,
+      "baseline": 103.15,
       "size": 14,
       "rect": [
        376.09,
-       151.28,
+       82.78,
        496.09,
-       181.64
+       113.14
       ]
      },
      "owner": {
       "page": 0,
-      "baseline": 367.2,
+      "baseline": 298.7,
       "size": 12,
       "rect": [
        29.2,
-       348.05,
+       279.55,
        416.6,
-       385.85
+       317.35
       ]
      },
      "consultant": {
       "page": 0,
-      "baseline": 405.75,
+      "baseline": 337.25,
       "size": 14,
       "rect": [
        29.2,
-       385.85,
+       317.35,
        416.6,
-       423.65
+       355.15
       ]
      },
      "location": {
       "page": 0,
-      "baseline": 442.8,
+      "baseline": 374.3,
       "size": 12,
       "rect": [
        29.2,
-       423.65,
+       355.15,
        416.6,
-       461.45
+       392.95
       ]
      },
      "components": {
       "page": 0,
-      "baseline": 480.6,
+      "baseline": 412.1,
       "size": 12,
       "rect": [
        29.2,
-       461.45,
+       392.95,
        416.6,
-       499.25
+       430.75
       ]
+     },
+     "stamp": {
+      "page": 0,
+      "baseline": 686.95,
+      "size": 16,
+      "rect": [
+       142.05,
+       665.96,
+       211.62,
+       696.09
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "date",
+      "QZ2ZQ": "owner",
+      "QZ3ZQ": "consultant",
+      "QZ4ZQ": "location",
+      "QZ5ZQ": "components",
+      "QZ6ZQ": "stamp"
      }
     },
     "build": {
@@ -962,7 +1037,7 @@
   {
    "definition": {
     "key": "elevators-testing",
-    "version": 1,
+    "version": 2,
     "status": "verified",
     "name": "Undertaking – Testing, Commissioning & Safety of Elevators",
     "nameAr": "تعهد بإتمام الاختبارات والسلامة الفنية للمصاعد",
@@ -1407,12 +1482,19 @@
       "dir": "rtl",
       "align": "right",
       "bold": true
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 100,
+       "anchor": "center"
+      }
      }
     ]
    },
    "layout": {
     "key": "elevators-testing",
-    "version": 1,
+    "version": 2,
     "format": "pdf",
     "sourceSha256": "d9f6af2998e5f19140b27c68d785c5899a301ff515c480bb9da2e58b433212f7",
     "baseSha256": "d3c35ebbedd22d64e8138278ddc990dca499896acb769a015b434aca6a7e48af",
@@ -1721,8 +1803,18 @@
        499.5
       ],
       "baseline": 495.4
+     },
+     "stamp": {
+      "page": 0,
+      "rect": [
+       190,
+       700,
+       290,
+       800
+      ]
      }
     },
+    "docx": null,
     "build": {
      "engine": "pymupdf 1.28.2"
     }
@@ -2152,6 +2244,7 @@
       "baseline": 355.9
      }
     },
+    "docx": null,
     "build": {
      "engine": "pymupdf 1.28.2"
     }
@@ -2160,7 +2253,7 @@
   {
    "definition": {
     "key": "mechanical-commitment",
-    "version": 1,
+    "version": 2,
     "status": "verified",
     "name": "Commitment – Testing & Commissioning of Mechanical Systems",
     "nameAr": "تعهد بإنجاز كافة الأعمال وإجراء الاختبارات والتشغيل للأنظمة الميكانيكية",
@@ -2557,12 +2650,19 @@
       ],
       "dir": "rtl",
       "align": "right"
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 100,
+       "anchor": "center"
+      }
      }
     ]
    },
    "layout": {
     "key": "mechanical-commitment",
-    "version": 1,
+    "version": 2,
     "format": "pdf",
     "sourceSha256": "56638763a6d149dd41f3e75d5de05eb09ab9df777ceb66883c3cfc431fbe5206",
     "baseSha256": "12e9c33a9746e041f8c798ded34e3b2f5caa27ac756b0a8b0c140cd99da52e25",
@@ -2865,8 +2965,18 @@
        702.9
       ],
       "baseline": 698.8
+     },
+     "stamp": {
+      "page": 0,
+      "rect": [
+       212,
+       718,
+       312,
+       818
+      ]
      }
     },
+    "docx": null,
     "build": {
      "engine": "pymupdf 1.28.2"
     }
@@ -2875,7 +2985,7 @@
   {
    "definition": {
     "key": "no-elevators",
-    "version": 1,
+    "version": 2,
     "status": "verified",
     "name": "No Elevators Letter",
     "nameAr": "عدم وجود مصاعد",
@@ -2952,15 +3062,23 @@
        6,
        2
       ]
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 105,
+       "anchor": "center",
+       "dy": -30
+      }
      }
     ]
    },
    "layout": {
     "key": "no-elevators",
-    "version": 1,
+    "version": 2,
     "format": "docx",
     "sourceSha256": "ba7e9b74ad286f1e3c0b67bb343fc6faeb44d2a3909ac7086ec8b70987116303",
-    "baseSha256": "7896e66c33318c454654a5d627f451cc61db336cefefe8e8dbaaf3a8a465c071",
+    "baseSha256": "3140aa04099cfa8a037172525730a985dcf5f40e841e00c9dfb0e0065462dba9",
     "pageCount": 1,
     "pages": [
      {
@@ -3023,6 +3141,27 @@
        416.6,
        451.95
       ]
+     },
+     "stamp": {
+      "page": 0,
+      "baseline": 738.15,
+      "size": 16,
+      "rect": [
+       70.05,
+       687.16,
+       139.62,
+       717.29
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "date",
+      "QZ2ZQ": "owner",
+      "QZ3ZQ": "consultant",
+      "QZ4ZQ": "location",
+      "QZ5ZQ": "components",
+      "QZ6ZQ": "stamp"
      }
     },
     "build": {
@@ -3034,7 +3173,7 @@
   {
    "definition": {
     "key": "no-gas-systems",
-    "version": 1,
+    "version": 2,
     "status": "verified",
     "name": "No Gas Systems Letter",
     "nameAr": "عدم وجود أنظمة غاز",
@@ -3111,15 +3250,23 @@
        6,
        2
       ]
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 105,
+       "anchor": "center",
+       "dy": -30
+      }
      }
     ]
    },
    "layout": {
     "key": "no-gas-systems",
-    "version": 1,
+    "version": 2,
     "format": "docx",
     "sourceSha256": "e568c374889cbdf10620472262e0aef0211e11f5e0638ab1afef20733d55cba1",
-    "baseSha256": "d1d17acd5b41ae232813af6a99886bd013812fd746608defe96e665868da06b7",
+    "baseSha256": "16e76e04895a191d451f73874758a78ae8410a36720f070fe709acd51359157f",
     "pageCount": 1,
     "pages": [
      {
@@ -3182,6 +3329,27 @@
        416.6,
        430.75
       ]
+     },
+     "stamp": {
+      "page": 0,
+      "baseline": 716.95,
+      "size": 16,
+      "rect": [
+       70.05,
+       665.96,
+       139.62,
+       696.09
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "date",
+      "QZ2ZQ": "owner",
+      "QZ3ZQ": "consultant",
+      "QZ4ZQ": "location",
+      "QZ5ZQ": "components",
+      "QZ6ZQ": "stamp"
      }
     },
     "build": {
@@ -3193,7 +3361,7 @@
   {
    "definition": {
     "key": "no-swimming-pools",
-    "version": 1,
+    "version": 2,
     "status": "verified",
     "name": "No Swimming Pools Letter",
     "nameAr": "عدم وجود مسابح",
@@ -3270,15 +3438,23 @@
        6,
        2
       ]
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 105,
+       "anchor": "center",
+       "dy": -30
+      }
      }
     ]
    },
    "layout": {
     "key": "no-swimming-pools",
-    "version": 1,
+    "version": 2,
     "format": "docx",
     "sourceSha256": "7519a0bbb02e05f349290d8b61b44221ddb08e1bc5fcdfe6fbee2468bc7414bc",
-    "baseSha256": "363fb8417381df1e83d794c45531fa17317e5386c7b0b4990f1ea583df9bc7d5",
+    "baseSha256": "a7a89aa3c5349b7de69d89b0bb98d8c6945211d9981d97ecf361c4279f215640",
     "pageCount": 1,
     "pages": [
      {
@@ -3341,6 +3517,27 @@
        416.6,
        430.75
       ]
+     },
+     "stamp": {
+      "page": 0,
+      "baseline": 716.95,
+      "size": 16,
+      "rect": [
+       70.05,
+       665.96,
+       139.62,
+       696.09
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "date",
+      "QZ2ZQ": "owner",
+      "QZ3ZQ": "consultant",
+      "QZ4ZQ": "location",
+      "QZ5ZQ": "components",
+      "QZ6ZQ": "stamp"
      }
     },
     "build": {
@@ -3352,7 +3549,7 @@
   {
    "definition": {
     "key": "number-of-users",
-    "version": 1,
+    "version": 2,
     "status": "verified",
     "name": "Number of Users Letter",
     "nameAr": "عدد المستخدمين",
@@ -3443,15 +3640,23 @@
        0,
        0
       ]
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 105,
+       "anchor": "center",
+       "dy": -30
+      }
      }
     ]
    },
    "layout": {
     "key": "number-of-users",
-    "version": 1,
+    "version": 2,
     "format": "docx",
     "sourceSha256": "0e1bcc42c9a35a87fcd83480f8c4ded71c37eda8b409dda81d62b38b6f5ce48e",
-    "baseSha256": "2d99c634dc4c9b61cfd6b1097356c3ef2d3437ca9242d2dbd7828299ede7919d",
+    "baseSha256": "5f6a61426450241007badcc586b8dd291a909fe9c24eff90eada8e2632db518a",
     "pageCount": 1,
     "pages": [
      {
@@ -3525,6 +3730,28 @@
        358.07,
        518.94
       ]
+     },
+     "stamp": {
+      "page": 0,
+      "baseline": 712.45,
+      "size": 16,
+      "rect": [
+       70.05,
+       661.46,
+       139.62,
+       691.59
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "date",
+      "QZ2ZQ": "owner",
+      "QZ3ZQ": "consultant",
+      "QZ4ZQ": "location",
+      "QZ5ZQ": "components",
+      "QZ6ZQ": "users",
+      "QZ7ZQ": "stamp"
      }
     },
     "build": {
@@ -3536,7 +3763,7 @@
   {
    "definition": {
     "key": "occupancy-undertaking-str-arch",
-    "version": 1,
+    "version": 2,
     "status": "verified",
     "name": "Building Occupancy Undertaking – Architectural & Structural",
     "nameAr": "تعهد إشغال مبنى – معماري وإنشائي",
@@ -3635,7 +3862,8 @@
        "field": "applicant_role",
        "equals": "contractor"
       },
-      "style": "tick"
+      "style": "tick",
+      "docxGlyph": 0
      },
      {
       "slot": "box_consultant",
@@ -3643,16 +3871,26 @@
        "field": "applicant_role",
        "equals": "consultant"
       },
-      "style": "tick"
+      "style": "tick",
+      "docxGlyph": 1
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 100,
+       "anchor": "marker",
+       "dx": 4.2,
+       "dy": 58
+      }
      }
     ]
    },
    "layout": {
     "key": "occupancy-undertaking-str-arch",
-    "version": 1,
+    "version": 2,
     "format": "docx",
     "sourceSha256": "4ad608b7f6c207e63c8b2f7c54bf17082024d7e4a3ab54f9b4401025bb9aac89",
-    "baseSha256": "669964e76b1a0d33c2055b40ebb34c0d74a1974a540b607d90b1c5bbedc40858",
+    "baseSha256": "5a37150cf8978207cf493ae90e005c50c143f4b3106050c713cb0d8861fe80cd",
     "pageCount": 1,
     "pages": [
      {
@@ -3744,11 +3982,33 @@
        196.09,
        422.44
       ]
+     },
+     "stamp": {
+      "page": 0,
+      "baseline": 452.6,
+      "size": 12,
+      "rect": [
+       285.37,
+       439.91,
+       293.37,
+       457.19
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "date",
+      "QZ2ZQ": "project_id",
+      "QZ3ZQ": "plot",
+      "QZ4ZQ": "owner",
+      "QZ5ZQ": "area",
+      "QZ6ZQ": "applicant_name",
+      "QZ7ZQ": "stamp"
      }
     },
     "build": {
      "engine": "LibreOffice 24.2.7.2 420(Build:2)",
-     "layoutDiff": 0
+     "layoutDiff": 0.000712
     }
    }
   },
@@ -3840,7 +4100,7 @@
     "version": 1,
     "format": "docx",
     "sourceSha256": "3ab962ba5f0d89c627ff8ad6817e46421e1febb3ce45dd02782b56fb62b74603",
-    "baseSha256": "c2ec7a54c643fa0971578051d4a8fc09cef8ff156959bfa66d2837c1e29aefbc",
+    "baseSha256": "645baf42e6707c6f6d21c576720fc9bb384f01b9121ec077ec4ee3003f11d9ad",
     "pageCount": 1,
     "pages": [
      {
@@ -3905,6 +4165,15 @@
       ]
      }
     },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "date",
+      "QZ2ZQ": "owner",
+      "QZ3ZQ": "consultant",
+      "QZ4ZQ": "location",
+      "QZ5ZQ": "components"
+     }
+    },
     "build": {
      "engine": "LibreOffice 24.2.7.2 420(Build:2)",
      "layoutDiff": 0
@@ -3914,7 +4183,7 @@
   {
    "definition": {
     "key": "owner-undertaking-no-sewage-rain-link",
-    "version": 1,
+    "version": 2,
     "status": "verified",
     "name": "Owner Undertaking – No Sewage / Rainwater Connection",
     "nameAr": "تعهد عدم ربط شبكة الصرف الصحي مع صرف مياه الأمطار",
@@ -3991,15 +4260,23 @@
        6,
        2
       ]
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 105,
+       "anchor": "center",
+       "dy": -30
+      }
      }
     ]
    },
    "layout": {
     "key": "owner-undertaking-no-sewage-rain-link",
-    "version": 1,
+    "version": 2,
     "format": "docx",
     "sourceSha256": "fb528d4c9d670d0a8a35e5c8c782afa75984eaf3d4409e90002eaa4ba250cd3f",
-    "baseSha256": "dbdc93ad5d5446bc56abc0d26b2124a94e9f19e1d2c67c78f9b4625ecc4f654d",
+    "baseSha256": "76cd32b557033b2df4e833a75fa73be215ef40452d6d8491b261a3c17fda3610",
     "pageCount": 1,
     "pages": [
      {
@@ -4010,58 +4287,79 @@
     "slots": {
      "date": {
       "page": 0,
-      "baseline": 137.4,
+      "baseline": 103.15,
       "size": 14,
       "rect": [
        343.44,
-       117.03,
+       82.78,
        463.44,
-       147.39
+       113.14
       ]
      },
      "owner": {
       "page": 0,
-      "baseline": 357.65,
+      "baseline": 323.4,
       "size": 12,
       "rect": [
        29.2,
-       338.45,
+       304.25,
        416.6,
-       376.25
+       342.05
       ]
      },
      "consultant": {
       "page": 0,
-      "baseline": 396.2,
+      "baseline": 361.95,
       "size": 14,
       "rect": [
        29.2,
-       376.25,
+       342.05,
        416.6,
-       414.05
+       379.85
       ]
      },
      "location": {
       "page": 0,
-      "baseline": 433.25,
+      "baseline": 399,
       "size": 12,
       "rect": [
        29.2,
-       414.05,
+       379.85,
        416.6,
-       451.85
+       417.65
       ]
      },
      "components": {
       "page": 0,
-      "baseline": 471.05,
+      "baseline": 436.8,
       "size": 12,
       "rect": [
        29.2,
-       451.85,
+       417.65,
        416.6,
-       489.65
+       455.45
       ]
+     },
+     "stamp": {
+      "page": 0,
+      "baseline": 703.65,
+      "size": 16,
+      "rect": [
+       117.35,
+       682.66,
+       186.92,
+       712.79
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "date",
+      "QZ2ZQ": "owner",
+      "QZ3ZQ": "consultant",
+      "QZ4ZQ": "location",
+      "QZ5ZQ": "components",
+      "QZ6ZQ": "stamp"
      }
     },
     "build": {
@@ -4799,7 +5097,7 @@
     "version": 1,
     "format": "docx",
     "sourceSha256": "ceec78749c0962b0f2e5504724edfde0b8e840d634385eb8da47aa15aacf4669",
-    "baseSha256": "78caf6c026d2a60f9cf12fa67fe2456107bf19906a5dd383cd3696dc4ef40249",
+    "baseSha256": "48d14436a18a482d9610ada64718be33bb06935d92e752f81ec9be351f9722bf",
     "pageCount": 4,
     "pages": [
      {
@@ -5325,6 +5623,56 @@
        260.3,
        624.75
       ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "owner",
+      "QZ2ZQ": "consultant",
+      "QZ3ZQ": "location",
+      "QZ4ZQ": "components",
+      "QZ5ZQ": "photo_0",
+      "QZ6ZQ": "details_0",
+      "QZ7ZQ": "notes_0",
+      "QZ8ZQ": "photo_1",
+      "QZ9ZQ": "details_1",
+      "QZ10ZQ": "notes_1",
+      "QZ11ZQ": "photo_2",
+      "QZ12ZQ": "details_2",
+      "QZ13ZQ": "notes_2",
+      "QZ14ZQ": "photo_3",
+      "QZ15ZQ": "details_3",
+      "QZ16ZQ": "notes_3",
+      "QZ17ZQ": "photo_4",
+      "QZ18ZQ": "details_4",
+      "QZ19ZQ": "notes_4",
+      "QZ20ZQ": "photo_5",
+      "QZ21ZQ": "details_5",
+      "QZ22ZQ": "notes_5",
+      "QZ23ZQ": "photo_6",
+      "QZ24ZQ": "details_6",
+      "QZ25ZQ": "notes_6",
+      "QZ26ZQ": "photo_7",
+      "QZ27ZQ": "details_7",
+      "QZ28ZQ": "notes_7",
+      "QZ29ZQ": "photo_8",
+      "QZ30ZQ": "details_8",
+      "QZ31ZQ": "notes_8",
+      "QZ32ZQ": "photo_9",
+      "QZ33ZQ": "details_9",
+      "QZ34ZQ": "notes_9",
+      "QZ35ZQ": "photo_10",
+      "QZ36ZQ": "details_10",
+      "QZ37ZQ": "notes_10",
+      "QZ38ZQ": "photo_11",
+      "QZ39ZQ": "details_11",
+      "QZ40ZQ": "notes_11",
+      "QZ41ZQ": "photo_12",
+      "QZ42ZQ": "details_12",
+      "QZ43ZQ": "notes_12",
+      "QZ44ZQ": "photo_13",
+      "QZ45ZQ": "details_13",
+      "QZ46ZQ": "notes_13"
      }
     },
     "build": {
@@ -6062,7 +6410,7 @@
     "version": 1,
     "format": "docx",
     "sourceSha256": "29b5de04dc63c39ac234ab1e7ebdf33a9077518c3bcedf742f063eb68e5a41c2",
-    "baseSha256": "eb84b3c1a5e07b84bff87a437e7685ad585c93ea7a82f7736fbb2292abd5f076",
+    "baseSha256": "3116eff41a869b5c3c0856231bb7ee8a8b3573bc0e5feed1e51f031dc434f3be",
     "pageCount": 4,
     "pages": [
      {
@@ -6590,6 +6938,56 @@
       ]
      }
     },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "owner",
+      "QZ2ZQ": "consultant",
+      "QZ3ZQ": "location",
+      "QZ4ZQ": "components",
+      "QZ5ZQ": "photo_0",
+      "QZ6ZQ": "details_0",
+      "QZ7ZQ": "notes_0",
+      "QZ8ZQ": "photo_1",
+      "QZ9ZQ": "details_1",
+      "QZ10ZQ": "notes_1",
+      "QZ11ZQ": "photo_2",
+      "QZ12ZQ": "details_2",
+      "QZ13ZQ": "notes_2",
+      "QZ14ZQ": "photo_3",
+      "QZ15ZQ": "details_3",
+      "QZ16ZQ": "notes_3",
+      "QZ17ZQ": "photo_4",
+      "QZ18ZQ": "details_4",
+      "QZ19ZQ": "notes_4",
+      "QZ20ZQ": "photo_5",
+      "QZ21ZQ": "details_5",
+      "QZ22ZQ": "notes_5",
+      "QZ23ZQ": "photo_6",
+      "QZ24ZQ": "details_6",
+      "QZ25ZQ": "notes_6",
+      "QZ26ZQ": "photo_7",
+      "QZ27ZQ": "details_7",
+      "QZ28ZQ": "notes_7",
+      "QZ29ZQ": "photo_8",
+      "QZ30ZQ": "details_8",
+      "QZ31ZQ": "notes_8",
+      "QZ32ZQ": "photo_9",
+      "QZ33ZQ": "details_9",
+      "QZ34ZQ": "notes_9",
+      "QZ35ZQ": "photo_10",
+      "QZ36ZQ": "details_10",
+      "QZ37ZQ": "notes_10",
+      "QZ38ZQ": "photo_11",
+      "QZ39ZQ": "details_11",
+      "QZ40ZQ": "notes_11",
+      "QZ41ZQ": "photo_12",
+      "QZ42ZQ": "details_12",
+      "QZ43ZQ": "notes_12",
+      "QZ44ZQ": "photo_13",
+      "QZ45ZQ": "details_13",
+      "QZ46ZQ": "notes_13"
+     }
+    },
     "build": {
      "engine": "LibreOffice 24.2.7.2 420(Build:2)",
      "layoutDiff": 0.001172
@@ -6599,7 +6997,7 @@
   {
    "definition": {
     "key": "plumbing-works",
-    "version": 1,
+    "version": 2,
     "status": "verified",
     "name": "Consultant Undertaking – Completion of Plumbing Works & Water Tanks",
     "nameAr": "تعهد الاستشاري بإنجاز كافة الأعمال الصحية والخزانات",
@@ -6900,12 +7298,19 @@
       "dir": "rtl",
       "align": "right",
       "bold": true
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 100,
+       "anchor": "center"
+      }
      }
     ]
    },
    "layout": {
     "key": "plumbing-works",
-    "version": 1,
+    "version": 2,
     "format": "pdf",
     "sourceSha256": "fcc7c8372b755132d5b7550ad3e0da7601d6879137e70070828d1c52110489a6",
     "baseSha256": "aba4fd320d27645d8e628331473da50ff91222938750d1c254d14de7d26d325d",
@@ -7128,8 +7533,18 @@
        401.2
       ],
       "baseline": 396.7
+     },
+     "stamp": {
+      "page": 0,
+      "rect": [
+       225,
+       656,
+       325,
+       756
+      ]
      }
     },
+    "docx": null,
     "build": {
      "engine": "pymupdf 1.28.2"
     }
@@ -7687,6 +8102,7 @@
       "baseline": 396
      }
     },
+    "docx": null,
     "build": {
      "engine": "pymupdf 1.28.2"
     }
@@ -7695,7 +8111,7 @@
   {
    "definition": {
     "key": "water-validity",
-    "version": 1,
+    "version": 2,
     "status": "verified",
     "name": "Consultant Undertaking – Water Validity for Human Use",
     "nameAr": "تعهد الاستشاري بصلاحية المياه للاستخدام الآدمي",
@@ -7996,12 +8412,19 @@
       "dir": "rtl",
       "align": "right",
       "bold": true
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 104,
+       "anchor": "center"
+      }
      }
     ]
    },
    "layout": {
     "key": "water-validity",
-    "version": 1,
+    "version": 2,
     "format": "pdf",
     "sourceSha256": "baabfc76e5bfb20d367fb4a74c33e8b22ffc3f96789699d18e3b32907873b8d3",
     "baseSha256": "b3be44abc1168a436cc4e9be7f986752ac9596df28de1180ae32f0f33174fd50",
@@ -8216,8 +8639,18 @@
        415.5
       ],
       "baseline": 411.4
+     },
+     "stamp": {
+      "page": 0,
+      "rect": [
+       278,
+       638,
+       382,
+       742
+      ]
      }
     },
+    "docx": null,
     "build": {
      "engine": "pymupdf 1.28.2"
     }

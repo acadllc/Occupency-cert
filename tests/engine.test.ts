@@ -47,8 +47,8 @@ describe('field values', () => {
   });
 
   it('derives the Arabic and English project location', () => {
-    expect(resolveValue('@project_location_ar', ctx(sampleProject))).toBe('العين / الهيلي / شرق 12 - 047 – الرقم المرجعي: 0-128-000-777');
-    expect(resolveValue('@project_location_en', ctx(sampleProject))).toBe('Al Ain / Al Hili / East 12 - Plot 047 – Ref. No.: 0-128-000-777');
+    expect(resolveValue('@project_location_ar', ctx(sampleProject))).toBe('العين / الهيلي / شرق 12 - 047');
+    expect(resolveValue('@project_location_en', ctx(sampleProject))).toBe('Al Ain / Al Hili / East 12 - Plot 047');
     expect(resolveValue('@project_location_ar', ctx({ city: 'abu_dhabi', area_ar: 'السعادة' }))).toBe('أبوظبي / السعادة');
     expect(resolveValue('@project_location_ar', ctx({}))).toBe('');
   });
@@ -187,5 +187,63 @@ describe('PDF generation', () => {
   it('subsets fonts (small output)', async () => {
     const res = await engine.generate('owner-undertaking-cd-renewal', sampleProject);
     expect(res.bytes.length).toBeLessThan(120_000);
+  });
+});
+
+describe('company stamp', () => {
+  it('is added only when requested and only where the template defines it', async () => {
+    const withStamp = await engine.generate('drainage-inspection-report', sampleProject, { stamp: true });
+    expect(withStamp.placements.filter((p) => p.kind === 'stamp')).toHaveLength(1);
+    const without = await engine.generate('drainage-inspection-report', sampleProject);
+    expect(without.placements.filter((p) => p.kind === 'stamp')).toHaveLength(0);
+    const ownerOnly = await engine.generate('owner-undertaking-cd-renewal', sampleProject, { stamp: true });
+    expect(ownerOnly.placements.filter((p) => p.kind === 'stamp')).toHaveLength(0);
+  });
+});
+
+describe('Word output', () => {
+  const JSZipP = import('jszip');
+  const docxTemplates = catalog.templates.filter((t) => t.layout.docx);
+
+  it('is available for every Word-based template and not for PDF forms', () => {
+    expect(docxTemplates.map((t) => t.definition.format)).toEqual(docxTemplates.map(() => 'docx'));
+    expect(docxTemplates).toHaveLength(catalog.templates.filter((t) => t.definition.format === 'docx').length);
+    expect(engine.supportsDocx('mechanical-commitment')).toBe(false);
+  });
+
+  for (const { definition } of catalog.templates.filter((t) => t.layout.docx)) {
+    it(`${definition.key}: fills every marker and leaves none behind`, async () => {
+      const res = await engine.generateDocx(definition.key, sampleProject, { stamp: true });
+      expect(res.format).toBe('docx');
+      const { default: JSZip } = await JSZipP;
+      const zip = await JSZip.loadAsync(res.bytes);
+      const xml = await zip.file('word/document.xml')!.async('string');
+      expect(xml).not.toMatch(/QZ\d+ZQ/);
+      expect(xml).not.toContain('w:val="FFFFFF"/><w:t');
+      const used = new Set(definition.fields.map((f) => f.slot));
+      if (used.has('owner')) expect(xml).toContain(String(sampleProject.owner_name_ar));
+      if (used.has('consultant')) expect(xml).toContain(company.consultant_name_ar);
+      if (used.has('date')) expect(xml).toContain('13/10/2026');
+    });
+  }
+
+  it('ticks the right Word check box and embeds photos and the stamp', async () => {
+    const { default: JSZip } = await JSZipP;
+    const arch = await JSZip.loadAsync((await engine.generateDocx('occupancy-undertaking-str-arch', sampleProject, { stamp: true })).bytes);
+    const archXml = await arch.file('word/document.xml')!.async('string');
+    const boxes = [...archXml.matchAll(/[☐☑]/g)].map((m) => m[0]);
+    expect(boxes).toEqual(['☐', '☑']); // contractor unticked, consultant ticked
+    expect(archXml).toContain('Company stamp');
+    const photo = await JSZip.loadAsync((await engine.generateDocx('photo-report-plumbing', sampleProject)).bytes);
+    expect(Object.keys(photo.files).filter((n) => n.startsWith('word/media/acad-'))).toHaveLength(3);
+    const pxml = await photo.file('word/document.xml')!.async('string');
+    expect(pxml).toContain('تم تركيب خزانات المياه العلوية');
+  });
+
+  it('escapes XML special characters in values', async () => {
+    const { default: JSZip } = await JSZipP;
+    const res = await engine.generateDocx('number-of-users', { ...sampleProject, owner_name_ar: 'A & B <test>' });
+    const xml = await (await JSZip.loadAsync(res.bytes)).file('word/document.xml')!.async('string');
+    expect(xml).toContain('A &amp; B &lt;test&gt;');
   });
 });

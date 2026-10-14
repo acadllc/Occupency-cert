@@ -1,6 +1,6 @@
 {
   "key": "drainage-inspection-report",
-  "version": 1,
+  "version": 2,
   "status": "verified",
   "name": "Internal Drainage Inspection Report",
   "nameAr": "تقرير فحص شبكة الصرف الصحي الداخلي ووصلها بالمناهيل",
@@ -9,6 +9,11 @@
   "source": "04Inspection report for the internal drainage system and its connection to the internal manholes تقرير فحص نظام الصرف الداخلي ووصلاته بغرف التفتيش ال.docx",
   "format": "docx",
   "sanitize": [
+    {
+      "op": "trim_leading_empty_paragraphs",
+      "keep": 1,
+      "optional": true
+    },
     {
       "op": "date_field",
       "slot": "date"
@@ -36,6 +41,12 @@
       "label": "مكونات المشروع",
       "offset": -2,
       "slot": "components"
+    },
+    {
+      "op": "insert_after",
+      "contains": "الإستشاري",
+      "occurrence": -1,
+      "slot": "stamp"
     }
   ],
   "slots": {
@@ -54,6 +65,9 @@
     },
     "components": {
       "kind": "cell"
+    },
+    "stamp": {
+      "kind": "line_leftmost"
     }
   },
   "fields": [
@@ -125,6 +139,14 @@
         6,
         2
       ]
+    },
+    {
+      "slot": "stamp",
+      "stamp": {
+        "size": 105,
+        "anchor": "center",
+        "dy": -30
+      }
     }
   ]
 }

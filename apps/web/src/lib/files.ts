@@ -15,9 +15,9 @@ function stamp(d = new Date()) {
   return `${d.getFullYear()}${p(d.getMonth() + 1)}${p(d.getDate())}-${p(d.getHours())}${p(d.getMinutes())}${p(d.getSeconds())}`;
 }
 
-/** PROJECTID_template-key_YYYYMMDD-HHMMSS_r<revision>.pdf (path-safe) */
-export function documentFileName(projectId: string | undefined, templateKey: string, revision: number, when = new Date()): string {
-  return `${safeSegment(projectId ?? '', 'project')}_${templateKey}_${stamp(when)}_r${revision}.pdf`;
+/** PROJECTID_template-key_YYYYMMDD-HHMMSS_r<revision>.<pdf|docx> (path-safe) */
+export function documentFileName(projectId: string | undefined, templateKey: string, revision: number, when = new Date(), ext: 'pdf' | 'docx' = 'pdf'): string {
+  return `${safeSegment(projectId ?? '', 'project')}_${templateKey}_${stamp(when)}_r${revision}.${ext}`;
 }
 
 export function storagePath(projectUuid: string, templateKey: string, fileName: string) {
@@ -47,7 +47,7 @@ export async function zipFiles(files: { name: string; data: Uint8Array | Blob }[
   const used = new Set<string>();
   for (const f of files) {
     let name = f.name;
-    for (let i = 2; used.has(name); i++) name = f.name.replace(/\.pdf$/, `-${i}.pdf`);
+    for (let i = 2; used.has(name); i++) name = f.name.replace(/\.(pdf|docx)$/, `-${i}.$1`);
     used.add(name);
     zip.file(name, f.data);
   }

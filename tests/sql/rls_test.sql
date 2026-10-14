@@ -67,6 +67,14 @@ begin
   exception when check_violation then null; end;
   insert into public.generated_documents (job_id, project_id, template_key, template_version, file_name, storage_path, size_bytes, sha256, page_count, project_revision)
     values (jid, pid, 'number-of-users', 1, '20261013-101500-r2.pdf', 'projects/' || pid || '/number-of-users/20261013-101500-r2.pdf', 1234, repeat('b', 64), 1, rev);
+  insert into public.generated_documents (job_id, project_id, template_key, template_version, file_name, storage_path, mime_type, size_bytes, sha256, page_count, project_revision)
+    values (jid, pid, 'number-of-users', 2, '20261013-101500-r2.docx', 'projects/' || pid || '/number-of-users/20261013-101500-r2.docx',
+            'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 4321, repeat('c', 64), 1, rev);
+  begin
+    insert into public.generated_documents (job_id, project_id, template_key, template_version, file_name, storage_path, mime_type, size_bytes, sha256, page_count, project_revision)
+    values (jid, pid, 'number-of-users', 2, 'x.exe', 'projects/' || pid || '/number-of-users/x.exe', 'application/x-msdownload', 1, repeat('d', 64), 1, rev);
+    raise exception 'executable mime accepted';
+  exception when check_violation then null; end;
   begin update public.generated_documents set size_bytes = 1; raise exception 'document record modified';
   exception when insufficient_privilege then null; end;
 

@@ -60,16 +60,11 @@ export function derivedValue(key: string, ctx: ValueContext): string {
       return cityLabel(ctx, 'ar');
     case 'city_en':
       return cityLabel(ctx, 'en');
-    case 'project_location_ar': {
-      const base = join(' / ', [cityLabel(ctx, 'ar'), f('area_ar'), join(' - ', [f('sector_ar'), f('plot_number')])]);
-      const ref = f('reference_number');
-      return ref ? join(' – ', [base, `الرقم المرجعي: ${ref}`]) : base;
-    }
-    case 'project_location_en': {
-      const base = join(' / ', [cityLabel(ctx, 'en'), f('area_en'), join(' - ', [f('sector_en'), f('plot_number') && `Plot ${f('plot_number')}`])]);
-      const ref = f('reference_number');
-      return ref ? join(' – ', [base, `Ref. No.: ${ref}`]) : base;
-    }
+    // plot address (e.g. 18-7-116-137) is the municipality reference number, so it is printed once
+    case 'project_location_ar':
+      return join(' / ', [cityLabel(ctx, 'ar'), f('area_ar'), join(' - ', [f('sector_ar'), f('plot_number')])]);
+    case 'project_location_en':
+      return join(' / ', [cityLabel(ctx, 'en'), f('area_en'), join(' - ', [f('sector_en'), f('plot_number') && `Plot ${f('plot_number')}`])]);
     case 'project_address_or_location_ar':
       return f('project_address_ar') || join(' / ', [cityLabel(ctx, 'ar'), f('area_ar'), join(' - ', [f('sector_ar'), f('plot_number')])]);
     case 'project_address_or_location_en':
@@ -151,7 +146,7 @@ export function itemFields(item: MappingItem, registry: FieldRegistry): string[]
   if ('check' in item) return [item.check.field];
   if ('photo' in item) return [item.photo.field];
   if ('photoText' in item) return [item.photoText.field];
-  return [];
+  return []; // stamp
 }
 
 export function isChecked(item: { check: { field: string; option?: string; equals?: string } }, fields: ProjectFields): boolean {

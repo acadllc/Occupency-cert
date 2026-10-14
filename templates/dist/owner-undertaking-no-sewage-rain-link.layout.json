@@ -1,9 +1,9 @@
 {
  "key": "owner-undertaking-no-sewage-rain-link",
- "version": 1,
+ "version": 2,
  "format": "docx",
  "sourceSha256": "fb528d4c9d670d0a8a35e5c8c782afa75984eaf3d4409e90002eaa4ba250cd3f",
- "baseSha256": "dbdc93ad5d5446bc56abc0d26b2124a94e9f19e1d2c67c78f9b4625ecc4f654d",
+ "baseSha256": "76cd32b557033b2df4e833a75fa73be215ef40452d6d8491b261a3c17fda3610",
  "pageCount": 1,
  "pages": [
   {
@@ -14,58 +14,79 @@
  "slots": {
   "date": {
    "page": 0,
-   "baseline": 137.4,
+   "baseline": 103.15,
    "size": 14.0,
    "rect": [
     343.44,
-    117.03,
+    82.78,
     463.44,
-    147.39
+    113.14
    ]
   },
   "owner": {
    "page": 0,
-   "baseline": 357.65,
+   "baseline": 323.4,
    "size": 12.0,
    "rect": [
     29.2,
-    338.45,
+    304.25,
     416.6,
-    376.25
+    342.05
    ]
   },
   "consultant": {
    "page": 0,
-   "baseline": 396.2,
+   "baseline": 361.95,
    "size": 14.0,
    "rect": [
     29.2,
-    376.25,
+    342.05,
     416.6,
-    414.05
+    379.85
    ]
   },
   "location": {
    "page": 0,
-   "baseline": 433.25,
+   "baseline": 399.0,
    "size": 12.0,
    "rect": [
     29.2,
-    414.05,
+    379.85,
     416.6,
-    451.85
+    417.65
    ]
   },
   "components": {
    "page": 0,
-   "baseline": 471.05,
+   "baseline": 436.8,
    "size": 12.0,
    "rect": [
     29.2,
-    451.85,
+    417.65,
     416.6,
-    489.65
+    455.45
    ]
+  },
+  "stamp": {
+   "page": 0,
+   "baseline": 703.65,
+   "size": 16.0,
+   "rect": [
+    117.35,
+    682.66,
+    186.92,
+    712.79
+   ]
+  }
+ },
+ "docx": {
+  "markers": {
+   "QZ1ZQ": "date",
+   "QZ2ZQ": "owner",
+   "QZ3ZQ": "consultant",
+   "QZ4ZQ": "location",
+   "QZ5ZQ": "components",
+   "QZ6ZQ": "stamp"
   }
  },
  "build": {

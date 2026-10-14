@@ -19,6 +19,8 @@ export function getEngine(): Promise<Engine> {
         loadFont: (file) => fetchBytes(assetUrl(`fonts/${file}`)),
         loadTemplate: (key, version) => fetchBytes(assetUrl(`templates/${key}.v${version}.pdf`)),
         loadSubsetWasm: () => fetchBytes(subsetWasmUrl),
+        loadStamp: () => fetchBytes(assetUrl('templates/company-stamp.png')),
+        loadDocxTemplate: (key, version) => fetchBytes(assetUrl(`templates/${key}.v${version}.docx`)),
         loadImage: async (path) => {
           const { api } = await getBackend();
           return new Uint8Array(await (await api.downloadPhoto(path)).arrayBuffer());

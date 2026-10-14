@@ -1,6 +1,6 @@
 {
   "key": "mechanical-commitment",
-  "version": 1,
+  "version": 2,
   "status": "verified",
   "name": "Commitment – Testing & Commissioning of Mechanical Systems",
   "nameAr": "تعهد بإنجاز كافة الأعمال وإجراء الاختبارات والتشغيل للأنظمة الميكانيكية",
@@ -355,6 +355,16 @@
         702.9
       ],
       "baseline": 698.8
+    },
+    "stamp": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        212.0,
+        718.0,
+        312.0,
+        818.0
+      ]
     }
   },
   "fields": [
@@ -745,6 +755,13 @@
       ],
       "dir": "rtl",
       "align": "right"
+    },
+    {
+      "slot": "stamp",
+      "stamp": {
+        "size": 100,
+        "anchor": "center"
+      }
     }
   ]
 }

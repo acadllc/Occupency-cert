@@ -31,6 +31,7 @@ function describe(item: MappingItem): string {
   const keys = itemFields(item, registry);
   const label = (k: string) => getField(registry, k)?.label ?? k;
   if ('check' in item) return `☑ ${label(item.check.field)} = ${item.check.option ?? item.check.equals}`;
+  if ('stamp' in item) return `company stamp (optional, ${item.stamp.size}pt)`;
   if ('photo' in item) return `photo #${item.photo.index + 1}`;
   if ('photoText' in item) return `photo #${item.photoText.index + 1} ${item.photoText.prop === 'details_ar' ? 'details' : 'notes'} (AR)`;
   if ('en' in item) return `EN: ${item.en.startsWith('$') ? 'company name (EN)' : item.en.startsWith('@') ? item.en.slice(1) : label(item.en)} · AR: ${item.ar.startsWith('$') ? 'company name (AR)' : item.ar.startsWith('@') ? item.ar.slice(1) : label(item.ar)}`;
@@ -54,7 +55,9 @@ for (const d of defs) {
   if (d.reviewNotes) md += `- **Notes:** ${d.reviewNotes}\n`;
   const ops = [...new Set(d.sanitize.map((o: { op: string }) => OPS[o.op] ?? o.op))];
   md += `- **Sanitization:** ${ops.join('; ')}; document metadata scrubbed.\n`;
-  md += `- **Signature / stamp areas:** left blank for manual signing.\n\n`;
+  md += d.fields.some((f: MappingItem) => 'stamp' in f)
+    ? `- **Signature / stamp areas:** the ACAD company stamp can optionally be placed on the consultant area; signatures are never added.\n\n`
+    : `- **Signature / stamp areas:** left blank for manual signing.\n\n`;
   const ar: string[] = [];
   const en: string[] = [];
   const other: string[] = [];

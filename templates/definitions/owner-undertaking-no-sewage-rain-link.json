@@ -1,6 +1,6 @@
 {
   "key": "owner-undertaking-no-sewage-rain-link",
-  "version": 1,
+  "version": 2,
   "status": "verified",
   "name": "Owner Undertaking – No Sewage / Rainwater Connection",
   "nameAr": "تعهد عدم ربط شبكة الصرف الصحي مع صرف مياه الأمطار",
@@ -9,6 +9,11 @@
   "source": "05OWNER UNDERTAKE - تعهد عدم ربط شبكة الصرف الصحي مع صرف مياه الأمطار.docx",
   "format": "docx",
   "sanitize": [
+    {
+      "op": "trim_leading_empty_paragraphs",
+      "keep": 1,
+      "optional": true
+    },
     {
       "op": "date_field",
       "slot": "date"
@@ -36,6 +41,12 @@
       "label": "مكونات المشروع",
       "offset": -2,
       "slot": "components"
+    },
+    {
+      "op": "insert_after",
+      "contains": "الاستشاري",
+      "occurrence": -1,
+      "slot": "stamp"
     }
   ],
   "slots": {
@@ -54,6 +65,9 @@
     },
     "components": {
       "kind": "cell"
+    },
+    "stamp": {
+      "kind": "line_leftmost"
     }
   },
   "fields": [
@@ -125,6 +139,14 @@
         6,
         2
       ]
+    },
+    {
+      "slot": "stamp",
+      "stamp": {
+        "size": 105,
+        "anchor": "center",
+        "dy": -30
+      }
     }
   ]
 }

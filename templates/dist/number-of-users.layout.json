@@ -1,9 +1,9 @@
 {
  "key": "number-of-users",
- "version": 1,
+ "version": 2,
  "format": "docx",
  "sourceSha256": "0e1bcc42c9a35a87fcd83480f8c4ded71c37eda8b409dda81d62b38b6f5ce48e",
- "baseSha256": "2d99c634dc4c9b61cfd6b1097356c3ef2d3437ca9242d2dbd7828299ede7919d",
+ "baseSha256": "5f6a61426450241007badcc586b8dd291a909fe9c24eff90eada8e2632db518a",
  "pageCount": 1,
  "pages": [
   {
@@ -77,6 +77,28 @@
     358.07,
     518.94
    ]
+  },
+  "stamp": {
+   "page": 0,
+   "baseline": 712.45,
+   "size": 16.0,
+   "rect": [
+    70.05,
+    661.46,
+    139.62,
+    691.59
+   ]
+  }
+ },
+ "docx": {
+  "markers": {
+   "QZ1ZQ": "date",
+   "QZ2ZQ": "owner",
+   "QZ3ZQ": "consultant",
+   "QZ4ZQ": "location",
+   "QZ5ZQ": "components",
+   "QZ6ZQ": "users",
+   "QZ7ZQ": "stamp"
   }
  },
  "build": {

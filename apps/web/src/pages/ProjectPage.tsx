@@ -19,6 +19,7 @@ import { FieldInput } from '../components/FieldInput';
 import { GenerateDialog } from '../components/GenerateDialog';
 import { HistoryPanel } from '../components/HistoryPanel';
 import { PhotosField } from '../components/PhotosField';
+import { SitePlanImport } from '../components/SitePlanImport';
 import { TemplatePicker } from '../components/TemplatePicker';
 import { Confirm, Spinner, StatusBadge, useToast } from '../components/ui';
 import { ConflictError, type Project } from '../lib/api';
@@ -106,6 +107,11 @@ export default function ProjectPage() {
     setDirty(true);
   }, []);
 
+  const applySitePlan = useCallback((values: ProjectFields) => {
+    setFields((f) => ({ ...f, ...values }));
+    setDirty(true);
+  }, []);
+
   const selected = selectedOf(fields);
   const errors = useMemo(() => validateFields(registry, fields), [fields]);
   const usedBySelection = useMemo(() => {
@@ -184,6 +190,7 @@ export default function ProjectPage() {
           )}
         </div>
         <div className="btn-row">
+          {project && tab === 'details' && <SitePlanImport fields={fields} onApply={applySitePlan} prominent={false} />}
           {project && (
             <button className="btn" onClick={() => setConfirmArchive(true)}>
               {project.status === 'archived' ? 'Restore' : 'Archive'}
@@ -210,6 +217,7 @@ export default function ProjectPage() {
         <HistoryPanel key={historyKey} project={project} />
       ) : (
         <>
+          {!project && <SitePlanImport fields={fields} onApply={applySitePlan} prominent />}
           {sharedGroups.map((g) => {
             const defs = registry.fields.filter((f) => f.scope === 'shared' && f.group === g.key);
             return (
@@ -290,7 +298,7 @@ export default function ProjectPage() {
               {project ? 'Save' : 'Create project'}
             </button>
             <button className="btn btn-accent" onClick={() => void startGeneration()} disabled={saving || selected.length === 0}>
-              {dirty || !project ? 'Save & generate PDFs' : 'Generate PDFs'}
+              {dirty || !project ? 'Save & generate' : 'Generate documents'}
             </button>
           </div>
         </>

@@ -1,6 +1,6 @@
 {
   "key": "no-elevators",
-  "version": 1,
+  "version": 2,
   "status": "verified",
   "name": "No Elevators Letter",
   "nameAr": "عدم وجود مصاعد",
@@ -9,6 +9,11 @@
   "source": "عدم وجود مصاعد في المشروع.docx",
   "format": "docx",
   "sanitize": [
+    {
+      "op": "trim_leading_empty_paragraphs",
+      "keep": 1,
+      "optional": true
+    },
     {
       "op": "insert_after",
       "contains": "التاريخ:",
@@ -37,6 +42,12 @@
       "label": "مكونات المشروع",
       "offset": -2,
       "slot": "components"
+    },
+    {
+      "op": "insert_after",
+      "contains": "الإستشاري",
+      "occurrence": -1,
+      "slot": "stamp"
     }
   ],
   "slots": {
@@ -55,6 +66,9 @@
     },
     "components": {
       "kind": "cell"
+    },
+    "stamp": {
+      "kind": "line_leftmost"
     }
   },
   "fields": [
@@ -126,6 +140,14 @@
         6,
         2
       ]
+    },
+    {
+      "slot": "stamp",
+      "stamp": {
+        "size": 105,
+        "anchor": "center",
+        "dy": -30
+      }
     }
   ]
 }

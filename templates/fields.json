@@ -45,18 +45,6 @@
       "help": "Printed as DD/MM/YYYY."
     },
     {
-      "key": "reference_number",
-      "label": "Reference number",
-      "labelAr": "الرقم المرجعي",
-      "type": "text",
-      "dir": "ltr",
-      "group": "identification",
-      "scope": "shared",
-      "maxLength": 60,
-      "help": "Municipality reference number (appended to the Arabic project location where used).",
-      "optional": true
-    },
-    {
       "key": "owner_name_ar",
       "label": "Owner name (Arabic)",
       "labelAr": "اسم المالك",
@@ -691,8 +679,7 @@
         "city",
         "area_ar",
         "sector_ar",
-        "plot_number",
-        "reference_number"
+        "plot_number"
       ]
     },
     "project_location_en": {
@@ -701,8 +688,7 @@
         "city",
         "area_en",
         "sector_en",
-        "plot_number",
-        "reference_number"
+        "plot_number"
       ]
     },
     "project_address_or_location_ar": {

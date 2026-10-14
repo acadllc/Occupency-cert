@@ -34,6 +34,7 @@ export interface GeneratedDocumentRow {
   template_version: number;
   file_name: string;
   storage_path: string;
+  mime_type?: string;
   size_bytes: number;
   sha256: string;
   page_count: number;
@@ -56,7 +57,13 @@ export interface DashboardStats {
   documentsLast30Days: number;
 }
 
+export const MIME = {
+  pdf: 'application/pdf',
+  docx: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+} as const;
+
 export interface NewDocument {
+  mime_type: string;
   job_id: string;
   project_id: string;
   template_key: string;
@@ -81,7 +88,7 @@ export interface DataApi {
   stats(): Promise<DashboardStats>;
   createJob(projectId: string, revision: number, templates: string[], snapshot: ProjectFields): Promise<GenerationJob>;
   finishJob(id: string, status: GenerationJob['status'], warnings: unknown[], errors: unknown[]): Promise<void>;
-  uploadDocument(path: string, bytes: Uint8Array): Promise<void>;
+  uploadDocument(path: string, bytes: Uint8Array, contentType: string): Promise<void>;
   recordDocument(doc: NewDocument): Promise<GeneratedDocumentRow>;
   listDocuments(projectId: string): Promise<GeneratedDocumentRow[]>;
   listJobs(projectId: string): Promise<GenerationJob[]>;
@@ -191,11 +198,11 @@ export class SupabaseApi implements DataApi {
     if (error) fail('Finishing the generation', error);
   }
 
-  async uploadDocument(path: string, bytes: Uint8Array) {
+  async uploadDocument(path: string, bytes: Uint8Array, contentType: string) {
     const { error } = await this.db.storage
       .from('generated-documents')
-      .upload(path, new Blob([bytes as BlobPart], { type: 'application/pdf' }), { contentType: 'application/pdf', upsert: false });
-    if (error) fail('Uploading the PDF', error);
+      .upload(path, new Blob([bytes as BlobPart], { type: contentType }), { contentType, upsert: false });
+    if (error) fail('Uploading the document', error);
   }
 
   async recordDocument(doc: NewDocument) {
@@ -238,7 +245,7 @@ export class SupabaseApi implements DataApi {
 
   async downloadDocument(path: string) {
     const { data, error } = await this.db.storage.from('generated-documents').download(path);
-    if (error || !data) fail('Downloading the PDF', error);
+    if (error || !data) fail('Downloading the document', error);
     return data;
   }
 
