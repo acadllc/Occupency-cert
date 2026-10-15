@@ -97,6 +97,8 @@ export interface TextStyle {
 export interface TextItem extends TextStyle {
   slot: string;
   value: string;
+  /** Word output: width (pt) the value may take; a longer value gets a smaller font (e.g. a fixed-size text box). */
+  docxMaxWidth?: number;
 }
 
 export interface BilingualItem extends TextStyle {

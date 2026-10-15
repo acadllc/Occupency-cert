@@ -169,7 +169,20 @@ class DocxSanitizer:
             # Clean variant: an invisible no-break space with the very same run
             # properties, so both variants have identical line heights.
             text = "\u00a0"
-        parent.insert(index, _make_marker_run(rpr_source, text, use_cs_size, self.default_cs_font()))
+        run = _make_marker_run(rpr_source, text, use_cs_size, self.default_cs_font())
+        style = getattr(self, "_marker_style", None)
+        if style:
+            # per-op override (e.g. a historical value typed in a larger font than the form's text)
+            rpr = run.find(w("rPr"))
+            if style.get("font"):
+                fonts = rpr.find(w("rFonts"))
+                for attr in ("ascii", "hAnsi", "eastAsia", "cs"):
+                    fonts.set(w(attr), style["font"])
+            if style.get("size"):
+                for tag in ("sz", "szCs"):
+                    for el in rpr.findall(w(tag)):
+                        el.set(w("val"), str(int(style["size"] * 2)))
+        parent.insert(index, run)
 
     # ------------------------------------------------------------ operations
     def op_cell(self, op: dict):
@@ -297,7 +310,10 @@ class DocxSanitizer:
         hits = []
         for name in self.story_parts():
             for p in self.tree(name).getroot().iter(w("p")):
-                if target in _norm(_text_of(p)):
+                # a paragraph anchoring a text box also holds the box's text: take the innermost
+                if target in _norm(_text_of(p)) and not any(
+                    target in _norm(_text_of(q)) for q in p.iter(w("p")) if q is not p
+                ):
                     hits.append(p)
         if not hits or len(hits) <= occurrence:
             raise SanitizeError(f"paragraph not found: {contains!r}")
@@ -315,6 +331,33 @@ class DocxSanitizer:
                 self._insert_marker(parent, parent.index(r) + 1, r.find(w("rPr")), op["slot"])
                 return
         raise SanitizeError(f"run not found for {op['contains']!r}")
+
+    def op_drop_fallback(self, op: dict):
+        """Remove the legacy VML copies (mc:Fallback) of text boxes and shapes.
+
+        Word and LibreOffice draw the DrawingML version (mc:Choice); the fallback
+        would otherwise keep a second copy of every historical value.
+        """
+        MC = "http://schemas.openxmlformats.org/markup-compatibility/2006"
+        n = 0
+        for name in self.story_parts():
+            for fb in list(self.tree(name).getroot().iter(f"{{{MC}}}Fallback")):
+                fb.getparent().remove(fb)
+                n += 1
+        if n == 0 and not op.get("optional"):
+            raise SanitizeError("drop_fallback: no mc:Fallback found")
+
+    def op_textbox_nowrap(self, op: dict):
+        """Keep a text box value on one line (Word output): a value longer than the
+        historical one would otherwise wrap and be clipped by the fixed box height."""
+        WPS = "http://schemas.microsoft.com/office/word/2010/wordprocessingShape"
+        for contains in op["contains"]:
+            p = self._find_paragraph(contains)
+            shape = next((a for a in p.iterancestors() if a.tag == f"{{{WPS}}}wsp"), None)
+            body = shape.find(f"{{{WPS}}}bodyPr") if shape is not None else None
+            if body is None:
+                raise SanitizeError(f"textbox_nowrap: {contains!r} is not in a text box")
+            body.set("wrap", "none")
 
     def op_mark_word(self, op: dict):
         """Put a zero-width marker right after a word (e.g. the signature label «الاستشاري»).
@@ -430,6 +473,14 @@ class DocxSanitizer:
                         parent.insert(idx + 3, tail)
                 elif not marker_done and op.get("slot"):
                     marker_done = True
+                    if op.get("keep_line"):
+                        # the value was the whole line: a no-break space in the text's own format holds
+                        # the line height in both variants (use with "zero_width")
+                        hold = copy.deepcopy(r)
+                        for tt in hold.findall(w("t")):
+                            hold.remove(tt)
+                        etree.SubElement(hold, w("t")).text = "\u00a0"
+                        r.addnext(hold)
                     if self.with_markers:
                         # split: put marker run after this run
                         before, after = txt[:s0], txt[s1:]
@@ -437,6 +488,14 @@ class DocxSanitizer:
                         parent = r.getparent()
                         idx = parent.index(r)
                         mrun = _make_marker_run(r.find(w("rPr")), self.new_marker(op["slot"]), True, self.default_cs_font())
+                        if op.get("zero_width"):
+                            # a tiny marker cannot change the line (the slot gets its height from "pad")
+                            mrpr = mrun.find(w("rPr"))
+                            for tag in ("sz", "szCs", "spacing"):
+                                for el in mrpr.findall(w(tag)):
+                                    mrpr.remove(el)
+                            for tag, val in (("spacing", "-20"), ("sz", "2"), ("szCs", "2")):
+                                etree.SubElement(mrpr, w(tag)).set(w("val"), val)
                         parent.insert(idx + 1, mrun)
                         if after:
                             tail = copy.deepcopy(r)
@@ -448,6 +507,10 @@ class DocxSanitizer:
                             parent.insert(idx + 2, tail)
                     else:
                         self.new_marker(op["slot"])  # phrase simply removed in the clean variant
+                        if op.get("ltr"):
+                            # English label in a right-to-left paragraph: a left-to-right mark keeps
+                            # "Villa of :" from turning into ": Villa of" once the value is gone
+                            t.text = txt[:s0] + "\u200e" + txt[s1:]
 
     def op_replace_all(self, op: dict):
         """Replace a literal string in all text nodes (e.g. ☑ -> ☐)."""
@@ -853,6 +916,7 @@ class DocxSanitizer:
             fn = getattr(self, "op_" + op["op"], None)
             if fn is None:
                 raise SanitizeError(f"unknown docx op {op['op']}")
+            self._marker_style = op.get("marker")
             fn(op)
         self.scrub_metadata()
         for name, tree in self.trees.items():

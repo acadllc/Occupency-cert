@@ -1,0 +1,196 @@
+{
+  "key": "bank-com-progress",
+  "version": 1,
+  "status": "verified",
+  "name": "Site Work Progress Letter",
+  "nameAr": "نسبة إنجاز الأعمال في الموقع",
+  "description": "Site Work Progress Letter (نسبة إنجاز الأعمال في الموقع).",
+  "category": "أوراق استكمال",
+  "projectType": "bank",
+  "source": "private/bank/أوراق استكمال/نسبة إنجاز الأعمال في الموقع.docx",
+  "format": "docx",
+  "sanitize": "private",
+  "slots": {
+    "project_id": {
+      "kind": "cell"
+    },
+    "owner": {
+      "kind": "cell"
+    },
+    "consultant": {
+      "kind": "cell"
+    },
+    "contractor": {
+      "kind": "cell"
+    },
+    "location": {
+      "kind": "cell"
+    },
+    "project_id_2": {
+      "kind": "cell"
+    },
+    "stamp": {
+      "kind": "inline",
+      "width": 10
+    },
+    "components_text": {
+      "kind": "inline",
+      "width": 190,
+      "pad": 11,
+      "shift": -108
+    },
+    "contractor_2": {
+      "kind": "gap",
+      "width": 230
+    },
+    "date": {
+      "kind": "gap",
+      "width": 90
+    }
+  },
+  "fields": [
+    {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "contractor",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "project_id_2",
+      "value": "plot_number",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "stamp",
+      "stamp": {
+        "size": 105,
+        "anchor": "marker",
+        "dx": -353,
+        "dy": 50
+      }
+    },
+    {
+      "slot": "components_text",
+      "value": "project_components_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "multiline": true
+    },
+    {
+      "slot": "contractor_2",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "layoutTolerance": 0.004
+}

@@ -1,0 +1,92 @@
+{
+ "key": "bank-com-pledges",
+ "version": 1,
+ "format": "pdf",
+ "sourceSha256": "a1100705400294f0b591a7cfb7403d42a3496da4a8288a57605b90035a0d8f90",
+ "baseSha256": "62b90277014fd10fc9805f697cc7192d119598dc588fa45801617aae96526a54",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 595.2,
+   "height": 841.68
+  }
+ ],
+ "slots": {
+  "date_day": {
+   "page": 0,
+   "rect": [
+    482,
+    60,
+    503,
+    76
+   ]
+  },
+  "date_month": {
+   "page": 0,
+   "rect": [
+    459,
+    60,
+    477,
+    76
+   ]
+  },
+  "date_year": {
+   "page": 0,
+   "rect": [
+    418,
+    60,
+    453,
+    76
+   ]
+  },
+  "project_id": {
+   "page": 0,
+   "rect": [
+    58,
+    155,
+    408,
+    176
+   ]
+  },
+  "location": {
+   "page": 0,
+   "rect": [
+    58,
+    177,
+    408,
+    198
+   ]
+  },
+  "owner": {
+   "page": 0,
+   "rect": [
+    58,
+    199,
+    408,
+    220
+   ]
+  },
+  "consultant": {
+   "page": 0,
+   "rect": [
+    58,
+    221,
+    408,
+    243
+   ]
+  },
+  "stamp": {
+   "page": 0,
+   "rect": [
+    363.0,
+    716.0,
+    427.0,
+    780.0
+   ]
+  }
+ },
+ "docx": null,
+ "build": {
+  "engine": "pymupdf 1.28.2"
+ }
+}

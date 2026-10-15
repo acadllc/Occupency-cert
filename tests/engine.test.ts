@@ -6,6 +6,8 @@ import {
   Engine,
   analyzeMissing,
   defaultFields,
+  firstBodyParagraph,
+  fitRunSize,
   formatDate,
   isGeneratable,
   resolveValue,
@@ -101,7 +103,7 @@ describe('registry', () => {
   it('lists every template as generatable, under a known project-type tab', () => {
     const types = (JSON.parse(readFileSync(join(root, 'templates/project-types.json'), 'utf8')) as { types: { key: string }[] }).types.map((t) => t.key);
     expect(catalog.templates.filter((t) => (t.definition.projectType ?? 'occupancy') === 'occupancy')).toHaveLength(18);
-    expect(catalog.templates.filter((t) => t.definition.projectType === 'bank').length).toBeGreaterThanOrEqual(30);
+    expect(catalog.templates.filter((t) => t.definition.projectType === 'bank').length).toBeGreaterThanOrEqual(55);
     expect(catalog.templates.every(isGeneratable)).toBe(true);
     expect(catalog.templates.every((t) => types.includes(t.definition.projectType ?? 'occupancy'))).toBe(true);
   });
@@ -299,6 +301,33 @@ describe('Word output', () => {
     expect(Object.keys(photo.files).filter((n) => n.startsWith('word/media/acad-'))).toHaveLength(3);
     const pxml = await photo.file('word/document.xml')!.async('string');
     expect(pxml).toContain('تم تركيب خزانات المياه العلوية');
+  });
+
+  it('shrinks a value that would overflow a fixed-size text box', () => {
+    const rPr = '<w:rPr><w:b/><w:sz w:val="52"/><w:szCs w:val="52"/><w:lang w:val="en-US"/></w:rPr>';
+    expect(fitRunSize(rPr, 'ACAD', 300)).toBe(rPr);
+    const fitted = fitRunSize(rPr, 'Construction of a two-storey residential villa with service annex', 300);
+    const half = Number(/<w:sz w:val="(\d+)"/.exec(fitted)?.[1]);
+    expect(half).toBeLessThan(52);
+    expect(half).toBeGreaterThanOrEqual(16);
+    expect(fitted.indexOf('<w:sz ')).toBeLessThan(fitted.indexOf('<w:lang')); // schema order kept
+  });
+
+  it('anchors the stamp in a body paragraph when the document opens with a table', async () => {
+    const xml = '<w:body><w:tbl><w:tr><w:tc><w:p><w:r/></w:p></w:tc></w:tr></w:tbl><w:p w:rsidR="1"><w:pPr/></w:p></w:body>';
+    expect(xml.slice(firstBodyParagraph(xml)).startsWith('<w:p w:rsidR="1">')).toBe(true);
+    const { default: JSZip } = await JSZipP;
+    const res = await engine.generateDocx('bank-ten-new-project', sampleProject, { stamp: true });
+    const docXml = await (await JSZip.loadAsync(res.bytes)).file('word/document.xml')!.async('string');
+    expect(docXml).toContain('Company stamp');
+  });
+
+  it('writes values of zero-width markers at the field size', async () => {
+    const { default: JSZip } = await JSZipP;
+    const res = await engine.generateDocx('bank-com-start-order', sampleProject);
+    const xml = await (await JSZip.loadAsync(res.bytes)).file('word/document.xml')!.async('string');
+    const run = new RegExp(`<w:r><w:rPr>((?:(?!</w:rPr>).)*)</w:rPr><w:t xml:space="preserve">${String(sampleProject.project_components_ar).replace(/[+]/g, '\\+')}<`).exec(xml);
+    expect(run?.[1]).toContain('<w:sz w:val="24"/>');
   });
 
   it('escapes XML special characters in values', async () => {

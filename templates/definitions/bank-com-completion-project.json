@@ -1,0 +1,138 @@
+{
+  "key": "bank-com-completion-project",
+  "version": 1,
+  "status": "verified",
+  "name": "Completion Project Submission Form (DSN-CD-03)",
+  "nameAr": "نموذج تقديم مشروع استكمال",
+  "description": "Completion Project Submission Form (DSN-CD-03) (نموذج تقديم مشروع استكمال).",
+  "category": "أوراق استكمال",
+  "projectType": "bank",
+  "source": "private/bank/أوراق استكمال/DSN-CD-03 Completion_Completed_Project.docx",
+  "format": "docx",
+  "sanitize": "private",
+  "slots": {
+    "project_id": {
+      "kind": "cell"
+    },
+    "owner": {
+      "kind": "cell"
+    },
+    "location": {
+      "kind": "cell"
+    },
+    "components": {
+      "kind": "cell"
+    },
+    "stamp": {
+      "kind": "inline",
+      "width": 10
+    },
+    "consultant": {
+      "kind": "cell"
+    },
+    "contractor": {
+      "kind": "cell"
+    }
+  },
+  "fields": [
+    {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "components",
+      "value": "project_components_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "stamp",
+      "stamp": {
+        "size": 70,
+        "anchor": "marker",
+        "dx": 60,
+        "dy": 22
+      }
+    },
+    {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ],
+      "multiline": true
+    },
+    {
+      "slot": "contractor",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ],
+      "multiline": true
+    }
+  ]
+}

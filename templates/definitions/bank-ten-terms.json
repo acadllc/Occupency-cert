@@ -1,0 +1,198 @@
+{
+  "key": "bank-ten-terms",
+  "version": 1,
+  "status": "verified",
+  "name": "Tender Terms and Conditions",
+  "nameAr": "الشروط الخاصة للإشتراك في المناقصة",
+  "description": "Tender Terms and Conditions (الشروط الخاصة للإشتراك في المناقصة).",
+  "category": "اوراق المناقصة",
+  "projectType": "bank",
+  "source": "private/bank/اوراق المناقصة/03الشروط الخاصة للإشتراك في المناقصة.docx",
+  "format": "docx",
+  "sanitize": "private",
+  "slots": {
+    "tender_no": {
+      "kind": "gap",
+      "width": 90
+    },
+    "tender_no_en": {
+      "kind": "gap",
+      "width": 90,
+      "dir": "ltr"
+    },
+    "project_id": {
+      "kind": "inline",
+      "width": 64,
+      "shift": -26
+    },
+    "project_id_en": {
+      "kind": "inline",
+      "width": 120,
+      "dir": "ltr"
+    },
+    "owner": {
+      "kind": "inline",
+      "width": 175
+    },
+    "owner_en": {
+      "kind": "inline",
+      "width": 185,
+      "dir": "ltr"
+    },
+    "location": {
+      "kind": "inline",
+      "width": 170
+    },
+    "plot": {
+      "kind": "inline",
+      "width": 120
+    },
+    "location_en": {
+      "kind": "inline",
+      "width": 180,
+      "dir": "ltr"
+    }
+  },
+  "fields": [
+    {
+      "slot": "tender_no",
+      "value": "project_id",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "slot": "tender_no_en",
+      "value": "project_id",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "slot": "project_id_en",
+      "value": "project_id",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "multiline": true
+    },
+    {
+      "slot": "owner_en",
+      "value": "owner_name_en",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "multiline": true
+    },
+    {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "multiline": true
+    },
+    {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "slot": "location_en",
+      "value": "@project_location_en",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "multiline": true
+    }
+  ],
+  "layoutTolerance": 0.005
+}

@@ -1,0 +1,82 @@
+{
+  "key": "bank-cov-materials",
+  "version": 1,
+  "status": "verified",
+  "name": "Materials Table Cover",
+  "nameAr": "غلاف جدول المواد",
+  "description": "Bank tender book cover (Materials Table): bank project number and owner name.",
+  "category": "covers",
+  "projectType": "bank",
+  "source": "private/bank/covers/09Materials Table.docx",
+  "format": "docx",
+  "sanitize": "private",
+  "slots": {
+    "project_id": {
+      "kind": "inline",
+      "dir": "center",
+      "width": 160
+    },
+    "owner": {
+      "kind": "inline",
+      "dir": "rtl",
+      "width": 320,
+      "shift": 1
+    },
+    "owner_en": {
+      "kind": "inline",
+      "dir": "ltr",
+      "width": 470,
+      "shift": -387
+    }
+  },
+  "fields": [
+    {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 18,
+      "minSize": 7,
+      "align": "center",
+      "dir": "ltr",
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "docxMaxWidth": 125
+    },
+    {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "docxMaxWidth": 310
+    },
+    {
+      "slot": "owner_en",
+      "value": "owner_name_en",
+      "font": "sans",
+      "size": 22,
+      "minSize": 7,
+      "align": "center",
+      "dir": "ltr",
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "docxMaxWidth": 460
+    }
+  ]
+}

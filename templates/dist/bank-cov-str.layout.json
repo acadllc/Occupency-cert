@@ -1,0 +1,84 @@
+{
+ "key": "bank-cov-str",
+ "version": 1,
+ "format": "docx",
+ "sourceSha256": "ce3d3999a889e5259fa1c74be9d28791ac8dc0ca75c8b1b6bb3c5ab6e62cb6a6",
+ "baseSha256": "5b0e42c012e1b48adae3a731ec72f490d5c672ee9453130604225c23797bc41d",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 1190.55,
+   "height": 841.89
+  }
+ ],
+ "slots": {
+  "owner_en": {
+   "page": 0,
+   "baseline": 427.95,
+   "size": 26.0,
+   "rect": [
+    415.3,
+    400.78,
+    875.3,
+    436.22
+   ]
+  },
+  "project": {
+   "page": 0,
+   "baseline": 464.7,
+   "size": 26.0,
+   "rect": [
+    414.55,
+    437.53,
+    874.55,
+    472.97
+   ]
+  },
+  "location": {
+   "page": 0,
+   "baseline": 499.05,
+   "size": 26.0,
+   "rect": [
+    414.55,
+    471.88,
+    874.55,
+    507.32
+   ]
+  },
+  "plot": {
+   "page": 0,
+   "baseline": 535.8,
+   "size": 26.0,
+   "rect": [
+    414.55,
+    508.63,
+    874.55,
+    544.07
+   ]
+  },
+  "project_id": {
+   "page": 0,
+   "baseline": 608.55,
+   "size": 26.0,
+   "rect": [
+    414.55,
+    581.38,
+    874.55,
+    616.82
+   ]
+  }
+ },
+ "docx": {
+  "markers": {
+   "QZ1ZQ": "owner_en",
+   "QZ2ZQ": "project",
+   "QZ3ZQ": "location",
+   "QZ4ZQ": "plot",
+   "QZ5ZQ": "project_id"
+  }
+ },
+ "build": {
+  "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+  "layoutDiff": 0.0
+ }
+}

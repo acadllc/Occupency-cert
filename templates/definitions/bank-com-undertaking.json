@@ -1,0 +1,121 @@
+{
+  "key": "bank-com-undertaking",
+  "version": 1,
+  "status": "verified",
+  "name": "Completion Project Undertaking",
+  "nameAr": "تعهد وإقرار – مشروع استكمال",
+  "description": "Completion Project Undertaking (تعهد وإقرار – مشروع استكمال).",
+  "category": "أوراق استكمال",
+  "projectType": "bank",
+  "source": "private/bank/أوراق استكمال/Undertaking to complete.docx",
+  "format": "docx",
+  "sanitize": "private",
+  "slots": {
+    "stamp": {
+      "kind": "inline",
+      "width": 10
+    },
+    "date": {
+      "kind": "inline",
+      "width": 110,
+      "shift": -52
+    },
+    "project_id": {
+      "kind": "inline",
+      "width": 200
+    },
+    "owner": {
+      "kind": "inline",
+      "width": 300
+    },
+    "consultant": {
+      "kind": "inline",
+      "width": 300
+    },
+    "contractor": {
+      "kind": "inline",
+      "width": 300
+    }
+  },
+  "fields": [
+    {
+      "slot": "stamp",
+      "stamp": {
+        "size": 70,
+        "anchor": "marker",
+        "dx": 39,
+        "dy": 48
+      }
+    },
+    {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "slot": "contractor",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

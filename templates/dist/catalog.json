@@ -191,6 +191,3641 @@
   },
   {
    "definition": {
+    "key": "bank-com-complete-per-drawings",
+    "version": 1,
+    "status": "verified",
+    "name": "Undertaking to Complete per Drawings and Specifications",
+    "nameAr": "تعهد باستكمال الأعمال حسب المخططات والمواصفات",
+    "description": "Undertaking to Complete per Drawings and Specifications (تعهد باستكمال الأعمال حسب المخططات والمواصفات).",
+    "category": "أوراق استكمال",
+    "projectType": "bank",
+    "source": "private/bank/أوراق استكمال/تعهد إستكمال حسب المخططات والمواصفات.pdf.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "contractor",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "project_id_2",
+      "value": "plot_number",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 105,
+       "anchor": "marker",
+       "dx": -414,
+       "dy": 50
+      }
+     },
+     {
+      "slot": "components_text",
+      "value": "project_components_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": true
+     },
+     {
+      "slot": "contractor_2",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "layoutTolerance": 0.004
+   },
+   "layout": {
+    "key": "bank-com-complete-per-drawings",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "355aa1277c98b162c90474ea84df25ad42b1ac4aae5733b17e5669128e878d8a",
+    "baseSha256": "702165b2c9ff945ef24acd4b2cd85646522f5e2cb509602103046762a2ad8182",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "project_id": {
+      "page": 0,
+      "baseline": 210.1,
+      "size": 15,
+      "rect": [
+       233.9,
+       190.85,
+       511,
+       218.65
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 232.9,
+      "size": 15,
+      "rect": [
+       233.9,
+       218.65,
+       511,
+       246.45
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 263.05,
+      "size": 16,
+      "rect": [
+       233.9,
+       246.45,
+       511,
+       274.25
+      ]
+     },
+     "contractor": {
+      "page": 0,
+      "baseline": 290.9,
+      "size": 16,
+      "rect": [
+       233.9,
+       274.25,
+       511,
+       302.15
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 321.35,
+      "size": 15,
+      "rect": [
+       233.9,
+       302.15,
+       511,
+       329.85
+      ]
+     },
+     "project_id_2": {
+      "page": 0,
+      "baseline": 349.1,
+      "size": 15,
+      "rect": [
+       233.9,
+       329.85,
+       511,
+       357.65
+      ]
+     },
+     "stamp": {
+      "page": 0,
+      "baseline": 497.45,
+      "size": 1,
+      "rect": [
+       520.61,
+       494.56,
+       530.61,
+       499.67
+      ]
+     },
+     "components_text": {
+      "page": 0,
+      "baseline": 385.65,
+      "size": 1,
+      "rect": [
+       53.46,
+       373.76,
+       243.46,
+       396.87
+      ]
+     },
+     "contractor_2": {
+      "page": 0,
+      "baseline": 135.1,
+      "size": 16,
+      "rect": [
+       259.96,
+       119.9,
+       489.96,
+       139.9
+      ]
+     },
+     "date": {
+      "page": 0,
+      "baseline": 112.45,
+      "size": 12,
+      "rect": [
+       171.56,
+       101.05,
+       481.58,
+       116.05
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "project_id",
+      "QZ2ZQ": "owner",
+      "QZ3ZQ": "consultant",
+      "QZ4ZQ": "contractor",
+      "QZ5ZQ": "location",
+      "QZ6ZQ": "project_id_2",
+      "QZ7ZQ": "stamp",
+      "QZ8ZQ": "components_text",
+      "QZ9ZQ": "contractor_2",
+      "QZ10ZQ": "date"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0.0023
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-com-completion-project",
+    "version": 1,
+    "status": "verified",
+    "name": "Completion Project Submission Form (DSN-CD-03)",
+    "nameAr": "نموذج تقديم مشروع استكمال",
+    "description": "Completion Project Submission Form (DSN-CD-03) (نموذج تقديم مشروع استكمال).",
+    "category": "أوراق استكمال",
+    "projectType": "bank",
+    "source": "private/bank/أوراق استكمال/DSN-CD-03 Completion_Completed_Project.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "components",
+      "value": "project_components_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 70,
+       "anchor": "marker",
+       "dx": 60,
+       "dy": 22
+      }
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ],
+      "multiline": true
+     },
+     {
+      "slot": "contractor",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ],
+      "multiline": true
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-com-completion-project",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "0489a80a334362e9e0d096f32945dbc1b10d3c83b2ebe7649161b9fb7a89a2f9",
+    "baseSha256": "07c82e362b50c4c972c0826d37df6ae4a8a708567ce7dc7474db5d20eb00b0e8",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "project_id": {
+      "page": 0,
+      "baseline": 50.35,
+      "size": 12,
+      "rect": [
+       28.1,
+       37.55,
+       437.5,
+       54.55
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 67.35,
+      "size": 12,
+      "rect": [
+       28.1,
+       54.55,
+       437.5,
+       71.55
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 135.35,
+      "size": 12,
+      "rect": [
+       28.1,
+       122.55,
+       437.5,
+       139.55
+      ]
+     },
+     "components": {
+      "page": 0,
+      "baseline": 158,
+      "size": 12,
+      "rect": [
+       28.1,
+       145.25,
+       437.5,
+       162.25
+      ]
+     },
+     "stamp": {
+      "page": 0,
+      "baseline": 732.2,
+      "size": 1,
+      "rect": [
+       401.14,
+       729.18,
+       411.14,
+       734.58
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 101.35,
+      "size": 12,
+      "rect": [
+       197.9,
+       88.55,
+       437.5,
+       105.55
+      ]
+     },
+     "contractor": {
+      "page": 0,
+      "baseline": 118.35,
+      "size": 12,
+      "rect": [
+       197.9,
+       105.55,
+       437.5,
+       122.55
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "project_id",
+      "QZ2ZQ": "owner",
+      "QZ3ZQ": "location",
+      "QZ4ZQ": "components",
+      "QZ5ZQ": "stamp",
+      "QZ6ZQ": "consultant",
+      "QZ7ZQ": "contractor"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0.000347
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-com-drawings-approval",
+    "version": 1,
+    "status": "verified",
+    "name": "Drawings Approval Request (DSN-CD-00)",
+    "nameAr": "طلب إعتماد المخططات",
+    "description": "First Abu Dhabi Bank housing-loan form: Drawings Approval Request (DSN-CD-00).",
+    "category": "أوراق استكمال",
+    "projectType": "bank",
+    "source": "private/bank/أوراق استكمال/DSN-CD-00 CDSubmission.pdf",
+    "format": "pdf",
+    "reviewNotes": "Blank scanned bank form (no historical values); the project details are drawn into the boxes.",
+    "fields": [
+     {
+      "slot": "date_day",
+      "value": "{date|day}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "date_month",
+      "value": "{date|month}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "date_year",
+      "value": "{date|year}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "right"
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right"
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right"
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 80,
+       "anchor": "center"
+      }
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-com-drawings-approval",
+    "version": 1,
+    "format": "pdf",
+    "sourceSha256": "c5a5d04dd9173051bbb4803cd8942fe978354f4981ef27f667528b92235d8c65",
+    "baseSha256": "8688b1f54aa01f54ac99fd9016a2f7d861c61f1d0612190be5080920fa1a6064",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.2,
+      "height": 841.68
+     }
+    ],
+    "slots": {
+     "date_day": {
+      "page": 0,
+      "rect": [
+       482,
+       72,
+       503,
+       88
+      ]
+     },
+     "date_month": {
+      "page": 0,
+      "rect": [
+       459,
+       72,
+       477,
+       88
+      ]
+     },
+     "date_year": {
+      "page": 0,
+      "rect": [
+       418,
+       72,
+       453,
+       88
+      ]
+     },
+     "project_id": {
+      "page": 0,
+      "rect": [
+       58,
+       236,
+       408,
+       258
+      ]
+     },
+     "location": {
+      "page": 0,
+      "rect": [
+       58,
+       259,
+       408,
+       280
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "rect": [
+       58,
+       281,
+       408,
+       302
+      ]
+     },
+     "stamp": {
+      "page": 0,
+      "rect": [
+       360,
+       560,
+       440,
+       640
+      ]
+     }
+    },
+    "docx": null,
+    "build": {
+     "engine": "pymupdf 1.28.2"
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-com-drawings-match",
+    "version": 1,
+    "status": "verified",
+    "name": "Undertaking: Drawings Match the Municipality Approval",
+    "nameAr": "تعهد وإقرار – مطابقة المخططات",
+    "description": "First Abu Dhabi Bank housing-loan form: Undertaking: Drawings Match the Municipality Approval.",
+    "category": "أوراق استكمال",
+    "projectType": "bank",
+    "source": "private/bank/أوراق استكمال/Undertaking and acknowledgment of matching schemes.pdf",
+    "format": "pdf",
+    "reviewNotes": "Blank scanned bank form (no historical values); the project details are drawn into the boxes.",
+    "fields": [
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "right"
+     },
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "right"
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right"
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right"
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 90,
+       "anchor": "center"
+      }
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-com-drawings-match",
+    "version": 1,
+    "format": "pdf",
+    "sourceSha256": "ccc752593e6186259f77ed6776c4144bbb7b58cd14e6250243b6d8aeb6d6f934",
+    "baseSha256": "57601e0308d67abcff296c621c82b52eee80715b47c9545f9dd94a4689ee2880",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.2,
+      "height": 841.44
+     }
+    ],
+    "slots": {
+     "date": {
+      "page": 0,
+      "rect": [
+       360,
+       97,
+       476,
+       113
+      ]
+     },
+     "project_id": {
+      "page": 0,
+      "rect": [
+       250,
+       152,
+       436,
+       168
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "rect": [
+       250,
+       182,
+       436,
+       198
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "rect": [
+       250,
+       212,
+       436,
+       228
+      ]
+     },
+     "stamp": {
+      "page": 0,
+      "rect": [
+       105,
+       533,
+       195,
+       623
+      ]
+     }
+    },
+    "docx": null,
+    "build": {
+     "engine": "pymupdf 1.28.2"
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-com-pledges",
+    "version": 1,
+    "status": "verified",
+    "name": "Owner and Consultant Undertakings (DSN-CD-04)",
+    "nameAr": "تعهدات المالك والاستشاري",
+    "description": "First Abu Dhabi Bank housing-loan form: Owner and Consultant Undertakings (DSN-CD-04).",
+    "category": "أوراق استكمال",
+    "projectType": "bank",
+    "source": "private/bank/أوراق استكمال/DSN-CD-04 Owner_Cons_Pledge.pdf",
+    "format": "pdf",
+    "reviewNotes": "Blank scanned bank form (no historical values); the project details are drawn into the boxes.",
+    "fields": [
+     {
+      "slot": "date_day",
+      "value": "{date|day}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "date_month",
+      "value": "{date|month}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "date_year",
+      "value": "{date|year}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "right"
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right"
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right"
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right"
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 64,
+       "anchor": "center"
+      }
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-com-pledges",
+    "version": 1,
+    "format": "pdf",
+    "sourceSha256": "a1100705400294f0b591a7cfb7403d42a3496da4a8288a57605b90035a0d8f90",
+    "baseSha256": "62b90277014fd10fc9805f697cc7192d119598dc588fa45801617aae96526a54",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.2,
+      "height": 841.68
+     }
+    ],
+    "slots": {
+     "date_day": {
+      "page": 0,
+      "rect": [
+       482,
+       60,
+       503,
+       76
+      ]
+     },
+     "date_month": {
+      "page": 0,
+      "rect": [
+       459,
+       60,
+       477,
+       76
+      ]
+     },
+     "date_year": {
+      "page": 0,
+      "rect": [
+       418,
+       60,
+       453,
+       76
+      ]
+     },
+     "project_id": {
+      "page": 0,
+      "rect": [
+       58,
+       155,
+       408,
+       176
+      ]
+     },
+     "location": {
+      "page": 0,
+      "rect": [
+       58,
+       177,
+       408,
+       198
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "rect": [
+       58,
+       199,
+       408,
+       220
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "rect": [
+       58,
+       221,
+       408,
+       243
+      ]
+     },
+     "stamp": {
+      "page": 0,
+      "rect": [
+       363,
+       716,
+       427,
+       780
+      ]
+     }
+    },
+    "docx": null,
+    "build": {
+     "engine": "pymupdf 1.28.2"
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-com-progress",
+    "version": 1,
+    "status": "verified",
+    "name": "Site Work Progress Letter",
+    "nameAr": "نسبة إنجاز الأعمال في الموقع",
+    "description": "Site Work Progress Letter (نسبة إنجاز الأعمال في الموقع).",
+    "category": "أوراق استكمال",
+    "projectType": "bank",
+    "source": "private/bank/أوراق استكمال/نسبة إنجاز الأعمال في الموقع.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "contractor",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "project_id_2",
+      "value": "plot_number",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 105,
+       "anchor": "marker",
+       "dx": -353,
+       "dy": 50
+      }
+     },
+     {
+      "slot": "components_text",
+      "value": "project_components_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": true
+     },
+     {
+      "slot": "contractor_2",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "layoutTolerance": 0.004
+   },
+   "layout": {
+    "key": "bank-com-progress",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "4665f01fd85a698f2cb6106067afa522d9227797a59db7e89b8fec8ba086129a",
+    "baseSha256": "5b755dc5d349c16478170f6e22434ed142356084812caa31b5bc54942e8d4ede",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "project_id": {
+      "page": 0,
+      "baseline": 210.1,
+      "size": 15,
+      "rect": [
+       233.9,
+       190.85,
+       511,
+       218.65
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 232.9,
+      "size": 15,
+      "rect": [
+       233.9,
+       218.65,
+       511,
+       246.45
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 263.05,
+      "size": 16,
+      "rect": [
+       233.9,
+       246.45,
+       511,
+       274.25
+      ]
+     },
+     "contractor": {
+      "page": 0,
+      "baseline": 290.9,
+      "size": 16,
+      "rect": [
+       233.9,
+       274.25,
+       511,
+       302.15
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 321.35,
+      "size": 15,
+      "rect": [
+       233.9,
+       302.15,
+       511,
+       329.85
+      ]
+     },
+     "project_id_2": {
+      "page": 0,
+      "baseline": 349.1,
+      "size": 15,
+      "rect": [
+       233.9,
+       329.85,
+       511,
+       357.65
+      ]
+     },
+     "stamp": {
+      "page": 0,
+      "baseline": 501.05,
+      "size": 1,
+      "rect": [
+       520.61,
+       498.16,
+       530.61,
+       503.27
+      ]
+     },
+     "components_text": {
+      "page": 0,
+      "baseline": 385.65,
+      "size": 1,
+      "rect": [
+       53.46,
+       373.76,
+       243.46,
+       396.87
+      ]
+     },
+     "contractor_2": {
+      "page": 0,
+      "baseline": 135.1,
+      "size": 16,
+      "rect": [
+       259.96,
+       119.9,
+       489.96,
+       139.9
+      ]
+     },
+     "date": {
+      "page": 0,
+      "baseline": 112.45,
+      "size": 12,
+      "rect": [
+       171.56,
+       101.05,
+       481.58,
+       116.05
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "project_id",
+      "QZ2ZQ": "owner",
+      "QZ3ZQ": "consultant",
+      "QZ4ZQ": "contractor",
+      "QZ5ZQ": "location",
+      "QZ6ZQ": "project_id_2",
+      "QZ7ZQ": "stamp",
+      "QZ8ZQ": "components_text",
+      "QZ9ZQ": "contractor_2",
+      "QZ10ZQ": "date"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0.001851
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-com-start-order",
+    "version": 1,
+    "status": "verified",
+    "name": "Start of Work Order",
+    "nameAr": "أمر مباشرة العمل",
+    "description": "Start of Work Order (أمر مباشرة العمل).",
+    "category": "أوراق استكمال",
+    "projectType": "bank",
+    "source": "private/bank/أوراق استكمال/امر مباشره.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "contractor",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "project_id_2",
+      "value": "plot_number",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "owner_2",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 105,
+       "anchor": "marker",
+       "dx": -360,
+       "dy": 50
+      }
+     },
+     {
+      "slot": "components_text",
+      "value": "project_components_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": true
+     },
+     {
+      "slot": "contractor_2",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "start_date",
+      "value": "project_start_date",
+      "font": "sans",
+      "size": 12,
+      "align": "center",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "end_date",
+      "value": "project_end_date",
+      "font": "sans",
+      "size": 12,
+      "align": "center",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "layoutTolerance": 0.005
+   },
+   "layout": {
+    "key": "bank-com-start-order",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "26fc94b964eae0a750e92cfbd77e5bb2ce2fe8207bbb574550d15294984cb2e3",
+    "baseSha256": "4146172e9a696737ee843ac8c45d5df5624ec236e92243e5d5b9698b8c000a1f",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "project_id": {
+      "page": 0,
+      "baseline": 210.1,
+      "size": 15,
+      "rect": [
+       233.9,
+       190.85,
+       511,
+       218.65
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 232.9,
+      "size": 15,
+      "rect": [
+       233.9,
+       218.65,
+       511,
+       246.45
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 263.05,
+      "size": 16,
+      "rect": [
+       233.9,
+       246.45,
+       511,
+       274.25
+      ]
+     },
+     "contractor": {
+      "page": 0,
+      "baseline": 290.9,
+      "size": 16,
+      "rect": [
+       233.9,
+       274.25,
+       511,
+       302.15
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 321.35,
+      "size": 15,
+      "rect": [
+       233.9,
+       302.15,
+       511,
+       329.85
+      ]
+     },
+     "project_id_2": {
+      "page": 0,
+      "baseline": 349.1,
+      "size": 15,
+      "rect": [
+       233.9,
+       329.85,
+       511,
+       357.65
+      ]
+     },
+     "owner_2": {
+      "page": 0,
+      "baseline": 429.7,
+      "size": 14,
+      "rect": [
+       85.93,
+       416.4,
+       300.01,
+       433.9
+      ]
+     },
+     "stamp": {
+      "page": 0,
+      "baseline": 640.6,
+      "size": 1,
+      "rect": [
+       520.61,
+       637.71,
+       530.61,
+       642.82
+      ]
+     },
+     "components_text": {
+      "page": 0,
+      "baseline": 385.65,
+      "size": 1,
+      "rect": [
+       53.46,
+       373.76,
+       243.46,
+       396.87
+      ]
+     },
+     "contractor_2": {
+      "page": 0,
+      "baseline": 135.1,
+      "size": 16,
+      "rect": [
+       259.96,
+       119.9,
+       489.96,
+       139.9
+      ]
+     },
+     "date": {
+      "page": 0,
+      "baseline": 112.45,
+      "size": 12,
+      "rect": [
+       171.56,
+       101.05,
+       481.59,
+       116.05
+      ]
+     },
+     "start_date": {
+      "page": 0,
+      "baseline": 445.85,
+      "size": 14,
+      "rect": [
+       235.91,
+       432.55,
+       327.78,
+       450.05
+      ]
+     },
+     "end_date": {
+      "page": 0,
+      "baseline": 445.85,
+      "size": 14,
+      "rect": [
+       11.69,
+       432.55,
+       91.69,
+       450.05
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "project_id",
+      "QZ2ZQ": "owner",
+      "QZ3ZQ": "consultant",
+      "QZ4ZQ": "contractor",
+      "QZ5ZQ": "location",
+      "QZ6ZQ": "project_id_2",
+      "QZ7ZQ": "owner_2",
+      "QZ8ZQ": "stamp",
+      "QZ9ZQ": "components_text",
+      "QZ10ZQ": "contractor_2",
+      "QZ11ZQ": "date",
+      "QZ12ZQ": "start_date",
+      "QZ13ZQ": "end_date"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0.003274
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-com-undertaking",
+    "version": 1,
+    "status": "verified",
+    "name": "Completion Project Undertaking",
+    "nameAr": "تعهد وإقرار – مشروع استكمال",
+    "description": "Completion Project Undertaking (تعهد وإقرار – مشروع استكمال).",
+    "category": "أوراق استكمال",
+    "projectType": "bank",
+    "source": "private/bank/أوراق استكمال/Undertaking to complete.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 70,
+       "anchor": "marker",
+       "dx": 39,
+       "dy": 48
+      }
+     },
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "contractor",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-com-undertaking",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "b87f5f85e2f5cc03c0f02f520f45eb4b37297bfb208bb9d98051f190a74d37d3",
+    "baseSha256": "189ddaaf7fce01ea98b49e1782a052c28e87a9fee5dd1b6b7b3203ca27690d12",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 612,
+      "height": 792
+     }
+    ],
+    "slots": {
+     "stamp": {
+      "page": 0,
+      "baseline": 577.6,
+      "size": 1,
+      "rect": [
+       395.79,
+       574.58,
+       405.79,
+       579.97
+      ]
+     },
+     "date": {
+      "page": 0,
+      "baseline": 83.8,
+      "size": 14,
+      "rect": [
+       360.17,
+       67.58,
+       470.17,
+       91.05
+      ]
+     },
+     "project_id": {
+      "page": 0,
+      "baseline": 136,
+      "size": 14,
+      "rect": [
+       245.35,
+       119.78,
+       445.35,
+       143.25
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 162.1,
+      "size": 14,
+      "rect": [
+       105.99,
+       145.88,
+       405.99,
+       169.35
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 188.2,
+      "size": 14,
+      "rect": [
+       145.36,
+       171.98,
+       445.36,
+       195.45
+      ]
+     },
+     "contractor": {
+      "page": 0,
+      "baseline": 214.3,
+      "size": 14,
+      "rect": [
+       109.37,
+       198.08,
+       409.37,
+       221.55
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "stamp",
+      "QZ2ZQ": "date",
+      "QZ3ZQ": "project_id",
+      "QZ4ZQ": "owner",
+      "QZ5ZQ": "consultant",
+      "QZ6ZQ": "contractor"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0.00138
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-cov-ac",
+    "version": 1,
+    "status": "verified",
+    "name": "Air Conditioning Drawings Cover",
+    "nameAr": "غلاف مخططات التكييف",
+    "description": "Bank drawings set cover (air conditioning drawings): owner, project, location, plot and project number.",
+    "category": "covers",
+    "projectType": "bank",
+    "source": "private/bank/covers/07AC.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "owner_en",
+      "value": "owner_name_en",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": false,
+      "docxMaxWidth": 620
+     },
+     {
+      "slot": "project",
+      "value": "project_description_en",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": true,
+      "docxMaxWidth": 620
+     },
+     {
+      "slot": "location",
+      "value": "@project_address_or_location_en",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": false,
+      "docxMaxWidth": 620
+     },
+     {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": false,
+      "docxMaxWidth": 620
+     },
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": false,
+      "docxMaxWidth": 620
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-cov-ac",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "fd401fcd5d98c0e9fe7e1ba26ab0ac71111f8ff42d490421e81638a93c0f8c1c",
+    "baseSha256": "15f8a28ae27901db5b6939cc9479543e1862f4d9e0dd592a30b488e19e3177c6",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 1190.55,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "owner_en": {
+      "page": 0,
+      "baseline": 427.95,
+      "size": 26,
+      "rect": [
+       415.3,
+       400.78,
+       875.3,
+       436.22
+      ]
+     },
+     "project": {
+      "page": 0,
+      "baseline": 464.7,
+      "size": 26,
+      "rect": [
+       414.55,
+       437.53,
+       874.55,
+       472.97
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 499.05,
+      "size": 26,
+      "rect": [
+       414.55,
+       471.88,
+       874.55,
+       507.32
+      ]
+     },
+     "plot": {
+      "page": 0,
+      "baseline": 535.8,
+      "size": 26,
+      "rect": [
+       414.55,
+       508.63,
+       874.55,
+       544.07
+      ]
+     },
+     "project_id": {
+      "page": 0,
+      "baseline": 608.55,
+      "size": 26,
+      "rect": [
+       414.55,
+       581.38,
+       874.55,
+       616.82
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "owner_en",
+      "QZ2ZQ": "project",
+      "QZ3ZQ": "location",
+      "QZ4ZQ": "plot",
+      "QZ5ZQ": "project_id"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-cov-arch",
+    "version": 1,
+    "status": "verified",
+    "name": "Architectural Drawings Cover",
+    "nameAr": "غلاف المخططات المعمارية",
+    "description": "Bank drawings set cover (architectural drawings): owner, project, location, plot and project number.",
+    "category": "covers",
+    "projectType": "bank",
+    "source": "private/bank/covers/01ARCH.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "owner_en",
+      "value": "owner_name_en",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": false,
+      "docxMaxWidth": 620
+     },
+     {
+      "slot": "project",
+      "value": "project_description_en",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": true,
+      "docxMaxWidth": 620
+     },
+     {
+      "slot": "location",
+      "value": "@project_address_or_location_en",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": false,
+      "docxMaxWidth": 620
+     },
+     {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": false,
+      "docxMaxWidth": 620
+     },
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": false,
+      "docxMaxWidth": 620
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-cov-arch",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "f34d161437e405475af05c9b5aca3a9cb4b96be6d2c3fbd24db89a3c125e34bd",
+    "baseSha256": "563c3013eedb2d379053bc9f8c6d39795cfc35e2ec5b25ace439b6eae71f3912",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 1190.55,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "owner_en": {
+      "page": 0,
+      "baseline": 442,
+      "size": 26,
+      "rect": [
+       415.3,
+       414.83,
+       875.3,
+       450.27
+      ]
+     },
+     "project": {
+      "page": 0,
+      "baseline": 476.5,
+      "size": 26,
+      "rect": [
+       413.8,
+       449.33,
+       873.8,
+       484.77
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 511.6,
+      "size": 26,
+      "rect": [
+       413.05,
+       484.43,
+       873.05,
+       519.87
+      ]
+     },
+     "plot": {
+      "page": 0,
+      "baseline": 547.3,
+      "size": 26,
+      "rect": [
+       416.8,
+       520.13,
+       876.8,
+       555.57
+      ]
+     },
+     "project_id": {
+      "page": 0,
+      "baseline": 618.1,
+      "size": 26,
+      "rect": [
+       415.3,
+       590.93,
+       875.3,
+       626.37
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "owner_en",
+      "QZ2ZQ": "project",
+      "QZ3ZQ": "location",
+      "QZ4ZQ": "plot",
+      "QZ5ZQ": "project_id"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-cov-boq",
+    "version": 1,
+    "status": "verified",
+    "name": "Bill of Quantities Cover",
+    "nameAr": "غلاف جدول الكميات",
+    "description": "Bank tender book cover (Bill of Quantities): bank project number and owner name.",
+    "category": "covers",
+    "projectType": "bank",
+    "source": "private/bank/covers/11BOQ.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 18,
+      "minSize": 7,
+      "align": "center",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "docxMaxWidth": 125
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "docxMaxWidth": 310
+     },
+     {
+      "slot": "owner_en",
+      "value": "owner_name_en",
+      "font": "sans",
+      "size": 22,
+      "minSize": 7,
+      "align": "center",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "docxMaxWidth": 460
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-cov-boq",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "2ea22bd102deee3b94a0ebef0e80ea88a590a64d05555e1bb256f2a83487d9e4",
+    "baseSha256": "8f76d674fdc012fcb9b2483915a801d24a2c273bd31a942b15430e9fa2575d2a",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "project_id": {
+      "page": 0,
+      "baseline": 561,
+      "size": 22,
+      "rect": [
+       255.63,
+       539.09,
+       415.63,
+       567.64
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 583.4,
+      "size": 28,
+      "rect": [
+       116.79,
+       556.06,
+       436.79,
+       591.31
+      ]
+     },
+     "owner_en": {
+      "page": 0,
+      "baseline": 621.05,
+      "size": 25,
+      "rect": [
+       74.1,
+       596.43,
+       544.1,
+       628.33
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "project_id",
+      "QZ2ZQ": "owner",
+      "QZ3ZQ": "owner_en"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-cov-drain",
+    "version": 1,
+    "status": "verified",
+    "name": "Drainage Drawings Cover",
+    "nameAr": "غلاف مخططات الصرف الصحي",
+    "description": "Bank drawings set cover (drainage drawings): owner, project, location, plot and project number.",
+    "category": "covers",
+    "projectType": "bank",
+    "source": "private/bank/covers/05DRAIN.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "owner_en",
+      "value": "owner_name_en",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": false,
+      "docxMaxWidth": 620
+     },
+     {
+      "slot": "project",
+      "value": "project_description_en",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": true,
+      "docxMaxWidth": 620
+     },
+     {
+      "slot": "location",
+      "value": "@project_address_or_location_en",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": false,
+      "docxMaxWidth": 620
+     },
+     {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": false,
+      "docxMaxWidth": 620
+     },
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": false,
+      "docxMaxWidth": 620
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-cov-drain",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "750f901e5011a2d0b803b195393d3ef66832df323ff2f91f3a444813efa7cd87",
+    "baseSha256": "7d700a1e18511c922d8eba73c1cdb4bf212af46501f15ae3db3ffbe690873ecd",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 1190.55,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "owner_en": {
+      "page": 0,
+      "baseline": 427.95,
+      "size": 26,
+      "rect": [
+       415.3,
+       400.78,
+       875.3,
+       436.22
+      ]
+     },
+     "project": {
+      "page": 0,
+      "baseline": 464.7,
+      "size": 26,
+      "rect": [
+       414.55,
+       437.53,
+       874.55,
+       472.97
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 499.05,
+      "size": 26,
+      "rect": [
+       414.55,
+       471.88,
+       874.55,
+       507.32
+      ]
+     },
+     "plot": {
+      "page": 0,
+      "baseline": 535.8,
+      "size": 26,
+      "rect": [
+       414.55,
+       508.63,
+       874.55,
+       544.07
+      ]
+     },
+     "project_id": {
+      "page": 0,
+      "baseline": 608.55,
+      "size": 26,
+      "rect": [
+       414.55,
+       581.38,
+       874.55,
+       616.82
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "owner_en",
+      "QZ2ZQ": "project",
+      "QZ3ZQ": "location",
+      "QZ4ZQ": "plot",
+      "QZ5ZQ": "project_id"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-cov-elec",
+    "version": 1,
+    "status": "verified",
+    "name": "Electrical Drawings Cover",
+    "nameAr": "غلاف مخططات الكهرباء",
+    "description": "Bank drawings set cover (electrical drawings): owner, project, location, plot and project number.",
+    "category": "covers",
+    "projectType": "bank",
+    "source": "private/bank/covers/03ELEC.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "owner_en",
+      "value": "owner_name_en",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": false,
+      "docxMaxWidth": 620
+     },
+     {
+      "slot": "project",
+      "value": "project_description_en",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": true,
+      "docxMaxWidth": 620
+     },
+     {
+      "slot": "location",
+      "value": "@project_address_or_location_en",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": false,
+      "docxMaxWidth": 620
+     },
+     {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": false,
+      "docxMaxWidth": 620
+     },
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": false,
+      "docxMaxWidth": 620
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-cov-elec",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "4f1c16d67aab9fa71b6cf473ba952a8f99664c71ab1791b7284d8819d5d270ac",
+    "baseSha256": "d4843f1033792394631adc101f0b4cf9ef73b19b3e4a45f8ab67ed662cacf7c8",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 1190.55,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "owner_en": {
+      "page": 0,
+      "baseline": 427.95,
+      "size": 26,
+      "rect": [
+       415.3,
+       400.78,
+       875.3,
+       436.22
+      ]
+     },
+     "project": {
+      "page": 0,
+      "baseline": 464.7,
+      "size": 26,
+      "rect": [
+       414.55,
+       437.53,
+       874.55,
+       472.97
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 499.05,
+      "size": 26,
+      "rect": [
+       414.55,
+       471.88,
+       874.55,
+       507.32
+      ]
+     },
+     "plot": {
+      "page": 0,
+      "baseline": 535.8,
+      "size": 26,
+      "rect": [
+       414.55,
+       508.63,
+       874.55,
+       544.07
+      ]
+     },
+     "project_id": {
+      "page": 0,
+      "baseline": 608.55,
+      "size": 26,
+      "rect": [
+       414.55,
+       581.38,
+       874.55,
+       616.82
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "owner_en",
+      "QZ2ZQ": "project",
+      "QZ3ZQ": "location",
+      "QZ4ZQ": "plot",
+      "QZ5ZQ": "project_id"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-cov-materials",
+    "version": 1,
+    "status": "verified",
+    "name": "Materials Table Cover",
+    "nameAr": "غلاف جدول المواد",
+    "description": "Bank tender book cover (Materials Table): bank project number and owner name.",
+    "category": "covers",
+    "projectType": "bank",
+    "source": "private/bank/covers/09Materials Table.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 18,
+      "minSize": 7,
+      "align": "center",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "docxMaxWidth": 125
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "docxMaxWidth": 310
+     },
+     {
+      "slot": "owner_en",
+      "value": "owner_name_en",
+      "font": "sans",
+      "size": 22,
+      "minSize": 7,
+      "align": "center",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "docxMaxWidth": 460
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-cov-materials",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "6c7e9f2929613e708756f46e15ab27e4cc43d2957ec088a66bf104d60d414899",
+    "baseSha256": "e4239ba3b5eac9dee64523e23e1c2ed36175135fd13a353e9d26f8a113322b5e",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "project_id": {
+      "page": 0,
+      "baseline": 561,
+      "size": 22,
+      "rect": [
+       255.63,
+       539.09,
+       415.63,
+       567.64
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 583.4,
+      "size": 28,
+      "rect": [
+       116.79,
+       556.06,
+       436.79,
+       591.31
+      ]
+     },
+     "owner_en": {
+      "page": 0,
+      "baseline": 618.8,
+      "size": 25,
+      "rect": [
+       75.65,
+       594.18,
+       545.65,
+       626.08
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "project_id",
+      "QZ2ZQ": "owner",
+      "QZ3ZQ": "owner_en"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-cov-specs",
+    "version": 1,
+    "status": "verified",
+    "name": "Particular Specification Tender Cover",
+    "nameAr": "غلاف المواصفات الخاصة للمناقصة",
+    "description": "Bank tender book cover (Particular Specification Tender): bank project number and owner name.",
+    "category": "covers",
+    "projectType": "bank",
+    "source": "private/bank/covers/01COVER---.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 18,
+      "minSize": 7,
+      "align": "center",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "docxMaxWidth": 125
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "docxMaxWidth": 310
+     },
+     {
+      "slot": "owner_en",
+      "value": "owner_name_en",
+      "font": "sans",
+      "size": 22,
+      "minSize": 7,
+      "align": "center",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "docxMaxWidth": 460
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-cov-specs",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "5f240812de9bff5f7bc5644788bce06b8816783ab6bb8dfbf0f7019e8903e080",
+    "baseSha256": "839a9f1ca341a56fa8e63ff04bead079f704627acf7b54f7fd8199d377666bfd",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "project_id": {
+      "page": 0,
+      "baseline": 561,
+      "size": 22,
+      "rect": [
+       255.63,
+       539.09,
+       415.63,
+       567.64
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 583.35,
+      "size": 28,
+      "rect": [
+       137.79,
+       556.01,
+       457.79,
+       591.26
+      ]
+     },
+     "owner_en": {
+      "page": 0,
+      "baseline": 619.55,
+      "size": 25,
+      "rect": [
+       83.1,
+       594.93,
+       553.1,
+       626.83
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "project_id",
+      "QZ2ZQ": "owner",
+      "QZ3ZQ": "owner_en"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0.001979
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-cov-str",
+    "version": 1,
+    "status": "verified",
+    "name": "Structural Drawings Cover",
+    "nameAr": "غلاف المخططات الإنشائية",
+    "description": "Bank drawings set cover (structural drawings): owner, project, location, plot and project number.",
+    "category": "covers",
+    "projectType": "bank",
+    "source": "private/bank/covers/02STR.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "owner_en",
+      "value": "owner_name_en",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": false,
+      "docxMaxWidth": 620
+     },
+     {
+      "slot": "project",
+      "value": "project_description_en",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": true,
+      "docxMaxWidth": 620
+     },
+     {
+      "slot": "location",
+      "value": "@project_address_or_location_en",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": false,
+      "docxMaxWidth": 620
+     },
+     {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": false,
+      "docxMaxWidth": 620
+     },
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": false,
+      "docxMaxWidth": 620
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-cov-str",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "ce3d3999a889e5259fa1c74be9d28791ac8dc0ca75c8b1b6bb3c5ab6e62cb6a6",
+    "baseSha256": "5b0e42c012e1b48adae3a731ec72f490d5c672ee9453130604225c23797bc41d",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 1190.55,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "owner_en": {
+      "page": 0,
+      "baseline": 427.95,
+      "size": 26,
+      "rect": [
+       415.3,
+       400.78,
+       875.3,
+       436.22
+      ]
+     },
+     "project": {
+      "page": 0,
+      "baseline": 464.7,
+      "size": 26,
+      "rect": [
+       414.55,
+       437.53,
+       874.55,
+       472.97
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 499.05,
+      "size": 26,
+      "rect": [
+       414.55,
+       471.88,
+       874.55,
+       507.32
+      ]
+     },
+     "plot": {
+      "page": 0,
+      "baseline": 535.8,
+      "size": 26,
+      "rect": [
+       414.55,
+       508.63,
+       874.55,
+       544.07
+      ]
+     },
+     "project_id": {
+      "page": 0,
+      "baseline": 608.55,
+      "size": 26,
+      "rect": [
+       414.55,
+       581.38,
+       874.55,
+       616.82
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "owner_en",
+      "QZ2ZQ": "project",
+      "QZ3ZQ": "location",
+      "QZ4ZQ": "plot",
+      "QZ5ZQ": "project_id"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-cov-tel",
+    "version": 1,
+    "status": "verified",
+    "name": "Telephone Drawings Cover",
+    "nameAr": "غلاف مخططات الهاتف",
+    "description": "Bank drawings set cover (telephone drawings): owner, project, location, plot and project number.",
+    "category": "covers",
+    "projectType": "bank",
+    "source": "private/bank/covers/04TL.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "owner_en",
+      "value": "owner_name_en",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": false,
+      "docxMaxWidth": 620
+     },
+     {
+      "slot": "project",
+      "value": "project_description_en",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": true,
+      "docxMaxWidth": 620
+     },
+     {
+      "slot": "location",
+      "value": "@project_address_or_location_en",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": false,
+      "docxMaxWidth": 620
+     },
+     {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": false,
+      "docxMaxWidth": 620
+     },
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": false,
+      "docxMaxWidth": 620
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-cov-tel",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "55fcd49e53f2bd098eb01439ce259a27ed2944479675581ce3f146b8abef00f0",
+    "baseSha256": "84f7f777989c58d6fbf1c197552e78f9ce131642676fc421d8705e62508f5ff2",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 1190.55,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "owner_en": {
+      "page": 0,
+      "baseline": 427.95,
+      "size": 26,
+      "rect": [
+       415.3,
+       400.78,
+       875.3,
+       436.22
+      ]
+     },
+     "project": {
+      "page": 0,
+      "baseline": 464.7,
+      "size": 26,
+      "rect": [
+       414.55,
+       437.53,
+       874.55,
+       472.97
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 499.05,
+      "size": 26,
+      "rect": [
+       414.55,
+       471.88,
+       874.55,
+       507.32
+      ]
+     },
+     "plot": {
+      "page": 0,
+      "baseline": 535.8,
+      "size": 26,
+      "rect": [
+       414.55,
+       508.63,
+       874.55,
+       544.07
+      ]
+     },
+     "project_id": {
+      "page": 0,
+      "baseline": 608.55,
+      "size": 26,
+      "rect": [
+       414.55,
+       581.38,
+       874.55,
+       616.82
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "owner_en",
+      "QZ2ZQ": "project",
+      "QZ3ZQ": "location",
+      "QZ4ZQ": "plot",
+      "QZ5ZQ": "project_id"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-cov-ws",
+    "version": 1,
+    "status": "verified",
+    "name": "Water Supply Drawings Cover",
+    "nameAr": "غلاف مخططات تغذية المياه",
+    "description": "Bank drawings set cover (water supply drawings): owner, project, location, plot and project number.",
+    "category": "covers",
+    "projectType": "bank",
+    "source": "private/bank/covers/06WS.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "owner_en",
+      "value": "owner_name_en",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": false,
+      "docxMaxWidth": 620
+     },
+     {
+      "slot": "project",
+      "value": "project_description_en",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": true,
+      "docxMaxWidth": 620
+     },
+     {
+      "slot": "location",
+      "value": "@project_address_or_location_en",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": false,
+      "docxMaxWidth": 620
+     },
+     {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": false,
+      "docxMaxWidth": 620
+     },
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": false,
+      "docxMaxWidth": 620
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-cov-ws",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "4e5c0925956f01344b6ad0f6fd38e8d615a32278149e68dbdf8556c9227a140b",
+    "baseSha256": "81f9a85cf2d7bd8b48fe6127f48cb4b6ee7f8042e651cca43ad20aa11e0bb263",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 1190.55,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "owner_en": {
+      "page": 0,
+      "baseline": 427.95,
+      "size": 26,
+      "rect": [
+       415.3,
+       400.78,
+       875.3,
+       436.22
+      ]
+     },
+     "project": {
+      "page": 0,
+      "baseline": 464.7,
+      "size": 26,
+      "rect": [
+       414.55,
+       437.53,
+       874.55,
+       472.97
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 499.05,
+      "size": 26,
+      "rect": [
+       414.55,
+       471.88,
+       874.55,
+       507.32
+      ]
+     },
+     "plot": {
+      "page": 0,
+      "baseline": 535.8,
+      "size": 26,
+      "rect": [
+       414.55,
+       508.63,
+       874.55,
+       544.07
+      ]
+     },
+     "project_id": {
+      "page": 0,
+      "baseline": 608.55,
+      "size": 26,
+      "rect": [
+       414.55,
+       581.38,
+       874.55,
+       616.82
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "owner_en",
+      "QZ2ZQ": "project",
+      "QZ3ZQ": "location",
+      "QZ4ZQ": "plot",
+      "QZ5ZQ": "project_id"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0
+    }
+   }
+  },
+  {
+   "definition": {
     "key": "bank-cur-checklist",
     "version": 1,
     "status": "verified",
@@ -288,7 +3923,7 @@
     "version": 1,
     "format": "docx",
     "sourceSha256": "9814f87f36474ec3ebf9138681c5eb227a011533f086bab79859bdb14335fa89",
-    "baseSha256": "0a6cf87a90dd41fd42264f5ed3886b138d5f1cd1516f760bbb3cca9094c1f0fe",
+    "baseSha256": "7ef856aac00287ce3aa49c158bf69e087417a9cd0f92c2651e81fccad8b7a4a5",
     "pageCount": 1,
     "pages": [
      {
@@ -299,68 +3934,68 @@
     "slots": {
      "project_id": {
       "page": 0,
-      "baseline": 84.9,
+      "baseline": 85.2,
       "size": 10,
       "rect": [
-       308.95,
-       73.22,
-       508.95,
-       89.31
+       300.78,
+       73.04,
+       500.78,
+       90.95
       ]
      },
      "owner": {
       "page": 0,
-      "baseline": 84.9,
+      "baseline": 85.2,
       "size": 10,
       "rect": [
-       109.68,
-       73.22,
-       309.68,
-       89.31
+       97.88,
+       73.04,
+       297.88,
+       90.95
       ]
      },
      "contractor": {
       "page": 0,
-      "baseline": 107.6,
+      "baseline": 107.9,
       "size": 10,
       "rect": [
-       322.41,
-       95.92,
-       522.41,
-       112.01
+       315.19,
+       95.74,
+       515.19,
+       113.65
       ]
      },
      "consultant": {
       "page": 0,
-      "baseline": 107.6,
+      "baseline": 107.9,
       "size": 10,
       "rect": [
-       118.64,
-       95.92,
-       318.64,
-       112.01
+       109.85,
+       95.74,
+       309.85,
+       113.65
       ]
      },
      "location": {
       "page": 0,
-      "baseline": 130.3,
+      "baseline": 130.6,
       "size": 10,
       "rect": [
-       105.31,
-       118.62,
-       305.31,
-       134.71
+       93.73,
+       118.44,
+       293.73,
+       136.35
       ]
      },
      "stamp": {
       "page": 0,
-      "baseline": 673.1,
+      "baseline": 626.6,
       "size": 1,
       "rect": [
-       466.91,
-       670.13,
-       476.91,
-       675.34
+       455.24,
+       623.58,
+       465.24,
+       628.98
       ]
      }
     },
@@ -376,7 +4011,7 @@
     },
     "build": {
      "engine": "LibreOffice 24.2.7.2 420(Build:2)",
-     "layoutDiff": 0.000008
+     "layoutDiff": 0
     }
    }
   },
@@ -765,7 +4400,7 @@
     "version": 1,
     "format": "docx",
     "sourceSha256": "70237182e22f69cb24aaa5a2655bfc97434954217afce0071d11e05972765689",
-    "baseSha256": "a6f9d0f3e8ba548fb8fc7a6f171f27b46ea879b31fee8c91fb440f78861e5d6e",
+    "baseSha256": "b2503a39b55193c6a71697e0b45bd787c8088d2d8fafefb8222603b03a0824ce",
     "pageCount": 4,
     "pages": [
      {
@@ -788,112 +4423,112 @@
     "slots": {
      "owner": {
       "page": 0,
-      "baseline": 121.4,
+      "baseline": 105.95,
       "size": 10,
       "rect": [
        406.3,
-       111.45,
+       97.25,
        574.7,
-       136.95
+       122.75
       ]
      },
      "project_id": {
       "page": 0,
-      "baseline": 127.85,
+      "baseline": 112.45,
       "size": 10,
       "rect": [
        137,
-       111.45,
+       97.25,
        300,
-       136.95
+       122.75
       ]
      },
      "contractor": {
       "page": 0,
-      "baseline": 153.35,
+      "baseline": 137.95,
       "size": 10,
       "rect": [
        406.3,
-       136.95,
+       122.75,
        574.7,
-       162.45
+       148.25
       ]
      },
      "consultant": {
       "page": 0,
-      "baseline": 153.35,
+      "baseline": 137.95,
       "size": 10,
       "rect": [
        137,
-       136.95,
+       122.75,
        300,
-       162.45
+       148.25
       ]
      },
      "location": {
       "page": 0,
-      "baseline": 194.7,
+      "baseline": 180.65,
       "size": 10,
       "rect": [
        137,
-       178.35,
+       164.15,
        300,
-       203.85
+       192.35
       ]
      },
      "end_date": {
       "page": 0,
-      "baseline": 247.15,
+      "baseline": 235.7,
       "size": 14,
       "rect": [
        406.3,
-       229.35,
+       217.85,
        574.7,
-       254.85
+       243.35
       ]
      },
      "start_date": {
       "page": 0,
-      "baseline": 247.15,
+      "baseline": 235.7,
       "size": 14,
       "rect": [
        137,
-       229.35,
+       217.85,
        300,
-       254.85
+       243.35
       ]
      },
      "components": {
       "page": 0,
-      "baseline": 296.7,
+      "baseline": 284.05,
       "size": 10,
       "rect": [
        137,
-       280.35,
+       268.85,
        574.7,
-       305.85
+       294.35
       ]
      },
      "date": {
       "page": 0,
-      "baseline": 79.35,
+      "baseline": 63.3,
       "size": 11,
       "rect": [
-       405.17,
-       66.7,
-       515.17,
-       84
+       403.53,
+       49.59,
+       513.53,
+       69.82
       ]
      },
      "stamp": {
       "page": 0,
-      "baseline": 600.15,
+      "baseline": 559.8,
       "size": 1,
       "rect": [
-       67.92,
-       597.18,
-       77.92,
-       602.39
+       60.59,
+       556.78,
+       70.59,
+       562.18
       ]
      }
     },
@@ -913,7 +4548,7 @@
     },
     "build": {
      "engine": "LibreOffice 24.2.7.2 420(Build:2)",
-     "layoutDiff": 0.001501
+     "layoutDiff": 0.00058
     }
    }
   },
@@ -2233,13 +5868,9 @@
     "version": 1,
     "format": "docx",
     "sourceSha256": "792a1217c3e082e79b214570957bdc0d2daef5bf416e0699761cab82997c7520",
-    "baseSha256": "dabc3d71e3bbbbaa5359a6321a33665d23dce3037be3f7287957307e8b093d6c",
-    "pageCount": 2,
+    "baseSha256": "39e3298161338a1d5a15bcb2835199cca3d8fa4acc84915e1305a86b3f281e3a",
+    "pageCount": 1,
     "pages": [
-     {
-      "width": 595.3,
-      "height": 841.89
-     },
      {
       "width": 595.3,
       "height": 841.89
@@ -2248,68 +5879,68 @@
     "slots": {
      "project_id": {
       "page": 0,
-      "baseline": 77.9,
+      "baseline": 78.15,
       "size": 8,
       "rect": [
-       10.41,
-       68.77,
-       210.41,
-       81.63
+       2.21,
+       69.02,
+       202.21,
+       81.88
       ]
      },
      "owner": {
       "page": 0,
-      "baseline": 77.9,
+      "baseline": 78.15,
       "size": 10,
       "rect": [
-       280.63,
-       66.22,
-       480.63,
-       82.31
+       268.48,
+       65.99,
+       468.48,
+       83.9
       ]
      },
      "contractor": {
       "page": 0,
-      "baseline": 97.75,
+      "baseline": 98,
       "size": 10,
       "rect": [
-       21.66,
-       86.07,
-       221.66,
-       102.16
+       14.24,
+       85.84,
+       214.24,
+       103.75
       ]
      },
      "consultant": {
       "page": 0,
-      "baseline": 97.75,
+      "baseline": 98,
       "size": 10,
       "rect": [
-       291.79,
-       86.07,
-       491.79,
-       102.16
+       282.85,
+       85.84,
+       482.85,
+       103.75
       ]
      },
      "location": {
       "page": 0,
-      "baseline": 117.6,
+      "baseline": 117.85,
       "size": 10,
       "rect": [
-       282.76,
-       105.92,
-       482.76,
-       122.01
+       271.38,
+       105.69,
+       471.38,
+       123.6
       ]
      },
      "stamp": {
-      "page": 1,
-      "baseline": 46.65,
+      "page": 0,
+      "baseline": 759.15,
       "size": 1,
       "rect": [
-       77.31,
-       43.68,
-       87.31,
-       48.89
+       66.79,
+       756.13,
+       76.79,
+       761.53
       ]
      }
     },
@@ -2325,7 +5956,7 @@
     },
     "build": {
      "engine": "LibreOffice 24.2.7.2 420(Build:2)",
-     "layoutDiff": 0.000038
+     "layoutDiff": 0
     }
    }
   },
@@ -5929,13 +9560,9 @@
     "version": 1,
     "format": "docx",
     "sourceSha256": "59265f87559f55c0a800eb5a683a7cc282cd67316ac72d32d1bdc1287939340c",
-    "baseSha256": "3588f58246799abfe78b5cf20bb6a96bbbd1d81e74f27a47025125fd2a86e206",
-    "pageCount": 2,
+    "baseSha256": "605a00a34a0f4aafd8bc94e1abf714f7492c840c87035f6433a17406cfd7d134",
+    "pageCount": 1,
     "pages": [
-     {
-      "width": 595.3,
-      "height": 841.89
-     },
      {
       "width": 595.3,
       "height": 841.89
@@ -5944,112 +9571,112 @@
     "slots": {
      "owner": {
       "page": 0,
-      "baseline": 121.4,
+      "baseline": 105.95,
       "size": 10,
       "rect": [
        406.3,
-       111.45,
+       97.25,
        574.7,
-       136.95
+       122.75
       ]
      },
      "project_id": {
       "page": 0,
-      "baseline": 127.4,
+      "baseline": 113.2,
       "size": 9,
       "rect": [
        137,
-       111.45,
+       97.25,
        300,
-       136.95
+       122.75
       ]
      },
      "contractor": {
       "page": 0,
-      "baseline": 153.35,
+      "baseline": 137.95,
       "size": 10,
       "rect": [
        406.3,
-       136.95,
+       122.75,
        574.7,
-       162.45
+       148.25
       ]
      },
      "consultant": {
       "page": 0,
-      "baseline": 153.35,
+      "baseline": 137.95,
       "size": 10,
       "rect": [
        137,
-       136.95,
+       122.75,
        300,
-       162.45
+       148.25
       ]
      },
      "location": {
       "page": 0,
-      "baseline": 195.35,
+      "baseline": 182.5,
       "size": 12,
       "rect": [
        137,
-       178.35,
+       164.15,
        300,
-       203.85
+       192.35
       ]
      },
      "end_date": {
       "page": 0,
-      "baseline": 247.15,
+      "baseline": 235.7,
       "size": 14,
       "rect": [
        406.3,
-       229.35,
+       217.85,
        574.7,
-       254.85
+       243.35
       ]
      },
      "start_date": {
       "page": 0,
-      "baseline": 247.1,
+      "baseline": 235.65,
       "size": 14,
       "rect": [
        137,
-       229.35,
+       217.85,
        300,
-       254.85
+       243.35
       ]
      },
      "components": {
       "page": 0,
-      "baseline": 297.35,
+      "baseline": 285.9,
       "size": 12,
       "rect": [
        137,
-       280.35,
+       268.85,
        574.7,
-       305.85
+       294.35
       ]
      },
      "date": {
       "page": 0,
-      "baseline": 79.35,
+      "baseline": 63.3,
       "size": 11,
       "rect": [
-       415.27,
-       66.7,
-       525.27,
-       84
+       412.44,
+       49.59,
+       522.44,
+       69.82
       ]
      },
      "stamp": {
       "page": 0,
-      "baseline": 600.15,
+      "baseline": 559.8,
       "size": 1,
       "rect": [
-       67.92,
-       597.18,
-       77.92,
-       602.39
+       60.59,
+       556.78,
+       70.59,
+       562.18
       ]
      }
     },
@@ -6069,7 +9696,7 @@
     },
     "build": {
      "engine": "LibreOffice 24.2.7.2 420(Build:2)",
-     "layoutDiff": 0.000588
+     "layoutDiff": 0.000434
     }
    }
   },
@@ -7215,6 +10842,1612 @@
     "build": {
      "engine": "LibreOffice 24.2.7.2 420(Build:2)",
      "layoutDiff": 0.000723
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-ten-drawings-approval",
+    "version": 1,
+    "status": "verified",
+    "name": "Drawings Approval Request (DSN-CD-00)",
+    "nameAr": "طلب إعتماد المخططات",
+    "description": "First Abu Dhabi Bank housing-loan form: Drawings Approval Request (DSN-CD-00).",
+    "category": "اوراق المناقصة",
+    "projectType": "bank",
+    "source": "private/bank/اوراق المناقصة/10-DSN-CD-00 CDSubmission.pdf",
+    "format": "pdf",
+    "reviewNotes": "Blank scanned bank form (no historical values); the project details are drawn into the boxes.",
+    "fields": [
+     {
+      "slot": "date_day",
+      "value": "{date|day}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "date_month",
+      "value": "{date|month}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "date_year",
+      "value": "{date|year}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "right"
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right"
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right"
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 80,
+       "anchor": "center"
+      }
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-ten-drawings-approval",
+    "version": 1,
+    "format": "pdf",
+    "sourceSha256": "c5a5d04dd9173051bbb4803cd8942fe978354f4981ef27f667528b92235d8c65",
+    "baseSha256": "8688b1f54aa01f54ac99fd9016a2f7d861c61f1d0612190be5080920fa1a6064",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.2,
+      "height": 841.68
+     }
+    ],
+    "slots": {
+     "date_day": {
+      "page": 0,
+      "rect": [
+       482,
+       72,
+       503,
+       88
+      ]
+     },
+     "date_month": {
+      "page": 0,
+      "rect": [
+       459,
+       72,
+       477,
+       88
+      ]
+     },
+     "date_year": {
+      "page": 0,
+      "rect": [
+       418,
+       72,
+       453,
+       88
+      ]
+     },
+     "project_id": {
+      "page": 0,
+      "rect": [
+       58,
+       236,
+       408,
+       258
+      ]
+     },
+     "location": {
+      "page": 0,
+      "rect": [
+       58,
+       259,
+       408,
+       280
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "rect": [
+       58,
+       281,
+       408,
+       302
+      ]
+     },
+     "stamp": {
+      "page": 0,
+      "rect": [
+       360,
+       560,
+       440,
+       640
+      ]
+     }
+    },
+    "docx": null,
+    "build": {
+     "engine": "pymupdf 1.28.2"
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-ten-drawings-match",
+    "version": 1,
+    "status": "verified",
+    "name": "Undertaking: Drawings Match the Municipality Approval",
+    "nameAr": "تعهد وإقرار – مطابقة المخططات",
+    "description": "First Abu Dhabi Bank housing-loan form: Undertaking: Drawings Match the Municipality Approval.",
+    "category": "اوراق المناقصة",
+    "projectType": "bank",
+    "source": "private/bank/اوراق المناقصة/11- تعهد وإقرار مطابفة مخططات.pdf",
+    "format": "pdf",
+    "reviewNotes": "Blank scanned bank form (no historical values); the project details are drawn into the boxes.",
+    "fields": [
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "right"
+     },
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "right"
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right"
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right"
+     },
+     {
+      "slot": "design_consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right"
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 90,
+       "anchor": "center"
+      }
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-ten-drawings-match",
+    "version": 1,
+    "format": "pdf",
+    "sourceSha256": "ccc752593e6186259f77ed6776c4144bbb7b58cd14e6250243b6d8aeb6d6f934",
+    "baseSha256": "57601e0308d67abcff296c621c82b52eee80715b47c9545f9dd94a4689ee2880",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.2,
+      "height": 841.44
+     }
+    ],
+    "slots": {
+     "date": {
+      "page": 0,
+      "rect": [
+       360,
+       97,
+       476,
+       113
+      ]
+     },
+     "project_id": {
+      "page": 0,
+      "rect": [
+       250,
+       152,
+       436,
+       168
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "rect": [
+       250,
+       182,
+       436,
+       198
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "rect": [
+       250,
+       212,
+       436,
+       228
+      ]
+     },
+     "design_consultant": {
+      "page": 0,
+      "rect": [
+       112,
+       394,
+       236,
+       410
+      ]
+     },
+     "stamp": {
+      "page": 0,
+      "rect": [
+       105,
+       533,
+       195,
+       623
+      ]
+     }
+    },
+    "docx": null,
+    "build": {
+     "engine": "pymupdf 1.28.2"
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-ten-new-project",
+    "version": 1,
+    "status": "verified",
+    "name": "Design File Submission Form (DSN-CD-01)",
+    "nameAr": "نموذج تقديم ملف التصميم",
+    "description": "Design File Submission Form (DSN-CD-01) (نموذج تقديم ملف التصميم).",
+    "category": "اوراق المناقصة",
+    "projectType": "bank",
+    "source": "private/bank/اوراق المناقصة/01 DSN-CD-01 New Project.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "components",
+      "value": "project_components_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 72,
+       "anchor": "marker",
+       "dx": 60,
+       "dy": 34
+      }
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-ten-new-project",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "d386b9bbbca3d956b92dac422d2f49bac0e6b7485406e53cee8d48c565d53971",
+    "baseSha256": "270e42623fcb51f66cc2b783e507ec5c495216b0445ac3f679b47eb098784852",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "project_id": {
+      "page": 0,
+      "baseline": 69.5,
+      "size": 11,
+      "rect": [
+       30.4,
+       58.05,
+       170.4,
+       75.55
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 69.7,
+      "size": 12,
+      "rect": [
+       269.7,
+       58.05,
+       439.8,
+       75.55
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 87.1,
+      "size": 12,
+      "rect": [
+       30.4,
+       75.55,
+       439.8,
+       92.95
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 104.45,
+      "size": 12,
+      "rect": [
+       271.1,
+       92.95,
+       439.8,
+       110.25
+      ]
+     },
+     "components": {
+      "page": 0,
+      "baseline": 122.95,
+      "size": 12,
+      "rect": [
+       30.4,
+       110.25,
+       439.8,
+       129.85
+      ]
+     },
+     "stamp": {
+      "page": 0,
+      "baseline": 683.4,
+      "size": 1,
+      "rect": [
+       368.69,
+       680.38,
+       378.69,
+       685.78
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "project_id",
+      "QZ2ZQ": "owner",
+      "QZ3ZQ": "consultant",
+      "QZ4ZQ": "location",
+      "QZ5ZQ": "components",
+      "QZ6ZQ": "stamp"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0.000524
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-ten-nomination",
+    "version": 1,
+    "status": "verified",
+    "name": "Contractor Nomination by the Owner (DSN-CD-02)",
+    "nameAr": "ترشيح ثلاث شركات مقاولات للمشاركة في المناقصة",
+    "description": "First Abu Dhabi Bank housing-loan form: Contractor Nomination by the Owner (DSN-CD-02).",
+    "category": "اوراق المناقصة",
+    "projectType": "bank",
+    "source": "private/bank/اوراق المناقصة/03  DSN-CD-02 Cont__Nomination.pdf",
+    "format": "pdf",
+    "reviewNotes": "Blank scanned bank form (no historical values); the project details are drawn into the boxes.",
+    "fields": [
+     {
+      "slot": "date_day",
+      "value": "{date|day}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "date_month",
+      "value": "{date|month}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "date_year",
+      "value": "{date|year}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "right"
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right"
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right"
+     },
+     {
+      "slot": "owner_2",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right"
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-ten-nomination",
+    "version": 1,
+    "format": "pdf",
+    "sourceSha256": "4d3b869556e44d5c07313c01498ed277ae97180e51cab337c07d6beb098942ba",
+    "baseSha256": "cfb24398d6a07dc68e9cea7424f7eca7dbb500e40688062b57f3e735354f32d6",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.2,
+      "height": 841.68
+     }
+    ],
+    "slots": {
+     "date_day": {
+      "page": 0,
+      "rect": [
+       482,
+       72,
+       503,
+       88
+      ]
+     },
+     "date_month": {
+      "page": 0,
+      "rect": [
+       459,
+       72,
+       477,
+       88
+      ]
+     },
+     "date_year": {
+      "page": 0,
+      "rect": [
+       418,
+       72,
+       453,
+       88
+      ]
+     },
+     "project_id": {
+      "page": 0,
+      "rect": [
+       58,
+       233,
+       408,
+       254
+      ]
+     },
+     "location": {
+      "page": 0,
+      "rect": [
+       58,
+       256,
+       408,
+       277
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "rect": [
+       58,
+       278,
+       408,
+       299
+      ]
+     },
+     "owner_2": {
+      "page": 0,
+      "rect": [
+       303,
+       664,
+       538,
+       728
+      ]
+     }
+    },
+    "docx": null,
+    "build": {
+     "engine": "pymupdf 1.28.2"
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-ten-pledges",
+    "version": 1,
+    "status": "verified",
+    "name": "Owner and Consultant Undertakings (DSN-CD-04)",
+    "nameAr": "تعهدات المالك والاستشاري",
+    "description": "First Abu Dhabi Bank housing-loan form: Owner and Consultant Undertakings (DSN-CD-04).",
+    "category": "اوراق المناقصة",
+    "projectType": "bank",
+    "source": "private/bank/اوراق المناقصة/02  DSN-CD-04 Owner_Cons_Pledge.pdf",
+    "format": "pdf",
+    "reviewNotes": "Blank scanned bank form (no historical values); the project details are drawn into the boxes.",
+    "fields": [
+     {
+      "slot": "date_day",
+      "value": "{date|day}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "date_month",
+      "value": "{date|month}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "date_year",
+      "value": "{date|year}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "right"
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right"
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right"
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right"
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 64,
+       "anchor": "center"
+      }
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-ten-pledges",
+    "version": 1,
+    "format": "pdf",
+    "sourceSha256": "a1100705400294f0b591a7cfb7403d42a3496da4a8288a57605b90035a0d8f90",
+    "baseSha256": "62b90277014fd10fc9805f697cc7192d119598dc588fa45801617aae96526a54",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.2,
+      "height": 841.68
+     }
+    ],
+    "slots": {
+     "date_day": {
+      "page": 0,
+      "rect": [
+       482,
+       60,
+       503,
+       76
+      ]
+     },
+     "date_month": {
+      "page": 0,
+      "rect": [
+       459,
+       60,
+       477,
+       76
+      ]
+     },
+     "date_year": {
+      "page": 0,
+      "rect": [
+       418,
+       60,
+       453,
+       76
+      ]
+     },
+     "project_id": {
+      "page": 0,
+      "rect": [
+       58,
+       155,
+       408,
+       176
+      ]
+     },
+     "location": {
+      "page": 0,
+      "rect": [
+       58,
+       177,
+       408,
+       198
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "rect": [
+       58,
+       199,
+       408,
+       220
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "rect": [
+       58,
+       221,
+       408,
+       243
+      ]
+     },
+     "stamp": {
+      "page": 0,
+      "rect": [
+       363,
+       716,
+       427,
+       780
+      ]
+     }
+    },
+    "docx": null,
+    "build": {
+     "engine": "pymupdf 1.28.2"
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-ten-tender-form",
+    "version": 1,
+    "status": "verified",
+    "name": "Form of Tender",
+    "nameAr": "صيغة خطاب العطاء في المناقصة",
+    "description": "Form of Tender (صيغة خطاب العطاء في المناقصة).",
+    "category": "اوراق المناقصة",
+    "projectType": "bank",
+    "source": "private/bank/اوراق المناقصة/02خطاب صيغة العطاء.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "tender_no_en",
+      "value": "project_id",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "tender_no",
+      "value": "project_id",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "owner_en",
+      "value": "owner_name_en",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": true
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": true
+     },
+     {
+      "slot": "location_en",
+      "value": "@project_location_en",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": true
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": true
+     },
+     {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "components_en",
+      "value": "project_description_en",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": true
+     },
+     {
+      "slot": "components",
+      "value": "project_components_ar",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": true
+     }
+    ],
+    "layoutTolerance": 0.007
+   },
+   "layout": {
+    "key": "bank-ten-tender-form",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "02c50f898577e66b1e4ae7367caf8e8007375354e8bd8751c6823adb31c0d94d",
+    "baseSha256": "092d177f95b2a215b4878aefb8386a3a3fdc65fde3a327aa4188fd9dc2f03efd",
+    "pageCount": 3,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     },
+     {
+      "width": 595.3,
+      "height": 841.89
+     },
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "tender_no_en": {
+      "page": 0,
+      "baseline": 108.5,
+      "size": 16,
+      "rect": [
+       85.2,
+       93.3,
+       194.2,
+       113.3
+      ]
+     },
+     "tender_no": {
+      "page": 0,
+      "baseline": 119.1,
+      "size": 16,
+      "rect": [
+       392.12,
+       103.9,
+       504.96,
+       123.9
+      ]
+     },
+     "owner_en": {
+      "page": 0,
+      "baseline": 138.8,
+      "size": 10,
+      "rect": [
+       93.8,
+       127.75,
+       278.8,
+       142.91
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 138.3,
+      "size": 12,
+      "rect": [
+       311.28,
+       125.61,
+       486.28,
+       142.89
+      ]
+     },
+     "location_en": {
+      "page": 0,
+      "baseline": 170.45,
+      "size": 12,
+      "rect": [
+       105.7,
+       157.76,
+       285.7,
+       175.04
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 170.15,
+      "size": 12,
+      "rect": [
+       308.18,
+       157.46,
+       478.18,
+       174.74
+      ]
+     },
+     "plot": {
+      "page": 0,
+      "baseline": 184.85,
+      "size": 12,
+      "rect": [
+       352.66,
+       171.99,
+       472.66,
+       189.38
+      ]
+     },
+     "components_en": {
+      "page": 0,
+      "baseline": 240.2,
+      "size": 12,
+      "rect": [
+       180.35,
+       227.34,
+       350.35,
+       244.73
+      ]
+     },
+     "components": {
+      "page": 0,
+      "baseline": 236.05,
+      "size": 14,
+      "rect": [
+       289.9,
+       221.58,
+       454.9,
+       241.07
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "tender_no_en",
+      "QZ2ZQ": "tender_no",
+      "QZ3ZQ": "owner_en",
+      "QZ4ZQ": "owner",
+      "QZ5ZQ": "location_en",
+      "QZ6ZQ": "location",
+      "QZ7ZQ": "plot",
+      "QZ8ZQ": "components_en",
+      "QZ9ZQ": "components"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0.005992
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-ten-terms",
+    "version": 1,
+    "status": "verified",
+    "name": "Tender Terms and Conditions",
+    "nameAr": "الشروط الخاصة للإشتراك في المناقصة",
+    "description": "Tender Terms and Conditions (الشروط الخاصة للإشتراك في المناقصة).",
+    "category": "اوراق المناقصة",
+    "projectType": "bank",
+    "source": "private/bank/اوراق المناقصة/03الشروط الخاصة للإشتراك في المناقصة.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "tender_no",
+      "value": "project_id",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "tender_no_en",
+      "value": "project_id",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "project_id_en",
+      "value": "project_id",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": true
+     },
+     {
+      "slot": "owner_en",
+      "value": "owner_name_en",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": true
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": true
+     },
+     {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "location_en",
+      "value": "@project_location_en",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "multiline": true
+     }
+    ],
+    "layoutTolerance": 0.005
+   },
+   "layout": {
+    "key": "bank-ten-terms",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "2d1618c76623391283c9212e367ccfe487468776f707773986c5c57f612db816",
+    "baseSha256": "0a1f51f98e1631dcc83fb3f4fd71f38e4dfaf8eebaf1f4bef8783cc2bbe03b85",
+    "pageCount": 8,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     },
+     {
+      "width": 595.3,
+      "height": 841.89
+     },
+     {
+      "width": 595.3,
+      "height": 841.89
+     },
+     {
+      "width": 595.3,
+      "height": 841.89
+     },
+     {
+      "width": 595.3,
+      "height": 841.89
+     },
+     {
+      "width": 595.3,
+      "height": 841.89
+     },
+     {
+      "width": 595.3,
+      "height": 841.89
+     },
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "tender_no": {
+      "page": 0,
+      "baseline": 108.3,
+      "size": 16,
+      "rect": [
+       380.17,
+       93.1,
+       493.01,
+       113.1
+      ]
+     },
+     "tender_no_en": {
+      "page": 0,
+      "baseline": 106.1,
+      "size": 16,
+      "rect": [
+       79.65,
+       90.9,
+       180.65,
+       110.9
+      ]
+     },
+     "project_id": {
+      "page": 0,
+      "baseline": 129.7,
+      "size": 16,
+      "rect": [
+       329.37,
+       113.44,
+       393.37,
+       135.16
+      ]
+     },
+     "project_id_en": {
+      "page": 0,
+      "baseline": 132.35,
+      "size": 16,
+      "rect": [
+       138.9,
+       116.09,
+       258.9,
+       137.81
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 155.6,
+      "size": 12,
+      "rect": [
+       309.08,
+       142.91,
+       484.08,
+       160.19
+      ]
+     },
+     "owner_en": {
+      "page": 0,
+      "baseline": 161.85,
+      "size": 10,
+      "rect": [
+       93.4,
+       150.8,
+       278.4,
+       165.96
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 194.6,
+      "size": 12,
+      "rect": [
+       305.98,
+       181.91,
+       475.98,
+       199.19
+      ]
+     },
+     "plot": {
+      "page": 0,
+      "baseline": 209.3,
+      "size": 12,
+      "rect": [
+       350.46,
+       196.44,
+       470.46,
+       213.83
+      ]
+     },
+     "location_en": {
+      "page": 0,
+      "baseline": 200.1,
+      "size": 12,
+      "rect": [
+       115.95,
+       187.41,
+       295.95,
+       204.69
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "tender_no",
+      "QZ2ZQ": "tender_no_en",
+      "QZ3ZQ": "project_id",
+      "QZ4ZQ": "project_id_en",
+      "QZ5ZQ": "owner",
+      "QZ6ZQ": "owner_en",
+      "QZ7ZQ": "location",
+      "QZ8ZQ": "plot",
+      "QZ9ZQ": "location_en"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0.003537
     }
    }
   },
@@ -12154,7 +17387,7 @@
     "version": 3,
     "format": "docx",
     "sourceSha256": "ceec78749c0962b0f2e5504724edfde0b8e840d634385eb8da47aa15aacf4669",
-    "baseSha256": "a783a9c910ef293587f8745c4af8829fe232929dbbebb3e238757ee506693bc9",
+    "baseSha256": "f92ccc1e2ba780c557d0ae9af1fefe78a01724b3959aded7ae9b6af03ff56a0f",
     "pageCount": 4,
     "pages": [
      {
@@ -13485,7 +18718,7 @@
     "version": 3,
     "format": "docx",
     "sourceSha256": "29b5de04dc63c39ac234ab1e7ebdf33a9077518c3bcedf742f063eb68e5a41c2",
-    "baseSha256": "51ac6f430cbdf71abc3e83016ec6bc1f444b4c7c981d8067cb7f39ac5abf56e8",
+    "baseSha256": "356cad4b5c9ece56ffe3fa526d18a769e63225b7a26f3876098b47b40537340d",
     "pageCount": 4,
     "pages": [
      {

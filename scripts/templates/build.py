@@ -90,7 +90,10 @@ def resolve_slot(name: str, spec: dict, markers_by_slot: dict, base: "fitz.Docum
     elif kind == "inline":
         width = spec["width"]
         pad = spec.get("pad", 2)
-        if spec.get("dir", "rtl") == "rtl":
+        if spec.get("dir") == "center":
+            cx = (x0 + x1) / 2 + spec.get("shift", 0)
+            out["rect"] = [round(cx - width / 2, 2), round(y0 - pad, 2), round(cx + width / 2, 2), round(y1 + pad, 2)]
+        elif spec.get("dir", "rtl") == "rtl":
             right = x1 + spec.get("shift", 0)
             out["rect"] = [round(right - width, 2), round(y0 - pad, 2), round(right, 2), round(y1 + pad, 2)]
         else:

@@ -17,7 +17,9 @@ Other project data it finds (dates, project numbers in headers, values in known
 rows) is cleared without a field, so it stays blank for the user.
 
 --extra adds hand-written sanitize ops / slots / fields (JSON with the same keys,
-plus "drop_slots" / "drop_old" to discard drafted ops).
+plus "drop_slots" / "drop_old" / "drop_ops" to discard drafted ops, "remap" to change a
+drafted field's value, "marker" for the font/size of drafted cell markers and "props"
+for extra definition keys).
 The draft is a starting point: build it, look at the QA renders, adjust.
 """
 from __future__ import annotations
@@ -61,7 +63,7 @@ LABELS: dict[str, tuple[str | None, str | None]] = {}
 for labels, slot, value in [
     (["رقم المشروع"], "project_id", "project_id"),
     (["اسم المالك", "اسم المــالك"], "owner", "owner_name_ar"),
-    (["اسم الاستشاري"], "consultant", "$consultant_name_ar"),
+    (["اسم الاستشاري", "الاستشاري ( التصميم )", "الاستشاري ( الإشراف )"], "consultant", "$consultant_name_ar"),
     (["اسم المقاول"], "contractor", "contractor_name_ar"),
     (["موقع المشروع"], "location", "@project_location_ar"),
     (["مكونات المشروع"], "components", "project_components_ar"),
@@ -74,7 +76,8 @@ for labels, slot, value in [
         "مدة التأخير", "الفتره الزمنية الأصلية للمشروع", "التمديدات الزمنية السابقة ( شهر)",
         "الفتره الزمنية المطلوب تمديد المشروع لها ( شهر )", "تاريخ إنتهاء المشروعحسب التمديد السابق",
         "تاريخ إنتهاء المشروعحسب التمديد الجديد", "نسبة إنجاز الأعمال الحالية بالموقع",
-        "نسبة إنجاز اخر دفعه تم صرفها", "نسبة إنجاز الدفعة الحالية",
+        "نسبة إنجاز اخر دفعه تم صرفها", "نسبة إنجاز الدفعة الحالية", "مدة المشروع المقترحة", "السعر التقديري",
+        "المساحة الإجمالية للبناء",
     ], None, None),
 ]:
     for l in labels:
@@ -304,9 +307,18 @@ def main() -> int:
     if a.extra:
         extra = json.loads(Path(a.extra).read_text(encoding="utf-8"))
         drop = set(extra.get("drop_slots", []))
-        ops = [o for o in ops if o.get("slot") not in drop and o.get("old") not in extra.get("drop_old", [])]
+        ops = [o for o in ops if o.get("slot") not in drop and o.get("old") not in extra.get("drop_old", [])
+               and o["op"] not in extra.get("drop_ops", [])]
         fields = [f for f in fields if f["slot"] not in drop]
         slots = {k: v for k, v in slots.items() if k not in drop}
+        for f in fields:
+            if f["slot"] in extra.get("remap", {}):
+                f["value"] = extra["remap"][f["slot"]]
+        if extra.get("marker"):
+            # marker font/size for the drafted cell values (see docx_ops "marker")
+            for o in ops:
+                if o["op"] in ("cell", "insert_after") and o.get("slot"):
+                    o["marker"] = extra["marker"]
         ops += extra.get("sanitize", [])
         slots.update(extra.get("slots", {}))
         fields += extra.get("fields", [])

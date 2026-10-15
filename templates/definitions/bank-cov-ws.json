@@ -1,0 +1,127 @@
+{
+  "key": "bank-cov-ws",
+  "version": 1,
+  "status": "verified",
+  "name": "Water Supply Drawings Cover",
+  "nameAr": "غلاف مخططات تغذية المياه",
+  "description": "Bank drawings set cover (water supply drawings): owner, project, location, plot and project number.",
+  "category": "covers",
+  "projectType": "bank",
+  "source": "private/bank/covers/06WS.docx",
+  "format": "docx",
+  "sanitize": "private",
+  "slots": {
+    "owner_en": {
+      "kind": "inline",
+      "dir": "ltr",
+      "width": 460
+    },
+    "project": {
+      "kind": "inline",
+      "dir": "ltr",
+      "width": 460
+    },
+    "location": {
+      "kind": "inline",
+      "dir": "ltr",
+      "width": 460
+    },
+    "plot": {
+      "kind": "inline",
+      "dir": "ltr",
+      "width": 460
+    },
+    "project_id": {
+      "kind": "inline",
+      "dir": "ltr",
+      "width": 460
+    }
+  },
+  "fields": [
+    {
+      "slot": "owner_en",
+      "value": "owner_name_en",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "multiline": false,
+      "docxMaxWidth": 620
+    },
+    {
+      "slot": "project",
+      "value": "project_description_en",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "multiline": true,
+      "docxMaxWidth": 620
+    },
+    {
+      "slot": "location",
+      "value": "@project_address_or_location_en",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "multiline": false,
+      "docxMaxWidth": 620
+    },
+    {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "multiline": false,
+      "docxMaxWidth": 620
+    },
+    {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 24,
+      "minSize": 7,
+      "align": "left",
+      "dir": "ltr",
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "multiline": false,
+      "docxMaxWidth": 620
+    }
+  ]
+}

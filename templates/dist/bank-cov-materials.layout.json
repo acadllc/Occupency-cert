@@ -1,0 +1,60 @@
+{
+ "key": "bank-cov-materials",
+ "version": 1,
+ "format": "docx",
+ "sourceSha256": "6c7e9f2929613e708756f46e15ab27e4cc43d2957ec088a66bf104d60d414899",
+ "baseSha256": "e4239ba3b5eac9dee64523e23e1c2ed36175135fd13a353e9d26f8a113322b5e",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 595.3,
+   "height": 841.89
+  }
+ ],
+ "slots": {
+  "project_id": {
+   "page": 0,
+   "baseline": 561.0,
+   "size": 22.0,
+   "rect": [
+    255.63,
+    539.09,
+    415.63,
+    567.64
+   ]
+  },
+  "owner": {
+   "page": 0,
+   "baseline": 583.4,
+   "size": 28.0,
+   "rect": [
+    116.79,
+    556.06,
+    436.79,
+    591.31
+   ]
+  },
+  "owner_en": {
+   "page": 0,
+   "baseline": 618.8,
+   "size": 25.0,
+   "rect": [
+    75.65,
+    594.18,
+    545.65,
+    626.08
+   ]
+  }
+ },
+ "docx": {
+  "markers": {
+   "QZ1ZQ": "project_id",
+   "QZ2ZQ": "owner",
+   "QZ3ZQ": "owner_en"
+  }
+ },
+ "build": {
+  "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+  "layoutDiff": 0.0
+ }
+}

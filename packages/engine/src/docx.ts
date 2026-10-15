@@ -94,6 +94,42 @@ function anchoredDrawing(rid: string, id: number, name: string, x: number, y: nu
   );
 }
 
+/**
+ * Shrinks the font of a run so a value fits a fixed width (a text box in Word
+ * cannot shrink its text itself). The width is estimated from average glyph widths.
+ */
+export function fitRunSize(rPr: string, text: string, maxWidth: number, fallbackSize = 11): string {
+  const half = Number(/<w:sz w:val="(\d+)"/.exec(rPr)?.[1] ?? Math.round(fallbackSize * 2));
+  const size = half / 2;
+  let em = 0;
+  for (const ch of text) em += ch === ' ' ? 0.28 : /[A-Z0-9]/.test(ch) ? 0.64 : /[\u0600-\u06ff]/.test(ch) ? 0.45 : 0.52;
+  const width = em * size;
+  if (width <= maxWidth) return rPr;
+  const fitted = Math.max(16, Math.floor((half * maxWidth) / width));
+  const sz = `<w:sz w:val="${fitted}"/><w:szCs w:val="${fitted}"/>`;
+  if (!rPr) return `<w:rPr>${sz}</w:rPr>`;
+  // keep the schema order of w:rPr: sizes go where they were, or before the elements that follow them
+  const stripped = rPr.replace(/<w:szCs w:val="\d+"\/>/g, '');
+  if (/<w:sz w:val="\d+"\/>/.test(stripped)) return stripped.replace(/<w:sz w:val="\d+"\/>/, sz);
+  const after = /<w:(?:highlight|u|effect|bdr|shd|fitText|vertAlign|rtl|cs|em|lang|eastAsianLayout|specVanish|oMath)[ />]/.exec(stripped);
+  return after ? stripped.slice(0, after.index) + sz + stripped.slice(after.index) : stripped.replace('</w:rPr>', `${sz}</w:rPr>`);
+}
+
+/** Index of the first paragraph directly in w:body (not inside a table), or -1. */
+export function firstBodyParagraph(xml: string): number {
+  const body = xml.indexOf('<w:body>');
+  if (body < 0) return -1;
+  const tag = /<(\/?)w:(tbl|p)(?=[\s>\/])[^>]*?(\/?)>/g;
+  tag.lastIndex = body;
+  let depth = 0;
+  for (let m = tag.exec(xml); m; m = tag.exec(xml)) {
+    const [, close, name, selfClosing] = m;
+    if (name === 'tbl') depth += close ? -1 : 1;
+    else if (!close && !selfClosing && depth === 0) return m.index;
+  }
+  return -1;
+}
+
 // a run that contains only a marker (created by the template build)
 const MARKER_RUN = /<w:r>((?:(?!<w:r[ >]|<\/w:r>).)*?)<w:t[^>]*>(QZ\d+ZQ)<\/w:t><\/w:r>/gs;
 const PARAGRAPH = /<w:p[ >](?:(?!<\/w:p>).)*?<\/w:p>/gs;
@@ -154,6 +190,13 @@ export async function buildDocx(d: DocxDeps): Promise<DocxResult> {
     return rid;
   };
 
+  const maxWidths = new Map<string, number>();
+  const fieldSizes = new Map<string, number>();
+  for (const item of entry.definition.fields) {
+    if ('docxMaxWidth' in item && item.docxMaxWidth) maxWidths.set(item.slot, item.docxMaxWidth);
+    if ('value' in item && item.size) fieldSizes.set(item.slot, item.size);
+  }
+
   const filled: string[] = [];
   const stampRuns: string[] = [];
   let drawingId = 9000;
@@ -207,7 +250,14 @@ export async function buildDocx(d: DocxDeps): Promise<DocxResult> {
       if (!v || v.kind === 'stamp') return ''; // stamps are added as page-anchored pictures
       filled.push(slotName);
       if (v.kind === 'text') {
-        const rPr = (/<w:rPr>.*?<\/w:rPr>/s.exec(inner)?.[0] ?? '').replace(/<w:color [^>]*\/>/g, '');
+        let rPr = (/<w:rPr>.*?<\/w:rPr>/s.exec(inner)?.[0] ?? '').replace(/<w:color [^>]*\/>/g, '');
+        if (/<w:sz w:val="2"\/>/.test(rPr)) {
+          // a zero-width marker (it could not change the template's layout): write the value at the field's size
+          const half = Math.round((fieldSizes.get(slotName) ?? 11) * 2);
+          rPr = rPr.replace(/<w:spacing w:val="-20"\/>/g, '').replace(/<w:sz(Cs)? w:val="2"\/>/g, (_m, cs: string | undefined) => `<w:sz${cs ?? ''} w:val="${half}"/>`);
+        }
+        const maxWidth = maxWidths.get(slotName);
+        if (maxWidth) rPr = fitRunSize(rPr, v.text, maxWidth, entry.layout.slots[slotName]?.size);
         const body = v.text
           .split(/\r?\n/)
           .map((line) => `<w:t xml:space="preserve">${escapeXml(line)}</w:t>`)
@@ -226,7 +276,13 @@ export async function buildDocx(d: DocxDeps): Promise<DocxResult> {
     });
     if (name === 'word/document.xml' && stampRuns.length) {
       // the stamp is positioned relative to the page; anchor it to the first body paragraph
-      xml = xml.replace(/(<w:body>\s*<w:p(?:\s[^>]*)?>(?:\s*<w:pPr>.*?<\/w:pPr>)?)/s, `$1${stampRuns.join('')}`);
+      // (documents may open with a table: skip it, a picture anchored in a cell is laid out in the cell)
+      const at = firstBodyParagraph(xml);
+      if (at >= 0) {
+        const open = xml.indexOf('>', at) + 1;
+        const pPr = /^\s*<w:pPr>.*?<\/w:pPr>/s.exec(xml.slice(open))?.[0] ?? '';
+        xml = xml.slice(0, open + pPr.length) + stampRuns.join('') + xml.slice(open + pPr.length);
+      }
     }
     if (name === 'word/document.xml' && endRuns.length) {
       // end-of-document stamp: anchor it to the last body paragraph, so it lands on the last page

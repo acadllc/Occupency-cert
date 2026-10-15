@@ -107,7 +107,8 @@ def check(key: str) -> dict:
         if any(n in h or n[::-1] in h for h in hay_pdf):
             leaks.append(("pdf", n))
     for v in removed:
-        if not v.startswith("[") and norm(v) not in company and token_leak(v, pdf_tokens):
+        if (not v.startswith("[") and norm(v) not in company and not re.search(r"(?i)\bacad\b|[اأآ]كاد", v)
+                and token_leak(v, pdf_tokens)):
             leaks.append(("pdf-words", norm(v)))
     if layout["format"] == "docx":
         hay_docx = norm(docx_all_text((SANITIZED / f"{key}.docx").read_bytes()))
