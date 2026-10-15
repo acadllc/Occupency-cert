@@ -158,11 +158,13 @@ export async function buildDocx(d: DocxDeps): Promise<DocxResult> {
   const stampRuns: string[] = [];
   let drawingId = 9000;
   // stamps are positioned on the page (they need no marker in the text)
+  const endRuns: string[] = [];
   for (const [slotName, v] of values) {
     if (v.kind !== 'stamp') continue;
+    const atEnd = entry.definition.fields.some((f) => f.slot === slotName && 'stamp' in f && f.stamp.page === 'last');
     const size = imageSize(v.bytes);
     const h = v.size * (size.height / size.width);
-    stampRuns.push(
+    (atEnd ? endRuns : stampRuns).push(
       anchoredDrawing(
         addImage(v.bytes),
         ++drawingId,
@@ -178,7 +180,7 @@ export async function buildDocx(d: DocxDeps): Promise<DocxResult> {
   const parts = Object.keys(zip.files).filter((n) => /^word\/(document|header\d*|footer\d*)\.xml$/.test(n));
   for (const name of parts) {
     let xml = await zip.file(name)!.async('string');
-    if (!xml.includes('QZ') && !(name === 'word/document.xml' && stampRuns.length)) continue;
+    if (!xml.includes('QZ') && !(name === 'word/document.xml' && (stampRuns.length || endRuns.length))) continue;
     // paragraphs holding a photo: fixed line height would clip the picture
     xml = xml.replace(PARAGRAPH, (p) => {
       const m = /QZ\d+ZQ/.exec(p);
@@ -211,6 +213,16 @@ export async function buildDocx(d: DocxDeps): Promise<DocxResult> {
     if (name === 'word/document.xml' && stampRuns.length) {
       // the stamp is positioned relative to the page; anchor it to the first body paragraph
       xml = xml.replace(/(<w:body>\s*<w:p(?:\s[^>]*)?>(?:\s*<w:pPr>.*?<\/w:pPr>)?)/s, `$1${stampRuns.join('')}`);
+    }
+    if (name === 'word/document.xml' && endRuns.length) {
+      // end-of-document stamp: anchor it to the last body paragraph, so it lands on the last page
+      const sect = xml.lastIndexOf('<w:sectPr');
+      const lastP = xml.lastIndexOf('<w:p>', sect) > xml.lastIndexOf('<w:p ', sect) ? xml.lastIndexOf('<w:p>', sect) : xml.lastIndexOf('<w:p ', sect);
+      if (lastP >= 0) {
+        const open = xml.indexOf('>', lastP) + 1;
+        const pPrEnd = xml.startsWith('<w:pPr', open) ? xml.indexOf('</w:pPr>', open) + 8 : open;
+        xml = xml.slice(0, pPrEnd) + endRuns.join('') + xml.slice(pPrEnd);
+      }
     }
     // never leave a marker behind
     xml = xml.replace(/QZ\d+ZQ/g, '');

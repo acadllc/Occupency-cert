@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-14",
+ "generated": "2026-10-15",
  "templates": [
   {
    "key": "archive-drawings-explanation",
@@ -69,8 +69,8 @@
   },
   {
    "key": "owner-undertaking-cd-renewal",
-   "version": 1,
-   "baseSha256": "645baf42e6707c6f6d21c576720fc9bb384f01b9121ec077ec4ee3003f11d9ad",
+   "version": 2,
+   "baseSha256": "67d512a6811f79fa843c37dabe17f053ce482817ea31175f4a59d22d0f35d370",
    "pageCount": 1
   },
   {
@@ -81,14 +81,14 @@
   },
   {
    "key": "photo-report-mechanical",
-   "version": 2,
-   "baseSha256": "eea79e4088242e7f535912e4de5d3236f63618f2cde05744a4526a4ef42daefd",
+   "version": 3,
+   "baseSha256": "a783a9c910ef293587f8745c4af8829fe232929dbbebb3e238757ee506693bc9",
    "pageCount": 4
   },
   {
    "key": "photo-report-plumbing",
-   "version": 2,
-   "baseSha256": "8ec388f84fce7f06126930a08e62e8bba3ca28014139df8eb545a589ef960a83",
+   "version": 3,
+   "baseSha256": "51ac6f430cbdf71abc3e83016ec6bc1f444b4c7c981d8067cb7f39ac5abf56e8",
    "pageCount": 4
   },
   {

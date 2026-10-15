@@ -130,9 +130,11 @@ export interface StampItem {
   stamp: {
     size: number;
     /** center of the slot rect, or right edge/baseline of a text marker plus dx/dy */
-    anchor?: 'center' | 'marker' | 'right';
+    anchor?: 'center' | 'marker' | 'right' | 'below';
     dx?: number;
     dy?: number;
+    /** "last": on the last page that remains (photo reports drop unused pages) */
+    page?: 'last';
   };
 }
 

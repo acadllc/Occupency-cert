@@ -85,10 +85,9 @@
      {
       "slot": "stamp",
       "stamp": {
-       "size": 110,
-       "anchor": "right",
-       "dx": 6,
-       "dy": 30
+       "size": 115,
+       "anchor": "below",
+       "dy": 4
       }
      }
     ]
@@ -4032,7 +4031,7 @@
   {
    "definition": {
     "key": "owner-undertaking-cd-renewal",
-    "version": 1,
+    "version": 2,
     "status": "verified",
     "name": "Owner Undertaking – Annual Completion Certificate Renewal",
     "nameAr": "تعهد المالك بتجديد شهادة الإستيفاء سنوياً",
@@ -4115,10 +4114,10 @@
    },
    "layout": {
     "key": "owner-undertaking-cd-renewal",
-    "version": 1,
+    "version": 2,
     "format": "docx",
     "sourceSha256": "3ab962ba5f0d89c627ff8ad6817e46421e1febb3ce45dd02782b56fb62b74603",
-    "baseSha256": "645baf42e6707c6f6d21c576720fc9bb384f01b9121ec077ec4ee3003f11d9ad",
+    "baseSha256": "67d512a6811f79fa843c37dabe17f053ce482817ea31175f4a59d22d0f35d370",
     "pageCount": 1,
     "pages": [
      {
@@ -4129,57 +4128,57 @@
     "slots": {
      "date": {
       "page": 0,
-      "baseline": 70.5,
+      "baseline": 103.15,
       "size": 14,
       "rect": [
        376.09,
-       50.13,
+       82.78,
        496.09,
-       80.49
+       113.14
       ]
      },
      "owner": {
       "page": 0,
-      "baseline": 240.35,
+      "baseline": 273,
       "size": 12,
       "rect": [
        29.2,
-       221.15,
+       253.85,
        416.6,
-       258.95
+       291.65
       ]
      },
      "consultant": {
       "page": 0,
-      "baseline": 278.9,
+      "baseline": 311.55,
       "size": 14,
       "rect": [
        29.2,
-       258.95,
+       291.65,
        416.6,
-       296.75
+       329.45
       ]
      },
      "location": {
       "page": 0,
-      "baseline": 315.95,
+      "baseline": 348.6,
       "size": 12,
       "rect": [
        29.2,
-       296.75,
+       329.45,
        416.6,
-       334.55
+       367.25
       ]
      },
      "components": {
       "page": 0,
-      "baseline": 353.75,
+      "baseline": 386.4,
       "size": 12,
       "rect": [
        29.2,
-       334.55,
+       367.25,
        416.6,
-       372.35
+       405.05
       ]
      }
     },
@@ -4391,7 +4390,7 @@
   {
    "definition": {
     "key": "photo-report-mechanical",
-    "version": 2,
+    "version": 3,
     "status": "verified",
     "name": "Photo Technical Report – Mechanical Works",
     "nameAr": "تقرير فني مصور للأعمال الميكانيكية",
@@ -5106,8 +5105,7 @@
       "stamp": {
        "size": 105,
        "anchor": "center",
-       "dx": 22,
-       "dy": 10
+       "page": "last"
       }
      }
     ],
@@ -5124,10 +5122,10 @@
    },
    "layout": {
     "key": "photo-report-mechanical",
-    "version": 2,
+    "version": 3,
     "format": "docx",
     "sourceSha256": "ceec78749c0962b0f2e5504724edfde0b8e840d634385eb8da47aa15aacf4669",
-    "baseSha256": "eea79e4088242e7f535912e4de5d3236f63618f2cde05744a4526a4ef42daefd",
+    "baseSha256": "a783a9c910ef293587f8745c4af8829fe232929dbbebb3e238757ee506693bc9",
     "pageCount": 4,
     "pages": [
      {
@@ -5194,473 +5192,473 @@
      },
      "photo_0": {
       "page": 0,
-      "baseline": 522.95,
+      "baseline": 527.45,
       "size": 12,
       "rect": [
        340.3,
        369.65,
        590.3,
-       560.25
+       567.15
       ]
      },
      "details_0": {
       "page": 0,
-      "baseline": 581.7,
+      "baseline": 588.6,
       "size": 11,
       "rect": [
        340.3,
-       560.25,
+       567.15,
        510.3,
-       604.75
+       611.65
       ]
      },
      "notes_0": {
       "page": 0,
-      "baseline": 624.6,
+      "baseline": 631.5,
       "size": 11,
       "rect": [
        340.3,
-       604.75,
+       611.65,
        510.3,
-       645.55
+       652.45
       ]
      },
      "photo_1": {
       "page": 0,
-      "baseline": 517.85,
+      "baseline": 527.45,
       "size": 12,
       "rect": [
        90.3,
        369.65,
        340.3,
-       555.15
+       567.15
       ]
      },
      "details_1": {
       "page": 0,
-      "baseline": 576.6,
+      "baseline": 588.6,
       "size": 11,
       "rect": [
        90.3,
-       555.15,
+       567.15,
        260.3,
-       599.65
+       611.65
       ]
      },
      "notes_1": {
       "page": 0,
-      "baseline": 619.5,
+      "baseline": 631.5,
       "size": 11,
       "rect": [
        90.3,
-       599.65,
+       611.65,
        260.3,
-       640.45
+       652.45
       ]
      },
      "photo_2": {
       "page": 1,
-      "baseline": 225.6,
+      "baseline": 230.1,
       "size": 12,
       "rect": [
        340.3,
        72.25,
        590.3,
-       262.85
+       269.75
       ]
      },
      "details_2": {
       "page": 1,
-      "baseline": 284.35,
+      "baseline": 291.25,
       "size": 11,
       "rect": [
        340.3,
-       262.85,
+       269.75,
        510.3,
-       307.35
+       314.25
       ]
      },
      "notes_2": {
       "page": 1,
-      "baseline": 327.25,
+      "baseline": 334.15,
       "size": 11,
       "rect": [
        340.3,
-       307.35,
+       314.25,
        510.3,
-       348.25
+       355.15
       ]
      },
      "photo_3": {
       "page": 1,
-      "baseline": 220.5,
+      "baseline": 230.1,
       "size": 12,
       "rect": [
        90.3,
        72.25,
        340.3,
-       257.75
+       269.75
       ]
      },
      "details_3": {
       "page": 1,
-      "baseline": 279.25,
+      "baseline": 291.25,
       "size": 11,
       "rect": [
        90.3,
-       257.75,
+       269.75,
        260.3,
-       302.25
+       314.25
       ]
      },
      "notes_3": {
       "page": 1,
-      "baseline": 322.15,
+      "baseline": 334.15,
       "size": 11,
       "rect": [
        90.3,
-       302.25,
+       314.25,
        260.3,
-       343.15
+       355.15
       ]
      },
      "photo_4": {
       "page": 1,
-      "baseline": 507.2,
+      "baseline": 513.5,
       "size": 12,
       "rect": [
        340.3,
-       353.85,
+       355.65,
        590.3,
-       544.45
+       553.15
       ]
      },
      "details_4": {
       "page": 1,
-      "baseline": 565.95,
+      "baseline": 574.65,
       "size": 11,
       "rect": [
        340.3,
-       544.45,
+       553.15,
        510.3,
-       588.95
+       597.65
       ]
      },
      "notes_4": {
       "page": 1,
-      "baseline": 608.85,
+      "baseline": 617.55,
       "size": 11,
       "rect": [
        340.3,
-       588.95,
+       597.65,
        510.3,
-       629.85
+       638.55
       ]
      },
      "photo_5": {
       "page": 1,
-      "baseline": 502.1,
+      "baseline": 513.5,
       "size": 12,
       "rect": [
        90.3,
-       353.85,
+       355.65,
        340.3,
-       539.35
+       553.15
       ]
      },
      "details_5": {
       "page": 1,
-      "baseline": 560.85,
+      "baseline": 574.65,
       "size": 11,
       "rect": [
        90.3,
-       539.35,
+       553.15,
        260.3,
-       583.85
+       597.65
       ]
      },
      "notes_5": {
       "page": 1,
-      "baseline": 603.75,
+      "baseline": 617.55,
       "size": 11,
       "rect": [
        90.3,
-       583.85,
+       597.65,
        260.3,
-       624.75
+       638.55
       ]
      },
      "photo_6": {
       "page": 2,
-      "baseline": 225.6,
+      "baseline": 230.1,
       "size": 12,
       "rect": [
        340.3,
        72.25,
        590.3,
-       262.85
+       269.75
       ]
      },
      "details_6": {
       "page": 2,
-      "baseline": 284.35,
+      "baseline": 291.25,
       "size": 11,
       "rect": [
        340.3,
-       262.85,
+       269.75,
        510.3,
-       307.35
+       314.25
       ]
      },
      "notes_6": {
       "page": 2,
-      "baseline": 327.25,
+      "baseline": 334.15,
       "size": 11,
       "rect": [
        340.3,
-       307.35,
+       314.25,
        510.3,
-       348.25
+       355.15
       ]
      },
      "photo_7": {
       "page": 2,
-      "baseline": 220.5,
+      "baseline": 230.1,
       "size": 12,
       "rect": [
        90.3,
        72.25,
        340.3,
-       257.75
+       269.75
       ]
      },
      "details_7": {
       "page": 2,
-      "baseline": 279.25,
+      "baseline": 291.25,
       "size": 11,
       "rect": [
        90.3,
-       257.75,
+       269.75,
        260.3,
-       302.25
+       314.25
       ]
      },
      "notes_7": {
       "page": 2,
-      "baseline": 322.15,
+      "baseline": 334.15,
       "size": 11,
       "rect": [
        90.3,
-       302.25,
+       314.25,
        260.3,
-       343.15
+       355.15
       ]
      },
      "photo_8": {
       "page": 2,
-      "baseline": 507.2,
+      "baseline": 513.5,
       "size": 12,
       "rect": [
        340.3,
-       353.85,
+       355.65,
        590.3,
-       544.45
+       553.15
       ]
      },
      "details_8": {
       "page": 2,
-      "baseline": 565.95,
+      "baseline": 574.65,
       "size": 11,
       "rect": [
        340.3,
-       544.45,
+       553.15,
        510.3,
-       588.95
+       597.65
       ]
      },
      "notes_8": {
       "page": 2,
-      "baseline": 608.85,
+      "baseline": 617.55,
       "size": 11,
       "rect": [
        340.3,
-       588.95,
+       597.65,
        510.3,
-       629.85
+       638.55
       ]
      },
      "photo_9": {
       "page": 2,
-      "baseline": 502.1,
+      "baseline": 513.5,
       "size": 12,
       "rect": [
        90.3,
-       353.85,
+       355.65,
        340.3,
-       539.35
+       553.15
       ]
      },
      "details_9": {
       "page": 2,
-      "baseline": 560.85,
+      "baseline": 574.65,
       "size": 11,
       "rect": [
        90.3,
-       539.35,
+       553.15,
        260.3,
-       583.85
+       597.65
       ]
      },
      "notes_9": {
       "page": 2,
-      "baseline": 603.75,
+      "baseline": 617.55,
       "size": 11,
       "rect": [
        90.3,
-       583.85,
+       597.65,
        260.3,
-       624.75
+       638.55
       ]
      },
      "photo_10": {
       "page": 3,
-      "baseline": 225.6,
+      "baseline": 230.1,
       "size": 12,
       "rect": [
        340.3,
        72.25,
        590.3,
-       262.85
+       269.75
       ]
      },
      "details_10": {
       "page": 3,
-      "baseline": 284.35,
+      "baseline": 291.25,
       "size": 11,
       "rect": [
        340.3,
-       262.85,
+       269.75,
        510.3,
-       307.35
+       314.25
       ]
      },
      "notes_10": {
       "page": 3,
-      "baseline": 327.25,
+      "baseline": 334.15,
       "size": 11,
       "rect": [
        340.3,
-       307.35,
+       314.25,
        510.3,
-       348.25
+       355.15
       ]
      },
      "photo_11": {
       "page": 3,
-      "baseline": 220.5,
+      "baseline": 230.1,
       "size": 12,
       "rect": [
        90.3,
        72.25,
        340.3,
-       257.75
+       269.75
       ]
      },
      "details_11": {
       "page": 3,
-      "baseline": 279.25,
+      "baseline": 291.25,
       "size": 11,
       "rect": [
        90.3,
-       257.75,
+       269.75,
        260.3,
-       302.25
+       314.25
       ]
      },
      "notes_11": {
       "page": 3,
-      "baseline": 322.15,
+      "baseline": 334.15,
       "size": 11,
       "rect": [
        90.3,
-       302.25,
+       314.25,
        260.3,
-       343.15
+       355.15
       ]
      },
      "photo_12": {
       "page": 3,
-      "baseline": 507.2,
+      "baseline": 513.5,
       "size": 12,
       "rect": [
        340.3,
-       353.85,
+       355.65,
        590.3,
-       544.45
+       553.15
       ]
      },
      "details_12": {
       "page": 3,
-      "baseline": 565.95,
+      "baseline": 574.65,
       "size": 11,
       "rect": [
        340.3,
-       544.45,
+       553.15,
        510.3,
-       588.95
+       597.65
       ]
      },
      "notes_12": {
       "page": 3,
-      "baseline": 608.85,
+      "baseline": 617.55,
       "size": 11,
       "rect": [
        340.3,
-       588.95,
+       597.65,
        510.3,
-       629.85
+       638.55
       ]
      },
      "photo_13": {
       "page": 3,
-      "baseline": 502.1,
+      "baseline": 513.5,
       "size": 12,
       "rect": [
        90.3,
-       353.85,
+       355.65,
        340.3,
-       539.35
+       553.15
       ]
      },
      "details_13": {
       "page": 3,
-      "baseline": 560.85,
+      "baseline": 574.65,
       "size": 11,
       "rect": [
        90.3,
-       539.35,
+       553.15,
        260.3,
-       583.85
+       597.65
       ]
      },
      "notes_13": {
       "page": 3,
-      "baseline": 603.75,
+      "baseline": 617.55,
       "size": 11,
       "rect": [
        90.3,
-       583.85,
+       597.65,
        260.3,
-       624.75
+       638.55
       ]
      },
      "stamp": {
       "page": 0,
       "rect": [
-       40,
-       183,
-       150,
-       219
+       247,
+       663,
+       353,
+       772
       ]
      }
     },
@@ -5723,7 +5721,7 @@
   {
    "definition": {
     "key": "photo-report-plumbing",
-    "version": 2,
+    "version": 3,
     "status": "verified",
     "name": "Photo Technical Report – Plumbing & Drainage Works",
     "nameAr": "تقرير فني مصور لأعمال السباكة والصرف الصحي",
@@ -6438,8 +6436,7 @@
       "stamp": {
        "size": 105,
        "anchor": "center",
-       "dx": 22,
-       "dy": 10
+       "page": "last"
       }
      }
     ],
@@ -6456,10 +6453,10 @@
    },
    "layout": {
     "key": "photo-report-plumbing",
-    "version": 2,
+    "version": 3,
     "format": "docx",
     "sourceSha256": "29b5de04dc63c39ac234ab1e7ebdf33a9077518c3bcedf742f063eb68e5a41c2",
-    "baseSha256": "8ec388f84fce7f06126930a08e62e8bba3ca28014139df8eb545a589ef960a83",
+    "baseSha256": "51ac6f430cbdf71abc3e83016ec6bc1f444b4c7c981d8067cb7f39ac5abf56e8",
     "pageCount": 4,
     "pages": [
      {
@@ -6526,473 +6523,473 @@
      },
      "photo_0": {
       "page": 0,
-      "baseline": 522.95,
+      "baseline": 527.45,
       "size": 12,
       "rect": [
        340.3,
        369.65,
        590.3,
-       560.25
+       567.15
       ]
      },
      "details_0": {
       "page": 0,
-      "baseline": 581.7,
+      "baseline": 588.6,
       "size": 11,
       "rect": [
        340.3,
-       560.25,
+       567.15,
        510.3,
-       604.75
+       611.65
       ]
      },
      "notes_0": {
       "page": 0,
-      "baseline": 624.6,
+      "baseline": 631.5,
       "size": 11,
       "rect": [
        340.3,
-       604.75,
+       611.65,
        510.3,
-       645.55
+       652.45
       ]
      },
      "photo_1": {
       "page": 0,
-      "baseline": 517.85,
+      "baseline": 527.45,
       "size": 12,
       "rect": [
        90.3,
        369.65,
        340.3,
-       555.15
+       567.15
       ]
      },
      "details_1": {
       "page": 0,
-      "baseline": 576.6,
+      "baseline": 588.6,
       "size": 11,
       "rect": [
        90.3,
-       555.15,
+       567.15,
        260.3,
-       599.65
+       611.65
       ]
      },
      "notes_1": {
       "page": 0,
-      "baseline": 619.5,
+      "baseline": 631.5,
       "size": 11,
       "rect": [
        90.3,
-       599.65,
+       611.65,
        260.3,
-       640.45
+       652.45
       ]
      },
      "photo_2": {
       "page": 1,
-      "baseline": 225.6,
+      "baseline": 230.1,
       "size": 12,
       "rect": [
        340.3,
        72.25,
        590.3,
-       262.85
+       269.75
       ]
      },
      "details_2": {
       "page": 1,
-      "baseline": 284.35,
+      "baseline": 291.25,
       "size": 11,
       "rect": [
        340.3,
-       262.85,
+       269.75,
        510.3,
-       307.35
+       314.25
       ]
      },
      "notes_2": {
       "page": 1,
-      "baseline": 327.25,
+      "baseline": 334.15,
       "size": 11,
       "rect": [
        340.3,
-       307.35,
+       314.25,
        510.3,
-       348.25
+       355.15
       ]
      },
      "photo_3": {
       "page": 1,
-      "baseline": 220.5,
+      "baseline": 230.1,
       "size": 12,
       "rect": [
        90.3,
        72.25,
        340.3,
-       257.75
+       269.75
       ]
      },
      "details_3": {
       "page": 1,
-      "baseline": 279.25,
+      "baseline": 291.25,
       "size": 11,
       "rect": [
        90.3,
-       257.75,
+       269.75,
        260.3,
-       302.25
+       314.25
       ]
      },
      "notes_3": {
       "page": 1,
-      "baseline": 322.15,
+      "baseline": 334.15,
       "size": 11,
       "rect": [
        90.3,
-       302.25,
+       314.25,
        260.3,
-       343.15
+       355.15
       ]
      },
      "photo_4": {
       "page": 1,
-      "baseline": 507.2,
+      "baseline": 513.5,
       "size": 12,
       "rect": [
        340.3,
-       353.85,
+       355.65,
        590.3,
-       544.45
+       553.15
       ]
      },
      "details_4": {
       "page": 1,
-      "baseline": 565.95,
+      "baseline": 574.65,
       "size": 11,
       "rect": [
        340.3,
-       544.45,
+       553.15,
        510.3,
-       588.95
+       597.65
       ]
      },
      "notes_4": {
       "page": 1,
-      "baseline": 608.85,
+      "baseline": 617.55,
       "size": 11,
       "rect": [
        340.3,
-       588.95,
+       597.65,
        510.3,
-       629.85
+       638.55
       ]
      },
      "photo_5": {
       "page": 1,
-      "baseline": 502.1,
+      "baseline": 513.5,
       "size": 12,
       "rect": [
        90.3,
-       353.85,
+       355.65,
        340.3,
-       539.35
+       553.15
       ]
      },
      "details_5": {
       "page": 1,
-      "baseline": 560.85,
+      "baseline": 574.65,
       "size": 11,
       "rect": [
        90.3,
-       539.35,
+       553.15,
        260.3,
-       583.85
+       597.65
       ]
      },
      "notes_5": {
       "page": 1,
-      "baseline": 603.75,
+      "baseline": 617.55,
       "size": 11,
       "rect": [
        90.3,
-       583.85,
+       597.65,
        260.3,
-       624.75
+       638.55
       ]
      },
      "photo_6": {
       "page": 2,
-      "baseline": 225.6,
+      "baseline": 230.1,
       "size": 12,
       "rect": [
        340.3,
        72.25,
        590.3,
-       262.85
+       269.75
       ]
      },
      "details_6": {
       "page": 2,
-      "baseline": 284.35,
+      "baseline": 291.25,
       "size": 11,
       "rect": [
        340.3,
-       262.85,
+       269.75,
        510.3,
-       307.35
+       314.25
       ]
      },
      "notes_6": {
       "page": 2,
-      "baseline": 327.25,
+      "baseline": 334.15,
       "size": 11,
       "rect": [
        340.3,
-       307.35,
+       314.25,
        510.3,
-       348.25
+       355.15
       ]
      },
      "photo_7": {
       "page": 2,
-      "baseline": 220.5,
+      "baseline": 230.1,
       "size": 12,
       "rect": [
        90.3,
        72.25,
        340.3,
-       257.75
+       269.75
       ]
      },
      "details_7": {
       "page": 2,
-      "baseline": 279.25,
+      "baseline": 291.25,
       "size": 11,
       "rect": [
        90.3,
-       257.75,
+       269.75,
        260.3,
-       302.25
+       314.25
       ]
      },
      "notes_7": {
       "page": 2,
-      "baseline": 322.15,
+      "baseline": 334.15,
       "size": 11,
       "rect": [
        90.3,
-       302.25,
+       314.25,
        260.3,
-       343.15
+       355.15
       ]
      },
      "photo_8": {
       "page": 2,
-      "baseline": 507.2,
+      "baseline": 513.5,
       "size": 12,
       "rect": [
        340.3,
-       353.85,
+       355.65,
        590.3,
-       544.45
+       553.15
       ]
      },
      "details_8": {
       "page": 2,
-      "baseline": 565.95,
+      "baseline": 574.65,
       "size": 11,
       "rect": [
        340.3,
-       544.45,
+       553.15,
        510.3,
-       588.95
+       597.65
       ]
      },
      "notes_8": {
       "page": 2,
-      "baseline": 608.85,
+      "baseline": 617.55,
       "size": 11,
       "rect": [
        340.3,
-       588.95,
+       597.65,
        510.3,
-       629.85
+       638.55
       ]
      },
      "photo_9": {
       "page": 2,
-      "baseline": 502.1,
+      "baseline": 513.5,
       "size": 12,
       "rect": [
        90.3,
-       353.85,
+       355.65,
        340.3,
-       539.35
+       553.15
       ]
      },
      "details_9": {
       "page": 2,
-      "baseline": 560.85,
+      "baseline": 574.65,
       "size": 11,
       "rect": [
        90.3,
-       539.35,
+       553.15,
        260.3,
-       583.85
+       597.65
       ]
      },
      "notes_9": {
       "page": 2,
-      "baseline": 603.75,
+      "baseline": 617.55,
       "size": 11,
       "rect": [
        90.3,
-       583.85,
+       597.65,
        260.3,
-       624.75
+       638.55
       ]
      },
      "photo_10": {
       "page": 3,
-      "baseline": 225.6,
+      "baseline": 230.1,
       "size": 12,
       "rect": [
        340.3,
        72.25,
        590.3,
-       262.85
+       269.75
       ]
      },
      "details_10": {
       "page": 3,
-      "baseline": 284.35,
+      "baseline": 291.25,
       "size": 11,
       "rect": [
        340.3,
-       262.85,
+       269.75,
        510.3,
-       307.35
+       314.25
       ]
      },
      "notes_10": {
       "page": 3,
-      "baseline": 327.25,
+      "baseline": 334.15,
       "size": 11,
       "rect": [
        340.3,
-       307.35,
+       314.25,
        510.3,
-       348.25
+       355.15
       ]
      },
      "photo_11": {
       "page": 3,
-      "baseline": 220.5,
+      "baseline": 230.1,
       "size": 12,
       "rect": [
        90.3,
        72.25,
        340.3,
-       257.75
+       269.75
       ]
      },
      "details_11": {
       "page": 3,
-      "baseline": 279.25,
+      "baseline": 291.25,
       "size": 11,
       "rect": [
        90.3,
-       257.75,
+       269.75,
        260.3,
-       302.25
+       314.25
       ]
      },
      "notes_11": {
       "page": 3,
-      "baseline": 322.15,
+      "baseline": 334.15,
       "size": 11,
       "rect": [
        90.3,
-       302.25,
+       314.25,
        260.3,
-       343.15
+       355.15
       ]
      },
      "photo_12": {
       "page": 3,
-      "baseline": 507.2,
+      "baseline": 513.5,
       "size": 12,
       "rect": [
        340.3,
-       353.85,
+       355.65,
        590.3,
-       544.45
+       553.15
       ]
      },
      "details_12": {
       "page": 3,
-      "baseline": 565.95,
+      "baseline": 574.65,
       "size": 11,
       "rect": [
        340.3,
-       544.45,
+       553.15,
        510.3,
-       588.95
+       597.65
       ]
      },
      "notes_12": {
       "page": 3,
-      "baseline": 608.85,
+      "baseline": 617.55,
       "size": 11,
       "rect": [
        340.3,
-       588.95,
+       597.65,
        510.3,
-       629.85
+       638.55
       ]
      },
      "photo_13": {
       "page": 3,
-      "baseline": 502.1,
+      "baseline": 513.5,
       "size": 12,
       "rect": [
        90.3,
-       353.85,
+       355.65,
        340.3,
-       539.35
+       553.15
       ]
      },
      "details_13": {
       "page": 3,
-      "baseline": 560.85,
+      "baseline": 574.65,
       "size": 11,
       "rect": [
        90.3,
-       539.35,
+       553.15,
        260.3,
-       583.85
+       597.65
       ]
      },
      "notes_13": {
       "page": 3,
-      "baseline": 603.75,
+      "baseline": 617.55,
       "size": 11,
       "rect": [
        90.3,
-       583.85,
+       597.65,
        260.3,
-       624.75
+       638.55
       ]
      },
      "stamp": {
       "page": 0,
       "rect": [
-       40,
-       183,
-       150,
-       219
+       247,
+       663,
+       353,
+       772
       ]
      }
     },

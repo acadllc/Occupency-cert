@@ -1,6 +1,6 @@
 {
   "key": "photo-report-mechanical",
-  "version": 2,
+  "version": 3,
   "status": "verified",
   "name": "Photo Technical Report – Mechanical Works",
   "nameAr": "تقرير فني مصور للأعمال الميكانيكية",
@@ -37,7 +37,8 @@
     {
       "op": "photo_grid",
       "expected": 14,
-      "spacer_twips": 3700
+      "spacer_twips": 3940,
+      "compact_trailing": true
     },
     {
       "op": "remove_image",
@@ -193,10 +194,10 @@
       "kind": "rect",
       "page": 0,
       "rect": [
-        40,
-        183,
-        150,
-        219
+        247,
+        663,
+        353,
+        772
       ]
     }
   },
@@ -906,8 +907,7 @@
       "stamp": {
         "size": 105,
         "anchor": "center",
-        "dx": 22,
-        "dy": 10
+        "page": "last"
       }
     }
   ],
