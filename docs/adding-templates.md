@@ -16,9 +16,11 @@ For DOCX files, open the document and note which table cells / phrases hold proj
   "key": "my-new-letter", "version": 1, "status": "draft",
   "name": "English display name", "nameAr": "الاسم بالعربي",
   "description": "…", "category": "Letters",
+  "projectType": "building",   // picker tab: occupancy | building | taqneen | bank | contractor (templates/project-types.json)
   "source": "<file name in reference-documents>", "format": "docx",
   "sanitize": [
     { "op": "date_field", "slot": "date" },                              // DOCX: remove DATE field, mark its place
+    { "op": "footer_align", "pattern": "AACM-CP", "align": "right" },     // DOCX: move footer lines (e.g. off the letterhead contact block)
     { "op": "cell", "label": "اسم المالك", "offset": -2, "slot": "owner" }, // clear the cell next to a label
     { "op": "text", "contains": "…sentence…", "old": "old phrase", "slot": "x" },
     { "op": "remove_image", "target": "media/image1.png" }               // stamp / signature

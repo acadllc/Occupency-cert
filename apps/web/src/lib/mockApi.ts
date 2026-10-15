@@ -27,7 +27,7 @@ function load(): Store {
 }
 
 function searchable(f: ProjectFields) {
-  return ['project_id', 'owner_name_ar', 'owner_name_en', 'plot_number', 'area_ar', 'area_en', 'sector_ar', 'sector_en']
+  return ['project_id', 'municipality_project_number', 'owner_name_ar', 'owner_name_en', 'owner_phone', 'owner_id_number', 'plot_number', 'area_ar', 'area_en', 'sector_ar', 'sector_en']
     .map((k) => (typeof f[k] === 'string' ? (f[k] as string) : ''))
     .join(' ')
     .toLowerCase();

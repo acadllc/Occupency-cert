@@ -207,3 +207,9 @@ textarea.input { min-height: 72px; resize: vertical; }
 .siteplan-start { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; border: 1px solid #f3c88a; background: linear-gradient(90deg, #fff8ee, #fff); }
 .stamp-preview { align-self: flex-start; padding: 12px; border: 1px dashed var(--border); border-radius: 10px; background: repeating-conic-gradient(#f3f5f9 0% 25%, #fff 0% 50%) 0 0 / 16px 16px; }
 .stamp-preview img { display: block; max-width: 220px; max-height: 220px; }
+.project-tabs { padding: 0 14px; margin-bottom: 0; }
+.project-tabs .tab { display: inline-flex; align-items: center; gap: 6px; }
+.tab-ar { color: var(--muted); font-size: 0.86em; }
+.category-select { display: flex; align-items: center; gap: 8px; cursor: pointer; user-select: none; width: max-content; }
+.category-select input { width: 15px; height: 15px; }
+.doc-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; font-size: 0.88rem; }

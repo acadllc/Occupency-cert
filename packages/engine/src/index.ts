@@ -5,4 +5,6 @@ export { Engine, FONT_FILES, type EngineAssets } from './generate';
 export { detectDir } from './text/shaper';
 export { buildDocx, imageSize } from './docx';
 export { stampBox } from './stamp';
-export { parseSitePlan, type SitePlanResult, type TextItem as SitePlanTextItem } from './siteplan';
+export { parseSitePlan, type SitePlanResult } from './importers/siteplan';
+export { type TextItem as SitePlanTextItem, type ExtractedValue } from './importers/common';
+export { parseDocument, mergeImports, readMrz, KIND_LABELS, type DocumentImport, type DocumentKind, type Person } from './importers/documents';

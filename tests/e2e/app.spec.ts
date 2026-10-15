@@ -43,12 +43,18 @@ test('full workflow: create, generate, download, history, edit, search', async (
   await page.getByRole('link', { name: '＋ New project' }).first().click();
   await expect(page.getByRole('heading', { name: 'New project' })).toBeVisible();
 
-  // ---- start from a site plan: the PDF is read in the browser and fills the fields
-  await page.getByLabel('Site plan PDF').setInputFiles(fileURLToPath(new URL('../fixtures/siteplan-sample.pdf', import.meta.url)));
-  const sp = page.getByRole('dialog', { name: 'Details found in the site plan' });
+  // ---- start from documents: site plan + Emirates ID read in the browser together
+  await page.getByLabel('Documents to read').setInputFiles([
+    fileURLToPath(new URL('../fixtures/siteplan-sample.pdf', import.meta.url)),
+    fileURLToPath(new URL('../fixtures/emirates-id-sample.pdf', import.meta.url)),
+  ]);
+  const sp = page.getByRole('dialog', { name: 'Details found in the documents' });
   await expect(sp.getByText('18-7-200-047')).toBeVisible({ timeout: 30_000 });
+  await expect(sp.getByText('Emirates ID / الهوية')).toBeVisible();
   await expect(sp.getByText('سالم خليفة راشد سالم المنصوري')).toBeVisible();
+  await expect(sp.getByText('784-1985-1234567-1')).toBeVisible();
   await sp.getByRole('button', { name: 'Fill selected fields' }).click();
+  await expect(page.getByLabel('Owner Emirates ID / passport no.')).toHaveValue('784-1985-1234567-1');
   await expect(page.getByLabel('Area / zone (English)')).toHaveValue('Central District');
   await expect(page.getByLabel(/Sector \(Arabic\)/)).toHaveValue('حي الحميرة');
   await expect(page.getByLabel('Owner name (English)')).toHaveValue('Salem Khalifa Rashed Salem Almansoori');
@@ -56,6 +62,8 @@ test('full workflow: create, generate, download, history, edit, search', async (
 
   // ---- manual entry (Arabic + English entered separately) overrides imported values
   await page.getByLabel('Project ID').fill('B2N-2026-000777');
+  await page.getByLabel('Municipality project number').fill('AD-77-2026');
+  await page.getByLabel('Owner email').fill('not-an-email');
   await page.getByLabel(/Owner name \(Arabic\)/).fill('سالم خليفة راشد المنصوري');
   await page.getByLabel('Owner name (English)').fill('Salem Khalifa Al Mansouri');
   await page.getByLabel(/Contractor name \(Arabic\)/).fill('مؤسسة البناء الحديث للمقاولات');
@@ -70,6 +78,10 @@ test('full workflow: create, generate, download, history, edit, search', async (
   // the derived Arabic location updates live
   await expect(page.getByText('أبوظبي / السعادة / شرق 41 - 007')).toBeVisible();
 
+  // invalid email blocks saving until corrected
+  await page.getByRole('button', { name: 'Create project' }).first().click();
+  await expect(page.getByText('Enter a valid email address.')).toBeVisible();
+  await page.getByLabel('Owner email').fill('salem@example.com');
   await page.getByRole('button', { name: 'Create project' }).first().click();
   await expect(page.getByText('Project created')).toBeVisible();
   await expect(page).toHaveURL(/#\/projects\/[0-9a-f-]{36}$/);
@@ -125,7 +137,14 @@ test('full workflow: create, generate, download, history, edit, search', async (
   await expect(page.getByText('Saved (revision 3)')).toBeVisible();
 
   // ---- generate ALL templates in the browser
-  await page.getByRole('button', { name: /Select all \(18\)/ }).click();
+  // project-type tabs: other types have no templates yet
+  await page.getByRole('tab', { name: /Architectural/ }).click();
+  await expect(page.getByText(/No Architectural documents yet/)).toBeVisible();
+  await page.getByRole('tab', { name: /Occupancy certificate/ }).click();
+  // select a whole category, then the whole tab
+  await page.getByLabel('Select all DMT undertakings').check();
+  await expect(page.getByText('(7/7)')).toBeVisible();
+  await page.getByRole('button', { name: /Select all in tab \(18\)/ }).click();
   await page.getByRole('button', { name: 'Save & generate' }).click();
   await page.getByRole('dialog').getByText('PDF', { exact: true }).click();
   await page.getByRole('dialog').getByRole('button', { name: 'Continue with blanks' }).click();

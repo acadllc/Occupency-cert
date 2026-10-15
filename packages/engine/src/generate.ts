@@ -98,6 +98,9 @@ interface DrawCtx {
   warnings: GenerationWarning[];
 }
 
+/** Smallest font used when squeezing long values (several owners) into a box. */
+const SMALLEST_TEXT = 5;
+
 export class Engine {
   private assetsCache = new Map<string, Promise<FontAsset>>();
   private subsetter: Subsetter | null = null;
@@ -240,6 +243,21 @@ export class Engine {
       fits = widest <= innerW + 0.01 && height <= innerH + size * 0.25;
       if (fits || size <= minSize) break;
       size = Math.max(minSize, size - 0.25);
+    }
+    if (!fits) {
+      // e.g. several owners: still too long at the minimum size, so wrap inside the box
+      // with a smaller font instead of overflowing
+      const start = style.multiline ? size : (style.size ?? slot.size ?? 11);
+      for (let s = start; s >= SMALLEST_TEXT; s = Math.round((s - 0.25) * 100) / 100) {
+        const wrapped = wrapText(text, dir, fam, s, innerW);
+        const widest = Math.max(...wrapped.map((l) => l.width)) * s;
+        if (widest <= innerW + 0.01 && wrapped.length * s * lh <= innerH + s * 0.25) {
+          lines = wrapped;
+          size = s;
+          fits = true;
+          break;
+        }
+      }
     }
     if (!fits) {
       d.warnings.push({ code: 'overflow', slot: slotName, message: `Text is too long for "${slotName}" even at ${size}pt; please shorten it or review the PDF.` });

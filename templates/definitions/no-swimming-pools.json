@@ -6,6 +6,7 @@
   "nameAr": "عدم وجود مسابح",
   "description": "Letter confirming that the project contains no swimming pools.",
   "category": "Letters",
+  "projectType": "occupancy",
   "source": "عدم وجود مسابح في المشروع.docx",
   "format": "docx",
   "sanitize": [

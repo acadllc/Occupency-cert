@@ -6,6 +6,7 @@
   "nameAr": "تعهد عدم ربط شبكة الصرف الصحي مع صرف مياه الأمطار",
   "description": "Owner undertaking that the sewage network is not connected to the rainwater drainage network.",
   "category": "Letters",
+  "projectType": "occupancy",
   "source": "05OWNER UNDERTAKE - تعهد عدم ربط شبكة الصرف الصحي مع صرف مياه الأمطار.docx",
   "format": "docx",
   "sanitize": [
