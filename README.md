@@ -17,7 +17,7 @@ completed PDF or Word files. A new project can start from its documents — the 
 | Field mappings, Arabic RTL shaping, check boxes, photos, optional stamp & signature | ✅ 18/18, rendered and visually reviewed; 67 automated tests |
 | Word (.docx) output | ✅ for the 11 Word-based documents (the 7 official PDF forms are always PDF) |
 | Document import (site plan incl. multi-page owner lists, Emirates ID, passport, كفالة and other labelled forms) | ✅ read in the browser, never uploaded |
-| Project-type tabs (Occupancy certificate, Architectural, Taqneen, Bank papers, Contractor contracts) | ✅ Occupancy has the 18 documents; the other tabs are ready for their templates |
+| Project-type tabs (Occupancy certificate, Architectural, Taqneen, Bank papers, Contractor contracts) | ✅ Occupancy: 18 documents · Bank papers: 30 documents (دفعة دورية, دفعة نهائية, تمديد البنك) · other tabs ready for their templates |
 | Dashboard: login, projects, search, bilingual inputs, dynamic fields, warnings, PDF/ZIP download, history | ✅ end-to-end tested (Playwright) |
 | Supabase schema, RLS, private buckets | ✅ migrations + RLS test suite (run on PostgreSQL 16) |
 | Live Supabase project | ✅ connected (run new migrations from `supabase/migrations/` when they are added) |
@@ -109,6 +109,16 @@ npm run dev                                    # http://localhost:5173
    PDF forms are always produced as PDF.
 4. **Generated documents** tab: every generation is immutable and tied to the saved project revision; re-download
    any older file. Editing a project creates a new revision and never changes old files.
+
+### Bank papers (private originals)
+
+The bank-paper originals contain real client and bank details, so they are **not** in this public repository: they
+live in the git-ignored `reference-documents/private/` (originals, the per-template cleanup rules that name old
+values, and hand tuning). Only the cleaned templates (`templates/sanitized/`, `templates/dist/`) and the public
+definitions (fields and positions, `"sanitize": "private"`) are committed. To rebuild a bank template, put the
+original zip contents back under `reference-documents/private/bank/<folder>/` and run
+`python3 scripts/templates/draft_definition.py …` (see its header) and `python3 scripts/templates/build.py --only <key>`.
+Keep the original zip files safe — they are needed to rebuild these templates.
 
 ## 5. Adding templates and fields
 

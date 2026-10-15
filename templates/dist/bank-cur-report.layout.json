@@ -1,0 +1,156 @@
+{
+ "key": "bank-cur-report",
+ "version": 1,
+ "format": "docx",
+ "sourceSha256": "70237182e22f69cb24aaa5a2655bfc97434954217afce0071d11e05972765689",
+ "baseSha256": "b2503a39b55193c6a71697e0b45bd787c8088d2d8fafefb8222603b03a0824ce",
+ "pageCount": 4,
+ "pages": [
+  {
+   "width": 595.3,
+   "height": 841.89
+  },
+  {
+   "width": 595.3,
+   "height": 841.89
+  },
+  {
+   "width": 595.3,
+   "height": 841.89
+  },
+  {
+   "width": 595.3,
+   "height": 841.89
+  }
+ ],
+ "slots": {
+  "owner": {
+   "page": 0,
+   "baseline": 105.95,
+   "size": 10.0,
+   "rect": [
+    406.3,
+    97.25,
+    574.7,
+    122.75
+   ]
+  },
+  "project_id": {
+   "page": 0,
+   "baseline": 112.45,
+   "size": 10.0,
+   "rect": [
+    137.0,
+    97.25,
+    300.0,
+    122.75
+   ]
+  },
+  "contractor": {
+   "page": 0,
+   "baseline": 137.95,
+   "size": 10.0,
+   "rect": [
+    406.3,
+    122.75,
+    574.7,
+    148.25
+   ]
+  },
+  "consultant": {
+   "page": 0,
+   "baseline": 137.95,
+   "size": 10.0,
+   "rect": [
+    137.0,
+    122.75,
+    300.0,
+    148.25
+   ]
+  },
+  "location": {
+   "page": 0,
+   "baseline": 180.65,
+   "size": 10.0,
+   "rect": [
+    137.0,
+    164.15,
+    300.0,
+    192.35
+   ]
+  },
+  "end_date": {
+   "page": 0,
+   "baseline": 235.7,
+   "size": 14.0,
+   "rect": [
+    406.3,
+    217.85,
+    574.7,
+    243.35
+   ]
+  },
+  "start_date": {
+   "page": 0,
+   "baseline": 235.7,
+   "size": 14.0,
+   "rect": [
+    137.0,
+    217.85,
+    300.0,
+    243.35
+   ]
+  },
+  "components": {
+   "page": 0,
+   "baseline": 284.05,
+   "size": 10.0,
+   "rect": [
+    137.0,
+    268.85,
+    574.7,
+    294.35
+   ]
+  },
+  "date": {
+   "page": 0,
+   "baseline": 63.3,
+   "size": 11.0,
+   "rect": [
+    403.53,
+    49.59,
+    513.53,
+    69.82
+   ]
+  },
+  "stamp": {
+   "page": 0,
+   "baseline": 559.8,
+   "size": 1.0,
+   "rect": [
+    60.59,
+    556.78,
+    70.59,
+    562.18
+   ]
+  }
+ },
+ "docx": {
+  "markers": {
+   "QZ1ZQ": "owner",
+   "QZ2ZQ": "project_id",
+   "QZ3ZQ": "contractor",
+   "QZ4ZQ": "consultant",
+   "QZ5ZQ": "location",
+   "QZ6ZQ": "end_date",
+   "QZ7ZQ": "start_date",
+   "QZ8ZQ": "components",
+   "QZ9ZQ": "date",
+   "QZ10ZQ": "stamp"
+  }
+ },
+ "build": {
+  "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+  "layoutDiff": 0.00058
+ }
+}

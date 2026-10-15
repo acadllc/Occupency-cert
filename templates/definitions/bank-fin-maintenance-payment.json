@@ -1,0 +1,156 @@
+{
+  "key": "bank-fin-maintenance-payment",
+  "version": 1,
+  "status": "verified",
+  "name": "No Objection to Payment Release",
+  "nameAr": "لا مانع من صرف الدفعة",
+  "description": "No Objection to Payment Release",
+  "category": "دفعة نهائية",
+  "projectType": "bank",
+  "source": "private/bank/دفعة نهائية/دفعة صيانه222222.docx",
+  "format": "docx",
+  "sanitize": "private",
+  "slots": {
+    "owner": {
+      "kind": "cell"
+    },
+    "consultant": {
+      "kind": "cell"
+    },
+    "location": {
+      "kind": "cell"
+    },
+    "plot": {
+      "kind": "cell"
+    },
+    "project_id": {
+      "kind": "cell"
+    },
+    "date": {
+      "kind": "inline",
+      "width": 110
+    },
+    "stamp": {
+      "kind": "inline",
+      "width": 10
+    },
+    "owner_text": {
+      "kind": "gap",
+      "width": 160
+    }
+  },
+  "fields": [
+    {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "slot": "stamp",
+      "stamp": {
+        "size": 105,
+        "anchor": "marker",
+        "dx": 28,
+        "dy": 58
+      }
+    },
+    {
+      "slot": "owner_text",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

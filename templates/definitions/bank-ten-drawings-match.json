@@ -1,0 +1,160 @@
+{
+  "key": "bank-ten-drawings-match",
+  "version": 1,
+  "status": "verified",
+  "name": "Undertaking: Drawings Match the Municipality Approval",
+  "nameAr": "تعهد وإقرار – مطابقة المخططات",
+  "description": "First Abu Dhabi Bank housing-loan form: Undertaking: Drawings Match the Municipality Approval.",
+  "category": "اوراق المناقصة",
+  "projectType": "bank",
+  "source": "private/bank/اوراق المناقصة/11- تعهد وإقرار مطابفة مخططات.pdf",
+  "format": "pdf",
+  "reviewNotes": "Blank scanned bank form (no historical values); the project details are drawn into the boxes.",
+  "sanitize": [],
+  "slots": {
+    "date": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        360,
+        97,
+        476,
+        113
+      ]
+    },
+    "project_id": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        250,
+        152,
+        436,
+        168
+      ]
+    },
+    "owner": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        250,
+        182,
+        436,
+        198
+      ]
+    },
+    "consultant": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        250,
+        212,
+        436,
+        228
+      ]
+    },
+    "design_consultant": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        112,
+        394,
+        236,
+        410
+      ]
+    },
+    "stamp": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        105.0,
+        533.0,
+        195.0,
+        623.0
+      ]
+    }
+  },
+  "fields": [
+    {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "right"
+    },
+    {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "right"
+    },
+    {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right"
+    },
+    {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right"
+    },
+    {
+      "slot": "design_consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right"
+    },
+    {
+      "slot": "stamp",
+      "stamp": {
+        "size": 90,
+        "anchor": "center"
+      }
+    }
+  ]
+}

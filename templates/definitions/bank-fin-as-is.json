@@ -1,0 +1,138 @@
+{
+  "key": "bank-fin-as-is",
+  "version": 1,
+  "status": "verified",
+  "name": "Project Handover in Current Condition",
+  "nameAr": "استلام المشروع على الوضع الراهن",
+  "description": "Project Handover in Current Condition",
+  "category": "دفعة نهائية",
+  "projectType": "bank",
+  "source": "private/bank/دفعة نهائية/استلام المشروع على الوضع الراهن[1].docx",
+  "format": "docx",
+  "sanitize": "private",
+  "slots": {
+    "project_id": {
+      "kind": "cell"
+    },
+    "owner": {
+      "kind": "cell"
+    },
+    "consultant": {
+      "kind": "cell"
+    },
+    "contractor": {
+      "kind": "cell"
+    },
+    "location": {
+      "kind": "cell"
+    },
+    "date": {
+      "kind": "inline",
+      "width": 110
+    },
+    "stamp": {
+      "kind": "inline",
+      "width": 10
+    }
+  },
+  "fields": [
+    {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "contractor",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "slot": "stamp",
+      "stamp": {
+        "size": 105,
+        "anchor": "marker",
+        "dx": 28,
+        "dy": 58
+      }
+    }
+  ]
+}

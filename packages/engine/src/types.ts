@@ -38,6 +38,8 @@ export interface ProjectType {
   key: string;
   en: string;
   ar: string;
+  /** display order of the document categories in this tab */
+  categories?: string[];
 }
 
 export interface FieldGroup {
@@ -95,6 +97,8 @@ export interface TextStyle {
 export interface TextItem extends TextStyle {
   slot: string;
   value: string;
+  /** Word output: width (pt) the value may take; a longer value gets a smaller font (e.g. a fixed-size text box). */
+  docxMaxWidth?: number;
 }
 
 export interface BilingualItem extends TextStyle {
@@ -133,8 +137,8 @@ export interface StampItem {
     anchor?: 'center' | 'marker' | 'right' | 'below';
     dx?: number;
     dy?: number;
-    /** "last": on the last page that remains (photo reports drop unused pages) */
-    page?: 'last';
+    /** "last": on the last page that remains (photo reports drop unused pages); "every": on every page */
+    page?: 'last' | 'every';
   };
 }
 

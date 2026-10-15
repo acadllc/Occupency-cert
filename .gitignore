@@ -16,3 +16,4 @@ test-results/
 playwright-report/
 __pycache__/
 apps/web/dist-e2e/
+reference-documents/private/

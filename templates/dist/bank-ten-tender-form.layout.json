@@ -1,0 +1,140 @@
+{
+ "key": "bank-ten-tender-form",
+ "version": 1,
+ "format": "docx",
+ "sourceSha256": "02c50f898577e66b1e4ae7367caf8e8007375354e8bd8751c6823adb31c0d94d",
+ "baseSha256": "092d177f95b2a215b4878aefb8386a3a3fdc65fde3a327aa4188fd9dc2f03efd",
+ "pageCount": 3,
+ "pages": [
+  {
+   "width": 595.3,
+   "height": 841.89
+  },
+  {
+   "width": 595.3,
+   "height": 841.89
+  },
+  {
+   "width": 595.3,
+   "height": 841.89
+  }
+ ],
+ "slots": {
+  "tender_no_en": {
+   "page": 0,
+   "baseline": 108.5,
+   "size": 16.0,
+   "rect": [
+    85.2,
+    93.3,
+    194.2,
+    113.3
+   ]
+  },
+  "tender_no": {
+   "page": 0,
+   "baseline": 119.1,
+   "size": 16.0,
+   "rect": [
+    392.12,
+    103.9,
+    504.96,
+    123.9
+   ]
+  },
+  "owner_en": {
+   "page": 0,
+   "baseline": 138.8,
+   "size": 10.0,
+   "rect": [
+    93.8,
+    127.75,
+    278.8,
+    142.91
+   ]
+  },
+  "owner": {
+   "page": 0,
+   "baseline": 138.3,
+   "size": 12.0,
+   "rect": [
+    311.28,
+    125.61,
+    486.28,
+    142.89
+   ]
+  },
+  "location_en": {
+   "page": 0,
+   "baseline": 170.45,
+   "size": 12.0,
+   "rect": [
+    105.7,
+    157.76,
+    285.7,
+    175.04
+   ]
+  },
+  "location": {
+   "page": 0,
+   "baseline": 170.15,
+   "size": 12.0,
+   "rect": [
+    308.18,
+    157.46,
+    478.18,
+    174.74
+   ]
+  },
+  "plot": {
+   "page": 0,
+   "baseline": 184.85,
+   "size": 12.0,
+   "rect": [
+    352.66,
+    171.99,
+    472.66,
+    189.38
+   ]
+  },
+  "components_en": {
+   "page": 0,
+   "baseline": 240.2,
+   "size": 12.0,
+   "rect": [
+    180.35,
+    227.34,
+    350.35,
+    244.73
+   ]
+  },
+  "components": {
+   "page": 0,
+   "baseline": 236.05,
+   "size": 14.0,
+   "rect": [
+    289.9,
+    221.58,
+    454.9,
+    241.07
+   ]
+  }
+ },
+ "docx": {
+  "markers": {
+   "QZ1ZQ": "tender_no_en",
+   "QZ2ZQ": "tender_no",
+   "QZ3ZQ": "owner_en",
+   "QZ4ZQ": "owner",
+   "QZ5ZQ": "location_en",
+   "QZ6ZQ": "location",
+   "QZ7ZQ": "plot",
+   "QZ8ZQ": "components_en",
+   "QZ9ZQ": "components"
+  }
+ },
+ "build": {
+  "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+  "layoutDiff": 0.005992
+ }
+}

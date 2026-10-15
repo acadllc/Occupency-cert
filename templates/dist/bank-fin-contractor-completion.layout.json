@@ -1,0 +1,96 @@
+{
+ "key": "bank-fin-contractor-completion",
+ "version": 1,
+ "format": "docx",
+ "sourceSha256": "26bef29b231b24c54bd65bb10a5e28363e9fb739c3b51bde7e7b90becb2a857a",
+ "baseSha256": "87ab7a3eea83148b4da2355043991ec02df4ea7a87e904dddb677afddb18b0ab",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 609.99,
+   "height": 856.46
+  }
+ ],
+ "slots": {
+  "project_id": {
+   "page": 0,
+   "baseline": 297.45,
+   "size": 12.0,
+   "rect": [
+    254.1,
+    279.25,
+    531.2,
+    307.15
+   ]
+  },
+  "owner": {
+   "page": 0,
+   "baseline": 323.0,
+   "size": 14.0,
+   "rect": [
+    254.1,
+    307.15,
+    531.2,
+    334.85
+   ]
+  },
+  "consultant": {
+   "page": 0,
+   "baseline": 350.8,
+   "size": 14.0,
+   "rect": [
+    254.1,
+    334.85,
+    531.2,
+    362.75
+   ]
+  },
+  "contractor": {
+   "page": 0,
+   "baseline": 378.5,
+   "size": 13.5,
+   "rect": [
+    254.1,
+    362.75,
+    531.2,
+    390.55
+   ]
+  },
+  "location": {
+   "page": 0,
+   "baseline": 409.45,
+   "size": 14.0,
+   "rect": [
+    254.1,
+    390.55,
+    531.2,
+    418.35
+   ]
+  },
+  "date": {
+   "page": 0,
+   "baseline": 153.85,
+   "size": 12.0,
+   "rect": [
+    394.3,
+    140.23,
+    504.3,
+    158.74
+   ]
+  }
+ },
+ "docx": {
+  "markers": {
+   "QZ1ZQ": "project_id",
+   "QZ2ZQ": "owner",
+   "QZ3ZQ": "consultant",
+   "QZ4ZQ": "contractor",
+   "QZ5ZQ": "location",
+   "QZ6ZQ": "date"
+  }
+ },
+ "build": {
+  "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+  "layoutDiff": 0.0007
+ }
+}

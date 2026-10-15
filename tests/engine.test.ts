@@ -6,6 +6,8 @@ import {
   Engine,
   analyzeMissing,
   defaultFields,
+  firstBodyParagraph,
+  fitRunSize,
   formatDate,
   isGeneratable,
   resolveValue,
@@ -98,9 +100,12 @@ describe('field values', () => {
 });
 
 describe('registry', () => {
-  it('lists all 18 reference templates as generatable', () => {
-    expect(catalog.templates).toHaveLength(18);
+  it('lists every template as generatable, under a known project-type tab', () => {
+    const types = (JSON.parse(readFileSync(join(root, 'templates/project-types.json'), 'utf8')) as { types: { key: string }[] }).types.map((t) => t.key);
+    expect(catalog.templates.filter((t) => (t.definition.projectType ?? 'occupancy') === 'occupancy')).toHaveLength(18);
+    expect(catalog.templates.filter((t) => t.definition.projectType === 'bank').length).toBeGreaterThanOrEqual(55);
     expect(catalog.templates.every(isGeneratable)).toBe(true);
+    expect(catalog.templates.every((t) => types.includes(t.definition.projectType ?? 'occupancy'))).toBe(true);
   });
 
   it('shows template-specific fields only for selected templates', () => {
@@ -236,10 +241,11 @@ describe('company stamp', () => {
     const ownerOnly = await engine.generate('owner-undertaking-cd-renewal', sampleProject, { stamp: true });
     expect(ownerOnly.placements.filter((p) => p.kind === 'stamp')).toHaveLength(0);
     const photoReport = await engine.generate('photo-report-mechanical', sampleProject, { stamp: true });
-    expect(photoReport.placements.filter((p) => p.kind === 'stamp')).toHaveLength(1);
-    // photo reports: signature at the bottom of the LAST remaining page
+    expect(photoReport.placements.filter((p) => p.kind === 'stamp')).toHaveLength(photoReport.pageCount);
+    // photo reports: signature at the bottom of EVERY remaining page
     const plumbing = await engine.generate('photo-report-plumbing', sampleProject, { stamp: true });
-    expect(plumbing.placements.find((p) => p.kind === 'stamp')?.page).toBe(plumbing.pageCount - 1);
+    expect(plumbing.pageCount).toBeGreaterThan(1);
+    expect(plumbing.placements.filter((p) => p.kind === 'stamp').map((p) => p.page)).toEqual([...Array(plumbing.pageCount).keys()]);
     const photoReportWord = await engine.generateDocx('photo-report-mechanical', sampleProject, { stamp: true });
     expect(photoReportWord.placements.filter((p) => p.kind === 'stamp')).toHaveLength(1);
   });
@@ -295,6 +301,33 @@ describe('Word output', () => {
     expect(Object.keys(photo.files).filter((n) => n.startsWith('word/media/acad-'))).toHaveLength(3);
     const pxml = await photo.file('word/document.xml')!.async('string');
     expect(pxml).toContain('تم تركيب خزانات المياه العلوية');
+  });
+
+  it('shrinks a value that would overflow a fixed-size text box', () => {
+    const rPr = '<w:rPr><w:b/><w:sz w:val="52"/><w:szCs w:val="52"/><w:lang w:val="en-US"/></w:rPr>';
+    expect(fitRunSize(rPr, 'ACAD', 300)).toBe(rPr);
+    const fitted = fitRunSize(rPr, 'Construction of a two-storey residential villa with service annex', 300);
+    const half = Number(/<w:sz w:val="(\d+)"/.exec(fitted)?.[1]);
+    expect(half).toBeLessThan(52);
+    expect(half).toBeGreaterThanOrEqual(16);
+    expect(fitted.indexOf('<w:sz ')).toBeLessThan(fitted.indexOf('<w:lang')); // schema order kept
+  });
+
+  it('anchors the stamp in a body paragraph when the document opens with a table', async () => {
+    const xml = '<w:body><w:tbl><w:tr><w:tc><w:p><w:r/></w:p></w:tc></w:tr></w:tbl><w:p w:rsidR="1"><w:pPr/></w:p></w:body>';
+    expect(xml.slice(firstBodyParagraph(xml)).startsWith('<w:p w:rsidR="1">')).toBe(true);
+    const { default: JSZip } = await JSZipP;
+    const res = await engine.generateDocx('bank-ten-new-project', sampleProject, { stamp: true });
+    const docXml = await (await JSZip.loadAsync(res.bytes)).file('word/document.xml')!.async('string');
+    expect(docXml).toContain('Company stamp');
+  });
+
+  it('writes values of zero-width markers at the field size', async () => {
+    const { default: JSZip } = await JSZipP;
+    const res = await engine.generateDocx('bank-com-start-order', sampleProject);
+    const xml = await (await JSZip.loadAsync(res.bytes)).file('word/document.xml')!.async('string');
+    const run = new RegExp(`<w:r><w:rPr>((?:(?!</w:rPr>).)*)</w:rPr><w:t xml:space="preserve">${String(sampleProject.project_components_ar).replace(/[+]/g, '\\+')}<`).exec(xml);
+    expect(run?.[1]).toContain('<w:sz w:val="24"/>');
   });
 
   it('escapes XML special characters in values', async () => {

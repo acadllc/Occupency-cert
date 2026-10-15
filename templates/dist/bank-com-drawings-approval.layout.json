@@ -1,0 +1,83 @@
+{
+ "key": "bank-com-drawings-approval",
+ "version": 1,
+ "format": "pdf",
+ "sourceSha256": "c5a5d04dd9173051bbb4803cd8942fe978354f4981ef27f667528b92235d8c65",
+ "baseSha256": "8688b1f54aa01f54ac99fd9016a2f7d861c61f1d0612190be5080920fa1a6064",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 595.2,
+   "height": 841.68
+  }
+ ],
+ "slots": {
+  "date_day": {
+   "page": 0,
+   "rect": [
+    482,
+    72,
+    503,
+    88
+   ]
+  },
+  "date_month": {
+   "page": 0,
+   "rect": [
+    459,
+    72,
+    477,
+    88
+   ]
+  },
+  "date_year": {
+   "page": 0,
+   "rect": [
+    418,
+    72,
+    453,
+    88
+   ]
+  },
+  "project_id": {
+   "page": 0,
+   "rect": [
+    58,
+    236,
+    408,
+    258
+   ]
+  },
+  "location": {
+   "page": 0,
+   "rect": [
+    58,
+    259,
+    408,
+    280
+   ]
+  },
+  "owner": {
+   "page": 0,
+   "rect": [
+    58,
+    281,
+    408,
+    302
+   ]
+  },
+  "stamp": {
+   "page": 0,
+   "rect": [
+    360.0,
+    560.0,
+    440.0,
+    640.0
+   ]
+  }
+ },
+ "docx": null,
+ "build": {
+  "engine": "pymupdf 1.28.2"
+ }
+}

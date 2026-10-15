@@ -33,6 +33,13 @@ For DOCX files, open the document and note which table cells / phrases hold proj
   ]
 }
 ```
+More DOCX options: `text` with `"reserve": N` keeps a blank gap inside running text (slot kind `gap`),
+`"zero_width": true` uses a tiny marker that cannot move the line (with `"keep_line": true` when the phrase was the
+whole line), `"ltr": true` keeps an English label in place in a right-to-left paragraph; any op can take
+`"marker": {"font": "…", "size": 11}` for its marker; `drop_fallback` removes the legacy VML copies of text boxes and
+`textbox_nowrap` (`"contains": [...]`) keeps text-box values on one line. A text field can set `"docxMaxWidth"` (pt) so
+the Word output shrinks a value that would overflow a fixed-size text box.
+
 PDF operations: `remove_image` (by bbox), `redact_spans` (by font/text/region), `redact_text_rect`, `remove_line_art`,
 `flatten_form`. PDF slots use `{ "kind": "rect", "page": 0, "rect": [x0, y0, x1, y1], "baseline": y }` (points, top-left origin).
 

@@ -1,0 +1,83 @@
+{
+ "key": "bank-ten-nomination",
+ "version": 1,
+ "format": "pdf",
+ "sourceSha256": "4d3b869556e44d5c07313c01498ed277ae97180e51cab337c07d6beb098942ba",
+ "baseSha256": "cfb24398d6a07dc68e9cea7424f7eca7dbb500e40688062b57f3e735354f32d6",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 595.2,
+   "height": 841.68
+  }
+ ],
+ "slots": {
+  "date_day": {
+   "page": 0,
+   "rect": [
+    482,
+    72,
+    503,
+    88
+   ]
+  },
+  "date_month": {
+   "page": 0,
+   "rect": [
+    459,
+    72,
+    477,
+    88
+   ]
+  },
+  "date_year": {
+   "page": 0,
+   "rect": [
+    418,
+    72,
+    453,
+    88
+   ]
+  },
+  "project_id": {
+   "page": 0,
+   "rect": [
+    58,
+    233,
+    408,
+    254
+   ]
+  },
+  "location": {
+   "page": 0,
+   "rect": [
+    58,
+    256,
+    408,
+    277
+   ]
+  },
+  "owner": {
+   "page": 0,
+   "rect": [
+    58,
+    278,
+    408,
+    299
+   ]
+  },
+  "owner_2": {
+   "page": 0,
+   "rect": [
+    303,
+    664,
+    538,
+    728
+   ]
+  }
+ },
+ "docx": null,
+ "build": {
+  "engine": "pymupdf 1.28.2"
+ }
+}

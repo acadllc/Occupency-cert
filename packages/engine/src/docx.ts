@@ -94,6 +94,42 @@ function anchoredDrawing(rid: string, id: number, name: string, x: number, y: nu
   );
 }
 
+/**
+ * Shrinks the font of a run so a value fits a fixed width (a text box in Word
+ * cannot shrink its text itself). The width is estimated from average glyph widths.
+ */
+export function fitRunSize(rPr: string, text: string, maxWidth: number, fallbackSize = 11): string {
+  const half = Number(/<w:sz w:val="(\d+)"/.exec(rPr)?.[1] ?? Math.round(fallbackSize * 2));
+  const size = half / 2;
+  let em = 0;
+  for (const ch of text) em += ch === ' ' ? 0.28 : /[A-Z0-9]/.test(ch) ? 0.64 : /[\u0600-\u06ff]/.test(ch) ? 0.45 : 0.52;
+  const width = em * size;
+  if (width <= maxWidth) return rPr;
+  const fitted = Math.max(16, Math.floor((half * maxWidth) / width));
+  const sz = `<w:sz w:val="${fitted}"/><w:szCs w:val="${fitted}"/>`;
+  if (!rPr) return `<w:rPr>${sz}</w:rPr>`;
+  // keep the schema order of w:rPr: sizes go where they were, or before the elements that follow them
+  const stripped = rPr.replace(/<w:szCs w:val="\d+"\/>/g, '');
+  if (/<w:sz w:val="\d+"\/>/.test(stripped)) return stripped.replace(/<w:sz w:val="\d+"\/>/, sz);
+  const after = /<w:(?:highlight|u|effect|bdr|shd|fitText|vertAlign|rtl|cs|em|lang|eastAsianLayout|specVanish|oMath)[ />]/.exec(stripped);
+  return after ? stripped.slice(0, after.index) + sz + stripped.slice(after.index) : stripped.replace('</w:rPr>', `${sz}</w:rPr>`);
+}
+
+/** Index of the first paragraph directly in w:body (not inside a table), or -1. */
+export function firstBodyParagraph(xml: string): number {
+  const body = xml.indexOf('<w:body>');
+  if (body < 0) return -1;
+  const tag = /<(\/?)w:(tbl|p)(?=[\s>\/])[^>]*?(\/?)>/g;
+  tag.lastIndex = body;
+  let depth = 0;
+  for (let m = tag.exec(xml); m; m = tag.exec(xml)) {
+    const [, close, name, selfClosing] = m;
+    if (name === 'tbl') depth += close ? -1 : 1;
+    else if (!close && !selfClosing && depth === 0) return m.index;
+  }
+  return -1;
+}
+
 // a run that contains only a marker (created by the template build)
 const MARKER_RUN = /<w:r>((?:(?!<w:r[ >]|<\/w:r>).)*?)<w:t[^>]*>(QZ\d+ZQ)<\/w:t><\/w:r>/gs;
 const PARAGRAPH = /<w:p[ >](?:(?!<\/w:p>).)*?<\/w:p>/gs;
@@ -154,17 +190,32 @@ export async function buildDocx(d: DocxDeps): Promise<DocxResult> {
     return rid;
   };
 
+  const maxWidths = new Map<string, number>();
+  const fieldSizes = new Map<string, number>();
+  for (const item of entry.definition.fields) {
+    if ('docxMaxWidth' in item && item.docxMaxWidth) maxWidths.set(item.slot, item.docxMaxWidth);
+    if ('value' in item && item.size) fieldSizes.set(item.slot, item.size);
+  }
+
   const filled: string[] = [];
   const stampRuns: string[] = [];
   let drawingId = 9000;
   // stamps are positioned on the page (they need no marker in the text)
   const endRuns: string[] = [];
+  const everyPage: { bytes: Uint8Array; x: number; y: number; cx: number; cy: number }[] = [];
   for (const [slotName, v] of values) {
     if (v.kind !== 'stamp') continue;
-    const atEnd = entry.definition.fields.some((f) => f.slot === slotName && 'stamp' in f && f.stamp.page === 'last');
+    const pageMode = entry.definition.fields.find((f) => f.slot === slotName && 'stamp' in f);
+    const mode = pageMode && 'stamp' in pageMode ? pageMode.stamp.page : undefined;
     const size = imageSize(v.bytes);
     const h = v.size * (size.height / size.width);
-    (atEnd ? endRuns : stampRuns).push(
+    if (mode === 'every') {
+      // the footer repeats on every page: anchor the stamp there (relative to the page)
+      everyPage.push({ bytes: v.bytes, x: Math.round((v.cx - v.size / 2) * EMU_PER_PT), y: Math.round((v.cy - h / 2) * EMU_PER_PT), cx: Math.round(v.size * EMU_PER_PT), cy: Math.round(h * EMU_PER_PT) });
+      filled.push(slotName);
+      continue;
+    }
+    (mode === 'last' ? endRuns : stampRuns).push(
       anchoredDrawing(
         addImage(v.bytes),
         ++drawingId,
@@ -187,13 +238,26 @@ export async function buildDocx(d: DocxDeps): Promise<DocxResult> {
       if (!m || values.get(markers[m[0]])?.kind !== 'photo') return p;
       return p.replace(/w:lineRule="exact"/g, 'w:lineRule="auto"').replace(/w:line="\d+"/g, 'w:line="240"');
     });
+    // a value inside running text: the zero-width marker run is followed by the blank gap that
+    // reserved its space; write the value with the gap's (normal) formatting instead
+    xml = xml.replace(
+      /<w:r>(?:(?!<w:r[ >]|<\/w:r>).)*?<w:t[^>]*>(QZ\d+ZQ)<\/w:t><\/w:r>\s*<w:r(?:\s[^>]*)?>((?:(?!<w:r[ >]|<\/w:r>).)*?)<w:t[^>]*>\u2002+<\/w:t><\/w:r>/gs,
+      (_all, marker: string, gapInner: string) => `<w:r>${gapInner}<w:t>${marker}</w:t></w:r>`,
+    );
     xml = xml.replace(MARKER_RUN, (_all, inner: string, marker: string) => {
       const slotName = markers[marker];
       const v = slotName ? values.get(slotName) : undefined;
       if (!v || v.kind === 'stamp') return ''; // stamps are added as page-anchored pictures
       filled.push(slotName);
       if (v.kind === 'text') {
-        const rPr = (/<w:rPr>.*?<\/w:rPr>/s.exec(inner)?.[0] ?? '').replace(/<w:color [^>]*\/>/g, '');
+        let rPr = (/<w:rPr>.*?<\/w:rPr>/s.exec(inner)?.[0] ?? '').replace(/<w:color [^>]*\/>/g, '');
+        if (/<w:sz w:val="2"\/>/.test(rPr)) {
+          // a zero-width marker (it could not change the template's layout): write the value at the field's size
+          const half = Math.round((fieldSizes.get(slotName) ?? 11) * 2);
+          rPr = rPr.replace(/<w:spacing w:val="-20"\/>/g, '').replace(/<w:sz(Cs)? w:val="2"\/>/g, (_m, cs: string | undefined) => `<w:sz${cs ?? ''} w:val="${half}"/>`);
+        }
+        const maxWidth = maxWidths.get(slotName);
+        if (maxWidth) rPr = fitRunSize(rPr, v.text, maxWidth, entry.layout.slots[slotName]?.size);
         const body = v.text
           .split(/\r?\n/)
           .map((line) => `<w:t xml:space="preserve">${escapeXml(line)}</w:t>`)
@@ -212,7 +276,13 @@ export async function buildDocx(d: DocxDeps): Promise<DocxResult> {
     });
     if (name === 'word/document.xml' && stampRuns.length) {
       // the stamp is positioned relative to the page; anchor it to the first body paragraph
-      xml = xml.replace(/(<w:body>\s*<w:p(?:\s[^>]*)?>(?:\s*<w:pPr>.*?<\/w:pPr>)?)/s, `$1${stampRuns.join('')}`);
+      // (documents may open with a table: skip it, a picture anchored in a cell is laid out in the cell)
+      const at = firstBodyParagraph(xml);
+      if (at >= 0) {
+        const open = xml.indexOf('>', at) + 1;
+        const pPr = /^\s*<w:pPr>.*?<\/w:pPr>/s.exec(xml.slice(open))?.[0] ?? '';
+        xml = xml.slice(0, open + pPr.length) + stampRuns.join('') + xml.slice(open + pPr.length);
+      }
     }
     if (name === 'word/document.xml' && endRuns.length) {
       // end-of-document stamp: anchor it to the last body paragraph, so it lands on the last page
@@ -224,8 +294,9 @@ export async function buildDocx(d: DocxDeps): Promise<DocxResult> {
         xml = xml.slice(0, pPrEnd) + endRuns.join('') + xml.slice(pPrEnd);
       }
     }
-    // never leave a marker behind
+    // never leave a marker behind; drop the blank gaps reserved for values in running text
     xml = xml.replace(/QZ\d+ZQ/g, '');
+    xml = xml.replace(/<w:r(?:\s[^>]*)?>(?:(?!<w:r[ >]|<\/w:r>).)*?<w:t[^>]*>\u2002+<\/w:t><\/w:r>/gs, '');
     if (name === 'word/document.xml') {
       // tick check boxes (document order of the "☐" glyphs)
       const ticks = new Set(
@@ -240,6 +311,30 @@ export async function buildDocx(d: DocxDeps): Promise<DocxResult> {
       }
     }
     zip.file(name, xml);
+  }
+  if (everyPage.length) {
+    const footers = Object.keys(zip.files).filter((n) => /^word\/footer\d*\.xml$/.test(n));
+    if (!footers.length) warnings.push({ code: 'image_error', slot: 'stamp', message: 'Stamp and signature could not be added to every page (the document has no footer).' });
+    for (const name of footers) {
+      const frelsPath = name.replace('word/', 'word/_rels/') + '.rels';
+      let frels = (await zip.file(frelsPath)?.async('string')) ?? '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"></Relationships>';
+      const runs = everyPage.map((st) => {
+        const { ext } = imageSize(st.bytes);
+        mediaCounter++;
+        const rid = `rIdAcad${mediaCounter}`;
+        const target = `media/acad-${mediaCounter}.${ext === 'png' ? 'png' : 'jpeg'}`;
+        zip.file(`word/${target}`, st.bytes);
+        frels = frels.replace('</Relationships>', `<Relationship Id="${rid}" Type="${REL_IMAGE}" Target="${target}"/></Relationships>`);
+        const e = ext === 'png' ? 'png' : 'jpeg';
+        if (!new RegExp(`Extension="${e}"`, 'i').test(types)) types = types.replace('</Types>', `<Default Extension="${e}" ContentType="image/${e}"/></Types>`);
+        return anchoredDrawing(rid, ++drawingId, 'Company stamp and signature', st.x, st.y, st.cx, st.cy);
+      });
+      let fxml = await zip.file(name)!.async('string');
+      // first paragraph of the footer: after its properties
+      fxml = fxml.replace(/(<w:p(?:\s[^>]*)?>(?:\s*<w:pPr>.*?<\/w:pPr>)?)/s, (m) => m + runs.join(''));
+      zip.file(name, fxml);
+      zip.file(frelsPath, frels);
+    }
   }
   zip.file(relsPath, rels);
   zip.file('[Content_Types].xml', types);

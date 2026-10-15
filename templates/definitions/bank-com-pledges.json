@@ -1,0 +1,210 @@
+{
+  "key": "bank-com-pledges",
+  "version": 1,
+  "status": "verified",
+  "name": "Owner and Consultant Undertakings (DSN-CD-04)",
+  "nameAr": "تعهدات المالك والاستشاري",
+  "description": "First Abu Dhabi Bank housing-loan form: Owner and Consultant Undertakings (DSN-CD-04).",
+  "category": "أوراق استكمال",
+  "projectType": "bank",
+  "source": "private/bank/أوراق استكمال/DSN-CD-04 Owner_Cons_Pledge.pdf",
+  "format": "pdf",
+  "reviewNotes": "Blank scanned bank form (no historical values); the project details are drawn into the boxes.",
+  "sanitize": [],
+  "slots": {
+    "date_day": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        482,
+        60,
+        503,
+        76
+      ]
+    },
+    "date_month": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        459,
+        60,
+        477,
+        76
+      ]
+    },
+    "date_year": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        418,
+        60,
+        453,
+        76
+      ]
+    },
+    "project_id": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        58,
+        155,
+        408,
+        176
+      ]
+    },
+    "location": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        58,
+        177,
+        408,
+        198
+      ]
+    },
+    "owner": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        58,
+        199,
+        408,
+        220
+      ]
+    },
+    "consultant": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        58,
+        221,
+        408,
+        243
+      ]
+    },
+    "stamp": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        363.0,
+        716.0,
+        427.0,
+        780.0
+      ]
+    }
+  },
+  "fields": [
+    {
+      "slot": "date_day",
+      "value": "{date|day}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center"
+    },
+    {
+      "slot": "date_month",
+      "value": "{date|month}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center"
+    },
+    {
+      "slot": "date_year",
+      "value": "{date|year}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center"
+    },
+    {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "right"
+    },
+    {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right"
+    },
+    {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right"
+    },
+    {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right"
+    },
+    {
+      "slot": "stamp",
+      "stamp": {
+        "size": 64,
+        "anchor": "center"
+      }
+    }
+  ]
+}

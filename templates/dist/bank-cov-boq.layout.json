@@ -1,0 +1,60 @@
+{
+ "key": "bank-cov-boq",
+ "version": 1,
+ "format": "docx",
+ "sourceSha256": "2ea22bd102deee3b94a0ebef0e80ea88a590a64d05555e1bb256f2a83487d9e4",
+ "baseSha256": "8f76d674fdc012fcb9b2483915a801d24a2c273bd31a942b15430e9fa2575d2a",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 595.3,
+   "height": 841.89
+  }
+ ],
+ "slots": {
+  "project_id": {
+   "page": 0,
+   "baseline": 561.0,
+   "size": 22.0,
+   "rect": [
+    255.63,
+    539.09,
+    415.63,
+    567.64
+   ]
+  },
+  "owner": {
+   "page": 0,
+   "baseline": 583.4,
+   "size": 28.0,
+   "rect": [
+    116.79,
+    556.06,
+    436.79,
+    591.31
+   ]
+  },
+  "owner_en": {
+   "page": 0,
+   "baseline": 621.05,
+   "size": 25.0,
+   "rect": [
+    74.1,
+    596.43,
+    544.1,
+    628.33
+   ]
+  }
+ },
+ "docx": {
+  "markers": {
+   "QZ1ZQ": "project_id",
+   "QZ2ZQ": "owner",
+   "QZ3ZQ": "owner_en"
+  }
+ },
+ "build": {
+  "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+  "layoutDiff": 0.0
+ }
+}

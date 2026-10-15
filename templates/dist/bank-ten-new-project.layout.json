@@ -1,0 +1,96 @@
+{
+ "key": "bank-ten-new-project",
+ "version": 1,
+ "format": "docx",
+ "sourceSha256": "d386b9bbbca3d956b92dac422d2f49bac0e6b7485406e53cee8d48c565d53971",
+ "baseSha256": "270e42623fcb51f66cc2b783e507ec5c495216b0445ac3f679b47eb098784852",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 595.3,
+   "height": 841.89
+  }
+ ],
+ "slots": {
+  "project_id": {
+   "page": 0,
+   "baseline": 69.5,
+   "size": 11.0,
+   "rect": [
+    30.4,
+    58.05,
+    170.4,
+    75.55
+   ]
+  },
+  "owner": {
+   "page": 0,
+   "baseline": 69.7,
+   "size": 12.0,
+   "rect": [
+    269.7,
+    58.05,
+    439.8,
+    75.55
+   ]
+  },
+  "consultant": {
+   "page": 0,
+   "baseline": 87.1,
+   "size": 12.0,
+   "rect": [
+    30.4,
+    75.55,
+    439.8,
+    92.95
+   ]
+  },
+  "location": {
+   "page": 0,
+   "baseline": 104.45,
+   "size": 12.0,
+   "rect": [
+    271.1,
+    92.95,
+    439.8,
+    110.25
+   ]
+  },
+  "components": {
+   "page": 0,
+   "baseline": 122.95,
+   "size": 12.0,
+   "rect": [
+    30.4,
+    110.25,
+    439.8,
+    129.85
+   ]
+  },
+  "stamp": {
+   "page": 0,
+   "baseline": 683.4,
+   "size": 1.0,
+   "rect": [
+    368.69,
+    680.38,
+    378.69,
+    685.78
+   ]
+  }
+ },
+ "docx": {
+  "markers": {
+   "QZ1ZQ": "project_id",
+   "QZ2ZQ": "owner",
+   "QZ3ZQ": "consultant",
+   "QZ4ZQ": "location",
+   "QZ5ZQ": "components",
+   "QZ6ZQ": "stamp"
+  }
+ },
+ "build": {
+  "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+  "layoutDiff": 0.000524
+ }
+}

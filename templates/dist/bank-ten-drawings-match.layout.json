@@ -1,0 +1,74 @@
+{
+ "key": "bank-ten-drawings-match",
+ "version": 1,
+ "format": "pdf",
+ "sourceSha256": "ccc752593e6186259f77ed6776c4144bbb7b58cd14e6250243b6d8aeb6d6f934",
+ "baseSha256": "57601e0308d67abcff296c621c82b52eee80715b47c9545f9dd94a4689ee2880",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 595.2,
+   "height": 841.44
+  }
+ ],
+ "slots": {
+  "date": {
+   "page": 0,
+   "rect": [
+    360,
+    97,
+    476,
+    113
+   ]
+  },
+  "project_id": {
+   "page": 0,
+   "rect": [
+    250,
+    152,
+    436,
+    168
+   ]
+  },
+  "owner": {
+   "page": 0,
+   "rect": [
+    250,
+    182,
+    436,
+    198
+   ]
+  },
+  "consultant": {
+   "page": 0,
+   "rect": [
+    250,
+    212,
+    436,
+    228
+   ]
+  },
+  "design_consultant": {
+   "page": 0,
+   "rect": [
+    112,
+    394,
+    236,
+    410
+   ]
+  },
+  "stamp": {
+   "page": 0,
+   "rect": [
+    105.0,
+    533.0,
+    195.0,
+    623.0
+   ]
+  }
+ },
+ "docx": null,
+ "build": {
+  "engine": "pymupdf 1.28.2"
+ }
+}

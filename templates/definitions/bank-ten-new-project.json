@@ -1,0 +1,120 @@
+{
+  "key": "bank-ten-new-project",
+  "version": 1,
+  "status": "verified",
+  "name": "Design File Submission Form (DSN-CD-01)",
+  "nameAr": "نموذج تقديم ملف التصميم",
+  "description": "Design File Submission Form (DSN-CD-01) (نموذج تقديم ملف التصميم).",
+  "category": "اوراق المناقصة",
+  "projectType": "bank",
+  "source": "private/bank/اوراق المناقصة/01 DSN-CD-01 New Project.docx",
+  "format": "docx",
+  "sanitize": "private",
+  "slots": {
+    "project_id": {
+      "kind": "cell"
+    },
+    "owner": {
+      "kind": "cell"
+    },
+    "consultant": {
+      "kind": "cell"
+    },
+    "location": {
+      "kind": "cell"
+    },
+    "components": {
+      "kind": "cell"
+    },
+    "stamp": {
+      "kind": "inline",
+      "width": 10
+    }
+  },
+  "fields": [
+    {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "components",
+      "value": "project_components_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "stamp",
+      "stamp": {
+        "size": 72,
+        "anchor": "marker",
+        "dx": 60,
+        "dy": 34
+      }
+    }
+  ]
+}

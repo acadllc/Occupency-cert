@@ -62,6 +62,10 @@ def _row_cells(tr):
     return tr.xpath("./w:tc | ./w:sdt/w:sdtContent/w:tc", namespaces=NS)
 
 
+# blank space reserved for a value inside running text (removed again in Word output)
+FILLER = "\u2002"
+
+
 def _make_marker_run(rpr_source, text: str, use_cs_size: bool = True, default_cs: str = "Times New Roman"):
     run = etree.Element(w("r"))
     rpr = copy.deepcopy(rpr_source) if rpr_source is not None else etree.Element(w("rPr"))
@@ -165,7 +169,20 @@ class DocxSanitizer:
             # Clean variant: an invisible no-break space with the very same run
             # properties, so both variants have identical line heights.
             text = "\u00a0"
-        parent.insert(index, _make_marker_run(rpr_source, text, use_cs_size, self.default_cs_font()))
+        run = _make_marker_run(rpr_source, text, use_cs_size, self.default_cs_font())
+        style = getattr(self, "_marker_style", None)
+        if style:
+            # per-op override (e.g. a historical value typed in a larger font than the form's text)
+            rpr = run.find(w("rPr"))
+            if style.get("font"):
+                fonts = rpr.find(w("rFonts"))
+                for attr in ("ascii", "hAnsi", "eastAsia", "cs"):
+                    fonts.set(w(attr), style["font"])
+            if style.get("size"):
+                for tag in ("sz", "szCs"):
+                    for el in rpr.findall(w(tag)):
+                        el.set(w("val"), str(int(style["size"] * 2)))
+        parent.insert(index, run)
 
     # ------------------------------------------------------------ operations
     def op_cell(self, op: dict):
@@ -293,7 +310,10 @@ class DocxSanitizer:
         hits = []
         for name in self.story_parts():
             for p in self.tree(name).getroot().iter(w("p")):
-                if target in _norm(_text_of(p)):
+                # a paragraph anchoring a text box also holds the box's text: take the innermost
+                if target in _norm(_text_of(p)) and not any(
+                    target in _norm(_text_of(q)) for q in p.iter(w("p")) if q is not p
+                ):
                     hits.append(p)
         if not hits or len(hits) <= occurrence:
             raise SanitizeError(f"paragraph not found: {contains!r}")
@@ -311,6 +331,87 @@ class DocxSanitizer:
                 self._insert_marker(parent, parent.index(r) + 1, r.find(w("rPr")), op["slot"])
                 return
         raise SanitizeError(f"run not found for {op['contains']!r}")
+
+    def op_drop_fallback(self, op: dict):
+        """Remove the legacy VML copies (mc:Fallback) of text boxes and shapes.
+
+        Word and LibreOffice draw the DrawingML version (mc:Choice); the fallback
+        would otherwise keep a second copy of every historical value.
+        """
+        MC = "http://schemas.openxmlformats.org/markup-compatibility/2006"
+        n = 0
+        for name in self.story_parts():
+            for fb in list(self.tree(name).getroot().iter(f"{{{MC}}}Fallback")):
+                fb.getparent().remove(fb)
+                n += 1
+        if n == 0 and not op.get("optional"):
+            raise SanitizeError("drop_fallback: no mc:Fallback found")
+
+    def op_textbox_nowrap(self, op: dict):
+        """Keep a text box value on one line (Word output): a value longer than the
+        historical one would otherwise wrap and be clipped by the fixed box height."""
+        WPS = "http://schemas.microsoft.com/office/word/2010/wordprocessingShape"
+        for contains in op["contains"]:
+            p = self._find_paragraph(contains)
+            shape = next((a for a in p.iterancestors() if a.tag == f"{{{WPS}}}wsp"), None)
+            body = shape.find(f"{{{WPS}}}bodyPr") if shape is not None else None
+            if body is None:
+                raise SanitizeError(f"textbox_nowrap: {contains!r} is not in a text box")
+            body.set("wrap", "none")
+
+    def op_mark_word(self, op: dict):
+        """Put a zero-width marker right after a word (e.g. the signature label «الاستشاري»).
+
+        The word may share a run with other labels ("الاستشاري    المقاول    المالك"),
+        so the run is split exactly at the end of the word. ``occurrence`` counts over
+        all body paragraphs (negative = from the end).
+        """
+        words = op["words"]
+        hits = []
+        for p in self.tree("word/document.xml").getroot().iter(w("p")):
+            runs = [r for r in p.iter(w("r")) if r.find(w("t")) is not None]
+            full = "".join(_text_of(r) for r in runs)
+            for word in words:
+                for m in re.finditer(re.escape(word), full):
+                    hits.append((p, runs, m.end()))
+        if not hits:
+            raise SanitizeError(f"mark_word: none of {words} found")
+        hits.sort(key=lambda h: 0)  # document order is kept by iteration
+        p, runs, end = hits[int(op.get("occurrence", -1))]
+        pos = 0
+        for r in runs:
+            txt = _text_of(r)
+            if pos + len(txt) >= end:
+                cut = end - pos
+                t_el = r.findall(w("t"))
+                head, tail_txt = txt[:cut], txt[cut:]
+                for extra in t_el[1:]:
+                    r.remove(extra)
+                t_el[0].text = head
+                t_el[0].set("{http://www.w3.org/XML/1998/namespace}space", "preserve")
+                parent = r.getparent()
+                idx = parent.index(r)
+                text = self.new_marker(op["slot"]) if self.with_markers else "\u00a0" * 6
+                mrun = _make_marker_run(r.find(w("rPr")), text, True, self.default_cs_font())
+                mrpr = mrun.find(w("rPr"))
+                for tag in ("sz", "szCs", "spacing"):
+                    for el in mrpr.findall(w(tag)):
+                        mrpr.remove(el)
+                for tag, val in (("spacing", "-20"), ("sz", "2"), ("szCs", "2")):
+                    el = etree.SubElement(mrpr, w(tag))
+                    el.set(w("val"), val)
+                parent.insert(idx + 1, mrun)
+                if tail_txt:
+                    tail = copy.deepcopy(r)
+                    for tt in tail.findall(w("t")):
+                        tail.remove(tt)
+                    nt = etree.SubElement(tail, w("t"))
+                    nt.text = tail_txt
+                    nt.set("{http://www.w3.org/XML/1998/namespace}space", "preserve")
+                    parent.insert(idx + 2, tail)
+                return
+            pos += len(txt)
+        raise SanitizeError("mark_word: run not found")
 
     def op_text(self, op: dict):
         """Remove a phrase inside a paragraph (may span runs) and mark its position."""
@@ -336,8 +437,50 @@ class DocxSanitizer:
                 s0, s1 = max(start, a) - a, min(end, b) - a
                 t.text = txt[:s0] + txt[s1:]
                 t.set("{http://www.w3.org/XML/1998/namespace}space", "preserve")
-                if not marker_done and op.get("slot"):
+                if not marker_done and op.get("slot") and op.get("reserve"):
+                    # a value inside running text: keep a blank gap of figure spaces where the
+                    # value will be drawn (same in both variants, so the layout cannot shift);
+                    # the marker itself is zero-width
                     marker_done = True
+                    before, after = txt[:s0], txt[s1:]
+                    t.text = before
+                    parent = r.getparent()
+                    idx = parent.index(r)
+                    text = self.new_marker(op["slot"]) if self.with_markers else "\u00a0" * 6
+                    mrun = _make_marker_run(r.find(w("rPr")), text, True, self.default_cs_font())
+                    mrpr = mrun.find(w("rPr"))
+                    for tag in ("sz", "szCs", "spacing"):
+                        for el in mrpr.findall(w(tag)):
+                            mrpr.remove(el)
+                    for tag, val in (("spacing", "-20"), ("sz", "2"), ("szCs", "2")):
+                        el = etree.SubElement(mrpr, w(tag))
+                        el.set(w("val"), val)
+                    filler = copy.deepcopy(r)
+                    for tt in filler.findall(w("t")):
+                        filler.remove(tt)
+                    ft = etree.SubElement(filler, w("t"))
+                    ft.text = FILLER * int(op["reserve"])
+                    ft.set("{http://www.w3.org/XML/1998/namespace}space", "preserve")
+                    parent.insert(idx + 1, mrun)
+                    parent.insert(idx + 2, filler)
+                    if after:
+                        tail = copy.deepcopy(r)
+                        for tt in tail.findall(w("t")):
+                            tail.remove(tt)
+                        nt = etree.SubElement(tail, w("t"))
+                        nt.text = after
+                        nt.set("{http://www.w3.org/XML/1998/namespace}space", "preserve")
+                        parent.insert(idx + 3, tail)
+                elif not marker_done and op.get("slot"):
+                    marker_done = True
+                    if op.get("keep_line"):
+                        # the value was the whole line: a no-break space in the text's own format holds
+                        # the line height in both variants (use with "zero_width")
+                        hold = copy.deepcopy(r)
+                        for tt in hold.findall(w("t")):
+                            hold.remove(tt)
+                        etree.SubElement(hold, w("t")).text = "\u00a0"
+                        r.addnext(hold)
                     if self.with_markers:
                         # split: put marker run after this run
                         before, after = txt[:s0], txt[s1:]
@@ -345,6 +488,14 @@ class DocxSanitizer:
                         parent = r.getparent()
                         idx = parent.index(r)
                         mrun = _make_marker_run(r.find(w("rPr")), self.new_marker(op["slot"]), True, self.default_cs_font())
+                        if op.get("zero_width"):
+                            # a tiny marker cannot change the line (the slot gets its height from "pad")
+                            mrpr = mrun.find(w("rPr"))
+                            for tag in ("sz", "szCs", "spacing"):
+                                for el in mrpr.findall(w(tag)):
+                                    mrpr.remove(el)
+                            for tag, val in (("spacing", "-20"), ("sz", "2"), ("szCs", "2")):
+                                etree.SubElement(mrpr, w(tag)).set(w("val"), val)
                         parent.insert(idx + 1, mrun)
                         if after:
                             tail = copy.deepcopy(r)
@@ -356,6 +507,10 @@ class DocxSanitizer:
                             parent.insert(idx + 2, tail)
                     else:
                         self.new_marker(op["slot"])  # phrase simply removed in the clean variant
+                        if op.get("ltr"):
+                            # English label in a right-to-left paragraph: a left-to-right mark keeps
+                            # "Villa of :" from turning into ": Villa of" once the value is gone
+                            t.text = txt[:s0] + "\u200e" + txt[s1:]
 
     def op_replace_all(self, op: dict):
         """Replace a literal string in all text nodes (e.g. ☑ -> ☐)."""
@@ -516,6 +671,43 @@ class DocxSanitizer:
         if n == 0:
             raise SanitizeError("photo_grid: no photo cards found")
 
+    def op_clear_columns(self, op: dict):
+        """Clear every data cell under the given column headers (tables of progress values).
+
+        Columns are matched on the table grid (gridSpan aware), so rows with merged
+        or split cells are handled too.
+        """
+        heads = [_norm(h) for h in op["headers"]]
+
+        def spans(cells):
+            pos, out = 0, []
+            for c in cells:
+                gs = c.find(f"{w('tcPr')}/{w('gridSpan')}")
+                n = int(gs.get(w("val"))) if gs is not None else 1
+                out.append((pos, pos + n))
+                pos += n
+            return out
+
+        n = 0
+        for tbl in self.tree("word/document.xml").getroot().iter(w("tbl")):
+            ranges = None
+            for tr in tbl.findall(w("tr")):
+                cells = _row_cells(tr)
+                texts = [_norm(_text_of(c)) for c in cells]
+                sp = spans(cells)
+                hits = [sp[i] for i, t in enumerate(texts) if t in heads]
+                if hits:
+                    ranges = hits
+                    continue
+                if ranges is None:
+                    continue
+                for c, (a0, a1) in zip(cells, sp):
+                    if any(a0 >= r0 and a1 <= r1 for r0, r1 in ranges) and _text_of(c).strip():
+                        self._clear_cell(c, None)
+                        n += 1
+        if n == 0 and not op.get("optional"):
+            raise SanitizeError(f"clear_columns: nothing cleared for {op['headers']}")
+
     def op_trim_leading_empty_paragraphs(self, op: dict):
         """Remove empty paragraphs at the top of the body (pulls the letter up under the letterhead)."""
         body = self.tree("word/document.xml").getroot().find(w("body"))
@@ -602,6 +794,25 @@ class DocxSanitizer:
             # custom properties (e.g. DLP classification) can carry user names: drop the part
             self.removed.append(etree.fromstring(self.parts["docProps/custom.xml"]).xpath("string()"))
             self._drop_part("docProps/custom.xml")
+        # SharePoint / document-library metadata (content type ids, revision data): not needed
+        custom = [n for n in self.parts if n.startswith("customXml/")]
+        if custom:
+            for n in custom:
+                del self.parts[n]
+                if n in self.order:
+                    self.order.remove(n)
+            for rels_name in [n for n in self.parts if n.endswith(".rels")]:
+                rels = etree.fromstring(self.parts[rels_name])
+                drop = [r for r in rels if "customXml/" in r.get("Target", "")]
+                for r in drop:
+                    rels.remove(r)
+                if drop:
+                    self.parts[rels_name] = etree.tostring(rels, xml_declaration=True, encoding="UTF-8", standalone=True)
+            ct = etree.fromstring(self.parts["[Content_Types].xml"])
+            for el in list(ct):
+                if el.get("PartName", "").startswith("/customXml/"):
+                    ct.remove(el)
+            self.parts["[Content_Types].xml"] = etree.tostring(ct, xml_declaration=True, encoding="UTF-8", standalone=True)
         for n in list(self.parts):
             if n == "word/people.xml" or n.startswith("word/comments"):
                 raise SanitizeError(f"unexpected part with personal data: {n}")
@@ -705,6 +916,7 @@ class DocxSanitizer:
             fn = getattr(self, "op_" + op["op"], None)
             if fn is None:
                 raise SanitizeError(f"unknown docx op {op['op']}")
+            self._marker_style = op.get("marker")
             fn(op)
         self.scrub_metadata()
         for name, tree in self.trees.items():

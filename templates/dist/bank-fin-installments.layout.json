@@ -1,0 +1,108 @@
+{
+ "key": "bank-fin-installments",
+ "version": 1,
+ "format": "docx",
+ "sourceSha256": "81f777a0cea99612b81a4f5dfc6c40987d15d47e9f8d69fa47ac888deb02abe7",
+ "baseSha256": "79f517e95231fd508f2edafa6dacd794d2e83dd01df59939135dbd1bff9d71d3",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 595.3,
+   "height": 841.89
+  }
+ ],
+ "slots": {
+  "project_id": {
+   "page": 0,
+   "baseline": 209.3,
+   "size": 12.0,
+   "rect": [
+    84.4,
+    194.15,
+    361.4,
+    221.95
+   ]
+  },
+  "owner": {
+   "page": 0,
+   "baseline": 237.9,
+   "size": 14.0,
+   "rect": [
+    84.4,
+    221.95,
+    361.4,
+    249.85
+   ]
+  },
+  "consultant": {
+   "page": 0,
+   "baseline": 265.75,
+   "size": 14.0,
+   "rect": [
+    84.4,
+    249.85,
+    361.4,
+    277.65
+   ]
+  },
+  "contractor": {
+   "page": 0,
+   "baseline": 293.45,
+   "size": 13.5,
+   "rect": [
+    84.4,
+    277.65,
+    361.4,
+    305.55
+   ]
+  },
+  "location": {
+   "page": 0,
+   "baseline": 321.45,
+   "size": 14.0,
+   "rect": [
+    84.4,
+    305.55,
+    361.4,
+    333.35
+   ]
+  },
+  "date": {
+   "page": 0,
+   "baseline": 98.65,
+   "size": 12.0,
+   "rect": [
+    323.23,
+    85.03,
+    433.23,
+    103.54
+   ]
+  },
+  "owner_2": {
+   "page": 0,
+   "baseline": 526.15,
+   "size": 14.0,
+   "rect": [
+    -26.25,
+    511.68,
+    193.75,
+    531.17
+   ]
+  }
+ },
+ "docx": {
+  "markers": {
+   "QZ1ZQ": "date",
+   "QZ2ZQ": "project_id",
+   "QZ3ZQ": "owner",
+   "QZ4ZQ": "consultant",
+   "QZ5ZQ": "contractor",
+   "QZ6ZQ": "location",
+   "QZ7ZQ": "owner_2"
+  }
+ },
+ "build": {
+  "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+  "layoutDiff": 0.000707
+ }
+}

@@ -53,7 +53,7 @@ for (const d of defs) {
   md += `- **Processing:** ${d.format === 'docx' ? 'sanitized DOCX copy → LibreOffice PDF base (OFL font substitutes) → slot geometry from invisible markers → browser overlay' : 'sanitized original PDF (true redaction / object removal) → fixed slot rectangles → browser overlay'}\n`;
   md += `- **Purpose:** ${d.description}\n`;
   if (d.reviewNotes) md += `- **Notes:** ${d.reviewNotes}\n`;
-  const ops = [...new Set(d.sanitize.map((o: { op: string }) => OPS[o.op] ?? o.op))];
+  const ops = d.sanitize === 'private' ? ['private operations (they name historical client values, kept with the private originals)'] : [...new Set(d.sanitize.map((o: { op: string }) => OPS[o.op] ?? o.op))];
   md += `- **Sanitization:** ${ops.join('; ')}; document metadata scrubbed.\n`;
   md += d.fields.some((f: MappingItem) => 'stamp' in f)
     ? `- **Signature / stamp areas:** the ACAD stamp & signature (uploaded privately in Settings) can optionally be placed on the consultant signature area.\n\n`

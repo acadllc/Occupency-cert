@@ -1,0 +1,185 @@
+{
+  "key": "bank-ten-drawings-approval",
+  "version": 1,
+  "status": "verified",
+  "name": "Drawings Approval Request (DSN-CD-00)",
+  "nameAr": "طلب إعتماد المخططات",
+  "description": "First Abu Dhabi Bank housing-loan form: Drawings Approval Request (DSN-CD-00).",
+  "category": "اوراق المناقصة",
+  "projectType": "bank",
+  "source": "private/bank/اوراق المناقصة/10-DSN-CD-00 CDSubmission.pdf",
+  "format": "pdf",
+  "reviewNotes": "Blank scanned bank form (no historical values); the project details are drawn into the boxes.",
+  "sanitize": [],
+  "slots": {
+    "date_day": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        482,
+        72,
+        503,
+        88
+      ]
+    },
+    "date_month": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        459,
+        72,
+        477,
+        88
+      ]
+    },
+    "date_year": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        418,
+        72,
+        453,
+        88
+      ]
+    },
+    "project_id": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        58,
+        236,
+        408,
+        258
+      ]
+    },
+    "location": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        58,
+        259,
+        408,
+        280
+      ]
+    },
+    "owner": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        58,
+        281,
+        408,
+        302
+      ]
+    },
+    "stamp": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        360.0,
+        560.0,
+        440.0,
+        640.0
+      ]
+    }
+  },
+  "fields": [
+    {
+      "slot": "date_day",
+      "value": "{date|day}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center"
+    },
+    {
+      "slot": "date_month",
+      "value": "{date|month}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center"
+    },
+    {
+      "slot": "date_year",
+      "value": "{date|year}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center"
+    },
+    {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "right"
+    },
+    {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right"
+    },
+    {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right"
+    },
+    {
+      "slot": "stamp",
+      "stamp": {
+        "size": 80,
+        "anchor": "center"
+      }
+    }
+  ]
+}

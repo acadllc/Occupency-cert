@@ -1,0 +1,193 @@
+{
+  "key": "bank-ext-form",
+  "version": 1,
+  "status": "verified",
+  "name": "Project Time Extension Form",
+  "nameAr": "نموذج تمديد الفترة الزمنية للمشروع",
+  "description": "Project Time Extension Form",
+  "category": "تمديد البنك",
+  "projectType": "bank",
+  "source": "private/bank/تمديد البنك/نموذج تمديد بنك2.docx",
+  "format": "docx",
+  "sanitize": "private",
+  "slots": {
+    "project_id": {
+      "kind": "cell"
+    },
+    "owner": {
+      "kind": "cell"
+    },
+    "consultant": {
+      "kind": "cell"
+    },
+    "contractor": {
+      "kind": "cell"
+    },
+    "location": {
+      "kind": "cell"
+    },
+    "start_date": {
+      "kind": "cell"
+    },
+    "end_date": {
+      "kind": "cell"
+    },
+    "date": {
+      "kind": "inline",
+      "width": 110
+    },
+    "stamp": {
+      "kind": "inline",
+      "width": 10
+    },
+    "components_text": {
+      "kind": "inline",
+      "width": 330
+    }
+  },
+  "fields": [
+    {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "contractor",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "start_date",
+      "value": "project_start_date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "end_date",
+      "value": "project_end_date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "slot": "stamp",
+      "stamp": {
+        "size": 105,
+        "anchor": "marker",
+        "dx": 28,
+        "dy": 30
+      }
+    },
+    {
+      "slot": "components_text",
+      "value": "project_components_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "layoutTolerance": 0.004
+}

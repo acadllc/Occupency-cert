@@ -46,12 +46,22 @@ def sha256(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
 
+PRIVATE_OPS = SOURCES / "private" / "sanitize"
+
+
 def load_definitions(only: list[str] | None = None) -> list[dict]:
     defs = []
     for f in sorted(DEFS.glob("*.json")):
         d = json.loads(f.read_text(encoding="utf-8"))
         if only and d["key"] not in only:
             continue
+        if d.get("sanitize") == "private":
+            # operations that name historical client values are kept next to the private originals
+            ops = PRIVATE_OPS / f"{d['key']}.json"
+            if not ops.exists():
+                print(f"[skip] {d['key']:<34} private sanitize operations not available here", file=sys.stderr)
+                continue
+            d["sanitize"] = json.loads(ops.read_text(encoding="utf-8"))
         defs.append(d)
     return defs
 
@@ -80,12 +90,38 @@ def resolve_slot(name: str, spec: dict, markers_by_slot: dict, base: "fitz.Docum
     elif kind == "inline":
         width = spec["width"]
         pad = spec.get("pad", 2)
-        if spec.get("dir", "rtl") == "rtl":
+        if spec.get("dir") == "center":
+            cx = (x0 + x1) / 2 + spec.get("shift", 0)
+            out["rect"] = [round(cx - width / 2, 2), round(y0 - pad, 2), round(cx + width / 2, 2), round(y1 + pad, 2)]
+        elif spec.get("dir", "rtl") == "rtl":
             right = x1 + spec.get("shift", 0)
             out["rect"] = [round(right - width, 2), round(y0 - pad, 2), round(right, 2), round(y1 + pad, 2)]
         else:
             left = x0 + spec.get("shift", 0)
             out["rect"] = [round(left, 2), round(y0 - pad, 2), round(left + width, 2), round(y1 + pad, 2)]
+    elif kind == "gap":
+        # blank gap reserved inside running text (op "text" with "reserve"): from the zero-width
+        # marker to the next word on the same line (left for RTL, right for LTR)
+        page = base[m["page"]]
+        chars = []
+        for b in page.get_text("rawdict")["blocks"]:
+            for line in b.get("lines", []):
+                for span in line["spans"]:
+                    for c in span["chars"]:
+                        if c["c"].strip() and abs(c["origin"][1] - m["baseline"]) < 2.5:
+                            chars.append((c["bbox"], span["size"]))
+        size = max((sz for _, sz in chars), default=12)
+        rtl = spec.get("dir", "rtl") == "rtl"
+        if rtl:
+            right = x1
+            lefts = [bb[2] for bb, _ in chars if bb[2] <= x0 + 0.5]
+            left = max(lefts) + 1 if lefts else right - spec.get("width", 150)
+        else:
+            left = x0
+            rights = [bb[0] for bb, _ in chars if bb[0] >= x1 - 0.5]
+            right = min(rights) - 1 if rights else left + spec.get("width", 150)
+        out["rect"] = [round(left, 2), round(m["baseline"] - size * 0.95, 2), round(right, 2), round(m["baseline"] + size * 0.3, 2)]
+        out["size"] = round(size, 2)
     elif kind == "line_leftmost":
         # leftmost word group on the marker's line (e.g. the consultant signature label)
         page = base[m["page"]]
@@ -132,7 +168,8 @@ def build_docx(defn: dict, src: bytes) -> tuple[bytes, dict, list[str], dict]:
     base = fitz.open(stream=clean_pdf, filetype="pdf")
     mdoc = fitz.open(stream=marked_pdf, filetype="pdf")
     drift = compare_geometry(base, mdoc)
-    if drift > 0.002:
+    # a zero-width marker inside a line of labels may nudge the next words by a point or two
+    if drift > defn.get("layoutTolerance", 0.002):
         raise RuntimeError(f"marker variant changed the layout ({drift:.4%} of pixels differ)")
     found = find_markers(mdoc)
     markers_by_slot = {marked.markers[t]: info for t, info in found.items() if t in marked.markers}

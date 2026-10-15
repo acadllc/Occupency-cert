@@ -1,0 +1,108 @@
+{
+ "key": "bank-fin-owner-signature",
+ "version": 1,
+ "format": "docx",
+ "sourceSha256": "8d938e413e18d5304b9d170e4e1d3b95e2fd66be781b9539996c76a3f841593e",
+ "baseSha256": "7383df33bfa913b58313e25f8ac604478e2a14a69433b4e371e6606dcc86a32e",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 595.3,
+   "height": 841.89
+  }
+ ],
+ "slots": {
+  "project_id": {
+   "page": 0,
+   "baseline": 218.5,
+   "size": 12.0,
+   "rect": [
+    224.2,
+    203.35,
+    520.8,
+    231.15
+   ]
+  },
+  "owner": {
+   "page": 0,
+   "baseline": 247.1,
+   "size": 14.0,
+   "rect": [
+    224.2,
+    231.15,
+    520.8,
+    259.05
+   ]
+  },
+  "consultant": {
+   "page": 0,
+   "baseline": 274.95,
+   "size": 14.0,
+   "rect": [
+    224.2,
+    259.05,
+    520.8,
+    286.85
+   ]
+  },
+  "contractor": {
+   "page": 0,
+   "baseline": 302.65,
+   "size": 13.5,
+   "rect": [
+    224.2,
+    286.85,
+    520.8,
+    314.75
+   ]
+  },
+  "location": {
+   "page": 0,
+   "baseline": 330.65,
+   "size": 14.0,
+   "rect": [
+    224.2,
+    314.75,
+    520.8,
+    342.55
+   ]
+  },
+  "date": {
+   "page": 0,
+   "baseline": 126.25,
+   "size": 12.0,
+   "rect": [
+    348.43,
+    112.63,
+    458.43,
+    131.14
+   ]
+  },
+  "stamp": {
+   "page": 0,
+   "baseline": 502.95,
+   "size": 1.0,
+   "rect": [
+    74.19,
+    500.06,
+    84.19,
+    505.17
+   ]
+  }
+ },
+ "docx": {
+  "markers": {
+   "QZ1ZQ": "date",
+   "QZ2ZQ": "project_id",
+   "QZ3ZQ": "owner",
+   "QZ4ZQ": "consultant",
+   "QZ5ZQ": "contractor",
+   "QZ6ZQ": "location",
+   "QZ7ZQ": "stamp"
+  }
+ },
+ "build": {
+  "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+  "layoutDiff": 0.000723
+ }
+}

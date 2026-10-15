@@ -16,6 +16,7 @@ counts only (no private values).
 from __future__ import annotations
 
 import json
+import re
 import subprocess
 import sys
 import unicodedata
@@ -83,6 +84,12 @@ def leak_needles(removed: list[str]) -> list[str]:
         n = norm(v)
         if len(n) < 3 or n in company:
             continue
+        # ACAD's own name (any spelling) is not client data and appears in the letterhead
+        if re.search(r"(?i)\bacad\b|[اأآ]كاد", v):
+            continue
+        # bare percentages / small numbers also occur in the standard wording (e.g. 100%, 5%)
+        if re.fullmatch(r"[%\s\d.,\-]{1,8}", v.strip()):
+            continue
         needles.append(n)
     return needles
 
@@ -100,7 +107,8 @@ def check(key: str) -> dict:
         if any(n in h or n[::-1] in h for h in hay_pdf):
             leaks.append(("pdf", n))
     for v in removed:
-        if not v.startswith("[") and norm(v) not in company and token_leak(v, pdf_tokens):
+        if (not v.startswith("[") and norm(v) not in company and not re.search(r"(?i)\bacad\b|[اأآ]كاد", v)
+                and token_leak(v, pdf_tokens)):
             leaks.append(("pdf-words", norm(v)))
     if layout["format"] == "docx":
         hay_docx = norm(docx_all_text((SANITIZED / f"{key}.docx").read_bytes()))

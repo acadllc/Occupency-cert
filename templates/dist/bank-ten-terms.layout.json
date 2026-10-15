@@ -1,0 +1,160 @@
+{
+ "key": "bank-ten-terms",
+ "version": 1,
+ "format": "docx",
+ "sourceSha256": "2d1618c76623391283c9212e367ccfe487468776f707773986c5c57f612db816",
+ "baseSha256": "0a1f51f98e1631dcc83fb3f4fd71f38e4dfaf8eebaf1f4bef8783cc2bbe03b85",
+ "pageCount": 8,
+ "pages": [
+  {
+   "width": 595.3,
+   "height": 841.89
+  },
+  {
+   "width": 595.3,
+   "height": 841.89
+  },
+  {
+   "width": 595.3,
+   "height": 841.89
+  },
+  {
+   "width": 595.3,
+   "height": 841.89
+  },
+  {
+   "width": 595.3,
+   "height": 841.89
+  },
+  {
+   "width": 595.3,
+   "height": 841.89
+  },
+  {
+   "width": 595.3,
+   "height": 841.89
+  },
+  {
+   "width": 595.3,
+   "height": 841.89
+  }
+ ],
+ "slots": {
+  "tender_no": {
+   "page": 0,
+   "baseline": 108.3,
+   "size": 16.0,
+   "rect": [
+    380.17,
+    93.1,
+    493.01,
+    113.1
+   ]
+  },
+  "tender_no_en": {
+   "page": 0,
+   "baseline": 106.1,
+   "size": 16.0,
+   "rect": [
+    79.65,
+    90.9,
+    180.65,
+    110.9
+   ]
+  },
+  "project_id": {
+   "page": 0,
+   "baseline": 129.7,
+   "size": 16.0,
+   "rect": [
+    329.37,
+    113.44,
+    393.37,
+    135.16
+   ]
+  },
+  "project_id_en": {
+   "page": 0,
+   "baseline": 132.35,
+   "size": 16.0,
+   "rect": [
+    138.9,
+    116.09,
+    258.9,
+    137.81
+   ]
+  },
+  "owner": {
+   "page": 0,
+   "baseline": 155.6,
+   "size": 12.0,
+   "rect": [
+    309.08,
+    142.91,
+    484.08,
+    160.19
+   ]
+  },
+  "owner_en": {
+   "page": 0,
+   "baseline": 161.85,
+   "size": 10.0,
+   "rect": [
+    93.4,
+    150.8,
+    278.4,
+    165.96
+   ]
+  },
+  "location": {
+   "page": 0,
+   "baseline": 194.6,
+   "size": 12.0,
+   "rect": [
+    305.98,
+    181.91,
+    475.98,
+    199.19
+   ]
+  },
+  "plot": {
+   "page": 0,
+   "baseline": 209.3,
+   "size": 12.0,
+   "rect": [
+    350.46,
+    196.44,
+    470.46,
+    213.83
+   ]
+  },
+  "location_en": {
+   "page": 0,
+   "baseline": 200.1,
+   "size": 12.0,
+   "rect": [
+    115.95,
+    187.41,
+    295.95,
+    204.69
+   ]
+  }
+ },
+ "docx": {
+  "markers": {
+   "QZ1ZQ": "tender_no",
+   "QZ2ZQ": "tender_no_en",
+   "QZ3ZQ": "project_id",
+   "QZ4ZQ": "project_id_en",
+   "QZ5ZQ": "owner",
+   "QZ6ZQ": "owner_en",
+   "QZ7ZQ": "location",
+   "QZ8ZQ": "plot",
+   "QZ9ZQ": "location_en"
+  }
+ },
+ "build": {
+  "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+  "layoutDiff": 0.003537
+ }
+}

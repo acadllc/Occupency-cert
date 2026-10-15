@@ -88,6 +88,19 @@ class PdfSanitizer:
             self.pending_redactions.setdefault(op["page"], []).append((r, "lineart"))
         self.removed.append(f"[line art p{op['page']} x{len(op['rects'])}]")
 
+    def op_remove_annots(self, op: dict):
+        """Delete annotations (e.g. values typed into a scanned form as FreeText boxes)."""
+        n = 0
+        for page in self.doc:
+            for a in list(page.annots() or []):
+                content = (a.info.get("content") or "").strip()
+                if content:
+                    self.removed.append(content)
+                page.delete_annot(a)
+                n += 1
+        if n == 0 and not op.get("optional"):
+            raise PdfSanitizeError("no annotations found")
+
     def op_flatten_form(self, op: dict):
         """Reset every form field to empty/Off and bake the empty appearance into the page.
 

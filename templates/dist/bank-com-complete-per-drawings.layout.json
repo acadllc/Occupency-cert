@@ -1,0 +1,144 @@
+{
+ "key": "bank-com-complete-per-drawings",
+ "version": 1,
+ "format": "docx",
+ "sourceSha256": "355aa1277c98b162c90474ea84df25ad42b1ac4aae5733b17e5669128e878d8a",
+ "baseSha256": "702165b2c9ff945ef24acd4b2cd85646522f5e2cb509602103046762a2ad8182",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 595.3,
+   "height": 841.89
+  }
+ ],
+ "slots": {
+  "project_id": {
+   "page": 0,
+   "baseline": 210.1,
+   "size": 15.0,
+   "rect": [
+    233.9,
+    190.85,
+    511.0,
+    218.65
+   ]
+  },
+  "owner": {
+   "page": 0,
+   "baseline": 232.9,
+   "size": 15.0,
+   "rect": [
+    233.9,
+    218.65,
+    511.0,
+    246.45
+   ]
+  },
+  "consultant": {
+   "page": 0,
+   "baseline": 263.05,
+   "size": 16.0,
+   "rect": [
+    233.9,
+    246.45,
+    511.0,
+    274.25
+   ]
+  },
+  "contractor": {
+   "page": 0,
+   "baseline": 290.9,
+   "size": 16.0,
+   "rect": [
+    233.9,
+    274.25,
+    511.0,
+    302.15
+   ]
+  },
+  "location": {
+   "page": 0,
+   "baseline": 321.35,
+   "size": 15.0,
+   "rect": [
+    233.9,
+    302.15,
+    511.0,
+    329.85
+   ]
+  },
+  "project_id_2": {
+   "page": 0,
+   "baseline": 349.1,
+   "size": 15.0,
+   "rect": [
+    233.9,
+    329.85,
+    511.0,
+    357.65
+   ]
+  },
+  "stamp": {
+   "page": 0,
+   "baseline": 497.45,
+   "size": 1.0,
+   "rect": [
+    520.61,
+    494.56,
+    530.61,
+    499.67
+   ]
+  },
+  "components_text": {
+   "page": 0,
+   "baseline": 385.65,
+   "size": 1.0,
+   "rect": [
+    53.46,
+    373.76,
+    243.46,
+    396.87
+   ]
+  },
+  "contractor_2": {
+   "page": 0,
+   "baseline": 135.1,
+   "size": 16.0,
+   "rect": [
+    259.96,
+    119.9,
+    489.96,
+    139.9
+   ]
+  },
+  "date": {
+   "page": 0,
+   "baseline": 112.45,
+   "size": 12.0,
+   "rect": [
+    171.56,
+    101.05,
+    481.58,
+    116.05
+   ]
+  }
+ },
+ "docx": {
+  "markers": {
+   "QZ1ZQ": "project_id",
+   "QZ2ZQ": "owner",
+   "QZ3ZQ": "consultant",
+   "QZ4ZQ": "contractor",
+   "QZ5ZQ": "location",
+   "QZ6ZQ": "project_id_2",
+   "QZ7ZQ": "stamp",
+   "QZ8ZQ": "components_text",
+   "QZ9ZQ": "contractor_2",
+   "QZ10ZQ": "date"
+  }
+ },
+ "build": {
+  "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+  "layoutDiff": 0.0023
+ }
+}
