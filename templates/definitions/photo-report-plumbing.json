@@ -907,7 +907,7 @@
       "stamp": {
         "size": 105,
         "anchor": "center",
-        "page": "last"
+        "page": "every"
       }
     }
   ],

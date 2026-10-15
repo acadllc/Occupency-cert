@@ -236,10 +236,11 @@ describe('company stamp', () => {
     const ownerOnly = await engine.generate('owner-undertaking-cd-renewal', sampleProject, { stamp: true });
     expect(ownerOnly.placements.filter((p) => p.kind === 'stamp')).toHaveLength(0);
     const photoReport = await engine.generate('photo-report-mechanical', sampleProject, { stamp: true });
-    expect(photoReport.placements.filter((p) => p.kind === 'stamp')).toHaveLength(1);
-    // photo reports: signature at the bottom of the LAST remaining page
+    expect(photoReport.placements.filter((p) => p.kind === 'stamp')).toHaveLength(photoReport.pageCount);
+    // photo reports: signature at the bottom of EVERY remaining page
     const plumbing = await engine.generate('photo-report-plumbing', sampleProject, { stamp: true });
-    expect(plumbing.placements.find((p) => p.kind === 'stamp')?.page).toBe(plumbing.pageCount - 1);
+    expect(plumbing.pageCount).toBeGreaterThan(1);
+    expect(plumbing.placements.filter((p) => p.kind === 'stamp').map((p) => p.page)).toEqual([...Array(plumbing.pageCount).keys()]);
     const photoReportWord = await engine.generateDocx('photo-report-mechanical', sampleProject, { stamp: true });
     expect(photoReportWord.placements.filter((p) => p.kind === 'stamp')).toHaveLength(1);
   });

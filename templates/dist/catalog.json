@@ -5105,7 +5105,7 @@
       "stamp": {
        "size": 105,
        "anchor": "center",
-       "page": "last"
+       "page": "every"
       }
      }
     ],
@@ -6436,7 +6436,7 @@
       "stamp": {
        "size": 105,
        "anchor": "center",
-       "page": "last"
+       "page": "every"
       }
      }
     ],

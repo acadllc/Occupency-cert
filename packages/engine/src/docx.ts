@@ -159,12 +159,20 @@ export async function buildDocx(d: DocxDeps): Promise<DocxResult> {
   let drawingId = 9000;
   // stamps are positioned on the page (they need no marker in the text)
   const endRuns: string[] = [];
+  const everyPage: { bytes: Uint8Array; x: number; y: number; cx: number; cy: number }[] = [];
   for (const [slotName, v] of values) {
     if (v.kind !== 'stamp') continue;
-    const atEnd = entry.definition.fields.some((f) => f.slot === slotName && 'stamp' in f && f.stamp.page === 'last');
+    const pageMode = entry.definition.fields.find((f) => f.slot === slotName && 'stamp' in f);
+    const mode = pageMode && 'stamp' in pageMode ? pageMode.stamp.page : undefined;
     const size = imageSize(v.bytes);
     const h = v.size * (size.height / size.width);
-    (atEnd ? endRuns : stampRuns).push(
+    if (mode === 'every') {
+      // the footer repeats on every page: anchor the stamp there (relative to the page)
+      everyPage.push({ bytes: v.bytes, x: Math.round((v.cx - v.size / 2) * EMU_PER_PT), y: Math.round((v.cy - h / 2) * EMU_PER_PT), cx: Math.round(v.size * EMU_PER_PT), cy: Math.round(h * EMU_PER_PT) });
+      filled.push(slotName);
+      continue;
+    }
+    (mode === 'last' ? endRuns : stampRuns).push(
       anchoredDrawing(
         addImage(v.bytes),
         ++drawingId,
@@ -240,6 +248,30 @@ export async function buildDocx(d: DocxDeps): Promise<DocxResult> {
       }
     }
     zip.file(name, xml);
+  }
+  if (everyPage.length) {
+    const footers = Object.keys(zip.files).filter((n) => /^word\/footer\d*\.xml$/.test(n));
+    if (!footers.length) warnings.push({ code: 'image_error', slot: 'stamp', message: 'Stamp and signature could not be added to every page (the document has no footer).' });
+    for (const name of footers) {
+      const frelsPath = name.replace('word/', 'word/_rels/') + '.rels';
+      let frels = (await zip.file(frelsPath)?.async('string')) ?? '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"></Relationships>';
+      const runs = everyPage.map((st) => {
+        const { ext } = imageSize(st.bytes);
+        mediaCounter++;
+        const rid = `rIdAcad${mediaCounter}`;
+        const target = `media/acad-${mediaCounter}.${ext === 'png' ? 'png' : 'jpeg'}`;
+        zip.file(`word/${target}`, st.bytes);
+        frels = frels.replace('</Relationships>', `<Relationship Id="${rid}" Type="${REL_IMAGE}" Target="${target}"/></Relationships>`);
+        const e = ext === 'png' ? 'png' : 'jpeg';
+        if (!new RegExp(`Extension="${e}"`, 'i').test(types)) types = types.replace('</Types>', `<Default Extension="${e}" ContentType="image/${e}"/></Types>`);
+        return anchoredDrawing(rid, ++drawingId, 'Company stamp and signature', st.x, st.y, st.cx, st.cy);
+      });
+      let fxml = await zip.file(name)!.async('string');
+      // first paragraph of the footer: after its properties
+      fxml = fxml.replace(/(<w:p(?:\s[^>]*)?>(?:\s*<w:pPr>.*?<\/w:pPr>)?)/s, (m) => m + runs.join(''));
+      zip.file(name, fxml);
+      zip.file(frelsPath, frels);
+    }
   }
   zip.file(relsPath, rels);
   zip.file('[Content_Types].xml', types);
