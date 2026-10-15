@@ -6,6 +6,7 @@
   "nameAr": "تعهد المالك بتجديد شهادة الإستيفاء سنوياً",
   "description": "Owner undertaking to Abu Dhabi Civil Defence to renew the building completion (Estifaa) certificate annually.",
   "category": "Letters",
+  "projectType": "occupancy",
   "source": "01OWNER UNDERTAKE FOR CD ESTIFAA- تعهد المالك بتجديد شهادة الإستيفاء.docx",
   "format": "docx",
   "sanitize": [

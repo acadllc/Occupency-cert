@@ -9,6 +9,7 @@
     "nameAr": "توضيح بخصوص مخططات الأرشيف المعمارية والإنشائية",
     "description": "Letter explaining the archived architectural (ARCH.PDF) and structural (STRUC.PDF) drawings attached to the application.",
     "category": "Letters",
+    "projectType": "occupancy",
     "source": "03EXPLAIN FOR ARCHIVE.docx",
     "format": "docx",
     "fields": [
@@ -198,6 +199,7 @@
     "nameAr": "تكليف وتعهد الاستشاري",
     "description": "DMT Form01-V02: owner's appointment of the consultant, backfilling questions, Abu Dhabi International Codes undertaking and consultant pledge (2 pages).",
     "category": "DMT undertakings",
+    "projectType": "occupancy",
     "source": "TAKLEEF.pdf",
     "format": "pdf",
     "reviewNotes": "Original AcroForm fields are reset and flattened; values are drawn as page content. Owner signature box is intentionally left blank.",
@@ -856,6 +858,7 @@
     "nameAr": "تقرير فحص شبكة الصرف الصحي الداخلي ووصلها بالمناهيل",
     "description": "Consultant report confirming inspection of the internal drainage network and its connections to the manholes.",
     "category": "Letters",
+    "projectType": "occupancy",
     "source": "04Inspection report for the internal drainage system and its connection to the internal manholes تقرير فحص نظام الصرف الداخلي ووصلاته بغرف التفتيش ال.docx",
     "format": "docx",
     "fields": [
@@ -1045,6 +1048,7 @@
     "nameAr": "تعهد بإتمام الاختبارات والسلامة الفنية للمصاعد",
     "description": "DMT form 001/Elevator/occ-2024: elevator supplier/contractor undertaking with elevator system data (2 pages).",
     "category": "DMT undertakings",
+    "projectType": "occupancy",
     "source": "02Testing Commissioning and Safety Procedures of Elevatorsتعهد بإتمام الاختبارات والسلامة الفنية للمصاعد.pdf",
     "format": "pdf",
     "reviewNotes": "DMT (Department of Municipalities and Transport) form. English values are written after the English label and Arabic values before the Arabic label on the same dotted line.",
@@ -1831,6 +1835,7 @@
     "nameAr": "تعهد بإنجاز أعمال الاختبار والتشغيل لأنظمة الغاز",
     "description": "DMT form 001/Gas/occ-2024: gas system contractor undertaking (ADIFGC compliance, ADNOC-licensed installer).",
     "category": "DMT undertakings",
+    "projectType": "occupancy",
     "source": "04Undertaking  the completion of Testing and commissioning of Gas System.pdf",
     "format": "pdf",
     "reviewNotes": "DMT (Department of Municipalities and Transport) form. English values are written after the English label and Arabic values before the Arabic label on the same dotted line.",
@@ -2261,6 +2266,7 @@
     "nameAr": "تعهد بإنجاز كافة الأعمال وإجراء الاختبارات والتشغيل للأنظمة الميكانيكية",
     "description": "DMT form 001/HVAC/OCC-2024: contractor commitment and consultant pledge for HVAC/mechanical testing & commissioning (2 pages).",
     "category": "DMT undertakings",
+    "projectType": "occupancy",
     "source": "01Mechanical systemتعهد بالالتزام ببنود كود أبو ظبي للأعمال الميكانيكية.pdf",
     "format": "pdf",
     "reviewNotes": "DMT (Department of Municipalities and Transport) form. English values are written after the English label and Arabic values before the Arabic label on the same dotted line.",
@@ -2993,6 +2999,7 @@
     "nameAr": "عدم وجود مصاعد",
     "description": "Letter confirming that the project contains no electric elevators.",
     "category": "Letters",
+    "projectType": "occupancy",
     "source": "عدم وجود مصاعد في المشروع.docx",
     "format": "docx",
     "fields": [
@@ -3182,6 +3189,7 @@
     "nameAr": "عدم وجود أنظمة غاز",
     "description": "Letter confirming that the project contains no gas systems.",
     "category": "Letters",
+    "projectType": "occupancy",
     "source": "عدم وجود أنظمة غاز في المشروع.docx",
     "format": "docx",
     "fields": [
@@ -3371,6 +3379,7 @@
     "nameAr": "عدم وجود مسابح",
     "description": "Letter confirming that the project contains no swimming pools.",
     "category": "Letters",
+    "projectType": "occupancy",
     "source": "عدم وجود مسابح في المشروع.docx",
     "format": "docx",
     "fields": [
@@ -3560,6 +3569,7 @@
     "nameAr": "عدد المستخدمين",
     "description": "Letter to the Department of Municipalities and Transport confirming the number of building users.",
     "category": "Letters",
+    "projectType": "occupancy",
     "source": "02NOMBER OF USERS.docx",
     "format": "docx",
     "fields": [
@@ -3775,6 +3785,7 @@
     "nameAr": "تعهد إشغال مبنى – معماري وإنشائي",
     "description": "Undertaking to the Building Permits Department that occupancy and operational loads match the approved architectural and structural design.",
     "category": "Letters",
+    "projectType": "occupancy",
     "source": "01UNDERTAKE STR ARCH.docx",
     "format": "docx",
     "fields": [
@@ -4027,6 +4038,7 @@
     "nameAr": "تعهد المالك بتجديد شهادة الإستيفاء سنوياً",
     "description": "Owner undertaking to Abu Dhabi Civil Defence to renew the building completion (Estifaa) certificate annually.",
     "category": "Letters",
+    "projectType": "occupancy",
     "source": "01OWNER UNDERTAKE FOR CD ESTIFAA- تعهد المالك بتجديد شهادة الإستيفاء.docx",
     "format": "docx",
     "fields": [
@@ -4195,6 +4207,7 @@
     "nameAr": "تعهد عدم ربط شبكة الصرف الصحي مع صرف مياه الأمطار",
     "description": "Owner undertaking that the sewage network is not connected to the rainwater drainage network.",
     "category": "Letters",
+    "projectType": "occupancy",
     "source": "05OWNER UNDERTAKE - تعهد عدم ربط شبكة الصرف الصحي مع صرف مياه الأمطار.docx",
     "format": "docx",
     "fields": [
@@ -4384,6 +4397,7 @@
     "nameAr": "تقرير فني مصور للأعمال الميكانيكية",
     "description": "Photo report of mechanical works with up to 14 captioned site photos (details and notes per photo).",
     "category": "Photo reports",
+    "projectType": "occupancy",
     "source": "تقرير فني مصور للأعمال الميكانيكية.docx",
     "format": "docx",
     "fields": [
@@ -5715,6 +5729,7 @@
     "nameAr": "تقرير فني مصور لأعمال السباكة والصرف الصحي",
     "description": "Photo report of plumbing and drainage works with up to 14 captioned site photos (details and notes per photo).",
     "category": "Photo reports",
+    "projectType": "occupancy",
     "source": "تقرير فني مصور لأعمال السباكة.docx",
     "format": "docx",
     "fields": [
@@ -7046,6 +7061,7 @@
     "nameAr": "تعهد الاستشاري بإنجاز كافة الأعمال الصحية والخزانات",
     "description": "DMT form 001/PLM/occ-2024: consultant undertaking for plumbing, drainage and water tank works.",
     "category": "DMT undertakings",
+    "projectType": "occupancy",
     "source": "03undertaking of the completion of all plumbing works and water tanks تعهد الاستشاري بإنجاز كافة أعمال تمديدات المياه والصرف الصحي والخزانات.pdf",
     "format": "pdf",
     "reviewNotes": "DMT (Department of Municipalities and Transport) form. English values are written after the English label and Arabic values before the Arabic label on the same dotted line.",
@@ -7603,6 +7619,7 @@
     "nameAr": "تعهد بإنجاز أعمال الاختبار والتشغيل للمسابح",
     "description": "DMT form 001/Pool/occ-2024: swimming pool contractor undertaking for testing, commissioning and water safety.",
     "category": "DMT undertakings",
+    "projectType": "occupancy",
     "source": "03Undertaking the Completiuon of Testing and Commissioning of Swimming Pool.pdf",
     "format": "pdf",
     "reviewNotes": "DMT (Department of Municipalities and Transport) form. English values are written after the English label and Arabic values before the Arabic label on the same dotted line.",
@@ -8161,6 +8178,7 @@
     "nameAr": "تعهد الاستشاري بصلاحية المياه للاستخدام الآدمي",
     "description": "DMT form 001/PLM-water/OCC-2024: consultant undertaking that domestic water tanks/networks were cleaned, flushed and are fit for human use.",
     "category": "DMT undertakings",
+    "projectType": "occupancy",
     "source": "01Undertaking of Water Validaity for Human Use تعهد الاستشاري بصلاحية المياه للاستخدام الآدمي.pdf",
     "format": "pdf",
     "reviewNotes": "DMT (Department of Municipalities and Transport) form. English values are written after the English label and Arabic values before the Arabic label on the same dotted line.",

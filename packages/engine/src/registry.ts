@@ -62,6 +62,8 @@ export function validateFields(registry: FieldRegistry, fields: ProjectFields): 
     if (typeof v === 'string') {
       if (f.maxLength && v.length > f.maxLength) errors[f.key] = `Maximum ${f.maxLength} characters.`;
       if (f.type === 'date' && v && !/^\d{4}-\d{2}-\d{2}$/.test(v)) errors[f.key] = 'Invalid date.';
+      if (f.format === 'email' && v.trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim())) errors[f.key] = 'Enter a valid email address.';
+      if (f.format === 'phone' && v.trim() && !/^\+?[\d\s()/-]{7,}$/.test(v.trim())) errors[f.key] = 'Enter a valid phone number.';
       // control characters break PDF text and are never legitimate input
       if (/[\u0000-\u0008\u000B\u000C\u000E-\u001F]/.test(v)) errors[f.key] = 'Contains invalid control characters.';
     }

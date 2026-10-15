@@ -6,6 +6,7 @@
   "nameAr": "تعهد الاستشاري بصلاحية المياه للاستخدام الآدمي",
   "description": "DMT form 001/PLM-water/OCC-2024: consultant undertaking that domestic water tanks/networks were cleaned, flushed and are fit for human use.",
   "category": "DMT undertakings",
+  "projectType": "occupancy",
   "source": "01Undertaking of Water Validaity for Human Use تعهد الاستشاري بصلاحية المياه للاستخدام الآدمي.pdf",
   "format": "pdf",
   "reviewNotes": "DMT (Department of Municipalities and Transport) form. English values are written after the English label and Arabic values before the Arabic label on the same dotted line.",

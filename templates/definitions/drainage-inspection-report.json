@@ -6,6 +6,7 @@
   "nameAr": "تقرير فحص شبكة الصرف الصحي الداخلي ووصلها بالمناهيل",
   "description": "Consultant report confirming inspection of the internal drainage network and its connections to the manholes.",
   "category": "Letters",
+  "projectType": "occupancy",
   "source": "04Inspection report for the internal drainage system and its connection to the internal manholes تقرير فحص نظام الصرف الداخلي ووصلاته بغرف التفتيش ال.docx",
   "format": "docx",
   "sanitize": [

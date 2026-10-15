@@ -3,8 +3,8 @@
 Internal web dashboard for **ACAD Engineering Consultants - One Person Company LLC**
 (اكاد للاستشارات الهندسيه - شركة الشخص الواحد ذ.م.م). Staff enter each project once — Arabic and
 English separately — save it to Supabase, choose individual documents or all of them, and get
-completed PDF or Word files. A new project can start from the **Land Site Plan PDF**, which fills most fields
-automatically. Every file is stored privately and kept in the project's history.
+completed PDF or Word files. A new project can start from its documents — the **Land Site Plan**, **Emirates IDs**, **passports**,
+**كفالة papers** and other PDFs — which fill most fields automatically. Every file is stored privately and kept in the project's history.
 
 - **Frontend:** React + TypeScript + Vite, hosted on GitHub Pages (`https://acadllc.github.io/Occupency-cert/`)
 - **Backend:** Supabase Auth (one shared company login, optional TOTP 2-step), Postgres with Row Level Security, private Storage
@@ -14,9 +14,10 @@ automatically. Every file is stored privately and kept in the project's history.
 | Area | Status |
 | --- | --- |
 | Template sanitization (old owners, IDs, dates, stamps, signatures, metadata removed) | ✅ 18/18, automated leak check passes ([report](docs/template-qa-report.md)) |
-| Field mappings, Arabic RTL shaping, check boxes, photos, optional stamp & signature | ✅ 18/18, rendered and visually reviewed; 58 automated tests |
+| Field mappings, Arabic RTL shaping, check boxes, photos, optional stamp & signature | ✅ 18/18, rendered and visually reviewed; 65 automated tests |
 | Word (.docx) output | ✅ for the 11 Word-based documents (the 7 official PDF forms are always PDF) |
-| Site plan import (fills location, plot, land use and owner from the site plan PDF) | ✅ read in the browser, never uploaded |
+| Document import (site plan incl. multi-page owner lists, Emirates ID, passport, كفالة and other labelled forms) | ✅ read in the browser, never uploaded |
+| Project-type tabs (Occupancy certificate, Architectural, Taqneen, Bank papers, Contractor contracts) | ✅ Occupancy has the 18 documents; the other tabs are ready for their templates |
 | Dashboard: login, projects, search, bilingual inputs, dynamic fields, warnings, PDF/ZIP download, history | ✅ end-to-end tested (Playwright) |
 | Supabase schema, RLS, private buckets | ✅ migrations + RLS test suite (run on PostgreSQL 16) |
 | Live Supabase project | ✅ connected (run new migrations from `supabase/migrations/` when they are added) |
@@ -91,12 +92,17 @@ npm run dev                                    # http://localhost:5173
 
 ## 4. Using the dashboard
 
-1. **New project** → optionally **Upload site plan (PDF)**: the city, area, sector, plot number, land use and owner
-   names (Arabic and English) are read from the site plan on your computer (the file is not uploaded), shown for
-   review, and filled into the form. Existing projects have a **Fill from site plan** button; values you already typed
-   are only replaced if you tick them. Then fill the remaining shared information once (Arabic and English side by side; the derived Arabic/English
-   location preview updates live). Names are never machine-translated.
-2. Tick documents under **Documents to generate** (or *Select all*). Inputs needed only by those documents appear
+1. **New project** → optionally **Upload documents (PDF)** — select several files at once: the site plan (all pages, so
+   every owner is found), Emirates IDs, passports, كفالة papers or other forms. City, area, sector, plot number, land
+   use, owner names (Arabic and English; several owners are listed side by side), ID numbers, nationality, phone and
+   email are read on your computer (the files are not uploaded), shown for review, and filled into the form. Existing
+   projects have a **Fill from documents** button; values you already typed are only replaced if you tick them. Then
+   fill the remaining shared information once (Arabic and English side by side; the derived Arabic/English location
+   preview updates live). Names are never machine-translated. The project also stores the municipality project
+   number, owner phone/email/ID/nationality and the project start/end dates.
+2. Under **Documents to generate**, pick the project type tab (Occupancy certificate, Architectural, Taqneen, Bank
+   papers, Contractor contracts), then tick documents — one by one, a whole category (checkbox next to its title) or
+   the whole tab. Inputs needed only by those documents appear
    under **Document-specific details** (e.g. elevator data, check-box options, photos for photo reports).
 3. **Save & generate** → choose **PDF** or **Word (.docx)** and whether to **add the ACAD stamp & signature**; a pre-flight list shows empty inputs and which documents use them → **Continue with blanks** or go back.
    Each file is generated, uploaded privately and recorded; download individually or as a ZIP. Official government
@@ -138,7 +144,11 @@ ACAD signature place and never get it.
   2-column card grid, photo area above each details table).
 - Word output keeps the original Word layout and fonts as named in the document; on computers without those fonts Word
   substitutes them. The stamp & signature in Word files is a floating image that can be moved or deleted in Word.
-- Site plan import supports the Abu Dhabi Real Estate Centre "Land Site Plan / مخطط أرض" PDF (text-based, not scans).
+- Document import reads text-based PDFs (as downloaded from the government portals/apps); photos and scans have no
+  text and must be typed. The site plan reader targets the Abu Dhabi Real Estate Centre "Land Site Plan / مخطط أرض";
+  other forms are read by their labels (e.g. «اسم المالك», «رقم الهاتف», «رقم المشروع بالبلدية»), so always review the
+  suggested values.
+- When several owners do not fit on one line, the PDF uses a smaller font (down to 5 pt) and wraps inside the box.
 - Over-long values shrink to fit and, if still too long, the PDF is produced with a visible warning rather than being cut off.
 - `05Owner Undertaking for Temporary Occupancy certificate.pdf`, named in the original specification, is not in
   `reference-documents/` and is therefore not implemented.

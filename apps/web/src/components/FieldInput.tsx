@@ -72,7 +72,7 @@ export function FieldInput({ def, value, onChange, missing, error }: Props) {
     }
     default:
       control = (
-        <input id={id} className={cls} dir={dir} value={str} maxLength={def.maxLength} placeholder={def.placeholder} aria-invalid={!!error} aria-describedby={describedBy} autoComplete="off" onChange={(e) => onChange(e.target.value)} />
+        <input id={id} className={cls} dir={dir} type={def.format === 'email' ? 'email' : def.format === 'phone' ? 'tel' : 'text'} inputMode={def.format === 'phone' ? 'tel' : undefined} value={str} maxLength={def.maxLength} placeholder={def.placeholder} aria-invalid={!!error} aria-describedby={describedBy} autoComplete="off" onChange={(e) => onChange(e.target.value)} />
       );
   }
 

@@ -35,6 +35,17 @@
       "placeholder": "e.g. B2N-2026-000123"
     },
     {
+      "key": "municipality_project_number",
+      "label": "Municipality project number",
+      "labelAr": "رقم المشروع بالبلدية",
+      "type": "text",
+      "dir": "ltr",
+      "group": "identification",
+      "scope": "shared",
+      "maxLength": 60,
+      "optional": true
+    },
+    {
       "key": "date",
       "label": "Document date",
       "labelAr": "التاريخ",
@@ -45,6 +56,24 @@
       "help": "Printed as DD/MM/YYYY."
     },
     {
+      "key": "project_start_date",
+      "label": "Project start date",
+      "labelAr": "تاريخ بداية المشروع",
+      "type": "date",
+      "group": "identification",
+      "scope": "shared",
+      "optional": true
+    },
+    {
+      "key": "project_end_date",
+      "label": "Project end date",
+      "labelAr": "تاريخ نهاية المشروع",
+      "type": "date",
+      "group": "identification",
+      "scope": "shared",
+      "optional": true
+    },
+    {
       "key": "owner_name_ar",
       "label": "Owner name (Arabic)",
       "labelAr": "اسم المالك",
@@ -52,8 +81,9 @@
       "dir": "rtl",
       "group": "parties",
       "scope": "shared",
-      "maxLength": 160,
-      "pair": "owner_name_en"
+      "maxLength": 600,
+      "pair": "owner_name_en",
+      "help": "Several owners: separate them with « و »."
     },
     {
       "key": "owner_name_en",
@@ -62,8 +92,68 @@
       "dir": "ltr",
       "group": "parties",
       "scope": "shared",
-      "maxLength": 160,
-      "pair": "owner_name_ar"
+      "maxLength": 600,
+      "pair": "owner_name_ar",
+      "help": "Several owners: separate them with \" & \"."
+    },
+    {
+      "key": "owner_phone",
+      "label": "Owner phone",
+      "labelAr": "هاتف المالك",
+      "type": "text",
+      "format": "phone",
+      "dir": "ltr",
+      "group": "parties",
+      "scope": "shared",
+      "maxLength": 40,
+      "optional": true,
+      "placeholder": "e.g. 050 123 4567"
+    },
+    {
+      "key": "owner_email",
+      "label": "Owner email",
+      "labelAr": "البريد الإلكتروني للمالك",
+      "type": "text",
+      "format": "email",
+      "dir": "ltr",
+      "group": "parties",
+      "scope": "shared",
+      "maxLength": 120,
+      "optional": true
+    },
+    {
+      "key": "owner_id_number",
+      "label": "Owner Emirates ID / passport no.",
+      "labelAr": "رقم الهوية / الجواز للمالك",
+      "type": "text",
+      "dir": "ltr",
+      "group": "parties",
+      "scope": "shared",
+      "maxLength": 200,
+      "optional": true
+    },
+    {
+      "key": "owner_nationality_ar",
+      "label": "Owner nationality (Arabic)",
+      "labelAr": "جنسية المالك",
+      "type": "text",
+      "dir": "rtl",
+      "group": "parties",
+      "scope": "shared",
+      "maxLength": 120,
+      "optional": true,
+      "pair": "owner_nationality_en"
+    },
+    {
+      "key": "owner_nationality_en",
+      "label": "Owner nationality (English)",
+      "type": "text",
+      "dir": "ltr",
+      "group": "parties",
+      "scope": "shared",
+      "maxLength": 120,
+      "optional": true,
+      "pair": "owner_nationality_ar"
     },
     {
       "key": "developer_name_ar",

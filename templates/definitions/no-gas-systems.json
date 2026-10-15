@@ -6,6 +6,7 @@
   "nameAr": "عدم وجود أنظمة غاز",
   "description": "Letter confirming that the project contains no gas systems.",
   "category": "Letters",
+  "projectType": "occupancy",
   "source": "عدم وجود أنظمة غاز في المشروع.docx",
   "format": "docx",
   "sanitize": [

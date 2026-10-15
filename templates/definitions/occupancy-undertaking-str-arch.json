@@ -6,6 +6,7 @@
   "nameAr": "تعهد إشغال مبنى – معماري وإنشائي",
   "description": "Undertaking to the Building Permits Department that occupancy and operational loads match the approved architectural and structural design.",
   "category": "Letters",
+  "projectType": "occupancy",
   "source": "01UNDERTAKE STR ARCH.docx",
   "format": "docx",
   "sanitize": [

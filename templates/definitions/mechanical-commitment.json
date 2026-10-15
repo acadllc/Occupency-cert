@@ -6,6 +6,7 @@
   "nameAr": "تعهد بإنجاز كافة الأعمال وإجراء الاختبارات والتشغيل للأنظمة الميكانيكية",
   "description": "DMT form 001/HVAC/OCC-2024: contractor commitment and consultant pledge for HVAC/mechanical testing & commissioning (2 pages).",
   "category": "DMT undertakings",
+  "projectType": "occupancy",
   "source": "01Mechanical systemتعهد بالالتزام ببنود كود أبو ظبي للأعمال الميكانيكية.pdf",
   "format": "pdf",
   "reviewNotes": "DMT (Department of Municipalities and Transport) form. English values are written after the English label and Arabic values before the Arabic label on the same dotted line.",

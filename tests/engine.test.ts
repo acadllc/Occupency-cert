@@ -82,7 +82,10 @@ describe('field values', () => {
   });
 
   it('validates lengths and control characters', () => {
-    expect(validateFields(registry, { owner_name_ar: 'x'.repeat(500) }).owner_name_ar).toBeTruthy();
+    expect(validateFields(registry, { owner_name_ar: 'x'.repeat(700) }).owner_name_ar).toBeTruthy();
+    expect(validateFields(registry, { owner_email: 'not-an-email' }).owner_email).toBeTruthy();
+    expect(validateFields(registry, { owner_phone: 'call me' }).owner_phone).toBeTruthy();
+    expect(validateFields(registry, { owner_email: 'owner@example.com', owner_phone: '+971 50 123 4567' })).toEqual({});
     expect(validateFields(registry, { owner_name_en: 'bad\u0007' }).owner_name_en).toBeTruthy();
     expect(validateFields(registry, sampleProject)).toEqual({});
   });
@@ -188,6 +191,20 @@ describe('PDF generation', () => {
   it('subsets fonts (small output)', async () => {
     const res = await engine.generate('owner-undertaking-cd-renewal', sampleProject);
     expect(res.bytes.length).toBeLessThan(120_000);
+  });
+});
+
+describe('many owners', () => {
+  it('fits four owners in every template with a smaller font instead of overflowing', async () => {
+    const fields = {
+      ...sampleProject,
+      owner_name_ar: 'سالم خليفة راشد المنصوري و محمد خليفة راشد المنصوري و فاطمة خليفة راشد المنصوري و عائشة خليفة راشد المنصوري',
+      owner_name_en: 'Salem Khalifa Rashed Almansoori & Mohammed Khalifa Rashed Almansoori & Fatima Khalifa Rashed Almansoori & Aysha Khalifa Rashed Almansoori',
+    };
+    for (const { definition } of catalog.templates) {
+      const res = await engine.generate(definition.key, fields);
+      expect(res.warnings.filter((w) => w.code === 'overflow' && /owner/.test(w.slot ?? '')), definition.key).toEqual([]);
+    }
   });
 });
 

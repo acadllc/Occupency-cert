@@ -15,6 +15,8 @@ export interface FieldDef {
   label: string;
   labelAr?: string;
   type: FieldType;
+  /** extra validation for text fields */
+  format?: 'email' | 'phone';
   dir?: Dir;
   group: string;
   scope: 'shared' | 'template';
@@ -30,6 +32,12 @@ export interface FieldDef {
   placeholder?: string;
   help?: string;
   pair?: string;
+}
+
+export interface ProjectType {
+  key: string;
+  en: string;
+  ar: string;
 }
 
 export interface FieldGroup {
@@ -146,6 +154,8 @@ export interface TemplateDefinition {
   nameAr?: string;
   description?: string;
   category?: string;
+  /** picker tab (templates/project-types.json); default "occupancy" */
+  projectType?: string;
   source: string;
   format: 'pdf' | 'docx';
   reviewNotes?: string;

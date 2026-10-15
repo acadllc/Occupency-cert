@@ -34,4 +34,21 @@ describe('site plan import', () => {
     expect(r.recognised).toBe(false);
     expect(r.values).toHaveLength(0);
   });
+
+  it('reads owners from every page (many owners) and lists them side by side', () => {
+    // page 2 continues the owners table without a header: rows 2 and 3
+    const row = (n: number, ar: string[], en: string, y: number): SitePlanTextItem[] => [
+      { str: String(n), x: 816.8, y: y + 9, w: 3.9 },
+      ...ar.map((w, i) => ({ str: w, x: 790 - i * 20, y, w: 16 })),
+      { str: en, x: 706, y: y + 9, w: 88 },
+    ];
+    const page2 = [...row(2, ['محمد', 'خليفة', 'المنصوري'], 'MOHAMMED KHALIFA ALMANSOORI', 60), ...row(3, ['فاطمة', 'خليفة', 'المنصوري'], 'FATIMA KHALIFA ALMANSOORI', 120)];
+    const r = parseSitePlan([items, page2]);
+    expect(r.owners).toHaveLength(3);
+    expect(r.fields.owner_name_ar).toBe('سالم خليفة راشد سالم المنصوري و محمد خليفة المنصوري و فاطمة خليفة المنصوري');
+    expect(r.fields.owner_name_en).toBe('Salem Khalifa Rashed Salem Almansoori & Mohammed Khalifa Almansoori & Fatima Khalifa Almansoori');
+    expect(r.notes.join(' ')).toMatch(/3 owners found on 2 pages/);
+    // property details still come from page 1
+    expect(r.fields.plot_number).toBe('18-7-200-047');
+  });
 });

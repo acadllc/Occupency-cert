@@ -6,6 +6,7 @@
   "nameAr": "تعهد الاستشاري بإنجاز كافة الأعمال الصحية والخزانات",
   "description": "DMT form 001/PLM/occ-2024: consultant undertaking for plumbing, drainage and water tank works.",
   "category": "DMT undertakings",
+  "projectType": "occupancy",
   "source": "03undertaking of the completion of all plumbing works and water tanks تعهد الاستشاري بإنجاز كافة أعمال تمديدات المياه والصرف الصحي والخزانات.pdf",
   "format": "pdf",
   "reviewNotes": "DMT (Department of Municipalities and Transport) form. English values are written after the English label and Arabic values before the Arabic label on the same dotted line.",

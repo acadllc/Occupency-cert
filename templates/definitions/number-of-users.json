@@ -6,6 +6,7 @@
   "nameAr": "عدد المستخدمين",
   "description": "Letter to the Department of Municipalities and Transport confirming the number of building users.",
   "category": "Letters",
+  "projectType": "occupancy",
   "source": "02NOMBER OF USERS.docx",
   "format": "docx",
   "sanitize": [

@@ -6,6 +6,7 @@
   "nameAr": "تقرير فني مصور لأعمال السباكة والصرف الصحي",
   "description": "Photo report of plumbing and drainage works with up to 14 captioned site photos (details and notes per photo).",
   "category": "Photo reports",
+  "projectType": "occupancy",
   "source": "تقرير فني مصور لأعمال السباكة.docx",
   "format": "docx",
   "sanitize": [

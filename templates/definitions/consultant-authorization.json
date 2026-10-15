@@ -6,6 +6,7 @@
   "nameAr": "تكليف وتعهد الاستشاري",
   "description": "DMT Form01-V02: owner's appointment of the consultant, backfilling questions, Abu Dhabi International Codes undertaking and consultant pledge (2 pages).",
   "category": "DMT undertakings",
+  "projectType": "occupancy",
   "source": "TAKLEEF.pdf",
   "format": "pdf",
   "reviewNotes": "Original AcroForm fields are reset and flattened; values are drawn as page content. Owner signature box is intentionally left blank.",
