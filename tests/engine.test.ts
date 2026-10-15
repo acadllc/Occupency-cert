@@ -184,7 +184,7 @@ describe('PDF generation', () => {
   });
 
   it('warns (never throws) when text cannot fit', async () => {
-    const res = await engine.generate('number-of-users', { ...sampleProject, owner_name_ar: 'اسم '.repeat(250) });
+    const res = await engine.generate('number-of-users', { ...sampleProject, owner_name_ar: 'اسم '.repeat(2000) });
     expect(res.warnings.some((w) => w.code === 'overflow' && w.slot === 'owner')).toBe(true);
   });
 
@@ -209,23 +209,19 @@ describe('many owners', () => {
 });
 
 describe('very many owners', () => {
-  it('shows the first owner with "and others" and attaches a list of all owners when they cannot fit', async () => {
-    const names = Array.from({ length: 12 }, (_, i) => `Owner ${i + 1} Rashed Salem Bin Khalifa Almansoori`);
+  it('prints every owner in a small font (no "and others"), even 12 owners in a one-line form box', async () => {
     const fields = {
       ...sampleProject,
-      owner_name_en: names.join(' & '),
-      owner_name_ar: Array.from({ length: 12 }, () => 'محمد راشد سالم بن خليفة المنصوري').join(' و '),
-      owner_id_number: Array.from({ length: 12 }, (_, i) => `784-1985-00000${String(i).padStart(2, '0')}-1`).join(' / '),
+      owner_name_en: '',
+      owner_name_ar: Array.from({ length: 12 }, (_, i) => `مالك ${i + 1} راشد سالم بن خليفة المنصوري`).join(' و '),
     };
-    const res = await engine.generate('water-validity', fields);
-    expect(res.pageCount).toBe(2);
-    expect(res.warnings.some((w) => /list of all owners is attached/.test(w.message))).toBe(true);
-    expect(res.warnings.filter((w) => w.code === 'overflow')).toEqual([]);
-    expect(res.placements.find((p) => p.slot === 'owner (English)')?.text).toMatch(/^Owner 1 .* & others \(list of owners attached\)$/);
-    expect(res.placements.filter((p) => p.slot === 'owners list' && p.text?.startsWith('784-'))).toHaveLength(12);
-    // the letters' larger boxes still take all names in a small font
-    const letter = await engine.generate('number-of-users', fields);
-    expect(letter.pageCount).toBe(1);
+    for (const key of ['water-validity', 'archive-drawings-explanation', 'number-of-users']) {
+      const res = await engine.generate(key, fields);
+      expect(res.warnings.filter((w) => w.code === 'overflow'), key).toEqual([]);
+      const owner = res.placements.find((p) => /^owner/.test(p.slot));
+      expect(owner?.text, key).toContain('مالك 12');
+      expect(owner?.text, key).not.toMatch(/وآخرون|others/);
+    }
   });
 });
 

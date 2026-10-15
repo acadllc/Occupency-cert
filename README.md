@@ -148,10 +148,9 @@ ACAD signature place and never get it.
   text and must be typed. The site plan reader targets the Abu Dhabi Real Estate Centre "Land Site Plan / مخطط أرض";
   other forms are read by their labels (e.g. «اسم المالك», «رقم الهاتف», «رقم المشروع بالبلدية»), so always review the
   suggested values.
-- When several owners do not fit on one line, the PDF uses a smaller font (down to 5 pt) and wraps inside the box. If
-  even that is not enough (e.g. 12 heirs in a one-line box of a government form), the box shows the first owner with
-  «وآخرون (مرفق كشف بأسماء الملاك)» / "& others (list of owners attached)" and a page listing every owner with their ID
-  number is added at the end of the PDF.
+- When several owners do not fit on one line, every name is still printed: the text wraps inside the box in a smaller
+  font, using the whole box (down to about 3 pt for very long lists in very small boxes). Word files show the full list
+  at normal size because Word grows the table cell.
 - Tables of people (heirs in a power of attorney, partners, owners) are read across pages; letters that some PDFs store
   in the wrong order («االمارات», «عبدهللا») are corrected.
 - Over-long values shrink to fit and, if still too long, the PDF is produced with a visible warning rather than being cut off.
