@@ -82,7 +82,7 @@ describe('field values', () => {
   });
 
   it('validates lengths and control characters', () => {
-    expect(validateFields(registry, { owner_name_ar: 'x'.repeat(700) }).owner_name_ar).toBeTruthy();
+    expect(validateFields(registry, { owner_name_ar: 'x'.repeat(1100) }).owner_name_ar).toBeTruthy();
     expect(validateFields(registry, { owner_email: 'not-an-email' }).owner_email).toBeTruthy();
     expect(validateFields(registry, { owner_phone: 'call me' }).owner_phone).toBeTruthy();
     expect(validateFields(registry, { owner_email: 'owner@example.com', owner_phone: '+971 50 123 4567' })).toEqual({});
@@ -205,6 +205,27 @@ describe('many owners', () => {
       const res = await engine.generate(definition.key, fields);
       expect(res.warnings.filter((w) => w.code === 'overflow' && /owner/.test(w.slot ?? '')), definition.key).toEqual([]);
     }
+  });
+});
+
+describe('very many owners', () => {
+  it('shows the first owner with "and others" and attaches a list of all owners when they cannot fit', async () => {
+    const names = Array.from({ length: 12 }, (_, i) => `Owner ${i + 1} Rashed Salem Bin Khalifa Almansoori`);
+    const fields = {
+      ...sampleProject,
+      owner_name_en: names.join(' & '),
+      owner_name_ar: Array.from({ length: 12 }, () => 'محمد راشد سالم بن خليفة المنصوري').join(' و '),
+      owner_id_number: Array.from({ length: 12 }, (_, i) => `784-1985-00000${String(i).padStart(2, '0')}-1`).join(' / '),
+    };
+    const res = await engine.generate('water-validity', fields);
+    expect(res.pageCount).toBe(2);
+    expect(res.warnings.some((w) => /list of all owners is attached/.test(w.message))).toBe(true);
+    expect(res.warnings.filter((w) => w.code === 'overflow')).toEqual([]);
+    expect(res.placements.find((p) => p.slot === 'owner (English)')?.text).toMatch(/^Owner 1 .* & others \(list of owners attached\)$/);
+    expect(res.placements.filter((p) => p.slot === 'owners list' && p.text?.startsWith('784-'))).toHaveLength(12);
+    // the letters' larger boxes still take all names in a small font
+    const letter = await engine.generate('number-of-users', fields);
+    expect(letter.pageCount).toBe(1);
   });
 });
 

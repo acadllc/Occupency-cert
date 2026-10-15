@@ -98,6 +98,22 @@ interface DrawCtx {
   warnings: GenerationWarning[];
 }
 
+interface OwnerRow {
+  ar: string;
+  en: string;
+  id: string;
+}
+
+/** Owners listed side by side in the owner fields ("A و B", "A & B"), with their ID numbers ("x / y"). */
+export function ownersOf(fields: ProjectFields): OwnerRow[] {
+  const str = (k: string) => (typeof fields[k] === 'string' ? (fields[k] as string) : '');
+  const ar = str('owner_name_ar').split(/\s+و\s+/).map((x) => x.trim()).filter(Boolean);
+  const en = str('owner_name_en').split(/\s*&\s*/).map((x) => x.trim()).filter(Boolean);
+  const ids = str('owner_id_number').split(/\s*\/\s*/).map((x) => x.trim()).filter(Boolean);
+  const n = Math.max(ar.length, en.length);
+  return Array.from({ length: n }, (_, i) => ({ ar: ar[i] ?? '', en: en[i] ?? '', id: n === ids.length ? ids[i] : '' }));
+}
+
 /** Smallest font used when squeezing long values (several owners) into a box. */
 const SMALLEST_TEXT = 5;
 
@@ -158,6 +174,28 @@ export class Engine {
   }
 
   async generate(templateKey: string, fields: ProjectFields, meta: GenerateOptions = {}): Promise<GeneratedDocument> {
+    const first = await this.render(templateKey, fields, meta, null);
+    const owners = ownersOf(fields);
+    if (owners.length < 2) return first;
+    const { definition } = this.entry(templateKey);
+    const ownerSlots = new Set(
+      definition.fields
+        .filter((i) => ('value' in i && /owner_name/.test(i.value)) || ('en' in i && /owner_name/.test(`${i.en} ${i.ar}`)))
+        .map((i) => i.slot),
+    );
+    if (!first.warnings.some((w) => w.code === 'overflow' && w.slot && ownerSlots.has(w.slot.replace(/ \((English|Arabic)\)$/, '')))) return first;
+    // too many owners for the box even in a small font: first owner + "and others", full list attached
+    const short: ProjectFields = {
+      ...fields,
+      owner_name_ar: owners[0].ar ? `${owners[0].ar} وآخرون (مرفق كشف بأسماء الملاك)` : '',
+      owner_name_en: owners[0].en ? `${owners[0].en} & others (list of owners attached)` : '',
+    };
+    const res = await this.render(templateKey, short, meta, owners);
+    res.warnings.push({ code: 'missing_value', message: `${owners.length} owners do not fit in the owner box, so the first owner is shown with “and others” and a list of all owners is attached as the last page.` });
+    return res;
+  }
+
+  private async render(templateKey: string, fields: ProjectFields, meta: GenerateOptions, appendix: OwnerRow[] | null): Promise<GeneratedDocument> {
     const { definition, layout } = this.entry(templateKey);
     const base = await this.template(definition.key, definition.version);
     const doc = await PDFDocument.load(base, { updateMetadata: false });
@@ -199,6 +237,8 @@ export class Engine {
       while (keep < slotsPerPage.length && cum < n) cum += slotsPerPage[keep++];
       for (let i = doc.getPageCount() - 1; i >= keep; i--) doc.removePage(i);
     }
+
+    if (appendix) await this.drawOwnersList(doc, fonts, warnings, placements, appendix, fields, definition.name);
 
     fonts.finalize(this.subsetter);
     doc.setTitle(meta.title ?? definition.name);
@@ -461,6 +501,53 @@ export class Engine {
   /** Forget the cached stamp image (call after it is replaced). */
   clearStampCache() {
     this.stampCache = undefined;
+  }
+
+  /** Extra page(s): table of all owners (Arabic name, English name, ID number). */
+  private async drawOwnersList(doc: PDFDocument, fonts: FontRegistry, warnings: GenerationWarning[], placements: Placement[], owners: OwnerRow[], fields: ProjectFields, docName: string) {
+    const { width: w, height: h } = doc.getPage(0).getSize();
+    const left = 40;
+    const right = w - 40;
+    const cols = { no: [left, left + 24], en: [left + 24, left + 24 + (right - left - 24) * 0.36], id: [0, 0], ar: [0, right] } as Record<string, [number, number]>;
+    cols.id = [cols.en[1], cols.en[1] + (right - left - 24) * 0.24];
+    cols.ar = [cols.id[1], right];
+    const rowH = 20;
+    let page: PDFPage | null = null;
+    let y = 0;
+    let pageIndex = doc.getPageCount();
+    const text = async (rect: [number, number, number, number], value: string, style: TextStyle) => {
+      if (!value || !page) return;
+      const d: DrawCtx = { doc, page, pageHeight: h, fonts, warnings, placements, pageIndex };
+      await this.drawText(d, { page: pageIndex, rect }, value, { valign: 'middle', size: 9, minSize: 6, ...style }, 'owners list');
+    };
+    const line = (x0: number, y0: number, x1: number, y1: number) =>
+      page!.pushOperators(pushGraphicsState(), setStrokingRgbColor(0.6, 0.6, 0.6), setLineWidth(0.5), moveTo(x0, h - y0), lineTo(x1, h - y1), stroke(), popGraphicsState());
+    const newPage = async () => {
+      page = doc.addPage([w, h]);
+      pageIndex = doc.getPageCount() - 1;
+      await text([left, 40, right, 62], 'كشف بأسماء الملاك – List of Owners', { size: 14, bold: true, align: 'center', dir: 'rtl' });
+      const pid = typeof fields.project_id === 'string' ? fields.project_id : '';
+      await text([left, 64, right, 80], [pid, docName].filter(Boolean).join(' · '), { size: 9, align: 'center', dir: 'ltr', color: [0.35, 0.35, 0.35] });
+      y = 96;
+      await text([cols.no[0], y, cols.no[1], y + rowH], '#', { bold: true, align: 'center', dir: 'ltr' });
+      await text([cols.en[0] + 4, y, cols.en[1] - 4, y + rowH], 'Name', { bold: true, align: 'left', dir: 'ltr' });
+      await text([cols.id[0] + 4, y, cols.id[1] - 4, y + rowH], 'ID / Passport', { bold: true, align: 'left', dir: 'ltr' });
+      await text([cols.ar[0] + 4, y, cols.ar[1] - 4, y + rowH], 'الاسم', { bold: true, align: 'right', dir: 'rtl' });
+      line(left, y, right, y);
+      y += rowH;
+      line(left, y, right, y);
+    };
+    await newPage();
+    for (let i = 0; i < owners.length; i++) {
+      if (y + rowH > h - 50) await newPage();
+      const o = owners[i];
+      await text([cols.no[0], y, cols.no[1], y + rowH], String(i + 1), { align: 'center', dir: 'ltr' });
+      await text([cols.en[0] + 4, y, cols.en[1] - 4, y + rowH], o.en, { align: 'left', dir: 'ltr' });
+      await text([cols.id[0] + 4, y, cols.id[1] - 4, y + rowH], o.id, { align: 'left', dir: 'ltr' });
+      await text([cols.ar[0] + 4, y, cols.ar[1] - 4, y + rowH], o.ar, { align: 'right', dir: 'rtl' });
+      y += rowH;
+      line(left, y, right, y);
+    }
   }
 
   private async drawStamp(d: DrawCtx, slot: SlotGeometry, item: StampItem) {

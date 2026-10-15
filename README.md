@@ -14,7 +14,7 @@ completed PDF or Word files. A new project can start from its documents — the 
 | Area | Status |
 | --- | --- |
 | Template sanitization (old owners, IDs, dates, stamps, signatures, metadata removed) | ✅ 18/18, automated leak check passes ([report](docs/template-qa-report.md)) |
-| Field mappings, Arabic RTL shaping, check boxes, photos, optional stamp & signature | ✅ 18/18, rendered and visually reviewed; 65 automated tests |
+| Field mappings, Arabic RTL shaping, check boxes, photos, optional stamp & signature | ✅ 18/18, rendered and visually reviewed; 67 automated tests |
 | Word (.docx) output | ✅ for the 11 Word-based documents (the 7 official PDF forms are always PDF) |
 | Document import (site plan incl. multi-page owner lists, Emirates ID, passport, كفالة and other labelled forms) | ✅ read in the browser, never uploaded |
 | Project-type tabs (Occupancy certificate, Architectural, Taqneen, Bank papers, Contractor contracts) | ✅ Occupancy has the 18 documents; the other tabs are ready for their templates |
@@ -148,7 +148,12 @@ ACAD signature place and never get it.
   text and must be typed. The site plan reader targets the Abu Dhabi Real Estate Centre "Land Site Plan / مخطط أرض";
   other forms are read by their labels (e.g. «اسم المالك», «رقم الهاتف», «رقم المشروع بالبلدية»), so always review the
   suggested values.
-- When several owners do not fit on one line, the PDF uses a smaller font (down to 5 pt) and wraps inside the box.
+- When several owners do not fit on one line, the PDF uses a smaller font (down to 5 pt) and wraps inside the box. If
+  even that is not enough (e.g. 12 heirs in a one-line box of a government form), the box shows the first owner with
+  «وآخرون (مرفق كشف بأسماء الملاك)» / "& others (list of owners attached)" and a page listing every owner with their ID
+  number is added at the end of the PDF.
+- Tables of people (heirs in a power of attorney, partners, owners) are read across pages; letters that some PDFs store
+  in the wrong order («االمارات», «عبدهللا») are corrected.
 - Over-long values shrink to fit and, if still too long, the PDF is produced with a visible warning rather than being cut off.
 - `05Owner Undertaking for Temporary Occupancy certificate.pdf`, named in the original specification, is not in
   `reference-documents/` and is therefore not implemented.
