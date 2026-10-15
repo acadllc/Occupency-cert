@@ -174,7 +174,7 @@ export class Engine {
       const page = pages[slot.page];
       const dctx: DrawCtx = { doc, page, pageHeight: page.getHeight(), fonts, warnings, placements, pageIndex: slot.page };
       if ('stamp' in item) {
-        if (meta.stamp) await this.drawStamp(dctx, slot, item);
+        if (meta.stamp && item.stamp.page !== 'last') await this.drawStamp(dctx, slot, item);
       } else if ('check' in item) this.drawCheck(dctx, slot, item, fields);
       else if ('photo' in item) await this.drawPhoto(dctx, slot, item, fields);
       else if ('photoText' in item) {
@@ -198,6 +198,16 @@ export class Engine {
       let cum = slotsPerPage[0] ?? 0;
       while (keep < slotsPerPage.length && cum < n) cum += slotsPerPage[keep++];
       for (let i = doc.getPageCount() - 1; i >= keep; i--) doc.removePage(i);
+    }
+
+    // stamps that belong at the end of the document go on the last remaining page
+    if (meta.stamp) {
+      for (const item of definition.fields) {
+        if (!('stamp' in item) || item.stamp.page !== 'last') continue;
+        const pageIndex = doc.getPageCount() - 1;
+        const page = doc.getPage(pageIndex);
+        await this.drawStamp({ doc, page, pageHeight: page.getHeight(), fonts, warnings, placements, pageIndex }, layout.slots[item.slot], item);
+      }
     }
 
     fonts.finalize(this.subsetter);

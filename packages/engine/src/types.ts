@@ -133,6 +133,8 @@ export interface StampItem {
     anchor?: 'center' | 'marker' | 'right' | 'below';
     dx?: number;
     dy?: number;
+    /** "last": on the last page that remains (photo reports drop unused pages) */
+    page?: 'last';
   };
 }
 

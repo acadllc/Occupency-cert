@@ -189,8 +189,10 @@ describe('PDF generation', () => {
   });
 
   it('subsets fonts (small output)', async () => {
+    // the letterhead image dominates the size; the embedded fonts must stay small subsets
     const res = await engine.generate('owner-undertaking-cd-renewal', sampleProject);
-    expect(res.bytes.length).toBeLessThan(120_000);
+    const base = readFileSync(join(root, 'templates/dist/owner-undertaking-cd-renewal.pdf')).length;
+    expect(res.bytes.length - base).toBeLessThan(120_000);
   });
 });
 
@@ -235,6 +237,9 @@ describe('company stamp', () => {
     expect(ownerOnly.placements.filter((p) => p.kind === 'stamp')).toHaveLength(0);
     const photoReport = await engine.generate('photo-report-mechanical', sampleProject, { stamp: true });
     expect(photoReport.placements.filter((p) => p.kind === 'stamp')).toHaveLength(1);
+    // photo reports: signature at the bottom of the LAST remaining page
+    const plumbing = await engine.generate('photo-report-plumbing', sampleProject, { stamp: true });
+    expect(plumbing.placements.find((p) => p.kind === 'stamp')?.page).toBe(plumbing.pageCount - 1);
     const photoReportWord = await engine.generateDocx('photo-report-mechanical', sampleProject, { stamp: true });
     expect(photoReportWord.placements.filter((p) => p.kind === 'stamp')).toHaveLength(1);
   });

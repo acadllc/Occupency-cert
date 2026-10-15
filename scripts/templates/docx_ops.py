@@ -479,6 +479,37 @@ class DocxSanitizer:
             # the details cell holds a generic dropdown caption, not project data
             self._clear_cell(details_cells[1], f"details_{n}", record=False)
             self._clear_cell(notes_cells[1], f"notes_{n}")
+            if op.get("compact_trailing"):
+                # Word needs a paragraph after a nested table; make it 1pt high and let the row
+                # end right there, so no thin empty band shows under the details table
+                after = [c for c in tc if c.tag == w("p") and c.getprevious() is not None and c.getprevious().tag == w("tbl")]
+                for tp in after:
+                    tpr = tp.find(w("pPr"))
+                    if tpr is None:
+                        tpr = etree.Element(w("pPr"))
+                        tp.insert(0, tpr)
+                    for old_sp in tpr.findall(w("spacing")):
+                        tpr.remove(old_sp)
+                    tsp = etree.Element(w("spacing"))
+                    tsp.set(w("before"), "0")
+                    tsp.set(w("after"), "0")
+                    tsp.set(w("line"), "20")
+                    tsp.set(w("lineRule"), "exact")
+                    tpr.insert(0, tsp)
+                    rpr = tpr.find(w("rPr"))
+                    if rpr is None:
+                        rpr = etree.SubElement(tpr, w("rPr"))
+                    for tag in ("sz", "szCs"):
+                        for old_el in rpr.findall(w(tag)):
+                            rpr.remove(old_el)
+                        el = etree.SubElement(rpr, w(tag))
+                        el.set(w("val"), "2")
+                tr = tc.getparent()
+                trpr = tr.find(w("trPr"))
+                if trpr is not None:
+                    for th in trpr.findall(w("trHeight")):
+                        th.set(w("hRule"), "atLeast")
+                        th.set(w("val"), "0")
             n += 1
         if n != op.get("expected", n):
             raise SanitizeError(f"photo_grid: found {n} cards, expected {op['expected']}")
@@ -581,6 +612,78 @@ class DocxSanitizer:
                 for el in root.findall(w(tag)):
                     root.remove(el)
             self.parts[settings] = etree.tostring(root, xml_declaration=True, encoding="UTF-8", standalone=True)
+
+    def op_copy_header(self, op: dict):
+        """Give the document the ACAD letterhead: copy the default header (with its
+        images) from another reference document of the same layout."""
+        from pathlib import Path
+
+        REL = "http://schemas.openxmlformats.org/package/2006/relationships"
+        HDR = "http://schemas.openxmlformats.org/officeDocument/2006/relationships/header"
+        src_path = Path(__file__).resolve().parents[2] / "reference-documents" / op["from"]
+        src = zipfile.ZipFile(src_path)
+        src_rels = etree.fromstring(src.read("word/_rels/document.xml.rels"))
+        hdr_rel = next((r for r in src_rels if r.get("Type") == HDR), None)
+        if hdr_rel is None:
+            raise SanitizeError(f"copy_header: {op['from']} has no header")
+        hdr_src = "word/" + hdr_rel.get("Target").lstrip("/").removeprefix("word/")
+        n = 1
+        while f"word/header{n}.xml" in self.parts:
+            n += 1
+        hdr_name = f"word/header{n}.xml"
+        self.parts[hdr_name] = src.read(hdr_src)
+        self.order.append(hdr_name)
+        # header images
+        src_hdr_rels = f"word/_rels/{hdr_src.split('/')[-1]}.rels"
+        exts = set()
+        if src_hdr_rels in src.namelist():
+            hrels = etree.fromstring(src.read(src_hdr_rels))
+            for rel in hrels:
+                target = rel.get("Target")
+                if rel.get("TargetMode") == "External" or not target:
+                    continue
+                media_src = "word/" + target.lstrip("/").removeprefix("word/")
+                ext = media_src.rsplit(".", 1)[-1].lower()
+                new_media = f"word/media/acad-letterhead-{len(exts) + 1}.{ext}"
+                self.parts[new_media] = src.read(media_src)
+                self.order.append(new_media)
+                rel.set("Target", new_media.removeprefix("word/"))
+                exts.add(ext)
+            rels_name = f"word/_rels/header{n}.xml.rels"
+            self.parts[rels_name] = etree.tostring(hrels, xml_declaration=True, encoding="UTF-8", standalone=True)
+            self.order.append(rels_name)
+        # document relationship + section reference
+        rels_name = "word/_rels/document.xml.rels"
+        drels = etree.fromstring(self.parts[rels_name])
+        ids = {r.get("Id") for r in drels}
+        rid = next(f"rIdAcadHdr{i}" for i in range(1, 100) if f"rIdAcadHdr{i}" not in ids)
+        rel = etree.SubElement(drels, f"{{{REL}}}Relationship")
+        rel.set("Id", rid)
+        rel.set("Type", HDR)
+        rel.set("Target", f"header{n}.xml")
+        self.parts[rels_name] = etree.tostring(drels, xml_declaration=True, encoding="UTF-8", standalone=True)
+        R = "http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+        for sect in self.tree("word/document.xml").getroot().iter(w("sectPr")):
+            for old in sect.findall(w("headerReference")):
+                if old.get(w("type")) == "default":
+                    sect.remove(old)
+            ref = etree.Element(w("headerReference"))
+            ref.set(w("type"), "default")
+            ref.set(f"{{{R}}}id", rid)
+            sect.insert(0, ref)
+        # content types
+        CT = "http://schemas.openxmlformats.org/package/2006/content-types"
+        ct = etree.fromstring(self.parts["[Content_Types].xml"])
+        ov = etree.SubElement(ct, f"{{{CT}}}Override")
+        ov.set("PartName", "/" + hdr_name)
+        ov.set("ContentType", "application/vnd.openxmlformats-officedocument.wordprocessingml.header+xml")
+        have = {d.get("Extension", "").lower() for d in ct.findall(f"{{{CT}}}Default")}
+        for ext in exts - have:
+            d = etree.Element(f"{{{CT}}}Default")
+            d.set("Extension", ext)
+            d.set("ContentType", "image/jpeg" if ext in ("jpg", "jpeg") else f"image/{ext}")
+            ct.insert(0, d)
+        self.parts["[Content_Types].xml"] = etree.tostring(ct, xml_declaration=True, encoding="UTF-8", standalone=True)
 
     def _drop_part(self, name: str):
         del self.parts[name]
