@@ -11,12 +11,16 @@ export function TemplatePicker({ selected, onChange }: { selected: string[]; onC
   const [tab, setTab] = useState(() => projectTypeOf(available.find((t) => selected.includes(t.definition.key))?.definition ?? {}));
   const inTab = available.filter((t) => projectTypeOf(t.definition) === tab);
   const filtered = inTab.filter(({ definition: d }) => !q || `${d.name} ${d.nameAr ?? ''} ${d.description ?? ''}`.toLowerCase().includes(q.toLowerCase()));
-  const categories = useMemo(() => [...new Set(inTab.map((t) => t.definition.category ?? 'Other'))], [inTab]);
+  const current = projectTypes.find((p) => p.key === tab);
+  const categories = useMemo(() => {
+    const order = current?.categories ?? [];
+    const rank = (c: string) => (order.includes(c) ? order.indexOf(c) : order.length);
+    return [...new Set(inTab.map((t) => t.definition.category ?? 'Other'))].sort((a, b) => rank(a) - rank(b));
+  }, [inTab, current]);
   const toggle = (key: string) => onChange(selected.includes(key) ? selected.filter((k) => k !== key) : [...selected, key]);
   const setMany = (keys: string[], on: boolean) => onChange(on ? [...new Set([...selected, ...keys])] : selected.filter((k) => !keys.includes(k)));
   const tabKeys = inTab.map((t) => t.definition.key);
   const tabAllOn = tabKeys.length > 0 && tabKeys.every((k) => selected.includes(k));
-  const current = projectTypes.find((p) => p.key === tab);
 
   return (
     <section className="card">

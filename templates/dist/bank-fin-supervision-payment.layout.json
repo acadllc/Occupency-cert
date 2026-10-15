@@ -1,0 +1,92 @@
+{
+ "key": "bank-fin-supervision-payment",
+ "version": 1,
+ "format": "pdf",
+ "sourceSha256": "87322861f5c1fdd81bb28a08afbf09c9414481bf6b3566fa5bd52184e098e343",
+ "baseSha256": "c6fa05ee2a0ffacb15d21e4a0d50c7ed56cfa0e671f2a706320a7dd84d251c13",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 595.2,
+   "height": 841.44
+  }
+ ],
+ "slots": {
+  "date": {
+   "page": 0,
+   "rect": [
+    391,
+    110,
+    485,
+    122
+   ]
+  },
+  "project_id": {
+   "page": 0,
+   "rect": [
+    248,
+    129,
+    450,
+    157
+   ]
+  },
+  "location": {
+   "page": 0,
+   "rect": [
+    62,
+    131,
+    135,
+    143
+   ]
+  },
+  "owner": {
+   "page": 0,
+   "rect": [
+    339,
+    150,
+    481,
+    162
+   ]
+  },
+  "consultant": {
+   "page": 0,
+   "rect": [
+    374,
+    172,
+    486,
+    184
+   ]
+  },
+  "contractor": {
+   "page": 0,
+   "rect": [
+    280,
+    192,
+    488,
+    216
+   ]
+  },
+  "start_date": {
+   "page": 0,
+   "rect": [
+    370,
+    216,
+    460,
+    228
+   ]
+  },
+  "stamp": {
+   "page": 0,
+   "rect": [
+    118,
+    572,
+    208,
+    662
+   ]
+  }
+ },
+ "docx": null,
+ "build": {
+  "engine": "pymupdf 1.28.2"
+ }
+}

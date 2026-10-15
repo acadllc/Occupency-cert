@@ -1,10 +1,45 @@
 {
   "_comment": "Tabs of the document picker. Each template definition names its tab with \"projectType\" (default: occupancy).",
   "types": [
-    { "key": "occupancy", "en": "Occupancy certificate", "ar": "شهادة إشغال" },
-    { "key": "building", "en": "Architectural", "ar": "مشروع بناء" },
-    { "key": "taqneen", "en": "Taqneen", "ar": "تقنين" },
-    { "key": "bank", "en": "Bank papers", "ar": "أوراق البنك" },
-    { "key": "contractor", "en": "Contractor contracts", "ar": "عقود مقاول" }
+    {
+      "key": "occupancy",
+      "en": "Occupancy certificate",
+      "ar": "شهادة إشغال",
+      "categories": [
+        "Letters",
+        "DMT undertakings",
+        "Photo reports"
+      ]
+    },
+    {
+      "key": "building",
+      "en": "Architectural",
+      "ar": "مشروع بناء"
+    },
+    {
+      "key": "taqneen",
+      "en": "Taqneen",
+      "ar": "تقنين"
+    },
+    {
+      "key": "bank",
+      "en": "Bank papers",
+      "ar": "أوراق البنك",
+      "categories": [
+        "covers",
+        "أوراق استكمال",
+        "اوراق المناقصة",
+        "دفعة أولى",
+        "دفعة دورية",
+        "دفعة نهائية",
+        "تمديد البنك",
+        "General"
+      ]
+    },
+    {
+      "key": "contractor",
+      "en": "Contractor contracts",
+      "ar": "عقود مقاول"
+    }
   ]
 }

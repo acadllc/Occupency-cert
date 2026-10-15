@@ -89,6 +89,12 @@ function atom(expr: string, ctx: ValueContext): string {
   const def = getField(ctx.registry, key);
   if (!def) throw new Error(`Unknown field in mapping: ${key}`);
   const raw = ctx.fields[key];
+  if (mod === 'day' || mod === 'month' || mod === 'year') {
+    // separate day / month / year boxes on printed forms
+    const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(asText(raw));
+    if (!m) return '';
+    return mod === 'day' ? m[3] : mod === 'month' ? m[2] : m[1];
+  }
   if (def.type === 'date' || mod === 'date') return formatDate(asText(raw));
   if (mod === 'ar' || mod === 'en') {
     const opts = optionsOf(def, ctx.company);

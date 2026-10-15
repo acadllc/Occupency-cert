@@ -1,0 +1,96 @@
+{
+ "key": "bank-cur-checklist",
+ "version": 1,
+ "format": "docx",
+ "sourceSha256": "9814f87f36474ec3ebf9138681c5eb227a011533f086bab79859bdb14335fa89",
+ "baseSha256": "0a6cf87a90dd41fd42264f5ed3886b138d5f1cd1516f760bbb3cca9094c1f0fe",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 595.3,
+   "height": 841.89
+  }
+ ],
+ "slots": {
+  "project_id": {
+   "page": 0,
+   "baseline": 84.9,
+   "size": 10.0,
+   "rect": [
+    308.95,
+    73.22,
+    508.95,
+    89.31
+   ]
+  },
+  "owner": {
+   "page": 0,
+   "baseline": 84.9,
+   "size": 10.0,
+   "rect": [
+    109.68,
+    73.22,
+    309.68,
+    89.31
+   ]
+  },
+  "contractor": {
+   "page": 0,
+   "baseline": 107.6,
+   "size": 10.0,
+   "rect": [
+    322.41,
+    95.92,
+    522.41,
+    112.01
+   ]
+  },
+  "consultant": {
+   "page": 0,
+   "baseline": 107.6,
+   "size": 10.0,
+   "rect": [
+    118.64,
+    95.92,
+    318.64,
+    112.01
+   ]
+  },
+  "location": {
+   "page": 0,
+   "baseline": 130.3,
+   "size": 10.0,
+   "rect": [
+    105.31,
+    118.62,
+    305.31,
+    134.71
+   ]
+  },
+  "stamp": {
+   "page": 0,
+   "baseline": 673.1,
+   "size": 1.0,
+   "rect": [
+    466.91,
+    670.13,
+    476.91,
+    675.34
+   ]
+  }
+ },
+ "docx": {
+  "markers": {
+   "QZ1ZQ": "project_id",
+   "QZ2ZQ": "owner",
+   "QZ3ZQ": "contractor",
+   "QZ4ZQ": "consultant",
+   "QZ5ZQ": "location",
+   "QZ6ZQ": "stamp"
+  }
+ },
+ "build": {
+  "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+  "layoutDiff": 8e-06
+ }
+}

@@ -191,6 +191,7035 @@
   },
   {
    "definition": {
+    "key": "bank-cur-checklist",
+    "version": 1,
+    "status": "verified",
+    "name": "Current Payment Checklist",
+    "nameAr": "قائمة تدقيق الدفعة الدورية",
+    "description": "Current Payment Checklist",
+    "category": "دفعة دورية",
+    "projectType": "bank",
+    "source": "private/bank/دفعة دورية/Current Payment Checklist 01-2019.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "contractor",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 105,
+       "anchor": "marker",
+       "dx": 45,
+       "dy": 58
+      }
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-cur-checklist",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "9814f87f36474ec3ebf9138681c5eb227a011533f086bab79859bdb14335fa89",
+    "baseSha256": "0a6cf87a90dd41fd42264f5ed3886b138d5f1cd1516f760bbb3cca9094c1f0fe",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "project_id": {
+      "page": 0,
+      "baseline": 84.9,
+      "size": 10,
+      "rect": [
+       308.95,
+       73.22,
+       508.95,
+       89.31
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 84.9,
+      "size": 10,
+      "rect": [
+       109.68,
+       73.22,
+       309.68,
+       89.31
+      ]
+     },
+     "contractor": {
+      "page": 0,
+      "baseline": 107.6,
+      "size": 10,
+      "rect": [
+       322.41,
+       95.92,
+       522.41,
+       112.01
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 107.6,
+      "size": 10,
+      "rect": [
+       118.64,
+       95.92,
+       318.64,
+       112.01
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 130.3,
+      "size": 10,
+      "rect": [
+       105.31,
+       118.62,
+       305.31,
+       134.71
+      ]
+     },
+     "stamp": {
+      "page": 0,
+      "baseline": 673.1,
+      "size": 1,
+      "rect": [
+       466.91,
+       670.13,
+       476.91,
+       675.34
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "project_id",
+      "QZ2ZQ": "owner",
+      "QZ3ZQ": "contractor",
+      "QZ4ZQ": "consultant",
+      "QZ5ZQ": "location",
+      "QZ6ZQ": "stamp"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0.000008
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-cur-contractor-payment",
+    "version": 1,
+    "status": "verified",
+    "name": "Contractor Execution Payment (FAB)",
+    "nameAr": "دفعة المقاول عن أعمال التنفيذ",
+    "description": "FAB National Housing Loans form: contractor execution payment request.",
+    "category": "دفعة دورية",
+    "projectType": "bank",
+    "source": "private/bank/دفعة دورية/تنفيذ -.pdf",
+    "format": "pdf",
+    "reviewNotes": "First Abu Dhabi Bank – National Housing Loans payment form (scanned page). The values typed on the original were annotations and were deleted; amounts, IBAN and bank details stay blank for the user.",
+    "fields": [
+     {
+      "slot": "date",
+      "value": "{date|day}     {date|month}     {date|year}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "location",
+      "value": "{area_ar} - {sector_ar}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right"
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right"
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right"
+     },
+     {
+      "slot": "contractor",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "multiline": true
+     },
+     {
+      "slot": "start_date",
+      "value": "{project_start_date|day}     {project_start_date|month}     {project_start_date|year}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 92,
+       "anchor": "center"
+      }
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-cur-contractor-payment",
+    "version": 1,
+    "format": "pdf",
+    "sourceSha256": "87a41c12cf3862fe82ba021c739951a45656176e6fbe63d03a0930a8a1e02404",
+    "baseSha256": "62f65eaa41c01a151a88897d38df61c58bc7cc0760f492f9721ba7c85c59cf38",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.2,
+      "height": 841.44
+     }
+    ],
+    "slots": {
+     "date": {
+      "page": 0,
+      "rect": [
+       379,
+       111,
+       472,
+       123
+      ]
+     },
+     "project_id": {
+      "page": 0,
+      "rect": [
+       335,
+       131,
+       467,
+       143
+      ]
+     },
+     "location": {
+      "page": 0,
+      "rect": [
+       67,
+       131,
+       153,
+       146
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "rect": [
+       342,
+       150,
+       484,
+       165
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "rect": [
+       370,
+       170,
+       482,
+       184
+      ]
+     },
+     "contractor": {
+      "page": 0,
+      "rect": [
+       247,
+       189,
+       467,
+       213
+      ]
+     },
+     "start_date": {
+      "page": 0,
+      "rect": [
+       385,
+       209,
+       474,
+       221
+      ]
+     },
+     "stamp": {
+      "page": 0,
+      "rect": [
+       140,
+       577,
+       230,
+       667
+      ]
+     }
+    },
+    "docx": null,
+    "build": {
+     "engine": "pymupdf 1.28.2"
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-cur-report",
+    "version": 1,
+    "status": "verified",
+    "name": "Work Progress Report (Current Payment)",
+    "nameAr": "تقرير اعتماد إنجاز الأعمال – دفعة دورية",
+    "description": "Work Progress Report (Current Payment)",
+    "category": "دفعة دورية",
+    "projectType": "bank",
+    "source": "private/bank/دفعة دورية/REPORT.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "contractor",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "end_date",
+      "value": "project_end_date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "start_date",
+      "value": "project_start_date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "components",
+      "value": "project_components_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 105,
+       "anchor": "marker",
+       "dx": 45,
+       "dy": 50
+      }
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-cur-report",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "70237182e22f69cb24aaa5a2655bfc97434954217afce0071d11e05972765689",
+    "baseSha256": "a6f9d0f3e8ba548fb8fc7a6f171f27b46ea879b31fee8c91fb440f78861e5d6e",
+    "pageCount": 4,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     },
+     {
+      "width": 595.3,
+      "height": 841.89
+     },
+     {
+      "width": 595.3,
+      "height": 841.89
+     },
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "owner": {
+      "page": 0,
+      "baseline": 121.4,
+      "size": 10,
+      "rect": [
+       406.3,
+       111.45,
+       574.7,
+       136.95
+      ]
+     },
+     "project_id": {
+      "page": 0,
+      "baseline": 127.85,
+      "size": 10,
+      "rect": [
+       137,
+       111.45,
+       300,
+       136.95
+      ]
+     },
+     "contractor": {
+      "page": 0,
+      "baseline": 153.35,
+      "size": 10,
+      "rect": [
+       406.3,
+       136.95,
+       574.7,
+       162.45
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 153.35,
+      "size": 10,
+      "rect": [
+       137,
+       136.95,
+       300,
+       162.45
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 194.7,
+      "size": 10,
+      "rect": [
+       137,
+       178.35,
+       300,
+       203.85
+      ]
+     },
+     "end_date": {
+      "page": 0,
+      "baseline": 247.15,
+      "size": 14,
+      "rect": [
+       406.3,
+       229.35,
+       574.7,
+       254.85
+      ]
+     },
+     "start_date": {
+      "page": 0,
+      "baseline": 247.15,
+      "size": 14,
+      "rect": [
+       137,
+       229.35,
+       300,
+       254.85
+      ]
+     },
+     "components": {
+      "page": 0,
+      "baseline": 296.7,
+      "size": 10,
+      "rect": [
+       137,
+       280.35,
+       574.7,
+       305.85
+      ]
+     },
+     "date": {
+      "page": 0,
+      "baseline": 79.35,
+      "size": 11,
+      "rect": [
+       405.17,
+       66.7,
+       515.17,
+       84
+      ]
+     },
+     "stamp": {
+      "page": 0,
+      "baseline": 600.15,
+      "size": 1,
+      "rect": [
+       67.92,
+       597.18,
+       77.92,
+       602.39
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "owner",
+      "QZ2ZQ": "project_id",
+      "QZ3ZQ": "contractor",
+      "QZ4ZQ": "consultant",
+      "QZ5ZQ": "location",
+      "QZ6ZQ": "end_date",
+      "QZ7ZQ": "start_date",
+      "QZ8ZQ": "components",
+      "QZ9ZQ": "date",
+      "QZ10ZQ": "stamp"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0.001501
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-cur-supervision-payment",
+    "version": 1,
+    "status": "verified",
+    "name": "Consultant Supervision Payment (FAB)",
+    "nameAr": "دفعة الاستشاري عن أعمال الإشراف",
+    "description": "FAB National Housing Loans form: consultant supervision payment request.",
+    "category": "دفعة دورية",
+    "projectType": "bank",
+    "source": "private/bank/دفعة دورية/supe اشراف-.pdf",
+    "format": "pdf",
+    "reviewNotes": "First Abu Dhabi Bank – National Housing Loans payment form (scanned page). The values typed on the original were annotations and were deleted; amounts, IBAN and bank details stay blank for the user.",
+    "fields": [
+     {
+      "slot": "date",
+      "value": "{date|day}     {date|month}     {date|year}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "location",
+      "value": "{area_ar} - {sector_ar}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right"
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right"
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right"
+     },
+     {
+      "slot": "contractor",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "multiline": true
+     },
+     {
+      "slot": "start_date",
+      "value": "{project_start_date|day}     {project_start_date|month}     {project_start_date|year}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 92,
+       "anchor": "center"
+      }
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-cur-supervision-payment",
+    "version": 1,
+    "format": "pdf",
+    "sourceSha256": "87322861f5c1fdd81bb28a08afbf09c9414481bf6b3566fa5bd52184e098e343",
+    "baseSha256": "c6fa05ee2a0ffacb15d21e4a0d50c7ed56cfa0e671f2a706320a7dd84d251c13",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.2,
+      "height": 841.44
+     }
+    ],
+    "slots": {
+     "date": {
+      "page": 0,
+      "rect": [
+       391,
+       110,
+       485,
+       122
+      ]
+     },
+     "project_id": {
+      "page": 0,
+      "rect": [
+       248,
+       129,
+       450,
+       157
+      ]
+     },
+     "location": {
+      "page": 0,
+      "rect": [
+       62,
+       131,
+       135,
+       143
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "rect": [
+       339,
+       150,
+       481,
+       162
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "rect": [
+       374,
+       172,
+       486,
+       184
+      ]
+     },
+     "contractor": {
+      "page": 0,
+      "rect": [
+       280,
+       192,
+       488,
+       216
+      ]
+     },
+     "start_date": {
+      "page": 0,
+      "rect": [
+       370,
+       216,
+       460,
+       228
+      ]
+     },
+     "stamp": {
+      "page": 0,
+      "rect": [
+       118,
+       572,
+       208,
+       662
+      ]
+     }
+    },
+    "docx": null,
+    "build": {
+     "engine": "pymupdf 1.28.2"
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-ext-form",
+    "version": 1,
+    "status": "verified",
+    "name": "Project Time Extension Form",
+    "nameAr": "نموذج تمديد الفترة الزمنية للمشروع",
+    "description": "Project Time Extension Form",
+    "category": "تمديد البنك",
+    "projectType": "bank",
+    "source": "private/bank/تمديد البنك/نموذج تمديد بنك2.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "contractor",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "start_date",
+      "value": "project_start_date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "end_date",
+      "value": "project_end_date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 105,
+       "anchor": "marker",
+       "dx": 28,
+       "dy": 30
+      }
+     },
+     {
+      "slot": "components_text",
+      "value": "project_components_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "layoutTolerance": 0.004
+   },
+   "layout": {
+    "key": "bank-ext-form",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "7694191b9857dd50dd9f23770cbe80cd2b608e819695a662a93df122090055ae",
+    "baseSha256": "9646894dae63f51b1f3ead79048b481d92f805208711067bd77c4829331f80f0",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "project_id": {
+      "page": 0,
+      "baseline": 180.25,
+      "size": 14,
+      "rect": [
+       251.3,
+       164.25,
+       528.4,
+       192.15
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 208.75,
+      "size": 16,
+      "rect": [
+       251.3,
+       192.15,
+       528.4,
+       219.95
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 235.95,
+      "size": 14,
+      "rect": [
+       251.3,
+       219.95,
+       528.4,
+       247.85
+      ]
+     },
+     "contractor": {
+      "page": 0,
+      "baseline": 263.8,
+      "size": 14,
+      "rect": [
+       251.3,
+       247.85,
+       528.4,
+       275.65
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 291.65,
+      "size": 14,
+      "rect": [
+       251.3,
+       275.65,
+       528.4,
+       303.55
+      ]
+     },
+     "start_date": {
+      "page": 0,
+      "baseline": 433.5,
+      "size": 14,
+      "rect": [
+       30.6,
+       415.65,
+       404.1,
+       441.25
+      ]
+     },
+     "end_date": {
+      "page": 0,
+      "baseline": 460.35,
+      "size": 14,
+      "rect": [
+       30.6,
+       441.25,
+       156.6,
+       469.35
+      ]
+     },
+     "date": {
+      "page": 0,
+      "baseline": 97,
+      "size": 12,
+      "rect": [
+       385.78,
+       84.31,
+       495.78,
+       101.59
+      ]
+     },
+     "stamp": {
+      "page": 0,
+      "baseline": 702.3,
+      "size": 1,
+      "rect": [
+       307.34,
+       699.4,
+       317.34,
+       704.51
+      ]
+     },
+     "components_text": {
+      "page": 0,
+      "baseline": 328.9,
+      "size": 12,
+      "rect": [
+       -41.32,
+       316.04,
+       288.68,
+       333.43
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "project_id",
+      "QZ2ZQ": "owner",
+      "QZ3ZQ": "consultant",
+      "QZ4ZQ": "contractor",
+      "QZ5ZQ": "location",
+      "QZ6ZQ": "start_date",
+      "QZ7ZQ": "end_date",
+      "QZ8ZQ": "date",
+      "QZ9ZQ": "stamp",
+      "QZ10ZQ": "components_text"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0.002015
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-ext-signature",
+    "version": 1,
+    "status": "verified",
+    "name": "Signature Verification Letter",
+    "nameAr": "صحة التوقيع",
+    "description": "Signature Verification Letter",
+    "category": "تمديد البنك",
+    "projectType": "bank",
+    "source": "private/bank/تمديد البنك/صحة التواقيع.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "contractor",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "owner_2",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 105,
+       "anchor": "marker",
+       "dx": 28,
+       "dy": 58
+      }
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-ext-signature",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "6d734472a8190655ea9acb35326b812b791b231189ea604da649a82196f12113",
+    "baseSha256": "66195ce1592ed2ebade8324a539df793bf269f29aab21909c7ec74955c344687",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "project_id": {
+      "page": 0,
+      "baseline": 194.1,
+      "size": 14,
+      "rect": [
+       223.2,
+       178.15,
+       521.8,
+       206.05
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 219.35,
+      "size": 14,
+      "rect": [
+       223.2,
+       206.05,
+       521.8,
+       233.85
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 250.5,
+      "size": 16,
+      "rect": [
+       223.2,
+       233.85,
+       521.8,
+       261.75
+      ]
+     },
+     "contractor": {
+      "page": 0,
+      "baseline": 277.65,
+      "size": 14,
+      "rect": [
+       223.2,
+       261.75,
+       521.8,
+       289.55
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 305.85,
+      "size": 15,
+      "rect": [
+       223.2,
+       289.55,
+       521.8,
+       317.45
+      ]
+     },
+     "date": {
+      "page": 0,
+      "baseline": 110.8,
+      "size": 12,
+      "rect": [
+       376.28,
+       98.11,
+       486.28,
+       115.39
+      ]
+     },
+     "owner_2": {
+      "page": 0,
+      "baseline": 385.5,
+      "size": 16,
+      "rect": [
+       28.96,
+       370.3,
+       188.96,
+       390.3
+      ]
+     },
+     "stamp": {
+      "page": 0,
+      "baseline": 547.1,
+      "size": 1,
+      "rect": [
+       109.74,
+       544.21,
+       119.74,
+       549.32
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "project_id",
+      "QZ2ZQ": "owner",
+      "QZ3ZQ": "consultant",
+      "QZ4ZQ": "contractor",
+      "QZ5ZQ": "location",
+      "QZ6ZQ": "date",
+      "QZ7ZQ": "owner_2",
+      "QZ8ZQ": "stamp"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0.000628
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-fin-as-is",
+    "version": 1,
+    "status": "verified",
+    "name": "Project Handover in Current Condition",
+    "nameAr": "استلام المشروع على الوضع الراهن",
+    "description": "Project Handover in Current Condition",
+    "category": "دفعة نهائية",
+    "projectType": "bank",
+    "source": "private/bank/دفعة نهائية/استلام المشروع على الوضع الراهن[1].docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "contractor",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 105,
+       "anchor": "marker",
+       "dx": 28,
+       "dy": 58
+      }
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-fin-as-is",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "19f84cf232c0eb54de87260e407b4fb5c7e39b70495b3b28c64594f9c4f7c822",
+    "baseSha256": "47f4bf2c1209dd580ae7f5a26bcb5a7097c63776557165b3ed16532e2670e663",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "project_id": {
+      "page": 0,
+      "baseline": 139.35,
+      "size": 11,
+      "rect": [
+       224.8,
+       120.55,
+       520.1,
+       157.25
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 177.2,
+      "size": 14,
+      "rect": [
+       224.8,
+       157.25,
+       520.1,
+       194.05
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 213.95,
+      "size": 14,
+      "rect": [
+       224.8,
+       194.05,
+       520.1,
+       230.75
+      ]
+     },
+     "contractor": {
+      "page": 0,
+      "baseline": 250.55,
+      "size": 13.5,
+      "rect": [
+       224.8,
+       230.75,
+       520.1,
+       267.55
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 287.45,
+      "size": 14,
+      "rect": [
+       224.8,
+       267.55,
+       520.1,
+       304.25
+      ]
+     },
+     "date": {
+      "page": 0,
+      "baseline": 83.25,
+      "size": 12,
+      "rect": [
+       374.76,
+       70.39,
+       484.76,
+       87.78
+      ]
+     },
+     "stamp": {
+      "page": 0,
+      "baseline": 622.3,
+      "size": 1,
+      "rect": [
+       455.74,
+       619.4,
+       465.74,
+       624.51
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "date",
+      "QZ2ZQ": "project_id",
+      "QZ3ZQ": "owner",
+      "QZ4ZQ": "consultant",
+      "QZ5ZQ": "contractor",
+      "QZ6ZQ": "location",
+      "QZ7ZQ": "stamp"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-fin-bank-handover",
+    "version": 1,
+    "status": "verified",
+    "name": "Bank Handover Letter",
+    "nameAr": "تسليم بنك",
+    "description": "Bank Handover Letter",
+    "category": "دفعة نهائية",
+    "projectType": "bank",
+    "source": "private/bank/دفعة نهائية/كتاب تسليم بنك.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "contractor",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 105,
+       "anchor": "marker",
+       "dx": 28,
+       "dy": 58
+      }
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-fin-bank-handover",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "bca8e57bc888573a1f89cb9a61954fb394e632f10b01a11d20ef1d2c31a65d21",
+    "baseSha256": "00d2ac83933c8bad44f6a3f5ee341fca7bc066e52ad5398063f51753fedb15db",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "project_id": {
+      "page": 0,
+      "baseline": 218.5,
+      "size": 12,
+      "rect": [
+       233.9,
+       203.35,
+       511,
+       231.15
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 247.1,
+      "size": 14,
+      "rect": [
+       233.9,
+       231.15,
+       511,
+       259.05
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 274.95,
+      "size": 14,
+      "rect": [
+       233.9,
+       259.05,
+       511,
+       286.85
+      ]
+     },
+     "contractor": {
+      "page": 0,
+      "baseline": 302.65,
+      "size": 13.5,
+      "rect": [
+       233.9,
+       286.85,
+       511,
+       314.75
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 330.65,
+      "size": 14,
+      "rect": [
+       233.9,
+       314.75,
+       511,
+       342.55
+      ]
+     },
+     "date": {
+      "page": 0,
+      "baseline": 126.25,
+      "size": 12,
+      "rect": [
+       348.43,
+       112.63,
+       458.43,
+       131.14
+      ]
+     },
+     "stamp": {
+      "page": 0,
+      "baseline": 516.55,
+      "size": 1,
+      "rect": [
+       110.16,
+       513.66,
+       120.16,
+       518.77
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "date",
+      "QZ2ZQ": "project_id",
+      "QZ3ZQ": "owner",
+      "QZ4ZQ": "consultant",
+      "QZ5ZQ": "contractor",
+      "QZ6ZQ": "location",
+      "QZ7ZQ": "stamp"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0.000723
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-fin-checklist",
+    "version": 1,
+    "status": "verified",
+    "name": "Final Payment Checklist",
+    "nameAr": "قائمة تدقيق الدفعة النهائية",
+    "description": "Final Payment Checklist",
+    "category": "دفعة نهائية",
+    "projectType": "bank",
+    "source": "private/bank/دفعة نهائية/Final Payment Checklist 01-2019.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "contractor",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 105,
+       "anchor": "marker",
+       "dx": 45,
+       "dy": 58
+      }
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-fin-checklist",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "792a1217c3e082e79b214570957bdc0d2daef5bf416e0699761cab82997c7520",
+    "baseSha256": "dabc3d71e3bbbbaa5359a6321a33665d23dce3037be3f7287957307e8b093d6c",
+    "pageCount": 2,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     },
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "project_id": {
+      "page": 0,
+      "baseline": 77.9,
+      "size": 8,
+      "rect": [
+       10.41,
+       68.77,
+       210.41,
+       81.63
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 77.9,
+      "size": 10,
+      "rect": [
+       280.63,
+       66.22,
+       480.63,
+       82.31
+      ]
+     },
+     "contractor": {
+      "page": 0,
+      "baseline": 97.75,
+      "size": 10,
+      "rect": [
+       21.66,
+       86.07,
+       221.66,
+       102.16
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 97.75,
+      "size": 10,
+      "rect": [
+       291.79,
+       86.07,
+       491.79,
+       102.16
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 117.6,
+      "size": 10,
+      "rect": [
+       282.76,
+       105.92,
+       482.76,
+       122.01
+      ]
+     },
+     "stamp": {
+      "page": 1,
+      "baseline": 46.65,
+      "size": 1,
+      "rect": [
+       77.31,
+       43.68,
+       87.31,
+       48.89
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "project_id",
+      "QZ2ZQ": "owner",
+      "QZ3ZQ": "contractor",
+      "QZ4ZQ": "consultant",
+      "QZ5ZQ": "location",
+      "QZ6ZQ": "stamp"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0.000038
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-fin-contractor-completion",
+    "version": 1,
+    "status": "verified",
+    "name": "Contractor Letter – Works Completed",
+    "nameAr": "كتاب المقاول بإنهاء الأعمال",
+    "description": "Contractor Letter – Works Completed",
+    "category": "دفعة نهائية",
+    "projectType": "bank",
+    "source": "private/bank/دفعة نهائية/كتاب المقاول بإنهاء الأعمال.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "contractor",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-fin-contractor-completion",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "26bef29b231b24c54bd65bb10a5e28363e9fb739c3b51bde7e7b90becb2a857a",
+    "baseSha256": "87ab7a3eea83148b4da2355043991ec02df4ea7a87e904dddb677afddb18b0ab",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 609.99,
+      "height": 856.46
+     }
+    ],
+    "slots": {
+     "project_id": {
+      "page": 0,
+      "baseline": 297.45,
+      "size": 12,
+      "rect": [
+       254.1,
+       279.25,
+       531.2,
+       307.15
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 323,
+      "size": 14,
+      "rect": [
+       254.1,
+       307.15,
+       531.2,
+       334.85
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 350.8,
+      "size": 14,
+      "rect": [
+       254.1,
+       334.85,
+       531.2,
+       362.75
+      ]
+     },
+     "contractor": {
+      "page": 0,
+      "baseline": 378.5,
+      "size": 13.5,
+      "rect": [
+       254.1,
+       362.75,
+       531.2,
+       390.55
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 409.45,
+      "size": 14,
+      "rect": [
+       254.1,
+       390.55,
+       531.2,
+       418.35
+      ]
+     },
+     "date": {
+      "page": 0,
+      "baseline": 153.85,
+      "size": 12,
+      "rect": [
+       394.3,
+       140.23,
+       504.3,
+       158.74
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "project_id",
+      "QZ2ZQ": "owner",
+      "QZ3ZQ": "consultant",
+      "QZ4ZQ": "contractor",
+      "QZ5ZQ": "location",
+      "QZ6ZQ": "date"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0.0007
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-fin-contractor-payment",
+    "version": 1,
+    "status": "verified",
+    "name": "Contractor Execution Payment (FAB)",
+    "nameAr": "دفعة المقاول عن أعمال التنفيذ",
+    "description": "FAB National Housing Loans form: contractor execution payment request.",
+    "category": "دفعة نهائية",
+    "projectType": "bank",
+    "source": "private/bank/دفعة نهائية/تنفيذ -.pdf",
+    "format": "pdf",
+    "reviewNotes": "First Abu Dhabi Bank – National Housing Loans payment form (scanned page). The values typed on the original were annotations and were deleted; amounts, IBAN and bank details stay blank for the user.",
+    "fields": [
+     {
+      "slot": "date",
+      "value": "{date|day}     {date|month}     {date|year}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "location",
+      "value": "{area_ar} - {sector_ar}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right"
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right"
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right"
+     },
+     {
+      "slot": "contractor",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "multiline": true
+     },
+     {
+      "slot": "start_date",
+      "value": "{project_start_date|day}     {project_start_date|month}     {project_start_date|year}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 92,
+       "anchor": "center"
+      }
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-fin-contractor-payment",
+    "version": 1,
+    "format": "pdf",
+    "sourceSha256": "87a41c12cf3862fe82ba021c739951a45656176e6fbe63d03a0930a8a1e02404",
+    "baseSha256": "62f65eaa41c01a151a88897d38df61c58bc7cc0760f492f9721ba7c85c59cf38",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.2,
+      "height": 841.44
+     }
+    ],
+    "slots": {
+     "date": {
+      "page": 0,
+      "rect": [
+       379,
+       111,
+       472,
+       123
+      ]
+     },
+     "project_id": {
+      "page": 0,
+      "rect": [
+       335,
+       131,
+       467,
+       143
+      ]
+     },
+     "location": {
+      "page": 0,
+      "rect": [
+       67,
+       131,
+       153,
+       146
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "rect": [
+       342,
+       150,
+       484,
+       165
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "rect": [
+       370,
+       170,
+       482,
+       184
+      ]
+     },
+     "contractor": {
+      "page": 0,
+      "rect": [
+       247,
+       189,
+       467,
+       213
+      ]
+     },
+     "start_date": {
+      "page": 0,
+      "rect": [
+       385,
+       209,
+       474,
+       221
+      ]
+     },
+     "stamp": {
+      "page": 0,
+      "rect": [
+       140,
+       577,
+       230,
+       667
+      ]
+     }
+    },
+    "docx": null,
+    "build": {
+     "engine": "pymupdf 1.28.2"
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-fin-contractor-snags",
+    "version": 1,
+    "status": "verified",
+    "name": "Contractor Letter – Snags Completed",
+    "nameAr": "كتاب المقاول بإنهاء الملاحظات",
+    "description": "Contractor Letter – Snags Completed",
+    "category": "دفعة نهائية",
+    "projectType": "bank",
+    "source": "private/bank/دفعة نهائية/كتاب المقاول بإنهاء الملاحظات.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "contractor",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-fin-contractor-snags",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "95ca956bc184857fd3c9625413b782978d62e325ea759569ae256fbe7355fa89",
+    "baseSha256": "940e5a75d58a4265cc16d8958aa915d40c1a6e8a77ddc3c64b244af524097fe2",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "project_id": {
+      "page": 0,
+      "baseline": 313.55,
+      "size": 12,
+      "rect": [
+       246.8,
+       295.35,
+       523.9,
+       323.25
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 339.1,
+      "size": 14,
+      "rect": [
+       246.8,
+       323.25,
+       523.9,
+       350.95
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 366.9,
+      "size": 14,
+      "rect": [
+       246.8,
+       350.95,
+       523.9,
+       378.85
+      ]
+     },
+     "contractor": {
+      "page": 0,
+      "baseline": 394.6,
+      "size": 13.5,
+      "rect": [
+       246.8,
+       378.85,
+       523.9,
+       406.65
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 425.55,
+      "size": 14,
+      "rect": [
+       246.8,
+       406.65,
+       523.9,
+       434.45
+      ]
+     },
+     "date": {
+      "page": 0,
+      "baseline": 153.85,
+      "size": 12,
+      "rect": [
+       379.6,
+       140.23,
+       489.6,
+       158.74
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "project_id",
+      "QZ2ZQ": "owner",
+      "QZ3ZQ": "consultant",
+      "QZ4ZQ": "contractor",
+      "QZ5ZQ": "location",
+      "QZ6ZQ": "date"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0.000729
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-fin-delay-waiver",
+    "version": 1,
+    "status": "verified",
+    "name": "Waiver of Delay Penalty",
+    "nameAr": "إعفاء من غرامة التأخير",
+    "description": "Waiver of Delay Penalty",
+    "category": "دفعة نهائية",
+    "projectType": "bank",
+    "source": "private/bank/دفعة نهائية/اعفاء من غرامة التاخير.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "contractor",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "owner_2",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 105,
+       "anchor": "marker",
+       "dx": 28,
+       "dy": 58
+      }
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-fin-delay-waiver",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "f2c87c5703f16a4d5c22952e2c6ae1d63e66932faa4b8f873cb46ba9314b7cdf",
+    "baseSha256": "a4ce66b9307737e96f80231e046922a1e1bd3656b7db3cb70d43692968e18742",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "project_id": {
+      "page": 0,
+      "baseline": 204.7,
+      "size": 12,
+      "rect": [
+       233.9,
+       189.55,
+       511,
+       217.35
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 233.3,
+      "size": 14,
+      "rect": [
+       233.9,
+       217.35,
+       511,
+       245.25
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 261.15,
+      "size": 14,
+      "rect": [
+       233.9,
+       245.25,
+       511,
+       273.05
+      ]
+     },
+     "contractor": {
+      "page": 0,
+      "baseline": 288.85,
+      "size": 13.5,
+      "rect": [
+       233.9,
+       273.05,
+       511,
+       300.95
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 316.85,
+      "size": 14,
+      "rect": [
+       233.9,
+       300.95,
+       511,
+       328.75
+      ]
+     },
+     "date": {
+      "page": 0,
+      "baseline": 112.45,
+      "size": 12,
+      "rect": [
+       348.43,
+       98.83,
+       458.43,
+       117.34
+      ]
+     },
+     "owner_2": {
+      "page": 0,
+      "baseline": 535.5,
+      "size": 14,
+      "rect": [
+       -4.6,
+       521.03,
+       215.4,
+       540.52
+      ]
+     },
+     "stamp": {
+      "page": 0,
+      "baseline": 519.4,
+      "size": 1,
+      "rect": [
+       461.61,
+       516.51,
+       471.61,
+       521.62
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "date",
+      "QZ2ZQ": "project_id",
+      "QZ3ZQ": "owner",
+      "QZ4ZQ": "consultant",
+      "QZ5ZQ": "contractor",
+      "QZ6ZQ": "location",
+      "QZ7ZQ": "owner_2",
+      "QZ8ZQ": "stamp"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0.001036
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-fin-final-receipt",
+    "version": 1,
+    "status": "verified",
+    "name": "Final Handover Report",
+    "nameAr": "محضر استلام نهائي",
+    "description": "Final Handover Report",
+    "category": "دفعة نهائية",
+    "projectType": "bank",
+    "source": "private/bank/دفعة نهائية/استلام نهائي.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "contractor",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 105,
+       "anchor": "marker",
+       "dx": 28,
+       "dy": 58
+      }
+     }
+    ],
+    "layoutTolerance": 0.004
+   },
+   "layout": {
+    "key": "bank-fin-final-receipt",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "9e31c51406726d41e6b355721f5656725426194cac2b2100e7a0f751afbe39a5",
+    "baseSha256": "3047fb5b2e24ef57eaa8a166658c2ad1e4347534667ac6e56d478434581c06fe",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "project_id": {
+      "page": 0,
+      "baseline": 204.7,
+      "size": 12,
+      "rect": [
+       233.9,
+       189.55,
+       511,
+       217.35
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 233.3,
+      "size": 14,
+      "rect": [
+       233.9,
+       217.35,
+       511,
+       245.25
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 261.15,
+      "size": 14,
+      "rect": [
+       233.9,
+       245.25,
+       511,
+       273.05
+      ]
+     },
+     "contractor": {
+      "page": 0,
+      "baseline": 288.85,
+      "size": 13.5,
+      "rect": [
+       233.9,
+       273.05,
+       511,
+       300.95
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 316.85,
+      "size": 14,
+      "rect": [
+       233.9,
+       300.95,
+       511,
+       328.75
+      ]
+     },
+     "date": {
+      "page": 0,
+      "baseline": 112.45,
+      "size": 12,
+      "rect": [
+       348.43,
+       98.83,
+       458.43,
+       117.34
+      ]
+     },
+     "stamp": {
+      "page": 0,
+      "baseline": 665.75,
+      "size": 1,
+      "rect": [
+       122.34,
+       662.86,
+       132.34,
+       667.97
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "date",
+      "QZ2ZQ": "project_id",
+      "QZ3ZQ": "owner",
+      "QZ4ZQ": "consultant",
+      "QZ5ZQ": "contractor",
+      "QZ6ZQ": "location",
+      "QZ7ZQ": "stamp"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0.00271
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-fin-handover-items",
+    "version": 1,
+    "status": "verified",
+    "name": "Project Items Handover Report",
+    "nameAr": "محضر تسليم مهمات المشروع",
+    "description": "Project Items Handover Report",
+    "category": "دفعة نهائية",
+    "projectType": "bank",
+    "source": "private/bank/دفعة نهائية/محضر استلام مهمات.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "contractor",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 105,
+       "anchor": "marker",
+       "dx": 45,
+       "dy": 58
+      }
+     }
+    ],
+    "layoutTolerance": 0.005
+   },
+   "layout": {
+    "key": "bank-fin-handover-items",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "df52acbe8ed46e0eb66782d0a609c4a1f8fd45e52c2aa1dd566b3812cee9533b",
+    "baseSha256": "e0e2e7e7174415481b7f8c85a68c50f1609ecb420b4d41a3d983f1f7708928fd",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "project_id": {
+      "page": 0,
+      "baseline": 204.7,
+      "size": 12,
+      "rect": [
+       233.9,
+       189.55,
+       511,
+       217.35
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 233.3,
+      "size": 14,
+      "rect": [
+       233.9,
+       217.35,
+       511,
+       245.25
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 261.15,
+      "size": 14,
+      "rect": [
+       233.9,
+       245.25,
+       511,
+       273.05
+      ]
+     },
+     "contractor": {
+      "page": 0,
+      "baseline": 288.85,
+      "size": 13.5,
+      "rect": [
+       233.9,
+       273.05,
+       511,
+       300.95
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 316.85,
+      "size": 14,
+      "rect": [
+       233.9,
+       300.95,
+       511,
+       328.75
+      ]
+     },
+     "date": {
+      "page": 0,
+      "baseline": 112.45,
+      "size": 12,
+      "rect": [
+       348.43,
+       98.83,
+       458.43,
+       117.34
+      ]
+     },
+     "stamp": {
+      "page": 0,
+      "baseline": 616.4,
+      "size": 1,
+      "rect": [
+       184.16,
+       613.51,
+       194.16,
+       618.62
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "date",
+      "QZ2ZQ": "project_id",
+      "QZ3ZQ": "owner",
+      "QZ4ZQ": "consultant",
+      "QZ5ZQ": "contractor",
+      "QZ6ZQ": "location",
+      "QZ7ZQ": "stamp"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0.003425
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-fin-initial-receipt-report",
+    "version": 1,
+    "status": "verified",
+    "name": "Initial Handover Inspection Report",
+    "nameAr": "تقرير محضر استلام ابتدائي",
+    "description": "Initial Handover Inspection Report",
+    "category": "دفعة نهائية",
+    "projectType": "bank",
+    "source": "private/bank/دفعة نهائية/محضر استلام ابتدائي3.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "contractor",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 105,
+       "anchor": "marker",
+       "dx": 28,
+       "dy": 58
+      }
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-fin-initial-receipt-report",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "694043b963a8a8dcb31a9cff1a12271749e2a1576ca92e646b2680ec14780f6e",
+    "baseSha256": "cb852846aeb4c1c897b06ba9340557f84840f3e181713c8c455f83acb842bd30",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "project_id": {
+      "page": 0,
+      "baseline": 191.75,
+      "size": 14,
+      "rect": [
+       84.3,
+       170.85,
+       361.4,
+       210.45
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 231.35,
+      "size": 14,
+      "rect": [
+       84.3,
+       210.45,
+       361.4,
+       250.05
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 270.95,
+      "size": 14,
+      "rect": [
+       84.3,
+       250.05,
+       361.4,
+       289.65
+      ]
+     },
+     "contractor": {
+      "page": 0,
+      "baseline": 310.55,
+      "size": 14,
+      "rect": [
+       84.3,
+       289.65,
+       361.4,
+       329.25
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 350.15,
+      "size": 14,
+      "rect": [
+       84.3,
+       329.25,
+       361.4,
+       368.85
+      ]
+     },
+     "date": {
+      "page": 0,
+      "baseline": 82.5,
+      "size": 9,
+      "rect": [
+       379.1,
+       73.01,
+       489.1,
+       87.2
+      ]
+     },
+     "stamp": {
+      "page": 0,
+      "baseline": 671.85,
+      "size": 1,
+      "rect": [
+       286.98,
+       668.9,
+       296.98,
+       674.12
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "project_id",
+      "QZ2ZQ": "owner",
+      "QZ3ZQ": "consultant",
+      "QZ4ZQ": "contractor",
+      "QZ5ZQ": "location",
+      "QZ6ZQ": "date",
+      "QZ7ZQ": "stamp"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0.000319
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-fin-initial-receipt",
+    "version": 1,
+    "status": "verified",
+    "name": "Initial Handover & Settlement Report",
+    "nameAr": "محضر استلام ابتدائي وتسوية ابتدائية",
+    "description": "Initial Handover & Settlement Report",
+    "category": "دفعة نهائية",
+    "projectType": "bank",
+    "source": "private/bank/دفعة نهائية/محضر استلام ابتدائي.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "contractor",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "start_date",
+      "value": "project_start_date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "end_date",
+      "value": "project_end_date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 105,
+       "anchor": "marker",
+       "dx": 28,
+       "dy": 58
+      }
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-fin-initial-receipt",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "8e5265cede6762cb6bf4651743d87dc6b6ddc2227e2095070efb0107f9c48fb5",
+    "baseSha256": "d7544dfd053318f90d73f343289f9a1cac753fe19696365c760ba9aaedd7b933",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "project_id": {
+      "page": 0,
+      "baseline": 188.6,
+      "size": 12,
+      "rect": [
+       233.9,
+       173.45,
+       511,
+       201.25
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 217.2,
+      "size": 14,
+      "rect": [
+       233.9,
+       201.25,
+       511,
+       229.15
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 246.15,
+      "size": 14,
+      "rect": [
+       233.9,
+       229.15,
+       511,
+       259.15
+      ]
+     },
+     "contractor": {
+      "page": 0,
+      "baseline": 274.9,
+      "size": 13.5,
+      "rect": [
+       233.9,
+       259.15,
+       511,
+       286.95
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 302.9,
+      "size": 14,
+      "rect": [
+       233.9,
+       286.95,
+       511,
+       314.85
+      ]
+     },
+     "start_date": {
+      "page": 0,
+      "baseline": 374.65,
+      "size": 14,
+      "rect": [
+       59.4,
+       361.35,
+       401.2,
+       377.95
+      ]
+     },
+     "end_date": {
+      "page": 0,
+      "baseline": 424.45,
+      "size": 14,
+      "rect": [
+       59.4,
+       411.15,
+       401.2,
+       427.75
+      ]
+     },
+     "date": {
+      "page": 0,
+      "baseline": 98.65,
+      "size": 12,
+      "rect": [
+       348.43,
+       85.03,
+       458.43,
+       103.54
+      ]
+     },
+     "stamp": {
+      "page": 0,
+      "baseline": 680.55,
+      "size": 1,
+      "rect": [
+       468.61,
+       677.66,
+       478.61,
+       682.77
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "date",
+      "QZ2ZQ": "project_id",
+      "QZ3ZQ": "owner",
+      "QZ4ZQ": "consultant",
+      "QZ5ZQ": "contractor",
+      "QZ6ZQ": "location",
+      "QZ7ZQ": "start_date",
+      "QZ8ZQ": "end_date",
+      "QZ9ZQ": "stamp"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0.000723
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-fin-initial-settlement",
+    "version": 1,
+    "status": "verified",
+    "name": "Initial Handover – Settlement Details",
+    "nameAr": "محضر استلام ابتدائي – تفاصيل التسوية",
+    "description": "Initial Handover – Settlement Details",
+    "category": "دفعة نهائية",
+    "projectType": "bank",
+    "source": "private/bank/دفعة نهائية/محضر استلام ابتدائي2.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "contractor",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 105,
+       "anchor": "marker",
+       "dx": 28,
+       "dy": 58
+      }
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-fin-initial-settlement",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "80921b4ab41a04fc2c22a154ef523fc2965e725398f8421736730027a68eb519",
+    "baseSha256": "d2ba7fd74518aa9fcdbe5053776cc768db78d16a1e714604bd7261ed18405d85",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "project_id": {
+      "page": 0,
+      "baseline": 207,
+      "size": 12,
+      "rect": [
+       233.9,
+       191.85,
+       511,
+       219.65
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 235.6,
+      "size": 14,
+      "rect": [
+       233.9,
+       219.65,
+       511,
+       247.55
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 263.45,
+      "size": 14,
+      "rect": [
+       233.9,
+       247.55,
+       511,
+       275.35
+      ]
+     },
+     "contractor": {
+      "page": 0,
+      "baseline": 291.15,
+      "size": 13.5,
+      "rect": [
+       233.9,
+       275.35,
+       511,
+       303.25
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 319.15,
+      "size": 14,
+      "rect": [
+       233.9,
+       303.25,
+       511,
+       331.05
+      ]
+     },
+     "date": {
+      "page": 0,
+      "baseline": 98.65,
+      "size": 12,
+      "rect": [
+       348.43,
+       85.03,
+       458.43,
+       103.54
+      ]
+     },
+     "stamp": {
+      "page": 0,
+      "baseline": 696.9,
+      "size": 1,
+      "rect": [
+       468.61,
+       694.01,
+       478.61,
+       699.12
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "date",
+      "QZ2ZQ": "project_id",
+      "QZ3ZQ": "owner",
+      "QZ4ZQ": "consultant",
+      "QZ5ZQ": "contractor",
+      "QZ6ZQ": "location",
+      "QZ7ZQ": "stamp"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0.000723
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-fin-installments",
+    "version": 1,
+    "status": "verified",
+    "name": "Approval to Start Loan Installments",
+    "nameAr": "الموافقة على البدء بتحصيل الأقساط",
+    "description": "Approval to Start Loan Installments",
+    "category": "دفعة نهائية",
+    "projectType": "bank",
+    "source": "private/bank/دفعة نهائية/الموافقه على البدء بتحصيل الاقساط.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "contractor",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "owner_2",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-fin-installments",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "81f777a0cea99612b81a4f5dfc6c40987d15d47e9f8d69fa47ac888deb02abe7",
+    "baseSha256": "79f517e95231fd508f2edafa6dacd794d2e83dd01df59939135dbd1bff9d71d3",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "project_id": {
+      "page": 0,
+      "baseline": 209.3,
+      "size": 12,
+      "rect": [
+       84.4,
+       194.15,
+       361.4,
+       221.95
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 237.9,
+      "size": 14,
+      "rect": [
+       84.4,
+       221.95,
+       361.4,
+       249.85
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 265.75,
+      "size": 14,
+      "rect": [
+       84.4,
+       249.85,
+       361.4,
+       277.65
+      ]
+     },
+     "contractor": {
+      "page": 0,
+      "baseline": 293.45,
+      "size": 13.5,
+      "rect": [
+       84.4,
+       277.65,
+       361.4,
+       305.55
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 321.45,
+      "size": 14,
+      "rect": [
+       84.4,
+       305.55,
+       361.4,
+       333.35
+      ]
+     },
+     "date": {
+      "page": 0,
+      "baseline": 98.65,
+      "size": 12,
+      "rect": [
+       323.23,
+       85.03,
+       433.23,
+       103.54
+      ]
+     },
+     "owner_2": {
+      "page": 0,
+      "baseline": 526.15,
+      "size": 14,
+      "rect": [
+       -26.25,
+       511.68,
+       193.75,
+       531.17
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "date",
+      "QZ2ZQ": "project_id",
+      "QZ3ZQ": "owner",
+      "QZ4ZQ": "consultant",
+      "QZ5ZQ": "contractor",
+      "QZ6ZQ": "location",
+      "QZ7ZQ": "owner_2"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0.000707
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-fin-insulation",
+    "version": 1,
+    "status": "verified",
+    "name": "Waterproofing Layers Guarantee",
+    "nameAr": "ضمان الطبقات العازلة",
+    "description": "Waterproofing Layers Guarantee",
+    "category": "دفعة نهائية",
+    "projectType": "bank",
+    "source": "private/bank/دفعة نهائية/تعهد طبقات العزل.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "contractor",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 105,
+       "anchor": "marker",
+       "dx": 28,
+       "dy": 58
+      }
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-fin-insulation",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "8eca0865cdf6d116aeab6d39cec0fa2c19ba6b5d09a61194f12e5871933a3d58",
+    "baseSha256": "e409d358e3124b37e9447c454e56ce3ace65d315a533ede6af418d7d01cfa3de",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "project_id": {
+      "page": 0,
+      "baseline": 204.7,
+      "size": 12,
+      "rect": [
+       233.9,
+       189.55,
+       511,
+       217.35
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 233.3,
+      "size": 14,
+      "rect": [
+       233.9,
+       217.35,
+       511,
+       245.25
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 261.15,
+      "size": 14,
+      "rect": [
+       233.9,
+       245.25,
+       511,
+       273.05
+      ]
+     },
+     "contractor": {
+      "page": 0,
+      "baseline": 288.85,
+      "size": 13.5,
+      "rect": [
+       233.9,
+       273.05,
+       511,
+       300.95
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 316.85,
+      "size": 14,
+      "rect": [
+       233.9,
+       300.95,
+       511,
+       328.75
+      ]
+     },
+     "date": {
+      "page": 0,
+      "baseline": 112.45,
+      "size": 12,
+      "rect": [
+       348.43,
+       98.83,
+       458.43,
+       117.34
+      ]
+     },
+     "stamp": {
+      "page": 0,
+      "baseline": 521.15,
+      "size": 1,
+      "rect": [
+       91.26,
+       518.26,
+       101.26,
+       523.37
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "date",
+      "QZ2ZQ": "project_id",
+      "QZ3ZQ": "owner",
+      "QZ4ZQ": "consultant",
+      "QZ5ZQ": "contractor",
+      "QZ6ZQ": "location",
+      "QZ7ZQ": "stamp"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0.00113
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-fin-maintenance-payment",
+    "version": 1,
+    "status": "verified",
+    "name": "No Objection to Payment Release",
+    "nameAr": "لا مانع من صرف الدفعة",
+    "description": "No Objection to Payment Release",
+    "category": "دفعة نهائية",
+    "projectType": "bank",
+    "source": "private/bank/دفعة نهائية/دفعة صيانه222222.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 105,
+       "anchor": "marker",
+       "dx": 28,
+       "dy": 58
+      }
+     },
+     {
+      "slot": "owner_text",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-fin-maintenance-payment",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "2e3714b2c89d3d275d049e511e3993e694bee8e631aaa34c916c94d041ff4610",
+    "baseSha256": "829fe47b45899837e60029d8257de206d74e029eeb2022ced2cad3cf045ca3d2",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "owner": {
+      "page": 0,
+      "baseline": 282.7,
+      "size": 14,
+      "rect": [
+       222.7,
+       266.75,
+       522.3,
+       294.65
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 310.55,
+      "size": 14,
+      "rect": [
+       222.7,
+       294.65,
+       522.3,
+       322.45
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 338.4,
+      "size": 14,
+      "rect": [
+       222.7,
+       322.45,
+       522.3,
+       350.35
+      ]
+     },
+     "plot": {
+      "page": 0,
+      "baseline": 366.25,
+      "size": 14,
+      "rect": [
+       222.7,
+       350.35,
+       522.3,
+       378.15
+      ]
+     },
+     "project_id": {
+      "page": 0,
+      "baseline": 395.5,
+      "size": 16,
+      "rect": [
+       222.7,
+       378.15,
+       522.3,
+       411.95
+      ]
+     },
+     "date": {
+      "page": 0,
+      "baseline": 155.95,
+      "size": 14,
+      "rect": [
+       365.06,
+       140.4,
+       475.06,
+       161.32
+      ]
+     },
+     "stamp": {
+      "page": 0,
+      "baseline": 582.15,
+      "size": 1,
+      "rect": [
+       94.74,
+       579.26,
+       104.74,
+       584.37
+      ]
+     },
+     "owner_text": {
+      "page": 0,
+      "baseline": 473.55,
+      "size": 14,
+      "rect": [
+       102.08,
+       460.25,
+       245.76,
+       477.75
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "owner",
+      "QZ2ZQ": "consultant",
+      "QZ3ZQ": "location",
+      "QZ4ZQ": "plot",
+      "QZ5ZQ": "project_id",
+      "QZ6ZQ": "date",
+      "QZ7ZQ": "stamp",
+      "QZ8ZQ": "owner_text"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0.000159
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-fin-maintenance-undertaking",
+    "version": 1,
+    "status": "verified",
+    "name": "Contractor Maintenance Undertaking",
+    "nameAr": "تعهد الصيانة",
+    "description": "Contractor Maintenance Undertaking",
+    "category": "دفعة نهائية",
+    "projectType": "bank",
+    "source": "private/bank/دفعة نهائية/تعهد الصيانة.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "contractor",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "contractor_2",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "contractor_3",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-fin-maintenance-undertaking",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "e6d80413546cbf26089157f267d2e5f750916fb536a219ccc824c7dc7b568d9c",
+    "baseSha256": "0ce02a890cb10964979ccac620462a09b95ec00d69430f5ab9087edbfb550257",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "project_id": {
+      "page": 0,
+      "baseline": 227.6,
+      "size": 12,
+      "rect": [
+       233.9,
+       212.45,
+       511,
+       240.25
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 256.2,
+      "size": 14,
+      "rect": [
+       233.9,
+       240.25,
+       511,
+       268.15
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 284.05,
+      "size": 14,
+      "rect": [
+       233.9,
+       268.15,
+       511,
+       295.95
+      ]
+     },
+     "contractor": {
+      "page": 0,
+      "baseline": 311.75,
+      "size": 13.5,
+      "rect": [
+       233.9,
+       295.95,
+       511,
+       323.85
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 339.75,
+      "size": 14,
+      "rect": [
+       233.9,
+       323.85,
+       511,
+       351.65
+      ]
+     },
+     "date": {
+      "page": 0,
+      "baseline": 140.05,
+      "size": 12,
+      "rect": [
+       348.43,
+       126.43,
+       458.43,
+       144.94
+      ]
+     },
+     "contractor_2": {
+      "page": 0,
+      "baseline": 413.3,
+      "size": 14,
+      "rect": [
+       133.16,
+       400,
+       293.16,
+       417.5
+      ]
+     },
+     "contractor_3": {
+      "page": 0,
+      "baseline": 557.85,
+      "size": 13.5,
+      "rect": [
+       42.01,
+       543.82,
+       262.01,
+       562.77
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "date",
+      "QZ2ZQ": "project_id",
+      "QZ3ZQ": "owner",
+      "QZ4ZQ": "consultant",
+      "QZ5ZQ": "contractor",
+      "QZ6ZQ": "location",
+      "QZ7ZQ": "contractor_2",
+      "QZ8ZQ": "contractor_3"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0.000723
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-fin-maintenance-waiver",
+    "version": 1,
+    "status": "verified",
+    "name": "Waiver of Maintenance Guarantee",
+    "nameAr": "إعفاء من ضمان أعمال الصيانة",
+    "description": "Waiver of Maintenance Guarantee",
+    "category": "دفعة نهائية",
+    "projectType": "bank",
+    "source": "private/bank/دفعة نهائية/اعفاء من ضمان اعمال الصيانه.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "contractor",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "owner_2",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-fin-maintenance-waiver",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "c8267a67d24b69221248b1010f343b74cd6950b0eeadbcca1f2bad01b75f146f",
+    "baseSha256": "209e8fb625c041bb3fd8557ef5c911064ad0b2fb3360f54334ecfa5e4bfa9453",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "project_id": {
+      "page": 0,
+      "baseline": 205.6,
+      "size": 12,
+      "rect": [
+       90.4,
+       190.45,
+       367.5,
+       218.25
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 234.2,
+      "size": 14,
+      "rect": [
+       90.4,
+       218.25,
+       367.5,
+       246.15
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 262.05,
+      "size": 14,
+      "rect": [
+       90.4,
+       246.15,
+       367.5,
+       273.95
+      ]
+     },
+     "contractor": {
+      "page": 0,
+      "baseline": 289.75,
+      "size": 13.5,
+      "rect": [
+       90.4,
+       273.95,
+       367.5,
+       301.85
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 317.75,
+      "size": 14,
+      "rect": [
+       90.4,
+       301.85,
+       367.5,
+       329.65
+      ]
+     },
+     "date": {
+      "page": 0,
+      "baseline": 113.35,
+      "size": 12,
+      "rect": [
+       371.28,
+       99.73,
+       481.28,
+       118.24
+      ]
+     },
+     "owner_2": {
+      "page": 0,
+      "baseline": 593.4,
+      "size": 14,
+      "rect": [
+       9.75,
+       578.93,
+       229.75,
+       598.42
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "date",
+      "QZ2ZQ": "project_id",
+      "QZ3ZQ": "owner",
+      "QZ4ZQ": "consultant",
+      "QZ5ZQ": "contractor",
+      "QZ6ZQ": "location",
+      "QZ7ZQ": "owner_2"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0.000721
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-fin-owner-signature",
+    "version": 1,
+    "status": "verified",
+    "name": "Owner Signature at Consultant Office",
+    "nameAr": "حضور وتوقيع المالك",
+    "description": "Owner Signature at Consultant Office",
+    "category": "دفعة نهائية",
+    "projectType": "bank",
+    "source": "private/bank/دفعة نهائية/توقيع المالك أمام المكتب الإستشاري.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "contractor",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 105,
+       "anchor": "marker",
+       "dx": 28,
+       "dy": 58
+      }
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-fin-owner-signature",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "8d938e413e18d5304b9d170e4e1d3b95e2fd66be781b9539996c76a3f841593e",
+    "baseSha256": "7383df33bfa913b58313e25f8ac604478e2a14a69433b4e371e6606dcc86a32e",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "project_id": {
+      "page": 0,
+      "baseline": 218.5,
+      "size": 12,
+      "rect": [
+       224.2,
+       203.35,
+       520.8,
+       231.15
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 247.1,
+      "size": 14,
+      "rect": [
+       224.2,
+       231.15,
+       520.8,
+       259.05
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 274.95,
+      "size": 14,
+      "rect": [
+       224.2,
+       259.05,
+       520.8,
+       286.85
+      ]
+     },
+     "contractor": {
+      "page": 0,
+      "baseline": 302.65,
+      "size": 13.5,
+      "rect": [
+       224.2,
+       286.85,
+       520.8,
+       314.75
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 330.65,
+      "size": 14,
+      "rect": [
+       224.2,
+       314.75,
+       520.8,
+       342.55
+      ]
+     },
+     "date": {
+      "page": 0,
+      "baseline": 126.25,
+      "size": 12,
+      "rect": [
+       348.43,
+       112.63,
+       458.43,
+       131.14
+      ]
+     },
+     "stamp": {
+      "page": 0,
+      "baseline": 502.95,
+      "size": 1,
+      "rect": [
+       74.19,
+       500.06,
+       84.19,
+       505.17
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "date",
+      "QZ2ZQ": "project_id",
+      "QZ3ZQ": "owner",
+      "QZ4ZQ": "consultant",
+      "QZ5ZQ": "contractor",
+      "QZ6ZQ": "location",
+      "QZ7ZQ": "stamp"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0.000723
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-fin-report",
+    "version": 1,
+    "status": "verified",
+    "name": "Work Progress Report (Final Payment)",
+    "nameAr": "تقرير اعتماد إنجاز الأعمال – دفعة نهائية",
+    "description": "Work Progress Report (Final Payment)",
+    "category": "دفعة نهائية",
+    "projectType": "bank",
+    "source": "private/bank/دفعة نهائية/REPORT.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "contractor",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "end_date",
+      "value": "project_end_date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "start_date",
+      "value": "project_start_date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "components",
+      "value": "project_components_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 105,
+       "anchor": "marker",
+       "dx": 45,
+       "dy": 50
+      }
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-fin-report",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "59265f87559f55c0a800eb5a683a7cc282cd67316ac72d32d1bdc1287939340c",
+    "baseSha256": "3588f58246799abfe78b5cf20bb6a96bbbd1d81e74f27a47025125fd2a86e206",
+    "pageCount": 2,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     },
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "owner": {
+      "page": 0,
+      "baseline": 121.4,
+      "size": 10,
+      "rect": [
+       406.3,
+       111.45,
+       574.7,
+       136.95
+      ]
+     },
+     "project_id": {
+      "page": 0,
+      "baseline": 127.4,
+      "size": 9,
+      "rect": [
+       137,
+       111.45,
+       300,
+       136.95
+      ]
+     },
+     "contractor": {
+      "page": 0,
+      "baseline": 153.35,
+      "size": 10,
+      "rect": [
+       406.3,
+       136.95,
+       574.7,
+       162.45
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 153.35,
+      "size": 10,
+      "rect": [
+       137,
+       136.95,
+       300,
+       162.45
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 195.35,
+      "size": 12,
+      "rect": [
+       137,
+       178.35,
+       300,
+       203.85
+      ]
+     },
+     "end_date": {
+      "page": 0,
+      "baseline": 247.15,
+      "size": 14,
+      "rect": [
+       406.3,
+       229.35,
+       574.7,
+       254.85
+      ]
+     },
+     "start_date": {
+      "page": 0,
+      "baseline": 247.1,
+      "size": 14,
+      "rect": [
+       137,
+       229.35,
+       300,
+       254.85
+      ]
+     },
+     "components": {
+      "page": 0,
+      "baseline": 297.35,
+      "size": 12,
+      "rect": [
+       137,
+       280.35,
+       574.7,
+       305.85
+      ]
+     },
+     "date": {
+      "page": 0,
+      "baseline": 79.35,
+      "size": 11,
+      "rect": [
+       415.27,
+       66.7,
+       525.27,
+       84
+      ]
+     },
+     "stamp": {
+      "page": 0,
+      "baseline": 600.15,
+      "size": 1,
+      "rect": [
+       67.92,
+       597.18,
+       77.92,
+       602.39
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "date",
+      "QZ2ZQ": "owner",
+      "QZ3ZQ": "project_id",
+      "QZ4ZQ": "contractor",
+      "QZ5ZQ": "consultant",
+      "QZ6ZQ": "location",
+      "QZ7ZQ": "end_date",
+      "QZ8ZQ": "start_date",
+      "QZ9ZQ": "components",
+      "QZ10ZQ": "stamp"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0.000588
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-fin-snag-list",
+    "version": 1,
+    "status": "verified",
+    "name": "Initial Handover Snag List",
+    "nameAr": "ملاحظات استلام ابتدائي",
+    "description": "Initial Handover Snag List",
+    "category": "دفعة نهائية",
+    "projectType": "bank",
+    "source": "private/bank/دفعة نهائية/ملاحظات استلام1.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "contractor",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 105,
+       "anchor": "marker",
+       "dx": 28,
+       "dy": 58
+      }
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-fin-snag-list",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "1d7e91a5303f25476b91f2f263ab569a4ef3cb2879829ba8921af61b288abd0d",
+    "baseSha256": "f2d9c5ed14c3a303e9407b51c4d100f9681e21e0e030a38df7eaa489541bc1ba",
+    "pageCount": 2,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     },
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "project_id": {
+      "page": 0,
+      "baseline": 222.65,
+      "size": 12,
+      "rect": [
+       233.9,
+       204.45,
+       511,
+       232.35
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 248.2,
+      "size": 14,
+      "rect": [
+       233.9,
+       232.35,
+       511,
+       260.05
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 276,
+      "size": 14,
+      "rect": [
+       233.9,
+       260.05,
+       511,
+       287.95
+      ]
+     },
+     "contractor": {
+      "page": 0,
+      "baseline": 303.7,
+      "size": 13.5,
+      "rect": [
+       233.9,
+       287.95,
+       511,
+       315.75
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 334.65,
+      "size": 14,
+      "rect": [
+       233.9,
+       315.75,
+       511,
+       343.55
+      ]
+     },
+     "date": {
+      "page": 0,
+      "baseline": 112.45,
+      "size": 12,
+      "rect": [
+       348.4,
+       98.83,
+       458.4,
+       117.34
+      ]
+     },
+     "stamp": {
+      "page": 1,
+      "baseline": 472.3,
+      "size": 1,
+      "rect": [
+       148.31,
+       469.41,
+       158.31,
+       474.52
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "project_id",
+      "QZ2ZQ": "owner",
+      "QZ3ZQ": "consultant",
+      "QZ4ZQ": "contractor",
+      "QZ5ZQ": "location",
+      "QZ6ZQ": "date",
+      "QZ7ZQ": "stamp"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0.000723
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-fin-snags-closure",
+    "version": 1,
+    "status": "verified",
+    "name": "Snags Closure Report",
+    "nameAr": "محضر إنهاء الملاحظات",
+    "description": "Snags Closure Report",
+    "category": "دفعة نهائية",
+    "projectType": "bank",
+    "source": "private/bank/دفعة نهائية/محضر إنهاء الملاحظات.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "contractor",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 105,
+       "anchor": "marker",
+       "dx": 28,
+       "dy": 58
+      }
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-fin-snags-closure",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "3ce7e8e88fdd96ffeedec0743edf3fdd0d4f95c7107210979427485a05207cc8",
+    "baseSha256": "7126e5876164f4c7ecff65cd1622fd563e5a1824c16ba13139ade1430667b773",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "project_id": {
+      "page": 0,
+      "baseline": 204.7,
+      "size": 12,
+      "rect": [
+       233.9,
+       189.55,
+       511,
+       217.35
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 233.3,
+      "size": 14,
+      "rect": [
+       233.9,
+       217.35,
+       511,
+       245.25
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 261.15,
+      "size": 14,
+      "rect": [
+       233.9,
+       245.25,
+       511,
+       273.05
+      ]
+     },
+     "contractor": {
+      "page": 0,
+      "baseline": 288.85,
+      "size": 13.5,
+      "rect": [
+       233.9,
+       273.05,
+       511,
+       300.95
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 316.85,
+      "size": 14,
+      "rect": [
+       233.9,
+       300.95,
+       511,
+       328.75
+      ]
+     },
+     "date": {
+      "page": 0,
+      "baseline": 112.45,
+      "size": 12,
+      "rect": [
+       348.43,
+       98.83,
+       458.43,
+       117.34
+      ]
+     },
+     "stamp": {
+      "page": 0,
+      "baseline": 497.8,
+      "size": 1,
+      "rect": [
+       77.94,
+       494.91,
+       87.94,
+       500.02
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "date",
+      "QZ2ZQ": "project_id",
+      "QZ3ZQ": "owner",
+      "QZ4ZQ": "consultant",
+      "QZ5ZQ": "contractor",
+      "QZ6ZQ": "location",
+      "QZ7ZQ": "stamp"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0.000723
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-fin-snags-undertaking",
+    "version": 1,
+    "status": "verified",
+    "name": "Undertaking to Complete Snags",
+    "nameAr": "تعهد إنهاء الملاحظات",
+    "description": "Undertaking to Complete Snags",
+    "category": "دفعة نهائية",
+    "projectType": "bank",
+    "source": "private/bank/دفعة نهائية/تعهد الملاحظات.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "contractor",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "contractor_2",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "contractor_3",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-fin-snags-undertaking",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "402f657e5ab6a462e95343e9d23569c2e00b9891e77b8d62a38c4882017953df",
+    "baseSha256": "6439f10e43c2ea85ecf0b0c21d22feb38b762633389a5ae510c50ef19875e724",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "project_id": {
+      "page": 0,
+      "baseline": 216.1,
+      "size": 12,
+      "rect": [
+       233.9,
+       200.95,
+       511,
+       228.75
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 244.7,
+      "size": 14,
+      "rect": [
+       233.9,
+       228.75,
+       511,
+       256.65
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 272.55,
+      "size": 14,
+      "rect": [
+       233.9,
+       256.65,
+       511,
+       284.45
+      ]
+     },
+     "contractor": {
+      "page": 0,
+      "baseline": 300.25,
+      "size": 13.5,
+      "rect": [
+       233.9,
+       284.45,
+       511,
+       312.35
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 328.25,
+      "size": 14,
+      "rect": [
+       233.9,
+       312.35,
+       511,
+       340.15
+      ]
+     },
+     "date": {
+      "page": 0,
+      "baseline": 126.25,
+      "size": 12,
+      "rect": [
+       348.43,
+       112.63,
+       458.43,
+       131.14
+      ]
+     },
+     "contractor_2": {
+      "page": 0,
+      "baseline": 397.2,
+      "size": 14,
+      "rect": [
+       134.11,
+       383.9,
+       294.11,
+       401.4
+      ]
+     },
+     "contractor_3": {
+      "page": 0,
+      "baseline": 638.55,
+      "size": 13.5,
+      "rect": [
+       42.86,
+       624.52,
+       262.86,
+       643.47
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "date",
+      "QZ2ZQ": "project_id",
+      "QZ3ZQ": "owner",
+      "QZ4ZQ": "consultant",
+      "QZ5ZQ": "contractor",
+      "QZ6ZQ": "location",
+      "QZ7ZQ": "contractor_2",
+      "QZ8ZQ": "contractor_3"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0.000723
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-fin-supervision-payment",
+    "version": 1,
+    "status": "verified",
+    "name": "Consultant Supervision Payment (FAB)",
+    "nameAr": "دفعة الاستشاري عن أعمال الإشراف",
+    "description": "FAB National Housing Loans form: consultant supervision payment request.",
+    "category": "دفعة نهائية",
+    "projectType": "bank",
+    "source": "private/bank/دفعة نهائية/supe اشراف-.pdf",
+    "format": "pdf",
+    "reviewNotes": "First Abu Dhabi Bank – National Housing Loans payment form (scanned page). The values typed on the original were annotations and were deleted; amounts, IBAN and bank details stay blank for the user.",
+    "fields": [
+     {
+      "slot": "date",
+      "value": "{date|day}     {date|month}     {date|year}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "location",
+      "value": "{area_ar} - {sector_ar}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right"
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right"
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right"
+     },
+     {
+      "slot": "contractor",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "multiline": true
+     },
+     {
+      "slot": "start_date",
+      "value": "{project_start_date|day}     {project_start_date|month}     {project_start_date|year}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 92,
+       "anchor": "center"
+      }
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-fin-supervision-payment",
+    "version": 1,
+    "format": "pdf",
+    "sourceSha256": "87322861f5c1fdd81bb28a08afbf09c9414481bf6b3566fa5bd52184e098e343",
+    "baseSha256": "c6fa05ee2a0ffacb15d21e4a0d50c7ed56cfa0e671f2a706320a7dd84d251c13",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.2,
+      "height": 841.44
+     }
+    ],
+    "slots": {
+     "date": {
+      "page": 0,
+      "rect": [
+       391,
+       110,
+       485,
+       122
+      ]
+     },
+     "project_id": {
+      "page": 0,
+      "rect": [
+       248,
+       129,
+       450,
+       157
+      ]
+     },
+     "location": {
+      "page": 0,
+      "rect": [
+       62,
+       131,
+       135,
+       143
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "rect": [
+       339,
+       150,
+       481,
+       162
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "rect": [
+       374,
+       172,
+       486,
+       184
+      ]
+     },
+     "contractor": {
+      "page": 0,
+      "rect": [
+       280,
+       192,
+       488,
+       216
+      ]
+     },
+     "start_date": {
+      "page": 0,
+      "rect": [
+       370,
+       216,
+       460,
+       228
+      ]
+     },
+     "stamp": {
+      "page": 0,
+      "rect": [
+       118,
+       572,
+       208,
+       662
+      ]
+     }
+    },
+    "docx": null,
+    "build": {
+     "engine": "pymupdf 1.28.2"
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "bank-fin-utilities",
+    "version": 1,
+    "status": "verified",
+    "name": "Utilities Connected from Existing Building",
+    "nameAr": "توصيل الكهرباء والماء من المبنى القائم",
+    "description": "Utilities Connected from Existing Building",
+    "category": "دفعة نهائية",
+    "projectType": "bank",
+    "source": "private/bank/دفعة نهائية/توصيل الكهرباء من المبنى القائم.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "contractor",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 105,
+       "anchor": "marker",
+       "dx": 28,
+       "dy": 58
+      }
+     }
+    ]
+   },
+   "layout": {
+    "key": "bank-fin-utilities",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "622b953642b992b611fff69ef1abc8548cee14292497e2c82340b2debe5f5257",
+    "baseSha256": "139ab57313fd12132c95e25c515a6609161cf85c5605c798d680b59acbd19dc7",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "project_id": {
+      "page": 0,
+      "baseline": 205.4,
+      "size": 12,
+      "rect": [
+       233.9,
+       187.25,
+       511,
+       215.05
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 233.2,
+      "size": 12,
+      "rect": [
+       233.9,
+       215.05,
+       511,
+       242.85
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 261.75,
+      "size": 14,
+      "rect": [
+       233.9,
+       242.85,
+       511,
+       270.65
+      ]
+     },
+     "contractor": {
+      "page": 0,
+      "baseline": 289.45,
+      "size": 13.5,
+      "rect": [
+       233.9,
+       270.65,
+       511,
+       298.55
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 317.4,
+      "size": 14,
+      "rect": [
+       233.9,
+       298.55,
+       511,
+       326.25
+      ]
+     },
+     "date": {
+      "page": 0,
+      "baseline": 126.25,
+      "size": 12,
+      "rect": [
+       348.43,
+       112.63,
+       458.43,
+       131.14
+      ]
+     },
+     "stamp": {
+      "page": 0,
+      "baseline": 495.3,
+      "size": 1,
+      "rect": [
+       77.94,
+       492.41,
+       87.94,
+       497.52
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "date",
+      "QZ2ZQ": "project_id",
+      "QZ3ZQ": "owner",
+      "QZ4ZQ": "consultant",
+      "QZ5ZQ": "contractor",
+      "QZ6ZQ": "location",
+      "QZ7ZQ": "stamp"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0.000723
+    }
+   }
+  },
+  {
+   "definition": {
     "key": "consultant-authorization",
     "version": 2,
     "status": "verified",

@@ -38,6 +38,8 @@ export interface ProjectType {
   key: string;
   en: string;
   ar: string;
+  /** display order of the document categories in this tab */
+  categories?: string[];
 }
 
 export interface FieldGroup {

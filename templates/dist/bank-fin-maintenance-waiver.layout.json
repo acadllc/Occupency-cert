@@ -1,0 +1,108 @@
+{
+ "key": "bank-fin-maintenance-waiver",
+ "version": 1,
+ "format": "docx",
+ "sourceSha256": "c8267a67d24b69221248b1010f343b74cd6950b0eeadbcca1f2bad01b75f146f",
+ "baseSha256": "209e8fb625c041bb3fd8557ef5c911064ad0b2fb3360f54334ecfa5e4bfa9453",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 595.3,
+   "height": 841.89
+  }
+ ],
+ "slots": {
+  "project_id": {
+   "page": 0,
+   "baseline": 205.6,
+   "size": 12.0,
+   "rect": [
+    90.4,
+    190.45,
+    367.5,
+    218.25
+   ]
+  },
+  "owner": {
+   "page": 0,
+   "baseline": 234.2,
+   "size": 14.0,
+   "rect": [
+    90.4,
+    218.25,
+    367.5,
+    246.15
+   ]
+  },
+  "consultant": {
+   "page": 0,
+   "baseline": 262.05,
+   "size": 14.0,
+   "rect": [
+    90.4,
+    246.15,
+    367.5,
+    273.95
+   ]
+  },
+  "contractor": {
+   "page": 0,
+   "baseline": 289.75,
+   "size": 13.5,
+   "rect": [
+    90.4,
+    273.95,
+    367.5,
+    301.85
+   ]
+  },
+  "location": {
+   "page": 0,
+   "baseline": 317.75,
+   "size": 14.0,
+   "rect": [
+    90.4,
+    301.85,
+    367.5,
+    329.65
+   ]
+  },
+  "date": {
+   "page": 0,
+   "baseline": 113.35,
+   "size": 12.0,
+   "rect": [
+    371.28,
+    99.73,
+    481.28,
+    118.24
+   ]
+  },
+  "owner_2": {
+   "page": 0,
+   "baseline": 593.4,
+   "size": 14.0,
+   "rect": [
+    9.75,
+    578.93,
+    229.75,
+    598.42
+   ]
+  }
+ },
+ "docx": {
+  "markers": {
+   "QZ1ZQ": "date",
+   "QZ2ZQ": "project_id",
+   "QZ3ZQ": "owner",
+   "QZ4ZQ": "consultant",
+   "QZ5ZQ": "contractor",
+   "QZ6ZQ": "location",
+   "QZ7ZQ": "owner_2"
+  }
+ },
+ "build": {
+  "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+  "layoutDiff": 0.000721
+ }
+}

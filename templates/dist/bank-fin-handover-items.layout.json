@@ -1,0 +1,108 @@
+{
+ "key": "bank-fin-handover-items",
+ "version": 1,
+ "format": "docx",
+ "sourceSha256": "df52acbe8ed46e0eb66782d0a609c4a1f8fd45e52c2aa1dd566b3812cee9533b",
+ "baseSha256": "e0e2e7e7174415481b7f8c85a68c50f1609ecb420b4d41a3d983f1f7708928fd",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 595.3,
+   "height": 841.89
+  }
+ ],
+ "slots": {
+  "project_id": {
+   "page": 0,
+   "baseline": 204.7,
+   "size": 12.0,
+   "rect": [
+    233.9,
+    189.55,
+    511.0,
+    217.35
+   ]
+  },
+  "owner": {
+   "page": 0,
+   "baseline": 233.3,
+   "size": 14.0,
+   "rect": [
+    233.9,
+    217.35,
+    511.0,
+    245.25
+   ]
+  },
+  "consultant": {
+   "page": 0,
+   "baseline": 261.15,
+   "size": 14.0,
+   "rect": [
+    233.9,
+    245.25,
+    511.0,
+    273.05
+   ]
+  },
+  "contractor": {
+   "page": 0,
+   "baseline": 288.85,
+   "size": 13.5,
+   "rect": [
+    233.9,
+    273.05,
+    511.0,
+    300.95
+   ]
+  },
+  "location": {
+   "page": 0,
+   "baseline": 316.85,
+   "size": 14.0,
+   "rect": [
+    233.9,
+    300.95,
+    511.0,
+    328.75
+   ]
+  },
+  "date": {
+   "page": 0,
+   "baseline": 112.45,
+   "size": 12.0,
+   "rect": [
+    348.43,
+    98.83,
+    458.43,
+    117.34
+   ]
+  },
+  "stamp": {
+   "page": 0,
+   "baseline": 616.4,
+   "size": 1.0,
+   "rect": [
+    184.16,
+    613.51,
+    194.16,
+    618.62
+   ]
+  }
+ },
+ "docx": {
+  "markers": {
+   "QZ1ZQ": "date",
+   "QZ2ZQ": "project_id",
+   "QZ3ZQ": "owner",
+   "QZ4ZQ": "consultant",
+   "QZ5ZQ": "contractor",
+   "QZ6ZQ": "location",
+   "QZ7ZQ": "stamp"
+  }
+ },
+ "build": {
+  "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+  "layoutDiff": 0.003425
+ }
+}

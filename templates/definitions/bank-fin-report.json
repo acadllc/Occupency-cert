@@ -1,0 +1,192 @@
+{
+  "key": "bank-fin-report",
+  "version": 1,
+  "status": "verified",
+  "name": "Work Progress Report (Final Payment)",
+  "nameAr": "تقرير اعتماد إنجاز الأعمال – دفعة نهائية",
+  "description": "Work Progress Report (Final Payment)",
+  "category": "دفعة نهائية",
+  "projectType": "bank",
+  "source": "private/bank/دفعة نهائية/REPORT.docx",
+  "format": "docx",
+  "sanitize": "private",
+  "slots": {
+    "owner": {
+      "kind": "cell"
+    },
+    "project_id": {
+      "kind": "cell"
+    },
+    "contractor": {
+      "kind": "cell"
+    },
+    "consultant": {
+      "kind": "cell"
+    },
+    "location": {
+      "kind": "cell"
+    },
+    "end_date": {
+      "kind": "cell"
+    },
+    "start_date": {
+      "kind": "cell"
+    },
+    "components": {
+      "kind": "cell"
+    },
+    "date": {
+      "kind": "inline",
+      "width": 110
+    },
+    "stamp": {
+      "kind": "inline",
+      "width": 10
+    }
+  },
+  "fields": [
+    {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "contractor",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "end_date",
+      "value": "project_end_date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "start_date",
+      "value": "project_start_date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "components",
+      "value": "project_components_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "slot": "stamp",
+      "stamp": {
+        "size": 105,
+        "anchor": "marker",
+        "dx": 45,
+        "dy": 50
+      }
+    }
+  ]
+}

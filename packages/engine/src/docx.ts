@@ -195,6 +195,12 @@ export async function buildDocx(d: DocxDeps): Promise<DocxResult> {
       if (!m || values.get(markers[m[0]])?.kind !== 'photo') return p;
       return p.replace(/w:lineRule="exact"/g, 'w:lineRule="auto"').replace(/w:line="\d+"/g, 'w:line="240"');
     });
+    // a value inside running text: the zero-width marker run is followed by the blank gap that
+    // reserved its space; write the value with the gap's (normal) formatting instead
+    xml = xml.replace(
+      /<w:r>(?:(?!<w:r[ >]|<\/w:r>).)*?<w:t[^>]*>(QZ\d+ZQ)<\/w:t><\/w:r>\s*<w:r(?:\s[^>]*)?>((?:(?!<w:r[ >]|<\/w:r>).)*?)<w:t[^>]*>\u2002+<\/w:t><\/w:r>/gs,
+      (_all, marker: string, gapInner: string) => `<w:r>${gapInner}<w:t>${marker}</w:t></w:r>`,
+    );
     xml = xml.replace(MARKER_RUN, (_all, inner: string, marker: string) => {
       const slotName = markers[marker];
       const v = slotName ? values.get(slotName) : undefined;
@@ -232,8 +238,9 @@ export async function buildDocx(d: DocxDeps): Promise<DocxResult> {
         xml = xml.slice(0, pPrEnd) + endRuns.join('') + xml.slice(pPrEnd);
       }
     }
-    // never leave a marker behind
+    // never leave a marker behind; drop the blank gaps reserved for values in running text
     xml = xml.replace(/QZ\d+ZQ/g, '');
+    xml = xml.replace(/<w:r(?:\s[^>]*)?>(?:(?!<w:r[ >]|<\/w:r>).)*?<w:t[^>]*>\u2002+<\/w:t><\/w:r>/gs, '');
     if (name === 'word/document.xml') {
       // tick check boxes (document order of the "☐" glyphs)
       const ticks = new Set(

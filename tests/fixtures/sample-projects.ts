@@ -19,6 +19,8 @@ export const sampleProject: ProjectFields = {
   project_description_ar: 'فيلا سكنية دورين مع ملحق خدمات وسور خارجي',
   project_description_en: 'Two-storey residential villa with service annex and boundary wall',
   project_components_ar: 'فيلا دورين + ملحق خدمات + سور خارجي',
+  project_start_date: '2025-01-15',
+  project_end_date: '2026-01-14',
   land_building_usage_ar: 'سكني',
   land_building_usage_en: 'Residential',
   mech_authorization_type: ['supply', 'testing_maintenance'],

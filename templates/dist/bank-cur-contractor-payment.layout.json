@@ -1,0 +1,92 @@
+{
+ "key": "bank-cur-contractor-payment",
+ "version": 1,
+ "format": "pdf",
+ "sourceSha256": "87a41c12cf3862fe82ba021c739951a45656176e6fbe63d03a0930a8a1e02404",
+ "baseSha256": "62f65eaa41c01a151a88897d38df61c58bc7cc0760f492f9721ba7c85c59cf38",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 595.2,
+   "height": 841.44
+  }
+ ],
+ "slots": {
+  "date": {
+   "page": 0,
+   "rect": [
+    379,
+    111,
+    472,
+    123
+   ]
+  },
+  "project_id": {
+   "page": 0,
+   "rect": [
+    335,
+    131,
+    467,
+    143
+   ]
+  },
+  "location": {
+   "page": 0,
+   "rect": [
+    67,
+    131,
+    153,
+    146
+   ]
+  },
+  "owner": {
+   "page": 0,
+   "rect": [
+    342,
+    150,
+    484,
+    165
+   ]
+  },
+  "consultant": {
+   "page": 0,
+   "rect": [
+    370,
+    170,
+    482,
+    184
+   ]
+  },
+  "contractor": {
+   "page": 0,
+   "rect": [
+    247,
+    189,
+    467,
+    213
+   ]
+  },
+  "start_date": {
+   "page": 0,
+   "rect": [
+    385,
+    209,
+    474,
+    221
+   ]
+  },
+  "stamp": {
+   "page": 0,
+   "rect": [
+    140,
+    577,
+    230,
+    667
+   ]
+  }
+ },
+ "docx": null,
+ "build": {
+  "engine": "pymupdf 1.28.2"
+ }
+}

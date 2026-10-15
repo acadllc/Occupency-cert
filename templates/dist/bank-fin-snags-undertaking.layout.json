@@ -1,0 +1,120 @@
+{
+ "key": "bank-fin-snags-undertaking",
+ "version": 1,
+ "format": "docx",
+ "sourceSha256": "402f657e5ab6a462e95343e9d23569c2e00b9891e77b8d62a38c4882017953df",
+ "baseSha256": "6439f10e43c2ea85ecf0b0c21d22feb38b762633389a5ae510c50ef19875e724",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 595.3,
+   "height": 841.89
+  }
+ ],
+ "slots": {
+  "project_id": {
+   "page": 0,
+   "baseline": 216.1,
+   "size": 12.0,
+   "rect": [
+    233.9,
+    200.95,
+    511.0,
+    228.75
+   ]
+  },
+  "owner": {
+   "page": 0,
+   "baseline": 244.7,
+   "size": 14.0,
+   "rect": [
+    233.9,
+    228.75,
+    511.0,
+    256.65
+   ]
+  },
+  "consultant": {
+   "page": 0,
+   "baseline": 272.55,
+   "size": 14.0,
+   "rect": [
+    233.9,
+    256.65,
+    511.0,
+    284.45
+   ]
+  },
+  "contractor": {
+   "page": 0,
+   "baseline": 300.25,
+   "size": 13.5,
+   "rect": [
+    233.9,
+    284.45,
+    511.0,
+    312.35
+   ]
+  },
+  "location": {
+   "page": 0,
+   "baseline": 328.25,
+   "size": 14.0,
+   "rect": [
+    233.9,
+    312.35,
+    511.0,
+    340.15
+   ]
+  },
+  "date": {
+   "page": 0,
+   "baseline": 126.25,
+   "size": 12.0,
+   "rect": [
+    348.43,
+    112.63,
+    458.43,
+    131.14
+   ]
+  },
+  "contractor_2": {
+   "page": 0,
+   "baseline": 397.2,
+   "size": 14.0,
+   "rect": [
+    134.11,
+    383.9,
+    294.11,
+    401.4
+   ]
+  },
+  "contractor_3": {
+   "page": 0,
+   "baseline": 638.55,
+   "size": 13.5,
+   "rect": [
+    42.86,
+    624.52,
+    262.86,
+    643.47
+   ]
+  }
+ },
+ "docx": {
+  "markers": {
+   "QZ1ZQ": "date",
+   "QZ2ZQ": "project_id",
+   "QZ3ZQ": "owner",
+   "QZ4ZQ": "consultant",
+   "QZ5ZQ": "contractor",
+   "QZ6ZQ": "location",
+   "QZ7ZQ": "contractor_2",
+   "QZ8ZQ": "contractor_3"
+  }
+ },
+ "build": {
+  "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+  "layoutDiff": 0.000723
+ }
+}

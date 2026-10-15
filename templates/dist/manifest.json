@@ -8,6 +8,186 @@
    "pageCount": 1
   },
   {
+   "key": "bank-cur-checklist",
+   "version": 1,
+   "baseSha256": "0a6cf87a90dd41fd42264f5ed3886b138d5f1cd1516f760bbb3cca9094c1f0fe",
+   "pageCount": 1
+  },
+  {
+   "key": "bank-cur-contractor-payment",
+   "version": 1,
+   "baseSha256": "62f65eaa41c01a151a88897d38df61c58bc7cc0760f492f9721ba7c85c59cf38",
+   "pageCount": 1
+  },
+  {
+   "key": "bank-cur-report",
+   "version": 1,
+   "baseSha256": "a6f9d0f3e8ba548fb8fc7a6f171f27b46ea879b31fee8c91fb440f78861e5d6e",
+   "pageCount": 4
+  },
+  {
+   "key": "bank-cur-supervision-payment",
+   "version": 1,
+   "baseSha256": "c6fa05ee2a0ffacb15d21e4a0d50c7ed56cfa0e671f2a706320a7dd84d251c13",
+   "pageCount": 1
+  },
+  {
+   "key": "bank-ext-form",
+   "version": 1,
+   "baseSha256": "9646894dae63f51b1f3ead79048b481d92f805208711067bd77c4829331f80f0",
+   "pageCount": 1
+  },
+  {
+   "key": "bank-ext-signature",
+   "version": 1,
+   "baseSha256": "66195ce1592ed2ebade8324a539df793bf269f29aab21909c7ec74955c344687",
+   "pageCount": 1
+  },
+  {
+   "key": "bank-fin-as-is",
+   "version": 1,
+   "baseSha256": "47f4bf2c1209dd580ae7f5a26bcb5a7097c63776557165b3ed16532e2670e663",
+   "pageCount": 1
+  },
+  {
+   "key": "bank-fin-bank-handover",
+   "version": 1,
+   "baseSha256": "00d2ac83933c8bad44f6a3f5ee341fca7bc066e52ad5398063f51753fedb15db",
+   "pageCount": 1
+  },
+  {
+   "key": "bank-fin-checklist",
+   "version": 1,
+   "baseSha256": "dabc3d71e3bbbbaa5359a6321a33665d23dce3037be3f7287957307e8b093d6c",
+   "pageCount": 2
+  },
+  {
+   "key": "bank-fin-contractor-completion",
+   "version": 1,
+   "baseSha256": "87ab7a3eea83148b4da2355043991ec02df4ea7a87e904dddb677afddb18b0ab",
+   "pageCount": 1
+  },
+  {
+   "key": "bank-fin-contractor-payment",
+   "version": 1,
+   "baseSha256": "62f65eaa41c01a151a88897d38df61c58bc7cc0760f492f9721ba7c85c59cf38",
+   "pageCount": 1
+  },
+  {
+   "key": "bank-fin-contractor-snags",
+   "version": 1,
+   "baseSha256": "940e5a75d58a4265cc16d8958aa915d40c1a6e8a77ddc3c64b244af524097fe2",
+   "pageCount": 1
+  },
+  {
+   "key": "bank-fin-delay-waiver",
+   "version": 1,
+   "baseSha256": "a4ce66b9307737e96f80231e046922a1e1bd3656b7db3cb70d43692968e18742",
+   "pageCount": 1
+  },
+  {
+   "key": "bank-fin-final-receipt",
+   "version": 1,
+   "baseSha256": "3047fb5b2e24ef57eaa8a166658c2ad1e4347534667ac6e56d478434581c06fe",
+   "pageCount": 1
+  },
+  {
+   "key": "bank-fin-handover-items",
+   "version": 1,
+   "baseSha256": "e0e2e7e7174415481b7f8c85a68c50f1609ecb420b4d41a3d983f1f7708928fd",
+   "pageCount": 1
+  },
+  {
+   "key": "bank-fin-initial-receipt-report",
+   "version": 1,
+   "baseSha256": "cb852846aeb4c1c897b06ba9340557f84840f3e181713c8c455f83acb842bd30",
+   "pageCount": 1
+  },
+  {
+   "key": "bank-fin-initial-receipt",
+   "version": 1,
+   "baseSha256": "d7544dfd053318f90d73f343289f9a1cac753fe19696365c760ba9aaedd7b933",
+   "pageCount": 1
+  },
+  {
+   "key": "bank-fin-initial-settlement",
+   "version": 1,
+   "baseSha256": "d2ba7fd74518aa9fcdbe5053776cc768db78d16a1e714604bd7261ed18405d85",
+   "pageCount": 1
+  },
+  {
+   "key": "bank-fin-installments",
+   "version": 1,
+   "baseSha256": "79f517e95231fd508f2edafa6dacd794d2e83dd01df59939135dbd1bff9d71d3",
+   "pageCount": 1
+  },
+  {
+   "key": "bank-fin-insulation",
+   "version": 1,
+   "baseSha256": "e409d358e3124b37e9447c454e56ce3ace65d315a533ede6af418d7d01cfa3de",
+   "pageCount": 1
+  },
+  {
+   "key": "bank-fin-maintenance-payment",
+   "version": 1,
+   "baseSha256": "829fe47b45899837e60029d8257de206d74e029eeb2022ced2cad3cf045ca3d2",
+   "pageCount": 1
+  },
+  {
+   "key": "bank-fin-maintenance-undertaking",
+   "version": 1,
+   "baseSha256": "0ce02a890cb10964979ccac620462a09b95ec00d69430f5ab9087edbfb550257",
+   "pageCount": 1
+  },
+  {
+   "key": "bank-fin-maintenance-waiver",
+   "version": 1,
+   "baseSha256": "209e8fb625c041bb3fd8557ef5c911064ad0b2fb3360f54334ecfa5e4bfa9453",
+   "pageCount": 1
+  },
+  {
+   "key": "bank-fin-owner-signature",
+   "version": 1,
+   "baseSha256": "7383df33bfa913b58313e25f8ac604478e2a14a69433b4e371e6606dcc86a32e",
+   "pageCount": 1
+  },
+  {
+   "key": "bank-fin-report",
+   "version": 1,
+   "baseSha256": "3588f58246799abfe78b5cf20bb6a96bbbd1d81e74f27a47025125fd2a86e206",
+   "pageCount": 2
+  },
+  {
+   "key": "bank-fin-snag-list",
+   "version": 1,
+   "baseSha256": "f2d9c5ed14c3a303e9407b51c4d100f9681e21e0e030a38df7eaa489541bc1ba",
+   "pageCount": 2
+  },
+  {
+   "key": "bank-fin-snags-closure",
+   "version": 1,
+   "baseSha256": "7126e5876164f4c7ecff65cd1622fd563e5a1824c16ba13139ade1430667b773",
+   "pageCount": 1
+  },
+  {
+   "key": "bank-fin-snags-undertaking",
+   "version": 1,
+   "baseSha256": "6439f10e43c2ea85ecf0b0c21d22feb38b762633389a5ae510c50ef19875e724",
+   "pageCount": 1
+  },
+  {
+   "key": "bank-fin-supervision-payment",
+   "version": 1,
+   "baseSha256": "c6fa05ee2a0ffacb15d21e4a0d50c7ed56cfa0e671f2a706320a7dd84d251c13",
+   "pageCount": 1
+  },
+  {
+   "key": "bank-fin-utilities",
+   "version": 1,
+   "baseSha256": "139ab57313fd12132c95e25c515a6609161cf85c5605c798d680b59acbd19dc7",
+   "pageCount": 1
+  },
+  {
    "key": "consultant-authorization",
    "version": 2,
    "baseSha256": "c9dbc5d0e21cef3f7ca1169815803bfc87561153ad1c227cbb66d852781b1c0c",

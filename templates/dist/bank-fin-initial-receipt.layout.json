@@ -1,0 +1,132 @@
+{
+ "key": "bank-fin-initial-receipt",
+ "version": 1,
+ "format": "docx",
+ "sourceSha256": "8e5265cede6762cb6bf4651743d87dc6b6ddc2227e2095070efb0107f9c48fb5",
+ "baseSha256": "d7544dfd053318f90d73f343289f9a1cac753fe19696365c760ba9aaedd7b933",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 595.3,
+   "height": 841.89
+  }
+ ],
+ "slots": {
+  "project_id": {
+   "page": 0,
+   "baseline": 188.6,
+   "size": 12.0,
+   "rect": [
+    233.9,
+    173.45,
+    511.0,
+    201.25
+   ]
+  },
+  "owner": {
+   "page": 0,
+   "baseline": 217.2,
+   "size": 14.0,
+   "rect": [
+    233.9,
+    201.25,
+    511.0,
+    229.15
+   ]
+  },
+  "consultant": {
+   "page": 0,
+   "baseline": 246.15,
+   "size": 14.0,
+   "rect": [
+    233.9,
+    229.15,
+    511.0,
+    259.15
+   ]
+  },
+  "contractor": {
+   "page": 0,
+   "baseline": 274.9,
+   "size": 13.5,
+   "rect": [
+    233.9,
+    259.15,
+    511.0,
+    286.95
+   ]
+  },
+  "location": {
+   "page": 0,
+   "baseline": 302.9,
+   "size": 14.0,
+   "rect": [
+    233.9,
+    286.95,
+    511.0,
+    314.85
+   ]
+  },
+  "start_date": {
+   "page": 0,
+   "baseline": 374.65,
+   "size": 14.0,
+   "rect": [
+    59.4,
+    361.35,
+    401.2,
+    377.95
+   ]
+  },
+  "end_date": {
+   "page": 0,
+   "baseline": 424.45,
+   "size": 14.0,
+   "rect": [
+    59.4,
+    411.15,
+    401.2,
+    427.75
+   ]
+  },
+  "date": {
+   "page": 0,
+   "baseline": 98.65,
+   "size": 12.0,
+   "rect": [
+    348.43,
+    85.03,
+    458.43,
+    103.54
+   ]
+  },
+  "stamp": {
+   "page": 0,
+   "baseline": 680.55,
+   "size": 1.0,
+   "rect": [
+    468.61,
+    677.66,
+    478.61,
+    682.77
+   ]
+  }
+ },
+ "docx": {
+  "markers": {
+   "QZ1ZQ": "date",
+   "QZ2ZQ": "project_id",
+   "QZ3ZQ": "owner",
+   "QZ4ZQ": "consultant",
+   "QZ5ZQ": "contractor",
+   "QZ6ZQ": "location",
+   "QZ7ZQ": "start_date",
+   "QZ8ZQ": "end_date",
+   "QZ9ZQ": "stamp"
+  }
+ },
+ "build": {
+  "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+  "layoutDiff": 0.000723
+ }
+}

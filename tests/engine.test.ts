@@ -98,9 +98,12 @@ describe('field values', () => {
 });
 
 describe('registry', () => {
-  it('lists all 18 reference templates as generatable', () => {
-    expect(catalog.templates).toHaveLength(18);
+  it('lists every template as generatable, under a known project-type tab', () => {
+    const types = (JSON.parse(readFileSync(join(root, 'templates/project-types.json'), 'utf8')) as { types: { key: string }[] }).types.map((t) => t.key);
+    expect(catalog.templates.filter((t) => (t.definition.projectType ?? 'occupancy') === 'occupancy')).toHaveLength(18);
+    expect(catalog.templates.filter((t) => t.definition.projectType === 'bank').length).toBeGreaterThanOrEqual(30);
     expect(catalog.templates.every(isGeneratable)).toBe(true);
+    expect(catalog.templates.every((t) => types.includes(t.definition.projectType ?? 'occupancy'))).toBe(true);
   });
 
   it('shows template-specific fields only for selected templates', () => {

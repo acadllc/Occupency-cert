@@ -1,0 +1,100 @@
+{
+ "key": "bank-fin-checklist",
+ "version": 1,
+ "format": "docx",
+ "sourceSha256": "792a1217c3e082e79b214570957bdc0d2daef5bf416e0699761cab82997c7520",
+ "baseSha256": "dabc3d71e3bbbbaa5359a6321a33665d23dce3037be3f7287957307e8b093d6c",
+ "pageCount": 2,
+ "pages": [
+  {
+   "width": 595.3,
+   "height": 841.89
+  },
+  {
+   "width": 595.3,
+   "height": 841.89
+  }
+ ],
+ "slots": {
+  "project_id": {
+   "page": 0,
+   "baseline": 77.9,
+   "size": 8.0,
+   "rect": [
+    10.41,
+    68.77,
+    210.41,
+    81.63
+   ]
+  },
+  "owner": {
+   "page": 0,
+   "baseline": 77.9,
+   "size": 10.0,
+   "rect": [
+    280.63,
+    66.22,
+    480.63,
+    82.31
+   ]
+  },
+  "contractor": {
+   "page": 0,
+   "baseline": 97.75,
+   "size": 10.0,
+   "rect": [
+    21.66,
+    86.07,
+    221.66,
+    102.16
+   ]
+  },
+  "consultant": {
+   "page": 0,
+   "baseline": 97.75,
+   "size": 10.0,
+   "rect": [
+    291.79,
+    86.07,
+    491.79,
+    102.16
+   ]
+  },
+  "location": {
+   "page": 0,
+   "baseline": 117.6,
+   "size": 10.0,
+   "rect": [
+    282.76,
+    105.92,
+    482.76,
+    122.01
+   ]
+  },
+  "stamp": {
+   "page": 1,
+   "baseline": 46.65,
+   "size": 1.0,
+   "rect": [
+    77.31,
+    43.68,
+    87.31,
+    48.89
+   ]
+  }
+ },
+ "docx": {
+  "markers": {
+   "QZ1ZQ": "project_id",
+   "QZ2ZQ": "owner",
+   "QZ3ZQ": "contractor",
+   "QZ4ZQ": "consultant",
+   "QZ5ZQ": "location",
+   "QZ6ZQ": "stamp"
+  }
+ },
+ "build": {
+  "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+  "layoutDiff": 3.8e-05
+ }
+}

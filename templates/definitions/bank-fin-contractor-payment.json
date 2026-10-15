@@ -1,0 +1,215 @@
+{
+  "key": "bank-fin-contractor-payment",
+  "version": 1,
+  "status": "verified",
+  "name": "Contractor Execution Payment (FAB)",
+  "nameAr": "دفعة المقاول عن أعمال التنفيذ",
+  "description": "FAB National Housing Loans form: contractor execution payment request.",
+  "category": "دفعة نهائية",
+  "projectType": "bank",
+  "source": "private/bank/دفعة نهائية/تنفيذ -.pdf",
+  "format": "pdf",
+  "reviewNotes": "First Abu Dhabi Bank – National Housing Loans payment form (scanned page). The values typed on the original were annotations and were deleted; amounts, IBAN and bank details stay blank for the user.",
+  "sanitize": [
+    {
+      "op": "remove_annots"
+    }
+  ],
+  "slots": {
+    "date": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        379,
+        111,
+        472,
+        123
+      ]
+    },
+    "project_id": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        335,
+        131,
+        467,
+        143
+      ]
+    },
+    "location": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        67,
+        131,
+        153,
+        146
+      ]
+    },
+    "owner": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        342,
+        150,
+        484,
+        165
+      ]
+    },
+    "consultant": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        370,
+        170,
+        482,
+        184
+      ]
+    },
+    "contractor": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        247,
+        189,
+        467,
+        213
+      ]
+    },
+    "start_date": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        385,
+        209,
+        474,
+        221
+      ]
+    },
+    "stamp": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        140,
+        577,
+        230,
+        667
+      ]
+    }
+  },
+  "fields": [
+    {
+      "slot": "date",
+      "value": "{date|day}     {date|month}     {date|year}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center"
+    },
+    {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center"
+    },
+    {
+      "slot": "location",
+      "value": "{area_ar} - {sector_ar}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right"
+    },
+    {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right"
+    },
+    {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right"
+    },
+    {
+      "slot": "contractor",
+      "value": "contractor_name_ar",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "multiline": true
+    },
+    {
+      "slot": "start_date",
+      "value": "{project_start_date|day}     {project_start_date|month}     {project_start_date|year}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center"
+    },
+    {
+      "slot": "stamp",
+      "stamp": {
+        "size": 92,
+        "anchor": "center"
+      }
+    }
+  ]
+}

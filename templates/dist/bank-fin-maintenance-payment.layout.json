@@ -1,0 +1,120 @@
+{
+ "key": "bank-fin-maintenance-payment",
+ "version": 1,
+ "format": "docx",
+ "sourceSha256": "2e3714b2c89d3d275d049e511e3993e694bee8e631aaa34c916c94d041ff4610",
+ "baseSha256": "829fe47b45899837e60029d8257de206d74e029eeb2022ced2cad3cf045ca3d2",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 595.3,
+   "height": 841.89
+  }
+ ],
+ "slots": {
+  "owner": {
+   "page": 0,
+   "baseline": 282.7,
+   "size": 14.0,
+   "rect": [
+    222.7,
+    266.75,
+    522.3,
+    294.65
+   ]
+  },
+  "consultant": {
+   "page": 0,
+   "baseline": 310.55,
+   "size": 14.0,
+   "rect": [
+    222.7,
+    294.65,
+    522.3,
+    322.45
+   ]
+  },
+  "location": {
+   "page": 0,
+   "baseline": 338.4,
+   "size": 14.0,
+   "rect": [
+    222.7,
+    322.45,
+    522.3,
+    350.35
+   ]
+  },
+  "plot": {
+   "page": 0,
+   "baseline": 366.25,
+   "size": 14.0,
+   "rect": [
+    222.7,
+    350.35,
+    522.3,
+    378.15
+   ]
+  },
+  "project_id": {
+   "page": 0,
+   "baseline": 395.5,
+   "size": 16.0,
+   "rect": [
+    222.7,
+    378.15,
+    522.3,
+    411.95
+   ]
+  },
+  "date": {
+   "page": 0,
+   "baseline": 155.95,
+   "size": 14.0,
+   "rect": [
+    365.06,
+    140.4,
+    475.06,
+    161.32
+   ]
+  },
+  "stamp": {
+   "page": 0,
+   "baseline": 582.15,
+   "size": 1.0,
+   "rect": [
+    94.74,
+    579.26,
+    104.74,
+    584.37
+   ]
+  },
+  "owner_text": {
+   "page": 0,
+   "baseline": 473.55,
+   "size": 14.0,
+   "rect": [
+    102.08,
+    460.25,
+    245.76,
+    477.75
+   ]
+  }
+ },
+ "docx": {
+  "markers": {
+   "QZ1ZQ": "owner",
+   "QZ2ZQ": "consultant",
+   "QZ3ZQ": "location",
+   "QZ4ZQ": "plot",
+   "QZ5ZQ": "project_id",
+   "QZ6ZQ": "date",
+   "QZ7ZQ": "stamp",
+   "QZ8ZQ": "owner_text"
+  }
+ },
+ "build": {
+  "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+  "layoutDiff": 0.000159
+ }
+}
