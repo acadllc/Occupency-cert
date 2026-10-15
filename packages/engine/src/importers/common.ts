@@ -19,11 +19,21 @@ export const ROW_TOLERANCE = 4.5;
 export const isArabic = (s: string) => ARABIC.test(s);
 
 export function clean(s: string) {
-  return s
-    .normalize('NFKC')
-    .replace(/[‎‏‪-‮ـ]/g, '')
-    .replace(/\s+/g, ' ')
-    .trim();
+  return fixLigatures(
+    s
+      .normalize('NFKC')
+      .replace(/[‎‏‪-‮ـ]/g, '')
+      .replace(/\s+/g, ' ')
+      .trim(),
+  );
+}
+
+/**
+ * Some PDF writers map the lam-alef ligature back to the letters in the wrong
+ * order ("االمارات" for "الامارات", "باإلقرار" for "بالإقرار", "عبدهللا" for "عبدالله").
+ */
+export function fixLigatures(s: string) {
+  return s.replace(/ا([اأإآ])ل/g, 'ال$1').replace(/هللا/g, 'الله');
 }
 
 /** Split mixed items ("HAI AL HUMAIRAحي الحميرة") into single-script pieces. */
@@ -53,25 +63,30 @@ export function titleCase(s: string) {
   return s.toLowerCase().replace(/(^|[\s\-/(])([a-z])/g, (_m, a: string, b: string) => a + b.toUpperCase());
 }
 
+// pieces of one word touch; words are separated by at least a narrow space
+const WORD_GAP = 0.8;
+
+function joinOrdered(sorted: TextItem[], gapOf: (prev: TextItem, cur: TextItem) => number) {
+  let out = '';
+  sorted.forEach((it, k) => {
+    out += k === 0 || gapOf(sorted[k - 1], it) > WORD_GAP ? (k ? ' ' : '') + it.str : it.str;
+  });
+  return fixLigatures(out.replace(/\s+/g, ' ').trim());
+}
+
 /** Arabic words read right-to-left. */
 export function joinArabic(items: TextItem[]) {
-  return items
-    .slice()
-    .sort((a, b) => b.x - a.x)
-    .map((i) => i.str)
-    .join(' ')
-    .replace(/\s+/g, ' ')
-    .trim();
+  return joinOrdered(
+    items.slice().sort((a, b) => b.x - a.x),
+    (prev, cur) => prev.x - (cur.x + cur.w),
+  );
 }
 
 export function joinLatin(items: TextItem[]) {
-  return items
-    .slice()
-    .sort((a, b) => a.x - b.x)
-    .map((i) => i.str)
-    .join(' ')
-    .replace(/\s+/g, ' ')
-    .trim();
+  return joinOrdered(
+    items.slice().sort((a, b) => a.x - b.x),
+    (prev, cur) => cur.x - (prev.x + prev.w),
+  );
 }
 
 /** Comparable form: no spaces, unified alef forms, lower case, no punctuation. */

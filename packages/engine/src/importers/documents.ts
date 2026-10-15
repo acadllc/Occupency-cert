@@ -6,6 +6,7 @@
 import { parseSitePlan } from './siteplan';
 import { lines, lineText, ownersJoin, splitScripts, titleCase, uniqueJoin, type ExtractedValue, type TextItem } from './common';
 import { readLabels, type LabelRule } from './labels';
+import { readPeopleTable, type TableColumns } from './tables';
 
 export type DocumentKind = 'siteplan' | 'emirates_id' | 'passport' | 'document';
 
@@ -118,9 +119,16 @@ const FORM_RULES: LabelRule[] = [
   { field: 'owner_email', ar: ['البريد الإلكتروني', 'البريد الالكتروني'], en: ['Email', 'E-mail', 'Email Address'], value: 'any', pattern: EMAIL },
 ];
 
-function personFrom(items: TextItem[], textLines: string[], all: string): { person: Person | null; mrz: Mrz | null } {
+/** First value per field over all pages. */
+function labelsOnPages(pages: TextItem[][], rules: LabelRule[]) {
+  const out: { field: string; value: string; label: string }[] = [];
+  for (const page of pages) for (const f of readLabels(page, rules)) if (!out.some((o) => o.field === f.field)) out.push(f);
+  return out;
+}
+
+function personFrom(pages: TextItem[][], textLines: string[], all: string): { person: Person | null; mrz: Mrz | null } {
   const mrz = readMrz(textLines);
-  const got = Object.fromEntries(readLabels(items, PERSON_RULES).map((f) => [f.field, f.value]));
+  const got = Object.fromEntries(labelsOnPages(pages, PERSON_RULES).map((f) => [f.field, f.value]));
   const eid = all.match(EID)?.[0];
   const country = mrz ? COUNTRIES[mrz.nationality] : undefined;
   const person: Person = {
@@ -141,24 +149,44 @@ export function parseDocument(pages: TextItem[][]): DocumentImport {
     const sp = parseSitePlan(pages);
     return { kind: 'siteplan', label: KIND_LABELS.siteplan, values: sp.values, owners: sp.owners, notes: sp.notes };
   }
-  const items = splitScripts(flat);
-  const textLines = lines(items).map(lineText);
-  const { person, mrz } = personFrom(items, textLines, all);
-  const isPassport = mrz?.type === 'passport' || /\bpassport\b|جواز\s*سفر/i.test(all);
-  const isId = !isPassport && (mrz?.type === 'id' || EID.test(all) || /identity card|resident identity|بطاقة\s*(ال)?هوية/i.test(all));
+  const pageItems = pages.map(splitScripts);
+  const textLines = pageItems.flatMap((p) => lines(p).map(lineText));
+  // a table of people (heirs, owners, partners) — e.g. a power of attorney or كفالة papers
+  // the table may continue over several pages (with or without a repeated header)
+  const table: Person[] = [];
+  let cols: TableColumns | null = null;
+  for (const page of pageItems) {
+    const res = readPeopleTable(page, cols ?? undefined);
+    if (res.people.length) {
+      table.push(...res.people);
+      cols = res.cols;
+    } else if (cols) {
+      break; // the table ended on the previous page
+    }
+  }
+  const { person, mrz } = table.length ? { person: null, mrz: readMrz(textLines) } : personFrom(pageItems, textLines, all);
+  const isPassport = !table.length && (mrz?.type === 'passport' || /\bpassport\b|جواز\s*سفر/i.test(all));
+  const isId = !table.length && !isPassport && (mrz?.type === 'id' || EID.test(all) || /identity card|resident identity|بطاقة\s*(ال)?هوية/i.test(all));
   const kind: DocumentKind = isPassport ? 'passport' : isId ? 'emirates_id' : 'document';
   const values: ExtractedValue[] = [];
   const notes: string[] = [];
-  const src = KIND_LABELS[kind].split(' / ')[0];
-  if (person) {
-    if (person.ar) values.push({ field: 'owner_name_ar', value: person.ar, source: src });
-    if (person.en) values.push({ field: 'owner_name_en', value: person.en, source: src });
-    if (person.id) values.push({ field: 'owner_id_number', value: person.id, source: src });
-    if (person.nationalityAr) values.push({ field: 'owner_nationality_ar', value: person.nationalityAr, source: src });
-    if (person.nationalityEn) values.push({ field: 'owner_nationality_en', value: person.nationalityEn, source: src });
+  const title = /وكال[ةه]|power of attorney/i.test(all) ? 'Power of attorney / وكالة' : /كفال[ةه]/.test(all) ? 'كفالة' : KIND_LABELS[kind];
+  const src = title.split(' / ')[0];
+  const people = table.length ? table : person ? [person] : [];
+  if (people.length) {
+    const add = (field: string, list: (string | undefined)[], sep: string) => {
+      const v = uniqueJoin(list.map((x) => x ?? ''), sep);
+      if (v) values.push({ field, value: v, source: table.length ? `${src} · table of ${table.length}` : src });
+    };
+    add('owner_name_ar', people.map((p) => p.ar), ownersJoin.ar);
+    add('owner_name_en', people.map((p) => p.en), ownersJoin.en);
+    add('owner_id_number', people.map((p) => p.id), ' / ');
+    add('owner_nationality_ar', people.map((p) => p.nationalityAr), ' / ');
+    add('owner_nationality_en', people.map((p) => p.nationalityEn), ' / ');
+    if (table.length > 1) notes.push(`${table.length} people found in the table; their names are listed side by side.`);
   }
   // other labelled fields (forms, كفالة papers…)
-  for (const f of readLabels(items, FORM_RULES)) {
+  for (const f of labelsOnPages(pageItems, FORM_RULES)) {
     if (!values.some((v) => v.field === f.field)) values.push({ field: f.field, value: f.value, source: f.label });
   }
   if (!values.some((v) => v.field === 'owner_email')) {
@@ -171,7 +199,7 @@ export function parseDocument(pages: TextItem[][]): DocumentImport {
   }
   if (!flat.length) notes.push('This PDF has no readable text (it may be a scanned image).');
   else if (!values.length) notes.push('No known fields were found in this document.');
-  return { kind, label: KIND_LABELS[kind], values, owners: person ? [person] : [], notes };
+  return { kind, label: title, values, owners: people, notes };
 }
 
 /**

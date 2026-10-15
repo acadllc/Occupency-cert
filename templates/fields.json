@@ -81,7 +81,7 @@
       "dir": "rtl",
       "group": "parties",
       "scope": "shared",
-      "maxLength": 600,
+      "maxLength": 1000,
       "pair": "owner_name_en",
       "help": "Several owners: separate them with « و »."
     },
@@ -92,7 +92,7 @@
       "dir": "ltr",
       "group": "parties",
       "scope": "shared",
-      "maxLength": 600,
+      "maxLength": 1000,
       "pair": "owner_name_ar",
       "help": "Several owners: separate them with \" & \"."
     },
@@ -129,7 +129,7 @@
       "dir": "ltr",
       "group": "parties",
       "scope": "shared",
-      "maxLength": 200,
+      "maxLength": 600,
       "optional": true
     },
     {
@@ -140,7 +140,7 @@
       "dir": "rtl",
       "group": "parties",
       "scope": "shared",
-      "maxLength": 120,
+      "maxLength": 600,
       "optional": true,
       "pair": "owner_nationality_en"
     },
@@ -151,7 +151,7 @@
       "dir": "ltr",
       "group": "parties",
       "scope": "shared",
-      "maxLength": 120,
+      "maxLength": 600,
       "optional": true,
       "pair": "owner_nationality_ar"
     },

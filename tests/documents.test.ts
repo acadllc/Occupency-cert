@@ -109,4 +109,34 @@ describe('document import', () => {
     expect(r.values).toHaveLength(0);
     expect(r.notes[0]).toMatch(/no readable text/);
   });
+
+  it('reads a table of people over several pages (e.g. heirs in a power of attorney)', () => {
+    // laid out like a notarised وكالة: م | الاسم | الجنسية | رقم الاثبات, with the lam-alef letters stored
+    // in the wrong order ("االسم", "االمارات") as some PDF writers do; the table continues on page 2
+    const header = [t('م', 559, 203, 4), t('االسم', 439, 205, 20), t('الجنسية', 300, 205, 30), t('رقم', 176, 205, 12), t('االثبات', 146, 205, 26)];
+    const row = (n: number, name: string, id: string, y: number) => [
+      t(String(n), 554, y, 5),
+      t(name, 380, y, 126),
+      t('ات', 297.5, y, 9.5),
+      t('االمار', 304.5, y, 19.8),
+      t(id, 121, y, 83),
+    ];
+    const page1 = [
+      t('وكالة عامة', 300, 146, 60),
+      t('نحن الموقعين ادناه بصفتنا احد ورثة المتوفي', 300, 167, 260),
+      ...header,
+      ...row(1, 'محمد راشد سالم المنصوري', '784198500000011', 228),
+      ...row(2, 'عبدهللا راشد سالم المنصوري', '784198600000022', 246),
+      t('نقر على نفسنا ونحن في الحالة المعتبرة شرعا وقانونا والتي تسمح لنا باإلقرار ونفاذ التصرفات', 60, 268, 500),
+    ];
+    const page2 = [...row(3, 'مريم راشد سالم المنصوري', '784199000000033', 60), t('لينوب عنا ويقوم مقامنا ويمثلنا فيما يلي على جميع ما آل لنا', 60, 90, 500)];
+    const r = parseDocument([page1, page2]);
+    expect(r.kind).toBe('document');
+    expect(r.label).toBe('Power of attorney / وكالة');
+    expect(r.owners).toHaveLength(3);
+    const v = Object.fromEntries(r.values.map((x) => [x.field, x.value]));
+    expect(v.owner_name_ar).toBe('محمد راشد سالم المنصوري و عبدالله راشد سالم المنصوري و مريم راشد سالم المنصوري');
+    expect(v.owner_id_number).toBe('784-1985-0000001-1 / 784-1986-0000002-2 / 784-1990-0000003-3');
+    expect(v.owner_nationality_ar).toBe('الامارات');
+  });
 });
