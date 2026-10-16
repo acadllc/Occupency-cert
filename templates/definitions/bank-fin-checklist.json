@@ -1,6 +1,6 @@
 {
   "key": "bank-fin-checklist",
-  "version": 2,
+  "version": 3,
   "status": "verified",
   "name": "Final Payment Checklist",
   "nameAr": "قائمة تدقيق الدفعة النهائية",
@@ -13,7 +13,7 @@
   "slots": {
     "project_id": {
       "kind": "inline",
-      "width": 200
+      "width": 160
     },
     "owner": {
       "kind": "inline",
@@ -21,7 +21,7 @@
     },
     "contractor": {
       "kind": "inline",
-      "width": 200
+      "width": 165
     },
     "consultant": {
       "kind": "inline",

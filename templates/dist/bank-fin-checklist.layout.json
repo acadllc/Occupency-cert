@@ -1,9 +1,9 @@
 {
  "key": "bank-fin-checklist",
- "version": 2,
+ "version": 3,
  "format": "docx",
  "sourceSha256": "792a1217c3e082e79b214570957bdc0d2daef5bf416e0699761cab82997c7520",
- "baseSha256": "d521c8db4c3a5ef0b6d886bc87f10f12d802978b6c0bf7d9d142bd5b5d8b532d",
+ "baseSha256": "3c7945705f0526696f3cd51a9cfc0555ffa8f9cff5e7da02c14dc93c31772eba",
  "pageCount": 1,
  "pages": [
   {
@@ -17,7 +17,7 @@
    "baseline": 78.15,
    "size": 8.0,
    "rect": [
-    2.21,
+    42.21,
     69.02,
     202.21,
     81.88
@@ -39,7 +39,7 @@
    "baseline": 98.0,
    "size": 10.0,
    "rect": [
-    14.24,
+    49.24,
     85.84,
     214.24,
     103.75
