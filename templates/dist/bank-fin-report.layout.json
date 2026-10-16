@@ -1,9 +1,9 @@
 {
  "key": "bank-fin-report",
- "version": 1,
+ "version": 2,
  "format": "docx",
  "sourceSha256": "59265f87559f55c0a800eb5a683a7cc282cd67316ac72d32d1bdc1287939340c",
- "baseSha256": "605a00a34a0f4aafd8bc94e1abf714f7492c840c87035f6433a17406cfd7d134",
+ "baseSha256": "2892fd896b932b1d8dab8d79fd2634db82019548e9dc0b09f2a37348dfde9cb4",
  "pageCount": 1,
  "pages": [
   {
@@ -110,17 +110,6 @@
     522.44,
     69.82
    ]
-  },
-  "stamp": {
-   "page": 0,
-   "baseline": 559.8,
-   "size": 1.0,
-   "rect": [
-    60.59,
-    556.78,
-    70.59,
-    562.18
-   ]
   }
  },
  "docx": {
@@ -133,12 +122,11 @@
    "QZ6ZQ": "location",
    "QZ7ZQ": "end_date",
    "QZ8ZQ": "start_date",
-   "QZ9ZQ": "components",
-   "QZ10ZQ": "stamp"
+   "QZ9ZQ": "components"
   }
  },
  "build": {
   "engine": "LibreOffice 24.2.7.2 420(Build:2)",
-  "layoutDiff": 0.000434
+  "layoutDiff": 0.0
  }
 }

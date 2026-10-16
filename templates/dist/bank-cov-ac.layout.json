@@ -1,9 +1,9 @@
 {
  "key": "bank-cov-ac",
- "version": 1,
+ "version": 2,
  "format": "docx",
  "sourceSha256": "fd401fcd5d98c0e9fe7e1ba26ab0ac71111f8ff42d490421e81638a93c0f8c1c",
- "baseSha256": "15f8a28ae27901db5b6939cc9479543e1862f4d9e0dd592a30b488e19e3177c6",
+ "baseSha256": "082cd4d22d825e29a6ffd8dea7605f456c9c503b1ffea1900ecbfdc76696a832",
  "pageCount": 1,
  "pages": [
   {

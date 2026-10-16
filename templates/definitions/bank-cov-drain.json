@@ -1,6 +1,6 @@
 {
   "key": "bank-cov-drain",
-  "version": 1,
+  "version": 2,
   "status": "verified",
   "name": "Drainage Drawings Cover",
   "nameAr": "غلاف مخططات الصرف الصحي",
@@ -108,7 +108,7 @@
     },
     {
       "slot": "project_id",
-      "value": "project_id",
+      "value": "bank_project_number",
       "font": "sans",
       "size": 24,
       "minSize": 7,

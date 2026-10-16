@@ -3,6 +3,7 @@ import type { ProjectFields } from '@acad/engine';
 /** Fabricated, non-sensitive test data (no real client information). */
 export const sampleProject: ProjectFields = {
   project_id: 'B2N-2026-000123',
+  bank_project_number: '12345678/01/000001',
   date: '2026-10-13',
   owner_name_ar: 'سالم خليفة راشد المنصوري',
   owner_name_en: 'Salem Khalifa Rashed Al Mansouri',
@@ -56,6 +57,7 @@ export const sampleProject: ProjectFields = {
 export const longProject: ProjectFields = {
   ...sampleProject,
   project_id: '000-B2-BOC-2026-000608/A',
+  bank_project_number: '98765432/01/000123-A',
   owner_name_ar: 'ورثة المرحوم عبد الرحمن بن محمد بن سعيد بن خلفان الكتبي ومن يمثلهم قانونياً',
   owner_name_en: 'Heirs of the late Abdul Rahman bin Mohammed bin Saeed bin Khalfan Al Ketbi & legal representatives',
   area_ar: 'وسط المدينة - حي الحميرة',

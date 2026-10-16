@@ -1,6 +1,6 @@
 {
   "key": "bank-com-start-order",
-  "version": 1,
+  "version": 2,
   "status": "verified",
   "name": "Start of Work Order",
   "nameAr": "أمر مباشرة العمل",
@@ -33,15 +33,11 @@
       "kind": "gap",
       "width": 160
     },
-    "stamp": {
-      "kind": "inline",
-      "width": 10
-    },
     "components_text": {
       "kind": "inline",
-      "width": 190,
-      "pad": 11,
-      "shift": -108
+      "dir": "center",
+      "width": 460,
+      "pad": 10
     },
     "contractor_2": {
       "kind": "gap",
@@ -63,9 +59,8 @@
   "fields": [
     {
       "slot": "project_id",
-      "value": "project_id",
+      "value": "bank_project_number",
       "font": "sans",
-      "size": 12,
       "align": "right",
       "dir": "ltr",
       "multiline": true,
@@ -80,7 +75,6 @@
       "slot": "owner",
       "value": "owner_name_ar",
       "font": "sans",
-      "size": 12,
       "align": "right",
       "dir": "rtl",
       "multiline": true,
@@ -95,7 +89,6 @@
       "slot": "consultant",
       "value": "$consultant_name_ar",
       "font": "sans",
-      "size": 12,
       "align": "right",
       "dir": "rtl",
       "multiline": true,
@@ -110,7 +103,6 @@
       "slot": "contractor",
       "value": "contractor_name_ar",
       "font": "sans",
-      "size": 12,
       "align": "right",
       "dir": "rtl",
       "multiline": true,
@@ -125,7 +117,6 @@
       "slot": "location",
       "value": "@project_location_ar",
       "font": "sans",
-      "size": 12,
       "align": "right",
       "dir": "rtl",
       "multiline": true,
@@ -140,7 +131,6 @@
       "slot": "project_id_2",
       "value": "plot_number",
       "font": "sans",
-      "size": 12,
       "align": "right",
       "dir": "ltr",
       "multiline": true,
@@ -166,20 +156,11 @@
       ]
     },
     {
-      "slot": "stamp",
-      "stamp": {
-        "size": 105,
-        "anchor": "marker",
-        "dx": -360,
-        "dy": 50
-      }
-    },
-    {
       "slot": "components_text",
       "value": "project_components_ar",
       "font": "sans",
       "size": 12,
-      "align": "right",
+      "align": "center",
       "dir": "rtl",
       "padding": [
         0,

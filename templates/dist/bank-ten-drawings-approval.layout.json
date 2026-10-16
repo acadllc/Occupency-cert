@@ -1,6 +1,6 @@
 {
  "key": "bank-ten-drawings-approval",
- "version": 1,
+ "version": 2,
  "format": "pdf",
  "sourceSha256": "c5a5d04dd9173051bbb4803cd8942fe978354f4981ef27f667528b92235d8c65",
  "baseSha256": "8688b1f54aa01f54ac99fd9016a2f7d861c61f1d0612190be5080920fa1a6064",
@@ -64,15 +64,6 @@
     281,
     408,
     302
-   ]
-  },
-  "stamp": {
-   "page": 0,
-   "rect": [
-    360.0,
-    560.0,
-    440.0,
-    640.0
    ]
   }
  },

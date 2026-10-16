@@ -1,9 +1,9 @@
 {
  "key": "bank-fin-snags-undertaking",
- "version": 1,
+ "version": 2,
  "format": "docx",
  "sourceSha256": "402f657e5ab6a462e95343e9d23569c2e00b9891e77b8d62a38c4882017953df",
- "baseSha256": "6439f10e43c2ea85ecf0b0c21d22feb38b762633389a5ae510c50ef19875e724",
+ "baseSha256": "1e6d3021c6124cb83fc2ab289e99270af022a7d0f1d7fa2b42c506482c699471",
  "pageCount": 1,
  "pages": [
   {
@@ -17,9 +17,9 @@
    "baseline": 216.1,
    "size": 12.0,
    "rect": [
-    233.9,
+    84.3,
     200.95,
-    511.0,
+    361.4,
     228.75
    ]
   },
@@ -28,9 +28,9 @@
    "baseline": 244.7,
    "size": 14.0,
    "rect": [
-    233.9,
+    84.3,
     228.75,
-    511.0,
+    361.4,
     256.65
    ]
   },
@@ -39,9 +39,9 @@
    "baseline": 272.55,
    "size": 14.0,
    "rect": [
-    233.9,
+    84.3,
     256.65,
-    511.0,
+    361.4,
     284.45
    ]
   },
@@ -50,9 +50,9 @@
    "baseline": 300.25,
    "size": 13.5,
    "rect": [
-    233.9,
+    84.3,
     284.45,
-    511.0,
+    361.4,
     312.35
    ]
   },
@@ -61,9 +61,9 @@
    "baseline": 328.25,
    "size": 14.0,
    "rect": [
-    233.9,
+    84.3,
     312.35,
-    511.0,
+    361.4,
     340.15
    ]
   },
@@ -88,17 +88,6 @@
     294.11,
     401.4
    ]
-  },
-  "contractor_3": {
-   "page": 0,
-   "baseline": 638.55,
-   "size": 13.5,
-   "rect": [
-    42.86,
-    624.52,
-    262.86,
-    643.47
-   ]
   }
  },
  "docx": {
@@ -109,12 +98,11 @@
    "QZ4ZQ": "consultant",
    "QZ5ZQ": "contractor",
    "QZ6ZQ": "location",
-   "QZ7ZQ": "contractor_2",
-   "QZ8ZQ": "contractor_3"
+   "QZ7ZQ": "contractor_2"
   }
  },
  "build": {
   "engine": "LibreOffice 24.2.7.2 420(Build:2)",
-  "layoutDiff": 0.000723
+  "layoutDiff": 0.002632
  }
 }

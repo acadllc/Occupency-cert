@@ -1,9 +1,9 @@
 {
  "key": "bank-fin-insulation",
- "version": 1,
+ "version": 2,
  "format": "docx",
  "sourceSha256": "8eca0865cdf6d116aeab6d39cec0fa2c19ba6b5d09a61194f12e5871933a3d58",
- "baseSha256": "e409d358e3124b37e9447c454e56ce3ace65d315a533ede6af418d7d01cfa3de",
+ "baseSha256": "0929eebb9a28f250d34f7bff0818c4f93714385637d3caae3696a6fff4e752a8",
  "pageCount": 1,
  "pages": [
   {
@@ -17,9 +17,9 @@
    "baseline": 204.7,
    "size": 12.0,
    "rect": [
-    233.9,
+    84.3,
     189.55,
-    511.0,
+    361.4,
     217.35
    ]
   },
@@ -28,9 +28,9 @@
    "baseline": 233.3,
    "size": 14.0,
    "rect": [
-    233.9,
+    84.3,
     217.35,
-    511.0,
+    361.4,
     245.25
    ]
   },
@@ -39,9 +39,9 @@
    "baseline": 261.15,
    "size": 14.0,
    "rect": [
-    233.9,
+    84.3,
     245.25,
-    511.0,
+    361.4,
     273.05
    ]
   },
@@ -50,9 +50,9 @@
    "baseline": 288.85,
    "size": 13.5,
    "rect": [
-    233.9,
+    84.3,
     273.05,
-    511.0,
+    361.4,
     300.95
    ]
   },
@@ -61,9 +61,9 @@
    "baseline": 316.85,
    "size": 14.0,
    "rect": [
-    233.9,
+    84.3,
     300.95,
-    511.0,
+    361.4,
     328.75
    ]
   },
@@ -77,17 +77,6 @@
     458.43,
     117.34
    ]
-  },
-  "stamp": {
-   "page": 0,
-   "baseline": 521.15,
-   "size": 1.0,
-   "rect": [
-    91.26,
-    518.26,
-    101.26,
-    523.37
-   ]
   }
  },
  "docx": {
@@ -97,12 +86,11 @@
    "QZ3ZQ": "owner",
    "QZ4ZQ": "consultant",
    "QZ5ZQ": "contractor",
-   "QZ6ZQ": "location",
-   "QZ7ZQ": "stamp"
+   "QZ6ZQ": "location"
   }
  },
  "build": {
   "engine": "LibreOffice 24.2.7.2 420(Build:2)",
-  "layoutDiff": 0.00113
+  "layoutDiff": 0.000723
  }
 }

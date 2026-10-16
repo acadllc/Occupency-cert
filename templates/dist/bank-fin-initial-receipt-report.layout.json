@@ -1,9 +1,9 @@
 {
  "key": "bank-fin-initial-receipt-report",
- "version": 1,
+ "version": 2,
  "format": "docx",
  "sourceSha256": "694043b963a8a8dcb31a9cff1a12271749e2a1576ca92e646b2680ec14780f6e",
- "baseSha256": "cb852846aeb4c1c897b06ba9340557f84840f3e181713c8c455f83acb842bd30",
+ "baseSha256": "ac81ff312d526190a6aa88d9b24bff59f6cd5047935ccd9d284b3a33b279dcbe",
  "pageCount": 1,
  "pages": [
   {
@@ -77,17 +77,6 @@
     489.1,
     87.2
    ]
-  },
-  "stamp": {
-   "page": 0,
-   "baseline": 671.85,
-   "size": 1.0,
-   "rect": [
-    286.98,
-    668.9,
-    296.98,
-    674.12
-   ]
   }
  },
  "docx": {
@@ -97,12 +86,11 @@
    "QZ3ZQ": "consultant",
    "QZ4ZQ": "contractor",
    "QZ5ZQ": "location",
-   "QZ6ZQ": "date",
-   "QZ7ZQ": "stamp"
+   "QZ6ZQ": "date"
   }
  },
  "build": {
   "engine": "LibreOffice 24.2.7.2 420(Build:2)",
-  "layoutDiff": 0.000319
+  "layoutDiff": 0.0
  }
 }

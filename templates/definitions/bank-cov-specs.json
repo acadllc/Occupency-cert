@@ -1,6 +1,6 @@
 {
   "key": "bank-cov-specs",
-  "version": 1,
+  "version": 2,
   "status": "verified",
   "name": "Particular Specification Tender Cover",
   "nameAr": "غلاف المواصفات الخاصة للمناقصة",
@@ -13,30 +13,28 @@
   "slots": {
     "project_id": {
       "kind": "inline",
-      "dir": "center",
-      "width": 160
+      "dir": "ltr",
+      "width": 230
     },
     "owner": {
       "kind": "inline",
-      "dir": "rtl",
-      "width": 320,
-      "shift": 2
+      "dir": "ltr",
+      "width": 300
     },
     "owner_en": {
       "kind": "inline",
       "dir": "ltr",
-      "width": 470,
-      "shift": -387
+      "width": 360
     }
   },
   "fields": [
     {
       "slot": "project_id",
-      "value": "project_id",
+      "value": "bank_project_number",
       "font": "sans",
-      "size": 18,
+      "size": 16,
       "minSize": 7,
-      "align": "center",
+      "align": "left",
       "dir": "ltr",
       "padding": [
         0,
@@ -44,7 +42,7 @@
         0,
         0
       ],
-      "docxMaxWidth": 125
+      "docxMaxWidth": 270
     },
     {
       "slot": "owner",
@@ -52,7 +50,7 @@
       "font": "sans",
       "size": 24,
       "minSize": 7,
-      "align": "right",
+      "align": "left",
       "dir": "rtl",
       "padding": [
         0,
@@ -60,7 +58,7 @@
         0,
         0
       ],
-      "docxMaxWidth": 310
+      "docxMaxWidth": 250
     },
     {
       "slot": "owner_en",
@@ -68,7 +66,7 @@
       "font": "sans",
       "size": 22,
       "minSize": 7,
-      "align": "center",
+      "align": "left",
       "dir": "ltr",
       "padding": [
         0,
@@ -76,7 +74,7 @@
         0,
         0
       ],
-      "docxMaxWidth": 460
+      "docxMaxWidth": 330
     }
   ]
 }

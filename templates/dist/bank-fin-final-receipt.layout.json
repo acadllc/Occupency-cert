@@ -1,9 +1,9 @@
 {
  "key": "bank-fin-final-receipt",
- "version": 1,
+ "version": 2,
  "format": "docx",
  "sourceSha256": "9e31c51406726d41e6b355721f5656725426194cac2b2100e7a0f751afbe39a5",
- "baseSha256": "3047fb5b2e24ef57eaa8a166658c2ad1e4347534667ac6e56d478434581c06fe",
+ "baseSha256": "83d6a00f1a99687d9318c1752f574dacb71a0531e03ef16f268d751c92cc15c2",
  "pageCount": 1,
  "pages": [
   {
@@ -17,9 +17,9 @@
    "baseline": 204.7,
    "size": 12.0,
    "rect": [
-    233.9,
+    84.3,
     189.55,
-    511.0,
+    361.4,
     217.35
    ]
   },
@@ -28,9 +28,9 @@
    "baseline": 233.3,
    "size": 14.0,
    "rect": [
-    233.9,
+    84.3,
     217.35,
-    511.0,
+    361.4,
     245.25
    ]
   },
@@ -39,9 +39,9 @@
    "baseline": 261.15,
    "size": 14.0,
    "rect": [
-    233.9,
+    84.3,
     245.25,
-    511.0,
+    361.4,
     273.05
    ]
   },
@@ -50,9 +50,9 @@
    "baseline": 288.85,
    "size": 13.5,
    "rect": [
-    233.9,
+    84.3,
     273.05,
-    511.0,
+    361.4,
     300.95
    ]
   },
@@ -61,9 +61,9 @@
    "baseline": 316.85,
    "size": 14.0,
    "rect": [
-    233.9,
+    84.3,
     300.95,
-    511.0,
+    361.4,
     328.75
    ]
   },
@@ -77,17 +77,6 @@
     458.43,
     117.34
    ]
-  },
-  "stamp": {
-   "page": 0,
-   "baseline": 665.75,
-   "size": 1.0,
-   "rect": [
-    122.34,
-    662.86,
-    132.34,
-    667.97
-   ]
   }
  },
  "docx": {
@@ -97,12 +86,11 @@
    "QZ3ZQ": "owner",
    "QZ4ZQ": "consultant",
    "QZ5ZQ": "contractor",
-   "QZ6ZQ": "location",
-   "QZ7ZQ": "stamp"
+   "QZ6ZQ": "location"
   }
  },
  "build": {
   "engine": "LibreOffice 24.2.7.2 420(Build:2)",
-  "layoutDiff": 0.00271
+  "layoutDiff": 0.000723
  }
 }

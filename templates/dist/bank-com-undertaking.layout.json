@@ -1,9 +1,9 @@
 {
  "key": "bank-com-undertaking",
- "version": 1,
+ "version": 2,
  "format": "docx",
  "sourceSha256": "b87f5f85e2f5cc03c0f02f520f45eb4b37297bfb208bb9d98051f190a74d37d3",
- "baseSha256": "189ddaaf7fce01ea98b49e1782a052c28e87a9fee5dd1b6b7b3203ca27690d12",
+ "baseSha256": "7096df74a431168d0ebf7de8789838c826d24cae701323514aba8abf35c29583",
  "pageCount": 1,
  "pages": [
   {
@@ -12,25 +12,14 @@
   }
  ],
  "slots": {
-  "stamp": {
-   "page": 0,
-   "baseline": 577.6,
-   "size": 1.0,
-   "rect": [
-    395.79,
-    574.58,
-    405.79,
-    579.97
-   ]
-  },
   "date": {
    "page": 0,
    "baseline": 83.8,
    "size": 14.0,
    "rect": [
-    360.17,
+    360.15,
     67.58,
-    470.17,
+    470.15,
     91.05
    ]
   },
@@ -39,9 +28,9 @@
    "baseline": 136.0,
    "size": 14.0,
    "rect": [
-    245.35,
+    245.37,
     119.78,
-    445.35,
+    445.37,
     143.25
    ]
   },
@@ -50,9 +39,9 @@
    "baseline": 162.1,
    "size": 14.0,
    "rect": [
-    105.99,
+    106.0,
     145.88,
-    405.99,
+    406.0,
     169.35
    ]
   },
@@ -61,9 +50,9 @@
    "baseline": 188.2,
    "size": 14.0,
    "rect": [
-    145.36,
+    145.34,
     171.98,
-    445.36,
+    445.34,
     195.45
    ]
   },
@@ -72,25 +61,24 @@
    "baseline": 214.3,
    "size": 14.0,
    "rect": [
-    109.37,
+    109.36,
     198.08,
-    409.37,
+    409.36,
     221.55
    ]
   }
  },
  "docx": {
   "markers": {
-   "QZ1ZQ": "stamp",
-   "QZ2ZQ": "date",
-   "QZ3ZQ": "project_id",
-   "QZ4ZQ": "owner",
-   "QZ5ZQ": "consultant",
-   "QZ6ZQ": "contractor"
+   "QZ1ZQ": "date",
+   "QZ2ZQ": "project_id",
+   "QZ3ZQ": "owner",
+   "QZ4ZQ": "consultant",
+   "QZ5ZQ": "contractor"
   }
  },
  "build": {
   "engine": "LibreOffice 24.2.7.2 420(Build:2)",
-  "layoutDiff": 0.00138
+  "layoutDiff": 0.000553
  }
 }

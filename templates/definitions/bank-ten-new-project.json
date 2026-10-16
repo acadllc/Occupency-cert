@@ -1,6 +1,6 @@
 {
   "key": "bank-ten-new-project",
-  "version": 1,
+  "version": 2,
   "status": "verified",
   "name": "Design File Submission Form (DSN-CD-01)",
   "nameAr": "نموذج تقديم ملف التصميم",
@@ -25,18 +25,13 @@
     },
     "components": {
       "kind": "cell"
-    },
-    "stamp": {
-      "kind": "inline",
-      "width": 10
     }
   },
   "fields": [
     {
       "slot": "project_id",
-      "value": "project_id",
+      "value": "bank_project_number",
       "font": "sans",
-      "size": 12,
       "align": "right",
       "dir": "ltr",
       "multiline": true,
@@ -51,7 +46,6 @@
       "slot": "owner",
       "value": "owner_name_ar",
       "font": "sans",
-      "size": 12,
       "align": "right",
       "dir": "rtl",
       "multiline": true,
@@ -66,7 +60,6 @@
       "slot": "consultant",
       "value": "$consultant_name_ar",
       "font": "sans",
-      "size": 12,
       "align": "right",
       "dir": "rtl",
       "multiline": true,
@@ -81,7 +74,6 @@
       "slot": "location",
       "value": "@project_location_ar",
       "font": "sans",
-      "size": 12,
       "align": "right",
       "dir": "rtl",
       "multiline": true,
@@ -96,7 +88,6 @@
       "slot": "components",
       "value": "project_components_ar",
       "font": "sans",
-      "size": 12,
       "align": "right",
       "dir": "rtl",
       "multiline": true,
@@ -106,15 +97,6 @@
         4,
         2
       ]
-    },
-    {
-      "slot": "stamp",
-      "stamp": {
-        "size": 72,
-        "anchor": "marker",
-        "dx": 60,
-        "dy": 34
-      }
     }
   ]
 }

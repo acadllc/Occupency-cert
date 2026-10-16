@@ -1,6 +1,6 @@
 {
   "key": "bank-ten-drawings-approval",
-  "version": 1,
+  "version": 2,
   "status": "verified",
   "name": "Drawings Approval Request (DSN-CD-00)",
   "nameAr": "طلب إعتماد المخططات",
@@ -71,16 +71,6 @@
         408,
         302
       ]
-    },
-    "stamp": {
-      "kind": "rect",
-      "page": 0,
-      "rect": [
-        360.0,
-        560.0,
-        440.0,
-        640.0
-      ]
     }
   },
   "fields": [
@@ -131,7 +121,7 @@
     },
     {
       "slot": "project_id",
-      "value": "project_id",
+      "value": "bank_project_number",
       "font": "sans",
       "size": 11,
       "minSize": 6,
@@ -173,13 +163,6 @@
       ],
       "dir": "rtl",
       "align": "right"
-    },
-    {
-      "slot": "stamp",
-      "stamp": {
-        "size": 80,
-        "anchor": "center"
-      }
     }
   ]
 }

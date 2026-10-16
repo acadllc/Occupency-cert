@@ -1,6 +1,6 @@
 {
   "key": "bank-ten-pledges",
-  "version": 1,
+  "version": 2,
   "status": "verified",
   "name": "Owner and Consultant Undertakings (DSN-CD-04)",
   "nameAr": "تعهدات المالك والاستشاري",
@@ -81,16 +81,6 @@
         408,
         243
       ]
-    },
-    "stamp": {
-      "kind": "rect",
-      "page": 0,
-      "rect": [
-        363.0,
-        716.0,
-        427.0,
-        780.0
-      ]
     }
   },
   "fields": [
@@ -141,7 +131,7 @@
     },
     {
       "slot": "project_id",
-      "value": "project_id",
+      "value": "bank_project_number",
       "font": "sans",
       "size": 11,
       "minSize": 6,
@@ -198,13 +188,6 @@
       ],
       "dir": "rtl",
       "align": "right"
-    },
-    {
-      "slot": "stamp",
-      "stamp": {
-        "size": 64,
-        "anchor": "center"
-      }
     }
   ]
 }

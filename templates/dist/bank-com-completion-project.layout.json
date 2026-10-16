@@ -1,9 +1,9 @@
 {
  "key": "bank-com-completion-project",
- "version": 1,
+ "version": 2,
  "format": "docx",
  "sourceSha256": "0489a80a334362e9e0d096f32945dbc1b10d3c83b2ebe7649161b9fb7a89a2f9",
- "baseSha256": "07c82e362b50c4c972c0826d37df6ae4a8a708567ce7dc7474db5d20eb00b0e8",
+ "baseSha256": "d644f986cbf1cd817a699d28412c5327b7adb24c11eee9b9bf609e697e24abf7",
  "pageCount": 1,
  "pages": [
   {
@@ -56,17 +56,6 @@
     162.25
    ]
   },
-  "stamp": {
-   "page": 0,
-   "baseline": 732.2,
-   "size": 1.0,
-   "rect": [
-    401.14,
-    729.18,
-    411.14,
-    734.58
-   ]
-  },
   "consultant": {
    "page": 0,
    "baseline": 101.35,
@@ -96,13 +85,12 @@
    "QZ2ZQ": "owner",
    "QZ3ZQ": "location",
    "QZ4ZQ": "components",
-   "QZ5ZQ": "stamp",
-   "QZ6ZQ": "consultant",
-   "QZ7ZQ": "contractor"
+   "QZ5ZQ": "consultant",
+   "QZ6ZQ": "contractor"
   }
  },
  "build": {
   "engine": "LibreOffice 24.2.7.2 420(Build:2)",
-  "layoutDiff": 0.000347
+  "layoutDiff": 0.0
  }
 }

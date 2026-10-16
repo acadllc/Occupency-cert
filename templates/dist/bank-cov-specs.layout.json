@@ -1,9 +1,9 @@
 {
  "key": "bank-cov-specs",
- "version": 1,
+ "version": 2,
  "format": "docx",
  "sourceSha256": "5f240812de9bff5f7bc5644788bce06b8816783ab6bb8dfbf0f7019e8903e080",
- "baseSha256": "839a9f1ca341a56fa8e63ff04bead079f704627acf7b54f7fd8199d377666bfd",
+ "baseSha256": "ebbeab0865074ee7a63e3d17c673937139d4ab8f20c912b3f03a728698a0f51c",
  "pageCount": 1,
  "pages": [
   {
@@ -14,13 +14,13 @@
  "slots": {
   "project_id": {
    "page": 0,
-   "baseline": 561.0,
+   "baseline": 548.0,
    "size": 22.0,
    "rect": [
-    255.63,
-    539.09,
-    415.63,
-    567.64
+    271.0,
+    526.09,
+    501.0,
+    554.64
    ]
   },
   "owner": {
@@ -28,9 +28,9 @@
    "baseline": 583.35,
    "size": 28.0,
    "rect": [
-    137.79,
+    183.55,
     556.01,
-    457.79,
+    483.55,
     591.26
    ]
   },
@@ -39,9 +39,9 @@
    "baseline": 619.55,
    "size": 25.0,
    "rect": [
-    83.1,
+    183.55,
     594.93,
-    553.1,
+    543.55,
     626.83
    ]
   }
@@ -55,6 +55,6 @@
  },
  "build": {
   "engine": "LibreOffice 24.2.7.2 420(Build:2)",
-  "layoutDiff": 0.001979
+  "layoutDiff": 0.001481
  }
 }

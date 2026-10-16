@@ -1,6 +1,6 @@
 {
   "key": "bank-fin-snags-undertaking",
-  "version": 1,
+  "version": 2,
   "status": "verified",
   "name": "Undertaking to Complete Snags",
   "nameAr": "تعهد إنهاء الملاحظات",
@@ -33,18 +33,13 @@
     "contractor_2": {
       "kind": "gap",
       "width": 160
-    },
-    "contractor_3": {
-      "kind": "inline",
-      "width": 220
     }
   },
   "fields": [
     {
       "slot": "project_id",
-      "value": "project_id",
+      "value": "bank_project_number",
       "font": "sans",
-      "size": 12,
       "align": "right",
       "dir": "ltr",
       "multiline": true,
@@ -59,7 +54,6 @@
       "slot": "owner",
       "value": "owner_name_ar",
       "font": "sans",
-      "size": 12,
       "align": "right",
       "dir": "rtl",
       "multiline": true,
@@ -74,7 +68,6 @@
       "slot": "consultant",
       "value": "$consultant_name_ar",
       "font": "sans",
-      "size": 12,
       "align": "right",
       "dir": "rtl",
       "multiline": true,
@@ -89,7 +82,6 @@
       "slot": "contractor",
       "value": "contractor_name_ar",
       "font": "sans",
-      "size": 12,
       "align": "right",
       "dir": "rtl",
       "multiline": true,
@@ -104,7 +96,6 @@
       "slot": "location",
       "value": "@project_location_ar",
       "font": "sans",
-      "size": 12,
       "align": "right",
       "dir": "rtl",
       "multiline": true,
@@ -142,20 +133,7 @@
         0,
         0
       ]
-    },
-    {
-      "slot": "contractor_3",
-      "value": "contractor_name_ar",
-      "font": "sans",
-      "size": 12,
-      "align": "right",
-      "dir": "rtl",
-      "padding": [
-        0,
-        0,
-        0,
-        0
-      ]
     }
-  ]
+  ],
+  "layoutTolerance": 0.004
 }

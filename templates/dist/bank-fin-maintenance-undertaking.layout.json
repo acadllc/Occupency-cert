@@ -1,9 +1,9 @@
 {
  "key": "bank-fin-maintenance-undertaking",
- "version": 1,
+ "version": 2,
  "format": "docx",
  "sourceSha256": "e6d80413546cbf26089157f267d2e5f750916fb536a219ccc824c7dc7b568d9c",
- "baseSha256": "0ce02a890cb10964979ccac620462a09b95ec00d69430f5ab9087edbfb550257",
+ "baseSha256": "60968613dbbcf18b7b7db376524afccff5c16a041c7dc6e73687006b6619342a",
  "pageCount": 1,
  "pages": [
   {
@@ -17,9 +17,9 @@
    "baseline": 227.6,
    "size": 12.0,
    "rect": [
-    233.9,
+    84.3,
     212.45,
-    511.0,
+    361.4,
     240.25
    ]
   },
@@ -28,9 +28,9 @@
    "baseline": 256.2,
    "size": 14.0,
    "rect": [
-    233.9,
+    84.3,
     240.25,
-    511.0,
+    361.4,
     268.15
    ]
   },
@@ -39,9 +39,9 @@
    "baseline": 284.05,
    "size": 14.0,
    "rect": [
-    233.9,
+    84.3,
     268.15,
-    511.0,
+    361.4,
     295.95
    ]
   },
@@ -50,9 +50,9 @@
    "baseline": 311.75,
    "size": 13.5,
    "rect": [
-    233.9,
+    84.3,
     295.95,
-    511.0,
+    361.4,
     323.85
    ]
   },
@@ -61,9 +61,9 @@
    "baseline": 339.75,
    "size": 14.0,
    "rect": [
-    233.9,
+    84.3,
     323.85,
-    511.0,
+    361.4,
     351.65
    ]
   },
@@ -88,17 +88,6 @@
     293.16,
     417.5
    ]
-  },
-  "contractor_3": {
-   "page": 0,
-   "baseline": 557.85,
-   "size": 13.5,
-   "rect": [
-    42.01,
-    543.82,
-    262.01,
-    562.77
-   ]
   }
  },
  "docx": {
@@ -109,12 +98,11 @@
    "QZ4ZQ": "consultant",
    "QZ5ZQ": "contractor",
    "QZ6ZQ": "location",
-   "QZ7ZQ": "contractor_2",
-   "QZ8ZQ": "contractor_3"
+   "QZ7ZQ": "contractor_2"
   }
  },
  "build": {
   "engine": "LibreOffice 24.2.7.2 420(Build:2)",
-  "layoutDiff": 0.000723
+  "layoutDiff": 0.002405
  }
 }

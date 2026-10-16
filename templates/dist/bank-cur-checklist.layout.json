@@ -1,9 +1,9 @@
 {
  "key": "bank-cur-checklist",
- "version": 1,
+ "version": 2,
  "format": "docx",
  "sourceSha256": "9814f87f36474ec3ebf9138681c5eb227a011533f086bab79859bdb14335fa89",
- "baseSha256": "7ef856aac00287ce3aa49c158bf69e087417a9cd0f92c2651e81fccad8b7a4a5",
+ "baseSha256": "3b0d5760078fb3c899a56a36e173ce2ad7878c5489187db6fa5cc4b04c69f735",
  "pageCount": 1,
  "pages": [
   {
@@ -66,17 +66,6 @@
     293.73,
     136.35
    ]
-  },
-  "stamp": {
-   "page": 0,
-   "baseline": 626.6,
-   "size": 1.0,
-   "rect": [
-    455.24,
-    623.58,
-    465.24,
-    628.98
-   ]
   }
  },
  "docx": {
@@ -85,12 +74,11 @@
    "QZ2ZQ": "owner",
    "QZ3ZQ": "contractor",
    "QZ4ZQ": "consultant",
-   "QZ5ZQ": "location",
-   "QZ6ZQ": "stamp"
+   "QZ5ZQ": "location"
   }
  },
  "build": {
   "engine": "LibreOffice 24.2.7.2 420(Build:2)",
-  "layoutDiff": 0.0
+  "layoutDiff": 2e-05
  }
 }

@@ -1,6 +1,6 @@
 {
   "key": "bank-ten-drawings-match",
-  "version": 1,
+  "version": 2,
   "status": "verified",
   "name": "Undertaking: Drawings Match the Municipality Approval",
   "nameAr": "تعهد وإقرار – مطابقة المخططات",
@@ -61,16 +61,6 @@
         236,
         410
       ]
-    },
-    "stamp": {
-      "kind": "rect",
-      "page": 0,
-      "rect": [
-        105.0,
-        533.0,
-        195.0,
-        623.0
-      ]
     }
   },
   "fields": [
@@ -91,7 +81,7 @@
     },
     {
       "slot": "project_id",
-      "value": "project_id",
+      "value": "bank_project_number",
       "font": "sans",
       "size": 11,
       "minSize": 6,
@@ -148,13 +138,6 @@
       ],
       "dir": "rtl",
       "align": "right"
-    },
-    {
-      "slot": "stamp",
-      "stamp": {
-        "size": 90,
-        "anchor": "center"
-      }
     }
   ]
 }

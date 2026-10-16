@@ -1,9 +1,9 @@
 {
  "key": "bank-ten-terms",
- "version": 1,
+ "version": 2,
  "format": "docx",
  "sourceSha256": "2d1618c76623391283c9212e367ccfe487468776f707773986c5c57f612db816",
- "baseSha256": "0a1f51f98e1631dcc83fb3f4fd71f38e4dfaf8eebaf1f4bef8783cc2bbe03b85",
+ "baseSha256": "28ce29ac0b0d0dec696029b37a72eb88ce637f8ea0c6f4407fa6aa9054548a95",
  "pageCount": 8,
  "pages": [
   {
@@ -155,6 +155,6 @@
  },
  "build": {
   "engine": "LibreOffice 24.2.7.2 420(Build:2)",
-  "layoutDiff": 0.003537
+  "layoutDiff": 0.002238
  }
 }

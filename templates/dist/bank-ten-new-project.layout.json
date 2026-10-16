@@ -1,9 +1,9 @@
 {
  "key": "bank-ten-new-project",
- "version": 1,
+ "version": 2,
  "format": "docx",
  "sourceSha256": "d386b9bbbca3d956b92dac422d2f49bac0e6b7485406e53cee8d48c565d53971",
- "baseSha256": "270e42623fcb51f66cc2b783e507ec5c495216b0445ac3f679b47eb098784852",
+ "baseSha256": "be5c7123c583541e2c6ea44cfe3fc8dc948404e0ba70ddfcf86d80518274611e",
  "pageCount": 1,
  "pages": [
   {
@@ -66,17 +66,6 @@
     439.8,
     129.85
    ]
-  },
-  "stamp": {
-   "page": 0,
-   "baseline": 683.4,
-   "size": 1.0,
-   "rect": [
-    368.69,
-    680.38,
-    378.69,
-    685.78
-   ]
   }
  },
  "docx": {
@@ -85,12 +74,11 @@
    "QZ2ZQ": "owner",
    "QZ3ZQ": "consultant",
    "QZ4ZQ": "location",
-   "QZ5ZQ": "components",
-   "QZ6ZQ": "stamp"
+   "QZ5ZQ": "components"
   }
  },
  "build": {
   "engine": "LibreOffice 24.2.7.2 420(Build:2)",
-  "layoutDiff": 0.000524
+  "layoutDiff": 0.0
  }
 }

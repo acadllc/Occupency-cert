@@ -1,9 +1,9 @@
 {
  "key": "bank-cov-ws",
- "version": 1,
+ "version": 2,
  "format": "docx",
  "sourceSha256": "4e5c0925956f01344b6ad0f6fd38e8d615a32278149e68dbdf8556c9227a140b",
- "baseSha256": "81f9a85cf2d7bd8b48fe6127f48cb4b6ee7f8042e651cca43ad20aa11e0bb263",
+ "baseSha256": "a95f38365f993143fd45b921b293b274f24dbfef3c55aa20d1736995bd55e25d",
  "pageCount": 1,
  "pages": [
   {

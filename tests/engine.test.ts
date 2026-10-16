@@ -103,7 +103,11 @@ describe('registry', () => {
   it('lists every template as generatable, under a known project-type tab', () => {
     const types = (JSON.parse(readFileSync(join(root, 'templates/project-types.json'), 'utf8')) as { types: { key: string }[] }).types.map((t) => t.key);
     expect(catalog.templates.filter((t) => (t.definition.projectType ?? 'occupancy') === 'occupancy')).toHaveLength(18);
-    expect(catalog.templates.filter((t) => t.definition.projectType === 'bank').length).toBeGreaterThanOrEqual(55);
+    const bank = catalog.templates.filter((t) => t.definition.projectType === 'bank');
+    expect(bank.length).toBeGreaterThanOrEqual(55);
+    // bank papers never carry the ACAD stamp, and print the bank's own project / loan number
+    expect(bank.filter((t) => t.definition.fields.some((f) => 'stamp' in f)).map((t) => t.definition.key)).toEqual([]);
+    expect(bank.filter((t) => t.definition.fields.some((f) => 'value' in f && f.value === 'project_id')).map((t) => t.definition.key)).toEqual([]);
     expect(catalog.templates.every(isGeneratable)).toBe(true);
     expect(catalog.templates.every((t) => types.includes(t.definition.projectType ?? 'occupancy'))).toBe(true);
   });
@@ -313,13 +317,9 @@ describe('Word output', () => {
     expect(fitted.indexOf('<w:sz ')).toBeLessThan(fitted.indexOf('<w:lang')); // schema order kept
   });
 
-  it('anchors the stamp in a body paragraph when the document opens with a table', async () => {
+  it('anchors the stamp in a body paragraph when the document opens with a table', () => {
     const xml = '<w:body><w:tbl><w:tr><w:tc><w:p><w:r/></w:p></w:tc></w:tr></w:tbl><w:p w:rsidR="1"><w:pPr/></w:p></w:body>';
     expect(xml.slice(firstBodyParagraph(xml)).startsWith('<w:p w:rsidR="1">')).toBe(true);
-    const { default: JSZip } = await JSZipP;
-    const res = await engine.generateDocx('bank-ten-new-project', sampleProject, { stamp: true });
-    const docXml = await (await JSZip.loadAsync(res.bytes)).file('word/document.xml')!.async('string');
-    expect(docXml).toContain('Company stamp');
   });
 
   it('writes values of zero-width markers at the field size', async () => {

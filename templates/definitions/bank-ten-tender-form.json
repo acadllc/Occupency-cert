@@ -1,6 +1,6 @@
 {
   "key": "bank-ten-tender-form",
-  "version": 1,
+  "version": 2,
   "status": "verified",
   "name": "Form of Tender",
   "nameAr": "صيغة خطاب العطاء في المناقصة",
@@ -55,7 +55,7 @@
   "fields": [
     {
       "slot": "tender_no_en",
-      "value": "project_id",
+      "value": "bank_project_number",
       "font": "sans",
       "size": 11,
       "minSize": 6,
@@ -70,7 +70,7 @@
     },
     {
       "slot": "tender_no",
-      "value": "project_id",
+      "value": "bank_project_number",
       "font": "sans",
       "size": 11,
       "minSize": 6,

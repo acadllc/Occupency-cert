@@ -1,9 +1,9 @@
 {
  "key": "bank-fin-checklist",
- "version": 1,
+ "version": 2,
  "format": "docx",
  "sourceSha256": "792a1217c3e082e79b214570957bdc0d2daef5bf416e0699761cab82997c7520",
- "baseSha256": "39e3298161338a1d5a15bcb2835199cca3d8fa4acc84915e1305a86b3f281e3a",
+ "baseSha256": "d521c8db4c3a5ef0b6d886bc87f10f12d802978b6c0bf7d9d142bd5b5d8b532d",
  "pageCount": 1,
  "pages": [
   {
@@ -66,17 +66,6 @@
     471.38,
     123.6
    ]
-  },
-  "stamp": {
-   "page": 0,
-   "baseline": 759.15,
-   "size": 1.0,
-   "rect": [
-    66.79,
-    756.13,
-    76.79,
-    761.53
-   ]
   }
  },
  "docx": {
@@ -85,8 +74,7 @@
    "QZ2ZQ": "owner",
    "QZ3ZQ": "contractor",
    "QZ4ZQ": "consultant",
-   "QZ5ZQ": "location",
-   "QZ6ZQ": "stamp"
+   "QZ5ZQ": "location"
   }
  },
  "build": {

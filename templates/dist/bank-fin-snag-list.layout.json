@@ -1,9 +1,9 @@
 {
  "key": "bank-fin-snag-list",
- "version": 1,
+ "version": 2,
  "format": "docx",
  "sourceSha256": "1d7e91a5303f25476b91f2f263ab569a4ef3cb2879829ba8921af61b288abd0d",
- "baseSha256": "f2d9c5ed14c3a303e9407b51c4d100f9681e21e0e030a38df7eaa489541bc1ba",
+ "baseSha256": "323f14be4a57a290b31972ed62d89f8b798fe2d5572db4be9a9fc182085c4049",
  "pageCount": 2,
  "pages": [
   {
@@ -21,9 +21,9 @@
    "baseline": 222.65,
    "size": 12.0,
    "rect": [
-    233.9,
+    84.3,
     204.45,
-    511.0,
+    361.4,
     232.35
    ]
   },
@@ -32,9 +32,9 @@
    "baseline": 248.2,
    "size": 14.0,
    "rect": [
-    233.9,
+    84.3,
     232.35,
-    511.0,
+    361.4,
     260.05
    ]
   },
@@ -43,9 +43,9 @@
    "baseline": 276.0,
    "size": 14.0,
    "rect": [
-    233.9,
+    84.3,
     260.05,
-    511.0,
+    361.4,
     287.95
    ]
   },
@@ -54,9 +54,9 @@
    "baseline": 303.7,
    "size": 13.5,
    "rect": [
-    233.9,
+    84.3,
     287.95,
-    511.0,
+    361.4,
     315.75
    ]
   },
@@ -65,9 +65,9 @@
    "baseline": 334.65,
    "size": 14.0,
    "rect": [
-    233.9,
+    84.3,
     315.75,
-    511.0,
+    361.4,
     343.55
    ]
   },
@@ -81,17 +81,6 @@
     458.4,
     117.34
    ]
-  },
-  "stamp": {
-   "page": 1,
-   "baseline": 472.3,
-   "size": 1.0,
-   "rect": [
-    148.31,
-    469.41,
-    158.31,
-    474.52
-   ]
   }
  },
  "docx": {
@@ -101,8 +90,7 @@
    "QZ3ZQ": "consultant",
    "QZ4ZQ": "contractor",
    "QZ5ZQ": "location",
-   "QZ6ZQ": "date",
-   "QZ7ZQ": "stamp"
+   "QZ6ZQ": "date"
   }
  },
  "build": {

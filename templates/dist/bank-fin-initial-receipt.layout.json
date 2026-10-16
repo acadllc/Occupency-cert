@@ -1,9 +1,9 @@
 {
  "key": "bank-fin-initial-receipt",
- "version": 1,
+ "version": 2,
  "format": "docx",
  "sourceSha256": "8e5265cede6762cb6bf4651743d87dc6b6ddc2227e2095070efb0107f9c48fb5",
- "baseSha256": "d7544dfd053318f90d73f343289f9a1cac753fe19696365c760ba9aaedd7b933",
+ "baseSha256": "7b4a9465c755feeaa50f3b3f93656a588c3969ac4f9e52926773b485e50aa7b5",
  "pageCount": 1,
  "pages": [
   {
@@ -17,9 +17,9 @@
    "baseline": 188.6,
    "size": 12.0,
    "rect": [
-    233.9,
+    84.3,
     173.45,
-    511.0,
+    361.4,
     201.25
    ]
   },
@@ -28,9 +28,9 @@
    "baseline": 217.2,
    "size": 14.0,
    "rect": [
-    233.9,
+    84.3,
     201.25,
-    511.0,
+    361.4,
     229.15
    ]
   },
@@ -39,9 +39,9 @@
    "baseline": 246.15,
    "size": 14.0,
    "rect": [
-    233.9,
+    84.3,
     229.15,
-    511.0,
+    361.4,
     259.15
    ]
   },
@@ -50,9 +50,9 @@
    "baseline": 274.9,
    "size": 13.5,
    "rect": [
-    233.9,
+    84.3,
     259.15,
-    511.0,
+    361.4,
     286.95
    ]
   },
@@ -61,9 +61,9 @@
    "baseline": 302.9,
    "size": 14.0,
    "rect": [
-    233.9,
+    84.3,
     286.95,
-    511.0,
+    361.4,
     314.85
    ]
   },
@@ -99,17 +99,6 @@
     458.43,
     103.54
    ]
-  },
-  "stamp": {
-   "page": 0,
-   "baseline": 680.55,
-   "size": 1.0,
-   "rect": [
-    468.61,
-    677.66,
-    478.61,
-    682.77
-   ]
   }
  },
  "docx": {
@@ -121,8 +110,7 @@
    "QZ5ZQ": "contractor",
    "QZ6ZQ": "location",
    "QZ7ZQ": "start_date",
-   "QZ8ZQ": "end_date",
-   "QZ9ZQ": "stamp"
+   "QZ8ZQ": "end_date"
   }
  },
  "build": {

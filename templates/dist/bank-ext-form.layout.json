@@ -1,9 +1,9 @@
 {
  "key": "bank-ext-form",
- "version": 1,
+ "version": 2,
  "format": "docx",
  "sourceSha256": "7694191b9857dd50dd9f23770cbe80cd2b608e819695a662a93df122090055ae",
- "baseSha256": "9646894dae63f51b1f3ead79048b481d92f805208711067bd77c4829331f80f0",
+ "baseSha256": "f3b65b0cedc83f7bac41fa6120c6a97a6705dc98d3e04213b9563b63bafcafe2",
  "pageCount": 1,
  "pages": [
   {
@@ -17,9 +17,9 @@
    "baseline": 180.25,
    "size": 14.0,
    "rect": [
-    251.3,
+    101.7,
     164.25,
-    528.4,
+    378.8,
     192.15
    ]
   },
@@ -28,9 +28,9 @@
    "baseline": 208.75,
    "size": 16.0,
    "rect": [
-    251.3,
+    101.7,
     192.15,
-    528.4,
+    378.8,
     219.95
    ]
   },
@@ -39,9 +39,9 @@
    "baseline": 235.95,
    "size": 14.0,
    "rect": [
-    251.3,
+    101.7,
     219.95,
-    528.4,
+    378.8,
     247.85
    ]
   },
@@ -50,9 +50,9 @@
    "baseline": 263.8,
    "size": 14.0,
    "rect": [
-    251.3,
+    101.7,
     247.85,
-    528.4,
+    378.8,
     275.65
    ]
   },
@@ -61,32 +61,32 @@
    "baseline": 291.65,
    "size": 14.0,
    "rect": [
-    251.3,
+    101.7,
     275.65,
-    528.4,
+    378.8,
     303.55
    ]
   },
   "start_date": {
    "page": 0,
-   "baseline": 433.5,
+   "baseline": 449.6,
    "size": 14.0,
    "rect": [
     30.6,
-    415.65,
+    431.75,
     404.1,
-    441.25
+    457.35
    ]
   },
   "end_date": {
    "page": 0,
-   "baseline": 460.35,
+   "baseline": 476.45,
    "size": 14.0,
    "rect": [
     30.6,
-    441.25,
+    457.35,
     156.6,
-    469.35
+    485.45
    ]
   },
   "date": {
@@ -100,26 +100,15 @@
     101.59
    ]
   },
-  "stamp": {
-   "page": 0,
-   "baseline": 702.3,
-   "size": 1.0,
-   "rect": [
-    307.34,
-    699.4,
-    317.34,
-    704.51
-   ]
-  },
   "components_text": {
    "page": 0,
-   "baseline": 328.9,
-   "size": 12.0,
+   "baseline": 345.0,
+   "size": 1.0,
    "rect": [
-    -41.32,
-    316.04,
-    288.68,
-    333.43
+    82.92,
+    334.1,
+    542.92,
+    355.21
    ]
   }
  },
@@ -133,12 +122,11 @@
    "QZ6ZQ": "start_date",
    "QZ7ZQ": "end_date",
    "QZ8ZQ": "date",
-   "QZ9ZQ": "stamp",
-   "QZ10ZQ": "components_text"
+   "QZ9ZQ": "components_text"
   }
  },
  "build": {
   "engine": "LibreOffice 24.2.7.2 420(Build:2)",
-  "layoutDiff": 0.002015
+  "layoutDiff": 0.000642
  }
 }

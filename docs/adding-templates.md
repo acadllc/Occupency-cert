@@ -37,7 +37,11 @@ More DOCX options: `text` with `"reserve": N` keeps a blank gap inside running t
 `"zero_width": true` uses a tiny marker that cannot move the line (with `"keep_line": true` when the phrase was the
 whole line), `"ltr": true` keeps an English label in place in a right-to-left paragraph; any op can take
 `"marker": {"font": "…", "size": 11}` for its marker; `drop_fallback` removes the legacy VML copies of text boxes and
-`textbox_nowrap` (`"contains": [...]`) keeps text-box values on one line. A text field can set `"docxMaxWidth"` (pt) so
+`textbox_nowrap` (`"contains": [...]`) keeps text-box values on one line, `textbox_move` (`dx`/`dy` in points) moves a
+text box and `textbox_para` (`jc`, `ind_left`) re-aligns its paragraphs. In Arabic paragraphs `text` takes
+`"rtl": true` (a right-to-left mark keeps «: /» next to the label once the value is gone) and `"newline": true` puts the
+value on its own line under the label. Tables in right-to-left documents get an explicit `w:bidiVisual="0"` during the
+build, so LibreOffice lays them out like Word (otherwise it mirrors them in the PDF). A text field can set `"docxMaxWidth"` (pt) so
 the Word output shrinks a value that would overflow a fixed-size text box.
 
 PDF operations: `remove_image` (by bbox), `redact_spans` (by font/text/region), `redact_text_rect`, `remove_line_art`,

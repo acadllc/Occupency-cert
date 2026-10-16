@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-15",
+ "generated": "2026-10-16",
  "templates": [
   {
    "key": "archive-drawings-explanation",
@@ -9,332 +9,332 @@
   },
   {
    "key": "bank-com-complete-per-drawings",
-   "version": 1,
-   "baseSha256": "702165b2c9ff945ef24acd4b2cd85646522f5e2cb509602103046762a2ad8182",
+   "version": 2,
+   "baseSha256": "aa7e1ceeee183f8cca6fe0b2b5278775c48f68b8c56c0bdd87acc7a553249e3c",
    "pageCount": 1
   },
   {
    "key": "bank-com-completion-project",
-   "version": 1,
-   "baseSha256": "07c82e362b50c4c972c0826d37df6ae4a8a708567ce7dc7474db5d20eb00b0e8",
+   "version": 2,
+   "baseSha256": "d644f986cbf1cd817a699d28412c5327b7adb24c11eee9b9bf609e697e24abf7",
    "pageCount": 1
   },
   {
    "key": "bank-com-drawings-approval",
-   "version": 1,
+   "version": 2,
    "baseSha256": "8688b1f54aa01f54ac99fd9016a2f7d861c61f1d0612190be5080920fa1a6064",
    "pageCount": 1
   },
   {
    "key": "bank-com-drawings-match",
-   "version": 1,
+   "version": 2,
    "baseSha256": "57601e0308d67abcff296c621c82b52eee80715b47c9545f9dd94a4689ee2880",
    "pageCount": 1
   },
   {
    "key": "bank-com-pledges",
-   "version": 1,
+   "version": 2,
    "baseSha256": "62b90277014fd10fc9805f697cc7192d119598dc588fa45801617aae96526a54",
    "pageCount": 1
   },
   {
    "key": "bank-com-progress",
-   "version": 1,
-   "baseSha256": "5b755dc5d349c16478170f6e22434ed142356084812caa31b5bc54942e8d4ede",
+   "version": 2,
+   "baseSha256": "6490edb40c9094b27edf63250f9c42a8d8f9cf0e8947e58e4271f47c95534317",
    "pageCount": 1
   },
   {
    "key": "bank-com-start-order",
-   "version": 1,
-   "baseSha256": "4146172e9a696737ee843ac8c45d5df5624ec236e92243e5d5b9698b8c000a1f",
+   "version": 2,
+   "baseSha256": "0899342c69304845e059ba04b2fa79f5ad5e115d4ed4d8afa037f626d860f28c",
    "pageCount": 1
   },
   {
    "key": "bank-com-undertaking",
-   "version": 1,
-   "baseSha256": "189ddaaf7fce01ea98b49e1782a052c28e87a9fee5dd1b6b7b3203ca27690d12",
+   "version": 2,
+   "baseSha256": "7096df74a431168d0ebf7de8789838c826d24cae701323514aba8abf35c29583",
    "pageCount": 1
   },
   {
    "key": "bank-cov-ac",
-   "version": 1,
-   "baseSha256": "15f8a28ae27901db5b6939cc9479543e1862f4d9e0dd592a30b488e19e3177c6",
+   "version": 2,
+   "baseSha256": "082cd4d22d825e29a6ffd8dea7605f456c9c503b1ffea1900ecbfdc76696a832",
    "pageCount": 1
   },
   {
    "key": "bank-cov-arch",
-   "version": 1,
-   "baseSha256": "563c3013eedb2d379053bc9f8c6d39795cfc35e2ec5b25ace439b6eae71f3912",
+   "version": 2,
+   "baseSha256": "060d01468f33962db8f7c93a6e7cd7639935f3e65c306d0283b946258d7e9fbf",
    "pageCount": 1
   },
   {
    "key": "bank-cov-boq",
-   "version": 1,
-   "baseSha256": "8f76d674fdc012fcb9b2483915a801d24a2c273bd31a942b15430e9fa2575d2a",
+   "version": 2,
+   "baseSha256": "f7ce33c4e206531cc9d1ffd708dd6eb09bcc41bce457c4a63250ba3e34a5971f",
    "pageCount": 1
   },
   {
    "key": "bank-cov-drain",
-   "version": 1,
-   "baseSha256": "7d700a1e18511c922d8eba73c1cdb4bf212af46501f15ae3db3ffbe690873ecd",
+   "version": 2,
+   "baseSha256": "cfb062e611857ebb287b91c25dcd897dbdcfa95109e5647a817fcbc9f965f329",
    "pageCount": 1
   },
   {
    "key": "bank-cov-elec",
-   "version": 1,
-   "baseSha256": "d4843f1033792394631adc101f0b4cf9ef73b19b3e4a45f8ab67ed662cacf7c8",
+   "version": 2,
+   "baseSha256": "453c3d9c42635104aa941f65cd6e6117ce514981e379f77c9d896aaab35e771b",
    "pageCount": 1
   },
   {
    "key": "bank-cov-materials",
-   "version": 1,
-   "baseSha256": "e4239ba3b5eac9dee64523e23e1c2ed36175135fd13a353e9d26f8a113322b5e",
+   "version": 2,
+   "baseSha256": "7eff9a1f9e4c90a32cad7ae95553dfbeafb39a54843ee2fcfb4816c2f24a1b0a",
    "pageCount": 1
   },
   {
    "key": "bank-cov-specs",
-   "version": 1,
-   "baseSha256": "839a9f1ca341a56fa8e63ff04bead079f704627acf7b54f7fd8199d377666bfd",
+   "version": 2,
+   "baseSha256": "ebbeab0865074ee7a63e3d17c673937139d4ab8f20c912b3f03a728698a0f51c",
    "pageCount": 1
   },
   {
    "key": "bank-cov-str",
-   "version": 1,
-   "baseSha256": "5b0e42c012e1b48adae3a731ec72f490d5c672ee9453130604225c23797bc41d",
+   "version": 2,
+   "baseSha256": "3cbc381e2b1eea38ba542627ae0dce6cf4ba42e838aef24061c402712108277a",
    "pageCount": 1
   },
   {
    "key": "bank-cov-tel",
-   "version": 1,
-   "baseSha256": "84f7f777989c58d6fbf1c197552e78f9ce131642676fc421d8705e62508f5ff2",
+   "version": 2,
+   "baseSha256": "c0c725757e74919136b04cefe68b0140c8cfdb5a456c7c3b049f71dba493dc25",
    "pageCount": 1
   },
   {
    "key": "bank-cov-ws",
-   "version": 1,
-   "baseSha256": "81f9a85cf2d7bd8b48fe6127f48cb4b6ee7f8042e651cca43ad20aa11e0bb263",
+   "version": 2,
+   "baseSha256": "a95f38365f993143fd45b921b293b274f24dbfef3c55aa20d1736995bd55e25d",
    "pageCount": 1
   },
   {
    "key": "bank-cur-checklist",
-   "version": 1,
-   "baseSha256": "7ef856aac00287ce3aa49c158bf69e087417a9cd0f92c2651e81fccad8b7a4a5",
+   "version": 2,
+   "baseSha256": "3b0d5760078fb3c899a56a36e173ce2ad7878c5489187db6fa5cc4b04c69f735",
    "pageCount": 1
   },
   {
    "key": "bank-cur-contractor-payment",
-   "version": 1,
+   "version": 2,
    "baseSha256": "62f65eaa41c01a151a88897d38df61c58bc7cc0760f492f9721ba7c85c59cf38",
    "pageCount": 1
   },
   {
    "key": "bank-cur-report",
-   "version": 1,
-   "baseSha256": "b2503a39b55193c6a71697e0b45bd787c8088d2d8fafefb8222603b03a0824ce",
+   "version": 2,
+   "baseSha256": "726f326bf99e112e498988389641a5a82bb61eb380c997d4b4aea2a52f8beb8d",
    "pageCount": 4
   },
   {
    "key": "bank-cur-supervision-payment",
-   "version": 1,
+   "version": 2,
    "baseSha256": "c6fa05ee2a0ffacb15d21e4a0d50c7ed56cfa0e671f2a706320a7dd84d251c13",
    "pageCount": 1
   },
   {
    "key": "bank-ext-form",
-   "version": 1,
-   "baseSha256": "9646894dae63f51b1f3ead79048b481d92f805208711067bd77c4829331f80f0",
+   "version": 2,
+   "baseSha256": "f3b65b0cedc83f7bac41fa6120c6a97a6705dc98d3e04213b9563b63bafcafe2",
    "pageCount": 1
   },
   {
    "key": "bank-ext-signature",
-   "version": 1,
-   "baseSha256": "66195ce1592ed2ebade8324a539df793bf269f29aab21909c7ec74955c344687",
+   "version": 2,
+   "baseSha256": "d011d0cc02687aa15cc0742297fb748304d6a2d3d8e8377a991442cf7a61fe19",
    "pageCount": 1
   },
   {
    "key": "bank-fin-as-is",
-   "version": 1,
-   "baseSha256": "47f4bf2c1209dd580ae7f5a26bcb5a7097c63776557165b3ed16532e2670e663",
+   "version": 2,
+   "baseSha256": "1939500dc5ead03a79de250594ed006a998196211def4dc10d6265e77f365157",
    "pageCount": 1
   },
   {
    "key": "bank-fin-bank-handover",
-   "version": 1,
-   "baseSha256": "00d2ac83933c8bad44f6a3f5ee341fca7bc066e52ad5398063f51753fedb15db",
+   "version": 2,
+   "baseSha256": "facf4955e900372ea311663edd7cebde6f8895a2df581be456ae5272a30dc168",
    "pageCount": 1
   },
   {
    "key": "bank-fin-checklist",
-   "version": 1,
-   "baseSha256": "39e3298161338a1d5a15bcb2835199cca3d8fa4acc84915e1305a86b3f281e3a",
+   "version": 2,
+   "baseSha256": "d521c8db4c3a5ef0b6d886bc87f10f12d802978b6c0bf7d9d142bd5b5d8b532d",
    "pageCount": 1
   },
   {
    "key": "bank-fin-contractor-completion",
-   "version": 1,
-   "baseSha256": "87ab7a3eea83148b4da2355043991ec02df4ea7a87e904dddb677afddb18b0ab",
+   "version": 2,
+   "baseSha256": "4ec76d936c36dea404cedd2d9ed4590d50d3c786884d797c251dca639940c83b",
    "pageCount": 1
   },
   {
    "key": "bank-fin-contractor-payment",
-   "version": 1,
+   "version": 2,
    "baseSha256": "62f65eaa41c01a151a88897d38df61c58bc7cc0760f492f9721ba7c85c59cf38",
    "pageCount": 1
   },
   {
    "key": "bank-fin-contractor-snags",
-   "version": 1,
-   "baseSha256": "940e5a75d58a4265cc16d8958aa915d40c1a6e8a77ddc3c64b244af524097fe2",
+   "version": 2,
+   "baseSha256": "509fba8e34c7d0f379235fd92bd8dd2fbc7e36791e4607a712bf19d582084689",
    "pageCount": 1
   },
   {
    "key": "bank-fin-delay-waiver",
-   "version": 1,
-   "baseSha256": "a4ce66b9307737e96f80231e046922a1e1bd3656b7db3cb70d43692968e18742",
+   "version": 2,
+   "baseSha256": "0b53de930d208026131565ba5844d58a029f81a8b25d6f265be093eac9259dbc",
    "pageCount": 1
   },
   {
    "key": "bank-fin-final-receipt",
-   "version": 1,
-   "baseSha256": "3047fb5b2e24ef57eaa8a166658c2ad1e4347534667ac6e56d478434581c06fe",
+   "version": 2,
+   "baseSha256": "83d6a00f1a99687d9318c1752f574dacb71a0531e03ef16f268d751c92cc15c2",
    "pageCount": 1
   },
   {
    "key": "bank-fin-handover-items",
-   "version": 1,
-   "baseSha256": "e0e2e7e7174415481b7f8c85a68c50f1609ecb420b4d41a3d983f1f7708928fd",
+   "version": 2,
+   "baseSha256": "b686e7dad347642772d992271146a7e4cbc278547eb872d03066ce5bbdea45fe",
    "pageCount": 1
   },
   {
    "key": "bank-fin-initial-receipt-report",
-   "version": 1,
-   "baseSha256": "cb852846aeb4c1c897b06ba9340557f84840f3e181713c8c455f83acb842bd30",
+   "version": 2,
+   "baseSha256": "ac81ff312d526190a6aa88d9b24bff59f6cd5047935ccd9d284b3a33b279dcbe",
    "pageCount": 1
   },
   {
    "key": "bank-fin-initial-receipt",
-   "version": 1,
-   "baseSha256": "d7544dfd053318f90d73f343289f9a1cac753fe19696365c760ba9aaedd7b933",
+   "version": 2,
+   "baseSha256": "7b4a9465c755feeaa50f3b3f93656a588c3969ac4f9e52926773b485e50aa7b5",
    "pageCount": 1
   },
   {
    "key": "bank-fin-initial-settlement",
-   "version": 1,
-   "baseSha256": "d2ba7fd74518aa9fcdbe5053776cc768db78d16a1e714604bd7261ed18405d85",
+   "version": 2,
+   "baseSha256": "a0a6882e1453b75590ceee2cc55fa30a6be7cf24667f524d8ea928f142b01c44",
    "pageCount": 1
   },
   {
    "key": "bank-fin-installments",
-   "version": 1,
-   "baseSha256": "79f517e95231fd508f2edafa6dacd794d2e83dd01df59939135dbd1bff9d71d3",
+   "version": 2,
+   "baseSha256": "642360032446c2fb5546a9d0bfec6b192b47f45caf3ce567938f7707dca43d37",
    "pageCount": 1
   },
   {
    "key": "bank-fin-insulation",
-   "version": 1,
-   "baseSha256": "e409d358e3124b37e9447c454e56ce3ace65d315a533ede6af418d7d01cfa3de",
+   "version": 2,
+   "baseSha256": "0929eebb9a28f250d34f7bff0818c4f93714385637d3caae3696a6fff4e752a8",
    "pageCount": 1
   },
   {
    "key": "bank-fin-maintenance-payment",
-   "version": 1,
-   "baseSha256": "829fe47b45899837e60029d8257de206d74e029eeb2022ced2cad3cf045ca3d2",
+   "version": 2,
+   "baseSha256": "ccfd03a18f6d0d1a4f6348a18d6a2dbbc882dedb65713a19b6551878473b5d3c",
    "pageCount": 1
   },
   {
    "key": "bank-fin-maintenance-undertaking",
-   "version": 1,
-   "baseSha256": "0ce02a890cb10964979ccac620462a09b95ec00d69430f5ab9087edbfb550257",
+   "version": 2,
+   "baseSha256": "60968613dbbcf18b7b7db376524afccff5c16a041c7dc6e73687006b6619342a",
    "pageCount": 1
   },
   {
    "key": "bank-fin-maintenance-waiver",
-   "version": 1,
-   "baseSha256": "209e8fb625c041bb3fd8557ef5c911064ad0b2fb3360f54334ecfa5e4bfa9453",
+   "version": 2,
+   "baseSha256": "d7c7911f3fd15acb9cc1aa222530e8f832f509d0d4ed009cf1899af83695f282",
    "pageCount": 1
   },
   {
    "key": "bank-fin-owner-signature",
-   "version": 1,
-   "baseSha256": "7383df33bfa913b58313e25f8ac604478e2a14a69433b4e371e6606dcc86a32e",
+   "version": 2,
+   "baseSha256": "2b68fe0a76b8b4d1d2e30a1d175b17a4882277ab47404fc720fb9f6fb2fc7c3c",
    "pageCount": 1
   },
   {
    "key": "bank-fin-report",
-   "version": 1,
-   "baseSha256": "605a00a34a0f4aafd8bc94e1abf714f7492c840c87035f6433a17406cfd7d134",
+   "version": 2,
+   "baseSha256": "2892fd896b932b1d8dab8d79fd2634db82019548e9dc0b09f2a37348dfde9cb4",
    "pageCount": 1
   },
   {
    "key": "bank-fin-snag-list",
-   "version": 1,
-   "baseSha256": "f2d9c5ed14c3a303e9407b51c4d100f9681e21e0e030a38df7eaa489541bc1ba",
+   "version": 2,
+   "baseSha256": "323f14be4a57a290b31972ed62d89f8b798fe2d5572db4be9a9fc182085c4049",
    "pageCount": 2
   },
   {
    "key": "bank-fin-snags-closure",
-   "version": 1,
-   "baseSha256": "7126e5876164f4c7ecff65cd1622fd563e5a1824c16ba13139ade1430667b773",
+   "version": 2,
+   "baseSha256": "dd85896678b487ddc384e89d8fa1fd78d43d5c7e701dbc632873ebd672db5a59",
    "pageCount": 1
   },
   {
    "key": "bank-fin-snags-undertaking",
-   "version": 1,
-   "baseSha256": "6439f10e43c2ea85ecf0b0c21d22feb38b762633389a5ae510c50ef19875e724",
+   "version": 2,
+   "baseSha256": "1e6d3021c6124cb83fc2ab289e99270af022a7d0f1d7fa2b42c506482c699471",
    "pageCount": 1
   },
   {
    "key": "bank-fin-supervision-payment",
-   "version": 1,
+   "version": 2,
    "baseSha256": "c6fa05ee2a0ffacb15d21e4a0d50c7ed56cfa0e671f2a706320a7dd84d251c13",
    "pageCount": 1
   },
   {
    "key": "bank-fin-utilities",
-   "version": 1,
-   "baseSha256": "139ab57313fd12132c95e25c515a6609161cf85c5605c798d680b59acbd19dc7",
+   "version": 2,
+   "baseSha256": "11a4366fd99af44ae899d3731277d0788fd2a809fd84c1d14fe6e021adce3078",
    "pageCount": 1
   },
   {
    "key": "bank-ten-drawings-approval",
-   "version": 1,
+   "version": 2,
    "baseSha256": "8688b1f54aa01f54ac99fd9016a2f7d861c61f1d0612190be5080920fa1a6064",
    "pageCount": 1
   },
   {
    "key": "bank-ten-drawings-match",
-   "version": 1,
+   "version": 2,
    "baseSha256": "57601e0308d67abcff296c621c82b52eee80715b47c9545f9dd94a4689ee2880",
    "pageCount": 1
   },
   {
    "key": "bank-ten-new-project",
-   "version": 1,
-   "baseSha256": "270e42623fcb51f66cc2b783e507ec5c495216b0445ac3f679b47eb098784852",
+   "version": 2,
+   "baseSha256": "be5c7123c583541e2c6ea44cfe3fc8dc948404e0ba70ddfcf86d80518274611e",
    "pageCount": 1
   },
   {
    "key": "bank-ten-nomination",
-   "version": 1,
+   "version": 2,
    "baseSha256": "cfb24398d6a07dc68e9cea7424f7eca7dbb500e40688062b57f3e735354f32d6",
    "pageCount": 1
   },
   {
    "key": "bank-ten-pledges",
-   "version": 1,
+   "version": 2,
    "baseSha256": "62b90277014fd10fc9805f697cc7192d119598dc588fa45801617aae96526a54",
    "pageCount": 1
   },
   {
    "key": "bank-ten-tender-form",
-   "version": 1,
-   "baseSha256": "092d177f95b2a215b4878aefb8386a3a3fdc65fde3a327aa4188fd9dc2f03efd",
+   "version": 2,
+   "baseSha256": "76a0d4a24c52e209c28c3740fa5399cf00abe3d0a5a7b234b4419bda300ab7aa",
    "pageCount": 3
   },
   {
    "key": "bank-ten-terms",
-   "version": 1,
-   "baseSha256": "0a1f51f98e1631dcc83fb3f4fd71f38e4dfaf8eebaf1f4bef8783cc2bbe03b85",
+   "version": 2,
+   "baseSha256": "28ce29ac0b0d0dec696029b37a72eb88ce637f8ea0c6f4407fa6aa9054548a95",
    "pageCount": 8
   },
   {
