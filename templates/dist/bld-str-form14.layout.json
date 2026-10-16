@@ -1,0 +1,139 @@
+{
+ "key": "bld-str-form14",
+ "version": 1,
+ "format": "pdf",
+ "sourceSha256": "fb1b22dd7760e61eb5bb7b46ebaa52b51a4533efbf65cc35ef25d6ec69dfaaeb",
+ "baseSha256": "e0f409b3be70c21927f7ed0268b848cec78ab7f9d3f79b5b95a463021da12f89",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 595.32,
+   "height": 841.92
+  }
+ ],
+ "slots": {
+  "project_id": {
+   "page": 0,
+   "rect": [
+    418,
+    87.0,
+    524,
+    98.5
+   ],
+   "baseline": 96.3
+  },
+  "date_day": {
+   "page": 0,
+   "rect": [
+    487,
+    99.2,
+    543,
+    110.7
+   ],
+   "baseline": 108.5
+  },
+  "date_month": {
+   "page": 0,
+   "rect": [
+    458,
+    99.2,
+    485,
+    110.7
+   ],
+   "baseline": 108.5
+  },
+  "date_year": {
+   "page": 0,
+   "rect": [
+    418,
+    99.2,
+    456,
+    110.7
+   ],
+   "baseline": 108.5
+  },
+  "description": {
+   "page": 0,
+   "rect": [
+    110,
+    123.9,
+    510,
+    135.4
+   ],
+   "baseline": 133.2
+  },
+  "owner": {
+   "page": 0,
+   "rect": [
+    102,
+    155.7,
+    524,
+    167.2
+   ],
+   "baseline": 165.0
+  },
+  "developer": {
+   "page": 0,
+   "rect": [
+    139,
+    184.0,
+    494,
+    195.5
+   ],
+   "baseline": 193.3
+  },
+  "area": {
+   "page": 0,
+   "rect": [
+    55,
+    207.9,
+    145,
+    219.4
+   ],
+   "baseline": 217.2
+  },
+  "sector": {
+   "page": 0,
+   "rect": [
+    224,
+    207.9,
+    300,
+    219.4
+   ],
+   "baseline": 217.2
+  },
+  "plot": {
+   "page": 0,
+   "rect": [
+    388,
+    207.9,
+    524,
+    219.4
+   ],
+   "baseline": 217.2
+  },
+  "land_usage": {
+   "page": 0,
+   "rect": [
+    81,
+    229.8,
+    514,
+    241.3
+   ],
+   "baseline": 239.1
+  },
+  "stamp": {
+   "page": 0,
+   "rect": [
+    260.0,
+    422.0,
+    340.0,
+    502.0
+   ]
+  }
+ },
+ "docx": null,
+ "build": {
+  "engine": "pymupdf 1.28.2"
+ }
+}

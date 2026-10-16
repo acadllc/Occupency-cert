@@ -1,0 +1,96 @@
+{
+ "key": "bld-mun-smoke-detectors",
+ "version": 1,
+ "format": "docx",
+ "sourceSha256": "0f250e9423c979bd7e8c854798d7aac9c33dab8249e28ca438136d8d343e4600",
+ "baseSha256": "1794ab63e739e8c33d575b3bd6fa9e995704640e867f5de8930b7933eb63c0f0",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 595.3,
+   "height": 841.89
+  }
+ ],
+ "slots": {
+  "owner": {
+   "page": 0,
+   "baseline": 193.35,
+   "size": 12.0,
+   "rect": [
+    84.3,
+    178.15,
+    361.4,
+    206.05
+   ]
+  },
+  "project": {
+   "page": 0,
+   "baseline": 221.2,
+   "size": 12.0,
+   "rect": [
+    84.3,
+    206.05,
+    361.4,
+    233.85
+   ]
+  },
+  "location": {
+   "page": 0,
+   "baseline": 249.05,
+   "size": 12.0,
+   "rect": [
+    84.3,
+    233.85,
+    361.4,
+    261.75
+   ]
+  },
+  "plot": {
+   "page": 0,
+   "baseline": 276.9,
+   "size": 12.0,
+   "rect": [
+    84.3,
+    261.75,
+    361.4,
+    289.55
+   ]
+  },
+  "date": {
+   "page": 0,
+   "baseline": 110.8,
+   "size": 12.0,
+   "rect": [
+    376.28,
+    98.11,
+    486.28,
+    115.39
+   ]
+  },
+  "stamp": {
+   "page": 0,
+   "baseline": 540.65,
+   "size": 1.0,
+   "rect": [
+    109.74,
+    537.76,
+    119.74,
+    542.87
+   ]
+  }
+ },
+ "docx": {
+  "markers": {
+   "QZ1ZQ": "date",
+   "QZ2ZQ": "owner",
+   "QZ3ZQ": "project",
+   "QZ4ZQ": "location",
+   "QZ5ZQ": "plot",
+   "QZ6ZQ": "stamp"
+  }
+ },
+ "build": {
+  "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+  "layoutDiff": 0.0
+ }
+}

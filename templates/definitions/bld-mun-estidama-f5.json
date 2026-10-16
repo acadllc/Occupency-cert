@@ -1,0 +1,228 @@
+{
+  "key": "bld-mun-estidama-f5",
+  "version": 1,
+  "status": "verified",
+  "name": "Estidama 1P Villa & Building Temporary Program (F5)",
+  "nameAr": "برنامج استدامة المؤقت للفلل والمباني (F5)",
+  "description": "Estidama F5 request form (DMT): ADM project number, owner, zone, sector and plot.",
+  "category": "أوراق تقديم البلدية",
+  "projectType": "building",
+  "source": "private/building/أوراق تقديم البلدية/استدامه 2.pdf",
+  "format": "pdf",
+  "reviewNotes": "Screenshot of the Estidama Excel form: project values painted out with the cell colour and the old stamp ink removed; ACAD contact details (red) kept.",
+  "sanitize": [
+    {
+      "op": "image_edit",
+      "page": 0,
+      "fill": [
+        [
+          702,
+          263,
+          868,
+          299
+        ],
+        [
+          14,
+          343,
+          353,
+          379
+        ],
+        [
+          358,
+          343,
+          524,
+          379
+        ],
+        [
+          530,
+          343,
+          696,
+          379
+        ],
+        [
+          702,
+          343,
+          868,
+          379
+        ]
+      ],
+      "remove_ink": [
+        [
+          470,
+          840,
+          800,
+          1070
+        ],
+        [
+          645,
+          1070,
+          800,
+          1140
+        ],
+        [
+          530,
+          1094,
+          645,
+          1140
+        ],
+        [
+          470,
+          1117,
+          530,
+          1140
+        ]
+      ]
+    }
+  ],
+  "slots": {
+    "project_id": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        702,
+        263,
+        868,
+        299
+      ]
+    },
+    "owner": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        14,
+        343,
+        353,
+        379
+      ]
+    },
+    "area": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        358,
+        343,
+        524,
+        379
+      ]
+    },
+    "sector": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        530,
+        343,
+        696,
+        379
+      ]
+    },
+    "plot": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        702,
+        343,
+        868,
+        379
+      ]
+    },
+    "stamp": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        735.0,
+        1073.0,
+        805.0,
+        1143.0
+      ]
+    }
+  },
+  "fields": [
+    {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 14,
+      "minSize": 7,
+      "padding": [
+        2,
+        3,
+        2,
+        3
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 18,
+      "minSize": 7,
+      "padding": [
+        2,
+        3,
+        2,
+        3
+      ],
+      "dir": "rtl",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "area",
+      "value": "area_ar",
+      "font": "sans",
+      "size": 18,
+      "minSize": 7,
+      "padding": [
+        2,
+        3,
+        2,
+        3
+      ],
+      "dir": "rtl",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "sector",
+      "value": "sector_ar",
+      "font": "sans",
+      "size": 18,
+      "minSize": 7,
+      "padding": [
+        2,
+        3,
+        2,
+        3
+      ],
+      "dir": "rtl",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "size": 18,
+      "minSize": 7,
+      "padding": [
+        2,
+        3,
+        2,
+        3
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "stamp",
+      "stamp": {
+        "size": 70,
+        "anchor": "center"
+      }
+    }
+  ]
+}

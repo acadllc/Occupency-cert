@@ -1,0 +1,74 @@
+{
+ "key": "bld-mun-estidama-submittal",
+ "version": 1,
+ "format": "pdf",
+ "sourceSha256": "50f176369f7ba1aad9f9ec6e5457e7336f2c1326508fccc17778b61b7982bb84",
+ "baseSha256": "8984a690b4221f4fced225ad337ad932e67c7702c3eebfe1c167af0d94c12455",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 1280.0,
+   "height": 902.0
+  }
+ ],
+ "slots": {
+  "project_id": {
+   "page": 0,
+   "rect": [
+    733,
+    29,
+    819,
+    57
+   ]
+  },
+  "owner": {
+   "page": 0,
+   "rect": [
+    243,
+    77,
+    531,
+    105
+   ]
+  },
+  "area": {
+   "page": 0,
+   "rect": [
+    533,
+    77,
+    652,
+    105
+   ]
+  },
+  "sector": {
+   "page": 0,
+   "rect": [
+    654,
+    77,
+    730,
+    105
+   ]
+  },
+  "plot": {
+   "page": 0,
+   "rect": [
+    732,
+    77,
+    829,
+    105
+   ]
+  },
+  "stamp": {
+   "page": 0,
+   "rect": [
+    310.0,
+    395.0,
+    430.0,
+    515.0
+   ]
+  }
+ },
+ "docx": null,
+ "build": {
+  "engine": "pymupdf 1.28.2"
+ }
+}

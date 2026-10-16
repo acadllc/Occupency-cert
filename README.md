@@ -110,13 +110,14 @@ npm run dev                                    # http://localhost:5173
 4. **Generated documents** tab: every generation is immutable and tied to the saved project revision; re-download
    any older file. Editing a project creates a new revision and never changes old files.
 
-### Bank papers (private originals)
+### Bank and Architectural papers (private originals)
 
 The bank-paper originals contain real client and bank details, so they are **not** in this public repository: they
 live in the git-ignored `reference-documents/private/` (originals, the per-template cleanup rules that name old
 values, and hand tuning). Only the cleaned templates (`templates/sanitized/`, `templates/dist/`) and the public
 definitions (fields and positions, `"sanitize": "private"`) are committed. To rebuild a bank template, put the
-original zip contents back under `reference-documents/private/bank/<folder>/` and run
+original zip contents back under `reference-documents/private/bank/<folder>/` (Architectural papers:
+`reference-documents/private/building/<folder>/`) and run
 `python3 scripts/templates/draft_definition.py …` (see its header) and `python3 scripts/templates/build.py --only <key>`.
 Keep the original zip files safe — they are needed to rebuild these templates.
 

@@ -1,0 +1,503 @@
+{
+  "key": "bld-archstr-project-description",
+  "version": 1,
+  "status": "verified",
+  "name": "Project Description and Undertakings",
+  "nameAr": "نموذج وصف المشروع والتعهدات للقسائم السكنية",
+  "description": "DMT form: project description and undertakings for residential plots.",
+  "category": "تعديل معماري و انشائي",
+  "projectType": "building",
+  "source": "private/building/تعديل معماري و انشائي/PROJECT DESCRIPTION 12-8-2025.pdf",
+  "format": "pdf",
+  "reviewNotes": "Blank Department of Municipalities and Transport form (no historical values); the project details are drawn on its dotted lines.",
+  "sanitize": [],
+  "slots": {
+    "date": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        182,
+        110.1,
+        316,
+        121.6
+      ],
+      "baseline": 119.4
+    },
+    "owner": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        401,
+        110.1,
+        523,
+        121.6
+      ],
+      "baseline": 119.4
+    },
+    "consultant": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        231,
+        122.8,
+        498,
+        134.3
+      ],
+      "baseline": 132.1
+    },
+    "land_usage": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        226,
+        172.6,
+        321,
+        184.1
+      ],
+      "baseline": 181.9
+    },
+    "project_id": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        423,
+        172.6,
+        530,
+        184.1
+      ],
+      "baseline": 181.9
+    },
+    "plot": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        231,
+        185.7,
+        271,
+        197.2
+      ],
+      "baseline": 195.0
+    },
+    "sector": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        333,
+        185.7,
+        412,
+        197.2
+      ],
+      "baseline": 195.0
+    },
+    "area": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        467,
+        185.7,
+        544,
+        197.2
+      ],
+      "baseline": 195.0
+    },
+    "proposed_en": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        26,
+        294.5,
+        293,
+        306
+      ],
+      "baseline": 303.8
+    },
+    "proposed": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        310,
+        294.5,
+        569,
+        306
+      ],
+      "baseline": 303.8
+    },
+    "consultant_ack_en": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        96,
+        406.5,
+        173,
+        418
+      ],
+      "baseline": 415.8
+    },
+    "consultant_ack": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        357,
+        402.5,
+        485,
+        414
+      ],
+      "baseline": 411.8
+    },
+    "p2_project_id": {
+      "kind": "rect",
+      "page": 1,
+      "rect": [
+        67,
+        140.5,
+        145,
+        152
+      ],
+      "baseline": 149.8
+    },
+    "p2_date": {
+      "kind": "rect",
+      "page": 1,
+      "rect": [
+        198,
+        140.5,
+        296,
+        152
+      ],
+      "baseline": 149.8
+    },
+    "p4_project_id": {
+      "kind": "rect",
+      "page": 3,
+      "rect": [
+        111,
+        490.5,
+        188,
+        502
+      ],
+      "baseline": 499.8
+    },
+    "p4_date": {
+      "kind": "rect",
+      "page": 3,
+      "rect": [
+        242,
+        490.5,
+        335,
+        502
+      ],
+      "baseline": 499.8
+    },
+    "p4_owner_project_id": {
+      "kind": "rect",
+      "page": 3,
+      "rect": [
+        51,
+        579.5,
+        176,
+        591
+      ],
+      "baseline": 588.8
+    },
+    "p4_owner_date": {
+      "kind": "rect",
+      "page": 3,
+      "rect": [
+        258,
+        579.5,
+        344,
+        591
+      ],
+      "baseline": 588.8
+    },
+    "stamp": {
+      "kind": "rect",
+      "page": 3,
+      "rect": [
+        423.0,
+        460.0,
+        487.0,
+        524.0
+      ]
+    }
+  },
+  "fields": [
+    {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center"
+    },
+    {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "center"
+    },
+    {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "center"
+    },
+    {
+      "slot": "land_usage",
+      "value": "land_building_usage_ar",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "center"
+    },
+    {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center"
+    },
+    {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center"
+    },
+    {
+      "slot": "sector",
+      "value": "sector_ar",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "center"
+    },
+    {
+      "slot": "area",
+      "value": "area_ar",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "center"
+    },
+    {
+      "slot": "proposed_en",
+      "value": "project_description_en",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center"
+    },
+    {
+      "slot": "proposed",
+      "value": "project_description_ar",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "center"
+    },
+    {
+      "slot": "consultant_ack_en",
+      "value": "$consultant_name_en",
+      "font": "sans",
+      "size": 8,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center"
+    },
+    {
+      "slot": "consultant_ack",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 9,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "center"
+    },
+    {
+      "slot": "p2_project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center"
+    },
+    {
+      "slot": "p2_date",
+      "value": "date",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center"
+    },
+    {
+      "slot": "p4_project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center"
+    },
+    {
+      "slot": "p4_date",
+      "value": "date",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center"
+    },
+    {
+      "slot": "p4_owner_project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center"
+    },
+    {
+      "slot": "p4_owner_date",
+      "value": "date",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center"
+    },
+    {
+      "slot": "stamp",
+      "stamp": {
+        "size": 64,
+        "anchor": "center"
+      }
+    }
+  ]
+}

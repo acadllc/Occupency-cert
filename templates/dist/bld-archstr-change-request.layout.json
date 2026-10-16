@@ -1,0 +1,108 @@
+{
+ "key": "bld-archstr-change-request",
+ "version": 1,
+ "format": "docx",
+ "sourceSha256": "f68f7599b45b5f30da14f8a0f566aef880087bd06702743efbc4eae09a98c446",
+ "baseSha256": "db4a19e82cf0b4581a7fad83972aa46c759a46cf92265f577e79abdca131444c",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 595.3,
+   "height": 841.89
+  }
+ ],
+ "slots": {
+  "owner": {
+   "page": 0,
+   "baseline": 214.4,
+   "size": 14.0,
+   "rect": [
+    77.5,
+    201.05,
+    368.3,
+    228.85
+   ]
+  },
+  "consultant": {
+   "page": 0,
+   "baseline": 245.45,
+   "size": 16.0,
+   "rect": [
+    77.5,
+    228.85,
+    368.3,
+    256.65
+   ]
+  },
+  "contractor": {
+   "page": 0,
+   "baseline": 273.3,
+   "size": 16.0,
+   "rect": [
+    77.5,
+    256.65,
+    368.3,
+    284.55
+   ]
+  },
+  "location": {
+   "page": 0,
+   "baseline": 301.1,
+   "size": 16.0,
+   "rect": [
+    77.5,
+    284.55,
+    368.3,
+    312.25
+   ]
+  },
+  "project_id": {
+   "page": 0,
+   "baseline": 328.85,
+   "size": 16.0,
+   "rect": [
+    77.5,
+    312.25,
+    368.3,
+    340.05
+   ]
+  },
+  "date": {
+   "page": 0,
+   "baseline": 98.65,
+   "size": 13.0,
+   "rect": [
+    371.74,
+    84.07,
+    481.74,
+    103.78
+   ]
+  },
+  "stamp": {
+   "page": 0,
+   "baseline": 605.3,
+   "size": 1.0,
+   "rect": [
+    200.99,
+    602.41,
+    210.99,
+    607.52
+   ]
+  }
+ },
+ "docx": {
+  "markers": {
+   "QZ1ZQ": "date",
+   "QZ2ZQ": "owner",
+   "QZ3ZQ": "consultant",
+   "QZ4ZQ": "contractor",
+   "QZ5ZQ": "location",
+   "QZ6ZQ": "project_id",
+   "QZ7ZQ": "stamp"
+  }
+ },
+ "build": {
+  "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+  "layoutDiff": 0.000652
+ }
+}

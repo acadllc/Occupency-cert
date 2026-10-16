@@ -1,0 +1,216 @@
+{
+  "key": "bld-mun-estidama-submittal",
+  "version": 1,
+  "status": "verified",
+  "name": "Estidama Simplified Submittal Template (Form 2)",
+  "nameAr": "نموذج تقديم استدامة المبسط – Form 2",
+  "description": "Estidama simplified submittal template, design stage Form 2 (DMT): ADM project number, owner, zone, sector and plot.",
+  "category": "أوراق تقديم البلدية",
+  "projectType": "building",
+  "source": "private/building/أوراق تقديم البلدية/استدامه 1.pdf",
+  "format": "pdf",
+  "reviewNotes": "Screenshot of the Estidama Excel form: project values painted out with the cell colour and the old stamp ink removed; ACAD contact details (red) kept.",
+  "sanitize": [
+    {
+      "op": "image_edit",
+      "page": 0,
+      "fill": [
+        [
+          733,
+          29,
+          819,
+          57
+        ],
+        [
+          243,
+          77,
+          531,
+          105
+        ],
+        [
+          533,
+          77,
+          652,
+          105
+        ],
+        [
+          654,
+          77,
+          730,
+          105
+        ],
+        [
+          732,
+          77,
+          829,
+          105
+        ],
+        [
+          819,
+          29,
+          840,
+          57
+        ]
+      ],
+      "remove_ink": [
+        [
+          295,
+          355,
+          450,
+          560
+        ]
+      ]
+    }
+  ],
+  "slots": {
+    "project_id": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        733,
+        29,
+        819,
+        57
+      ]
+    },
+    "owner": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        243,
+        77,
+        531,
+        105
+      ]
+    },
+    "area": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        533,
+        77,
+        652,
+        105
+      ]
+    },
+    "sector": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        654,
+        77,
+        730,
+        105
+      ]
+    },
+    "plot": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        732,
+        77,
+        829,
+        105
+      ]
+    },
+    "stamp": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        310.0,
+        395.0,
+        430.0,
+        515.0
+      ]
+    }
+  },
+  "fields": [
+    {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 11,
+      "minSize": 7,
+      "padding": [
+        2,
+        3,
+        2,
+        3
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 16,
+      "minSize": 7,
+      "padding": [
+        2,
+        3,
+        2,
+        3
+      ],
+      "dir": "rtl",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "area",
+      "value": "area_ar",
+      "font": "sans",
+      "size": 16,
+      "minSize": 7,
+      "padding": [
+        2,
+        3,
+        2,
+        3
+      ],
+      "dir": "rtl",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "sector",
+      "value": "sector_ar",
+      "font": "sans",
+      "size": 16,
+      "minSize": 7,
+      "padding": [
+        2,
+        3,
+        2,
+        3
+      ],
+      "dir": "rtl",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "size": 16,
+      "minSize": 7,
+      "padding": [
+        2,
+        3,
+        2,
+        3
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "stamp",
+      "stamp": {
+        "size": 120,
+        "anchor": "center"
+      }
+    }
+  ]
+}

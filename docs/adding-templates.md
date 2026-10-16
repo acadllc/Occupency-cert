@@ -44,6 +44,10 @@ value on its own line under the label. Tables in right-to-left documents get an 
 build, so LibreOffice lays them out like Word (otherwise it mirrors them in the PDF). A text field can set `"docxMaxWidth"` (pt) so
 the Word output shrinks a value that would overflow a fixed-size text box.
 
+Forms delivered as screenshots (one page-size image) use the PDF op `image_edit`: `fill` rectangles are painted with
+the cell's own background colour (removes typed values) and `remove_ink` rectangles turn bluish stamp / signature ink
+white while black and red print stays.
+
 PDF operations: `remove_image` (by bbox), `redact_spans` (by font/text/region), `redact_text_rect`, `remove_line_art`,
 `flatten_form`. PDF slots use `{ "kind": "rect", "page": 0, "rect": [x0, y0, x1, y1], "baseline": y }` (points, top-left origin).
 

@@ -1,0 +1,356 @@
+{
+  "key": "bld-archstr-owner-approval",
+  "version": 1,
+  "status": "verified",
+  "name": "Owner Approval of the Proposed Design (Form 24)",
+  "nameAr": "موافقة المالك على التصميم أو التعديل المقترح",
+  "description": "DMT form 24: owner approval of the proposed or modified design.",
+  "category": "تعديل معماري و انشائي",
+  "projectType": "building",
+  "source": "private/building/تعديل معماري و انشائي/موافقة المالك على التصميم المقترح.pdf",
+  "format": "pdf",
+  "reviewNotes": "Blank Department of Municipalities and Transport form (no historical values); the project details are drawn on its dotted lines.",
+  "sanitize": [],
+  "slots": {
+    "project_id": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        424,
+        81.2,
+        531,
+        92.7
+      ],
+      "baseline": 90.5
+    },
+    "date_day": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        492,
+        95.2,
+        549,
+        106.7
+      ],
+      "baseline": 104.5
+    },
+    "date_month": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        463,
+        95.2,
+        490,
+        106.7
+      ],
+      "baseline": 104.5
+    },
+    "date_year": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        424,
+        95.2,
+        461,
+        106.7
+      ],
+      "baseline": 104.5
+    },
+    "description": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        108,
+        114.6,
+        520,
+        126.1
+      ],
+      "baseline": 123.9
+    },
+    "owner": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        96,
+        141.0,
+        522,
+        152.5
+      ],
+      "baseline": 150.3
+    },
+    "developer": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        138,
+        159.4,
+        493,
+        170.9
+      ],
+      "baseline": 168.7
+    },
+    "area": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        51,
+        177.9,
+        173,
+        189.4
+      ],
+      "baseline": 187.2
+    },
+    "sector": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        248,
+        177.9,
+        298,
+        189.4
+      ],
+      "baseline": 187.2
+    },
+    "plot": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        387,
+        177.9,
+        519,
+        189.4
+      ],
+      "baseline": 187.2
+    },
+    "land_usage": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        93,
+        198.2,
+        512,
+        209.7
+      ],
+      "baseline": 207.5
+    },
+    "consultant": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        300,
+        244.5,
+        440,
+        256
+      ],
+      "baseline": 253.8
+    },
+    "consultant_en": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        91,
+        256.5,
+        290,
+        268
+      ],
+      "baseline": 265.8
+    }
+  },
+  "fields": [
+    {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center"
+    },
+    {
+      "slot": "date_day",
+      "value": "{date|day}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center"
+    },
+    {
+      "slot": "date_month",
+      "value": "{date|month}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center"
+    },
+    {
+      "slot": "date_year",
+      "value": "{date|year}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center"
+    },
+    {
+      "slot": "description",
+      "value": "project_description_ar",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "center"
+    },
+    {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "center"
+    },
+    {
+      "slot": "developer",
+      "value": "developer_name_ar",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "center"
+    },
+    {
+      "slot": "area",
+      "value": "area_ar",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "center"
+    },
+    {
+      "slot": "sector",
+      "value": "sector_ar",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "center"
+    },
+    {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center"
+    },
+    {
+      "slot": "land_usage",
+      "value": "land_building_usage_ar",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "center"
+    },
+    {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 9,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right"
+    },
+    {
+      "slot": "consultant_en",
+      "value": "$consultant_name_en",
+      "font": "sans",
+      "size": 9,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left"
+    }
+  ]
+}

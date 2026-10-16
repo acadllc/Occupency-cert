@@ -88,6 +88,54 @@ class PdfSanitizer:
             self.pending_redactions.setdefault(op["page"], []).append((r, "lineart"))
         self.removed.append(f"[line art p{op['page']} x{len(op['rects'])}]")
 
+    def op_image_edit(self, op: dict):
+        """Edit a scanned page image (forms delivered as screenshots).
+
+        ``fill``: rectangles (page points) painted with the cell's own background colour
+        (sampled just inside the rectangle's edge), which removes typed values.
+        ``remove_ink``: rectangles where bluish stamp / signature ink is turned white;
+        black and red print inside them is kept.
+        """
+        import io
+        from collections import Counter
+
+        from PIL import Image
+
+        page = self.doc[op["page"]]
+        xref = page.get_images(full=True)[op.get("image", 0)][0]
+        rect = page.get_image_rects(xref)[0]
+        pix = fitz.Pixmap(self.doc, xref)
+        img = Image.open(io.BytesIO(pix.tobytes("png"))).convert("RGB")
+        sx, sy = img.width / rect.width, img.height / rect.height
+
+        def box(r):
+            return (round((r[0] - rect.x0) * sx), round((r[1] - rect.y0) * sy),
+                    round((r[2] - rect.x0) * sx), round((r[3] - rect.y0) * sy))
+
+        px = img.load()
+        for r in op.get("fill", []):
+            x0, y0, x1, y1 = box(r)
+            edge = [px[x, y] for x in range(x0, x1) for y in (y0, y0 + 1, y1 - 2, y1 - 1)]
+            edge += [px[x, y] for y in range(y0, y1) for x in (x0, x0 + 1, x1 - 2, x1 - 1)]
+            colour = Counter(edge).most_common(1)[0][0]
+            for y in range(y0, y1):
+                for x in range(x0, x1):
+                    px[x, y] = colour
+        for r in op.get("remove_ink", []):
+            # {"rect": [...], "keep_pure_blue": true} keeps saturated blue print (a link-coloured
+            # label) and removes only the greyish-blue stamp / signature ink around it
+            keep_pure = isinstance(r, dict) and r.get("keep_pure_blue")
+            x0, y0, x1, y1 = box(r["rect"] if isinstance(r, dict) else r)
+            for y in range(y0, y1):
+                for x in range(x0, x1):
+                    cr, cg, cb = px[x, y]
+                    if cb > cr + 8 and cb > cg - 5 and cb > 60 and not (keep_pure and max(cr, cg) < 70):
+                        px[x, y] = (255, 255, 255)
+        out = io.BytesIO()
+        img.save(out, "PNG")
+        page.replace_image(xref, stream=out.getvalue())
+        self.removed.append(f"[image edit p{op['page']}]")
+
     def op_remove_annots(self, op: dict):
         """Delete annotations (e.g. values typed into a scanned form as FreeText boxes)."""
         n = 0
