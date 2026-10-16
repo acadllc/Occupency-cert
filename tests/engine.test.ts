@@ -259,6 +259,16 @@ describe('company stamp', () => {
     expect(stampBox(slot, { slot: 'stamp', stamp: { size: 110, anchor: 'right', dx: 6 } })).toEqual({ cx: 311, cy: 390, size: 110 });
   });
 
+  it('is on every page of every Architectural paper', async () => {
+    const building = catalog.templates.filter((t) => t.definition.projectType === 'building');
+    expect(building.length).toBeGreaterThanOrEqual(16);
+    for (const { definition } of building) {
+      const res = await engine.generate(definition.key, sampleProject, { stamp: true });
+      const stamped = new Set(res.placements.filter((p) => p.kind === 'stamp').map((p) => p.page));
+      expect([definition.key, stamped.size]).toEqual([definition.key, res.pageCount]);
+    }
+  });
+
   it('warns instead of failing when no stamp image has been uploaded', async () => {
     const assets = nodeAssets(root, photos);
     const bare = await Engine.create({ ...assets, loadStamp: () => Promise.reject(new Error('none uploaded')) }, registry, company, catalog);
