@@ -1,9 +1,9 @@
 {
  "key": "bank-cov-arch",
- "version": 1,
+ "version": 2,
  "format": "docx",
  "sourceSha256": "f34d161437e405475af05c9b5aca3a9cb4b96be6d2c3fbd24db89a3c125e34bd",
- "baseSha256": "563c3013eedb2d379053bc9f8c6d39795cfc35e2ec5b25ace439b6eae71f3912",
+ "baseSha256": "060d01468f33962db8f7c93a6e7cd7639935f3e65c306d0283b946258d7e9fbf",
  "pageCount": 1,
  "pages": [
   {
@@ -14,57 +14,57 @@
  "slots": {
   "owner_en": {
    "page": 0,
-   "baseline": 442.0,
+   "baseline": 427.95,
    "size": 26.0,
    "rect": [
     415.3,
-    414.83,
+    400.78,
     875.3,
-    450.27
+    436.22
    ]
   },
   "project": {
    "page": 0,
-   "baseline": 476.5,
+   "baseline": 464.7,
    "size": 26.0,
    "rect": [
     413.8,
-    449.33,
+    437.53,
     873.8,
-    484.77
+    472.97
    ]
   },
   "location": {
    "page": 0,
-   "baseline": 511.6,
+   "baseline": 499.05,
    "size": 26.0,
    "rect": [
     413.05,
-    484.43,
+    471.88,
     873.05,
-    519.87
+    507.32
    ]
   },
   "plot": {
    "page": 0,
-   "baseline": 547.3,
+   "baseline": 535.8,
    "size": 26.0,
    "rect": [
     416.8,
-    520.13,
+    508.63,
     876.8,
-    555.57
+    544.07
    ]
   },
   "project_id": {
    "page": 0,
-   "baseline": 618.1,
+   "baseline": 608.55,
    "size": 26.0,
    "rect": [
     415.3,
-    590.93,
+    581.38,
     875.3,
-    626.37
+    616.82
    ]
   }
  },

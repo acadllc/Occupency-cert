@@ -1,6 +1,6 @@
 {
   "key": "bank-cov-ws",
-  "version": 1,
+  "version": 2,
   "status": "verified",
   "name": "Water Supply Drawings Cover",
   "nameAr": "غلاف مخططات تغذية المياه",
@@ -108,7 +108,7 @@
     },
     {
       "slot": "project_id",
-      "value": "project_id",
+      "value": "bank_project_number",
       "font": "sans",
       "size": 24,
       "minSize": 7,

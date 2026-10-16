@@ -1,9 +1,9 @@
 {
  "key": "bank-ten-tender-form",
- "version": 1,
+ "version": 2,
  "format": "docx",
  "sourceSha256": "02c50f898577e66b1e4ae7367caf8e8007375354e8bd8751c6823adb31c0d94d",
- "baseSha256": "092d177f95b2a215b4878aefb8386a3a3fdc65fde3a327aa4188fd9dc2f03efd",
+ "baseSha256": "76a0d4a24c52e209c28c3740fa5399cf00abe3d0a5a7b234b4419bda300ab7aa",
  "pageCount": 3,
  "pages": [
   {
@@ -135,6 +135,6 @@
  },
  "build": {
   "engine": "LibreOffice 24.2.7.2 420(Build:2)",
-  "layoutDiff": 0.005992
+  "layoutDiff": 0.001365
  }
 }

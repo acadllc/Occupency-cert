@@ -1,6 +1,6 @@
 {
   "key": "bank-fin-report",
-  "version": 1,
+  "version": 2,
   "status": "verified",
   "name": "Work Progress Report (Final Payment)",
   "nameAr": "تقرير اعتماد إنجاز الأعمال – دفعة نهائية",
@@ -38,10 +38,6 @@
     "date": {
       "kind": "inline",
       "width": 110
-    },
-    "stamp": {
-      "kind": "inline",
-      "width": 10
     }
   },
   "fields": [
@@ -49,7 +45,6 @@
       "slot": "owner",
       "value": "owner_name_ar",
       "font": "sans",
-      "size": 12,
       "align": "right",
       "dir": "rtl",
       "multiline": true,
@@ -62,9 +57,8 @@
     },
     {
       "slot": "project_id",
-      "value": "project_id",
+      "value": "bank_project_number",
       "font": "sans",
-      "size": 12,
       "align": "right",
       "dir": "ltr",
       "multiline": true,
@@ -79,7 +73,6 @@
       "slot": "contractor",
       "value": "contractor_name_ar",
       "font": "sans",
-      "size": 12,
       "align": "right",
       "dir": "rtl",
       "multiline": true,
@@ -94,7 +87,6 @@
       "slot": "consultant",
       "value": "$consultant_name_ar",
       "font": "sans",
-      "size": 12,
       "align": "right",
       "dir": "rtl",
       "multiline": true,
@@ -109,7 +101,6 @@
       "slot": "location",
       "value": "@project_location_ar",
       "font": "sans",
-      "size": 12,
       "align": "right",
       "dir": "rtl",
       "multiline": true,
@@ -124,7 +115,6 @@
       "slot": "end_date",
       "value": "project_end_date",
       "font": "sans",
-      "size": 12,
       "align": "right",
       "dir": "ltr",
       "multiline": true,
@@ -139,7 +129,6 @@
       "slot": "start_date",
       "value": "project_start_date",
       "font": "sans",
-      "size": 12,
       "align": "right",
       "dir": "ltr",
       "multiline": true,
@@ -154,7 +143,6 @@
       "slot": "components",
       "value": "project_components_ar",
       "font": "sans",
-      "size": 12,
       "align": "right",
       "dir": "rtl",
       "multiline": true,
@@ -178,15 +166,6 @@
         0,
         0
       ]
-    },
-    {
-      "slot": "stamp",
-      "stamp": {
-        "size": 105,
-        "anchor": "marker",
-        "dx": 45,
-        "dy": 50
-      }
     }
   ]
 }

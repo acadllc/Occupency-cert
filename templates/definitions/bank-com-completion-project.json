@@ -1,6 +1,6 @@
 {
   "key": "bank-com-completion-project",
-  "version": 1,
+  "version": 2,
   "status": "verified",
   "name": "Completion Project Submission Form (DSN-CD-03)",
   "nameAr": "نموذج تقديم مشروع استكمال",
@@ -23,10 +23,6 @@
     "components": {
       "kind": "cell"
     },
-    "stamp": {
-      "kind": "inline",
-      "width": 10
-    },
     "consultant": {
       "kind": "cell"
     },
@@ -37,9 +33,8 @@
   "fields": [
     {
       "slot": "project_id",
-      "value": "project_id",
+      "value": "bank_project_number",
       "font": "sans",
-      "size": 12,
       "align": "right",
       "dir": "ltr",
       "multiline": true,
@@ -54,7 +49,6 @@
       "slot": "owner",
       "value": "owner_name_ar",
       "font": "sans",
-      "size": 12,
       "align": "right",
       "dir": "rtl",
       "multiline": true,
@@ -69,7 +63,6 @@
       "slot": "location",
       "value": "@project_location_ar",
       "font": "sans",
-      "size": 12,
       "align": "right",
       "dir": "rtl",
       "multiline": true,
@@ -84,7 +77,6 @@
       "slot": "components",
       "value": "project_components_ar",
       "font": "sans",
-      "size": 12,
       "align": "right",
       "dir": "rtl",
       "multiline": true,
@@ -96,19 +88,9 @@
       ]
     },
     {
-      "slot": "stamp",
-      "stamp": {
-        "size": 70,
-        "anchor": "marker",
-        "dx": 60,
-        "dy": 22
-      }
-    },
-    {
       "slot": "consultant",
       "value": "$consultant_name_ar",
       "font": "sans",
-      "size": 12,
       "align": "right",
       "dir": "rtl",
       "padding": [
@@ -123,7 +105,6 @@
       "slot": "contractor",
       "value": "contractor_name_ar",
       "font": "sans",
-      "size": 12,
       "align": "right",
       "dir": "rtl",
       "padding": [

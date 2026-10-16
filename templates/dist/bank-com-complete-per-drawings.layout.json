@@ -1,9 +1,9 @@
 {
  "key": "bank-com-complete-per-drawings",
- "version": 1,
+ "version": 2,
  "format": "docx",
  "sourceSha256": "355aa1277c98b162c90474ea84df25ad42b1ac4aae5733b17e5669128e878d8a",
- "baseSha256": "702165b2c9ff945ef24acd4b2cd85646522f5e2cb509602103046762a2ad8182",
+ "baseSha256": "aa7e1ceeee183f8cca6fe0b2b5278775c48f68b8c56c0bdd87acc7a553249e3c",
  "pageCount": 1,
  "pages": [
   {
@@ -17,9 +17,9 @@
    "baseline": 210.1,
    "size": 15.0,
    "rect": [
-    233.9,
+    84.3,
     190.85,
-    511.0,
+    361.4,
     218.65
    ]
   },
@@ -28,9 +28,9 @@
    "baseline": 232.9,
    "size": 15.0,
    "rect": [
-    233.9,
+    84.3,
     218.65,
-    511.0,
+    361.4,
     246.45
    ]
   },
@@ -39,9 +39,9 @@
    "baseline": 263.05,
    "size": 16.0,
    "rect": [
-    233.9,
+    84.3,
     246.45,
-    511.0,
+    361.4,
     274.25
    ]
   },
@@ -50,9 +50,9 @@
    "baseline": 290.9,
    "size": 16.0,
    "rect": [
-    233.9,
+    84.3,
     274.25,
-    511.0,
+    361.4,
     302.15
    ]
   },
@@ -61,9 +61,9 @@
    "baseline": 321.35,
    "size": 15.0,
    "rect": [
-    233.9,
+    84.3,
     302.15,
-    511.0,
+    361.4,
     329.85
    ]
   },
@@ -72,32 +72,21 @@
    "baseline": 349.1,
    "size": 15.0,
    "rect": [
-    233.9,
+    84.3,
     329.85,
-    511.0,
+    361.4,
     357.65
-   ]
-  },
-  "stamp": {
-   "page": 0,
-   "baseline": 497.45,
-   "size": 1.0,
-   "rect": [
-    520.61,
-    494.56,
-    530.61,
-    499.67
    ]
   },
   "components_text": {
    "page": 0,
-   "baseline": 385.65,
+   "baseline": 402.9,
    "size": 1.0,
    "rect": [
-    53.46,
-    373.76,
-    243.46,
-    396.87
+    69.63,
+    392.01,
+    529.63,
+    413.12
    ]
   },
   "contractor_2": {
@@ -131,14 +120,13 @@
    "QZ4ZQ": "contractor",
    "QZ5ZQ": "location",
    "QZ6ZQ": "project_id_2",
-   "QZ7ZQ": "stamp",
-   "QZ8ZQ": "components_text",
-   "QZ9ZQ": "contractor_2",
-   "QZ10ZQ": "date"
+   "QZ7ZQ": "components_text",
+   "QZ8ZQ": "contractor_2",
+   "QZ9ZQ": "date"
   }
  },
  "build": {
   "engine": "LibreOffice 24.2.7.2 420(Build:2)",
-  "layoutDiff": 0.0023
+  "layoutDiff": 0.0
  }
 }

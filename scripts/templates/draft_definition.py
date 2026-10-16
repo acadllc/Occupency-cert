@@ -110,7 +110,8 @@ def text_of_field_results(p) -> str:
 
 
 class Draft:
-    def __init__(self, src: Path):
+    def __init__(self, src: Path, no_signature_names: bool = False):
+        self.no_signature_names = no_signature_names
         self.z = zipfile.ZipFile(src)
         self.doc = etree.fromstring(self.z.read("word/document.xml"))
         self.ops: list[dict] = []
@@ -133,7 +134,7 @@ class Draft:
         else:
             self.slots[slot] = {"kind": "inline", "width": width}
         # numbers and dates (12345678/01/000000) must keep their left-to-right order
-        ltr = value in ("project_id", "date", "plot_number") or value.endswith("_date")
+        ltr = value in ("project_id", "bank_project_number", "date", "plot_number") or value.endswith("_date")
         style = {"font": "sans", "size": 12, "align": "right", "dir": "ltr" if ltr else "rtl"}
         if kind == "cell":
             style.update({"multiline": True, "padding": [4, 2, 4, 2]})
@@ -250,7 +251,11 @@ class Draft:
                 for v in sorted(set(self.known[base]), key=len, reverse=True):
                     for _ in range(raw.count(v)):
                         slot = self.new_slot(base)
-                        if norm(raw) == norm(v):
+                        if norm(raw) == norm(v) and self.no_signature_names:
+                            # the name alone on its line (signature block): bank papers leave it blank
+                            self.counts[base] -= 1
+                            self.ops.append({"op": "text", "contains": v, "old": v})
+                        elif norm(raw) == norm(v):
                             # the name alone on its line (signature block)
                             self.ops.append({"op": "text", "contains": v, "old": v, "slot": slot})
                             self.map_field(slot, value, kind="inline", width=220)
@@ -297,7 +302,14 @@ def main() -> int:
     ap.add_argument("--stamp", action="store_true", help="ACAD stamp & signature under the last «الاستشاري» label")
     ap.add_argument("--write", action="store_true")
     a = ap.parse_args()
-    ops, fields, slots = Draft(ROOT / "reference-documents" / a.source).run()
+    ops, fields, slots = Draft(ROOT / "reference-documents" / a.source, no_signature_names=a.project_type == "bank").run()
+    if a.project_type == "bank":
+        # the project number on bank papers is the bank's (FAB) project / loan number
+        for f in fields:
+            if f.get("value") == "project_id":
+                f["value"] = "bank_project_number"
+    if a.stamp and a.project_type == "bank":
+        sys.exit("bank papers never carry the ACAD stamp & signature")
     if a.stamp:
         st = json.loads(Path(a.extra).read_text(encoding="utf-8")).get("stamp", {}) if a.extra else {}
         words = st.get("words", ["الاستشاري", "الإستشاري", "الاستشارى", "الإستشارى"])

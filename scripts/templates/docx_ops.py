@@ -359,6 +359,79 @@ class DocxSanitizer:
                 raise SanitizeError(f"textbox_nowrap: {contains!r} is not in a text box")
             body.set("wrap", "none")
 
+    def op_textbox_move(self, op: dict):
+        """Move the text box holding a phrase vertically by ``dy`` points (e.g. to put values on
+        the same line as their labels when the original boxes were placed too low)."""
+        WP = "http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing"
+        p = self._find_paragraph(op["contains"])
+        anchor = next((a for a in p.iterancestors() if a.tag == f"{{{WP}}}anchor"), None)
+        off = anchor.find(f"{{{WP}}}positionV/{{{WP}}}posOffset") if anchor is not None else None
+        if off is None:
+            raise SanitizeError(f"textbox_move: {op['contains']!r} is not in a positioned text box")
+        off.text = str(int(off.text) + round(float(op.get("dy", 0)) * 12700))
+        if op.get("dx"):
+            offx = anchor.find(f"{{{WP}}}positionH/{{{WP}}}posOffset")
+            if offx is None:
+                raise SanitizeError(f"textbox_move: {op['contains']!r} has no horizontal offset")
+            offx.text = str(int(offx.text) + round(float(op["dx"]) * 12700))
+
+    def op_textbox_para(self, op: dict):
+        """Align the paragraphs of the text box holding a phrase: left-to-right, ``jc`` and an
+        optional left indent (points), so text can start at a given x without moving the box."""
+        WPS = "http://schemas.microsoft.com/office/word/2010/wordprocessingShape"
+        p = self._find_paragraph(op["contains"])
+        box = next((a for a in p.iterancestors() if a.tag == f"{{{W}}}txbxContent"), None)
+        if box is None:
+            raise SanitizeError(f"textbox_para: {op['contains']!r} is not in a text box")
+        for para in box.iter(w("p")):
+            ppr = para.find(w("pPr"))
+            if ppr is None:
+                ppr = etree.Element(w("pPr"))
+                para.insert(0, ppr)
+            for tag in ("bidi", "jc", "ind"):
+                for el in ppr.findall(w(tag)):
+                    ppr.remove(el)
+            # schema order: ... bidi, ..., ind, ..., jc, ... (before rPr); the explicit bidi="0"
+            # overrides right-to-left paragraph styles (where "left" would mean the start side)
+            rpr = ppr.find(w("rPr"))
+            later = {w(t) for t in ("adjustRightInd", "snapToGrid", "spacing", "contextualSpacing",
+                                    "mirrorIndents", "suppressOverlap", "textDirection", "textAlignment",
+                                    "textboxTightWrap", "outlineLvl", "divId", "cnfStyle", "rPr", "sectPr", "pPrChange")}
+            bidi = etree.Element(w("bidi"))
+            bidi.set(w("val"), "0")
+            nxt = next((c for c in ppr if c.tag in later), None)
+            if nxt is not None:
+                nxt.addprevious(bidi)
+            else:
+                ppr.append(bidi)
+            items = []
+            if op.get("ind_left") is not None:
+                ind = etree.Element(w("ind"))
+                ind.set(w("left"), str(round(float(op["ind_left"]) * 20)))
+                items.append(ind)
+            jc = etree.Element(w("jc"))
+            jc.set(w("val"), op.get("jc", "left"))
+            items.append(jc)
+            for el in items:
+                if rpr is not None:
+                    rpr.addprevious(el)
+                else:
+                    ppr.append(el)
+
+    def op_textbox_resize(self, op: dict):
+        """Set the width (points) of the text box holding a phrase, keeping its left edge."""
+        WP = "http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing"
+        A = "http://schemas.openxmlformats.org/drawingml/2006/main"
+        p = self._find_paragraph(op["contains"])
+        anchor = next((a for a in p.iterancestors() if a.tag == f"{{{WP}}}anchor"), None)
+        if anchor is None:
+            raise SanitizeError(f"textbox_resize: {op['contains']!r} is not in a text box")
+        cx = str(round(float(op["width"]) * 12700))
+        anchor.find(f"{{{WP}}}extent").set("cx", cx)
+        for ext in anchor.iter(f"{{{A}}}ext"):
+            if ext.get("cx") is not None:
+                ext.set("cx", cx)
+
     def op_mark_word(self, op: dict):
         """Put a zero-width marker right after a word (e.g. the signature label «الاستشاري»).
 
@@ -425,7 +498,7 @@ class DocxSanitizer:
         end = start + len(old)
         self.removed.append(old.strip())
         pos = 0
-        marker_done = False
+        marker_done = rlm_done = False
         for r in runs:
             ts = r.findall(w("t"))
             for t in ts:
@@ -435,6 +508,12 @@ class DocxSanitizer:
                 if b <= start or a >= end:
                     continue
                 s0, s1 = max(start, a) - a, min(end, b) - a
+                if op.get("rtl") and not rlm_done:
+                    # Arabic text in a left-to-right paragraph: a right-to-left mark where the value
+                    # was keeps the remaining «: /» with the Arabic label (else it jumps to the far side)
+                    rlm_done = True
+                    txt = txt[:s0] + "\u200f" + txt[s0:]
+                    s0, s1 = s0 + 1, s1 + 1
                 t.text = txt[:s0] + txt[s1:]
                 t.set("{http://www.w3.org/XML/1998/namespace}space", "preserve")
                 if not marker_done and op.get("slot") and op.get("reserve"):
@@ -473,20 +552,25 @@ class DocxSanitizer:
                         parent.insert(idx + 3, tail)
                 elif not marker_done and op.get("slot"):
                     marker_done = True
-                    if op.get("keep_line"):
-                        # the value was the whole line: a no-break space in the text's own format holds
-                        # the line height in both variants (use with "zero_width")
+                    anchor_run = r
+                    if op.get("keep_line") or op.get("newline"):
+                        # keep_line: the value was the whole line; newline: the value goes on its own
+                        # line under the label. A no-break space in the text's own format holds the
+                        # line height in both variants (use with "zero_width")
                         hold = copy.deepcopy(r)
                         for tt in hold.findall(w("t")):
                             hold.remove(tt)
+                        if op.get("newline"):
+                            etree.SubElement(hold, w("br"))
                         etree.SubElement(hold, w("t")).text = "\u00a0"
                         r.addnext(hold)
+                        anchor_run = hold
                     if self.with_markers:
                         # split: put marker run after this run
                         before, after = txt[:s0], txt[s1:]
                         t.text = before
                         parent = r.getparent()
-                        idx = parent.index(r)
+                        idx = parent.index(anchor_run)
                         mrun = _make_marker_run(r.find(w("rPr")), self.new_marker(op["slot"]), True, self.default_cs_font())
                         if op.get("zero_width"):
                             # a tiny marker cannot change the line (the slot gets its height from "pad")
@@ -911,6 +995,28 @@ class DocxSanitizer:
         self.parts["[Content_Types].xml"] = etree.tostring(ct, xml_declaration=True, encoding="UTF-8", standalone=True)
 
     # ------------------------------------------------------------ run
+    def fix_table_direction(self):
+        """Lay tables out like Word in right-to-left documents.
+
+        Word draws a table without w:bidiVisual left-to-right even in a right-to-left
+        section; LibreOffice mirrors it (labels end up on the wrong side of the PDF).
+        An explicit w:bidiVisual="0" means the same to Word and stops the mirroring.
+        """
+        doc = self.tree("word/document.xml").getroot()
+        if not any(s.find(w("bidi")) is not None for s in doc.iter(w("sectPr"))):
+            return
+        before = {w(t) for t in ("tblStyle", "tblpPr", "tblOverlap")}
+        for tblpr in doc.iter(w("tblPr")):
+            if tblpr.find(w("bidiVisual")) is not None:
+                continue
+            el = etree.Element(w("bidiVisual"))
+            el.set(w("val"), "0")
+            idx = 0
+            for i, child in enumerate(tblpr):
+                if child.tag in before:
+                    idx = i + 1
+            tblpr.insert(idx, el)
+
     def apply(self, ops: list[dict]) -> DocxResult:
         for op in ops:
             fn = getattr(self, "op_" + op["op"], None)
@@ -918,6 +1024,7 @@ class DocxSanitizer:
                 raise SanitizeError(f"unknown docx op {op['op']}")
             self._marker_style = op.get("marker")
             fn(op)
+        self.fix_table_direction()
         self.scrub_metadata()
         for name, tree in self.trees.items():
             self.parts[name] = etree.tostring(tree.getroot(), xml_declaration=True, encoding="UTF-8", standalone=True)

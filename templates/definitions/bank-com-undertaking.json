@@ -1,6 +1,6 @@
 {
   "key": "bank-com-undertaking",
-  "version": 1,
+  "version": 2,
   "status": "verified",
   "name": "Completion Project Undertaking",
   "nameAr": "تعهد وإقرار – مشروع استكمال",
@@ -11,10 +11,6 @@
   "format": "docx",
   "sanitize": "private",
   "slots": {
-    "stamp": {
-      "kind": "inline",
-      "width": 10
-    },
     "date": {
       "kind": "inline",
       "width": 110,
@@ -39,15 +35,6 @@
   },
   "fields": [
     {
-      "slot": "stamp",
-      "stamp": {
-        "size": 70,
-        "anchor": "marker",
-        "dx": 39,
-        "dy": 48
-      }
-    },
-    {
       "slot": "date",
       "value": "date",
       "font": "sans",
@@ -63,7 +50,7 @@
     },
     {
       "slot": "project_id",
-      "value": "project_id",
+      "value": "bank_project_number",
       "font": "sans",
       "size": 12,
       "align": "right",

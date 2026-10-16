@@ -1,9 +1,9 @@
 {
  "key": "bank-cov-boq",
- "version": 1,
+ "version": 2,
  "format": "docx",
  "sourceSha256": "2ea22bd102deee3b94a0ebef0e80ea88a590a64d05555e1bb256f2a83487d9e4",
- "baseSha256": "8f76d674fdc012fcb9b2483915a801d24a2c273bd31a942b15430e9fa2575d2a",
+ "baseSha256": "f7ce33c4e206531cc9d1ffd708dd6eb09bcc41bce457c4a63250ba3e34a5971f",
  "pageCount": 1,
  "pages": [
   {
@@ -14,13 +14,13 @@
  "slots": {
   "project_id": {
    "page": 0,
-   "baseline": 561.0,
+   "baseline": 548.0,
    "size": 22.0,
    "rect": [
-    255.63,
-    539.09,
-    415.63,
-    567.64
+    271.0,
+    526.09,
+    501.0,
+    554.64
    ]
   },
   "owner": {
@@ -28,9 +28,9 @@
    "baseline": 583.4,
    "size": 28.0,
    "rect": [
-    116.79,
+    182.5,
     556.06,
-    436.79,
+    482.5,
     591.31
    ]
   },
@@ -39,9 +39,9 @@
    "baseline": 621.05,
    "size": 25.0,
    "rect": [
-    74.1,
+    182.55,
     596.43,
-    544.1,
+    542.55,
     628.33
    ]
   }

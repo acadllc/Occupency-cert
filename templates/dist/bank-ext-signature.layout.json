@@ -1,9 +1,9 @@
 {
  "key": "bank-ext-signature",
- "version": 1,
+ "version": 2,
  "format": "docx",
  "sourceSha256": "6d734472a8190655ea9acb35326b812b791b231189ea604da649a82196f12113",
- "baseSha256": "66195ce1592ed2ebade8324a539df793bf269f29aab21909c7ec74955c344687",
+ "baseSha256": "d011d0cc02687aa15cc0742297fb748304d6a2d3d8e8377a991442cf7a61fe19",
  "pageCount": 1,
  "pages": [
   {
@@ -17,9 +17,9 @@
    "baseline": 194.1,
    "size": 14.0,
    "rect": [
-    223.2,
+    73.6,
     178.15,
-    521.8,
+    372.2,
     206.05
    ]
   },
@@ -28,9 +28,9 @@
    "baseline": 219.35,
    "size": 14.0,
    "rect": [
-    223.2,
+    73.6,
     206.05,
-    521.8,
+    372.2,
     233.85
    ]
   },
@@ -39,9 +39,9 @@
    "baseline": 250.5,
    "size": 16.0,
    "rect": [
-    223.2,
+    73.6,
     233.85,
-    521.8,
+    372.2,
     261.75
    ]
   },
@@ -50,9 +50,9 @@
    "baseline": 277.65,
    "size": 14.0,
    "rect": [
-    223.2,
+    73.6,
     261.75,
-    521.8,
+    372.2,
     289.55
    ]
   },
@@ -61,9 +61,9 @@
    "baseline": 305.85,
    "size": 15.0,
    "rect": [
-    223.2,
+    73.6,
     289.55,
-    521.8,
+    372.2,
     317.45
    ]
   },
@@ -88,17 +88,6 @@
     188.96,
     390.3
    ]
-  },
-  "stamp": {
-   "page": 0,
-   "baseline": 547.1,
-   "size": 1.0,
-   "rect": [
-    109.74,
-    544.21,
-    119.74,
-    549.32
-   ]
   }
  },
  "docx": {
@@ -109,12 +98,11 @@
    "QZ4ZQ": "contractor",
    "QZ5ZQ": "location",
    "QZ6ZQ": "date",
-   "QZ7ZQ": "owner_2",
-   "QZ8ZQ": "stamp"
+   "QZ7ZQ": "owner_2"
   }
  },
  "build": {
   "engine": "LibreOffice 24.2.7.2 420(Build:2)",
-  "layoutDiff": 0.000628
+  "layoutDiff": 0.000781
  }
 }

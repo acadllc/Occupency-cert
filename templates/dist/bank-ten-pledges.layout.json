@@ -1,6 +1,6 @@
 {
  "key": "bank-ten-pledges",
- "version": 1,
+ "version": 2,
  "format": "pdf",
  "sourceSha256": "a1100705400294f0b591a7cfb7403d42a3496da4a8288a57605b90035a0d8f90",
  "baseSha256": "62b90277014fd10fc9805f697cc7192d119598dc588fa45801617aae96526a54",
@@ -73,15 +73,6 @@
     221,
     408,
     243
-   ]
-  },
-  "stamp": {
-   "page": 0,
-   "rect": [
-    363.0,
-    716.0,
-    427.0,
-    780.0
    ]
   }
  },

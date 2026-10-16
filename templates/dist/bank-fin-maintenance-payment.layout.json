@@ -1,9 +1,9 @@
 {
  "key": "bank-fin-maintenance-payment",
- "version": 1,
+ "version": 2,
  "format": "docx",
  "sourceSha256": "2e3714b2c89d3d275d049e511e3993e694bee8e631aaa34c916c94d041ff4610",
- "baseSha256": "829fe47b45899837e60029d8257de206d74e029eeb2022ced2cad3cf045ca3d2",
+ "baseSha256": "ccfd03a18f6d0d1a4f6348a18d6a2dbbc882dedb65713a19b6551878473b5d3c",
  "pageCount": 1,
  "pages": [
   {
@@ -17,9 +17,9 @@
    "baseline": 282.7,
    "size": 14.0,
    "rect": [
-    222.7,
+    73.1,
     266.75,
-    522.3,
+    372.6,
     294.65
    ]
   },
@@ -28,9 +28,9 @@
    "baseline": 310.55,
    "size": 14.0,
    "rect": [
-    222.7,
+    73.1,
     294.65,
-    522.3,
+    372.6,
     322.45
    ]
   },
@@ -39,9 +39,9 @@
    "baseline": 338.4,
    "size": 14.0,
    "rect": [
-    222.7,
+    73.1,
     322.45,
-    522.3,
+    372.6,
     350.35
    ]
   },
@@ -50,9 +50,9 @@
    "baseline": 366.25,
    "size": 14.0,
    "rect": [
-    222.7,
+    73.1,
     350.35,
-    522.3,
+    372.6,
     378.15
    ]
   },
@@ -61,9 +61,9 @@
    "baseline": 395.5,
    "size": 16.0,
    "rect": [
-    222.7,
+    73.1,
     378.15,
-    522.3,
+    372.6,
     411.95
    ]
   },
@@ -76,17 +76,6 @@
     140.4,
     475.06,
     161.32
-   ]
-  },
-  "stamp": {
-   "page": 0,
-   "baseline": 582.15,
-   "size": 1.0,
-   "rect": [
-    94.74,
-    579.26,
-    104.74,
-    584.37
    ]
   },
   "owner_text": {
@@ -109,12 +98,11 @@
    "QZ4ZQ": "plot",
    "QZ5ZQ": "project_id",
    "QZ6ZQ": "date",
-   "QZ7ZQ": "stamp",
-   "QZ8ZQ": "owner_text"
+   "QZ7ZQ": "owner_text"
   }
  },
  "build": {
   "engine": "LibreOffice 24.2.7.2 420(Build:2)",
-  "layoutDiff": 0.000159
+  "layoutDiff": 0.00012
  }
 }

@@ -1,6 +1,6 @@
 {
   "key": "bank-fin-contractor-payment",
-  "version": 1,
+  "version": 2,
   "status": "verified",
   "name": "Contractor Execution Payment (FAB)",
   "nameAr": "دفعة المقاول عن أعمال التنفيذ",
@@ -16,91 +16,207 @@
     }
   ],
   "slots": {
-    "date": {
+    "date_day": {
       "kind": "rect",
       "page": 0,
       "rect": [
-        379,
+        455.3,
         111,
-        472,
-        123
-      ]
+        484,
+        122.5
+      ],
+      "baseline": 120.5
+    },
+    "date_month": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        423.7,
+        111,
+        452,
+        122.5
+      ],
+      "baseline": 120.5
+    },
+    "date_year": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        391.7,
+        111,
+        420,
+        122.5
+      ],
+      "baseline": 120.5
+    },
+    "start_day": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        455.3,
+        209,
+        484,
+        220.5
+      ],
+      "baseline": 218.5
+    },
+    "start_month": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        423.7,
+        209,
+        453.3,
+        220.5
+      ],
+      "baseline": 218.5
+    },
+    "start_year": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        392,
+        209,
+        421.7,
+        220.5
+      ],
+      "baseline": 218.5
     },
     "project_id": {
       "kind": "rect",
       "page": 0,
       "rect": [
-        335,
+        300,
         131,
-        467,
-        143
-      ]
+        484,
+        142.5
+      ],
+      "baseline": 140.5
     },
     "location": {
       "kind": "rect",
       "page": 0,
       "rect": [
-        67,
+        40,
         131,
-        153,
-        146
-      ]
+        158,
+        142.5
+      ],
+      "baseline": 140.5
     },
     "owner": {
       "kind": "rect",
       "page": 0,
       "rect": [
-        342,
-        150,
-        484,
-        165
-      ]
+        300,
+        150.5,
+        486,
+        162.0
+      ],
+      "baseline": 160.0
     },
     "consultant": {
       "kind": "rect",
       "page": 0,
       "rect": [
-        370,
+        234,
         170,
-        482,
-        184
-      ]
+        486,
+        181.5
+      ],
+      "baseline": 179.5
     },
     "contractor": {
       "kind": "rect",
       "page": 0,
       "rect": [
-        247,
-        189,
-        467,
-        213
-      ]
-    },
-    "start_date": {
-      "kind": "rect",
-      "page": 0,
-      "rect": [
-        385,
-        209,
-        474,
-        221
-      ]
-    },
-    "stamp": {
-      "kind": "rect",
-      "page": 0,
-      "rect": [
-        140,
-        577,
-        230,
-        667
-      ]
+        250,
+        189.5,
+        486,
+        201.0
+      ],
+      "baseline": 199.0
     }
   },
   "fields": [
     {
-      "slot": "date",
-      "value": "{date|day}     {date|month}     {date|year}",
+      "slot": "date_day",
+      "value": "{date|day}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center"
+    },
+    {
+      "slot": "date_month",
+      "value": "{date|month}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center"
+    },
+    {
+      "slot": "date_year",
+      "value": "{date|year}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center"
+    },
+    {
+      "slot": "start_day",
+      "value": "{project_start_date|day}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center"
+    },
+    {
+      "slot": "start_month",
+      "value": "{project_start_date|month}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center"
+    },
+    {
+      "slot": "start_year",
+      "value": "{project_start_date|year}",
       "font": "sans",
       "size": 10,
       "minSize": 6,
@@ -115,7 +231,7 @@
     },
     {
       "slot": "project_id",
-      "value": "project_id",
+      "value": "bank_project_number",
       "font": "sans",
       "size": 10,
       "minSize": 6,
@@ -186,30 +302,7 @@
         0
       ],
       "dir": "rtl",
-      "align": "right",
-      "multiline": true
-    },
-    {
-      "slot": "start_date",
-      "value": "{project_start_date|day}     {project_start_date|month}     {project_start_date|year}",
-      "font": "sans",
-      "size": 10,
-      "minSize": 6,
-      "padding": [
-        1,
-        0,
-        1,
-        0
-      ],
-      "dir": "ltr",
-      "align": "center"
-    },
-    {
-      "slot": "stamp",
-      "stamp": {
-        "size": 92,
-        "anchor": "center"
-      }
+      "align": "right"
     }
   ]
 }

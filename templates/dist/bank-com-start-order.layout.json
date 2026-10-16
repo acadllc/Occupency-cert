@@ -1,9 +1,9 @@
 {
  "key": "bank-com-start-order",
- "version": 1,
+ "version": 2,
  "format": "docx",
  "sourceSha256": "26fc94b964eae0a750e92cfbd77e5bb2ce2fe8207bbb574550d15294984cb2e3",
- "baseSha256": "4146172e9a696737ee843ac8c45d5df5624ec236e92243e5d5b9698b8c000a1f",
+ "baseSha256": "0899342c69304845e059ba04b2fa79f5ad5e115d4ed4d8afa037f626d860f28c",
  "pageCount": 1,
  "pages": [
   {
@@ -17,9 +17,9 @@
    "baseline": 210.1,
    "size": 15.0,
    "rect": [
-    233.9,
+    84.3,
     190.85,
-    511.0,
+    361.4,
     218.65
    ]
   },
@@ -28,9 +28,9 @@
    "baseline": 232.9,
    "size": 15.0,
    "rect": [
-    233.9,
+    84.3,
     218.65,
-    511.0,
+    361.4,
     246.45
    ]
   },
@@ -39,9 +39,9 @@
    "baseline": 263.05,
    "size": 16.0,
    "rect": [
-    233.9,
+    84.3,
     246.45,
-    511.0,
+    361.4,
     274.25
    ]
   },
@@ -50,9 +50,9 @@
    "baseline": 290.9,
    "size": 16.0,
    "rect": [
-    233.9,
+    84.3,
     274.25,
-    511.0,
+    361.4,
     302.15
    ]
   },
@@ -61,9 +61,9 @@
    "baseline": 321.35,
    "size": 15.0,
    "rect": [
-    233.9,
+    84.3,
     302.15,
-    511.0,
+    361.4,
     329.85
    ]
   },
@@ -72,43 +72,32 @@
    "baseline": 349.1,
    "size": 15.0,
    "rect": [
-    233.9,
+    84.3,
     329.85,
-    511.0,
+    361.4,
     357.65
    ]
   },
   "owner_2": {
    "page": 0,
-   "baseline": 429.7,
+   "baseline": 447.8,
    "size": 14.0,
    "rect": [
     85.93,
-    416.4,
+    434.5,
     300.01,
-    433.9
-   ]
-  },
-  "stamp": {
-   "page": 0,
-   "baseline": 640.6,
-   "size": 1.0,
-   "rect": [
-    520.61,
-    637.71,
-    530.61,
-    642.82
+    452.0
    ]
   },
   "components_text": {
    "page": 0,
-   "baseline": 385.65,
+   "baseline": 402.9,
    "size": 1.0,
    "rect": [
-    53.46,
-    373.76,
-    243.46,
-    396.87
+    69.63,
+    392.01,
+    529.63,
+    413.12
    ]
   },
   "contractor_2": {
@@ -129,30 +118,30 @@
    "rect": [
     171.56,
     101.05,
-    481.59,
+    481.58,
     116.05
    ]
   },
   "start_date": {
    "page": 0,
-   "baseline": 445.85,
+   "baseline": 464.2,
    "size": 14.0,
    "rect": [
     235.91,
-    432.55,
+    450.9,
     327.78,
-    450.05
+    468.4
    ]
   },
   "end_date": {
    "page": 0,
-   "baseline": 445.85,
+   "baseline": 464.2,
    "size": 14.0,
    "rect": [
     11.69,
-    432.55,
+    450.9,
     91.69,
-    450.05
+    468.4
    ]
   }
  },
@@ -165,16 +154,15 @@
    "QZ5ZQ": "location",
    "QZ6ZQ": "project_id_2",
    "QZ7ZQ": "owner_2",
-   "QZ8ZQ": "stamp",
-   "QZ9ZQ": "components_text",
-   "QZ10ZQ": "contractor_2",
-   "QZ11ZQ": "date",
-   "QZ12ZQ": "start_date",
-   "QZ13ZQ": "end_date"
+   "QZ8ZQ": "components_text",
+   "QZ9ZQ": "contractor_2",
+   "QZ10ZQ": "date",
+   "QZ11ZQ": "start_date",
+   "QZ12ZQ": "end_date"
   }
  },
  "build": {
   "engine": "LibreOffice 24.2.7.2 420(Build:2)",
-  "layoutDiff": 0.003274
+  "layoutDiff": 0.001301
  }
 }

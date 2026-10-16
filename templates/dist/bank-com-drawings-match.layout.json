@@ -1,6 +1,6 @@
 {
  "key": "bank-com-drawings-match",
- "version": 1,
+ "version": 2,
  "format": "pdf",
  "sourceSha256": "ccc752593e6186259f77ed6776c4144bbb7b58cd14e6250243b6d8aeb6d6f934",
  "baseSha256": "57601e0308d67abcff296c621c82b52eee80715b47c9545f9dd94a4689ee2880",
@@ -46,15 +46,6 @@
     212,
     436,
     228
-   ]
-  },
-  "stamp": {
-   "page": 0,
-   "rect": [
-    105.0,
-    533.0,
-    195.0,
-    623.0
    ]
   }
  },

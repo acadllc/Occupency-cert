@@ -1,9 +1,9 @@
 {
  "key": "bank-cov-tel",
- "version": 1,
+ "version": 2,
  "format": "docx",
  "sourceSha256": "55fcd49e53f2bd098eb01439ce259a27ed2944479675581ce3f146b8abef00f0",
- "baseSha256": "84f7f777989c58d6fbf1c197552e78f9ce131642676fc421d8705e62508f5ff2",
+ "baseSha256": "c0c725757e74919136b04cefe68b0140c8cfdb5a456c7c3b049f71dba493dc25",
  "pageCount": 1,
  "pages": [
   {

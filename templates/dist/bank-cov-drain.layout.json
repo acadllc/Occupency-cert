@@ -1,9 +1,9 @@
 {
  "key": "bank-cov-drain",
- "version": 1,
+ "version": 2,
  "format": "docx",
  "sourceSha256": "750f901e5011a2d0b803b195393d3ef66832df323ff2f91f3a444813efa7cd87",
- "baseSha256": "7d700a1e18511c922d8eba73c1cdb4bf212af46501f15ae3db3ffbe690873ecd",
+ "baseSha256": "cfb062e611857ebb287b91c25dcd897dbdcfa95109e5647a817fcbc9f965f329",
  "pageCount": 1,
  "pages": [
   {

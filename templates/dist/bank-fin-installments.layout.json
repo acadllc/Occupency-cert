@@ -1,9 +1,9 @@
 {
  "key": "bank-fin-installments",
- "version": 1,
+ "version": 2,
  "format": "docx",
  "sourceSha256": "81f777a0cea99612b81a4f5dfc6c40987d15d47e9f8d69fa47ac888deb02abe7",
- "baseSha256": "79f517e95231fd508f2edafa6dacd794d2e83dd01df59939135dbd1bff9d71d3",
+ "baseSha256": "642360032446c2fb5546a9d0bfec6b192b47f45caf3ce567938f7707dca43d37",
  "pageCount": 1,
  "pages": [
   {
@@ -77,17 +77,6 @@
     433.23,
     103.54
    ]
-  },
-  "owner_2": {
-   "page": 0,
-   "baseline": 526.15,
-   "size": 14.0,
-   "rect": [
-    -26.25,
-    511.68,
-    193.75,
-    531.17
-   ]
   }
  },
  "docx": {
@@ -97,8 +86,7 @@
    "QZ3ZQ": "owner",
    "QZ4ZQ": "consultant",
    "QZ5ZQ": "contractor",
-   "QZ6ZQ": "location",
-   "QZ7ZQ": "owner_2"
+   "QZ6ZQ": "location"
   }
  },
  "build": {

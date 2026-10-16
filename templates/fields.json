@@ -46,6 +46,19 @@
       "optional": true
     },
     {
+      "key": "bank_project_number",
+      "label": "Project No / FAB ID (loan no.)",
+      "labelAr": "رقم القرض / FAB ID",
+      "type": "text",
+      "dir": "ltr",
+      "group": "identification",
+      "scope": "shared",
+      "maxLength": 60,
+      "optional": true,
+      "placeholder": "e.g. 12345678/01/000001",
+      "help": "The bank's (FAB) project / loan number printed on the bank papers. Not the Project ID or the municipality project number."
+    },
+    {
       "key": "date",
       "label": "Document date",
       "labelAr": "التاريخ",
