@@ -3650,7 +3650,7 @@
   {
    "definition": {
     "key": "bank-cur-checklist",
-    "version": 2,
+    "version": 3,
     "status": "verified",
     "name": "Current Payment Checklist",
     "nameAr": "قائمة تدقيق الدفعة الدورية",
@@ -3734,10 +3734,10 @@
    },
    "layout": {
     "key": "bank-cur-checklist",
-    "version": 2,
+    "version": 3,
     "format": "docx",
     "sourceSha256": "9814f87f36474ec3ebf9138681c5eb227a011533f086bab79859bdb14335fa89",
-    "baseSha256": "3b0d5760078fb3c899a56a36e173ce2ad7878c5489187db6fa5cc4b04c69f735",
+    "baseSha256": "e706bf8aaaca8beabf62b9a99f8f9af790107248acfcde50d004cf9afd7d00af",
     "pageCount": 1,
     "pages": [
      {
@@ -3751,9 +3751,9 @@
       "baseline": 85.2,
       "size": 10,
       "rect": [
-       300.78,
+       36.08,
        73.04,
-       500.78,
+       171.08,
        90.95
       ]
      },
@@ -3762,9 +3762,9 @@
       "baseline": 85.2,
       "size": 10,
       "rect": [
-       97.88,
+       271.93,
        73.04,
-       297.88,
+       471.93,
        90.95
       ]
      },
@@ -3773,9 +3773,9 @@
       "baseline": 107.9,
       "size": 10,
       "rect": [
-       315.19,
+       45.49,
        95.74,
-       515.19,
+       185.49,
        113.65
       ]
      },
@@ -3784,9 +3784,9 @@
       "baseline": 107.9,
       "size": 10,
       "rect": [
-       109.85,
+       283.9,
        95.74,
-       309.85,
+       483.9,
        113.65
       ]
      },
@@ -3795,9 +3795,9 @@
       "baseline": 130.6,
       "size": 10,
       "rect": [
-       93.73,
+       267.78,
        118.44,
-       293.73,
+       467.78,
        136.35
       ]
      }
@@ -3813,7 +3813,7 @@
     },
     "build": {
      "engine": "LibreOffice 24.2.7.2 420(Build:2)",
-     "layoutDiff": 0.00002
+     "layoutDiff": 0
     }
    }
   },
@@ -4132,7 +4132,7 @@
   {
    "definition": {
     "key": "bank-cur-report",
-    "version": 2,
+    "version": 3,
     "status": "verified",
     "name": "Work Progress Report (Current Payment)",
     "nameAr": "تقرير اعتماد إنجاز الأعمال – دفعة دورية",
@@ -4272,10 +4272,10 @@
    },
    "layout": {
     "key": "bank-cur-report",
-    "version": 2,
+    "version": 3,
     "format": "docx",
     "sourceSha256": "70237182e22f69cb24aaa5a2655bfc97434954217afce0071d11e05972765689",
-    "baseSha256": "726f326bf99e112e498988389641a5a82bb61eb380c997d4b4aea2a52f8beb8d",
+    "baseSha256": "8b7eb2ba5b2fa5a618b68302433e7206cb9ee3b23d08ae6c8e107d0555265bbc",
     "pageCount": 4,
     "pages": [
      {
@@ -4301,9 +4301,9 @@
       "baseline": 105.95,
       "size": 10,
       "rect": [
-       406.3,
+       36,
        97.25,
-       574.7,
+       204.5,
        122.75
       ]
      },
@@ -4312,9 +4312,9 @@
       "baseline": 112.45,
       "size": 10,
       "rect": [
-       137,
+       310.7,
        97.25,
-       300,
+       473.7,
        122.75
       ]
      },
@@ -4323,9 +4323,9 @@
       "baseline": 137.95,
       "size": 10,
       "rect": [
-       406.3,
+       36,
        122.75,
-       574.7,
+       204.5,
        148.25
       ]
      },
@@ -4334,9 +4334,9 @@
       "baseline": 137.95,
       "size": 10,
       "rect": [
-       137,
+       310.7,
        122.75,
-       300,
+       473.7,
        148.25
       ]
      },
@@ -4345,9 +4345,9 @@
       "baseline": 180.65,
       "size": 10,
       "rect": [
-       137,
+       310.7,
        164.15,
-       300,
+       473.7,
        192.35
       ]
      },
@@ -4356,9 +4356,9 @@
       "baseline": 235.7,
       "size": 14,
       "rect": [
-       406.3,
+       36,
        217.85,
-       574.7,
+       204.5,
        243.35
       ]
      },
@@ -4367,9 +4367,9 @@
       "baseline": 235.7,
       "size": 14,
       "rect": [
-       137,
+       310.7,
        217.85,
-       300,
+       473.7,
        243.35
       ]
      },
@@ -4378,9 +4378,9 @@
       "baseline": 284.05,
       "size": 10,
       "rect": [
-       137,
+       36,
        268.85,
-       574.7,
+       473.7,
        294.35
       ]
      },
@@ -5620,7 +5620,7 @@
   {
    "definition": {
     "key": "bank-fin-checklist",
-    "version": 2,
+    "version": 3,
     "status": "verified",
     "name": "Final Payment Checklist",
     "nameAr": "قائمة تدقيق الدفعة النهائية",
@@ -5704,10 +5704,10 @@
    },
    "layout": {
     "key": "bank-fin-checklist",
-    "version": 2,
+    "version": 3,
     "format": "docx",
     "sourceSha256": "792a1217c3e082e79b214570957bdc0d2daef5bf416e0699761cab82997c7520",
-    "baseSha256": "d521c8db4c3a5ef0b6d886bc87f10f12d802978b6c0bf7d9d142bd5b5d8b532d",
+    "baseSha256": "3c7945705f0526696f3cd51a9cfc0555ffa8f9cff5e7da02c14dc93c31772eba",
     "pageCount": 1,
     "pages": [
      {
@@ -5721,7 +5721,7 @@
       "baseline": 78.15,
       "size": 8,
       "rect": [
-       2.21,
+       42.21,
        69.02,
        202.21,
        81.88
@@ -5743,7 +5743,7 @@
       "baseline": 98,
       "size": 10,
       "rect": [
-       14.24,
+       49.24,
        85.84,
        214.24,
        103.75
@@ -7084,7 +7084,7 @@
   {
    "definition": {
     "key": "bank-fin-initial-receipt-report",
-    "version": 2,
+    "version": 3,
     "status": "verified",
     "name": "Initial Handover Inspection Report",
     "nameAr": "تقرير محضر استلام ابتدائي",
@@ -7182,10 +7182,10 @@
    },
    "layout": {
     "key": "bank-fin-initial-receipt-report",
-    "version": 2,
+    "version": 3,
     "format": "docx",
     "sourceSha256": "694043b963a8a8dcb31a9cff1a12271749e2a1576ca92e646b2680ec14780f6e",
-    "baseSha256": "ac81ff312d526190a6aa88d9b24bff59f6cd5047935ccd9d284b3a33b279dcbe",
+    "baseSha256": "1c3d619ad41410f0213db3c9d18a9e1bbc6a681dfab6e56603310cfbe1be2c64",
     "pageCount": 1,
     "pages": [
      {
@@ -8953,7 +8953,7 @@
   {
    "definition": {
     "key": "bank-fin-report",
-    "version": 2,
+    "version": 3,
     "status": "verified",
     "name": "Work Progress Report (Final Payment)",
     "nameAr": "تقرير اعتماد إنجاز الأعمال – دفعة نهائية",
@@ -9093,10 +9093,10 @@
    },
    "layout": {
     "key": "bank-fin-report",
-    "version": 2,
+    "version": 3,
     "format": "docx",
     "sourceSha256": "59265f87559f55c0a800eb5a683a7cc282cd67316ac72d32d1bdc1287939340c",
-    "baseSha256": "2892fd896b932b1d8dab8d79fd2634db82019548e9dc0b09f2a37348dfde9cb4",
+    "baseSha256": "5ae62ab99c49c3a2251054a4319cff471bee54edf18c9d8ab3d3f173f14bb698",
     "pageCount": 1,
     "pages": [
      {
@@ -9110,9 +9110,9 @@
       "baseline": 105.95,
       "size": 10,
       "rect": [
-       406.3,
+       36,
        97.25,
-       574.7,
+       204.5,
        122.75
       ]
      },
@@ -9121,9 +9121,9 @@
       "baseline": 113.2,
       "size": 9,
       "rect": [
-       137,
+       310.7,
        97.25,
-       300,
+       473.7,
        122.75
       ]
      },
@@ -9132,9 +9132,9 @@
       "baseline": 137.95,
       "size": 10,
       "rect": [
-       406.3,
+       36,
        122.75,
-       574.7,
+       204.5,
        148.25
       ]
      },
@@ -9143,9 +9143,9 @@
       "baseline": 137.95,
       "size": 10,
       "rect": [
-       137,
+       310.7,
        122.75,
-       300,
+       473.7,
        148.25
       ]
      },
@@ -9154,9 +9154,9 @@
       "baseline": 182.5,
       "size": 12,
       "rect": [
-       137,
+       310.7,
        164.15,
-       300,
+       473.7,
        192.35
       ]
      },
@@ -9165,9 +9165,9 @@
       "baseline": 235.7,
       "size": 14,
       "rect": [
-       406.3,
+       36,
        217.85,
-       574.7,
+       204.5,
        243.35
       ]
      },
@@ -9176,9 +9176,9 @@
       "baseline": 235.65,
       "size": 14,
       "rect": [
-       137,
+       310.7,
        217.85,
-       300,
+       473.7,
        243.35
       ]
      },
@@ -9187,9 +9187,9 @@
       "baseline": 285.9,
       "size": 12,
       "rect": [
-       137,
+       36,
        268.85,
-       574.7,
+       473.7,
        294.35
       ]
      },

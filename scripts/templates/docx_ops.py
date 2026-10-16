@@ -998,13 +998,12 @@ class DocxSanitizer:
     def fix_table_direction(self):
         """Lay tables out like Word in right-to-left documents.
 
-        Word draws a table without w:bidiVisual left-to-right even in a right-to-left
-        section; LibreOffice mirrors it (labels end up on the wrong side of the PDF).
-        An explicit w:bidiVisual="0" means the same to Word and stops the mirroring.
+        Word draws a table without w:bidiVisual left-to-right; LibreOffice mirrors such a
+        table when it holds right-to-left paragraphs or sits in a right-to-left section
+        (labels end up on the wrong side of the PDF). An explicit w:bidiVisual="0" means
+        the same to Word and stops the mirroring.
         """
         doc = self.tree("word/document.xml").getroot()
-        if not any(s.find(w("bidi")) is not None for s in doc.iter(w("sectPr"))):
-            return
         before = {w(t) for t in ("tblStyle", "tblpPr", "tblOverlap")}
         for tblpr in doc.iter(w("tblPr")):
             if tblpr.find(w("bidiVisual")) is not None:

@@ -1,9 +1,9 @@
 {
  "key": "bank-cur-checklist",
- "version": 2,
+ "version": 3,
  "format": "docx",
  "sourceSha256": "9814f87f36474ec3ebf9138681c5eb227a011533f086bab79859bdb14335fa89",
- "baseSha256": "3b0d5760078fb3c899a56a36e173ce2ad7878c5489187db6fa5cc4b04c69f735",
+ "baseSha256": "e706bf8aaaca8beabf62b9a99f8f9af790107248acfcde50d004cf9afd7d00af",
  "pageCount": 1,
  "pages": [
   {
@@ -17,9 +17,9 @@
    "baseline": 85.2,
    "size": 10.0,
    "rect": [
-    300.78,
+    36.08,
     73.04,
-    500.78,
+    171.08,
     90.95
    ]
   },
@@ -28,9 +28,9 @@
    "baseline": 85.2,
    "size": 10.0,
    "rect": [
-    97.88,
+    271.93,
     73.04,
-    297.88,
+    471.93,
     90.95
    ]
   },
@@ -39,9 +39,9 @@
    "baseline": 107.9,
    "size": 10.0,
    "rect": [
-    315.19,
+    45.49,
     95.74,
-    515.19,
+    185.49,
     113.65
    ]
   },
@@ -50,9 +50,9 @@
    "baseline": 107.9,
    "size": 10.0,
    "rect": [
-    109.85,
+    283.9,
     95.74,
-    309.85,
+    483.9,
     113.65
    ]
   },
@@ -61,9 +61,9 @@
    "baseline": 130.6,
    "size": 10.0,
    "rect": [
-    93.73,
+    267.78,
     118.44,
-    293.73,
+    467.78,
     136.35
    ]
   }
@@ -79,6 +79,6 @@
  },
  "build": {
   "engine": "LibreOffice 24.2.7.2 420(Build:2)",
-  "layoutDiff": 2e-05
+  "layoutDiff": 0.0
  }
 }

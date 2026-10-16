@@ -1,6 +1,6 @@
 {
   "key": "bank-cur-checklist",
-  "version": 2,
+  "version": 3,
   "status": "verified",
   "name": "Current Payment Checklist",
   "nameAr": "قائمة تدقيق الدفعة الدورية",
@@ -13,7 +13,7 @@
   "slots": {
     "project_id": {
       "kind": "inline",
-      "width": 200
+      "width": 135
     },
     "owner": {
       "kind": "inline",
@@ -21,7 +21,7 @@
     },
     "contractor": {
       "kind": "inline",
-      "width": 200
+      "width": 140
     },
     "consultant": {
       "kind": "inline",

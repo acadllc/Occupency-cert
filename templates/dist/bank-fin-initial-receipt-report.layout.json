@@ -1,9 +1,9 @@
 {
  "key": "bank-fin-initial-receipt-report",
- "version": 2,
+ "version": 3,
  "format": "docx",
  "sourceSha256": "694043b963a8a8dcb31a9cff1a12271749e2a1576ca92e646b2680ec14780f6e",
- "baseSha256": "ac81ff312d526190a6aa88d9b24bff59f6cd5047935ccd9d284b3a33b279dcbe",
+ "baseSha256": "1c3d619ad41410f0213db3c9d18a9e1bbc6a681dfab6e56603310cfbe1be2c64",
  "pageCount": 1,
  "pages": [
   {
