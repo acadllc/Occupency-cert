@@ -1,9 +1,9 @@
 {
  "key": "bld-mun-fire-detectors-spec",
- "version": 1,
+ "version": 2,
  "format": "docx",
  "sourceSha256": "83a6295e20e2eddc971509dd499602b5b6eb8cedba38f2948c19210b7fb3f1c1",
- "baseSha256": "54120d30eb296ec5e93354bcad29b3c0fc7cea543afacc36796df88203aebd0d",
+ "baseSha256": "af53625a7ee6ef9d96fcce7fa3c5079d875e5c74f84d87fb52ee574f8ba2dcfb",
  "pageCount": 1,
  "pages": [
   {
@@ -11,7 +11,17 @@
    "height": 841.89
   }
  ],
- "slots": {},
+ "slots": {
+  "stamp": {
+   "page": 0,
+   "rect": [
+    440,
+    690,
+    540,
+    790
+   ]
+  }
+ },
  "docx": {
   "markers": {}
  },

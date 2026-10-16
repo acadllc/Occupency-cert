@@ -1,6 +1,6 @@
 {
  "key": "bld-mun-project-description",
- "version": 1,
+ "version": 2,
  "format": "pdf",
  "sourceSha256": "16bb2c4a16d550923a48920eaaf8435e2ac82c4b7331cc18895615922081a069",
  "baseSha256": "71071332794872b9fd3db344f8ddcbcef0aa3fbc7dda0ac182c5e45798001eed",
@@ -127,22 +127,22 @@
   "consultant_ack_en": {
    "page": 0,
    "rect": [
-    96,
-    406.5,
-    173,
-    418
+    95,
+    406.0,
+    174,
+    417.5
    ],
-   "baseline": 415.8
+   "baseline": 415.3
   },
   "consultant_ack": {
    "page": 0,
    "rect": [
-    357,
-    402.5,
-    485,
-    414
+    356,
+    403.0,
+    486,
+    414.5
    ],
-   "baseline": 411.8
+   "baseline": 412.3
   },
   "p2_project_id": {
    "page": 1,
@@ -211,6 +211,33 @@
     460.0,
     487.0,
     524.0
+   ]
+  },
+  "stamp_p1": {
+   "page": 0,
+   "rect": [
+    270.0,
+    764.0,
+    330.0,
+    824.0
+   ]
+  },
+  "stamp_p2": {
+   "page": 1,
+   "rect": [
+    270.0,
+    764.0,
+    330.0,
+    824.0
+   ]
+  },
+  "stamp_p3": {
+   "page": 2,
+   "rect": [
+    270.0,
+    764.0,
+    330.0,
+    824.0
    ]
   }
  },

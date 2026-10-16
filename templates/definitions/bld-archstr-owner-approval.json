@@ -1,6 +1,6 @@
 {
   "key": "bld-archstr-owner-approval",
-  "version": 1,
+  "version": 2,
   "status": "verified",
   "name": "Owner Approval of the Proposed Design (Form 24)",
   "nameAr": "موافقة المالك على التصميم أو التعديل المقترح",
@@ -154,6 +154,26 @@
         268
       ],
       "baseline": 265.8
+    },
+    "stamp_p1": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        270.0,
+        764.0,
+        330.0,
+        824.0
+      ]
+    },
+    "stamp_p2": {
+      "kind": "rect",
+      "page": 1,
+      "rect": [
+        270.0,
+        764.0,
+        330.0,
+        824.0
+      ]
     }
   },
   "fields": [
@@ -351,6 +371,20 @@
       ],
       "dir": "ltr",
       "align": "left"
+    },
+    {
+      "slot": "stamp_p1",
+      "stamp": {
+        "size": 60,
+        "anchor": "center"
+      }
+    },
+    {
+      "slot": "stamp_p2",
+      "stamp": {
+        "size": 60,
+        "anchor": "center"
+      }
     }
   ]
 }

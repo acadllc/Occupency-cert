@@ -1,9 +1,9 @@
 {
  "key": "bld-mun-estidama-submittal",
- "version": 1,
+ "version": 2,
  "format": "pdf",
  "sourceSha256": "50f176369f7ba1aad9f9ec6e5457e7336f2c1326508fccc17778b61b7982bb84",
- "baseSha256": "8984a690b4221f4fced225ad337ad932e67c7702c3eebfe1c167af0d94c12455",
+ "baseSha256": "b0dfddab4c2263542da13f373538f0380e7b197cf10601d51e884145d3979420",
  "pageCount": 1,
  "pages": [
   {
@@ -24,27 +24,27 @@
   "owner": {
    "page": 0,
    "rect": [
-    243,
+    252,
     77,
-    531,
+    470,
     105
    ]
   },
   "area": {
    "page": 0,
    "rect": [
-    533,
+    473,
     77,
-    652,
+    586,
     105
    ]
   },
   "sector": {
    "page": 0,
    "rect": [
-    654,
+    589,
     77,
-    730,
+    729,
     105
    ]
   },
@@ -53,17 +53,17 @@
    "rect": [
     732,
     77,
-    829,
+    819,
     105
    ]
   },
   "stamp": {
    "page": 0,
    "rect": [
-    310.0,
-    395.0,
-    430.0,
-    515.0
+    305.5,
+    389.5,
+    430.5,
+    514.5
    ]
   }
  },

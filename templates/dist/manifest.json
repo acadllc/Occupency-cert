@@ -339,13 +339,13 @@
   },
   {
    "key": "bld-arch-owner-approval",
-   "version": 1,
+   "version": 2,
    "baseSha256": "e8f3858dba005c5092eaf699cd05becd4e1f588522b4c1f9cca24cc0dd6d7a69",
    "pageCount": 2
   },
   {
    "key": "bld-arch-project-description",
-   "version": 1,
+   "version": 2,
    "baseSha256": "71071332794872b9fd3db344f8ddcbcef0aa3fbc7dda0ac182c5e45798001eed",
    "pageCount": 4
   },
@@ -363,13 +363,13 @@
   },
   {
    "key": "bld-archstr-owner-approval",
-   "version": 1,
+   "version": 2,
    "baseSha256": "e8f3858dba005c5092eaf699cd05becd4e1f588522b4c1f9cca24cc0dd6d7a69",
    "pageCount": 2
   },
   {
    "key": "bld-archstr-project-description",
-   "version": 1,
+   "version": 2,
    "baseSha256": "71071332794872b9fd3db344f8ddcbcef0aa3fbc7dda0ac182c5e45798001eed",
    "pageCount": 4
   },
@@ -381,14 +381,14 @@
   },
   {
    "key": "bld-mun-estidama-f5",
-   "version": 1,
+   "version": 2,
    "baseSha256": "22815157a976a3fef528fe6c57f28698db7f42dda1df1eff2fbba3d78671695b",
    "pageCount": 1
   },
   {
    "key": "bld-mun-estidama-submittal",
-   "version": 1,
-   "baseSha256": "8984a690b4221f4fced225ad337ad932e67c7702c3eebfe1c167af0d94c12455",
+   "version": 2,
+   "baseSha256": "b0dfddab4c2263542da13f373538f0380e7b197cf10601d51e884145d3979420",
    "pageCount": 1
   },
   {
@@ -399,8 +399,8 @@
   },
   {
    "key": "bld-mun-fire-detectors-spec",
-   "version": 1,
-   "baseSha256": "54120d30eb296ec5e93354bcad29b3c0fc7cea543afacc36796df88203aebd0d",
+   "version": 2,
+   "baseSha256": "af53625a7ee6ef9d96fcce7fa3c5079d875e5c74f84d87fb52ee574f8ba2dcfb",
    "pageCount": 1
   },
   {
@@ -411,13 +411,13 @@
   },
   {
    "key": "bld-mun-owner-approval",
-   "version": 1,
+   "version": 2,
    "baseSha256": "e8f3858dba005c5092eaf699cd05becd4e1f588522b4c1f9cca24cc0dd6d7a69",
    "pageCount": 2
   },
   {
    "key": "bld-mun-project-description",
-   "version": 1,
+   "version": 2,
    "baseSha256": "71071332794872b9fd3db344f8ddcbcef0aa3fbc7dda0ac182c5e45798001eed",
    "pageCount": 4
   },

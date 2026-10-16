@@ -2,8 +2,19 @@
   "_comment": "Fixed company values used by every template. Change only for legitimate legal-name updates, then rebuild and redeploy.",
   "consultant_name_en": "ACAD Engineering Consultants - One Person Company LLC",
   "consultant_name_ar": "اكاد للاستشارات الهندسيه - شركة الشخص الواحد ذ.م.م",
+  "consultant_short_en": "ACAD Engineering Consultants",
+  "consultant_short_ar": "اكاد للاستشارات الهندسية",
+  "consultant_brand_en": "ACAD",
   "cities": [
-    { "value": "al_ain", "en": "Al Ain", "ar": "العين" },
-    { "value": "abu_dhabi", "en": "Abu Dhabi", "ar": "أبوظبي" }
+    {
+      "value": "al_ain",
+      "en": "Al Ain",
+      "ar": "العين"
+    },
+    {
+      "value": "abu_dhabi",
+      "en": "Abu Dhabi",
+      "ar": "أبوظبي"
+    }
   ]
 }
