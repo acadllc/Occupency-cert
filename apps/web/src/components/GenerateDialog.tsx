@@ -12,10 +12,13 @@ const entryOf = (key: string) => catalog.templates.find((t) => t.definition.key 
 const nameOf = (key: string) => entryOf(key)?.definition.name ?? key;
 const PREF_KEY = 'acad-generation-prefs';
 
+// Only the output format is remembered. The stamp starts ticked every time: documents that
+// must not carry it (e.g. bank papers) have no stamp position, so an unticked box left over
+// from an earlier generation would silently drop the stamp from ACAD's own papers.
 function loadPrefs(): { format: OutputFormat; stamp: boolean } {
   try {
     const p = JSON.parse(localStorage.getItem(PREF_KEY) ?? '{}');
-    return { format: p.format === 'docx' ? 'docx' : 'pdf', stamp: p.stamp !== false };
+    return { format: p.format === 'docx' ? 'docx' : 'pdf', stamp: true };
   } catch {
     return { format: 'pdf', stamp: true };
   }
@@ -45,7 +48,7 @@ export function GenerateDialog({ project, templateKeys, onClose }: { project: Pr
     setStarted(true);
     setPhase('running');
     try {
-      localStorage.setItem(PREF_KEY, JSON.stringify(prefs));
+      localStorage.setItem(PREF_KEY, JSON.stringify({ format: prefs.format }));
     } catch {
       /* ignore */
     }
