@@ -1,6 +1,6 @@
 {
   "key": "bld-mun-fire-detectors-spec",
-  "version": 1,
+  "version": 2,
   "status": "verified",
   "name": "Smoke Detector Technical Specifications (DMT)",
   "nameAr": "المواصفات والشروط الفنية لتركيب جهاز إنذار الحريق (كاشف الدخان)",
@@ -10,6 +10,25 @@
   "source": "private/building/أوراق تقديم البلدية/كواشف الحريق 2.docx",
   "format": "docx",
   "sanitize": [],
-  "slots": {},
-  "fields": []
+  "slots": {
+    "stamp": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        440,
+        690,
+        540,
+        790
+      ]
+    }
+  },
+  "fields": [
+    {
+      "slot": "stamp",
+      "stamp": {
+        "size": 100,
+        "anchor": "center"
+      }
+    }
+  ]
 }

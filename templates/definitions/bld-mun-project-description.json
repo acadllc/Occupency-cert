@@ -1,6 +1,6 @@
 {
   "key": "bld-mun-project-description",
-  "version": 1,
+  "version": 2,
   "status": "verified",
   "name": "Project Description and Undertakings",
   "nameAr": "نموذج وصف المشروع والتعهدات للقسائم السكنية",
@@ -126,23 +126,23 @@
       "kind": "rect",
       "page": 0,
       "rect": [
-        96,
-        406.5,
-        173,
-        418
+        95,
+        406.0,
+        174,
+        417.5
       ],
-      "baseline": 415.8
+      "baseline": 415.3
     },
     "consultant_ack": {
       "kind": "rect",
       "page": 0,
       "rect": [
-        357,
-        402.5,
-        485,
-        414
+        356,
+        403.0,
+        486,
+        414.5
       ],
-      "baseline": 411.8
+      "baseline": 412.3
     },
     "p2_project_id": {
       "kind": "rect",
@@ -218,6 +218,36 @@
         460.0,
         487.0,
         524.0
+      ]
+    },
+    "stamp_p1": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        270.0,
+        764.0,
+        330.0,
+        824.0
+      ]
+    },
+    "stamp_p2": {
+      "kind": "rect",
+      "page": 1,
+      "rect": [
+        270.0,
+        764.0,
+        330.0,
+        824.0
+      ]
+    },
+    "stamp_p3": {
+      "kind": "rect",
+      "page": 2,
+      "rect": [
+        270.0,
+        764.0,
+        330.0,
+        824.0
       ]
     }
   },
@@ -374,9 +404,9 @@
     },
     {
       "slot": "consultant_ack_en",
-      "value": "$consultant_name_en",
+      "value": "$consultant_brand_en",
       "font": "sans",
-      "size": 8,
+      "size": 10,
       "minSize": 6,
       "padding": [
         1,
@@ -385,13 +415,14 @@
         0
       ],
       "dir": "ltr",
-      "align": "center"
+      "align": "center",
+      "knockout": true
     },
     {
       "slot": "consultant_ack",
-      "value": "$consultant_name_ar",
+      "value": "$consultant_short_ar",
       "font": "sans",
-      "size": 9,
+      "size": 10,
       "minSize": 6,
       "padding": [
         1,
@@ -400,7 +431,8 @@
         0
       ],
       "dir": "rtl",
-      "align": "center"
+      "align": "center",
+      "knockout": true
     },
     {
       "slot": "p2_project_id",
@@ -496,6 +528,27 @@
       "slot": "stamp",
       "stamp": {
         "size": 64,
+        "anchor": "center"
+      }
+    },
+    {
+      "slot": "stamp_p1",
+      "stamp": {
+        "size": 60,
+        "anchor": "center"
+      }
+    },
+    {
+      "slot": "stamp_p2",
+      "stamp": {
+        "size": 60,
+        "anchor": "center"
+      }
+    },
+    {
+      "slot": "stamp_p3",
+      "stamp": {
+        "size": 60,
         "anchor": "center"
       }
     }

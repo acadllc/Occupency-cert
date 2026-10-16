@@ -1,6 +1,6 @@
 {
  "key": "bld-mun-owner-approval",
- "version": 1,
+ "version": 2,
  "format": "pdf",
  "sourceSha256": "095473cc8d2556e48c0640ce09d54bff35c92635b90c011a7e76368641ec213a",
  "baseSha256": "e8f3858dba005c5092eaf699cd05becd4e1f588522b4c1f9cca24cc0dd6d7a69",
@@ -145,6 +145,24 @@
     268
    ],
    "baseline": 265.8
+  },
+  "stamp_p1": {
+   "page": 0,
+   "rect": [
+    270.0,
+    764.0,
+    330.0,
+    824.0
+   ]
+  },
+  "stamp_p2": {
+   "page": 1,
+   "rect": [
+    270.0,
+    764.0,
+    330.0,
+    824.0
+   ]
   }
  },
  "docx": null,

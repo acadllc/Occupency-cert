@@ -61,6 +61,11 @@ export interface FieldRegistry {
 export interface CompanyConfig {
   consultant_name_en: string;
   consultant_name_ar: string;
+  /** Short trade name for narrow spaces on forms */
+  consultant_short_en?: string;
+  consultant_short_ar?: string;
+  /** Brand name alone (very short dotted spaces) */
+  consultant_brand_en?: string;
   cities: FieldOption[];
 }
 

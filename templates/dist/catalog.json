@@ -11886,7 +11886,7 @@
   {
    "definition": {
     "key": "bld-arch-owner-approval",
-    "version": 1,
+    "version": 2,
     "status": "verified",
     "name": "Owner Approval of the Proposed Design (Form 24)",
     "nameAr": "موافقة المالك على التصميم أو التعديل المقترح",
@@ -12091,12 +12091,26 @@
       ],
       "dir": "ltr",
       "align": "left"
+     },
+     {
+      "slot": "stamp_p1",
+      "stamp": {
+       "size": 60,
+       "anchor": "center"
+      }
+     },
+     {
+      "slot": "stamp_p2",
+      "stamp": {
+       "size": 60,
+       "anchor": "center"
+      }
      }
     ]
    },
    "layout": {
     "key": "bld-arch-owner-approval",
-    "version": 1,
+    "version": 2,
     "format": "pdf",
     "sourceSha256": "095473cc8d2556e48c0640ce09d54bff35c92635b90c011a7e76368641ec213a",
     "baseSha256": "e8f3858dba005c5092eaf699cd05becd4e1f588522b4c1f9cca24cc0dd6d7a69",
@@ -12241,6 +12255,24 @@
        268
       ],
       "baseline": 265.8
+     },
+     "stamp_p1": {
+      "page": 0,
+      "rect": [
+       270,
+       764,
+       330,
+       824
+      ]
+     },
+     "stamp_p2": {
+      "page": 1,
+      "rect": [
+       270,
+       764,
+       330,
+       824
+      ]
      }
     },
     "docx": null,
@@ -12252,7 +12284,7 @@
   {
    "definition": {
     "key": "bld-arch-project-description",
-    "version": 1,
+    "version": 2,
     "status": "verified",
     "name": "Project Description and Undertakings",
     "nameAr": "نموذج وصف المشروع والتعهدات للقسائم السكنية",
@@ -12415,9 +12447,9 @@
      },
      {
       "slot": "consultant_ack_en",
-      "value": "$consultant_name_en",
+      "value": "$consultant_brand_en",
       "font": "sans",
-      "size": 8,
+      "size": 10,
       "minSize": 6,
       "padding": [
        1,
@@ -12426,13 +12458,14 @@
        0
       ],
       "dir": "ltr",
-      "align": "center"
+      "align": "center",
+      "knockout": true
      },
      {
       "slot": "consultant_ack",
-      "value": "$consultant_name_ar",
+      "value": "$consultant_short_ar",
       "font": "sans",
-      "size": 9,
+      "size": 10,
       "minSize": 6,
       "padding": [
        1,
@@ -12441,7 +12474,8 @@
        0
       ],
       "dir": "rtl",
-      "align": "center"
+      "align": "center",
+      "knockout": true
      },
      {
       "slot": "p2_project_id",
@@ -12539,12 +12573,33 @@
        "size": 64,
        "anchor": "center"
       }
+     },
+     {
+      "slot": "stamp_p1",
+      "stamp": {
+       "size": 60,
+       "anchor": "center"
+      }
+     },
+     {
+      "slot": "stamp_p2",
+      "stamp": {
+       "size": 60,
+       "anchor": "center"
+      }
+     },
+     {
+      "slot": "stamp_p3",
+      "stamp": {
+       "size": 60,
+       "anchor": "center"
+      }
      }
     ]
    },
    "layout": {
     "key": "bld-arch-project-description",
-    "version": 1,
+    "version": 2,
     "format": "pdf",
     "sourceSha256": "16bb2c4a16d550923a48920eaaf8435e2ac82c4b7331cc18895615922081a069",
     "baseSha256": "71071332794872b9fd3db344f8ddcbcef0aa3fbc7dda0ac182c5e45798001eed",
@@ -12671,22 +12726,22 @@
      "consultant_ack_en": {
       "page": 0,
       "rect": [
-       96,
-       406.5,
-       173,
-       418
+       95,
+       406,
+       174,
+       417.5
       ],
-      "baseline": 415.8
+      "baseline": 415.3
      },
      "consultant_ack": {
       "page": 0,
       "rect": [
-       357,
-       402.5,
-       485,
-       414
+       356,
+       403,
+       486,
+       414.5
       ],
-      "baseline": 411.8
+      "baseline": 412.3
      },
      "p2_project_id": {
       "page": 1,
@@ -12755,6 +12810,33 @@
        460,
        487,
        524
+      ]
+     },
+     "stamp_p1": {
+      "page": 0,
+      "rect": [
+       270,
+       764,
+       330,
+       824
+      ]
+     },
+     "stamp_p2": {
+      "page": 1,
+      "rect": [
+       270,
+       764,
+       330,
+       824
+      ]
+     },
+     "stamp_p3": {
+      "page": 2,
+      "rect": [
+       270,
+       764,
+       330,
+       824
       ]
      }
     },
@@ -13317,7 +13399,7 @@
   {
    "definition": {
     "key": "bld-archstr-owner-approval",
-    "version": 1,
+    "version": 2,
     "status": "verified",
     "name": "Owner Approval of the Proposed Design (Form 24)",
     "nameAr": "موافقة المالك على التصميم أو التعديل المقترح",
@@ -13522,12 +13604,26 @@
       ],
       "dir": "ltr",
       "align": "left"
+     },
+     {
+      "slot": "stamp_p1",
+      "stamp": {
+       "size": 60,
+       "anchor": "center"
+      }
+     },
+     {
+      "slot": "stamp_p2",
+      "stamp": {
+       "size": 60,
+       "anchor": "center"
+      }
      }
     ]
    },
    "layout": {
     "key": "bld-archstr-owner-approval",
-    "version": 1,
+    "version": 2,
     "format": "pdf",
     "sourceSha256": "095473cc8d2556e48c0640ce09d54bff35c92635b90c011a7e76368641ec213a",
     "baseSha256": "e8f3858dba005c5092eaf699cd05becd4e1f588522b4c1f9cca24cc0dd6d7a69",
@@ -13672,6 +13768,24 @@
        268
       ],
       "baseline": 265.8
+     },
+     "stamp_p1": {
+      "page": 0,
+      "rect": [
+       270,
+       764,
+       330,
+       824
+      ]
+     },
+     "stamp_p2": {
+      "page": 1,
+      "rect": [
+       270,
+       764,
+       330,
+       824
+      ]
      }
     },
     "docx": null,
@@ -13683,7 +13797,7 @@
   {
    "definition": {
     "key": "bld-archstr-project-description",
-    "version": 1,
+    "version": 2,
     "status": "verified",
     "name": "Project Description and Undertakings",
     "nameAr": "نموذج وصف المشروع والتعهدات للقسائم السكنية",
@@ -13846,9 +13960,9 @@
      },
      {
       "slot": "consultant_ack_en",
-      "value": "$consultant_name_en",
+      "value": "$consultant_brand_en",
       "font": "sans",
-      "size": 8,
+      "size": 10,
       "minSize": 6,
       "padding": [
        1,
@@ -13857,13 +13971,14 @@
        0
       ],
       "dir": "ltr",
-      "align": "center"
+      "align": "center",
+      "knockout": true
      },
      {
       "slot": "consultant_ack",
-      "value": "$consultant_name_ar",
+      "value": "$consultant_short_ar",
       "font": "sans",
-      "size": 9,
+      "size": 10,
       "minSize": 6,
       "padding": [
        1,
@@ -13872,7 +13987,8 @@
        0
       ],
       "dir": "rtl",
-      "align": "center"
+      "align": "center",
+      "knockout": true
      },
      {
       "slot": "p2_project_id",
@@ -13970,12 +14086,33 @@
        "size": 64,
        "anchor": "center"
       }
+     },
+     {
+      "slot": "stamp_p1",
+      "stamp": {
+       "size": 60,
+       "anchor": "center"
+      }
+     },
+     {
+      "slot": "stamp_p2",
+      "stamp": {
+       "size": 60,
+       "anchor": "center"
+      }
+     },
+     {
+      "slot": "stamp_p3",
+      "stamp": {
+       "size": 60,
+       "anchor": "center"
+      }
      }
     ]
    },
    "layout": {
     "key": "bld-archstr-project-description",
-    "version": 1,
+    "version": 2,
     "format": "pdf",
     "sourceSha256": "16bb2c4a16d550923a48920eaaf8435e2ac82c4b7331cc18895615922081a069",
     "baseSha256": "71071332794872b9fd3db344f8ddcbcef0aa3fbc7dda0ac182c5e45798001eed",
@@ -14102,22 +14239,22 @@
      "consultant_ack_en": {
       "page": 0,
       "rect": [
-       96,
-       406.5,
-       173,
-       418
+       95,
+       406,
+       174,
+       417.5
       ],
-      "baseline": 415.8
+      "baseline": 415.3
      },
      "consultant_ack": {
       "page": 0,
       "rect": [
-       357,
-       402.5,
-       485,
-       414
+       356,
+       403,
+       486,
+       414.5
       ],
-      "baseline": 411.8
+      "baseline": 412.3
      },
      "p2_project_id": {
       "page": 1,
@@ -14186,6 +14323,33 @@
        460,
        487,
        524
+      ]
+     },
+     "stamp_p1": {
+      "page": 0,
+      "rect": [
+       270,
+       764,
+       330,
+       824
+      ]
+     },
+     "stamp_p2": {
+      "page": 1,
+      "rect": [
+       270,
+       764,
+       330,
+       824
+      ]
+     },
+     "stamp_p3": {
+      "page": 2,
+      "rect": [
+       270,
+       764,
+       330,
+       824
       ]
      }
     },
@@ -14393,7 +14557,7 @@
   {
    "definition": {
     "key": "bld-mun-estidama-f5",
-    "version": 1,
+    "version": 2,
     "status": "verified",
     "name": "Estidama 1P Villa & Building Temporary Program (F5)",
     "nameAr": "برنامج استدامة المؤقت للفلل والمباني (F5)",
@@ -14487,7 +14651,7 @@
      {
       "slot": "stamp",
       "stamp": {
-       "size": 70,
+       "size": 140,
        "anchor": "center"
       }
      }
@@ -14495,7 +14659,7 @@
    },
    "layout": {
     "key": "bld-mun-estidama-f5",
-    "version": 1,
+    "version": 2,
     "format": "pdf",
     "sourceSha256": "e86bbd62ee532bf71859f54590ae512cf1f4b1dd4f4eb0c5b84682ef5dd583cf",
     "baseSha256": "22815157a976a3fef528fe6c57f28698db7f42dda1df1eff2fbba3d78671695b",
@@ -14555,10 +14719,10 @@
      "stamp": {
       "page": 0,
       "rect": [
-       735,
-       1073,
-       805,
-       1143
+       580,
+       905,
+       720,
+       1045
       ]
      }
     },
@@ -14571,7 +14735,7 @@
   {
    "definition": {
     "key": "bld-mun-estidama-submittal",
-    "version": 1,
+    "version": 2,
     "status": "verified",
     "name": "Estidama Simplified Submittal Template (Form 2)",
     "nameAr": "نموذج تقديم استدامة المبسط – Form 2",
@@ -14665,7 +14829,7 @@
      {
       "slot": "stamp",
       "stamp": {
-       "size": 120,
+       "size": 125,
        "anchor": "center"
       }
      }
@@ -14673,10 +14837,10 @@
    },
    "layout": {
     "key": "bld-mun-estidama-submittal",
-    "version": 1,
+    "version": 2,
     "format": "pdf",
     "sourceSha256": "50f176369f7ba1aad9f9ec6e5457e7336f2c1326508fccc17778b61b7982bb84",
-    "baseSha256": "8984a690b4221f4fced225ad337ad932e67c7702c3eebfe1c167af0d94c12455",
+    "baseSha256": "b0dfddab4c2263542da13f373538f0380e7b197cf10601d51e884145d3979420",
     "pageCount": 1,
     "pages": [
      {
@@ -14697,27 +14861,27 @@
      "owner": {
       "page": 0,
       "rect": [
-       243,
+       252,
        77,
-       531,
+       470,
        105
       ]
      },
      "area": {
       "page": 0,
       "rect": [
-       533,
+       473,
        77,
-       652,
+       586,
        105
       ]
      },
      "sector": {
       "page": 0,
       "rect": [
-       654,
+       589,
        77,
-       730,
+       729,
        105
       ]
      },
@@ -14726,17 +14890,17 @@
       "rect": [
        732,
        77,
-       829,
+       819,
        105
       ]
      },
      "stamp": {
       "page": 0,
       "rect": [
-       310,
-       395,
-       430,
-       515
+       305.5,
+       389.5,
+       430.5,
+       514.5
       ]
      }
     },
@@ -14944,7 +15108,7 @@
   {
    "definition": {
     "key": "bld-mun-fire-detectors-spec",
-    "version": 1,
+    "version": 2,
     "status": "verified",
     "name": "Smoke Detector Technical Specifications (DMT)",
     "nameAr": "المواصفات والشروط الفنية لتركيب جهاز إنذار الحريق (كاشف الدخان)",
@@ -14953,14 +15117,22 @@
     "projectType": "building",
     "source": "private/building/أوراق تقديم البلدية/كواشف الحريق 2.docx",
     "format": "docx",
-    "fields": []
+    "fields": [
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 100,
+       "anchor": "center"
+      }
+     }
+    ]
    },
    "layout": {
     "key": "bld-mun-fire-detectors-spec",
-    "version": 1,
+    "version": 2,
     "format": "docx",
     "sourceSha256": "83a6295e20e2eddc971509dd499602b5b6eb8cedba38f2948c19210b7fb3f1c1",
-    "baseSha256": "54120d30eb296ec5e93354bcad29b3c0fc7cea543afacc36796df88203aebd0d",
+    "baseSha256": "af53625a7ee6ef9d96fcce7fa3c5079d875e5c74f84d87fb52ee574f8ba2dcfb",
     "pageCount": 1,
     "pages": [
      {
@@ -14968,7 +15140,17 @@
       "height": 841.89
      }
     ],
-    "slots": {},
+    "slots": {
+     "stamp": {
+      "page": 0,
+      "rect": [
+       440,
+       690,
+       540,
+       790
+      ]
+     }
+    },
     "docx": {
      "markers": {}
     },
@@ -15176,7 +15358,7 @@
   {
    "definition": {
     "key": "bld-mun-owner-approval",
-    "version": 1,
+    "version": 2,
     "status": "verified",
     "name": "Owner Approval of the Proposed Design (Form 24)",
     "nameAr": "موافقة المالك على التصميم أو التعديل المقترح",
@@ -15381,12 +15563,26 @@
       ],
       "dir": "ltr",
       "align": "left"
+     },
+     {
+      "slot": "stamp_p1",
+      "stamp": {
+       "size": 60,
+       "anchor": "center"
+      }
+     },
+     {
+      "slot": "stamp_p2",
+      "stamp": {
+       "size": 60,
+       "anchor": "center"
+      }
      }
     ]
    },
    "layout": {
     "key": "bld-mun-owner-approval",
-    "version": 1,
+    "version": 2,
     "format": "pdf",
     "sourceSha256": "095473cc8d2556e48c0640ce09d54bff35c92635b90c011a7e76368641ec213a",
     "baseSha256": "e8f3858dba005c5092eaf699cd05becd4e1f588522b4c1f9cca24cc0dd6d7a69",
@@ -15531,6 +15727,24 @@
        268
       ],
       "baseline": 265.8
+     },
+     "stamp_p1": {
+      "page": 0,
+      "rect": [
+       270,
+       764,
+       330,
+       824
+      ]
+     },
+     "stamp_p2": {
+      "page": 1,
+      "rect": [
+       270,
+       764,
+       330,
+       824
+      ]
      }
     },
     "docx": null,
@@ -15542,7 +15756,7 @@
   {
    "definition": {
     "key": "bld-mun-project-description",
-    "version": 1,
+    "version": 2,
     "status": "verified",
     "name": "Project Description and Undertakings",
     "nameAr": "نموذج وصف المشروع والتعهدات للقسائم السكنية",
@@ -15705,9 +15919,9 @@
      },
      {
       "slot": "consultant_ack_en",
-      "value": "$consultant_name_en",
+      "value": "$consultant_brand_en",
       "font": "sans",
-      "size": 8,
+      "size": 10,
       "minSize": 6,
       "padding": [
        1,
@@ -15716,13 +15930,14 @@
        0
       ],
       "dir": "ltr",
-      "align": "center"
+      "align": "center",
+      "knockout": true
      },
      {
       "slot": "consultant_ack",
-      "value": "$consultant_name_ar",
+      "value": "$consultant_short_ar",
       "font": "sans",
-      "size": 9,
+      "size": 10,
       "minSize": 6,
       "padding": [
        1,
@@ -15731,7 +15946,8 @@
        0
       ],
       "dir": "rtl",
-      "align": "center"
+      "align": "center",
+      "knockout": true
      },
      {
       "slot": "p2_project_id",
@@ -15829,12 +16045,33 @@
        "size": 64,
        "anchor": "center"
       }
+     },
+     {
+      "slot": "stamp_p1",
+      "stamp": {
+       "size": 60,
+       "anchor": "center"
+      }
+     },
+     {
+      "slot": "stamp_p2",
+      "stamp": {
+       "size": 60,
+       "anchor": "center"
+      }
+     },
+     {
+      "slot": "stamp_p3",
+      "stamp": {
+       "size": 60,
+       "anchor": "center"
+      }
      }
     ]
    },
    "layout": {
     "key": "bld-mun-project-description",
-    "version": 1,
+    "version": 2,
     "format": "pdf",
     "sourceSha256": "16bb2c4a16d550923a48920eaaf8435e2ac82c4b7331cc18895615922081a069",
     "baseSha256": "71071332794872b9fd3db344f8ddcbcef0aa3fbc7dda0ac182c5e45798001eed",
@@ -15961,22 +16198,22 @@
      "consultant_ack_en": {
       "page": 0,
       "rect": [
-       96,
-       406.5,
-       173,
-       418
+       95,
+       406,
+       174,
+       417.5
       ],
-      "baseline": 415.8
+      "baseline": 415.3
      },
      "consultant_ack": {
       "page": 0,
       "rect": [
-       357,
-       402.5,
-       485,
-       414
+       356,
+       403,
+       486,
+       414.5
       ],
-      "baseline": 411.8
+      "baseline": 412.3
      },
      "p2_project_id": {
       "page": 1,
@@ -16045,6 +16282,33 @@
        460,
        487,
        524
+      ]
+     },
+     "stamp_p1": {
+      "page": 0,
+      "rect": [
+       270,
+       764,
+       330,
+       824
+      ]
+     },
+     "stamp_p2": {
+      "page": 1,
+      "rect": [
+       270,
+       764,
+       330,
+       824
+      ]
+     },
+     "stamp_p3": {
+      "page": 2,
+      "rect": [
+       270,
+       764,
+       330,
+       824
       ]
      }
     },
