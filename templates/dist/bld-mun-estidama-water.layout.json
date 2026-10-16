@@ -1,0 +1,96 @@
+{
+ "key": "bld-mun-estidama-water",
+ "version": 1,
+ "format": "docx",
+ "sourceSha256": "de1e09750e4ac8e2ffe6126ca030a04303ebcd29a8b582b00e9555c8bc5f4053",
+ "baseSha256": "9d0603c75cf0846eb9990759860eb24b1ca0a7861945921dc25f969576d446a3",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 595.3,
+   "height": 841.89
+  }
+ ],
+ "slots": {
+  "owner": {
+   "page": 0,
+   "baseline": 193.35,
+   "size": 12.0,
+   "rect": [
+    84.3,
+    178.15,
+    361.4,
+    206.05
+   ]
+  },
+  "project": {
+   "page": 0,
+   "baseline": 221.2,
+   "size": 12.0,
+   "rect": [
+    84.3,
+    206.05,
+    361.4,
+    233.85
+   ]
+  },
+  "location": {
+   "page": 0,
+   "baseline": 249.05,
+   "size": 12.0,
+   "rect": [
+    84.3,
+    233.85,
+    361.4,
+    261.75
+   ]
+  },
+  "plot": {
+   "page": 0,
+   "baseline": 276.9,
+   "size": 12.0,
+   "rect": [
+    84.3,
+    261.75,
+    361.4,
+    289.55
+   ]
+  },
+  "date": {
+   "page": 0,
+   "baseline": 110.8,
+   "size": 12.0,
+   "rect": [
+    376.28,
+    98.11,
+    486.28,
+    115.39
+   ]
+  },
+  "stamp": {
+   "page": 0,
+   "baseline": 613.85,
+   "size": 1.0,
+   "rect": [
+    109.74,
+    610.96,
+    119.74,
+    616.07
+   ]
+  }
+ },
+ "docx": {
+  "markers": {
+   "QZ1ZQ": "date",
+   "QZ2ZQ": "owner",
+   "QZ3ZQ": "project",
+   "QZ4ZQ": "location",
+   "QZ5ZQ": "plot",
+   "QZ6ZQ": "stamp"
+  }
+ },
+ "build": {
+  "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+  "layoutDiff": 0.0
+ }
+}

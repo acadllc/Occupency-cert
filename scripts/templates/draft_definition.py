@@ -67,6 +67,7 @@ for labels, slot, value in [
     (["اسم المقاول"], "contractor", "contractor_name_ar"),
     (["موقع المشروع"], "location", "@project_location_ar"),
     (["مكونات المشروع"], "components", "project_components_ar"),
+    (["المشروع"], "project", "project_description_ar"),
     (["الرقم المرجعي", "رقم القسيمه", "رقم القسيمة"], "plot", "plot_number"),
     (["تاريخ بداية العمل", "تاريخ أمر المباشرة", "تاريخ أمر المباشره", "تاريخ امر المباشره"], "start_date", "project_start_date"),
     (["تاريخ نهاية العمل", "تاريخ إنتهاء المشروعحسب العقد", "تاريخ إنتهاء المشروع حسب العقد"], "end_date", "project_end_date"),

@@ -1,0 +1,120 @@
+{
+  "key": "bld-mun-smoke-detectors",
+  "version": 1,
+  "status": "verified",
+  "name": "Smoke Detectors Undertaking",
+  "nameAr": "تعهد كواشف الدخان",
+  "description": "Smoke Detectors Undertaking (تعهد كواشف الدخان).",
+  "category": "أوراق تقديم البلدية",
+  "projectType": "building",
+  "source": "private/building/أوراق تقديم البلدية/تعهد كواشف الدخان 1.docx",
+  "format": "docx",
+  "sanitize": "private",
+  "slots": {
+    "owner": {
+      "kind": "cell"
+    },
+    "project": {
+      "kind": "cell"
+    },
+    "location": {
+      "kind": "cell"
+    },
+    "plot": {
+      "kind": "cell"
+    },
+    "date": {
+      "kind": "inline",
+      "width": 110
+    },
+    "stamp": {
+      "kind": "inline",
+      "width": 10
+    }
+  },
+  "fields": [
+    {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "project",
+      "value": "project_description_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "slot": "stamp",
+      "stamp": {
+        "size": 105,
+        "anchor": "marker",
+        "dx": 28,
+        "dy": 58
+      }
+    }
+  ]
+}

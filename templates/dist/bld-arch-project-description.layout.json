@@ -1,0 +1,221 @@
+{
+ "key": "bld-arch-project-description",
+ "version": 1,
+ "format": "pdf",
+ "sourceSha256": "16bb2c4a16d550923a48920eaaf8435e2ac82c4b7331cc18895615922081a069",
+ "baseSha256": "71071332794872b9fd3db344f8ddcbcef0aa3fbc7dda0ac182c5e45798001eed",
+ "pageCount": 4,
+ "pages": [
+  {
+   "width": 595.44,
+   "height": 841.68
+  },
+  {
+   "width": 595.44,
+   "height": 841.68
+  },
+  {
+   "width": 595.44,
+   "height": 841.68
+  },
+  {
+   "width": 595.44,
+   "height": 841.68
+  }
+ ],
+ "slots": {
+  "date": {
+   "page": 0,
+   "rect": [
+    182,
+    110.1,
+    316,
+    121.6
+   ],
+   "baseline": 119.4
+  },
+  "owner": {
+   "page": 0,
+   "rect": [
+    401,
+    110.1,
+    523,
+    121.6
+   ],
+   "baseline": 119.4
+  },
+  "consultant": {
+   "page": 0,
+   "rect": [
+    231,
+    122.8,
+    498,
+    134.3
+   ],
+   "baseline": 132.1
+  },
+  "land_usage": {
+   "page": 0,
+   "rect": [
+    226,
+    172.6,
+    321,
+    184.1
+   ],
+   "baseline": 181.9
+  },
+  "project_id": {
+   "page": 0,
+   "rect": [
+    423,
+    172.6,
+    530,
+    184.1
+   ],
+   "baseline": 181.9
+  },
+  "plot": {
+   "page": 0,
+   "rect": [
+    231,
+    185.7,
+    271,
+    197.2
+   ],
+   "baseline": 195.0
+  },
+  "sector": {
+   "page": 0,
+   "rect": [
+    333,
+    185.7,
+    412,
+    197.2
+   ],
+   "baseline": 195.0
+  },
+  "area": {
+   "page": 0,
+   "rect": [
+    467,
+    185.7,
+    544,
+    197.2
+   ],
+   "baseline": 195.0
+  },
+  "proposed_en": {
+   "page": 0,
+   "rect": [
+    26,
+    294.5,
+    293,
+    306
+   ],
+   "baseline": 303.8
+  },
+  "proposed": {
+   "page": 0,
+   "rect": [
+    310,
+    294.5,
+    569,
+    306
+   ],
+   "baseline": 303.8
+  },
+  "consultant_ack_en": {
+   "page": 0,
+   "rect": [
+    96,
+    406.5,
+    173,
+    418
+   ],
+   "baseline": 415.8
+  },
+  "consultant_ack": {
+   "page": 0,
+   "rect": [
+    357,
+    402.5,
+    485,
+    414
+   ],
+   "baseline": 411.8
+  },
+  "p2_project_id": {
+   "page": 1,
+   "rect": [
+    67,
+    140.5,
+    145,
+    152
+   ],
+   "baseline": 149.8
+  },
+  "p2_date": {
+   "page": 1,
+   "rect": [
+    198,
+    140.5,
+    296,
+    152
+   ],
+   "baseline": 149.8
+  },
+  "p4_project_id": {
+   "page": 3,
+   "rect": [
+    111,
+    490.5,
+    188,
+    502
+   ],
+   "baseline": 499.8
+  },
+  "p4_date": {
+   "page": 3,
+   "rect": [
+    242,
+    490.5,
+    335,
+    502
+   ],
+   "baseline": 499.8
+  },
+  "p4_owner_project_id": {
+   "page": 3,
+   "rect": [
+    51,
+    579.5,
+    176,
+    591
+   ],
+   "baseline": 588.8
+  },
+  "p4_owner_date": {
+   "page": 3,
+   "rect": [
+    258,
+    579.5,
+    344,
+    591
+   ],
+   "baseline": 588.8
+  },
+  "stamp": {
+   "page": 3,
+   "rect": [
+    423.0,
+    460.0,
+    487.0,
+    524.0
+   ]
+  }
+ },
+ "docx": null,
+ "build": {
+  "engine": "pymupdf 1.28.2"
+ }
+}

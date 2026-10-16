@@ -1,0 +1,22 @@
+{
+ "key": "bld-mun-fire-detectors-spec",
+ "version": 1,
+ "format": "docx",
+ "sourceSha256": "83a6295e20e2eddc971509dd499602b5b6eb8cedba38f2948c19210b7fb3f1c1",
+ "baseSha256": "54120d30eb296ec5e93354bcad29b3c0fc7cea543afacc36796df88203aebd0d",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 595.3,
+   "height": 841.89
+  }
+ ],
+ "slots": {},
+ "docx": {
+  "markers": {}
+ },
+ "build": {
+  "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+  "layoutDiff": 0.0
+ }
+}

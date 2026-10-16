@@ -1,0 +1,154 @@
+{
+ "key": "bld-arch-owner-approval",
+ "version": 1,
+ "format": "pdf",
+ "sourceSha256": "095473cc8d2556e48c0640ce09d54bff35c92635b90c011a7e76368641ec213a",
+ "baseSha256": "e8f3858dba005c5092eaf699cd05becd4e1f588522b4c1f9cca24cc0dd6d7a69",
+ "pageCount": 2,
+ "pages": [
+  {
+   "width": 595.44,
+   "height": 841.68
+  },
+  {
+   "width": 595.44,
+   "height": 841.68
+  }
+ ],
+ "slots": {
+  "project_id": {
+   "page": 0,
+   "rect": [
+    424,
+    81.2,
+    531,
+    92.7
+   ],
+   "baseline": 90.5
+  },
+  "date_day": {
+   "page": 0,
+   "rect": [
+    492,
+    95.2,
+    549,
+    106.7
+   ],
+   "baseline": 104.5
+  },
+  "date_month": {
+   "page": 0,
+   "rect": [
+    463,
+    95.2,
+    490,
+    106.7
+   ],
+   "baseline": 104.5
+  },
+  "date_year": {
+   "page": 0,
+   "rect": [
+    424,
+    95.2,
+    461,
+    106.7
+   ],
+   "baseline": 104.5
+  },
+  "description": {
+   "page": 0,
+   "rect": [
+    108,
+    114.6,
+    520,
+    126.1
+   ],
+   "baseline": 123.9
+  },
+  "owner": {
+   "page": 0,
+   "rect": [
+    96,
+    141.0,
+    522,
+    152.5
+   ],
+   "baseline": 150.3
+  },
+  "developer": {
+   "page": 0,
+   "rect": [
+    138,
+    159.4,
+    493,
+    170.9
+   ],
+   "baseline": 168.7
+  },
+  "area": {
+   "page": 0,
+   "rect": [
+    51,
+    177.9,
+    173,
+    189.4
+   ],
+   "baseline": 187.2
+  },
+  "sector": {
+   "page": 0,
+   "rect": [
+    248,
+    177.9,
+    298,
+    189.4
+   ],
+   "baseline": 187.2
+  },
+  "plot": {
+   "page": 0,
+   "rect": [
+    387,
+    177.9,
+    519,
+    189.4
+   ],
+   "baseline": 187.2
+  },
+  "land_usage": {
+   "page": 0,
+   "rect": [
+    93,
+    198.2,
+    512,
+    209.7
+   ],
+   "baseline": 207.5
+  },
+  "consultant": {
+   "page": 0,
+   "rect": [
+    300,
+    244.5,
+    440,
+    256
+   ],
+   "baseline": 253.8
+  },
+  "consultant_en": {
+   "page": 0,
+   "rect": [
+    91,
+    256.5,
+    290,
+    268
+   ],
+   "baseline": 265.8
+  }
+ },
+ "docx": null,
+ "build": {
+  "engine": "pymupdf 1.28.2"
+ }
+}

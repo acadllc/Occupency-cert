@@ -4,19 +4,19 @@
   {
    "key": "archive-drawings-explanation",
    "version": 3,
-   "baseSha256": "5b5a8b6d69e6d2a40ac669cd2fec87d23c4e19cd4ad1a5f91db9b3fcdb13a7f1",
+   "baseSha256": "46656b9387b6b50f148ad973f654656ba57a6ae6b015cd455b64decb7560dcc9",
    "pageCount": 1
   },
   {
    "key": "bank-com-complete-per-drawings",
    "version": 2,
-   "baseSha256": "52385784fcf92f941c68c91578bceceb4f54741fcb607eb4338a6ddba33135be",
+   "baseSha256": "aa7e1ceeee183f8cca6fe0b2b5278775c48f68b8c56c0bdd87acc7a553249e3c",
    "pageCount": 1
   },
   {
    "key": "bank-com-completion-project",
    "version": 2,
-   "baseSha256": "7b3c48c801a2ed2904de3c64e3ee89e619dc05312c401c516bf293479006e7d9",
+   "baseSha256": "d644f986cbf1cd817a699d28412c5327b7adb24c11eee9b9bf609e697e24abf7",
    "pageCount": 1
   },
   {
@@ -40,79 +40,79 @@
   {
    "key": "bank-com-progress",
    "version": 2,
-   "baseSha256": "70c58130d59257d2478046aa1875e50ec9ce88a440dd9b1dc7c673970f0aab45",
+   "baseSha256": "6490edb40c9094b27edf63250f9c42a8d8f9cf0e8947e58e4271f47c95534317",
    "pageCount": 1
   },
   {
    "key": "bank-com-start-order",
    "version": 2,
-   "baseSha256": "2dc4997c684c02e020be57aced4a46df679a24b1d666cbc6806528cb79bdc876",
+   "baseSha256": "0899342c69304845e059ba04b2fa79f5ad5e115d4ed4d8afa037f626d860f28c",
    "pageCount": 1
   },
   {
    "key": "bank-com-undertaking",
    "version": 2,
-   "baseSha256": "bc7633984a072e683a4da8b185f5bb93b5666e21d66a95b03f62dbcc476c2728",
+   "baseSha256": "7096df74a431168d0ebf7de8789838c826d24cae701323514aba8abf35c29583",
    "pageCount": 1
   },
   {
    "key": "bank-cov-ac",
    "version": 2,
-   "baseSha256": "2adb1e97436055adc09894b38e78621281869d45db7c03be77f1a706c03fc489",
+   "baseSha256": "082cd4d22d825e29a6ffd8dea7605f456c9c503b1ffea1900ecbfdc76696a832",
    "pageCount": 1
   },
   {
    "key": "bank-cov-arch",
    "version": 2,
-   "baseSha256": "db3d9ae37c34fed6dbdd53e1d6d2690844d2dcc4aac105a509161e71be68178c",
+   "baseSha256": "060d01468f33962db8f7c93a6e7cd7639935f3e65c306d0283b946258d7e9fbf",
    "pageCount": 1
   },
   {
    "key": "bank-cov-boq",
    "version": 2,
-   "baseSha256": "e8b5cbe958d47ab3af32de95957b1d9a7992fa5fd375594ef623dbe656e6ceab",
+   "baseSha256": "f7ce33c4e206531cc9d1ffd708dd6eb09bcc41bce457c4a63250ba3e34a5971f",
    "pageCount": 1
   },
   {
    "key": "bank-cov-drain",
    "version": 2,
-   "baseSha256": "779f2d650223c25b10183c2f79992f5546291e50526dfc12ac6926183710e4be",
+   "baseSha256": "cfb062e611857ebb287b91c25dcd897dbdcfa95109e5647a817fcbc9f965f329",
    "pageCount": 1
   },
   {
    "key": "bank-cov-elec",
    "version": 2,
-   "baseSha256": "a93c1f8c87174f31af193facc7e2cba86f5b687c84a2c1b4ddbc82411a191f71",
+   "baseSha256": "453c3d9c42635104aa941f65cd6e6117ce514981e379f77c9d896aaab35e771b",
    "pageCount": 1
   },
   {
    "key": "bank-cov-materials",
    "version": 2,
-   "baseSha256": "e336ee6998cb63ceed54bd4b340325973cb93da73af1d07d2d5f9728268dc14a",
+   "baseSha256": "7eff9a1f9e4c90a32cad7ae95553dfbeafb39a54843ee2fcfb4816c2f24a1b0a",
    "pageCount": 1
   },
   {
    "key": "bank-cov-specs",
    "version": 2,
-   "baseSha256": "3e444732b003cd8d0a2c2dae9a0aa56057c3e18d3606e03298eb6ea53d060f3b",
+   "baseSha256": "ebbeab0865074ee7a63e3d17c673937139d4ab8f20c912b3f03a728698a0f51c",
    "pageCount": 1
   },
   {
    "key": "bank-cov-str",
    "version": 2,
-   "baseSha256": "5bdc93b3842bfd903eeabe88267cdf1b1c2aa519766a86bbaa8204b42fd80660",
+   "baseSha256": "3cbc381e2b1eea38ba542627ae0dce6cf4ba42e838aef24061c402712108277a",
    "pageCount": 1
   },
   {
    "key": "bank-cov-tel",
    "version": 2,
-   "baseSha256": "9c3679eb867b42c742cff425f2451b9eb96efef70ff1a81441833b547d01465d",
+   "baseSha256": "c0c725757e74919136b04cefe68b0140c8cfdb5a456c7c3b049f71dba493dc25",
    "pageCount": 1
   },
   {
    "key": "bank-cov-ws",
    "version": 2,
-   "baseSha256": "732812d9e93655d8ebf3d806f06c4563c9a717a17dc7143cef82d826f1b403cd",
+   "baseSha256": "a95f38365f993143fd45b921b293b274f24dbfef3c55aa20d1736995bd55e25d",
    "pageCount": 1
   },
   {
@@ -142,25 +142,25 @@
   {
    "key": "bank-ext-form",
    "version": 2,
-   "baseSha256": "f18a81d5b7e9d406341c52808d851ff28741e6b8c10aee893f2a7a167d9316a6",
+   "baseSha256": "f3b65b0cedc83f7bac41fa6120c6a97a6705dc98d3e04213b9563b63bafcafe2",
    "pageCount": 1
   },
   {
    "key": "bank-ext-signature",
    "version": 2,
-   "baseSha256": "f43f27a95b15b220fabdf1823ce7535b070d3619141b42787e231b02350bd0f1",
+   "baseSha256": "d011d0cc02687aa15cc0742297fb748304d6a2d3d8e8377a991442cf7a61fe19",
    "pageCount": 1
   },
   {
    "key": "bank-fin-as-is",
    "version": 2,
-   "baseSha256": "8d66e99cffa1c502f5b036647635736a16ee6ee5f33d4d3a81d4a6a03d257918",
+   "baseSha256": "1939500dc5ead03a79de250594ed006a998196211def4dc10d6265e77f365157",
    "pageCount": 1
   },
   {
    "key": "bank-fin-bank-handover",
    "version": 2,
-   "baseSha256": "a02ebdfdb4995787fc5a430e437c5f8306b106935e2f583fc918a908e1d61ca9",
+   "baseSha256": "facf4955e900372ea311663edd7cebde6f8895a2df581be456ae5272a30dc168",
    "pageCount": 1
   },
   {
@@ -172,7 +172,7 @@
   {
    "key": "bank-fin-contractor-completion",
    "version": 2,
-   "baseSha256": "d89a514302757b00b162cef9634c81162dfc6bfbfe5ec3f310b67cf15d9765e3",
+   "baseSha256": "4ec76d936c36dea404cedd2d9ed4590d50d3c786884d797c251dca639940c83b",
    "pageCount": 1
   },
   {
@@ -184,25 +184,25 @@
   {
    "key": "bank-fin-contractor-snags",
    "version": 2,
-   "baseSha256": "c2ea4076c25654cee4feffe1c0638a8a519bd576e9aa54a1557fa264a1f3e9c4",
+   "baseSha256": "509fba8e34c7d0f379235fd92bd8dd2fbc7e36791e4607a712bf19d582084689",
    "pageCount": 1
   },
   {
    "key": "bank-fin-delay-waiver",
    "version": 2,
-   "baseSha256": "c84acc6f5b5f92627e5baa5033d0af1573cb34d61477c825a8655f321cd3c9aa",
+   "baseSha256": "0b53de930d208026131565ba5844d58a029f81a8b25d6f265be093eac9259dbc",
    "pageCount": 1
   },
   {
    "key": "bank-fin-final-receipt",
    "version": 2,
-   "baseSha256": "28f84e18c99e2bd8fe43c1ffddd5e8774a87879bb75c74cf9c3728c9c3da113e",
+   "baseSha256": "83d6a00f1a99687d9318c1752f574dacb71a0531e03ef16f268d751c92cc15c2",
    "pageCount": 1
   },
   {
    "key": "bank-fin-handover-items",
    "version": 2,
-   "baseSha256": "ef6b8ecbec0cc6141bbd6c6a4491eb72710b994c133798c66ec4a4b8f69d5dc0",
+   "baseSha256": "b686e7dad347642772d992271146a7e4cbc278547eb872d03066ce5bbdea45fe",
    "pageCount": 1
   },
   {
@@ -214,49 +214,49 @@
   {
    "key": "bank-fin-initial-receipt",
    "version": 2,
-   "baseSha256": "f063294cef08270f4fb1ef878dcc09eebbd76c12529a00b22963196cc53e22d9",
+   "baseSha256": "7b4a9465c755feeaa50f3b3f93656a588c3969ac4f9e52926773b485e50aa7b5",
    "pageCount": 1
   },
   {
    "key": "bank-fin-initial-settlement",
    "version": 2,
-   "baseSha256": "27bc5e27bd502807bb4fd1c740937ab053872efaf7d30a01b9ea382b7af409cc",
+   "baseSha256": "a0a6882e1453b75590ceee2cc55fa30a6be7cf24667f524d8ea928f142b01c44",
    "pageCount": 1
   },
   {
    "key": "bank-fin-installments",
    "version": 2,
-   "baseSha256": "a6eef996cf31a6bd0d291f9f993e3857405d5244127d2a7bb08d3e3ad91b3a64",
+   "baseSha256": "642360032446c2fb5546a9d0bfec6b192b47f45caf3ce567938f7707dca43d37",
    "pageCount": 1
   },
   {
    "key": "bank-fin-insulation",
    "version": 2,
-   "baseSha256": "1e28c38f9d44f8b6ff9cd8c77d31f91da41b6e346f329727c03a53993d0fcf19",
+   "baseSha256": "0929eebb9a28f250d34f7bff0818c4f93714385637d3caae3696a6fff4e752a8",
    "pageCount": 1
   },
   {
    "key": "bank-fin-maintenance-payment",
    "version": 2,
-   "baseSha256": "1166e065fbf3c12f772a0e22c33100cf57c30671299c186ef18a2ca525403980",
+   "baseSha256": "ccfd03a18f6d0d1a4f6348a18d6a2dbbc882dedb65713a19b6551878473b5d3c",
    "pageCount": 1
   },
   {
    "key": "bank-fin-maintenance-undertaking",
    "version": 2,
-   "baseSha256": "450367de388ae90a42e9bc6bc794b75cd2502989a5b8a55c58216fe6495fa977",
+   "baseSha256": "60968613dbbcf18b7b7db376524afccff5c16a041c7dc6e73687006b6619342a",
    "pageCount": 1
   },
   {
    "key": "bank-fin-maintenance-waiver",
    "version": 2,
-   "baseSha256": "445fd910d6ed4a4aabf57f70fe11d16b6a74a2abe0a52e69c5786df33647134c",
+   "baseSha256": "d7c7911f3fd15acb9cc1aa222530e8f832f509d0d4ed009cf1899af83695f282",
    "pageCount": 1
   },
   {
    "key": "bank-fin-owner-signature",
    "version": 2,
-   "baseSha256": "d81f0606a090080db3d031e1b1339357ebd50b2bd1619fba690f4dfd2757ef66",
+   "baseSha256": "2b68fe0a76b8b4d1d2e30a1d175b17a4882277ab47404fc720fb9f6fb2fc7c3c",
    "pageCount": 1
   },
   {
@@ -268,19 +268,19 @@
   {
    "key": "bank-fin-snag-list",
    "version": 2,
-   "baseSha256": "c8ab5c8805b13cb50dc8dc2d410a54002802cac2bf4e4a8aa32f5a91bb0153e2",
+   "baseSha256": "323f14be4a57a290b31972ed62d89f8b798fe2d5572db4be9a9fc182085c4049",
    "pageCount": 2
   },
   {
    "key": "bank-fin-snags-closure",
    "version": 2,
-   "baseSha256": "56fbc3b4170b20a8e7b154cfbdbb6fc78355f42accfe2d530a93635ac8ef08b2",
+   "baseSha256": "dd85896678b487ddc384e89d8fa1fd78d43d5c7e701dbc632873ebd672db5a59",
    "pageCount": 1
   },
   {
    "key": "bank-fin-snags-undertaking",
    "version": 2,
-   "baseSha256": "814932c330181b1d18492d07512da0308eff82fa562048ab0b58c0fc3b3e75eb",
+   "baseSha256": "1e6d3021c6124cb83fc2ab289e99270af022a7d0f1d7fa2b42c506482c699471",
    "pageCount": 1
   },
   {
@@ -292,7 +292,7 @@
   {
    "key": "bank-fin-utilities",
    "version": 2,
-   "baseSha256": "ffc09b404a71b309e1cd03c969248c6103f04849bdeb90d561657b6e5f3dd418",
+   "baseSha256": "11a4366fd99af44ae899d3731277d0788fd2a809fd84c1d14fe6e021adce3078",
    "pageCount": 1
   },
   {
@@ -310,7 +310,7 @@
   {
    "key": "bank-ten-new-project",
    "version": 2,
-   "baseSha256": "b660252d74a0e540f0def009b029c59cd9f69946bc0042f203cd0e333d1fb103",
+   "baseSha256": "be5c7123c583541e2c6ea44cfe3fc8dc948404e0ba70ddfcf86d80518274611e",
    "pageCount": 1
   },
   {
@@ -328,14 +328,110 @@
   {
    "key": "bank-ten-tender-form",
    "version": 2,
-   "baseSha256": "977d5678be92b4ec61b611785aa03c7281a83816a88a2b533cd1bc839facb981",
+   "baseSha256": "76a0d4a24c52e209c28c3740fa5399cf00abe3d0a5a7b234b4419bda300ab7aa",
    "pageCount": 3
   },
   {
    "key": "bank-ten-terms",
    "version": 2,
-   "baseSha256": "78eb7e6c7f5c19d4e3511058ea1afe5d7d06b1154a8c01e96701d71d9caaa8a1",
+   "baseSha256": "28ce29ac0b0d0dec696029b37a72eb88ce637f8ea0c6f4407fa6aa9054548a95",
    "pageCount": 8
+  },
+  {
+   "key": "bld-arch-owner-approval",
+   "version": 1,
+   "baseSha256": "e8f3858dba005c5092eaf699cd05becd4e1f588522b4c1f9cca24cc0dd6d7a69",
+   "pageCount": 2
+  },
+  {
+   "key": "bld-arch-project-description",
+   "version": 1,
+   "baseSha256": "71071332794872b9fd3db344f8ddcbcef0aa3fbc7dda0ac182c5e45798001eed",
+   "pageCount": 4
+  },
+  {
+   "key": "bld-archstr-change-request",
+   "version": 1,
+   "baseSha256": "db4a19e82cf0b4581a7fad83972aa46c759a46cf92265f577e79abdca131444c",
+   "pageCount": 1
+  },
+  {
+   "key": "bld-archstr-form14",
+   "version": 1,
+   "baseSha256": "e0f409b3be70c21927f7ed0268b848cec78ab7f9d3f79b5b95a463021da12f89",
+   "pageCount": 1
+  },
+  {
+   "key": "bld-archstr-owner-approval",
+   "version": 1,
+   "baseSha256": "e8f3858dba005c5092eaf699cd05becd4e1f588522b4c1f9cca24cc0dd6d7a69",
+   "pageCount": 2
+  },
+  {
+   "key": "bld-archstr-project-description",
+   "version": 1,
+   "baseSha256": "71071332794872b9fd3db344f8ddcbcef0aa3fbc7dda0ac182c5e45798001eed",
+   "pageCount": 4
+  },
+  {
+   "key": "bld-mun-building-request",
+   "version": 1,
+   "baseSha256": "95af0eb3d8ccbf7ffcec84ede84a45fc0f5e1740e0e07ec78df594c97ef7e55f",
+   "pageCount": 1
+  },
+  {
+   "key": "bld-mun-estidama-f5",
+   "version": 1,
+   "baseSha256": "22815157a976a3fef528fe6c57f28698db7f42dda1df1eff2fbba3d78671695b",
+   "pageCount": 1
+  },
+  {
+   "key": "bld-mun-estidama-submittal",
+   "version": 1,
+   "baseSha256": "8984a690b4221f4fced225ad337ad932e67c7702c3eebfe1c167af0d94c12455",
+   "pageCount": 1
+  },
+  {
+   "key": "bld-mun-estidama-water",
+   "version": 1,
+   "baseSha256": "9d0603c75cf0846eb9990759860eb24b1ca0a7861945921dc25f969576d446a3",
+   "pageCount": 1
+  },
+  {
+   "key": "bld-mun-fire-detectors-spec",
+   "version": 1,
+   "baseSha256": "54120d30eb296ec5e93354bcad29b3c0fc7cea543afacc36796df88203aebd0d",
+   "pageCount": 1
+  },
+  {
+   "key": "bld-mun-no-subdivision",
+   "version": 1,
+   "baseSha256": "63fc2360c5c4b2cb4cb3cc1a38754e8ede9dfbd4cd30e8b6344ebd556148bef7",
+   "pageCount": 1
+  },
+  {
+   "key": "bld-mun-owner-approval",
+   "version": 1,
+   "baseSha256": "e8f3858dba005c5092eaf699cd05becd4e1f588522b4c1f9cca24cc0dd6d7a69",
+   "pageCount": 2
+  },
+  {
+   "key": "bld-mun-project-description",
+   "version": 1,
+   "baseSha256": "71071332794872b9fd3db344f8ddcbcef0aa3fbc7dda0ac182c5e45798001eed",
+   "pageCount": 4
+  },
+  {
+   "key": "bld-mun-smoke-detectors",
+   "version": 1,
+   "baseSha256": "1794ab63e739e8c33d575b3bd6fa9e995704640e867f5de8930b7933eb63c0f0",
+   "pageCount": 1
+  },
+  {
+   "key": "bld-str-form14",
+   "version": 1,
+   "baseSha256": "e0f409b3be70c21927f7ed0268b848cec78ab7f9d3f79b5b95a463021da12f89",
+   "pageCount": 1
   },
   {
    "key": "consultant-authorization",
@@ -346,7 +442,7 @@
   {
    "key": "drainage-inspection-report",
    "version": 2,
-   "baseSha256": "106474f78ae8cba4700193f1c629db8542626f0c6806e81597d56a22118500da",
+   "baseSha256": "0ed4116f3cdce58e711932455b7fa555f48657483c11c726e40417252081c871",
    "pageCount": 1
   },
   {
@@ -370,55 +466,55 @@
   {
    "key": "no-elevators",
    "version": 2,
-   "baseSha256": "910d88dcfd3f63ecef8a1009f7eb8dedadfe51fbb19b7413b2db97a91bda7675",
+   "baseSha256": "3140aa04099cfa8a037172525730a985dcf5f40e841e00c9dfb0e0065462dba9",
    "pageCount": 1
   },
   {
    "key": "no-gas-systems",
    "version": 2,
-   "baseSha256": "a279c86b123d9c1d0ade42e1087ffdb3de04e02d173ed5a0612f7cbe0c7ee6fb",
+   "baseSha256": "16e76e04895a191d451f73874758a78ae8410a36720f070fe709acd51359157f",
    "pageCount": 1
   },
   {
    "key": "no-swimming-pools",
    "version": 2,
-   "baseSha256": "858de6c15ba5855402f03eeb6896e8aa5c7951d1f35328bab897ccfe8458a4a4",
+   "baseSha256": "a7a89aa3c5349b7de69d89b0bb98d8c6945211d9981d97ecf361c4279f215640",
    "pageCount": 1
   },
   {
    "key": "number-of-users",
    "version": 2,
-   "baseSha256": "b3901097d4779337bf3c689fd91e8813fbc20ce546b7337485e44559dfa9e863",
+   "baseSha256": "5f6a61426450241007badcc586b8dd291a909fe9c24eff90eada8e2632db518a",
    "pageCount": 1
   },
   {
    "key": "occupancy-undertaking-str-arch",
    "version": 3,
-   "baseSha256": "3b1f4146b3f1986b138f3286f32487d2462e1560d4fb68c82df7582efd56159a",
+   "baseSha256": "8b16c8850c715c77671107fe1e4ecc6c4a464bc1343186cb192bb4f79dae8f48",
    "pageCount": 1
   },
   {
    "key": "owner-undertaking-cd-renewal",
    "version": 2,
-   "baseSha256": "5205ceaa6fa62f5cd8acf87a6a77826c0da9732ee860f1b708019281354b9b7c",
+   "baseSha256": "67d512a6811f79fa843c37dabe17f053ce482817ea31175f4a59d22d0f35d370",
    "pageCount": 1
   },
   {
    "key": "owner-undertaking-no-sewage-rain-link",
    "version": 2,
-   "baseSha256": "0fba79d81bb3c0790204b673dec3258c29e21bd0ca0fb15022fe2b7217121ecc",
+   "baseSha256": "76cd32b557033b2df4e833a75fa73be215ef40452d6d8491b261a3c17fda3610",
    "pageCount": 1
   },
   {
    "key": "photo-report-mechanical",
    "version": 3,
-   "baseSha256": "f81744a1444ae613a094ecd7ec9cdad157a3676aeb23d5f84b648ba61171c20b",
+   "baseSha256": "f92ccc1e2ba780c557d0ae9af1fefe78a01724b3959aded7ae9b6af03ff56a0f",
    "pageCount": 4
   },
   {
    "key": "photo-report-plumbing",
    "version": 3,
-   "baseSha256": "0367d4d25cd933382ebb40f587f07fb9ba255d2bde519e9c2e531aea5dd31b41",
+   "baseSha256": "356cad4b5c9ece56ffe3fa526d18a769e63225b7a26f3876098b47b40537340d",
    "pageCount": 4
   },
   {
