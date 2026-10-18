@@ -1,6 +1,6 @@
 {
  "key": "bld-arch-project-description",
- "version": 2,
+ "version": 3,
  "format": "pdf",
  "sourceSha256": "16bb2c4a16d550923a48920eaaf8435e2ac82c4b7331cc18895615922081a069",
  "baseSha256": "71071332794872b9fd3db344f8ddcbcef0aa3fbc7dda0ac182c5e45798001eed",
@@ -104,15 +104,15 @@
    ],
    "baseline": 195.0
   },
-  "proposed_en": {
+  "permitted": {
    "page": 0,
    "rect": [
-    26,
-    294.5,
-    293,
-    306
+    309,
+    269.5,
+    569,
+    281
    ],
-   "baseline": 303.8
+   "baseline": 278.8
   },
   "proposed": {
    "page": 0,

@@ -41,7 +41,7 @@ test('full workflow: create, generate, download, history, edit, search', async (
 
   // ---- create a project
   await page.getByRole('link', { name: '＋ New project' }).first().click();
-  await expect(page.getByRole('heading', { name: 'New project' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'New project', level: 1 })).toBeVisible();
 
   // ---- start from documents: site plan + Emirates ID read in the browser together
   await page.getByLabel('Documents to read').setInputFiles([
