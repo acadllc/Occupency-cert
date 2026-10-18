@@ -1,6 +1,6 @@
 {
  "key": "bld-arch-project-description",
- "version": 4,
+ "version": 5,
  "format": "pdf",
  "sourceSha256": "16bb2c4a16d550923a48920eaaf8435e2ac82c4b7331cc18895615922081a069",
  "baseSha256": "fb547f5bf91c9665c6d12e2c7bbb1031cc7d674d5a0c451a93316b737cb260ad",
@@ -122,6 +122,46 @@
     306
    ],
    "baseline": 303.8
+  },
+  "units_before_en": {
+   "page": 0,
+   "rect": [
+    180,
+    357.9,
+    291,
+    369.4
+   ],
+   "baseline": 367.2
+  },
+  "units_before": {
+   "page": 0,
+   "rect": [
+    311,
+    358.7,
+    453,
+    370.2
+   ],
+   "baseline": 368.0
+  },
+  "units_after_en": {
+   "page": 0,
+   "rect": [
+    194,
+    380.2,
+    306,
+    391.7
+   ],
+   "baseline": 389.5
+  },
+  "units_after": {
+   "page": 0,
+   "rect": [
+    310,
+    380.3,
+    441,
+    391.8
+   ],
+   "baseline": 389.6
   },
   "consultant_ack_en": {
    "page": 0,

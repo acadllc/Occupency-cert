@@ -1,6 +1,6 @@
 {
   "key": "bld-mun-project-description",
-  "version": 4,
+  "version": 5,
   "status": "verified",
   "name": "Project Description and Undertakings",
   "nameAr": "نموذج وصف المشروع والتعهدات للقسائم السكنية",
@@ -141,6 +141,50 @@
         306
       ],
       "baseline": 303.8
+    },
+    "units_before_en": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        180,
+        357.9,
+        291,
+        369.4
+      ],
+      "baseline": 367.2
+    },
+    "units_before": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        311,
+        358.7,
+        453,
+        370.2
+      ],
+      "baseline": 368.0
+    },
+    "units_after_en": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        194,
+        380.2,
+        306,
+        391.7
+      ],
+      "baseline": 389.5
+    },
+    "units_after": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        310,
+        380.3,
+        441,
+        391.8
+      ],
+      "baseline": 389.6
     },
     "consultant_ack_en": {
       "kind": "rect",
@@ -423,6 +467,66 @@
       ],
       "dir": "auto",
       "align": "right"
+    },
+    {
+      "slot": "units_before_en",
+      "value": "units_before_permit",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center"
+    },
+    {
+      "slot": "units_before",
+      "value": "units_before_permit",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center"
+    },
+    {
+      "slot": "units_after_en",
+      "value": "units_after_permit",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center"
+    },
+    {
+      "slot": "units_after",
+      "value": "units_after_permit",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center"
     },
     {
       "slot": "consultant_ack_en",

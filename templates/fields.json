@@ -381,6 +381,28 @@
       "help": "What is proposed in this application. Printed on the «المقترح / The proposed» line of the project description form."
     },
     {
+      "key": "units_before_permit",
+      "label": "Number of units before the building permit",
+      "labelAr": "عدد الوحدات قبل طلب الترخيص",
+      "type": "text",
+      "dir": "ltr",
+      "group": "new_project",
+      "scope": "shared",
+      "maxLength": 40,
+      "optional": true
+    },
+    {
+      "key": "units_after_permit",
+      "label": "Final number of units after the building permit",
+      "labelAr": "عدد الوحدات النهائي بعد طلب الترخيص",
+      "type": "text",
+      "dir": "ltr",
+      "group": "new_project",
+      "scope": "shared",
+      "maxLength": 40,
+      "optional": true
+    },
+    {
       "key": "mech_authorization_type",
       "label": "Mechanical – authorization type",
       "type": "multiselect",

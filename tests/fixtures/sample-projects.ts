@@ -6,6 +6,8 @@ export const sampleProject: ProjectFields = {
   bank_project_number: '12345678/01/000001',
   permitted: 'رخصة بناء فيلا رقم 2019/1234 بتاريخ 05/03/2019',
   proposed: 'إضافة ملحق خدمات وغرفة حارس',
+  units_before_permit: '1',
+  units_after_permit: '2',
   date: '2026-10-13',
   owner_name_ar: 'سالم خليفة راشد المنصوري',
   owner_name_en: 'Salem Khalifa Rashed Al Mansouri',
