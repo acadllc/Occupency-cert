@@ -12284,7 +12284,7 @@
   {
    "definition": {
     "key": "bld-arch-project-description",
-    "version": 3,
+    "version": 4,
     "status": "verified",
     "name": "Project Description and Undertakings",
     "nameAr": "نموذج وصف المشروع والتعهدات للقسائم السكنية",
@@ -12293,7 +12293,7 @@
     "projectType": "building",
     "source": "private/building/تعديل معماري/PROJECT DESCRIPTION 12-8-2025.pdf",
     "format": "pdf",
-    "reviewNotes": "Blank Department of Municipalities and Transport form (no historical values); the project details are drawn on its dotted lines.",
+    "reviewNotes": "Blank DMT form (no historical values). The printed instructions in the «المرخص / Permitted» box are removed so the permitted input can be written there.",
     "fields": [
      {
       "slot": "date",
@@ -12422,13 +12422,15 @@
       "size": 10,
       "minSize": 6,
       "padding": [
+       2,
        1,
-       0,
-       1,
-       0
+       2,
+       1
       ],
       "dir": "auto",
-      "align": "right"
+      "align": "right",
+      "multiline": true,
+      "valign": "top"
      },
      {
       "slot": "proposed",
@@ -12599,10 +12601,10 @@
    },
    "layout": {
     "key": "bld-arch-project-description",
-    "version": 3,
+    "version": 4,
     "format": "pdf",
     "sourceSha256": "16bb2c4a16d550923a48920eaaf8435e2ac82c4b7331cc18895615922081a069",
-    "baseSha256": "71071332794872b9fd3db344f8ddcbcef0aa3fbc7dda0ac182c5e45798001eed",
+    "baseSha256": "fb547f5bf91c9665c6d12e2c7bbb1031cc7d674d5a0c451a93316b737cb260ad",
     "pageCount": 4,
     "pages": [
      {
@@ -12706,12 +12708,11 @@
      "permitted": {
       "page": 0,
       "rect": [
-       309,
-       269.5,
+       310,
+       217,
        569,
        281
-      ],
-      "baseline": 278.8
+      ]
      },
      "proposed": {
       "page": 0,
@@ -13797,7 +13798,7 @@
   {
    "definition": {
     "key": "bld-archstr-project-description",
-    "version": 3,
+    "version": 4,
     "status": "verified",
     "name": "Project Description and Undertakings",
     "nameAr": "نموذج وصف المشروع والتعهدات للقسائم السكنية",
@@ -13806,7 +13807,7 @@
     "projectType": "building",
     "source": "private/building/تعديل معماري و انشائي/PROJECT DESCRIPTION 12-8-2025.pdf",
     "format": "pdf",
-    "reviewNotes": "Blank Department of Municipalities and Transport form (no historical values); the project details are drawn on its dotted lines.",
+    "reviewNotes": "Blank DMT form (no historical values). The printed instructions in the «المرخص / Permitted» box are removed so the permitted input can be written there.",
     "fields": [
      {
       "slot": "date",
@@ -13935,13 +13936,15 @@
       "size": 10,
       "minSize": 6,
       "padding": [
+       2,
        1,
-       0,
-       1,
-       0
+       2,
+       1
       ],
       "dir": "auto",
-      "align": "right"
+      "align": "right",
+      "multiline": true,
+      "valign": "top"
      },
      {
       "slot": "proposed",
@@ -14112,10 +14115,10 @@
    },
    "layout": {
     "key": "bld-archstr-project-description",
-    "version": 3,
+    "version": 4,
     "format": "pdf",
     "sourceSha256": "16bb2c4a16d550923a48920eaaf8435e2ac82c4b7331cc18895615922081a069",
-    "baseSha256": "71071332794872b9fd3db344f8ddcbcef0aa3fbc7dda0ac182c5e45798001eed",
+    "baseSha256": "fb547f5bf91c9665c6d12e2c7bbb1031cc7d674d5a0c451a93316b737cb260ad",
     "pageCount": 4,
     "pages": [
      {
@@ -14219,12 +14222,11 @@
      "permitted": {
       "page": 0,
       "rect": [
-       309,
-       269.5,
+       310,
+       217,
        569,
        281
-      ],
-      "baseline": 278.8
+      ]
      },
      "proposed": {
       "page": 0,
@@ -15756,7 +15758,7 @@
   {
    "definition": {
     "key": "bld-mun-project-description",
-    "version": 3,
+    "version": 4,
     "status": "verified",
     "name": "Project Description and Undertakings",
     "nameAr": "نموذج وصف المشروع والتعهدات للقسائم السكنية",
@@ -15765,7 +15767,7 @@
     "projectType": "building",
     "source": "private/building/أوراق تقديم البلدية/PROJECT DESCRIPTION 12-8-2025.pdf",
     "format": "pdf",
-    "reviewNotes": "Blank Department of Municipalities and Transport form (no historical values); the project details are drawn on its dotted lines.",
+    "reviewNotes": "Blank DMT form (no historical values). The printed instructions in the «المرخص / Permitted» box are removed so the permitted input can be written there.",
     "fields": [
      {
       "slot": "date",
@@ -15894,13 +15896,15 @@
       "size": 10,
       "minSize": 6,
       "padding": [
+       2,
        1,
-       0,
-       1,
-       0
+       2,
+       1
       ],
       "dir": "auto",
-      "align": "right"
+      "align": "right",
+      "multiline": true,
+      "valign": "top"
      },
      {
       "slot": "proposed",
@@ -16071,10 +16075,10 @@
    },
    "layout": {
     "key": "bld-mun-project-description",
-    "version": 3,
+    "version": 4,
     "format": "pdf",
     "sourceSha256": "16bb2c4a16d550923a48920eaaf8435e2ac82c4b7331cc18895615922081a069",
-    "baseSha256": "71071332794872b9fd3db344f8ddcbcef0aa3fbc7dda0ac182c5e45798001eed",
+    "baseSha256": "fb547f5bf91c9665c6d12e2c7bbb1031cc7d674d5a0c451a93316b737cb260ad",
     "pageCount": 4,
     "pages": [
      {
@@ -16178,12 +16182,11 @@
      "permitted": {
       "page": 0,
       "rect": [
-       309,
-       269.5,
+       310,
+       217,
        569,
        281
-      ],
-      "baseline": 278.8
+      ]
      },
      "proposed": {
       "page": 0,

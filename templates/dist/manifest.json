@@ -345,8 +345,8 @@
   },
   {
    "key": "bld-arch-project-description",
-   "version": 3,
-   "baseSha256": "71071332794872b9fd3db344f8ddcbcef0aa3fbc7dda0ac182c5e45798001eed",
+   "version": 4,
+   "baseSha256": "fb547f5bf91c9665c6d12e2c7bbb1031cc7d674d5a0c451a93316b737cb260ad",
    "pageCount": 4
   },
   {
@@ -369,8 +369,8 @@
   },
   {
    "key": "bld-archstr-project-description",
-   "version": 3,
-   "baseSha256": "71071332794872b9fd3db344f8ddcbcef0aa3fbc7dda0ac182c5e45798001eed",
+   "version": 4,
+   "baseSha256": "fb547f5bf91c9665c6d12e2c7bbb1031cc7d674d5a0c451a93316b737cb260ad",
    "pageCount": 4
   },
   {
@@ -417,8 +417,8 @@
   },
   {
    "key": "bld-mun-project-description",
-   "version": 3,
-   "baseSha256": "71071332794872b9fd3db344f8ddcbcef0aa3fbc7dda0ac182c5e45798001eed",
+   "version": 4,
+   "baseSha256": "fb547f5bf91c9665c6d12e2c7bbb1031cc7d674d5a0c451a93316b737cb260ad",
    "pageCount": 4
   },
   {

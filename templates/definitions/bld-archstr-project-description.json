@@ -1,6 +1,6 @@
 {
   "key": "bld-archstr-project-description",
-  "version": 3,
+  "version": 4,
   "status": "verified",
   "name": "Project Description and Undertakings",
   "nameAr": "نموذج وصف المشروع والتعهدات للقسائم السكنية",
@@ -9,8 +9,29 @@
   "projectType": "building",
   "source": "private/building/تعديل معماري و انشائي/PROJECT DESCRIPTION 12-8-2025.pdf",
   "format": "pdf",
-  "reviewNotes": "Blank Department of Municipalities and Transport form (no historical values); the project details are drawn on its dotted lines.",
-  "sanitize": [],
+  "reviewNotes": "Blank DMT form (no historical values). The printed instructions in the «المرخص / Permitted» box are removed so the permitted input can be written there.",
+  "sanitize": [
+    {
+      "op": "redact_text_rect",
+      "page": 0,
+      "rect": [
+        40,
+        217,
+        301,
+        272
+      ]
+    },
+    {
+      "op": "redact_text_rect",
+      "page": 0,
+      "rect": [
+        305,
+        217,
+        560,
+        272
+      ]
+    }
+  ],
   "slots": {
     "date": {
       "kind": "rect",
@@ -104,12 +125,11 @@
       "kind": "rect",
       "page": 0,
       "rect": [
-        309,
-        269.5,
+        310,
+        217,
         569,
         281
-      ],
-      "baseline": 278.8
+      ]
     },
     "proposed": {
       "kind": "rect",
@@ -379,13 +399,15 @@
       "size": 10,
       "minSize": 6,
       "padding": [
+        2,
         1,
-        0,
-        1,
-        0
+        2,
+        1
       ],
       "dir": "auto",
-      "align": "right"
+      "align": "right",
+      "multiline": true,
+      "valign": "top"
     },
     {
       "slot": "proposed",
