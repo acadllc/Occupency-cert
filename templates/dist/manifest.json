@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-16",
+ "generated": "2026-10-18",
  "templates": [
   {
    "key": "archive-drawings-explanation",
@@ -345,7 +345,7 @@
   },
   {
    "key": "bld-arch-project-description",
-   "version": 2,
+   "version": 3,
    "baseSha256": "71071332794872b9fd3db344f8ddcbcef0aa3fbc7dda0ac182c5e45798001eed",
    "pageCount": 4
   },
@@ -369,7 +369,7 @@
   },
   {
    "key": "bld-archstr-project-description",
-   "version": 2,
+   "version": 3,
    "baseSha256": "71071332794872b9fd3db344f8ddcbcef0aa3fbc7dda0ac182c5e45798001eed",
    "pageCount": 4
   },
@@ -417,7 +417,7 @@
   },
   {
    "key": "bld-mun-project-description",
-   "version": 2,
+   "version": 3,
    "baseSha256": "71071332794872b9fd3db344f8ddcbcef0aa3fbc7dda0ac182c5e45798001eed",
    "pageCount": 4
   },

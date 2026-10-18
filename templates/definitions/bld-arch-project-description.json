@@ -1,6 +1,6 @@
 {
   "key": "bld-arch-project-description",
-  "version": 2,
+  "version": 3,
   "status": "verified",
   "name": "Project Description and Undertakings",
   "nameAr": "نموذج وصف المشروع والتعهدات للقسائم السكنية",
@@ -100,16 +100,16 @@
       ],
       "baseline": 195.0
     },
-    "proposed_en": {
+    "permitted": {
       "kind": "rect",
       "page": 0,
       "rect": [
-        26,
-        294.5,
-        293,
-        306
+        309,
+        269.5,
+        569,
+        281
       ],
-      "baseline": 303.8
+      "baseline": 278.8
     },
     "proposed": {
       "kind": "rect",
@@ -373,8 +373,8 @@
       "align": "center"
     },
     {
-      "slot": "proposed_en",
-      "value": "project_description_en",
+      "slot": "permitted",
+      "value": "permitted",
       "font": "sans",
       "size": 10,
       "minSize": 6,
@@ -384,12 +384,12 @@
         1,
         0
       ],
-      "dir": "ltr",
-      "align": "center"
+      "dir": "auto",
+      "align": "right"
     },
     {
       "slot": "proposed",
-      "value": "project_description_ar",
+      "value": "proposed",
       "font": "sans",
       "size": 10,
       "minSize": 6,
@@ -399,8 +399,8 @@
         1,
         0
       ],
-      "dir": "rtl",
-      "align": "center"
+      "dir": "auto",
+      "align": "right"
     },
     {
       "slot": "consultant_ack_en",

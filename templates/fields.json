@@ -18,6 +18,10 @@
       "label": "Description & usage"
     },
     {
+      "key": "new_project",
+      "label": "New project"
+    },
+    {
       "key": "document",
       "label": "Document-specific details"
     }
@@ -351,6 +355,30 @@
       "scope": "shared",
       "maxLength": 120,
       "pair": "land_building_usage_ar"
+    },
+    {
+      "key": "permitted",
+      "label": "Permitted",
+      "labelAr": "المرخص",
+      "type": "textarea",
+      "dir": "rtl",
+      "group": "new_project",
+      "scope": "shared",
+      "maxLength": 300,
+      "optional": true,
+      "help": "Previous permits on the plot (type, date, number). Printed in the «المرخص / Permitted» box of the project description form."
+    },
+    {
+      "key": "proposed",
+      "label": "The proposed",
+      "labelAr": "المقترح",
+      "type": "textarea",
+      "dir": "rtl",
+      "group": "new_project",
+      "scope": "shared",
+      "maxLength": 300,
+      "optional": true,
+      "help": "What is proposed in this application. Printed on the «المقترح / The proposed» line of the project description form."
     },
     {
       "key": "mech_authorization_type",
