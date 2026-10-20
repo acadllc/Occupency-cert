@@ -1,0 +1,56 @@
+{
+ "key": "tq-drawings-match",
+ "version": 1,
+ "format": "pdf",
+ "sourceSha256": "9496b873bf36d02c8581b40ac33ffae87c5b4c3fef1b90191cfd7c1ee96be10c",
+ "baseSha256": "63e0381635a8166e1200decea27fbfb77f48654fb1e588ca7e0df957df37a7a0",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 613.68,
+   "height": 868.32
+  }
+ ],
+ "slots": {
+  "date": {
+   "page": 0,
+   "rect": [
+    421,
+    118,
+    498,
+    137
+   ]
+  },
+  "owner": {
+   "page": 0,
+   "rect": [
+    77.2,
+    233.0,
+    384.6,
+    260.6
+   ]
+  },
+  "location": {
+   "page": 0,
+   "rect": [
+    77.2,
+    292.2,
+    384.6,
+    320.0
+   ]
+  },
+  "plot": {
+   "page": 0,
+   "rect": [
+    77.2,
+    322.0,
+    384.6,
+    349.5
+   ]
+  }
+ },
+ "docx": null,
+ "build": {
+  "engine": "pymupdf 1.28.2"
+ }
+}

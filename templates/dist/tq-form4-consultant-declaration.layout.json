@@ -1,0 +1,56 @@
+{
+ "key": "tq-form4-consultant-declaration",
+ "version": 1,
+ "format": "pdf",
+ "sourceSha256": "375add13505552177f7484883f5916b1104795863abf16e16652b0dff2b46936",
+ "baseSha256": "cf00d1965cfb79478735ea7bc7c34fcca6035f44582e7248198e5ac508d13c37",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 613.68,
+   "height": 787.68
+  }
+ ],
+ "slots": {
+  "owner": {
+   "page": 0,
+   "rect": [
+    300,
+    265,
+    468,
+    283
+   ]
+  },
+  "location": {
+   "page": 0,
+   "rect": [
+    300,
+    284,
+    469,
+    302
+   ]
+  },
+  "plot": {
+   "page": 0,
+   "rect": [
+    330,
+    302,
+    469,
+    319
+   ]
+  },
+  "license": {
+   "page": 0,
+   "rect": [
+    440,
+    377,
+    514,
+    395
+   ]
+  }
+ },
+ "docx": null,
+ "build": {
+  "engine": "pymupdf 1.28.2"
+ }
+}

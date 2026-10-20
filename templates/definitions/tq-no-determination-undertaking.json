@@ -1,0 +1,202 @@
+{
+  "key": "tq-no-determination-undertaking",
+  "version": 1,
+  "status": "verified",
+  "name": "Undertaking – no people of determination among the users",
+  "nameAr": "تعهد بعدم وجود ذوي الهمم",
+  "description": "ACAD letter: owner and consultant undertake that no people of determination use the property.",
+  "projectType": "taqneen",
+  "source": "private/taqneen/01 people-of-determination.pdf",
+  "format": "pdf",
+  "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
+  "sanitize": [
+    {
+      "op": "image_edit",
+      "page": 0,
+      "fill": [
+        [
+          67.7,
+          220.20000000000002,
+          378.3,
+          247.0
+        ],
+        [
+          67.7,
+          279.4,
+          378.3,
+          306.40000000000003
+        ],
+        [
+          67.7,
+          309.2,
+          378.3,
+          335.90000000000003
+        ]
+      ],
+      "erase_text": [
+        [
+          410,
+          105,
+          488,
+          128
+        ],
+        [
+          155,
+          410,
+          268,
+          433
+        ]
+      ],
+      "remove_ink": [
+        {
+          "rect": [
+            370,
+            570,
+            540,
+            630
+          ],
+          "light": 150
+        }
+      ]
+    }
+  ],
+  "slots": {
+    "date": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        410,
+        105,
+        488,
+        128
+      ]
+    },
+    "owner": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        69.3,
+        219.8,
+        376.7,
+        247.4
+      ]
+    },
+    "location": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        69.3,
+        279.0,
+        376.7,
+        306.8
+      ]
+    },
+    "plot": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        69.3,
+        308.8,
+        376.7,
+        336.3
+      ]
+    },
+    "owner_body": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        156,
+        410,
+        268,
+        433
+      ]
+    }
+  },
+  "fields": [
+    {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "bold": false,
+      "size": 14,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "right",
+      "valign": "middle"
+    },
+    {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 15,
+      "minSize": 6,
+      "padding": [
+        4,
+        0,
+        6,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "valign": "middle"
+    },
+    {
+      "slot": "location",
+      "value": "{city|ar} - {area_ar} - {sector_ar}",
+      "font": "sans",
+      "bold": true,
+      "size": 15,
+      "minSize": 6,
+      "padding": [
+        4,
+        0,
+        6,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "valign": "middle"
+    },
+    {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "bold": true,
+      "size": 15,
+      "minSize": 6,
+      "padding": [
+        4,
+        0,
+        6,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "owner_body",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "bold": false,
+      "size": 13,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "center",
+      "valign": "middle"
+    }
+  ]
+}

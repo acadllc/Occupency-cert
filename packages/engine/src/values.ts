@@ -7,6 +7,10 @@ import type { CompanyConfig, FieldDef, FieldRegistry, FieldValue, MappingItem, P
  *   "$consultant_name_en"    fixed company value (templates/company.json)
  *   "@project_location_ar"   derived value
  *   "{area_ar} - {sector_ar}" template string combining any of the above
+ *   "buildings|numbered|done|lines:1-7"  one item per line of a textarea: "1. VILLA 100%" …,
+ *                            only lines 1-7 (numbers kept, so a second column can start at 8);
+ *                            "buildings|number|lines:3-3" the item's number alone (a "No." column);
+ *                            "buildings|count" how many items
  */
 export interface ValueContext {
   fields: ProjectFields;
@@ -85,10 +89,11 @@ function atom(expr: string, ctx: ValueContext): string {
     return v;
   }
   if (e.startsWith('@')) return derivedValue(e.slice(1), ctx);
-  const [key, mod] = e.split('|');
+  const [key, mod, ...more] = e.split('|');
   const def = getField(ctx.registry, key);
   if (!def) throw new Error(`Unknown field in mapping: ${key}`);
   const raw = ctx.fields[key];
+  if (LIST_MODS.test(mod ?? '')) return listValue(asText(raw), [mod, ...more]);
   if (mod === 'day' || mod === 'month' || mod === 'year') {
     // separate day / month / year boxes on printed forms
     const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(asText(raw));
@@ -106,6 +111,20 @@ function atom(expr: string, ctx: ValueContext): string {
   }
   if (Array.isArray(raw)) return '';
   return asText(raw);
+}
+
+const LIST_MODS = /^(numbered|number|count|done|lines:\d+-\d*)$/;
+
+/** A textarea as a list, one item per non-empty line. */
+function listValue(text: string, mods: string[]): string {
+  let items = text.split(/\r?\n/).map((l) => l.trim()).filter(Boolean);
+  if (mods.includes('count')) return items.length ? String(items.length) : '';
+  if (mods.includes('number')) items = items.map((_, i) => String(i + 1));
+  if (mods.includes('numbered')) items = items.map((l, i) => `${i + 1}. ${l}`);
+  if (mods.includes('done')) items = items.map((l) => `${l} 100%`);
+  const range = mods.map((m) => /^lines:(\d+)-(\d*)$/.exec(m)).find(Boolean);
+  if (range) items = items.slice(Number(range[1]) - 1, range[2] ? Number(range[2]) : undefined);
+  return items.join('\n');
 }
 
 // "field=value ? exprIfTrue : exprIfFalse"

@@ -1,0 +1,65 @@
+{
+ "key": "tq-roofs-undertaking",
+ "version": 1,
+ "format": "pdf",
+ "sourceSha256": "2f72e8ce6bdf30520c9c4fae319118b89d47458e0ceb4ec59e0664ed5d0b8f5d",
+ "baseSha256": "951d77c4dff8a2b5dc5a7b197e24ae62361d6e1889a0eae09df7539529c4a1f8",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 596.64,
+   "height": 844.32
+  }
+ ],
+ "slots": {
+  "date": {
+   "page": 0,
+   "rect": [
+    410,
+    105,
+    488,
+    128
+   ]
+  },
+  "owner": {
+   "page": 0,
+   "rect": [
+    69.3,
+    219.8,
+    376.7,
+    247.4
+   ]
+  },
+  "location": {
+   "page": 0,
+   "rect": [
+    69.3,
+    279.0,
+    376.7,
+    306.8
+   ]
+  },
+  "plot": {
+   "page": 0,
+   "rect": [
+    69.3,
+    308.8,
+    376.7,
+    336.3
+   ]
+  },
+  "owner_body": {
+   "page": 0,
+   "rect": [
+    156,
+    410,
+    268,
+    433
+   ]
+  }
+ },
+ "docx": null,
+ "build": {
+  "engine": "pymupdf 1.28.2"
+ }
+}

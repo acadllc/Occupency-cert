@@ -1,0 +1,110 @@
+{
+ "key": "tq-form2-completion-request",
+ "version": 1,
+ "format": "pdf",
+ "sourceSha256": "d765d894a24e866eadd5453ab448802c941fd3d6f3aa9c45fa79b63bb3e9f2b1",
+ "baseSha256": "9c239bd4448d838d0100595e17054fa2a0da0850a253b043d917181b44371180",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 613.68,
+   "height": 813.6
+  }
+ ],
+ "slots": {
+  "plot": {
+   "page": 0,
+   "rect": [
+    62,
+    220,
+    168,
+    240
+   ]
+  },
+  "owner": {
+   "page": 0,
+   "rect": [
+    330,
+    222,
+    494,
+    241
+   ]
+  },
+  "area": {
+   "page": 0,
+   "rect": [
+    330,
+    248,
+    494,
+    265
+   ]
+  },
+  "plot_area": {
+   "page": 0,
+   "rect": [
+    340,
+    265,
+    494,
+    280
+   ]
+  },
+  "usage": {
+   "page": 0,
+   "rect": [
+    340,
+    280,
+    494,
+    296
+   ]
+  },
+  "ratio": {
+   "page": 0,
+   "rect": [
+    340,
+    296,
+    494,
+    312
+   ]
+  },
+  "owner_phone": {
+   "page": 0,
+   "rect": [
+    340,
+    312,
+    494,
+    330
+   ]
+  },
+  "buildings_count": {
+   "page": 0,
+   "rect": [
+    240,
+    391,
+    320,
+    410
+   ]
+  },
+  "license": {
+   "page": 0,
+   "rect": [
+    46,
+    444,
+    114,
+    460
+   ]
+  },
+  "owner_id": {
+   "page": 0,
+   "rect": [
+    210,
+    546,
+    338,
+    565
+   ]
+  }
+ },
+ "docx": null,
+ "build": {
+  "engine": "pymupdf 1.28.2"
+ }
+}

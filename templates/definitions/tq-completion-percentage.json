@@ -1,0 +1,515 @@
+{
+  "key": "tq-completion-percentage",
+  "version": 1,
+  "status": "verified",
+  "name": "Completion percentage of the existing buildings",
+  "nameAr": "نسبة الإنجاز",
+  "description": "ACAD letter: every existing building shown on the drawings is 100% complete, listed one by one.",
+  "projectType": "taqneen",
+  "source": "private/taqneen/08 completion-percentage.pdf",
+  "format": "pdf",
+  "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
+  "sanitize": [
+    {
+      "op": "image_edit",
+      "page": 0,
+      "fill": [
+        [
+          71.0,
+          141.0,
+          381.6,
+          167.79999999999998
+        ],
+        [
+          71.0,
+          200.20000000000002,
+          381.6,
+          227.2
+        ],
+        [
+          71.0,
+          230.0,
+          381.6,
+          256.70000000000005
+        ]
+      ],
+      "erase_text": [
+        [
+          428,
+          87,
+          506,
+          105
+        ],
+        [
+          185,
+          376,
+          532,
+          664
+        ]
+      ]
+    }
+  ],
+  "slots": {
+    "date": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        428,
+        87,
+        506,
+        105
+      ]
+    },
+    "owner": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        72.6,
+        140.6,
+        380.0,
+        168.2
+      ]
+    },
+    "location": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        72.6,
+        199.8,
+        380.0,
+        227.6
+      ]
+    },
+    "plot": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        72.6,
+        229.6,
+        380.0,
+        257.1
+      ]
+    },
+    "building_1": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        194,
+        378.0,
+        530,
+        397.0
+      ]
+    },
+    "building_2": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        194,
+        400.35,
+        530,
+        419.35
+      ]
+    },
+    "building_3": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        194,
+        422.7,
+        530,
+        441.7
+      ]
+    },
+    "building_4": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        194,
+        445.05,
+        530,
+        464.05
+      ]
+    },
+    "building_5": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        194,
+        467.4,
+        530,
+        486.4
+      ]
+    },
+    "building_6": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        194,
+        489.75,
+        530,
+        508.75
+      ]
+    },
+    "building_7": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        194,
+        512.1,
+        530,
+        531.1
+      ]
+    },
+    "building_8": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        194,
+        534.45,
+        530,
+        553.45
+      ]
+    },
+    "building_9": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        194,
+        556.8,
+        530,
+        575.8
+      ]
+    },
+    "building_10": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        194,
+        579.15,
+        530,
+        598.15
+      ]
+    },
+    "building_11": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        194,
+        601.5,
+        530,
+        620.5
+      ]
+    },
+    "building_12": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        194,
+        623.85,
+        530,
+        642.85
+      ]
+    },
+    "building_13": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        194,
+        646.2,
+        530,
+        665.2
+      ]
+    }
+  },
+  "fields": [
+    {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "bold": false,
+      "size": 14,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "right",
+      "valign": "middle"
+    },
+    {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 15,
+      "minSize": 6,
+      "padding": [
+        4,
+        0,
+        6,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "valign": "middle"
+    },
+    {
+      "slot": "location",
+      "value": "{city|ar} - {area_ar} - {sector_ar}",
+      "font": "sans",
+      "bold": true,
+      "size": 15,
+      "minSize": 6,
+      "padding": [
+        4,
+        0,
+        6,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "valign": "middle"
+    },
+    {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "bold": true,
+      "size": 15,
+      "minSize": 6,
+      "padding": [
+        4,
+        0,
+        6,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "building_1",
+      "value": "taqneen_buildings|numbered|done|lines:1-1",
+      "font": "sans",
+      "bold": true,
+      "size": 14,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+    },
+    {
+      "slot": "building_2",
+      "value": "taqneen_buildings|numbered|done|lines:2-2",
+      "font": "sans",
+      "bold": true,
+      "size": 14,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+    },
+    {
+      "slot": "building_3",
+      "value": "taqneen_buildings|numbered|done|lines:3-3",
+      "font": "sans",
+      "bold": true,
+      "size": 14,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+    },
+    {
+      "slot": "building_4",
+      "value": "taqneen_buildings|numbered|done|lines:4-4",
+      "font": "sans",
+      "bold": true,
+      "size": 14,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+    },
+    {
+      "slot": "building_5",
+      "value": "taqneen_buildings|numbered|done|lines:5-5",
+      "font": "sans",
+      "bold": true,
+      "size": 14,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+    },
+    {
+      "slot": "building_6",
+      "value": "taqneen_buildings|numbered|done|lines:6-6",
+      "font": "sans",
+      "bold": true,
+      "size": 14,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+    },
+    {
+      "slot": "building_7",
+      "value": "taqneen_buildings|numbered|done|lines:7-7",
+      "font": "sans",
+      "bold": true,
+      "size": 14,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+    },
+    {
+      "slot": "building_8",
+      "value": "taqneen_buildings|numbered|done|lines:8-8",
+      "font": "sans",
+      "bold": true,
+      "size": 14,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+    },
+    {
+      "slot": "building_9",
+      "value": "taqneen_buildings|numbered|done|lines:9-9",
+      "font": "sans",
+      "bold": true,
+      "size": 14,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+    },
+    {
+      "slot": "building_10",
+      "value": "taqneen_buildings|numbered|done|lines:10-10",
+      "font": "sans",
+      "bold": true,
+      "size": 14,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+    },
+    {
+      "slot": "building_11",
+      "value": "taqneen_buildings|numbered|done|lines:11-11",
+      "font": "sans",
+      "bold": true,
+      "size": 14,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+    },
+    {
+      "slot": "building_12",
+      "value": "taqneen_buildings|numbered|done|lines:12-12",
+      "font": "sans",
+      "bold": true,
+      "size": 14,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+    },
+    {
+      "slot": "building_13",
+      "value": "taqneen_buildings|numbered|done|lines:13-",
+      "font": "sans",
+      "bold": true,
+      "size": 14,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+    }
+  ]
+}

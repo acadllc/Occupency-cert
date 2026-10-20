@@ -1,0 +1,65 @@
+{
+ "key": "tq-no-determination-undertaking",
+ "version": 1,
+ "format": "pdf",
+ "sourceSha256": "8dd6690e9afbea9ae8f77bf971f1b87a98dffbc765f190b1f91f0b6e76450032",
+ "baseSha256": "c2033819086cf19da7704f59fd1e78198650cb1f8cedac22055059ab56b80dfe",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 596.64,
+   "height": 844.32
+  }
+ ],
+ "slots": {
+  "date": {
+   "page": 0,
+   "rect": [
+    410,
+    105,
+    488,
+    128
+   ]
+  },
+  "owner": {
+   "page": 0,
+   "rect": [
+    69.3,
+    219.8,
+    376.7,
+    247.4
+   ]
+  },
+  "location": {
+   "page": 0,
+   "rect": [
+    69.3,
+    279.0,
+    376.7,
+    306.8
+   ]
+  },
+  "plot": {
+   "page": 0,
+   "rect": [
+    69.3,
+    308.8,
+    376.7,
+    336.3
+   ]
+  },
+  "owner_body": {
+   "page": 0,
+   "rect": [
+    156,
+    410,
+    268,
+    433
+   ]
+  }
+ },
+ "docx": null,
+ "build": {
+  "engine": "pymupdf 1.28.2"
+ }
+}

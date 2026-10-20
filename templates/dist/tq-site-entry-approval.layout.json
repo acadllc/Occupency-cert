@@ -1,0 +1,83 @@
+{
+ "key": "tq-site-entry-approval",
+ "version": 1,
+ "format": "pdf",
+ "sourceSha256": "278541c0cca4d18ea05d72b019783b5ad8914a8d149cf8b222f982e699bb1783",
+ "baseSha256": "de43d7b10a59be0da03b96325b1de06b9662ccb835baae81849ae485f43ee897",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 613.68,
+   "height": 876.24
+  }
+ ],
+ "slots": {
+  "date": {
+   "page": 0,
+   "rect": [
+    86,
+    109,
+    161,
+    126
+   ]
+  },
+  "owner": {
+   "page": 0,
+   "rect": [
+    300,
+    178,
+    537,
+    198
+   ]
+  },
+  "plot": {
+   "page": 0,
+   "rect": [
+    70,
+    228,
+    185,
+    245
+   ]
+  },
+  "area": {
+   "page": 0,
+   "rect": [
+    440,
+    271,
+    518,
+    290
+   ]
+  },
+  "sector": {
+   "page": 0,
+   "rect": [
+    270,
+    272,
+    362,
+    290
+   ]
+  },
+  "usage": {
+   "page": 0,
+   "rect": [
+    40,
+    271,
+    160,
+    290
+   ]
+  },
+  "owner_phone": {
+   "page": 0,
+   "rect": [
+    250,
+    576,
+    400,
+    593
+   ]
+  }
+ },
+ "docx": null,
+ "build": {
+  "engine": "pymupdf 1.28.2"
+ }
+}

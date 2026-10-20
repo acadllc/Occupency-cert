@@ -1,0 +1,266 @@
+{
+  "key": "tq-site-entry-approval",
+  "version": 1,
+  "status": "verified",
+  "name": "Approval to enter the plot",
+  "nameAr": "الموافقة على دخول القسيمة",
+  "description": "Owner approval for the municipality inspectors to enter the plot, take photos and survey the existing buildings.",
+  "projectType": "taqneen",
+  "source": "private/taqneen/15 site-entry.pdf",
+  "format": "pdf",
+  "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
+  "sanitize": [
+    {
+      "op": "image_edit",
+      "page": 0,
+      "erase_text": [
+        [
+          86,
+          108,
+          161.5,
+          127
+        ],
+        [
+          398,
+          177,
+          537,
+          199
+        ],
+        [
+          75,
+          228,
+          183,
+          246
+        ],
+        [
+          462,
+          271,
+          510,
+          291
+        ],
+        [
+          296,
+          272,
+          356,
+          291
+        ],
+        [
+          96,
+          271,
+          148,
+          291
+        ],
+        [
+          282,
+          576,
+          368,
+          594
+        ]
+      ],
+      "remove_ink": [
+        {
+          "rect": [
+            255,
+            610,
+            388,
+            662
+          ],
+          "light": 150
+        }
+      ]
+    }
+  ],
+  "slots": {
+    "date": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        86,
+        109,
+        161,
+        126
+      ]
+    },
+    "owner": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        300,
+        178,
+        537,
+        198
+      ]
+    },
+    "plot": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        70,
+        228,
+        185,
+        245
+      ]
+    },
+    "area": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        440,
+        271,
+        518,
+        290
+      ]
+    },
+    "sector": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        270,
+        272,
+        362,
+        290
+      ]
+    },
+    "usage": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        40,
+        271,
+        160,
+        290
+      ]
+    },
+    "owner_phone": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        250,
+        576,
+        400,
+        593
+      ]
+    }
+  },
+  "fields": [
+    {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "bold": false,
+      "size": 13,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "right",
+      "valign": "middle"
+    },
+    {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 13,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "valign": "middle"
+    },
+    {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "bold": false,
+      "size": 13,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "area",
+      "value": "area_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 12,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "sector",
+      "value": "sector_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 12,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "usage",
+      "value": "land_building_usage_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 12,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "owner_phone",
+      "value": "owner_phone",
+      "font": "sans",
+      "bold": false,
+      "size": 13,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    }
+  ]
+}

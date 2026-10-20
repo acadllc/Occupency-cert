@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-18",
+ "generated": "2026-10-20",
  "templates": [
   {
    "key": "archive-drawings-explanation",
@@ -527,6 +527,90 @@
    "key": "swimming-pool-testing",
    "version": 1,
    "baseSha256": "d855cec19e04f55f616442fead0851cf8c7b58808bc9c3f9e420d162e3a1163f",
+   "pageCount": 1
+  },
+  {
+   "key": "tq-completion-checklist",
+   "version": 1,
+   "baseSha256": "3a36a93b7feb8bc5b69f96535c582a822393d9b8ed6d12db02e6add0e0cbb5ae",
+   "pageCount": 1
+  },
+  {
+   "key": "tq-completion-percentage",
+   "version": 1,
+   "baseSha256": "1ec46792c291af8f782fba8e090ada6d44f1ed7a5ed9320e80433e27f67b5b7d",
+   "pageCount": 1
+  },
+  {
+   "key": "tq-drawings-match",
+   "version": 1,
+   "baseSha256": "63e0381635a8166e1200decea27fbfb77f48654fb1e588ca7e0df957df37a7a0",
+   "pageCount": 1
+  },
+  {
+   "key": "tq-form13",
+   "version": 1,
+   "baseSha256": "0f9e6b43929730e613cbb80a270e8ddeab169aba185f2a63cbaed177db3283cb",
+   "pageCount": 2
+  },
+  {
+   "key": "tq-form14",
+   "version": 1,
+   "baseSha256": "e0f409b3be70c21927f7ed0268b848cec78ab7f9d3f79b5b95a463021da12f89",
+   "pageCount": 1
+  },
+  {
+   "key": "tq-form2-completion-request",
+   "version": 1,
+   "baseSha256": "9c239bd4448d838d0100595e17054fa2a0da0850a253b043d917181b44371180",
+   "pageCount": 1
+  },
+  {
+   "key": "tq-form3-owner-declaration",
+   "version": 1,
+   "baseSha256": "5a8fe1b1488123e3d65a3fce7bd2161b453d4a6a7a329507735cd14e960ec6b4",
+   "pageCount": 1
+  },
+  {
+   "key": "tq-form4-consultant-declaration",
+   "version": 1,
+   "baseSha256": "cf00d1965cfb79478735ea7bc7c34fcca6035f44582e7248198e5ac508d13c37",
+   "pageCount": 1
+  },
+  {
+   "key": "tq-inspection-request",
+   "version": 1,
+   "baseSha256": "7d4292a47d53a0ffe414568efe8b0b1c569e4968b0b8c2c8e8af58f180531de7",
+   "pageCount": 1
+  },
+  {
+   "key": "tq-justification",
+   "version": 1,
+   "baseSha256": "2630e7e3a092099925a5de5cf5743be4bba8e47e74e8dcefe6336ce8177f22c6",
+   "pageCount": 1
+  },
+  {
+   "key": "tq-maintenance-undertaking",
+   "version": 1,
+   "baseSha256": "8d62b7a9db820cdaf9273e429f161b5b4363d70bff08ae417f7aa3026967be2a",
+   "pageCount": 1
+  },
+  {
+   "key": "tq-no-determination-undertaking",
+   "version": 1,
+   "baseSha256": "c2033819086cf19da7704f59fd1e78198650cb1f8cedac22055059ab56b80dfe",
+   "pageCount": 1
+  },
+  {
+   "key": "tq-roofs-undertaking",
+   "version": 1,
+   "baseSha256": "951d77c4dff8a2b5dc5a7b197e24ae62361d6e1889a0eae09df7539529c4a1f8",
+   "pageCount": 1
+  },
+  {
+   "key": "tq-site-entry-approval",
+   "version": 1,
+   "baseSha256": "de43d7b10a59be0da03b96325b1de06b9662ccb835baae81849ae485f43ee897",
    "pageCount": 1
   },
   {

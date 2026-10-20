@@ -25123,6 +25123,4067 @@
   },
   {
    "definition": {
+    "key": "tq-completion-checklist",
+    "version": 1,
+    "status": "verified",
+    "name": "Completion certificate requirements checklist (existing building)",
+    "nameAr": "قائمة تدقيق متطلبات إصدار شهادة إتمام لمبنى قائم",
+    "description": "Al Ain City Municipality checklist of the documents, drawings and technical reports for an existing building completion certificate.",
+    "projectType": "taqneen",
+    "source": "private/taqneen/13 checklist.pdf",
+    "format": "pdf",
+    "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
+    "fields": [
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+       2,
+       0,
+       4,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "valign": "middle"
+     },
+     {
+      "slot": "area",
+      "value": "{city|ar} - {area_ar} - {sector_ar}",
+      "font": "sans",
+      "bold": false,
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+       2,
+       0,
+       4,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "valign": "middle"
+     },
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "bold": false,
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "bold": false,
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     }
+    ]
+   },
+   "layout": {
+    "key": "tq-completion-checklist",
+    "version": 1,
+    "format": "pdf",
+    "sourceSha256": "bfd2e15382a0aab2952299471c5fcfd0110b63ec13ae8c3397ee50b6974c4e7a",
+    "baseSha256": "3a36a93b7feb8bc5b69f96535c582a822393d9b8ed6d12db02e6add0e0cbb5ae",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 613.68,
+      "height": 867.36
+     }
+    ],
+    "slots": {
+     "owner": {
+      "page": 0,
+      "rect": [
+       328,
+       215,
+       488,
+       227.5
+      ]
+     },
+     "area": {
+      "page": 0,
+      "rect": [
+       328,
+       228,
+       488,
+       242
+      ]
+     },
+     "project_id": {
+      "page": 0,
+      "rect": [
+       133,
+       215,
+       237.5,
+       227.5
+      ]
+     },
+     "plot": {
+      "page": 0,
+      "rect": [
+       107,
+       228,
+       237.5,
+       242
+      ]
+     }
+    },
+    "docx": null,
+    "build": {
+     "engine": "pymupdf 1.28.2"
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "tq-completion-percentage",
+    "version": 1,
+    "status": "verified",
+    "name": "Completion percentage of the existing buildings",
+    "nameAr": "نسبة الإنجاز",
+    "description": "ACAD letter: every existing building shown on the drawings is 100% complete, listed one by one.",
+    "projectType": "taqneen",
+    "source": "private/taqneen/08 completion-percentage.pdf",
+    "format": "pdf",
+    "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
+    "fields": [
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "bold": false,
+      "size": 14,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "right",
+      "valign": "middle"
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 15,
+      "minSize": 6,
+      "padding": [
+       4,
+       0,
+       6,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "valign": "middle"
+     },
+     {
+      "slot": "location",
+      "value": "{city|ar} - {area_ar} - {sector_ar}",
+      "font": "sans",
+      "bold": true,
+      "size": 15,
+      "minSize": 6,
+      "padding": [
+       4,
+       0,
+       6,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "valign": "middle"
+     },
+     {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "bold": true,
+      "size": 15,
+      "minSize": 6,
+      "padding": [
+       4,
+       0,
+       6,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "building_1",
+      "value": "taqneen_buildings|numbered|done|lines:1-1",
+      "font": "sans",
+      "bold": true,
+      "size": 14,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+     },
+     {
+      "slot": "building_2",
+      "value": "taqneen_buildings|numbered|done|lines:2-2",
+      "font": "sans",
+      "bold": true,
+      "size": 14,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+     },
+     {
+      "slot": "building_3",
+      "value": "taqneen_buildings|numbered|done|lines:3-3",
+      "font": "sans",
+      "bold": true,
+      "size": 14,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+     },
+     {
+      "slot": "building_4",
+      "value": "taqneen_buildings|numbered|done|lines:4-4",
+      "font": "sans",
+      "bold": true,
+      "size": 14,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+     },
+     {
+      "slot": "building_5",
+      "value": "taqneen_buildings|numbered|done|lines:5-5",
+      "font": "sans",
+      "bold": true,
+      "size": 14,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+     },
+     {
+      "slot": "building_6",
+      "value": "taqneen_buildings|numbered|done|lines:6-6",
+      "font": "sans",
+      "bold": true,
+      "size": 14,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+     },
+     {
+      "slot": "building_7",
+      "value": "taqneen_buildings|numbered|done|lines:7-7",
+      "font": "sans",
+      "bold": true,
+      "size": 14,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+     },
+     {
+      "slot": "building_8",
+      "value": "taqneen_buildings|numbered|done|lines:8-8",
+      "font": "sans",
+      "bold": true,
+      "size": 14,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+     },
+     {
+      "slot": "building_9",
+      "value": "taqneen_buildings|numbered|done|lines:9-9",
+      "font": "sans",
+      "bold": true,
+      "size": 14,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+     },
+     {
+      "slot": "building_10",
+      "value": "taqneen_buildings|numbered|done|lines:10-10",
+      "font": "sans",
+      "bold": true,
+      "size": 14,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+     },
+     {
+      "slot": "building_11",
+      "value": "taqneen_buildings|numbered|done|lines:11-11",
+      "font": "sans",
+      "bold": true,
+      "size": 14,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+     },
+     {
+      "slot": "building_12",
+      "value": "taqneen_buildings|numbered|done|lines:12-12",
+      "font": "sans",
+      "bold": true,
+      "size": 14,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+     },
+     {
+      "slot": "building_13",
+      "value": "taqneen_buildings|numbered|done|lines:13-",
+      "font": "sans",
+      "bold": true,
+      "size": 14,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+     }
+    ]
+   },
+   "layout": {
+    "key": "tq-completion-percentage",
+    "version": 1,
+    "format": "pdf",
+    "sourceSha256": "649b2861dde5037584dfd5a9e924866f4f9c9d194612d9628b970d27d9f569ed",
+    "baseSha256": "1ec46792c291af8f782fba8e090ada6d44f1ed7a5ed9320e80433e27f67b5b7d",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 613.68,
+      "height": 868.08
+     }
+    ],
+    "slots": {
+     "date": {
+      "page": 0,
+      "rect": [
+       428,
+       87,
+       506,
+       105
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "rect": [
+       72.6,
+       140.6,
+       380,
+       168.2
+      ]
+     },
+     "location": {
+      "page": 0,
+      "rect": [
+       72.6,
+       199.8,
+       380,
+       227.6
+      ]
+     },
+     "plot": {
+      "page": 0,
+      "rect": [
+       72.6,
+       229.6,
+       380,
+       257.1
+      ]
+     },
+     "building_1": {
+      "page": 0,
+      "rect": [
+       194,
+       378,
+       530,
+       397
+      ]
+     },
+     "building_2": {
+      "page": 0,
+      "rect": [
+       194,
+       400.35,
+       530,
+       419.35
+      ]
+     },
+     "building_3": {
+      "page": 0,
+      "rect": [
+       194,
+       422.7,
+       530,
+       441.7
+      ]
+     },
+     "building_4": {
+      "page": 0,
+      "rect": [
+       194,
+       445.05,
+       530,
+       464.05
+      ]
+     },
+     "building_5": {
+      "page": 0,
+      "rect": [
+       194,
+       467.4,
+       530,
+       486.4
+      ]
+     },
+     "building_6": {
+      "page": 0,
+      "rect": [
+       194,
+       489.75,
+       530,
+       508.75
+      ]
+     },
+     "building_7": {
+      "page": 0,
+      "rect": [
+       194,
+       512.1,
+       530,
+       531.1
+      ]
+     },
+     "building_8": {
+      "page": 0,
+      "rect": [
+       194,
+       534.45,
+       530,
+       553.45
+      ]
+     },
+     "building_9": {
+      "page": 0,
+      "rect": [
+       194,
+       556.8,
+       530,
+       575.8
+      ]
+     },
+     "building_10": {
+      "page": 0,
+      "rect": [
+       194,
+       579.15,
+       530,
+       598.15
+      ]
+     },
+     "building_11": {
+      "page": 0,
+      "rect": [
+       194,
+       601.5,
+       530,
+       620.5
+      ]
+     },
+     "building_12": {
+      "page": 0,
+      "rect": [
+       194,
+       623.85,
+       530,
+       642.85
+      ]
+     },
+     "building_13": {
+      "page": 0,
+      "rect": [
+       194,
+       646.2,
+       530,
+       665.2
+      ]
+     }
+    },
+    "docx": null,
+    "build": {
+     "engine": "pymupdf 1.28.2"
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "tq-drawings-match",
+    "version": 1,
+    "status": "verified",
+    "name": "Drawings match undertaking",
+    "nameAr": "تعهد مطابقة المخططات",
+    "description": "ACAD letter: the consultant undertakes that the drawings match the site.",
+    "projectType": "taqneen",
+    "source": "private/taqneen/09 drawings-match.pdf",
+    "format": "pdf",
+    "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
+    "fields": [
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "bold": false,
+      "size": 14,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "right",
+      "valign": "middle"
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 15,
+      "minSize": 6,
+      "padding": [
+       4,
+       0,
+       6,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "valign": "middle"
+     },
+     {
+      "slot": "location",
+      "value": "{city|ar} - {area_ar} - {sector_ar}",
+      "font": "sans",
+      "bold": true,
+      "size": 15,
+      "minSize": 6,
+      "padding": [
+       4,
+       0,
+       6,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "valign": "middle"
+     },
+     {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "bold": true,
+      "size": 15,
+      "minSize": 6,
+      "padding": [
+       4,
+       0,
+       6,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     }
+    ]
+   },
+   "layout": {
+    "key": "tq-drawings-match",
+    "version": 1,
+    "format": "pdf",
+    "sourceSha256": "9496b873bf36d02c8581b40ac33ffae87c5b4c3fef1b90191cfd7c1ee96be10c",
+    "baseSha256": "63e0381635a8166e1200decea27fbfb77f48654fb1e588ca7e0df957df37a7a0",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 613.68,
+      "height": 868.32
+     }
+    ],
+    "slots": {
+     "date": {
+      "page": 0,
+      "rect": [
+       421,
+       118,
+       498,
+       137
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "rect": [
+       77.2,
+       233,
+       384.6,
+       260.6
+      ]
+     },
+     "location": {
+      "page": 0,
+      "rect": [
+       77.2,
+       292.2,
+       384.6,
+       320
+      ]
+     },
+     "plot": {
+      "page": 0,
+      "rect": [
+       77.2,
+       322,
+       384.6,
+       349.5
+      ]
+     }
+    },
+    "docx": null,
+    "build": {
+     "engine": "pymupdf 1.28.2"
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "tq-form13",
+    "version": 1,
+    "status": "verified",
+    "name": "Consultant Technical Inspection Report for Legalization of Existing Buildings (Form 13)",
+    "nameAr": "تقرير الاستشاري بالمعاينة الفنية لحالة تقنين وضع مباني قائمة",
+    "description": "DMT form 13 (2 pages): project details, construction date, general plot description, the buildings to be legalized and the structural evaluation.",
+    "projectType": "taqneen",
+    "source": "private/taqneen/05 form13.pdf",
+    "format": "pdf",
+    "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
+    "fields": [
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "bold": false,
+      "size": 12,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "right",
+      "valign": "middle"
+     },
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "bold": false,
+      "size": 12,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "right",
+      "valign": "middle"
+     },
+     {
+      "slot": "description",
+      "value": "project_description_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 12,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 13,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "developer",
+      "value": "developer_name_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 12,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "area",
+      "value": "area_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 12,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "sector",
+      "value": "sector_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 12,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "bold": true,
+      "size": 12,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "land_usage",
+      "value": "land_building_usage_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 12,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "before_2014",
+      "check": {
+       "field": "construction_period",
+       "equals": "before_2014"
+      },
+      "style": "tick",
+      "size": 9
+     },
+     {
+      "slot": "after_2014",
+      "check": {
+       "field": "construction_period",
+       "equals": "after_2014"
+      },
+      "style": "tick",
+      "size": 9
+     },
+     {
+      "slot": "plot_desc_1",
+      "value": "taqneen_buildings|numbered|lines:1-1",
+      "font": "sans",
+      "bold": true,
+      "size": 10.5,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+     },
+     {
+      "slot": "plot_desc_8",
+      "value": "taqneen_buildings|numbered|lines:8-8",
+      "font": "sans",
+      "bold": true,
+      "size": 10.5,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+     },
+     {
+      "slot": "plot_desc_2",
+      "value": "taqneen_buildings|numbered|lines:2-2",
+      "font": "sans",
+      "bold": true,
+      "size": 10.5,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+     },
+     {
+      "slot": "plot_desc_9",
+      "value": "taqneen_buildings|numbered|lines:9-9",
+      "font": "sans",
+      "bold": true,
+      "size": 10.5,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+     },
+     {
+      "slot": "plot_desc_3",
+      "value": "taqneen_buildings|numbered|lines:3-3",
+      "font": "sans",
+      "bold": true,
+      "size": 10.5,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+     },
+     {
+      "slot": "plot_desc_10",
+      "value": "taqneen_buildings|numbered|lines:10-10",
+      "font": "sans",
+      "bold": true,
+      "size": 10.5,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+     },
+     {
+      "slot": "plot_desc_4",
+      "value": "taqneen_buildings|numbered|lines:4-4",
+      "font": "sans",
+      "bold": true,
+      "size": 10.5,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+     },
+     {
+      "slot": "plot_desc_11",
+      "value": "taqneen_buildings|numbered|lines:11-11",
+      "font": "sans",
+      "bold": true,
+      "size": 10.5,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+     },
+     {
+      "slot": "plot_desc_5",
+      "value": "taqneen_buildings|numbered|lines:5-5",
+      "font": "sans",
+      "bold": true,
+      "size": 10.5,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+     },
+     {
+      "slot": "plot_desc_12",
+      "value": "taqneen_buildings|numbered|lines:12-12",
+      "font": "sans",
+      "bold": true,
+      "size": 10.5,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+     },
+     {
+      "slot": "plot_desc_6",
+      "value": "taqneen_buildings|numbered|lines:6-6",
+      "font": "sans",
+      "bold": true,
+      "size": 10.5,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+     },
+     {
+      "slot": "plot_desc_13",
+      "value": "taqneen_buildings|numbered|lines:13-13",
+      "font": "sans",
+      "bold": true,
+      "size": 10.5,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+     },
+     {
+      "slot": "plot_desc_7",
+      "value": "taqneen_buildings|numbered|lines:7-7",
+      "font": "sans",
+      "bold": true,
+      "size": 10.5,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+     },
+     {
+      "slot": "plot_desc_14",
+      "value": "taqneen_buildings|numbered|lines:14-",
+      "font": "sans",
+      "bold": true,
+      "size": 10.5,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+     },
+     {
+      "slot": "bld_no_1",
+      "value": "taqneen_buildings|number|lines:1-1",
+      "font": "sans",
+      "bold": false,
+      "size": 9,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "bld_use_1",
+      "value": "taqneen_buildings|lines:1-1",
+      "font": "sans",
+      "bold": true,
+      "size": 8.5,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "bld_no_2",
+      "value": "taqneen_buildings|number|lines:2-2",
+      "font": "sans",
+      "bold": false,
+      "size": 9,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "bld_use_2",
+      "value": "taqneen_buildings|lines:2-2",
+      "font": "sans",
+      "bold": true,
+      "size": 8.5,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "bld_no_3",
+      "value": "taqneen_buildings|number|lines:3-3",
+      "font": "sans",
+      "bold": false,
+      "size": 9,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "bld_use_3",
+      "value": "taqneen_buildings|lines:3-3",
+      "font": "sans",
+      "bold": true,
+      "size": 8.5,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "bld_no_4",
+      "value": "taqneen_buildings|number|lines:4-4",
+      "font": "sans",
+      "bold": false,
+      "size": 9,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "bld_use_4",
+      "value": "taqneen_buildings|lines:4-4",
+      "font": "sans",
+      "bold": true,
+      "size": 8.5,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "bld_no_5",
+      "value": "taqneen_buildings|number|lines:5-5",
+      "font": "sans",
+      "bold": false,
+      "size": 9,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "bld_use_5",
+      "value": "taqneen_buildings|lines:5-5",
+      "font": "sans",
+      "bold": true,
+      "size": 8.5,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "bld_no_6",
+      "value": "taqneen_buildings|number|lines:6-6",
+      "font": "sans",
+      "bold": false,
+      "size": 9,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "bld_use_6",
+      "value": "taqneen_buildings|lines:6-6",
+      "font": "sans",
+      "bold": true,
+      "size": 8.5,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "bld_no_7",
+      "value": "taqneen_buildings|number|lines:7-7",
+      "font": "sans",
+      "bold": false,
+      "size": 9,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "bld_use_7",
+      "value": "taqneen_buildings|lines:7-7",
+      "font": "sans",
+      "bold": true,
+      "size": 8.5,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "bld_no_8",
+      "value": "taqneen_buildings|number|lines:8-8",
+      "font": "sans",
+      "bold": false,
+      "size": 9,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "bld_use_8",
+      "value": "taqneen_buildings|lines:8-8",
+      "font": "sans",
+      "bold": true,
+      "size": 8.5,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "bld_no_9",
+      "value": "taqneen_buildings|number|lines:9-9",
+      "font": "sans",
+      "bold": false,
+      "size": 9,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "bld_use_9",
+      "value": "taqneen_buildings|lines:9-9",
+      "font": "sans",
+      "bold": true,
+      "size": 8.5,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "bld_no_10",
+      "value": "taqneen_buildings|number|lines:10-10",
+      "font": "sans",
+      "bold": false,
+      "size": 9,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "bld_use_10",
+      "value": "taqneen_buildings|lines:10-10",
+      "font": "sans",
+      "bold": true,
+      "size": 8.5,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "bld_no_11",
+      "value": "taqneen_buildings|number|lines:11-11",
+      "font": "sans",
+      "bold": false,
+      "size": 9,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "bld_use_11",
+      "value": "taqneen_buildings|lines:11-11",
+      "font": "sans",
+      "bold": true,
+      "size": 8.5,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "bld_no_12",
+      "value": "taqneen_buildings|number|lines:12-12",
+      "font": "sans",
+      "bold": false,
+      "size": 9,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "bld_use_12",
+      "value": "taqneen_buildings|lines:12-12",
+      "font": "sans",
+      "bold": true,
+      "size": 8.5,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "bld_no_13",
+      "value": "taqneen_buildings|number|lines:13-13",
+      "font": "sans",
+      "bold": false,
+      "size": 9,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "bld_use_13",
+      "value": "taqneen_buildings|lines:13-13",
+      "font": "sans",
+      "bold": true,
+      "size": 8.5,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "arch_description",
+      "value": "taqneen_architectural_description",
+      "font": "sans",
+      "bold": false,
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+       2,
+       4.2,
+       2,
+       0
+      ],
+      "dir": "auto",
+      "align": "center",
+      "valign": "top",
+      "multiline": true,
+      "lineHeight": 2.055
+     }
+    ]
+   },
+   "layout": {
+    "key": "tq-form13",
+    "version": 1,
+    "format": "pdf",
+    "sourceSha256": "f86d04966cfee3c9cf9845957d6bf637f9409737c926bdcc97f828636ba899c9",
+    "baseSha256": "0f9e6b43929730e613cbb80a270e8ddeab169aba185f2a63cbaed177db3283cb",
+    "pageCount": 2,
+    "pages": [
+     {
+      "width": 595.2,
+      "height": 879.6
+     },
+     {
+      "width": 613.68,
+      "height": 872.64
+     }
+    ],
+    "slots": {
+     "project_id": {
+      "page": 0,
+      "rect": [
+       422,
+       82,
+       519,
+       99
+      ]
+     },
+     "date": {
+      "page": 0,
+      "rect": [
+       452,
+       100,
+       519,
+       116
+      ]
+     },
+     "description": {
+      "page": 0,
+      "rect": [
+       150,
+       115,
+       505,
+       132
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "rect": [
+       300,
+       143,
+       522,
+       163
+      ]
+     },
+     "developer": {
+      "page": 0,
+      "rect": [
+       200,
+       170,
+       500,
+       186
+      ]
+     },
+     "area": {
+      "page": 0,
+      "rect": [
+       48,
+       189,
+       126,
+       207
+      ]
+     },
+     "sector": {
+      "page": 0,
+      "rect": [
+       200,
+       189,
+       286,
+       207
+      ]
+     },
+     "plot": {
+      "page": 0,
+      "rect": [
+       395,
+       189,
+       498,
+       207
+      ]
+     },
+     "land_usage": {
+      "page": 0,
+      "rect": [
+       150,
+       215,
+       505,
+       233
+      ]
+     },
+     "before_2014": {
+      "page": 0,
+      "rect": [
+       557,
+       260.5,
+       567,
+       270.5
+      ]
+     },
+     "after_2014": {
+      "page": 0,
+      "rect": [
+       385,
+       260.8,
+       395,
+       270.8
+      ]
+     },
+     "plot_desc_1": {
+      "page": 0,
+      "rect": [
+       296,
+       336,
+       438,
+       350
+      ]
+     },
+     "plot_desc_8": {
+      "page": 0,
+      "rect": [
+       442,
+       336,
+       569,
+       350
+      ]
+     },
+     "plot_desc_2": {
+      "page": 0,
+      "rect": [
+       296,
+       350,
+       438,
+       364
+      ]
+     },
+     "plot_desc_9": {
+      "page": 0,
+      "rect": [
+       442,
+       350,
+       569,
+       364
+      ]
+     },
+     "plot_desc_3": {
+      "page": 0,
+      "rect": [
+       296,
+       364,
+       438,
+       378
+      ]
+     },
+     "plot_desc_10": {
+      "page": 0,
+      "rect": [
+       442,
+       364,
+       569,
+       378
+      ]
+     },
+     "plot_desc_4": {
+      "page": 0,
+      "rect": [
+       296,
+       378,
+       438,
+       392
+      ]
+     },
+     "plot_desc_11": {
+      "page": 0,
+      "rect": [
+       442,
+       378,
+       569,
+       392
+      ]
+     },
+     "plot_desc_5": {
+      "page": 0,
+      "rect": [
+       296,
+       392,
+       438,
+       406
+      ]
+     },
+     "plot_desc_12": {
+      "page": 0,
+      "rect": [
+       442,
+       392,
+       569,
+       406
+      ]
+     },
+     "plot_desc_6": {
+      "page": 0,
+      "rect": [
+       296,
+       406,
+       438,
+       420
+      ]
+     },
+     "plot_desc_13": {
+      "page": 0,
+      "rect": [
+       442,
+       406,
+       569,
+       420
+      ]
+     },
+     "plot_desc_7": {
+      "page": 0,
+      "rect": [
+       296,
+       420,
+       438,
+       434
+      ]
+     },
+     "plot_desc_14": {
+      "page": 0,
+      "rect": [
+       442,
+       420,
+       569,
+       434
+      ]
+     },
+     "bld_no_1": {
+      "page": 0,
+      "rect": [
+       504.9,
+       479.7,
+       565.3,
+       493.05
+      ]
+     },
+     "bld_use_1": {
+      "page": 0,
+      "rect": [
+       431.9,
+       479.7,
+       502.9,
+       493.05
+      ]
+     },
+     "bld_no_2": {
+      "page": 0,
+      "rect": [
+       504.9,
+       494.65,
+       565.3,
+       508.01
+      ]
+     },
+     "bld_use_2": {
+      "page": 0,
+      "rect": [
+       431.9,
+       494.65,
+       502.9,
+       508.01
+      ]
+     },
+     "bld_no_3": {
+      "page": 0,
+      "rect": [
+       504.9,
+       509.61,
+       565.3,
+       522.96
+      ]
+     },
+     "bld_use_3": {
+      "page": 0,
+      "rect": [
+       431.9,
+       509.61,
+       502.9,
+       522.96
+      ]
+     },
+     "bld_no_4": {
+      "page": 0,
+      "rect": [
+       504.9,
+       524.56,
+       565.3,
+       537.92
+      ]
+     },
+     "bld_use_4": {
+      "page": 0,
+      "rect": [
+       431.9,
+       524.56,
+       502.9,
+       537.92
+      ]
+     },
+     "bld_no_5": {
+      "page": 0,
+      "rect": [
+       504.9,
+       539.52,
+       565.3,
+       552.87
+      ]
+     },
+     "bld_use_5": {
+      "page": 0,
+      "rect": [
+       431.9,
+       539.52,
+       502.9,
+       552.87
+      ]
+     },
+     "bld_no_6": {
+      "page": 0,
+      "rect": [
+       504.9,
+       554.47,
+       565.3,
+       567.82
+      ]
+     },
+     "bld_use_6": {
+      "page": 0,
+      "rect": [
+       431.9,
+       554.47,
+       502.9,
+       567.82
+      ]
+     },
+     "bld_no_7": {
+      "page": 0,
+      "rect": [
+       504.9,
+       569.42,
+       565.3,
+       582.78
+      ]
+     },
+     "bld_use_7": {
+      "page": 0,
+      "rect": [
+       431.9,
+       569.42,
+       502.9,
+       582.78
+      ]
+     },
+     "bld_no_8": {
+      "page": 0,
+      "rect": [
+       504.9,
+       584.38,
+       565.3,
+       597.73
+      ]
+     },
+     "bld_use_8": {
+      "page": 0,
+      "rect": [
+       431.9,
+       584.38,
+       502.9,
+       597.73
+      ]
+     },
+     "bld_no_9": {
+      "page": 0,
+      "rect": [
+       504.9,
+       599.33,
+       565.3,
+       612.68
+      ]
+     },
+     "bld_use_9": {
+      "page": 0,
+      "rect": [
+       431.9,
+       599.33,
+       502.9,
+       612.68
+      ]
+     },
+     "bld_no_10": {
+      "page": 0,
+      "rect": [
+       504.9,
+       614.28,
+       565.3,
+       627.64
+      ]
+     },
+     "bld_use_10": {
+      "page": 0,
+      "rect": [
+       431.9,
+       614.28,
+       502.9,
+       627.64
+      ]
+     },
+     "bld_no_11": {
+      "page": 0,
+      "rect": [
+       504.9,
+       629.24,
+       565.3,
+       642.59
+      ]
+     },
+     "bld_use_11": {
+      "page": 0,
+      "rect": [
+       431.9,
+       629.24,
+       502.9,
+       642.59
+      ]
+     },
+     "bld_no_12": {
+      "page": 0,
+      "rect": [
+       504.9,
+       644.19,
+       565.3,
+       657.55
+      ]
+     },
+     "bld_use_12": {
+      "page": 0,
+      "rect": [
+       431.9,
+       644.19,
+       502.9,
+       657.55
+      ]
+     },
+     "bld_no_13": {
+      "page": 0,
+      "rect": [
+       504.9,
+       659.15,
+       565.3,
+       672.5
+      ]
+     },
+     "bld_use_13": {
+      "page": 0,
+      "rect": [
+       431.9,
+       659.15,
+       502.9,
+       672.5
+      ]
+     },
+     "arch_description": {
+      "page": 0,
+      "rect": [
+       16,
+       713,
+       566,
+       856
+      ]
+     }
+    },
+    "docx": null,
+    "build": {
+     "engine": "pymupdf 1.28.2"
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "tq-form14",
+    "version": 1,
+    "status": "verified",
+    "name": "Owner & Consultant Undertaking for Structural Alterations (Form 14)",
+    "nameAr": "تعهد المالك والاستشاري الخاص بحالة عمل تعديلات إنشائية بعد صدور الرخصة",
+    "description": "DMT form 14: owner and consultant undertaking for structural alterations after the building permit.",
+    "projectType": "taqneen",
+    "source": "private/building/تعديل إنشائي/Form14-V02-20210322 (1).pdf",
+    "format": "pdf",
+    "reviewNotes": "Blank Department of Municipalities and Transport form (no historical values); the project details are drawn on its dotted lines.",
+    "fields": [
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "date_day",
+      "value": "{date|day}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "date_month",
+      "value": "{date|month}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "date_year",
+      "value": "{date|year}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "description",
+      "value": "project_description_ar",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "center"
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "center"
+     },
+     {
+      "slot": "developer",
+      "value": "developer_name_ar",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "center"
+     },
+     {
+      "slot": "area",
+      "value": "area_ar",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "center"
+     },
+     {
+      "slot": "sector",
+      "value": "sector_ar",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "center"
+     },
+     {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "land_usage",
+      "value": "land_building_usage_ar",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "center"
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 80,
+       "anchor": "center"
+      }
+     }
+    ]
+   },
+   "layout": {
+    "key": "tq-form14",
+    "version": 1,
+    "format": "pdf",
+    "sourceSha256": "fb1b22dd7760e61eb5bb7b46ebaa52b51a4533efbf65cc35ef25d6ec69dfaaeb",
+    "baseSha256": "e0f409b3be70c21927f7ed0268b848cec78ab7f9d3f79b5b95a463021da12f89",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.32,
+      "height": 841.92
+     }
+    ],
+    "slots": {
+     "project_id": {
+      "page": 0,
+      "rect": [
+       418,
+       87,
+       524,
+       98.5
+      ],
+      "baseline": 96.3
+     },
+     "date_day": {
+      "page": 0,
+      "rect": [
+       487,
+       99.2,
+       543,
+       110.7
+      ],
+      "baseline": 108.5
+     },
+     "date_month": {
+      "page": 0,
+      "rect": [
+       458,
+       99.2,
+       485,
+       110.7
+      ],
+      "baseline": 108.5
+     },
+     "date_year": {
+      "page": 0,
+      "rect": [
+       418,
+       99.2,
+       456,
+       110.7
+      ],
+      "baseline": 108.5
+     },
+     "description": {
+      "page": 0,
+      "rect": [
+       110,
+       123.9,
+       510,
+       135.4
+      ],
+      "baseline": 133.2
+     },
+     "owner": {
+      "page": 0,
+      "rect": [
+       102,
+       155.7,
+       524,
+       167.2
+      ],
+      "baseline": 165
+     },
+     "developer": {
+      "page": 0,
+      "rect": [
+       139,
+       184,
+       494,
+       195.5
+      ],
+      "baseline": 193.3
+     },
+     "area": {
+      "page": 0,
+      "rect": [
+       55,
+       207.9,
+       145,
+       219.4
+      ],
+      "baseline": 217.2
+     },
+     "sector": {
+      "page": 0,
+      "rect": [
+       224,
+       207.9,
+       300,
+       219.4
+      ],
+      "baseline": 217.2
+     },
+     "plot": {
+      "page": 0,
+      "rect": [
+       388,
+       207.9,
+       524,
+       219.4
+      ],
+      "baseline": 217.2
+     },
+     "land_usage": {
+      "page": 0,
+      "rect": [
+       81,
+       229.8,
+       514,
+       241.3
+      ],
+      "baseline": 239.1
+     },
+     "stamp": {
+      "page": 0,
+      "rect": [
+       260,
+       422,
+       340,
+       502
+      ]
+     }
+    },
+    "docx": null,
+    "build": {
+     "engine": "pymupdf 1.28.2"
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "tq-form2-completion-request",
+    "version": 1,
+    "status": "verified",
+    "name": "Completion certificate request for existing buildings (Form 2)",
+    "nameAr": "طلب شهادة إتمام بناء لمباني قائمة – نموذج رقم (2)",
+    "description": "Form 2: request for a building completion certificate for existing buildings without a permit or previous completion certificate.",
+    "projectType": "taqneen",
+    "source": "private/taqneen/12 form2.pdf",
+    "format": "pdf",
+    "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
+    "fields": [
+     {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "bold": false,
+      "size": 13,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 13,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "area",
+      "value": "{city|ar} - {area_ar} - {sector_ar}",
+      "font": "sans",
+      "bold": true,
+      "size": 12,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "plot_area",
+      "value": "plot_area",
+      "font": "sans",
+      "bold": false,
+      "size": 12,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "usage",
+      "value": "land_building_usage_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 12,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "ratio",
+      "value": "building_ratio",
+      "font": "sans",
+      "bold": false,
+      "size": 12,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "owner_phone",
+      "value": "owner_phone",
+      "font": "sans",
+      "bold": false,
+      "size": 12,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "buildings_count",
+      "value": "taqneen_buildings|count",
+      "font": "sans",
+      "bold": false,
+      "size": 13,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "license",
+      "value": "consultant_license",
+      "font": "sans",
+      "bold": false,
+      "size": 10.5,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "owner_id",
+      "value": "owner_id_number",
+      "font": "sans",
+      "bold": false,
+      "size": 12,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     }
+    ]
+   },
+   "layout": {
+    "key": "tq-form2-completion-request",
+    "version": 1,
+    "format": "pdf",
+    "sourceSha256": "d765d894a24e866eadd5453ab448802c941fd3d6f3aa9c45fa79b63bb3e9f2b1",
+    "baseSha256": "9c239bd4448d838d0100595e17054fa2a0da0850a253b043d917181b44371180",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 613.68,
+      "height": 813.6
+     }
+    ],
+    "slots": {
+     "plot": {
+      "page": 0,
+      "rect": [
+       62,
+       220,
+       168,
+       240
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "rect": [
+       330,
+       222,
+       494,
+       241
+      ]
+     },
+     "area": {
+      "page": 0,
+      "rect": [
+       330,
+       248,
+       494,
+       265
+      ]
+     },
+     "plot_area": {
+      "page": 0,
+      "rect": [
+       340,
+       265,
+       494,
+       280
+      ]
+     },
+     "usage": {
+      "page": 0,
+      "rect": [
+       340,
+       280,
+       494,
+       296
+      ]
+     },
+     "ratio": {
+      "page": 0,
+      "rect": [
+       340,
+       296,
+       494,
+       312
+      ]
+     },
+     "owner_phone": {
+      "page": 0,
+      "rect": [
+       340,
+       312,
+       494,
+       330
+      ]
+     },
+     "buildings_count": {
+      "page": 0,
+      "rect": [
+       240,
+       391,
+       320,
+       410
+      ]
+     },
+     "license": {
+      "page": 0,
+      "rect": [
+       46,
+       444,
+       114,
+       460
+      ]
+     },
+     "owner_id": {
+      "page": 0,
+      "rect": [
+       210,
+       546,
+       338,
+       565
+      ]
+     }
+    },
+    "docx": null,
+    "build": {
+     "engine": "pymupdf 1.28.2"
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "tq-form3-owner-declaration",
+    "version": 1,
+    "status": "verified",
+    "name": "Owner declaration and undertaking (Form 3)",
+    "nameAr": "إقرار وتعهد المالك – نموذج رقم (3)",
+    "description": "Form 3: the owner declares full responsibility for the safety of the existing buildings on the plot.",
+    "projectType": "taqneen",
+    "source": "private/taqneen/14 form3.pdf",
+    "format": "pdf",
+    "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
+    "fields": [
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 13,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "nationality",
+      "value": "owner_nationality_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 12,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "owner_id",
+      "value": "owner_id_number",
+      "font": "sans",
+      "bold": false,
+      "size": 12,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "bold": false,
+      "size": 12,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "license",
+      "value": "consultant_license",
+      "font": "sans",
+      "bold": false,
+      "size": 12,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     }
+    ]
+   },
+   "layout": {
+    "key": "tq-form3-owner-declaration",
+    "version": 1,
+    "format": "pdf",
+    "sourceSha256": "67e819d6358609fdae807c490357f21628670e86d2d0c02dc257748c122b1a78",
+    "baseSha256": "5a8fe1b1488123e3d65a3fce7bd2161b453d4a6a7a329507735cd14e960ec6b4",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 613.68,
+      "height": 778.56
+     }
+    ],
+    "slots": {
+     "owner": {
+      "page": 0,
+      "rect": [
+       255,
+       204,
+       438,
+       223
+      ]
+     },
+     "nationality": {
+      "page": 0,
+      "rect": [
+       440,
+       236,
+       520,
+       255
+      ]
+     },
+     "owner_id": {
+      "page": 0,
+      "rect": [
+       208,
+       236,
+       328,
+       254
+      ]
+     },
+     "plot": {
+      "page": 0,
+      "rect": [
+       210,
+       301,
+       302,
+       322
+      ]
+     },
+     "license": {
+      "page": 0,
+      "rect": [
+       440,
+       365,
+       526,
+       382
+      ]
+     }
+    },
+    "docx": null,
+    "build": {
+     "engine": "pymupdf 1.28.2"
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "tq-form4-consultant-declaration",
+    "version": 1,
+    "status": "verified",
+    "name": "Consultant declaration and undertaking (Form 4)",
+    "nameAr": "إقرار وتعهد – نموذج رقم (4)",
+    "description": "Form 4: the consultant declares the existing buildings on the plot are structurally safe for their purpose.",
+    "projectType": "taqneen",
+    "source": "private/taqneen/11 form4.pdf",
+    "format": "pdf",
+    "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
+    "fields": [
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 13,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "valign": "middle"
+     },
+     {
+      "slot": "location",
+      "value": "{city|ar} - {area_ar} - {sector_ar}",
+      "font": "sans",
+      "bold": true,
+      "size": 13,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "valign": "middle"
+     },
+     {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "bold": true,
+      "size": 13,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "right",
+      "valign": "middle"
+     },
+     {
+      "slot": "license",
+      "value": "consultant_license",
+      "font": "sans",
+      "bold": false,
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     }
+    ]
+   },
+   "layout": {
+    "key": "tq-form4-consultant-declaration",
+    "version": 1,
+    "format": "pdf",
+    "sourceSha256": "375add13505552177f7484883f5916b1104795863abf16e16652b0dff2b46936",
+    "baseSha256": "cf00d1965cfb79478735ea7bc7c34fcca6035f44582e7248198e5ac508d13c37",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 613.68,
+      "height": 787.68
+     }
+    ],
+    "slots": {
+     "owner": {
+      "page": 0,
+      "rect": [
+       300,
+       265,
+       468,
+       283
+      ]
+     },
+     "location": {
+      "page": 0,
+      "rect": [
+       300,
+       284,
+       469,
+       302
+      ]
+     },
+     "plot": {
+      "page": 0,
+      "rect": [
+       330,
+       302,
+       469,
+       319
+      ]
+     },
+     "license": {
+      "page": 0,
+      "rect": [
+       440,
+       377,
+       514,
+       395
+      ]
+     }
+    },
+    "docx": null,
+    "build": {
+     "engine": "pymupdf 1.28.2"
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "tq-inspection-request",
+    "version": 1,
+    "status": "verified",
+    "name": "Inspection request",
+    "nameAr": "طلب تفتيش",
+    "description": "ACAD letter requesting the municipality inspection for the Taqneen (legalization) procedure.",
+    "projectType": "taqneen",
+    "source": "private/taqneen/07 inspection-request.pdf",
+    "format": "pdf",
+    "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
+    "fields": [
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "bold": false,
+      "size": 14,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "right",
+      "valign": "middle"
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 15,
+      "minSize": 6,
+      "padding": [
+       4,
+       0,
+       6,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "valign": "middle"
+     },
+     {
+      "slot": "location",
+      "value": "{city|ar} - {area_ar} - {sector_ar}",
+      "font": "sans",
+      "bold": true,
+      "size": 15,
+      "minSize": 6,
+      "padding": [
+       4,
+       0,
+       6,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "valign": "middle"
+     },
+     {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "bold": true,
+      "size": 15,
+      "minSize": 6,
+      "padding": [
+       4,
+       0,
+       6,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     }
+    ]
+   },
+   "layout": {
+    "key": "tq-inspection-request",
+    "version": 1,
+    "format": "pdf",
+    "sourceSha256": "e17c81c2244154243ecb890ac2ee7fb1a8acd94340447afd0cb27972c7ddfcd9",
+    "baseSha256": "7d4292a47d53a0ffe414568efe8b0b1c569e4968b0b8c2c8e8af58f180531de7",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 613.68,
+      "height": 868.08
+     }
+    ],
+    "slots": {
+     "date": {
+      "page": 0,
+      "rect": [
+       430,
+       92,
+       507,
+       110
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "rect": [
+       72.6,
+       167.4,
+       380,
+       195
+      ]
+     },
+     "location": {
+      "page": 0,
+      "rect": [
+       72.6,
+       226.7,
+       380,
+       254.5
+      ]
+     },
+     "plot": {
+      "page": 0,
+      "rect": [
+       72.6,
+       256.5,
+       380,
+       284
+      ]
+     }
+    },
+    "docx": null,
+    "build": {
+     "engine": "pymupdf 1.28.2"
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "tq-justification",
+    "version": 1,
+    "status": "verified",
+    "name": "Justification of the legalization request",
+    "nameAr": "مبرر طلب تقنين وضع",
+    "description": "ACAD letter to Al Ain Distribution Company: all buildings need legalization, none need alterations or demolition.",
+    "projectType": "taqneen",
+    "source": "private/taqneen/10 justification.pdf",
+    "format": "pdf",
+    "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
+    "fields": [
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "bold": false,
+      "size": 14,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "right",
+      "valign": "middle"
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 15,
+      "minSize": 6,
+      "padding": [
+       4,
+       0,
+       6,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "valign": "middle"
+     },
+     {
+      "slot": "location",
+      "value": "{city|ar} - {area_ar} - {sector_ar}",
+      "font": "sans",
+      "bold": true,
+      "size": 15,
+      "minSize": 6,
+      "padding": [
+       4,
+       0,
+       6,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "valign": "middle"
+     },
+     {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "bold": true,
+      "size": 15,
+      "minSize": 6,
+      "padding": [
+       4,
+       0,
+       6,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     }
+    ]
+   },
+   "layout": {
+    "key": "tq-justification",
+    "version": 1,
+    "format": "pdf",
+    "sourceSha256": "16c1ff63ef127cfad0d52cdcb7a7e8f8286fb7f355d9d8172755c97b87abb16e",
+    "baseSha256": "2630e7e3a092099925a5de5cf5743be4bba8e47e74e8dcefe6336ce8177f22c6",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 613.68,
+      "height": 867.84
+     }
+    ],
+    "slots": {
+     "date": {
+      "page": 0,
+      "rect": [
+       423,
+       103,
+       500,
+       121
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "rect": [
+       73.8,
+       194.8,
+       381.3,
+       222.4
+      ]
+     },
+     "location": {
+      "page": 0,
+      "rect": [
+       73.8,
+       254.1,
+       381.3,
+       281.8
+      ]
+     },
+     "plot": {
+      "page": 0,
+      "rect": [
+       73.8,
+       283.8,
+       381.3,
+       311.4
+      ]
+     }
+    },
+    "docx": null,
+    "build": {
+     "engine": "pymupdf 1.28.2"
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "tq-maintenance-undertaking",
+    "version": 1,
+    "status": "verified",
+    "name": "Facade maintenance undertaking",
+    "nameAr": "تعهد صيانة",
+    "description": "ACAD letter: the owner undertakes to maintain the external facades of the existing buildings.",
+    "projectType": "taqneen",
+    "source": "private/taqneen/03 maintenance.pdf",
+    "format": "pdf",
+    "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
+    "fields": [
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "bold": false,
+      "size": 14,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "right",
+      "valign": "middle"
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 15,
+      "minSize": 6,
+      "padding": [
+       4,
+       0,
+       6,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "valign": "middle"
+     },
+     {
+      "slot": "location",
+      "value": "{city|ar} - {area_ar} - {sector_ar}",
+      "font": "sans",
+      "bold": true,
+      "size": 15,
+      "minSize": 6,
+      "padding": [
+       4,
+       0,
+       6,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "valign": "middle"
+     },
+     {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "bold": true,
+      "size": 15,
+      "minSize": 6,
+      "padding": [
+       4,
+       0,
+       6,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "owner_body",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "bold": false,
+      "size": 12,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "center",
+      "valign": "middle"
+     }
+    ]
+   },
+   "layout": {
+    "key": "tq-maintenance-undertaking",
+    "version": 1,
+    "format": "pdf",
+    "sourceSha256": "3cf951660639a01f4ae5482c78f28a4740a81998b9df3acdbd466c42e1fbe6b3",
+    "baseSha256": "8d62b7a9db820cdaf9273e429f161b5b4363d70bff08ae417f7aa3026967be2a",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 596.64,
+      "height": 843.36
+     }
+    ],
+    "slots": {
+     "date": {
+      "page": 0,
+      "rect": [
+       420,
+       133,
+       495,
+       158
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "rect": [
+       95.7,
+       226.7,
+       366.9,
+       257.5
+      ]
+     },
+     "location": {
+      "page": 0,
+      "rect": [
+       95.7,
+       292,
+       366.9,
+       322.8
+      ]
+     },
+     "plot": {
+      "page": 0,
+      "rect": [
+       95.7,
+       324.8,
+       366.9,
+       355.4
+      ]
+     },
+     "owner_body": {
+      "page": 0,
+      "rect": [
+       363,
+       428,
+       471,
+       447
+      ]
+     }
+    },
+    "docx": null,
+    "build": {
+     "engine": "pymupdf 1.28.2"
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "tq-no-determination-undertaking",
+    "version": 1,
+    "status": "verified",
+    "name": "Undertaking – no people of determination among the users",
+    "nameAr": "تعهد بعدم وجود ذوي الهمم",
+    "description": "ACAD letter: owner and consultant undertake that no people of determination use the property.",
+    "projectType": "taqneen",
+    "source": "private/taqneen/01 people-of-determination.pdf",
+    "format": "pdf",
+    "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
+    "fields": [
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "bold": false,
+      "size": 14,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "right",
+      "valign": "middle"
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 15,
+      "minSize": 6,
+      "padding": [
+       4,
+       0,
+       6,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "valign": "middle"
+     },
+     {
+      "slot": "location",
+      "value": "{city|ar} - {area_ar} - {sector_ar}",
+      "font": "sans",
+      "bold": true,
+      "size": 15,
+      "minSize": 6,
+      "padding": [
+       4,
+       0,
+       6,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "valign": "middle"
+     },
+     {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "bold": true,
+      "size": 15,
+      "minSize": 6,
+      "padding": [
+       4,
+       0,
+       6,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "owner_body",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "bold": false,
+      "size": 13,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "center",
+      "valign": "middle"
+     }
+    ]
+   },
+   "layout": {
+    "key": "tq-no-determination-undertaking",
+    "version": 1,
+    "format": "pdf",
+    "sourceSha256": "8dd6690e9afbea9ae8f77bf971f1b87a98dffbc765f190b1f91f0b6e76450032",
+    "baseSha256": "c2033819086cf19da7704f59fd1e78198650cb1f8cedac22055059ab56b80dfe",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 596.64,
+      "height": 844.32
+     }
+    ],
+    "slots": {
+     "date": {
+      "page": 0,
+      "rect": [
+       410,
+       105,
+       488,
+       128
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "rect": [
+       69.3,
+       219.8,
+       376.7,
+       247.4
+      ]
+     },
+     "location": {
+      "page": 0,
+      "rect": [
+       69.3,
+       279,
+       376.7,
+       306.8
+      ]
+     },
+     "plot": {
+      "page": 0,
+      "rect": [
+       69.3,
+       308.8,
+       376.7,
+       336.3
+      ]
+     },
+     "owner_body": {
+      "page": 0,
+      "rect": [
+       156,
+       410,
+       268,
+       433
+      ]
+     }
+    },
+    "docx": null,
+    "build": {
+     "engine": "pymupdf 1.28.2"
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "tq-roofs-undertaking",
+    "version": 1,
+    "status": "verified",
+    "name": "Undertaking – no use of roofs without parapets",
+    "nameAr": "تعهد بعدم إشغال الأسطح التي لا يتوفر فيها درابزين",
+    "description": "ACAD letter: owner and consultant undertake not to occupy or place services on roofs without parapets.",
+    "projectType": "taqneen",
+    "source": "private/taqneen/04 roofs.pdf",
+    "format": "pdf",
+    "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
+    "fields": [
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "bold": false,
+      "size": 14,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "right",
+      "valign": "middle"
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 15,
+      "minSize": 6,
+      "padding": [
+       4,
+       0,
+       6,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "valign": "middle"
+     },
+     {
+      "slot": "location",
+      "value": "{city|ar} - {area_ar} - {sector_ar}",
+      "font": "sans",
+      "bold": true,
+      "size": 15,
+      "minSize": 6,
+      "padding": [
+       4,
+       0,
+       6,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "valign": "middle"
+     },
+     {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "bold": true,
+      "size": 15,
+      "minSize": 6,
+      "padding": [
+       4,
+       0,
+       6,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "owner_body",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "bold": false,
+      "size": 13,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "center",
+      "valign": "middle"
+     }
+    ]
+   },
+   "layout": {
+    "key": "tq-roofs-undertaking",
+    "version": 1,
+    "format": "pdf",
+    "sourceSha256": "2f72e8ce6bdf30520c9c4fae319118b89d47458e0ceb4ec59e0664ed5d0b8f5d",
+    "baseSha256": "951d77c4dff8a2b5dc5a7b197e24ae62361d6e1889a0eae09df7539529c4a1f8",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 596.64,
+      "height": 844.32
+     }
+    ],
+    "slots": {
+     "date": {
+      "page": 0,
+      "rect": [
+       410,
+       105,
+       488,
+       128
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "rect": [
+       69.3,
+       219.8,
+       376.7,
+       247.4
+      ]
+     },
+     "location": {
+      "page": 0,
+      "rect": [
+       69.3,
+       279,
+       376.7,
+       306.8
+      ]
+     },
+     "plot": {
+      "page": 0,
+      "rect": [
+       69.3,
+       308.8,
+       376.7,
+       336.3
+      ]
+     },
+     "owner_body": {
+      "page": 0,
+      "rect": [
+       156,
+       410,
+       268,
+       433
+      ]
+     }
+    },
+    "docx": null,
+    "build": {
+     "engine": "pymupdf 1.28.2"
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "tq-site-entry-approval",
+    "version": 1,
+    "status": "verified",
+    "name": "Approval to enter the plot",
+    "nameAr": "الموافقة على دخول القسيمة",
+    "description": "Owner approval for the municipality inspectors to enter the plot, take photos and survey the existing buildings.",
+    "projectType": "taqneen",
+    "source": "private/taqneen/15 site-entry.pdf",
+    "format": "pdf",
+    "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
+    "fields": [
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "bold": false,
+      "size": 13,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "right",
+      "valign": "middle"
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 13,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "valign": "middle"
+     },
+     {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "bold": false,
+      "size": 13,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "area",
+      "value": "area_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 12,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "sector",
+      "value": "sector_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 12,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "usage",
+      "value": "land_building_usage_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 12,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "owner_phone",
+      "value": "owner_phone",
+      "font": "sans",
+      "bold": false,
+      "size": 13,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     }
+    ]
+   },
+   "layout": {
+    "key": "tq-site-entry-approval",
+    "version": 1,
+    "format": "pdf",
+    "sourceSha256": "278541c0cca4d18ea05d72b019783b5ad8914a8d149cf8b222f982e699bb1783",
+    "baseSha256": "de43d7b10a59be0da03b96325b1de06b9662ccb835baae81849ae485f43ee897",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 613.68,
+      "height": 876.24
+     }
+    ],
+    "slots": {
+     "date": {
+      "page": 0,
+      "rect": [
+       86,
+       109,
+       161,
+       126
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "rect": [
+       300,
+       178,
+       537,
+       198
+      ]
+     },
+     "plot": {
+      "page": 0,
+      "rect": [
+       70,
+       228,
+       185,
+       245
+      ]
+     },
+     "area": {
+      "page": 0,
+      "rect": [
+       440,
+       271,
+       518,
+       290
+      ]
+     },
+     "sector": {
+      "page": 0,
+      "rect": [
+       270,
+       272,
+       362,
+       290
+      ]
+     },
+     "usage": {
+      "page": 0,
+      "rect": [
+       40,
+       271,
+       160,
+       290
+      ]
+     },
+     "owner_phone": {
+      "page": 0,
+      "rect": [
+       250,
+       576,
+       400,
+       593
+      ]
+     }
+    },
+    "docx": null,
+    "build": {
+     "engine": "pymupdf 1.28.2"
+    }
+   }
+  },
+  {
+   "definition": {
     "key": "water-validity",
     "version": 2,
     "status": "verified",

@@ -1,0 +1,156 @@
+{
+  "key": "tq-form4-consultant-declaration",
+  "version": 1,
+  "status": "verified",
+  "name": "Consultant declaration and undertaking (Form 4)",
+  "nameAr": "إقرار وتعهد – نموذج رقم (4)",
+  "description": "Form 4: the consultant declares the existing buildings on the plot are structurally safe for their purpose.",
+  "projectType": "taqneen",
+  "source": "private/taqneen/11 form4.pdf",
+  "format": "pdf",
+  "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
+  "sanitize": [
+    {
+      "op": "image_edit",
+      "page": 0,
+      "erase_text": [
+        [
+          322,
+          264,
+          470,
+          284
+        ],
+        [
+          354,
+          283,
+          471,
+          302
+        ],
+        [
+          372,
+          301,
+          471,
+          320
+        ],
+        [
+          446,
+          377,
+          512,
+          396
+        ]
+      ]
+    }
+  ],
+  "slots": {
+    "owner": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        300,
+        265,
+        468,
+        283
+      ]
+    },
+    "location": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        300,
+        284,
+        469,
+        302
+      ]
+    },
+    "plot": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        330,
+        302,
+        469,
+        319
+      ]
+    },
+    "license": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        440,
+        377,
+        514,
+        395
+      ]
+    }
+  },
+  "fields": [
+    {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 13,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "valign": "middle"
+    },
+    {
+      "slot": "location",
+      "value": "{city|ar} - {area_ar} - {sector_ar}",
+      "font": "sans",
+      "bold": true,
+      "size": 13,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "valign": "middle"
+    },
+    {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "bold": true,
+      "size": 13,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "right",
+      "valign": "middle"
+    },
+    {
+      "slot": "license",
+      "value": "consultant_license",
+      "font": "sans",
+      "bold": false,
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    }
+  ]
+}

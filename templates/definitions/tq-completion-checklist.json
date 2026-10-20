@@ -1,0 +1,164 @@
+{
+  "key": "tq-completion-checklist",
+  "version": 1,
+  "status": "verified",
+  "name": "Completion certificate requirements checklist (existing building)",
+  "nameAr": "قائمة تدقيق متطلبات إصدار شهادة إتمام لمبنى قائم",
+  "description": "Al Ain City Municipality checklist of the documents, drawings and technical reports for an existing building completion certificate.",
+  "projectType": "taqneen",
+  "source": "private/taqneen/13 checklist.pdf",
+  "format": "pdf",
+  "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
+  "sanitize": [
+    {
+      "op": "image_edit",
+      "page": 0,
+      "fill": [
+        [
+          327.5,
+          215.8,
+          489,
+          226.8
+        ],
+        [
+          327.5,
+          228.8,
+          489,
+          241.3
+        ],
+        [
+          132.6,
+          215.8,
+          237.8,
+          226.8
+        ],
+        [
+          106.6,
+          228.8,
+          237.8,
+          241.3
+        ]
+      ],
+      "erase_text": [
+        [
+          125,
+          213.5,
+          132.3,
+          228
+        ]
+      ]
+    }
+  ],
+  "slots": {
+    "owner": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        328,
+        215,
+        488,
+        227.5
+      ]
+    },
+    "area": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        328,
+        228,
+        488,
+        242
+      ]
+    },
+    "project_id": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        133,
+        215,
+        237.5,
+        227.5
+      ]
+    },
+    "plot": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        107,
+        228,
+        237.5,
+        242
+      ]
+    }
+  },
+  "fields": [
+    {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+        2,
+        0,
+        4,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "valign": "middle"
+    },
+    {
+      "slot": "area",
+      "value": "{city|ar} - {area_ar} - {sector_ar}",
+      "font": "sans",
+      "bold": false,
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+        2,
+        0,
+        4,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "valign": "middle"
+    },
+    {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "bold": false,
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "bold": false,
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    }
+  ]
+}

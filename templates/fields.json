@@ -63,6 +63,19 @@
       "help": "The bank's (FAB) project / loan number printed on the bank papers. Not the Project ID or the municipality project number."
     },
     {
+      "key": "consultant_license",
+      "label": "Consultant license no.",
+      "labelAr": "رخصة الاستشاري",
+      "type": "text",
+      "dir": "ltr",
+      "group": "identification",
+      "scope": "shared",
+      "maxLength": 40,
+      "optional": true,
+      "placeholder": "e.g. CN-1234567",
+      "help": "The consultant office's trade license number, printed on the Taqneen declarations (Forms 2, 3 and 4)."
+    },
+    {
       "key": "date",
       "label": "Document date",
       "labelAr": "التاريخ",
@@ -280,6 +293,18 @@
       "help": "Kept exactly as typed (leading zeros, dashes)."
     },
     {
+      "key": "plot_area",
+      "label": "Plot area (m²)",
+      "labelAr": "مساحة القسيمة",
+      "type": "text",
+      "dir": "ltr",
+      "group": "location",
+      "scope": "shared",
+      "maxLength": 30,
+      "optional": true,
+      "placeholder": "e.g. 1200.00"
+    },
+    {
       "key": "project_address_ar",
       "label": "Project address (Arabic, optional override)",
       "labelAr": "عنوان المشروع",
@@ -355,6 +380,40 @@
       "scope": "shared",
       "maxLength": 120,
       "pair": "land_building_usage_ar"
+    },
+    {
+      "key": "building_ratio",
+      "label": "Building ratio",
+      "labelAr": "نسبة البناء",
+      "type": "text",
+      "dir": "ltr",
+      "group": "description",
+      "scope": "shared",
+      "maxLength": 20,
+      "optional": true,
+      "placeholder": "e.g. 3.4 %"
+    },
+    {
+      "key": "taqneen_buildings",
+      "label": "Existing buildings (one per line)",
+      "labelAr": "المباني القائمة – الوصف العام للقسيمة (مبنى في كل سطر)",
+      "type": "textarea",
+      "dir": "ltr",
+      "group": "description",
+      "scope": "shared",
+      "maxLength": 800,
+      "placeholder": "VILLA\nSERVICE BLOCK\nMAJLIS",
+      "help": "Taqneen: one building per line. Printed numbered in the general plot description and the buildings table of Form 13, in the completion percentage letter (each at 100%), and counted in Form 2."
+    },
+    {
+      "key": "taqneen_architectural_description",
+      "label": "Architectural description of the buildings to be legalized",
+      "labelAr": "الوصف المعماري للمباني المراد تقنين وضعها",
+      "type": "textarea",
+      "group": "description",
+      "scope": "shared",
+      "maxLength": 800,
+      "optional": true
     },
     {
       "key": "permitted",
@@ -811,6 +870,30 @@
         "صور داخلية لنسبة انجاز المشروع"
       ],
       "help": "Up to 14 photos; each photo gets a 'details' caption and optional notes. Unused trailing pages are removed."
+    },
+    {
+      "key": "construction_period",
+      "label": "Construction date (Form 13)",
+      "labelAr": "تاريخ البناء",
+      "type": "select",
+      "group": "document",
+      "scope": "template",
+      "templates": [
+        "tq-form13"
+      ],
+      "default": "after_2014",
+      "options": [
+        {
+          "value": "before_2014",
+          "en": "Before 2014",
+          "ar": "قبل 2014"
+        },
+        {
+          "value": "after_2014",
+          "en": "After 2014",
+          "ar": "بعد 2014"
+        }
+      ]
     }
   ],
   "derived": {

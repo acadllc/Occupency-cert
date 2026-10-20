@@ -8,6 +8,15 @@ export const sampleProject: ProjectFields = {
   proposed: 'إضافة ملحق خدمات وغرفة حارس',
   units_before_permit: '1',
   units_after_permit: '2',
+  consultant_license: 'CN-1234567',
+  plot_area: '1200.00',
+  building_ratio: '35 %',
+  taqneen_buildings: 'VILLA\nSERVICE BLOCK\nMAJLIS\nLABOUR ROOM\nSTORE 01\nWATER TANK\nELEC. ROOM 01\nGUARD ROOM',
+  taqneen_architectural_description: 'Ground floor villa with an external majlis, a service block and a labour room built of steel / sandwich panels.',
+  construction_period: 'after_2014',
+  owner_phone: '0501234567',
+  owner_id_number: '784-1980-1234567-1',
+  owner_nationality_ar: 'إماراتي',
   date: '2026-10-13',
   owner_name_ar: 'سالم خليفة راشد المنصوري',
   owner_name_en: 'Salem Khalifa Rashed Al Mansouri',
@@ -69,4 +78,7 @@ export const longProject: ProjectFields = {
   project_description_ar: 'إنشاء فيلا سكنية من طابقين وملحق خدمات ومجلس خارجي وسور وبوابات وأعمال تنسيق المواقع الخارجية وحمام سباحة',
   project_description_en: 'Construction of a two-storey residential villa, service annex, external majlis, boundary wall, gates, landscaping works and swimming pool (G+1)',
   project_components_ar: 'فيلا دورين + ملحق خدمات + مجلس خارجي + سور خارجي + غرفة حارس + مظلات سيارات + حمام سباحة',
+  taqneen_buildings: Array.from({ length: 16 }, (_, i) => `LABOUR ROOM & STORE ${String(i + 1).padStart(2, '0')}`).join('\n'),
+  taqneen_architectural_description:
+    'Existing ground floor villa (reinforced concrete) with a service block, majlis, labour rooms and stores built of steel / sandwich panels, water tank and three electrical rooms; boundary wall and two gates. All buildings are in good condition and used as described in the general plot description above.',
 };
