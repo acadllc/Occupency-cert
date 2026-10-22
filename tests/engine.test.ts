@@ -76,6 +76,17 @@ describe('field values', () => {
     expect(resolveValue('city|en', ctx({ city: 'al_ain' }))).toBe('Al Ain');
   });
 
+  it('prints a one-per-line list numbered, counted, in ranges', () => {
+    const f = { taqneen_buildings: ' VILLA \n\nMAJLIS\r\nSTORE 01\n' };
+    expect(resolveValue('taqneen_buildings|numbered', ctx(f))).toBe('1. VILLA\n2. MAJLIS\n3. STORE 01');
+    expect(resolveValue('taqneen_buildings|numbered|done|lines:2-2', ctx(f))).toBe('2. MAJLIS 100%');
+    expect(resolveValue('taqneen_buildings|lines:2-', ctx(f))).toBe('MAJLIS\nSTORE 01');
+    expect(resolveValue('taqneen_buildings|number|lines:3-3', ctx(f))).toBe('3');
+    expect(resolveValue('taqneen_buildings|number|lines:4-4', ctx(f))).toBe('');
+    expect(resolveValue('taqneen_buildings|count', ctx(f))).toBe('3');
+    expect(resolveValue('taqneen_buildings|count', ctx({}))).toBe('');
+  });
+
   it('never prints undefined/null', () => {
     for (const k of ['owner_name_ar', 'date', 'city|en', '@project_location_en']) {
       const v = resolveValue(k, ctx({ owner_name_ar: null, date: undefined }));

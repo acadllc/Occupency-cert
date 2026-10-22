@@ -1,0 +1,56 @@
+{
+ "key": "tq-completion-checklist",
+ "version": 1,
+ "format": "pdf",
+ "sourceSha256": "bfd2e15382a0aab2952299471c5fcfd0110b63ec13ae8c3397ee50b6974c4e7a",
+ "baseSha256": "3a36a93b7feb8bc5b69f96535c582a822393d9b8ed6d12db02e6add0e0cbb5ae",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 613.68,
+   "height": 867.36
+  }
+ ],
+ "slots": {
+  "owner": {
+   "page": 0,
+   "rect": [
+    328,
+    215,
+    488,
+    227.5
+   ]
+  },
+  "area": {
+   "page": 0,
+   "rect": [
+    328,
+    228,
+    488,
+    242
+   ]
+  },
+  "project_id": {
+   "page": 0,
+   "rect": [
+    133,
+    215,
+    237.5,
+    227.5
+   ]
+  },
+  "plot": {
+   "page": 0,
+   "rect": [
+    107,
+    228,
+    237.5,
+    242
+   ]
+  }
+ },
+ "docx": null,
+ "build": {
+  "engine": "pymupdf 1.28.2"
+ }
+}

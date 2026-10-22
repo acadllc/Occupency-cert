@@ -137,11 +137,13 @@ test('full workflow: create, generate, download, history, edit, search', async (
   await expect(page.getByText('Saved (revision 3)')).toBeVisible();
 
   // ---- generate ALL templates in the browser
-  // project-type tabs: the Architectural tab has its own categories, Taqneen has no templates yet
+  // project-type tabs: the Architectural tab has its own categories, Taqneen lists its papers, Contractor has no templates yet
   await page.getByRole('tab', { name: /Architectural/ }).click();
   await expect(page.getByLabel('Select all أوراق تقديم البلدية')).toBeVisible();
   await page.getByRole('tab', { name: /Taqneen/ }).click();
-  await expect(page.getByText(/No Taqneen documents yet/)).toBeVisible();
+  await expect(page.getByRole('button', { name: /Select all in tab \(14\)/ })).toBeVisible();
+  await page.getByRole('tab', { name: /Contractor/ }).click();
+  await expect(page.getByText(/No Contractor contracts documents yet/)).toBeVisible();
   await page.getByRole('tab', { name: /Occupancy certificate/ }).click();
   // select a whole category, then the whole tab
   await page.getByLabel('Select all DMT undertakings').check();

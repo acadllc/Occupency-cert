@@ -1,0 +1,169 @@
+{
+  "key": "tq-justification",
+  "version": 1,
+  "status": "verified",
+  "name": "Justification of the legalization request",
+  "nameAr": "مبرر طلب تقنين وضع",
+  "description": "ACAD letter to Al Ain Distribution Company: all buildings need legalization, none need alterations or demolition.",
+  "projectType": "taqneen",
+  "source": "private/taqneen/10 justification.pdf",
+  "format": "pdf",
+  "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
+  "sanitize": [
+    {
+      "op": "image_edit",
+      "page": 0,
+      "fill": [
+        [
+          72.2,
+          195.20000000000002,
+          382.90000000000003,
+          222.0
+        ],
+        [
+          72.2,
+          254.5,
+          382.90000000000003,
+          281.40000000000003
+        ],
+        [
+          72.2,
+          284.2,
+          382.90000000000003,
+          311.0
+        ]
+      ],
+      "erase_text": [
+        [
+          423,
+          103,
+          500,
+          121
+        ]
+      ],
+      "remove_ink": [
+        {
+          "rect": [
+            400,
+            592,
+            548,
+            652
+          ],
+          "light": 150
+        }
+      ]
+    }
+  ],
+  "slots": {
+    "date": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        423,
+        103,
+        500,
+        121
+      ]
+    },
+    "owner": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        73.8,
+        194.8,
+        381.3,
+        222.4
+      ]
+    },
+    "location": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        73.8,
+        254.1,
+        381.3,
+        281.8
+      ]
+    },
+    "plot": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        73.8,
+        283.8,
+        381.3,
+        311.4
+      ]
+    }
+  },
+  "fields": [
+    {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "bold": false,
+      "size": 14,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "right",
+      "valign": "middle"
+    },
+    {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 15,
+      "minSize": 6,
+      "padding": [
+        4,
+        0,
+        6,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "valign": "middle"
+    },
+    {
+      "slot": "location",
+      "value": "{city|ar} - {area_ar} - {sector_ar}",
+      "font": "sans",
+      "bold": true,
+      "size": 15,
+      "minSize": 6,
+      "padding": [
+        4,
+        0,
+        6,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "valign": "middle"
+    },
+    {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "bold": true,
+      "size": 15,
+      "minSize": 6,
+      "padding": [
+        4,
+        0,
+        6,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    }
+  ]
+}

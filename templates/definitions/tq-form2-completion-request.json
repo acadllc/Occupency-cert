@@ -1,0 +1,365 @@
+{
+  "key": "tq-form2-completion-request",
+  "version": 1,
+  "status": "verified",
+  "name": "Completion certificate request for existing buildings (Form 2)",
+  "nameAr": "طلب شهادة إتمام بناء لمباني قائمة – نموذج رقم (2)",
+  "description": "Form 2: request for a building completion certificate for existing buildings without a permit or previous completion certificate.",
+  "projectType": "taqneen",
+  "source": "private/taqneen/12 form2.pdf",
+  "format": "pdf",
+  "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
+  "sanitize": [
+    {
+      "op": "image_edit",
+      "page": 0,
+      "erase_text": [
+        [
+          70,
+          222,
+          160,
+          242
+        ],
+        [
+          348,
+          222,
+          488,
+          242
+        ],
+        [
+          370,
+          247,
+          490,
+          266
+        ],
+        [
+          386,
+          265,
+          451,
+          280.5
+        ],
+        [
+          411,
+          280,
+          453,
+          297
+        ],
+        [
+          402,
+          296,
+          446,
+          312
+        ],
+        [
+          379,
+          312,
+          466,
+          331
+        ],
+        [
+          266,
+          393,
+          296,
+          410
+        ],
+        [
+          48,
+          445,
+          112,
+          460
+        ],
+        [
+          212,
+          545,
+          336,
+          566
+        ]
+      ],
+      "remove_ink": [
+        {
+          "rect": [
+            398,
+            666,
+            552,
+            718
+          ],
+          "light": 150
+        }
+      ]
+    }
+  ],
+  "slots": {
+    "plot": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        62,
+        220,
+        168,
+        240
+      ]
+    },
+    "owner": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        330,
+        222,
+        494,
+        241
+      ]
+    },
+    "area": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        330,
+        248,
+        494,
+        265
+      ]
+    },
+    "plot_area": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        340,
+        265,
+        494,
+        280
+      ]
+    },
+    "usage": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        340,
+        280,
+        494,
+        296
+      ]
+    },
+    "ratio": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        340,
+        296,
+        494,
+        312
+      ]
+    },
+    "owner_phone": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        340,
+        312,
+        494,
+        330
+      ]
+    },
+    "buildings_count": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        240,
+        391,
+        320,
+        410
+      ]
+    },
+    "license": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        46,
+        444,
+        114,
+        460
+      ]
+    },
+    "owner_id": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        210,
+        546,
+        338,
+        565
+      ]
+    }
+  },
+  "fields": [
+    {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "bold": false,
+      "size": 13,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 13,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "area",
+      "value": "{city|ar} - {area_ar} - {sector_ar}",
+      "font": "sans",
+      "bold": true,
+      "size": 12,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "plot_area",
+      "value": "plot_area",
+      "font": "sans",
+      "bold": false,
+      "size": 12,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "usage",
+      "value": "land_building_usage_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 12,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "ratio",
+      "value": "building_ratio",
+      "font": "sans",
+      "bold": false,
+      "size": 12,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "owner_phone",
+      "value": "owner_phone",
+      "font": "sans",
+      "bold": false,
+      "size": 12,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "buildings_count",
+      "value": "taqneen_buildings|count",
+      "font": "sans",
+      "bold": false,
+      "size": 13,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "license",
+      "value": "consultant_license",
+      "font": "sans",
+      "bold": false,
+      "size": 10.5,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "owner_id",
+      "value": "owner_id_number",
+      "font": "sans",
+      "bold": false,
+      "size": 12,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    }
+  ]
+}

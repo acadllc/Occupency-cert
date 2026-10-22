@@ -1,0 +1,169 @@
+{
+  "key": "tq-inspection-request",
+  "version": 1,
+  "status": "verified",
+  "name": "Inspection request",
+  "nameAr": "طلب تفتيش",
+  "description": "ACAD letter requesting the municipality inspection for the Taqneen (legalization) procedure.",
+  "projectType": "taqneen",
+  "source": "private/taqneen/07 inspection-request.pdf",
+  "format": "pdf",
+  "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
+  "sanitize": [
+    {
+      "op": "image_edit",
+      "page": 0,
+      "fill": [
+        [
+          71.0,
+          167.8,
+          381.6,
+          194.6
+        ],
+        [
+          71.0,
+          227.1,
+          381.6,
+          254.1
+        ],
+        [
+          71.0,
+          256.9,
+          381.6,
+          283.6
+        ]
+      ],
+      "erase_text": [
+        [
+          430,
+          92,
+          507,
+          110
+        ]
+      ],
+      "remove_ink": [
+        {
+          "rect": [
+            405,
+            665,
+            545,
+            725
+          ],
+          "light": 150
+        }
+      ]
+    }
+  ],
+  "slots": {
+    "date": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        430,
+        92,
+        507,
+        110
+      ]
+    },
+    "owner": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        72.6,
+        167.4,
+        380.0,
+        195.0
+      ]
+    },
+    "location": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        72.6,
+        226.7,
+        380.0,
+        254.5
+      ]
+    },
+    "plot": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        72.6,
+        256.5,
+        380.0,
+        284.0
+      ]
+    }
+  },
+  "fields": [
+    {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "bold": false,
+      "size": 14,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "right",
+      "valign": "middle"
+    },
+    {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 15,
+      "minSize": 6,
+      "padding": [
+        4,
+        0,
+        6,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "valign": "middle"
+    },
+    {
+      "slot": "location",
+      "value": "{city|ar} - {area_ar} - {sector_ar}",
+      "font": "sans",
+      "bold": true,
+      "size": 15,
+      "minSize": 6,
+      "padding": [
+        4,
+        0,
+        6,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "valign": "middle"
+    },
+    {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "bold": true,
+      "size": 15,
+      "minSize": 6,
+      "padding": [
+        4,
+        0,
+        6,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    }
+  ]
+}

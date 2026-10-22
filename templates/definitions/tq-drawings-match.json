@@ -1,0 +1,158 @@
+{
+  "key": "tq-drawings-match",
+  "version": 1,
+  "status": "verified",
+  "name": "Drawings match undertaking",
+  "nameAr": "تعهد مطابقة المخططات",
+  "description": "ACAD letter: the consultant undertakes that the drawings match the site.",
+  "projectType": "taqneen",
+  "source": "private/taqneen/09 drawings-match.pdf",
+  "format": "pdf",
+  "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
+  "sanitize": [
+    {
+      "op": "image_edit",
+      "page": 0,
+      "fill": [
+        [
+          75.60000000000001,
+          233.4,
+          386.20000000000005,
+          260.20000000000005
+        ],
+        [
+          75.60000000000001,
+          292.59999999999997,
+          386.20000000000005,
+          319.6
+        ],
+        [
+          75.60000000000001,
+          322.4,
+          386.20000000000005,
+          349.1
+        ]
+      ],
+      "erase_text": [
+        [
+          421,
+          118,
+          498,
+          137
+        ]
+      ]
+    }
+  ],
+  "slots": {
+    "date": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        421,
+        118,
+        498,
+        137
+      ]
+    },
+    "owner": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        77.2,
+        233.0,
+        384.6,
+        260.6
+      ]
+    },
+    "location": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        77.2,
+        292.2,
+        384.6,
+        320.0
+      ]
+    },
+    "plot": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        77.2,
+        322.0,
+        384.6,
+        349.5
+      ]
+    }
+  },
+  "fields": [
+    {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "bold": false,
+      "size": 14,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "right",
+      "valign": "middle"
+    },
+    {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 15,
+      "minSize": 6,
+      "padding": [
+        4,
+        0,
+        6,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "valign": "middle"
+    },
+    {
+      "slot": "location",
+      "value": "{city|ar} - {area_ar} - {sector_ar}",
+      "font": "sans",
+      "bold": true,
+      "size": 15,
+      "minSize": 6,
+      "padding": [
+        4,
+        0,
+        6,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "valign": "middle"
+    },
+    {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "bold": true,
+      "size": 15,
+      "minSize": 6,
+      "padding": [
+        4,
+        0,
+        6,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    }
+  ]
+}

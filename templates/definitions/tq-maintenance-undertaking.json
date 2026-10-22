@@ -1,0 +1,202 @@
+{
+  "key": "tq-maintenance-undertaking",
+  "version": 1,
+  "status": "verified",
+  "name": "Facade maintenance undertaking",
+  "nameAr": "تعهد صيانة",
+  "description": "ACAD letter: the owner undertakes to maintain the external facades of the existing buildings.",
+  "projectType": "taqneen",
+  "source": "private/taqneen/03 maintenance.pdf",
+  "format": "pdf",
+  "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
+  "sanitize": [
+    {
+      "op": "image_edit",
+      "page": 0,
+      "fill": [
+        [
+          94.10000000000001,
+          227.1,
+          368.5,
+          257.1
+        ],
+        [
+          94.10000000000001,
+          292.4,
+          368.5,
+          322.40000000000003
+        ],
+        [
+          94.10000000000001,
+          325.2,
+          368.5,
+          355.0
+        ]
+      ],
+      "erase_text": [
+        [
+          420,
+          133,
+          495,
+          158
+        ],
+        [
+          362,
+          428,
+          471,
+          447
+        ]
+      ],
+      "remove_ink": [
+        {
+          "rect": [
+            360,
+            555,
+            500,
+            615
+          ],
+          "light": 150
+        }
+      ]
+    }
+  ],
+  "slots": {
+    "date": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        420,
+        133,
+        495,
+        158
+      ]
+    },
+    "owner": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        95.7,
+        226.7,
+        366.9,
+        257.5
+      ]
+    },
+    "location": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        95.7,
+        292.0,
+        366.9,
+        322.8
+      ]
+    },
+    "plot": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        95.7,
+        324.8,
+        366.9,
+        355.4
+      ]
+    },
+    "owner_body": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        363,
+        428,
+        471,
+        447
+      ]
+    }
+  },
+  "fields": [
+    {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "bold": false,
+      "size": 14,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "right",
+      "valign": "middle"
+    },
+    {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 15,
+      "minSize": 6,
+      "padding": [
+        4,
+        0,
+        6,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "valign": "middle"
+    },
+    {
+      "slot": "location",
+      "value": "{city|ar} - {area_ar} - {sector_ar}",
+      "font": "sans",
+      "bold": true,
+      "size": 15,
+      "minSize": 6,
+      "padding": [
+        4,
+        0,
+        6,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "valign": "middle"
+    },
+    {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "bold": true,
+      "size": 15,
+      "minSize": 6,
+      "padding": [
+        4,
+        0,
+        6,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "owner_body",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "bold": false,
+      "size": 12,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "center",
+      "valign": "middle"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+ "key": "tq-justification",
+ "version": 1,
+ "format": "pdf",
+ "sourceSha256": "16c1ff63ef127cfad0d52cdcb7a7e8f8286fb7f355d9d8172755c97b87abb16e",
+ "baseSha256": "2630e7e3a092099925a5de5cf5743be4bba8e47e74e8dcefe6336ce8177f22c6",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 613.68,
+   "height": 867.84
+  }
+ ],
+ "slots": {
+  "date": {
+   "page": 0,
+   "rect": [
+    423,
+    103,
+    500,
+    121
+   ]
+  },
+  "owner": {
+   "page": 0,
+   "rect": [
+    73.8,
+    194.8,
+    381.3,
+    222.4
+   ]
+  },
+  "location": {
+   "page": 0,
+   "rect": [
+    73.8,
+    254.1,
+    381.3,
+    281.8
+   ]
+  },
+  "plot": {
+   "page": 0,
+   "rect": [
+    73.8,
+    283.8,
+    381.3,
+    311.4
+   ]
+  }
+ },
+ "docx": null,
+ "build": {
+  "engine": "pymupdf 1.28.2"
+ }
+}

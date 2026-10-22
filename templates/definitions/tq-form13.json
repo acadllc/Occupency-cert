@@ -1,0 +1,1722 @@
+{
+  "key": "tq-form13",
+  "version": 1,
+  "status": "verified",
+  "name": "Consultant Technical Inspection Report for Legalization of Existing Buildings (Form 13)",
+  "nameAr": "تقرير الاستشاري بالمعاينة الفنية لحالة تقنين وضع مباني قائمة",
+  "description": "DMT form 13 (2 pages): project details, construction date, general plot description, the buildings to be legalized and the structural evaluation.",
+  "projectType": "taqneen",
+  "source": "private/taqneen/05 form13.pdf",
+  "format": "pdf",
+  "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
+  "sanitize": [
+    {
+      "op": "image_edit",
+      "page": 0,
+      "fill": [
+        [
+          289,
+          331,
+          600,
+          435.5
+        ],
+        [
+          10.3,
+          479.7,
+          566.0,
+          674.5
+        ],
+        [
+          10,
+          713,
+          569,
+          853
+        ]
+      ],
+      "erase_text": [
+        [
+          418,
+          80,
+          520.5,
+          100
+        ],
+        [
+          452,
+          99,
+          520,
+          117
+        ],
+        [
+          279,
+          113,
+          369,
+          133
+        ],
+        [
+          359,
+          141,
+          486,
+          164
+        ],
+        [
+          55,
+          187,
+          120,
+          208
+        ],
+        [
+          205,
+          187,
+          272,
+          208
+        ],
+        [
+          398,
+          187,
+          495,
+          209
+        ],
+        [
+          385,
+          214,
+          435,
+          233
+        ]
+      ],
+      "empty_box": [
+        [
+          386.6,
+          262.5,
+          393.5,
+          269.1
+        ]
+      ],
+      "draw": [
+        {
+          "rect": [
+            571.2,
+            331,
+            571.7,
+            436.2
+          ]
+        },
+        {
+          "rect": [
+            9.25,
+            478.9,
+            9.75,
+            673.5999999999999
+          ]
+        },
+        {
+          "rect": [
+            103.55,
+            478.9,
+            104.05,
+            673.5999999999999
+          ]
+        },
+        {
+          "rect": [
+            183.75,
+            478.9,
+            184.25,
+            673.5999999999999
+          ]
+        },
+        {
+          "rect": [
+            263.75,
+            478.9,
+            264.25,
+            673.5999999999999
+          ]
+        },
+        {
+          "rect": [
+            372.55,
+            478.9,
+            373.05,
+            673.5999999999999
+          ]
+        },
+        {
+          "rect": [
+            430.65,
+            478.9,
+            431.15,
+            673.5999999999999
+          ]
+        },
+        {
+          "rect": [
+            503.65,
+            478.9,
+            504.15,
+            673.5999999999999
+          ]
+        },
+        {
+          "rect": [
+            566.05,
+            478.9,
+            566.55,
+            673.5999999999999
+          ]
+        },
+        {
+          "rect": [
+            9.25,
+            493.6038461538461,
+            566.55,
+            494.1038461538461
+          ]
+        },
+        {
+          "rect": [
+            9.25,
+            508.55769230769226,
+            566.55,
+            509.05769230769226
+          ]
+        },
+        {
+          "rect": [
+            9.25,
+            523.5115384615384,
+            566.55,
+            524.0115384615384
+          ]
+        },
+        {
+          "rect": [
+            9.25,
+            538.4653846153846,
+            566.55,
+            538.9653846153846
+          ]
+        },
+        {
+          "rect": [
+            9.25,
+            553.4192307692307,
+            566.55,
+            553.9192307692307
+          ]
+        },
+        {
+          "rect": [
+            9.25,
+            568.373076923077,
+            566.55,
+            568.873076923077
+          ]
+        },
+        {
+          "rect": [
+            9.25,
+            583.3269230769231,
+            566.55,
+            583.8269230769231
+          ]
+        },
+        {
+          "rect": [
+            9.25,
+            598.2807692307692,
+            566.55,
+            598.7807692307692
+          ]
+        },
+        {
+          "rect": [
+            9.25,
+            613.2346153846154,
+            566.55,
+            613.7346153846154
+          ]
+        },
+        {
+          "rect": [
+            9.25,
+            628.1884615384615,
+            566.55,
+            628.6884615384615
+          ]
+        },
+        {
+          "rect": [
+            9.25,
+            643.1423076923077,
+            566.55,
+            643.6423076923077
+          ]
+        },
+        {
+          "rect": [
+            9.25,
+            658.0961538461538,
+            566.55,
+            658.5961538461538
+          ]
+        },
+        {
+          "rect": [
+            9.25,
+            673.05,
+            566.55,
+            673.55
+          ]
+        },
+        {
+          "rect": [
+            14,
+            727.2,
+            564,
+            727.8
+          ],
+          "dotted": true
+        },
+        {
+          "rect": [
+            14,
+            750.9000000000001,
+            564,
+            751.5
+          ],
+          "dotted": true
+        },
+        {
+          "rect": [
+            14,
+            772.9000000000001,
+            564,
+            773.5
+          ],
+          "dotted": true
+        },
+        {
+          "rect": [
+            14,
+            794.9000000000001,
+            564,
+            795.5
+          ],
+          "dotted": true
+        },
+        {
+          "rect": [
+            14,
+            816.8000000000001,
+            564,
+            817.4
+          ],
+          "dotted": true
+        },
+        {
+          "rect": [
+            14,
+            840.0,
+            564,
+            840.5999999999999
+          ],
+          "dotted": true
+        }
+      ]
+    }
+  ],
+  "slots": {
+    "project_id": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        422,
+        82,
+        519,
+        99
+      ]
+    },
+    "date": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        452,
+        100,
+        519,
+        116
+      ]
+    },
+    "description": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        150,
+        115,
+        505,
+        132
+      ]
+    },
+    "owner": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        300,
+        143,
+        522,
+        163
+      ]
+    },
+    "developer": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        200,
+        170,
+        500,
+        186
+      ]
+    },
+    "area": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        48,
+        189,
+        126,
+        207
+      ]
+    },
+    "sector": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        200,
+        189,
+        286,
+        207
+      ]
+    },
+    "plot": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        395,
+        189,
+        498,
+        207
+      ]
+    },
+    "land_usage": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        150,
+        215,
+        505,
+        233
+      ]
+    },
+    "before_2014": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        557,
+        260.5,
+        567,
+        270.5
+      ]
+    },
+    "after_2014": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        385,
+        260.8,
+        395,
+        270.8
+      ]
+    },
+    "plot_desc_1": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        296,
+        336,
+        438,
+        350
+      ]
+    },
+    "plot_desc_8": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        442,
+        336,
+        569,
+        350
+      ]
+    },
+    "plot_desc_2": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        296,
+        350,
+        438,
+        364
+      ]
+    },
+    "plot_desc_9": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        442,
+        350,
+        569,
+        364
+      ]
+    },
+    "plot_desc_3": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        296,
+        364,
+        438,
+        378
+      ]
+    },
+    "plot_desc_10": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        442,
+        364,
+        569,
+        378
+      ]
+    },
+    "plot_desc_4": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        296,
+        378,
+        438,
+        392
+      ]
+    },
+    "plot_desc_11": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        442,
+        378,
+        569,
+        392
+      ]
+    },
+    "plot_desc_5": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        296,
+        392,
+        438,
+        406
+      ]
+    },
+    "plot_desc_12": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        442,
+        392,
+        569,
+        406
+      ]
+    },
+    "plot_desc_6": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        296,
+        406,
+        438,
+        420
+      ]
+    },
+    "plot_desc_13": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        442,
+        406,
+        569,
+        420
+      ]
+    },
+    "plot_desc_7": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        296,
+        420,
+        438,
+        434
+      ]
+    },
+    "plot_desc_14": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        442,
+        420,
+        569,
+        434
+      ]
+    },
+    "bld_no_1": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        504.9,
+        479.7,
+        565.3,
+        493.05
+      ]
+    },
+    "bld_use_1": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        431.9,
+        479.7,
+        502.9,
+        493.05
+      ]
+    },
+    "bld_no_2": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        504.9,
+        494.65,
+        565.3,
+        508.01
+      ]
+    },
+    "bld_use_2": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        431.9,
+        494.65,
+        502.9,
+        508.01
+      ]
+    },
+    "bld_no_3": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        504.9,
+        509.61,
+        565.3,
+        522.96
+      ]
+    },
+    "bld_use_3": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        431.9,
+        509.61,
+        502.9,
+        522.96
+      ]
+    },
+    "bld_no_4": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        504.9,
+        524.56,
+        565.3,
+        537.92
+      ]
+    },
+    "bld_use_4": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        431.9,
+        524.56,
+        502.9,
+        537.92
+      ]
+    },
+    "bld_no_5": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        504.9,
+        539.52,
+        565.3,
+        552.87
+      ]
+    },
+    "bld_use_5": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        431.9,
+        539.52,
+        502.9,
+        552.87
+      ]
+    },
+    "bld_no_6": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        504.9,
+        554.47,
+        565.3,
+        567.82
+      ]
+    },
+    "bld_use_6": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        431.9,
+        554.47,
+        502.9,
+        567.82
+      ]
+    },
+    "bld_no_7": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        504.9,
+        569.42,
+        565.3,
+        582.78
+      ]
+    },
+    "bld_use_7": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        431.9,
+        569.42,
+        502.9,
+        582.78
+      ]
+    },
+    "bld_no_8": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        504.9,
+        584.38,
+        565.3,
+        597.73
+      ]
+    },
+    "bld_use_8": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        431.9,
+        584.38,
+        502.9,
+        597.73
+      ]
+    },
+    "bld_no_9": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        504.9,
+        599.33,
+        565.3,
+        612.68
+      ]
+    },
+    "bld_use_9": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        431.9,
+        599.33,
+        502.9,
+        612.68
+      ]
+    },
+    "bld_no_10": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        504.9,
+        614.28,
+        565.3,
+        627.64
+      ]
+    },
+    "bld_use_10": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        431.9,
+        614.28,
+        502.9,
+        627.64
+      ]
+    },
+    "bld_no_11": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        504.9,
+        629.24,
+        565.3,
+        642.59
+      ]
+    },
+    "bld_use_11": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        431.9,
+        629.24,
+        502.9,
+        642.59
+      ]
+    },
+    "bld_no_12": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        504.9,
+        644.19,
+        565.3,
+        657.55
+      ]
+    },
+    "bld_use_12": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        431.9,
+        644.19,
+        502.9,
+        657.55
+      ]
+    },
+    "bld_no_13": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        504.9,
+        659.15,
+        565.3,
+        672.5
+      ]
+    },
+    "bld_use_13": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        431.9,
+        659.15,
+        502.9,
+        672.5
+      ]
+    },
+    "arch_description": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        16,
+        713,
+        566,
+        856
+      ]
+    }
+  },
+  "fields": [
+    {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "bold": false,
+      "size": 12,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "right",
+      "valign": "middle"
+    },
+    {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "bold": false,
+      "size": 12,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "right",
+      "valign": "middle"
+    },
+    {
+      "slot": "description",
+      "value": "project_description_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 12,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 13,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "developer",
+      "value": "developer_name_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 12,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "area",
+      "value": "area_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 12,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "sector",
+      "value": "sector_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 12,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "bold": true,
+      "size": 12,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "land_usage",
+      "value": "land_building_usage_ar",
+      "font": "sans",
+      "bold": true,
+      "size": 12,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "before_2014",
+      "check": {
+        "field": "construction_period",
+        "equals": "before_2014"
+      },
+      "style": "tick",
+      "size": 9
+    },
+    {
+      "slot": "after_2014",
+      "check": {
+        "field": "construction_period",
+        "equals": "after_2014"
+      },
+      "style": "tick",
+      "size": 9
+    },
+    {
+      "slot": "plot_desc_1",
+      "value": "taqneen_buildings|numbered|lines:1-1",
+      "font": "sans",
+      "bold": true,
+      "size": 10.5,
+      "minSize": 5,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+    },
+    {
+      "slot": "plot_desc_8",
+      "value": "taqneen_buildings|numbered|lines:8-8",
+      "font": "sans",
+      "bold": true,
+      "size": 10.5,
+      "minSize": 5,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+    },
+    {
+      "slot": "plot_desc_2",
+      "value": "taqneen_buildings|numbered|lines:2-2",
+      "font": "sans",
+      "bold": true,
+      "size": 10.5,
+      "minSize": 5,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+    },
+    {
+      "slot": "plot_desc_9",
+      "value": "taqneen_buildings|numbered|lines:9-9",
+      "font": "sans",
+      "bold": true,
+      "size": 10.5,
+      "minSize": 5,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+    },
+    {
+      "slot": "plot_desc_3",
+      "value": "taqneen_buildings|numbered|lines:3-3",
+      "font": "sans",
+      "bold": true,
+      "size": 10.5,
+      "minSize": 5,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+    },
+    {
+      "slot": "plot_desc_10",
+      "value": "taqneen_buildings|numbered|lines:10-10",
+      "font": "sans",
+      "bold": true,
+      "size": 10.5,
+      "minSize": 5,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+    },
+    {
+      "slot": "plot_desc_4",
+      "value": "taqneen_buildings|numbered|lines:4-4",
+      "font": "sans",
+      "bold": true,
+      "size": 10.5,
+      "minSize": 5,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+    },
+    {
+      "slot": "plot_desc_11",
+      "value": "taqneen_buildings|numbered|lines:11-11",
+      "font": "sans",
+      "bold": true,
+      "size": 10.5,
+      "minSize": 5,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+    },
+    {
+      "slot": "plot_desc_5",
+      "value": "taqneen_buildings|numbered|lines:5-5",
+      "font": "sans",
+      "bold": true,
+      "size": 10.5,
+      "minSize": 5,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+    },
+    {
+      "slot": "plot_desc_12",
+      "value": "taqneen_buildings|numbered|lines:12-12",
+      "font": "sans",
+      "bold": true,
+      "size": 10.5,
+      "minSize": 5,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+    },
+    {
+      "slot": "plot_desc_6",
+      "value": "taqneen_buildings|numbered|lines:6-6",
+      "font": "sans",
+      "bold": true,
+      "size": 10.5,
+      "minSize": 5,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+    },
+    {
+      "slot": "plot_desc_13",
+      "value": "taqneen_buildings|numbered|lines:13-13",
+      "font": "sans",
+      "bold": true,
+      "size": 10.5,
+      "minSize": 5,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+    },
+    {
+      "slot": "plot_desc_7",
+      "value": "taqneen_buildings|numbered|lines:7-7",
+      "font": "sans",
+      "bold": true,
+      "size": 10.5,
+      "minSize": 5,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+    },
+    {
+      "slot": "plot_desc_14",
+      "value": "taqneen_buildings|numbered|lines:14-",
+      "font": "sans",
+      "bold": true,
+      "size": 10.5,
+      "minSize": 5,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "left",
+      "valign": "middle"
+    },
+    {
+      "slot": "bld_no_1",
+      "value": "taqneen_buildings|number|lines:1-1",
+      "font": "sans",
+      "bold": false,
+      "size": 9,
+      "minSize": 5,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "bld_use_1",
+      "value": "taqneen_buildings|lines:1-1",
+      "font": "sans",
+      "bold": true,
+      "size": 8.5,
+      "minSize": 5,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "bld_no_2",
+      "value": "taqneen_buildings|number|lines:2-2",
+      "font": "sans",
+      "bold": false,
+      "size": 9,
+      "minSize": 5,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "bld_use_2",
+      "value": "taqneen_buildings|lines:2-2",
+      "font": "sans",
+      "bold": true,
+      "size": 8.5,
+      "minSize": 5,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "bld_no_3",
+      "value": "taqneen_buildings|number|lines:3-3",
+      "font": "sans",
+      "bold": false,
+      "size": 9,
+      "minSize": 5,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "bld_use_3",
+      "value": "taqneen_buildings|lines:3-3",
+      "font": "sans",
+      "bold": true,
+      "size": 8.5,
+      "minSize": 5,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "bld_no_4",
+      "value": "taqneen_buildings|number|lines:4-4",
+      "font": "sans",
+      "bold": false,
+      "size": 9,
+      "minSize": 5,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "bld_use_4",
+      "value": "taqneen_buildings|lines:4-4",
+      "font": "sans",
+      "bold": true,
+      "size": 8.5,
+      "minSize": 5,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "bld_no_5",
+      "value": "taqneen_buildings|number|lines:5-5",
+      "font": "sans",
+      "bold": false,
+      "size": 9,
+      "minSize": 5,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "bld_use_5",
+      "value": "taqneen_buildings|lines:5-5",
+      "font": "sans",
+      "bold": true,
+      "size": 8.5,
+      "minSize": 5,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "bld_no_6",
+      "value": "taqneen_buildings|number|lines:6-6",
+      "font": "sans",
+      "bold": false,
+      "size": 9,
+      "minSize": 5,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "bld_use_6",
+      "value": "taqneen_buildings|lines:6-6",
+      "font": "sans",
+      "bold": true,
+      "size": 8.5,
+      "minSize": 5,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "bld_no_7",
+      "value": "taqneen_buildings|number|lines:7-7",
+      "font": "sans",
+      "bold": false,
+      "size": 9,
+      "minSize": 5,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "bld_use_7",
+      "value": "taqneen_buildings|lines:7-7",
+      "font": "sans",
+      "bold": true,
+      "size": 8.5,
+      "minSize": 5,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "bld_no_8",
+      "value": "taqneen_buildings|number|lines:8-8",
+      "font": "sans",
+      "bold": false,
+      "size": 9,
+      "minSize": 5,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "bld_use_8",
+      "value": "taqneen_buildings|lines:8-8",
+      "font": "sans",
+      "bold": true,
+      "size": 8.5,
+      "minSize": 5,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "bld_no_9",
+      "value": "taqneen_buildings|number|lines:9-9",
+      "font": "sans",
+      "bold": false,
+      "size": 9,
+      "minSize": 5,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "bld_use_9",
+      "value": "taqneen_buildings|lines:9-9",
+      "font": "sans",
+      "bold": true,
+      "size": 8.5,
+      "minSize": 5,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "bld_no_10",
+      "value": "taqneen_buildings|number|lines:10-10",
+      "font": "sans",
+      "bold": false,
+      "size": 9,
+      "minSize": 5,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "bld_use_10",
+      "value": "taqneen_buildings|lines:10-10",
+      "font": "sans",
+      "bold": true,
+      "size": 8.5,
+      "minSize": 5,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "bld_no_11",
+      "value": "taqneen_buildings|number|lines:11-11",
+      "font": "sans",
+      "bold": false,
+      "size": 9,
+      "minSize": 5,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "bld_use_11",
+      "value": "taqneen_buildings|lines:11-11",
+      "font": "sans",
+      "bold": true,
+      "size": 8.5,
+      "minSize": 5,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "bld_no_12",
+      "value": "taqneen_buildings|number|lines:12-12",
+      "font": "sans",
+      "bold": false,
+      "size": 9,
+      "minSize": 5,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "bld_use_12",
+      "value": "taqneen_buildings|lines:12-12",
+      "font": "sans",
+      "bold": true,
+      "size": 8.5,
+      "minSize": 5,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "bld_no_13",
+      "value": "taqneen_buildings|number|lines:13-13",
+      "font": "sans",
+      "bold": false,
+      "size": 9,
+      "minSize": 5,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "bld_use_13",
+      "value": "taqneen_buildings|lines:13-13",
+      "font": "sans",
+      "bold": true,
+      "size": 8.5,
+      "minSize": 5,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+    },
+    {
+      "slot": "arch_description",
+      "value": "taqneen_architectural_description",
+      "font": "sans",
+      "bold": false,
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+        2,
+        4.2,
+        2,
+        0
+      ],
+      "dir": "auto",
+      "align": "center",
+      "valign": "top",
+      "multiline": true,
+      "lineHeight": 2.055
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+ "key": "tq-form3-owner-declaration",
+ "version": 1,
+ "format": "pdf",
+ "sourceSha256": "67e819d6358609fdae807c490357f21628670e86d2d0c02dc257748c122b1a78",
+ "baseSha256": "5a8fe1b1488123e3d65a3fce7bd2161b453d4a6a7a329507735cd14e960ec6b4",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 613.68,
+   "height": 778.56
+  }
+ ],
+ "slots": {
+  "owner": {
+   "page": 0,
+   "rect": [
+    255,
+    204,
+    438,
+    223
+   ]
+  },
+  "nationality": {
+   "page": 0,
+   "rect": [
+    440,
+    236,
+    520,
+    255
+   ]
+  },
+  "owner_id": {
+   "page": 0,
+   "rect": [
+    208,
+    236,
+    328,
+    254
+   ]
+  },
+  "plot": {
+   "page": 0,
+   "rect": [
+    210,
+    301,
+    302,
+    322
+   ]
+  },
+  "license": {
+   "page": 0,
+   "rect": [
+    440,
+    365,
+    526,
+    382
+   ]
+  }
+ },
+ "docx": null,
+ "build": {
+  "engine": "pymupdf 1.28.2"
+ }
+}
