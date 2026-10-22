@@ -87,6 +87,14 @@ describe('field values', () => {
     expect(resolveValue('taqneen_buildings|count', ctx({}))).toBe('');
   });
 
+  it('builds the occupant load text (persons = area / factor, rounded down)', () => {
+    const f = { occ1_label: 'الادوار السكنيه', occ1_group: 'R2', occ1_area: '992.2', occ1_factor: '18.5', occ2_area: '128.3', occ2_factor: '4.65' };
+    expect(resolveValue('@occupant_load_text_ar', ctx(f))).toBe(
+      'الادوار السكنيه   (R2)\nبمساحه اجماليه 992.2\n992.2/18.5 = 53 شخص\n\nبمساحه اجماليه 128.3\n128.3/4.65 = 27 شخص',
+    );
+    expect(resolveValue('@occupant_load_text_ar', ctx({ occ1_label: 'x', occ1_factor: '18.5' }))).toBe('');
+  });
+
   it('never prints undefined/null', () => {
     for (const k of ['owner_name_ar', 'date', 'city|en', '@project_location_en']) {
       const v = resolveValue(k, ctx({ owner_name_ar: null, date: undefined }));

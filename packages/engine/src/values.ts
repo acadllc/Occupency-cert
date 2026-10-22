@@ -76,9 +76,30 @@ export function derivedValue(key: string, ctx: ValueContext): string {
         f('project_address_en') ||
         join(' / ', [cityLabel(ctx, 'en'), f('area_en'), join(' - ', [f('sector_en'), f('plot_number') && `Plot ${f('plot_number')}`])])
       );
+    case 'occupant_load_text_ar':
+      return occupantLoad(f);
     default:
       throw new Error(`Unknown derived value: ${key}`);
   }
+}
+
+/** Occupant load letter: per part (floors / use, group, area, factor) the area and persons = area / factor (rounded down). */
+function occupantLoad(f: (k: string) => string): string {
+  const num = (v: string) => Number(v.replace(/,/g, '').trim());
+  const parts: string[] = [];
+  for (const n of [1, 2, 3]) {
+    const label = f(`occ${n}_label`);
+    const group = f(`occ${n}_group`);
+    const area = f(`occ${n}_area`);
+    const factor = f(`occ${n}_factor`);
+    if (!area) continue;
+    const lines = [join('   ', [label && `${label}`, group && `(${group})`]), `بمساحه اجماليه ${area}`];
+    const a = num(area);
+    const k = num(factor);
+    if (Number.isFinite(a) && Number.isFinite(k) && k > 0) lines.push(`${area}/${factor} = ${Math.floor(a / k)} شخص`);
+    parts.push(lines.filter(Boolean).join('\n'));
+  }
+  return parts.join('\n\n');
 }
 
 function atom(expr: string, ctx: ValueContext): string {

@@ -170,8 +170,30 @@ export default function ProjectPage() {
 
   if (loading) return <Spinner label="Loading project…" />;
 
+  const renderDocField = (d: FieldDef) =>
+    d.type === 'photos' ? (
+      <PhotosField key={d.key} def={d} projectId={project?.id ?? null} value={(fields[d.key] as PhotoEntry[] | undefined) ?? []} onChange={(v) => set(d.key, v)} />
+    ) : (
+      <FieldInput key={d.key} def={d} value={fields[d.key]} onChange={(v) => set(d.key, v)} missing={missing(d.key)} error={errors[d.key]} />
+    );
+  const docRows = (defs: FieldDef[]) =>
+    groupRows(defs).map((row) =>
+      Array.isArray(row) ? (
+        <div className="pair" key={row[0].key}>
+          {row.map(renderDocField)}
+        </div>
+      ) : (
+        renderDocField(row)
+      ),
+    );
+
+
   const ctx = { fields, registry, company };
-  const sharedGroups = registry.groups.filter((g) => g.key !== 'document');
+  // groups of project-wide inputs; inputs that belong to selected documents only are shown further down
+  const sharedGroups = registry.groups.filter((g) => g.key !== 'document' && registry.fields.some((f) => f.scope === 'shared' && f.group === g.key));
+  // a document's own small section (e.g. the occupant load calculation) gets its own card
+  const docGroups = registry.groups.filter((g) => g.key !== 'document' && docFields.some((f) => f.group === g.key));
+  const generalDocFields = docFields.filter((f) => !docGroups.some((g) => g.key === f.group));
   const title = project ? (typeof fields.project_id === 'string' && fields.project_id) || 'Untitled project' : 'New project';
   const missingCount = analyzeMissing(selected, catalog, registry, fields).required.length;
 
@@ -260,7 +282,7 @@ export default function ProjectPage() {
             onChange={(keys) => set(SELECTED, keys)}
           />
 
-          {docFields.length > 0 && (
+          {generalDocFields.length > 0 && (
             <section className="card">
               <div className="card-head">
                 <div>
@@ -268,25 +290,29 @@ export default function ProjectPage() {
                   <p>Only shown for the selected documents.</p>
                 </div>
               </div>
-              <div className="card-pad form-grid">
-                {groupRows(docFields).map((row) => {
-                  const render = (d: FieldDef) =>
-                    d.type === 'photos' ? (
-                      <PhotosField key={d.key} def={d} projectId={project?.id ?? null} value={(fields[d.key] as PhotoEntry[] | undefined) ?? []} onChange={(v) => set(d.key, v)} />
-                    ) : (
-                      <FieldInput key={d.key} def={d} value={fields[d.key]} onChange={(v) => set(d.key, v)} missing={missing(d.key)} error={errors[d.key]} />
-                    );
-                  return Array.isArray(row) ? (
-                    <div className="pair" key={row[0].key}>
-                      {row.map(render)}
-                    </div>
-                  ) : (
-                    render(row)
-                  );
-                })}
-              </div>
+              <div className="card-pad form-grid">{docRows(generalDocFields)}</div>
             </section>
           )}
+
+          {docGroups.map((g) => (
+            <section className="card" key={g.key}>
+              <div className="card-head">
+                <div>
+                  <h2>{g.label}</h2>
+                  <p>Only shown for the selected documents.</p>
+                </div>
+              </div>
+              <div className="card-pad form-grid">
+                {docRows(docFields.filter((f) => f.group === g.key))}
+                {g.key === 'occupant_load' && (
+                  <div className="derived span-2" dir="rtl" style={{ whiteSpace: 'pre-line' }}>
+                    <span className="k">النص في الخطاب (يُحسب عدد الأشخاص تلقائياً: المساحة ÷ المعامل)</span>
+                    {resolveValue('@occupant_load_text_ar', ctx) || <span className="muted">—</span>}
+                  </div>
+                )}
+              </div>
+            </section>
+          ))}
 
           <div className="sticky-actions">
             <span className="muted small" style={{ marginRight: 'auto', alignSelf: 'center' }}>
