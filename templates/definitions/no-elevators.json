@@ -1,6 +1,6 @@
 {
   "key": "no-elevators",
-  "version": 3,
+  "version": 4,
   "status": "verified",
   "name": "No Elevators Letter",
   "nameAr": "عدم وجود مصاعد",
@@ -48,13 +48,6 @@
     },
     {
       "op": "text",
-      "contains": "الموضوع",
-      "old": "عدم وجود",
-      "slot": "lifts_subject",
-      "reserve": 8
-    },
-    {
-      "op": "text",
       "contains": "لايحتوي على",
       "old": "لايحتوي",
       "slot": "lifts_body",
@@ -83,10 +76,6 @@
     },
     "components": {
       "kind": "cell"
-    },
-    "lifts_subject": {
-      "kind": "gap",
-      "width": 80
     },
     "lifts_body": {
       "kind": "gap",
@@ -164,20 +153,6 @@
         2,
         6,
         2
-      ]
-    },
-    {
-      "slot": "lifts_subject",
-      "value": "building_has_lifts=yes ? \"وجود\" : \"عدم وجود\"",
-      "font": "din",
-      "size": 16,
-      "align": "center",
-      "dir": "rtl",
-      "padding": [
-        0,
-        0,
-        0,
-        0
       ]
     },
     {

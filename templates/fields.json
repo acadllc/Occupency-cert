@@ -533,7 +533,7 @@
         "no-elevators"
       ],
       "default": "no",
-      "help": "No: «عدم وجود مصاعد … لا يحتوي على مصاعد كهربائية». Yes: «وجود مصاعد … يحتوي على مصاعد كهربائية»."
+      "help": "No: «لا يحتوي على مصاعد كهربائية». Yes: «يحتوي على مصاعد كهربائية». The subject «عدم وجود مصاعد» stays as in the original."
     },
     {
       "key": "elevator_authorization_type",
