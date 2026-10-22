@@ -141,7 +141,7 @@ test('full workflow: create, generate, download, history, edit, search', async (
   await page.getByRole('tab', { name: /Architectural/ }).click();
   await expect(page.getByLabel('Select all أوراق تقديم البلدية')).toBeVisible();
   await page.getByRole('tab', { name: /Taqneen/ }).click();
-  await expect(page.getByRole('button', { name: /Select all in tab \(14\)/ })).toBeVisible();
+  await expect(page.getByRole('button', { name: /Select all in tab \(18\)/ })).toBeVisible();
   await page.getByRole('tab', { name: /Contractor/ }).click();
   await expect(page.getByText(/No Contractor contracts documents yet/)).toBeVisible();
   await page.getByRole('tab', { name: /Occupancy certificate/ }).click();

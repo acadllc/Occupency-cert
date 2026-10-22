@@ -1,0 +1,134 @@
+{
+  "key": "tq-cd-estifaa-renewal",
+  "version": 1,
+  "status": "verified",
+  "name": "Owner Undertaking – Annual Completion Certificate Renewal",
+  "nameAr": "تعهد المالك بتجديد شهادة الإستيفاء سنوياً",
+  "description": "Owner undertaking to Abu Dhabi Civil Defence to renew the building completion (Estifaa) certificate annually.",
+  "projectType": "taqneen",
+  "source": "01OWNER UNDERTAKE FOR CD ESTIFAA- تعهد المالك بتجديد شهادة الإستيفاء.docx",
+  "format": "docx",
+  "sanitize": [
+    {
+      "op": "copy_header",
+      "from": "02NOMBER OF USERS.docx"
+    },
+    {
+      "op": "date_field",
+      "slot": "date"
+    },
+    {
+      "op": "cell",
+      "label": "اسم المالك",
+      "offset": -2,
+      "slot": "owner"
+    },
+    {
+      "op": "cell",
+      "label": "اسم الاستشاري",
+      "offset": -2,
+      "slot": "consultant"
+    },
+    {
+      "op": "cell",
+      "label": "موقع المشروع",
+      "offset": -2,
+      "slot": "location"
+    },
+    {
+      "op": "cell",
+      "label": "مكونات المشروع",
+      "offset": -2,
+      "slot": "components"
+    }
+  ],
+  "slots": {
+    "date": {
+      "kind": "inline",
+      "width": 120
+    },
+    "owner": {
+      "kind": "cell"
+    },
+    "consultant": {
+      "kind": "cell"
+    },
+    "location": {
+      "kind": "cell"
+    },
+    "components": {
+      "kind": "cell"
+    }
+  },
+  "fields": [
+    {
+      "slot": "date",
+      "value": "date",
+      "font": "din",
+      "dir": "rtl",
+      "align": "right",
+      "padding": [
+        0,
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+        6,
+        2,
+        6,
+        2
+      ]
+    },
+    {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+        6,
+        2,
+        6,
+        2
+      ]
+    },
+    {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+        6,
+        2,
+        6,
+        2
+      ]
+    },
+    {
+      "slot": "components",
+      "value": "project_components_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+        6,
+        2,
+        6,
+        2
+      ]
+    }
+  ]
+}

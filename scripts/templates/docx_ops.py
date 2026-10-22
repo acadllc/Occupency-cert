@@ -842,6 +842,20 @@ class DocxSanitizer:
         if not hits:
             raise SanitizeError(f"no footer paragraph matches {op['pattern']!r}")
 
+    def op_drop_empty_after(self, op: dict):
+        """Remove up to ``max`` empty paragraphs (no text, no drawing) right after a paragraph,
+        e.g. trailing blank lines that push the signature onto a second page."""
+        p = self._find_paragraph(op["contains"], int(op.get("occurrence", 0)))
+        n = 0
+        nxt = p.getnext()
+        while nxt is not None and n < int(op["max"]):
+            if nxt.tag != w("p") or _text_of(nxt).strip() or any(True for _ in nxt.iter(w("drawing"), w("pict"), w("sectPr"))):
+                break
+            after = nxt.getnext()
+            nxt.getparent().remove(nxt)
+            n += 1
+            nxt = after
+
     def op_remove_paragraph(self, op: dict):
         p = self._find_paragraph(op["contains"], int(op.get("occurrence", 0)))
         self.removed.append(_text_of(p).strip())

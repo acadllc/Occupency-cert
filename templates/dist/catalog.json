@@ -25951,6 +25951,174 @@
   },
   {
    "definition": {
+    "key": "tq-cd-estifaa-renewal",
+    "version": 1,
+    "status": "verified",
+    "name": "Owner Undertaking – Annual Completion Certificate Renewal",
+    "nameAr": "تعهد المالك بتجديد شهادة الإستيفاء سنوياً",
+    "description": "Owner undertaking to Abu Dhabi Civil Defence to renew the building completion (Estifaa) certificate annually.",
+    "projectType": "taqneen",
+    "source": "01OWNER UNDERTAKE FOR CD ESTIFAA- تعهد المالك بتجديد شهادة الإستيفاء.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "din",
+      "dir": "rtl",
+      "align": "right",
+      "padding": [
+       0,
+       0,
+       2,
+       0
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+       6,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+       6,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+       6,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "slot": "components",
+      "value": "project_components_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "multiline": true,
+      "padding": [
+       6,
+       2,
+       6,
+       2
+      ]
+     }
+    ]
+   },
+   "layout": {
+    "key": "tq-cd-estifaa-renewal",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "3ab962ba5f0d89c627ff8ad6817e46421e1febb3ce45dd02782b56fb62b74603",
+    "baseSha256": "1c0f1e6639bc59569b53efe3d299047322f45f3ad1c4b89c3defa9a90e72ce6a",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "date": {
+      "page": 0,
+      "baseline": 103.15,
+      "size": 14,
+      "rect": [
+       376.09,
+       82.78,
+       496.09,
+       113.14
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 273,
+      "size": 12,
+      "rect": [
+       29.2,
+       253.85,
+       416.6,
+       291.65
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 311.55,
+      "size": 14,
+      "rect": [
+       29.2,
+       291.65,
+       416.6,
+       329.45
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 348.6,
+      "size": 12,
+      "rect": [
+       29.2,
+       329.45,
+       416.6,
+       367.25
+      ]
+     },
+     "components": {
+      "page": 0,
+      "baseline": 386.4,
+      "size": 12,
+      "rect": [
+       29.2,
+       367.25,
+       416.6,
+       405.05
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "date",
+      "QZ2ZQ": "owner",
+      "QZ3ZQ": "consultant",
+      "QZ4ZQ": "location",
+      "QZ5ZQ": "components"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0
+    }
+   }
+  },
+  {
+   "definition": {
     "key": "tq-completion-checklist",
     "version": 1,
     "status": "verified",
@@ -29462,6 +29630,200 @@
   },
   {
    "definition": {
+    "key": "tq-matching-drawings-request",
+    "version": 1,
+    "status": "verified",
+    "name": "Request for archive drawings matching the plot",
+    "nameAr": "طلب استخراج مخططات مطابقة للمشروع",
+    "description": "ACAD letter: the archive drawings received do not match the plot; a new archive drawings request was submitted.",
+    "projectType": "taqneen",
+    "source": "private/taqneen/17 matching-drawings-request.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 105,
+       "anchor": "marker",
+       "dx": 28,
+       "dy": 58
+      }
+     }
+    ]
+   },
+   "layout": {
+    "key": "tq-matching-drawings-request",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "6aaaa2d59cbef107d519152efc45b691fc83c56e0990e00a88319ba8112185da",
+    "baseSha256": "536698a65d0bd7e96d9310cf0dbb343b98ba71702e7d5e5acff8c4d8f93b4caa",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "date": {
+      "page": 0,
+      "baseline": 126.25,
+      "size": 12,
+      "rect": [
+       371.73,
+       112.63,
+       481.73,
+       131.14
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 226.5,
+      "size": 14,
+      "rect": [
+       73.1,
+       210.55,
+       372.6,
+       238.45
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 254.35,
+      "size": 14,
+      "rect": [
+       73.1,
+       238.45,
+       372.6,
+       266.25
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 282.2,
+      "size": 14,
+      "rect": [
+       73.1,
+       266.25,
+       372.6,
+       294.15
+      ]
+     },
+     "plot": {
+      "page": 0,
+      "baseline": 310.05,
+      "size": 14,
+      "rect": [
+       73.1,
+       294.15,
+       372.6,
+       321.95
+      ]
+     },
+     "stamp": {
+      "page": 0,
+      "baseline": 533.6,
+      "size": 1,
+      "rect": [
+       171.64,
+       530.71,
+       181.64,
+       535.82
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "date",
+      "QZ2ZQ": "owner",
+      "QZ3ZQ": "consultant",
+      "QZ4ZQ": "location",
+      "QZ5ZQ": "plot",
+      "QZ6ZQ": "stamp"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0.000656
+    }
+   }
+  },
+  {
+   "definition": {
     "key": "tq-no-determination-undertaking",
     "version": 1,
     "status": "verified",
@@ -29623,6 +29985,251 @@
     "docx": null,
     "build": {
      "engine": "pymupdf 1.28.2"
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "tq-occupant-load",
+    "version": 1,
+    "status": "verified",
+    "name": "Clarification of the building occupant load",
+    "nameAr": "توضيح عدد المستخدمين للمبنى",
+    "description": "ACAD letter explaining the occupant load of the building, floor by floor (area / occupant load factor).",
+    "projectType": "taqneen",
+    "source": "private/taqneen/19 occupant-load.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "occupancy",
+      "value": "occupant_load_ar",
+      "font": "sans",
+      "size": 13,
+      "minSize": 8,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "valign": "top",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 105,
+       "anchor": "center"
+      }
+     }
+    ]
+   },
+   "layout": {
+    "key": "tq-occupant-load",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "1b1bbce894151d896a6621d1aaf795baf95bb42d584029d7661782f2b068dbc0",
+    "baseSha256": "cad6c9878ec8ab67bf68d17b32f275f60188adc87f081cab856e53e635d5a22f",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "date": {
+      "page": 0,
+      "baseline": 83.2,
+      "size": 12,
+      "rect": [
+       396.19,
+       71.8,
+       486.19,
+       86.8
+      ]
+     },
+     "project_id": {
+      "page": 0,
+      "baseline": 198.85,
+      "size": 12,
+      "rect": [
+       86.1,
+       185.15,
+       396.3,
+       210.05
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 223.75,
+      "size": 12,
+      "rect": [
+       86.1,
+       210.05,
+       396.3,
+       234.95
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 248.65,
+      "size": 12,
+      "rect": [
+       86.1,
+       234.95,
+       396.3,
+       259.85
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 273.25,
+      "size": 12,
+      "rect": [
+       86.1,
+       259.85,
+       396.3,
+       284.15
+      ]
+     },
+     "plot": {
+      "page": 0,
+      "baseline": 297.6,
+      "size": 12,
+      "rect": [
+       86.1,
+       284.15,
+       396.3,
+       308.55
+      ]
+     },
+     "occupancy": {
+      "page": 0,
+      "baseline": 455.3,
+      "size": 1,
+      "rect": [
+       64.36,
+       448.41,
+       534.36,
+       581.52
+      ]
+     },
+     "stamp": {
+      "page": 0,
+      "rect": [
+       112.5,
+       622.5,
+       217.5,
+       727.5
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "date",
+      "QZ2ZQ": "project_id",
+      "QZ3ZQ": "owner",
+      "QZ4ZQ": "consultant",
+      "QZ5ZQ": "location",
+      "QZ6ZQ": "plot",
+      "QZ7ZQ": "occupancy"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0
     }
    }
   },
@@ -30007,6 +30614,227 @@
     "docx": null,
     "build": {
      "engine": "pymupdf 1.28.2"
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "tq-study-path-clarification",
+    "version": 1,
+    "status": "verified",
+    "name": "Clarification: the study is within the procedure path",
+    "nameAr": "توضيح الدراسة ضمن المسار",
+    "description": "ACAD letter confirming the procedure path includes the civil defence study, asking to continue the transaction.",
+    "projectType": "taqneen",
+    "source": "private/taqneen/18 study-path-clarification.docx",
+    "format": "docx",
+    "fields": [
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 105,
+       "anchor": "marker",
+       "dx": 28,
+       "dy": 58
+      }
+     }
+    ]
+   },
+   "layout": {
+    "key": "tq-study-path-clarification",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "13c6989bc22d1c7916b90b5a0b8920bacc4624754c695f5b40898d2129d173d6",
+    "baseSha256": "363799f6cae2ef5caa9993d6052880caf88fa18e1081b8db93c506865a0209a3",
+    "pageCount": 1,
+    "pages": [
+     {
+      "width": 595.3,
+      "height": 841.89
+     }
+    ],
+    "slots": {
+     "date": {
+      "page": 0,
+      "baseline": 83.2,
+      "size": 12,
+      "rect": [
+       396.19,
+       71.8,
+       486.19,
+       86.8
+      ]
+     },
+     "project_id": {
+      "page": 0,
+      "baseline": 198.85,
+      "size": 12,
+      "rect": [
+       86.1,
+       185.15,
+       396.3,
+       210.05
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 223.75,
+      "size": 12,
+      "rect": [
+       86.1,
+       210.05,
+       396.3,
+       234.95
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 248.65,
+      "size": 12,
+      "rect": [
+       86.1,
+       234.95,
+       396.3,
+       259.85
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 273.25,
+      "size": 12,
+      "rect": [
+       86.1,
+       259.85,
+       396.3,
+       284.15
+      ]
+     },
+     "plot": {
+      "page": 0,
+      "baseline": 297.6,
+      "size": 12,
+      "rect": [
+       86.1,
+       284.15,
+       396.3,
+       308.55
+      ]
+     },
+     "stamp": {
+      "page": 0,
+      "baseline": 593.35,
+      "size": 1,
+      "rect": [
+       138.96,
+       590.46,
+       148.96,
+       595.57
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "date",
+      "QZ2ZQ": "project_id",
+      "QZ3ZQ": "owner",
+      "QZ4ZQ": "consultant",
+      "QZ5ZQ": "location",
+      "QZ6ZQ": "plot",
+      "QZ7ZQ": "stamp"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0.000345
     }
    }
   },
