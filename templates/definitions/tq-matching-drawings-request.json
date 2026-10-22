@@ -1,0 +1,119 @@
+{
+  "key": "tq-matching-drawings-request",
+  "version": 1,
+  "status": "verified",
+  "name": "Request for archive drawings matching the plot",
+  "nameAr": "طلب استخراج مخططات مطابقة للمشروع",
+  "description": "ACAD letter: the archive drawings received do not match the plot; a new archive drawings request was submitted.",
+  "projectType": "taqneen",
+  "source": "private/taqneen/17 matching-drawings-request.docx",
+  "format": "docx",
+  "sanitize": "private",
+  "slots": {
+    "date": {
+      "kind": "inline",
+      "width": 110
+    },
+    "owner": {
+      "kind": "cell"
+    },
+    "consultant": {
+      "kind": "cell"
+    },
+    "location": {
+      "kind": "cell"
+    },
+    "plot": {
+      "kind": "cell"
+    },
+    "stamp": {
+      "kind": "inline",
+      "width": 10
+    }
+  },
+  "fields": [
+    {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "stamp",
+      "stamp": {
+        "size": 105,
+        "anchor": "marker",
+        "dx": 28,
+        "dy": 58
+      }
+    }
+  ]
+}

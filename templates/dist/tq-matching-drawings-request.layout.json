@@ -1,0 +1,96 @@
+{
+ "key": "tq-matching-drawings-request",
+ "version": 1,
+ "format": "docx",
+ "sourceSha256": "6aaaa2d59cbef107d519152efc45b691fc83c56e0990e00a88319ba8112185da",
+ "baseSha256": "536698a65d0bd7e96d9310cf0dbb343b98ba71702e7d5e5acff8c4d8f93b4caa",
+ "pageCount": 1,
+ "pages": [
+  {
+   "width": 595.3,
+   "height": 841.89
+  }
+ ],
+ "slots": {
+  "date": {
+   "page": 0,
+   "baseline": 126.25,
+   "size": 12.0,
+   "rect": [
+    371.73,
+    112.63,
+    481.73,
+    131.14
+   ]
+  },
+  "owner": {
+   "page": 0,
+   "baseline": 226.5,
+   "size": 14.0,
+   "rect": [
+    73.1,
+    210.55,
+    372.6,
+    238.45
+   ]
+  },
+  "consultant": {
+   "page": 0,
+   "baseline": 254.35,
+   "size": 14.0,
+   "rect": [
+    73.1,
+    238.45,
+    372.6,
+    266.25
+   ]
+  },
+  "location": {
+   "page": 0,
+   "baseline": 282.2,
+   "size": 14.0,
+   "rect": [
+    73.1,
+    266.25,
+    372.6,
+    294.15
+   ]
+  },
+  "plot": {
+   "page": 0,
+   "baseline": 310.05,
+   "size": 14.0,
+   "rect": [
+    73.1,
+    294.15,
+    372.6,
+    321.95
+   ]
+  },
+  "stamp": {
+   "page": 0,
+   "baseline": 533.6,
+   "size": 1.0,
+   "rect": [
+    171.64,
+    530.71,
+    181.64,
+    535.82
+   ]
+  }
+ },
+ "docx": {
+  "markers": {
+   "QZ1ZQ": "date",
+   "QZ2ZQ": "owner",
+   "QZ3ZQ": "consultant",
+   "QZ4ZQ": "location",
+   "QZ5ZQ": "plot",
+   "QZ6ZQ": "stamp"
+  }
+ },
+ "build": {
+  "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+  "layoutDiff": 0.000656
+ }
+}

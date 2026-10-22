@@ -56,6 +56,7 @@ export const sampleProject: ProjectFields = {
   permit_before_backfilling: 'yes',
   number_of_users_ar: 'أسرة واحدة فقط',
   request_subject_ar: 'بناء فيلا جديدة في ارض خالية',
+  occupant_load_ar: 'الأدوار السكنية : (أول + ثاني + روف)   (R2)\nبمساحة إجمالية 650\n650/18.5 = 36 شخص\nالدور الأرضي : محلان   (M)\nبمساحة إجمالية = 90\n90/4.65 = 20 شخص',
   architectural_works: 'not_affected',
   architectural_works_description: 'لا يوجد',
   structural_works: 'affected',

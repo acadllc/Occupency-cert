@@ -903,6 +903,20 @@
       "optional": true
     },
     {
+      "key": "occupant_load_ar",
+      "label": "Occupant load calculation (one line each)",
+      "labelAr": "توضيح نسبة الإشغال / عدد المستخدمين",
+      "type": "textarea",
+      "dir": "rtl",
+      "group": "document",
+      "scope": "template",
+      "templates": [
+        "tq-occupant-load"
+      ],
+      "maxLength": 800,
+      "placeholder": "الأدوار السكنية: (أول + ثاني + روف)  (R2)\nبمساحة إجمالية 600\n600/18.5 = 33 شخص"
+    },
+    {
       "key": "applicant_role",
       "label": "Applicant (structural/architectural undertaking)",
       "type": "select",

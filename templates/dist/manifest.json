@@ -530,6 +530,12 @@
    "pageCount": 1
   },
   {
+   "key": "tq-cd-estifaa-renewal",
+   "version": 1,
+   "baseSha256": "1c0f1e6639bc59569b53efe3d299047322f45f3ad1c4b89c3defa9a90e72ce6a",
+   "pageCount": 1
+  },
+  {
    "key": "tq-completion-checklist",
    "version": 1,
    "baseSha256": "3a36a93b7feb8bc5b69f96535c582a822393d9b8ed6d12db02e6add0e0cbb5ae",
@@ -596,9 +602,21 @@
    "pageCount": 1
   },
   {
+   "key": "tq-matching-drawings-request",
+   "version": 1,
+   "baseSha256": "536698a65d0bd7e96d9310cf0dbb343b98ba71702e7d5e5acff8c4d8f93b4caa",
+   "pageCount": 1
+  },
+  {
    "key": "tq-no-determination-undertaking",
    "version": 1,
    "baseSha256": "c2033819086cf19da7704f59fd1e78198650cb1f8cedac22055059ab56b80dfe",
+   "pageCount": 1
+  },
+  {
+   "key": "tq-occupant-load",
+   "version": 1,
+   "baseSha256": "cad6c9878ec8ab67bf68d17b32f275f60188adc87f081cab856e53e635d5a22f",
    "pageCount": 1
   },
   {
@@ -611,6 +629,12 @@
    "key": "tq-site-entry-approval",
    "version": 1,
    "baseSha256": "de43d7b10a59be0da03b96325b1de06b9662ccb835baae81849ae485f43ee897",
+   "pageCount": 1
+  },
+  {
+   "key": "tq-study-path-clarification",
+   "version": 1,
+   "baseSha256": "363799f6cae2ef5caa9993d6052880caf88fa18e1081b8db93c506865a0209a3",
    "pageCount": 1
   },
   {

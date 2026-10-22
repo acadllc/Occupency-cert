@@ -1,0 +1,137 @@
+{
+  "key": "tq-study-path-clarification",
+  "version": 1,
+  "status": "verified",
+  "name": "Clarification: the study is within the procedure path",
+  "nameAr": "توضيح الدراسة ضمن المسار",
+  "description": "ACAD letter confirming the procedure path includes the civil defence study, asking to continue the transaction.",
+  "projectType": "taqneen",
+  "source": "private/taqneen/18 study-path-clarification.docx",
+  "format": "docx",
+  "sanitize": "private",
+  "slots": {
+    "date": {
+      "kind": "gap",
+      "width": 90
+    },
+    "project_id": {
+      "kind": "cell"
+    },
+    "owner": {
+      "kind": "cell"
+    },
+    "consultant": {
+      "kind": "cell"
+    },
+    "location": {
+      "kind": "cell"
+    },
+    "plot": {
+      "kind": "cell"
+    },
+    "stamp": {
+      "kind": "inline",
+      "width": 10
+    }
+  },
+  "fields": [
+    {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "stamp",
+      "stamp": {
+        "size": 105,
+        "anchor": "marker",
+        "dx": 28,
+        "dy": 58
+      }
+    }
+  ]
+}
