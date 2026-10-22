@@ -20,6 +20,20 @@ export function documentFileName(projectId: string | undefined, templateKey: str
   return `${safeSegment(projectId ?? '', 'project')}_${templateKey}_${stamp(when)}_r${revision}.${ext}`;
 }
 
+/**
+ * Name a generated document is downloaded under: the name of the original file it was made from
+ * (e.g. «01Mechanical systemتعهد بالالتزام ….pdf»), so the files sort like the office's own folders.
+ * Stored copies keep their path-safe names.
+ */
+export function downloadName(definition: { source: string; fileName?: string; key: string } | undefined, fallback: string, ext: 'pdf' | 'docx'): string {
+  if (!definition) return fallback;
+  const base = (definition.fileName ?? definition.source.split('/').pop() ?? definition.key)
+    .replace(/(\.(pdf|docx))+$/i, '')
+    .replace(/[\\/:*?"<>|]+/g, '-')
+    .trim();
+  return `${base || definition.key}.${ext}`;
+}
+
 export function storagePath(projectUuid: string, templateKey: string, fileName: string) {
   return `projects/${projectUuid}/${templateKey}/${fileName}`;
 }

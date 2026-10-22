@@ -7,6 +7,7 @@
   "description": "Owner approval for the municipality inspectors to enter the plot, take photos and survey the existing buildings.",
   "projectType": "taqneen",
   "source": "private/taqneen/15 site-entry.pdf",
+  "fileName": "الموافقة على دخول القسيمة",
   "format": "pdf",
   "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
   "sanitize": [

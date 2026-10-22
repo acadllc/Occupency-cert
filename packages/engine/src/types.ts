@@ -167,6 +167,8 @@ export interface TemplateDefinition {
   category?: string;
   /** position inside its category in the picker (the number of the internal file, e.g. 01, 02) */
   order?: number;
+  /** download name (no extension) when it is not the source file's own name */
+  fileName?: string;
   /** picker tab (templates/project-types.json); default "occupancy" */
   projectType?: string;
   source: string;

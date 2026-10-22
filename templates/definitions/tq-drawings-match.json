@@ -7,6 +7,7 @@
   "description": "ACAD letter: the consultant undertakes that the drawings match the site.",
   "projectType": "taqneen",
   "source": "private/taqneen/09 drawings-match.pdf",
+  "fileName": "تعهد مطابقة المخططات",
   "format": "pdf",
   "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
   "sanitize": [

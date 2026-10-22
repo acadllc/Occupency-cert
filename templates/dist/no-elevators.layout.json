@@ -1,9 +1,9 @@
 {
  "key": "no-elevators",
- "version": 3,
+ "version": 4,
  "format": "docx",
  "sourceSha256": "ba7e9b74ad286f1e3c0b67bb343fc6faeb44d2a3909ac7086ec8b70987116303",
- "baseSha256": "da7bf5d4eaf3a14c5e7d21a12736f4356054a06a8a706cd6f12380975be230b3",
+ "baseSha256": "a8c9ff998a45b1ad39d69154464e5a720ee2e4afea795086b088d132fdc480dc",
  "pageCount": 1,
  "pages": [
   {
@@ -67,17 +67,6 @@
     451.95
    ]
   },
-  "lifts_subject": {
-   "page": 0,
-   "baseline": 283.3,
-   "size": 16.0,
-   "rect": [
-    239.02,
-    268.1,
-    307.04,
-    288.1
-   ]
-  },
   "lifts_body": {
    "page": 0,
    "baseline": 533.5,
@@ -108,13 +97,12 @@
    "QZ3ZQ": "consultant",
    "QZ4ZQ": "location",
    "QZ5ZQ": "components",
-   "QZ6ZQ": "lifts_subject",
-   "QZ7ZQ": "lifts_body",
-   "QZ8ZQ": "stamp"
+   "QZ6ZQ": "lifts_body",
+   "QZ7ZQ": "stamp"
   }
  },
  "build": {
   "engine": "LibreOffice 24.2.7.2 420(Build:2)",
-  "layoutDiff": 0.002397
+  "layoutDiff": 0.001562
  }
 }

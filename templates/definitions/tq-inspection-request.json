@@ -7,6 +7,7 @@
   "description": "ACAD letter requesting the municipality inspection for the Taqneen (legalization) procedure.",
   "projectType": "taqneen",
   "source": "private/taqneen/07 inspection-request.pdf",
+  "fileName": "طلب تفتيش",
   "format": "pdf",
   "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
   "sanitize": [

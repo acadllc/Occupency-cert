@@ -9,6 +9,7 @@
   "order": 5,
   "projectType": "occupancy",
   "source": "private/occupancy/study-path-clarification.docx",
+  "fileName": "توضيح مسار الدفاع المدني للقسم المعماري",
   "format": "docx",
   "sanitize": "private",
   "slots": {

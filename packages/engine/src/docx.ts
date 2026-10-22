@@ -258,12 +258,21 @@ export async function buildDocx(d: DocxDeps): Promise<DocxResult> {
         }
         const maxWidth = maxWidths.get(slotName);
         if (maxWidth) rPr = fitRunSize(rPr, v.text, maxWidth, entry.layout.slots[slotName]?.size);
+        // U+2011 (plot numbers) becomes Word's own non-breaking hyphen
+        const t = (s: string) => `<w:t xml:space="preserve">${escapeXml(s).replace(/\u2011/g, '</w:t><w:noBreakHyphen/><w:t xml:space="preserve">')}</w:t>`;
         const body = v.text
           .split(/\r?\n/)
-          // U+2011 (plot numbers) becomes Word's own non-breaking hyphen
-          .map((line) => `<w:t xml:space="preserve">${escapeXml(line).replace(/\u2011/g, '</w:t><w:noBreakHyphen/><w:t xml:space="preserve">')}</w:t>`)
+          .map((line) => {
+            // a left-to-right mark starts a number that must keep its typed order (a plot number
+            // inside Arabic text): Word gets it as a run of its own without the right-to-left flag,
+            // the way Word itself stores mixed Arabic / number text
+            const [head, ...ltr] = line.split('\u200e');
+            if (!ltr.length) return t(line);
+            const ltrPr = rPr.replace(/<w:rtl\/>/g, '');
+            return `${t(head)}</w:r>${ltr.map((part) => `<w:r>${ltrPr}${t(`\u200e${part}`)}</w:r>`).join('')}<w:r>${rPr}`;
+          })
           .join('<w:br/>');
-        return `<w:r>${rPr}${body}</w:r>`;
+        return `<w:r>${rPr}${body}</w:r>`.replace(/<w:r>(<w:rPr>(?:(?!<\/w:rPr>).)*<\/w:rPr>)?<\/w:r>/gs, '');
       }
       const size = imageSize(v.bytes);
       const rid = addImage(v.bytes);

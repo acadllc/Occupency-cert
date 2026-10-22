@@ -140,3 +140,24 @@ describe('document import', () => {
     expect(v.owner_nationality_ar).toBe('الامارات');
   });
 });
+
+describe('download names', async () => {
+  const { downloadName } = await import('../apps/web/src/lib/files');
+  const catalog = JSON.parse(readFileSync(join(__dirname, '..', 'templates', 'dist', 'catalog.json'), 'utf8')) as {
+    templates: { definition: { key: string; source: string; fileName?: string } }[];
+  };
+  const def = (key: string) => catalog.templates.find((t) => t.definition.key === key)?.definition;
+
+  it('gives back the name of the original file', () => {
+    expect(downloadName(def('mechanical-commitment'), 'x.pdf', 'pdf')).toBe('01Mechanical systemتعهد بالالتزام ببنود كود أبو ظبي للأعمال الميكانيكية.pdf');
+    expect(downloadName(def('no-elevators'), 'x.docx', 'docx')).toBe('عدم وجود مصاعد في المشروع.docx');
+    expect(downloadName(def('no-elevators'), 'x.pdf', 'pdf')).toBe('عدم وجود مصاعد في المشروع.pdf');
+    expect(downloadName(def('occupant-load'), 'x.docx', 'docx')).toBe('OCCUPANT LOAD.docx');
+    expect(downloadName(def('bank-com-complete-per-drawings'), 'x.pdf', 'pdf')).toBe('تعهد إستكمال حسب المخططات والمواصفات.pdf');
+    expect(downloadName(undefined, 'stored-name.pdf', 'pdf')).toBe('stored-name.pdf');
+  });
+
+  it('names every template', () => {
+    for (const { definition } of catalog.templates) expect(downloadName(definition, '', 'pdf')).toMatch(/^[^\\/:*?"<>|]+\.pdf$/);
+  });
+});

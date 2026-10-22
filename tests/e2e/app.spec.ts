@@ -109,12 +109,13 @@ test('full workflow: create, generate, download, history, edit, search', async (
   const dl = page.waitForEvent('download');
   await dialog.getByRole('button', { name: 'Download' }).first().click();
   const file = await dl;
-  expect(file.suggestedFilename()).toMatch(/^B2N-2026-000777_number-of-users_\d{8}-\d{6}_r2\.docx$/);
+  // downloaded under the original file's name
+  expect(file.suggestedFilename()).toBe('02NOMBER OF USERS.docx');
   expect(readFileSync((await file.path())!).subarray(0, 2).toString()).toBe('PK');
   const pdfDl = page.waitForEvent('download');
   await dialog.getByRole('button', { name: 'Download' }).nth(1).click();
   const pdf = await pdfDl;
-  expect(pdf.suggestedFilename()).toMatch(/^B2N-2026-000777_mechanical-commitment_\d{8}-\d{6}_r2\.pdf$/);
+  expect(pdf.suggestedFilename()).toBe('01Mechanical systemتعهد بالالتزام ببنود كود أبو ظبي للأعمال الميكانيكية.pdf');
   expect(readFileSync((await pdf.path())!).subarray(0, 5).toString()).toBe('%PDF-');
 
   const zipDl = page.waitForEvent('download');

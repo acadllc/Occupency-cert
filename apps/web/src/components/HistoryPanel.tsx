@@ -1,12 +1,14 @@
 import { useEffect, useState } from 'react';
 import { MIME, type GeneratedDocumentRow, type GenerationJob, type Project } from '../lib/api';
 import { catalog } from '../lib/config';
-import { formatBytes, formatDateTime, safeSegment, saveBlob, zipFiles } from '../lib/files';
+import { downloadName, formatBytes, formatDateTime, safeSegment, saveBlob, zipFiles } from '../lib/files';
 import { useApi } from '../lib/session';
 import { Empty, Spinner, StatusBadge, useToast } from './ui';
 
 const nameOf = (key: string) => catalog.templates.find((t) => t.definition.key === key)?.definition.name ?? key;
 const isWord = (d: GeneratedDocumentRow) => d.mime_type === MIME.docx || d.file_name.endsWith('.docx');
+/** downloaded under the original file's name (see downloadName) */
+const fileNameOf = (d: GeneratedDocumentRow) => downloadName(catalog.templates.find((t) => t.definition.key === d.template_key)?.definition, d.file_name, isWord(d) ? 'docx' : 'pdf');
 
 export function HistoryPanel({ project }: { project: Project }) {
   const api = useApi();
@@ -27,7 +29,7 @@ export function HistoryPanel({ project }: { project: Project }) {
   const download = async (d: GeneratedDocumentRow) => {
     setBusy(d.id);
     try {
-      saveBlob(await api.downloadDocument(d.storage_path), d.file_name);
+      saveBlob(await api.downloadDocument(d.storage_path), fileNameOf(d));
     } catch (e) {
       toast((e as Error).message, 'error');
     } finally {
@@ -38,7 +40,7 @@ export function HistoryPanel({ project }: { project: Project }) {
   const downloadJob = async (job: GenerationJob, items: GeneratedDocumentRow[]) => {
     setBusy(job.id);
     try {
-      const files = await Promise.all(items.map(async (d) => ({ name: d.file_name, data: await api.downloadDocument(d.storage_path) })));
+      const files = await Promise.all(items.map(async (d) => ({ name: fileNameOf(d), data: await api.downloadDocument(d.storage_path) })));
       saveBlob(await zipFiles(files), `${safeSegment(String(project.fields.project_id ?? ''), 'project')}_${job.created_at.slice(0, 10)}_r${job.project_revision}.zip`);
     } catch (e) {
       toast((e as Error).message, 'error');

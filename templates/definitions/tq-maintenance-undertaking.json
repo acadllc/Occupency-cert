@@ -7,6 +7,7 @@
   "description": "ACAD letter: the owner undertakes to maintain the external facades of the existing buildings.",
   "projectType": "taqneen",
   "source": "private/taqneen/03 maintenance.pdf",
+  "fileName": "تعهد صيانة",
   "format": "pdf",
   "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
   "sanitize": [
