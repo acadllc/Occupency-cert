@@ -3,8 +3,8 @@
  "templates": [
   {
    "key": "archive-drawings-explanation",
-   "version": 3,
-   "baseSha256": "46656b9387b6b50f148ad973f654656ba57a6ae6b015cd455b64decb7560dcc9",
+   "version": 4,
+   "baseSha256": "a8e730b161e7c27cafaf6a4fecc105c1e563535d1ae8067051dbee74ac8706c7",
    "pageCount": 1
   },
   {
@@ -471,8 +471,8 @@
   },
   {
    "key": "no-elevators",
-   "version": 2,
-   "baseSha256": "3140aa04099cfa8a037172525730a985dcf5f40e841e00c9dfb0e0065462dba9",
+   "version": 3,
+   "baseSha256": "da7bf5d4eaf3a14c5e7d21a12736f4356054a06a8a706cd6f12380975be230b3",
    "pageCount": 1
   },
   {
@@ -537,8 +537,8 @@
   },
   {
    "key": "study-path-clarification",
-   "version": 1,
-   "baseSha256": "ffa1237284f988be997cecd848563785b2a7136b74e2620838b601dd4abb72de",
+   "version": 2,
+   "baseSha256": "d3b22e848ab205c3ca69d82eeeb4f9288be64ee0c8c0802ba0221e4a81e54b94",
    "pageCount": 1
   },
   {

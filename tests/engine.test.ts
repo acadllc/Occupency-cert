@@ -50,14 +50,12 @@ describe('field values', () => {
   });
 
   it('derives the Arabic and English project location', () => {
-    expect(resolveValue('@project_location_ar', ctx(sampleProject))).toBe('العين / الهيلي / شرق 12 - 047');
+    expect(resolveValue('@project_location_ar', ctx(sampleProject))).toBe('العين / الهيلي / شرق 12 - \u200e047');
+    // a hyphenated plot number keeps its typed order inside Arabic text (left-to-right mark in front)
+    expect(resolveValue('@project_location_ar', ctx({ ...sampleProject, plot_number: '18-4-118-124' }))).toBe('العين / الهيلي / شرق 12 - \u200e18\u20114\u2011118\u2011124');
     expect(resolveValue('@project_location_en', ctx(sampleProject))).toBe('Al Ain / Al Hili / East 12 - Plot 047');
     expect(resolveValue('@project_location_ar', ctx({ city: 'abu_dhabi', area_ar: 'السعادة' }))).toBe('أبوظبي / السعادة');
     expect(resolveValue('@project_location_ar', ctx({}))).toBe('');
-  });
-
-  it('prefers an explicit address override', () => {
-    expect(resolveValue('@project_address_or_location_ar', ctx({ ...sampleProject, project_address_ar: 'عنوان خاص' }))).toBe('عنوان خاص');
   });
 
   it('uses fixed company names', () => {
@@ -173,7 +171,7 @@ describe('PDF generation', () => {
     expect(text('owner (Arabic)')).toBe(sampleProject.owner_name_ar);
     expect(text('ack_en')).toBe(sampleProject.contractor_name_en);
     expect(text('ack_ar')).toBe(sampleProject.contractor_name_ar);
-    expect(text('pledge_en')).toBe(company.consultant_name_en);
+    expect(text('pledge_ar')).toBe(company.consultant_name_ar);
     expect(text('project_id_en')).toBe('B2N-2026-000123');
     expect(text('project_id_ar')).toBe('B2N-2026-000123');
     expect(text('date_en')).toBe('13/10/2026');
@@ -187,8 +185,15 @@ describe('PDF generation', () => {
 
   it('repeats shared values on every page where they appear', async () => {
     const res = await engine.generate('consultant-authorization', sampleProject);
-    const consultant = res.placements.filter((p) => p.text === company.consultant_name_en);
+    const consultant = res.placements.filter((p) => p.text === company.consultant_name_ar);
     expect(consultant.map((p) => p.page).sort()).toEqual([0, 1]);
+  });
+
+  it('never prints the consultant name in English (Arabic only)', async () => {
+    for (const { definition } of catalog.templates) {
+      const res = await engine.generate(definition.key, sampleProject);
+      expect(res.placements.filter((p) => p.text?.includes(company.consultant_name_en)).map((p) => `${definition.key}:${p.slot}`)).toEqual([]);
+    }
   });
 
   it('places Arabic letter values in the right table cells', async () => {

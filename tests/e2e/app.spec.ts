@@ -58,7 +58,7 @@ test('full workflow: create, generate, download, history, edit, search', async (
   await expect(page.getByLabel('Area / zone (English)')).toHaveValue('Central District');
   await expect(page.getByLabel(/Sector \(Arabic\)/)).toHaveValue('حي الحميرة');
   await expect(page.getByLabel('Owner name (English)')).toHaveValue('Salem Khalifa Rashed Salem Almansoori');
-  await expect(page.getByText('العين / وسط المدينة / حي الحميرة - 18-7-200-047')).toBeVisible();
+  await expect(page.getByText('العين / وسط المدينة / حي الحميرة - \u200e18\u20117\u2011200\u2011047')).toBeVisible();
 
   // ---- manual entry (Arabic + English entered separately) overrides imported values
   await page.getByLabel('Project ID').fill('B2N-2026-000777');

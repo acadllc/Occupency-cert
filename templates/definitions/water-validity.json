@@ -95,17 +95,6 @@
       ],
       "baseline": 181.2
     },
-    "address": {
-      "kind": "rect",
-      "page": 0,
-      "rect": [
-        101.6,
-        182.9,
-        513.1,
-        197.4
-      ],
-      "baseline": 192.6
-    },
     "owner": {
       "kind": "rect",
       "page": 0,
@@ -243,17 +232,6 @@
         388.6
       ]
     },
-    "ack_en": {
-      "kind": "rect",
-      "page": 0,
-      "rect": [
-        94.9,
-        402.4,
-        352,
-        416.2
-      ],
-      "baseline": 412.1
-    },
     "ack_ar": {
       "kind": "rect",
       "page": 0,
@@ -347,22 +325,6 @@
       "slot": "description",
       "en": "project_description_en",
       "ar": "project_description_ar",
-      "font": "carlito",
-      "size": 10,
-      "minSize": 5.5,
-      "knockout": true,
-      "padding": [
-        1.5,
-        0,
-        1.5,
-        0
-      ],
-      "gap": 14
-    },
-    {
-      "slot": "address",
-      "en": "@project_address_or_location_en",
-      "ar": "@project_address_or_location_ar",
       "font": "carlito",
       "size": 10,
       "minSize": 5.5,
@@ -534,23 +496,6 @@
         "option": "cleaning_disinfection"
       },
       "style": "tick"
-    },
-    {
-      "slot": "ack_en",
-      "value": "$consultant_name_en",
-      "font": "carlito",
-      "size": 10,
-      "minSize": 5.5,
-      "knockout": true,
-      "padding": [
-        1.5,
-        0,
-        1.5,
-        0
-      ],
-      "dir": "ltr",
-      "align": "left",
-      "bold": true
     },
     {
       "slot": "ack_ar",

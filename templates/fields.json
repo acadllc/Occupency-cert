@@ -309,30 +309,6 @@
       "placeholder": "e.g. 1200.00"
     },
     {
-      "key": "project_address_ar",
-      "label": "Project address (Arabic, optional override)",
-      "labelAr": "عنوان المشروع",
-      "type": "text",
-      "dir": "rtl",
-      "group": "location",
-      "scope": "shared",
-      "maxLength": 200,
-      "optional": true,
-      "pair": "project_address_en",
-      "help": "Leave empty to use the derived location (city / area / sector - plot)."
-    },
-    {
-      "key": "project_address_en",
-      "label": "Project address (English, optional override)",
-      "type": "text",
-      "dir": "ltr",
-      "group": "location",
-      "scope": "shared",
-      "maxLength": 200,
-      "optional": true,
-      "pair": "project_address_ar"
-    },
-    {
       "key": "project_description_ar",
       "label": "Project description (Arabic)",
       "labelAr": "وصف المشروع",
@@ -545,6 +521,19 @@
           "ar": "تنظيف وتطهير"
         }
       ]
+    },
+    {
+      "key": "building_has_lifts",
+      "label": "Does the building have lifts?",
+      "labelAr": "هل يحتوي المبنى على مصاعد؟",
+      "type": "yesno",
+      "group": "document",
+      "scope": "template",
+      "templates": [
+        "no-elevators"
+      ],
+      "default": "no",
+      "help": "No: «عدم وجود مصاعد … لا يحتوي على مصاعد كهربائية». Yes: «وجود مصاعد … يحتوي على مصاعد كهربائية»."
     },
     {
       "key": "elevator_authorization_type",
@@ -805,6 +794,21 @@
       ],
       "default": "أسرة واحدة فقط",
       "maxLength": 60
+    },
+    {
+      "key": "archive_note_ar",
+      "label": "Archive explanation – last sentence (clear it to remove)",
+      "labelAr": "الجملة الأخيرة في توضيح الأرشيف",
+      "type": "text",
+      "dir": "rtl",
+      "group": "document",
+      "scope": "template",
+      "templates": [
+        "archive-drawings-explanation"
+      ],
+      "default": "أيضا تم إضافة ملف يحتوي على رخصة البناء",
+      "maxLength": 160,
+      "optional": true
     },
     {
       "key": "request_subject_ar",
@@ -1212,26 +1216,6 @@
     "project_location_en": {
       "label": "Project location (English)",
       "from": [
-        "city",
-        "area_en",
-        "sector_en",
-        "plot_number"
-      ]
-    },
-    "project_address_or_location_ar": {
-      "label": "Project address (Arabic)",
-      "from": [
-        "project_address_ar",
-        "city",
-        "area_ar",
-        "sector_ar",
-        "plot_number"
-      ]
-    },
-    "project_address_or_location_en": {
-      "label": "Project address (English)",
-      "from": [
-        "project_address_en",
         "city",
         "area_en",
         "sector_en",

@@ -270,17 +270,6 @@
         380.1
       ]
     },
-    "ack_en": {
-      "kind": "rect",
-      "page": 0,
-      "rect": [
-        96.6,
-        387.7,
-        338,
-        401.5
-      ],
-      "baseline": 397.4
-    },
     "ack_ar": {
       "kind": "rect",
       "page": 0,
@@ -561,23 +550,6 @@
         "option": "rainwater"
       },
       "style": "tick"
-    },
-    {
-      "slot": "ack_en",
-      "value": "$consultant_name_en",
-      "font": "carlito",
-      "size": 10,
-      "minSize": 5.5,
-      "knockout": true,
-      "padding": [
-        1.5,
-        0,
-        1.5,
-        0
-      ],
-      "dir": "ltr",
-      "align": "left",
-      "bold": true
     },
     {
       "slot": "ack_ar",

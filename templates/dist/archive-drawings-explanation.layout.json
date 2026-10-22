@@ -1,9 +1,9 @@
 {
  "key": "archive-drawings-explanation",
- "version": 3,
+ "version": 4,
  "format": "docx",
  "sourceSha256": "b4781214e76d4973d92868e0f9336f3e6546041e0cb8b04f68d44535a28a5d8f",
- "baseSha256": "46656b9387b6b50f148ad973f654656ba57a6ae6b015cd455b64decb7560dcc9",
+ "baseSha256": "a8e730b161e7c27cafaf6a4fecc105c1e563535d1ae8067051dbee74ac8706c7",
  "pageCount": 1,
  "pages": [
   {
@@ -67,6 +67,17 @@
     238.85
    ]
   },
+  "note": {
+   "page": 0,
+   "baseline": 349.35,
+   "size": 12.0,
+   "rect": [
+    117.09,
+    337.95,
+    357.09,
+    352.95
+   ]
+  },
   "stamp": {
    "page": 0,
    "baseline": 398.55,
@@ -86,7 +97,8 @@
    "QZ3ZQ": "plot",
    "QZ4ZQ": "owner",
    "QZ5ZQ": "area",
-   "QZ6ZQ": "stamp"
+   "QZ6ZQ": "note",
+   "QZ7ZQ": "stamp"
   }
  },
  "build": {

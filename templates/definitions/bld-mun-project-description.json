@@ -186,17 +186,6 @@
       ],
       "baseline": 389.6
     },
-    "consultant_ack_en": {
-      "kind": "rect",
-      "page": 0,
-      "rect": [
-        95,
-        406.0,
-        174,
-        417.5
-      ],
-      "baseline": 415.3
-    },
     "consultant_ack": {
       "kind": "rect",
       "page": 0,
@@ -527,22 +516,6 @@
       ],
       "dir": "ltr",
       "align": "center"
-    },
-    {
-      "slot": "consultant_ack_en",
-      "value": "$consultant_brand_en",
-      "font": "sans",
-      "size": 10,
-      "minSize": 6,
-      "padding": [
-        1,
-        0,
-        1,
-        0
-      ],
-      "dir": "ltr",
-      "align": "center",
-      "knockout": true
     },
     {
       "slot": "consultant_ack",

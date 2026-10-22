@@ -7,6 +7,7 @@ import type { CompanyConfig, FieldDef, FieldRegistry, FieldValue, MappingItem, P
  *   "$consultant_name_en"    fixed company value (templates/company.json)
  *   "@project_location_ar"   derived value
  *   "{area_ar} - {sector_ar}" template string combining any of the above
+ *   "has_lifts=yes ? \"يحتوي\" : \"لا يحتوي\""  conditional; quoted text is printed as is
  *   "buildings|numbered|done|lines:1-7"  one item per line of a textarea: "1. VILLA 100%" …,
  *                            only lines 1-7 (numbers kept, so a second column can start at 8);
  *                            "buildings|number|lines:3-3" the item's number alone (a "No." column);
@@ -57,6 +58,20 @@ function cityLabel(ctx: ValueContext, lang: 'ar' | 'en'): string {
   return opt ? opt[lang] : v;
 }
 
+/**
+ * A plot number such as 18-4-118-124 inside Arabic text: after Arabic letters the digits count as
+ * Arabic numbers and the hyphens do not bind them, so the groups come out reversed (124-118-4-18).
+ * A left-to-right mark in front keeps the number in its typed order (PDF and Word alike).
+ */
+function ltrNumber(v: string): string {
+  return v ? `\u200e${noBreak(v)}` : '';
+}
+
+/** Non-breaking hyphens: a plot number is never split over two lines in a narrow cell (Word). */
+function noBreak(v: string): string {
+  return v.replace(/-/g, '\u2011');
+}
+
 export function derivedValue(key: string, ctx: ValueContext): string {
   const f = (k: string) => asText(ctx.fields[k]);
   switch (key) {
@@ -66,16 +81,9 @@ export function derivedValue(key: string, ctx: ValueContext): string {
       return cityLabel(ctx, 'en');
     // plot address (e.g. 18-7-116-137) is the municipality reference number, so it is printed once
     case 'project_location_ar':
-      return join(' / ', [cityLabel(ctx, 'ar'), f('area_ar'), join(' - ', [f('sector_ar'), f('plot_number')])]);
+      return join(' / ', [cityLabel(ctx, 'ar'), f('area_ar'), join(' - ', [f('sector_ar'), ltrNumber(f('plot_number'))])]);
     case 'project_location_en':
-      return join(' / ', [cityLabel(ctx, 'en'), f('area_en'), join(' - ', [f('sector_en'), f('plot_number') && `Plot ${f('plot_number')}`])]);
-    case 'project_address_or_location_ar':
-      return f('project_address_ar') || join(' / ', [cityLabel(ctx, 'ar'), f('area_ar'), join(' - ', [f('sector_ar'), f('plot_number')])]);
-    case 'project_address_or_location_en':
-      return (
-        f('project_address_en') ||
-        join(' / ', [cityLabel(ctx, 'en'), f('area_en'), join(' - ', [f('sector_en'), f('plot_number') && `Plot ${f('plot_number')}`])])
-      );
+      return join(' / ', [cityLabel(ctx, 'en'), f('area_en'), join(' - ', [f('sector_en'), f('plot_number') && `Plot ${noBreak(f('plot_number'))}`])]);
     case 'occupant_load_text_ar':
       return occupantLoad(f);
     default:
@@ -104,6 +112,8 @@ function occupantLoad(f: (k: string) => string): string {
 
 function atom(expr: string, ctx: ValueContext): string {
   const e = expr.trim();
+  const literal = /^"(.*)"$/.exec(e);
+  if (literal) return literal[1];
   if (e.startsWith('$')) {
     const v = (ctx.company as unknown as Record<string, unknown>)[e.slice(1)];
     if (typeof v !== 'string') throw new Error(`Unknown company value: ${e}`);
@@ -175,7 +185,7 @@ export function referencedFields(expr: string, registry: FieldRegistry): string[
   const keys: string[] = [];
   for (const a of atoms) {
     const e = a.trim();
-    if (e.startsWith('$')) continue;
+    if (e.startsWith('$') || /^".*"$/.test(e)) continue;
     if (e.startsWith('@')) {
       keys.push(...(registry.derived[e.slice(1)]?.from ?? []));
       continue;

@@ -66,16 +66,6 @@
    ],
    "baseline": 141.1
   },
-  "address": {
-   "page": 0,
-   "rect": [
-    108.7,
-    142.9,
-    520.2,
-    157.5
-   ],
-   "baseline": 152.6
-  },
   "owner": {
    "page": 0,
    "rect": [
@@ -283,16 +273,6 @@
     453.3
    ],
    "baseline": 448.8
-  },
-  "pledge_en": {
-   "page": 0,
-   "rect": [
-    25.8,
-    689.0,
-    260.5,
-    702.9
-   ],
-   "baseline": 698.8
   },
   "pledge_ar": {
    "page": 0,
