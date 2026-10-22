@@ -174,6 +174,130 @@
         352.5,
         837.5
       ]
+    },
+    "architectural_ar_yes": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        562.5,
+        446,
+        568.5,
+        452.5
+      ]
+    },
+    "architectural_ar_no": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        411.5,
+        446,
+        417.5,
+        452.5
+      ]
+    },
+    "architectural_en_yes": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        26.5,
+        446,
+        32.5,
+        452.5
+      ]
+    },
+    "architectural_en_no": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        167.6,
+        446,
+        174.1,
+        452.5
+      ]
+    },
+    "architectural_description_1": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        306,
+        463.2,
+        451,
+        474.7
+      ],
+      "baseline": 472.5
+    },
+    "architectural_description_2": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        306,
+        481.5,
+        569,
+        493.0
+      ],
+      "baseline": 490.8
+    },
+    "structural_ar_yes": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        562.5,
+        542.9,
+        568.5,
+        549.4
+      ]
+    },
+    "structural_ar_no": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        411.5,
+        542.9,
+        417.5,
+        549.4
+      ]
+    },
+    "structural_en_yes": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        26.5,
+        542.9,
+        32.5,
+        549.4
+      ]
+    },
+    "structural_en_no": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        167.6,
+        542.9,
+        174.1,
+        549.4
+      ]
+    },
+    "structural_description_1": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        306,
+        560.1,
+        451,
+        571.6
+      ],
+      "baseline": 569.4
+    },
+    "structural_description_2": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        306,
+        578.4,
+        569,
+        589.9
+      ],
+      "baseline": 587.7
     }
   },
   "fields": [
@@ -385,6 +509,142 @@
         "size": 105,
         "anchor": "center"
       }
+    },
+    {
+      "slot": "architectural_ar_yes",
+      "check": {
+        "field": "architectural_works",
+        "equals": "affected"
+      },
+      "style": "tick",
+      "size": 8
+    },
+    {
+      "slot": "architectural_ar_no",
+      "check": {
+        "field": "architectural_works",
+        "equals": "not_affected"
+      },
+      "style": "tick",
+      "size": 8
+    },
+    {
+      "slot": "architectural_en_yes",
+      "check": {
+        "field": "architectural_works",
+        "equals": "affected"
+      },
+      "style": "tick",
+      "size": 8
+    },
+    {
+      "slot": "architectural_en_no",
+      "check": {
+        "field": "architectural_works",
+        "equals": "not_affected"
+      },
+      "style": "tick",
+      "size": 8
+    },
+    {
+      "slot": "architectural_description_1",
+      "value": "architectural_works_description|lines:1-1",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "knockout": true
+    },
+    {
+      "slot": "architectural_description_2",
+      "value": "architectural_works_description|lines:2-",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "knockout": true
+    },
+    {
+      "slot": "structural_ar_yes",
+      "check": {
+        "field": "structural_works",
+        "equals": "affected"
+      },
+      "style": "tick",
+      "size": 8
+    },
+    {
+      "slot": "structural_ar_no",
+      "check": {
+        "field": "structural_works",
+        "equals": "not_affected"
+      },
+      "style": "tick",
+      "size": 8
+    },
+    {
+      "slot": "structural_en_yes",
+      "check": {
+        "field": "structural_works",
+        "equals": "affected"
+      },
+      "style": "tick",
+      "size": 8
+    },
+    {
+      "slot": "structural_en_no",
+      "check": {
+        "field": "structural_works",
+        "equals": "not_affected"
+      },
+      "style": "tick",
+      "size": 8
+    },
+    {
+      "slot": "structural_description_1",
+      "value": "structural_works_description|lines:1-1",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "knockout": true
+    },
+    {
+      "slot": "structural_description_2",
+      "value": "structural_works_description|lines:2-",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "knockout": true
     }
   ]
 }

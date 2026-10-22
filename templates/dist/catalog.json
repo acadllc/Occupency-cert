@@ -12105,6 +12105,142 @@
        "size": 105,
        "anchor": "center"
       }
+     },
+     {
+      "slot": "architectural_ar_yes",
+      "check": {
+       "field": "architectural_works",
+       "equals": "affected"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "architectural_ar_no",
+      "check": {
+       "field": "architectural_works",
+       "equals": "not_affected"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "architectural_en_yes",
+      "check": {
+       "field": "architectural_works",
+       "equals": "affected"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "architectural_en_no",
+      "check": {
+       "field": "architectural_works",
+       "equals": "not_affected"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "architectural_description_1",
+      "value": "architectural_works_description|lines:1-1",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "knockout": true
+     },
+     {
+      "slot": "architectural_description_2",
+      "value": "architectural_works_description|lines:2-",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "knockout": true
+     },
+     {
+      "slot": "structural_ar_yes",
+      "check": {
+       "field": "structural_works",
+       "equals": "affected"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "structural_ar_no",
+      "check": {
+       "field": "structural_works",
+       "equals": "not_affected"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "structural_en_yes",
+      "check": {
+       "field": "structural_works",
+       "equals": "affected"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "structural_en_no",
+      "check": {
+       "field": "structural_works",
+       "equals": "not_affected"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "structural_description_1",
+      "value": "structural_works_description|lines:1-1",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "knockout": true
+     },
+     {
+      "slot": "structural_description_2",
+      "value": "structural_works_description|lines:2-",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "knockout": true
      }
     ]
    },
@@ -12273,6 +12409,118 @@
        352.5,
        837.5
       ]
+     },
+     "architectural_ar_yes": {
+      "page": 0,
+      "rect": [
+       562.5,
+       446,
+       568.5,
+       452.5
+      ]
+     },
+     "architectural_ar_no": {
+      "page": 0,
+      "rect": [
+       411.5,
+       446,
+       417.5,
+       452.5
+      ]
+     },
+     "architectural_en_yes": {
+      "page": 0,
+      "rect": [
+       26.5,
+       446,
+       32.5,
+       452.5
+      ]
+     },
+     "architectural_en_no": {
+      "page": 0,
+      "rect": [
+       167.6,
+       446,
+       174.1,
+       452.5
+      ]
+     },
+     "architectural_description_1": {
+      "page": 0,
+      "rect": [
+       306,
+       463.2,
+       451,
+       474.7
+      ],
+      "baseline": 472.5
+     },
+     "architectural_description_2": {
+      "page": 0,
+      "rect": [
+       306,
+       481.5,
+       569,
+       493
+      ],
+      "baseline": 490.8
+     },
+     "structural_ar_yes": {
+      "page": 0,
+      "rect": [
+       562.5,
+       542.9,
+       568.5,
+       549.4
+      ]
+     },
+     "structural_ar_no": {
+      "page": 0,
+      "rect": [
+       411.5,
+       542.9,
+       417.5,
+       549.4
+      ]
+     },
+     "structural_en_yes": {
+      "page": 0,
+      "rect": [
+       26.5,
+       542.9,
+       32.5,
+       549.4
+      ]
+     },
+     "structural_en_no": {
+      "page": 0,
+      "rect": [
+       167.6,
+       542.9,
+       174.1,
+       549.4
+      ]
+     },
+     "structural_description_1": {
+      "page": 0,
+      "rect": [
+       306,
+       560.1,
+       451,
+       571.6
+      ],
+      "baseline": 569.4
+     },
+     "structural_description_2": {
+      "page": 0,
+      "rect": [
+       306,
+       578.4,
+       569,
+       589.9
+      ],
+      "baseline": 587.7
      }
     },
     "docx": null,
@@ -13050,6 +13298,38 @@
       ]
      },
      {
+      "slot": "structural_text",
+      "value": "structural_works_description",
+      "font": "sans",
+      "size": 16,
+      "minSize": 8,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "docxMaxWidth": 440
+     },
+     {
+      "slot": "architectural_text",
+      "value": "architectural_works_description",
+      "font": "sans",
+      "size": 16,
+      "minSize": 8,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "docxMaxWidth": 440
+     },
+     {
       "slot": "stamp",
       "stamp": {
        "size": 105,
@@ -13065,7 +13345,7 @@
     "version": 1,
     "format": "docx",
     "sourceSha256": "f68f7599b45b5f30da14f8a0f566aef880087bd06702743efbc4eae09a98c446",
-    "baseSha256": "db4a19e82cf0b4581a7fad83972aa46c759a46cf92265f577e79abdca131444c",
+    "baseSha256": "182c7f594cc92e723ce7767a9f53140a897d5395749e63e8d7883aab6951cdec",
     "pageCount": 1,
     "pages": [
      {
@@ -13150,6 +13430,28 @@
        210.99,
        607.52
       ]
+     },
+     "structural_text": {
+      "page": 0,
+      "baseline": 434.55,
+      "size": 1,
+      "rect": [
+       50.31,
+       425.66,
+       490.31,
+       442.77
+      ]
+     },
+     "architectural_text": {
+      "page": 0,
+      "baseline": 489.75,
+      "size": 1,
+      "rect": [
+       50.31,
+       480.86,
+       490.31,
+       497.97
+      ]
      }
     },
     "docx": {
@@ -13160,7 +13462,9 @@
       "QZ4ZQ": "contractor",
       "QZ5ZQ": "location",
       "QZ6ZQ": "project_id",
-      "QZ7ZQ": "stamp"
+      "QZ7ZQ": "stamp",
+      "QZ8ZQ": "structural_text",
+      "QZ9ZQ": "architectural_text"
      }
     },
     "build": {
@@ -13719,6 +14023,142 @@
        "size": 105,
        "anchor": "center"
       }
+     },
+     {
+      "slot": "architectural_ar_yes",
+      "check": {
+       "field": "architectural_works",
+       "equals": "affected"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "architectural_ar_no",
+      "check": {
+       "field": "architectural_works",
+       "equals": "not_affected"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "architectural_en_yes",
+      "check": {
+       "field": "architectural_works",
+       "equals": "affected"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "architectural_en_no",
+      "check": {
+       "field": "architectural_works",
+       "equals": "not_affected"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "architectural_description_1",
+      "value": "architectural_works_description|lines:1-1",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "knockout": true
+     },
+     {
+      "slot": "architectural_description_2",
+      "value": "architectural_works_description|lines:2-",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "knockout": true
+     },
+     {
+      "slot": "structural_ar_yes",
+      "check": {
+       "field": "structural_works",
+       "equals": "affected"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "structural_ar_no",
+      "check": {
+       "field": "structural_works",
+       "equals": "not_affected"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "structural_en_yes",
+      "check": {
+       "field": "structural_works",
+       "equals": "affected"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "structural_en_no",
+      "check": {
+       "field": "structural_works",
+       "equals": "not_affected"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "structural_description_1",
+      "value": "structural_works_description|lines:1-1",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "knockout": true
+     },
+     {
+      "slot": "structural_description_2",
+      "value": "structural_works_description|lines:2-",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "knockout": true
      }
     ]
    },
@@ -13887,6 +14327,118 @@
        352.5,
        837.5
       ]
+     },
+     "architectural_ar_yes": {
+      "page": 0,
+      "rect": [
+       562.5,
+       446,
+       568.5,
+       452.5
+      ]
+     },
+     "architectural_ar_no": {
+      "page": 0,
+      "rect": [
+       411.5,
+       446,
+       417.5,
+       452.5
+      ]
+     },
+     "architectural_en_yes": {
+      "page": 0,
+      "rect": [
+       26.5,
+       446,
+       32.5,
+       452.5
+      ]
+     },
+     "architectural_en_no": {
+      "page": 0,
+      "rect": [
+       167.6,
+       446,
+       174.1,
+       452.5
+      ]
+     },
+     "architectural_description_1": {
+      "page": 0,
+      "rect": [
+       306,
+       463.2,
+       451,
+       474.7
+      ],
+      "baseline": 472.5
+     },
+     "architectural_description_2": {
+      "page": 0,
+      "rect": [
+       306,
+       481.5,
+       569,
+       493
+      ],
+      "baseline": 490.8
+     },
+     "structural_ar_yes": {
+      "page": 0,
+      "rect": [
+       562.5,
+       542.9,
+       568.5,
+       549.4
+      ]
+     },
+     "structural_ar_no": {
+      "page": 0,
+      "rect": [
+       411.5,
+       542.9,
+       417.5,
+       549.4
+      ]
+     },
+     "structural_en_yes": {
+      "page": 0,
+      "rect": [
+       26.5,
+       542.9,
+       32.5,
+       549.4
+      ]
+     },
+     "structural_en_no": {
+      "page": 0,
+      "rect": [
+       167.6,
+       542.9,
+       174.1,
+       549.4
+      ]
+     },
+     "structural_description_1": {
+      "page": 0,
+      "rect": [
+       306,
+       560.1,
+       451,
+       571.6
+      ],
+      "baseline": 569.4
+     },
+     "structural_description_2": {
+      "page": 0,
+      "rect": [
+       306,
+       578.4,
+       569,
+       589.9
+      ],
+      "baseline": 587.7
      }
     },
     "docx": null,
@@ -15807,6 +16359,142 @@
        "size": 105,
        "anchor": "center"
       }
+     },
+     {
+      "slot": "architectural_ar_yes",
+      "check": {
+       "field": "architectural_works",
+       "equals": "affected"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "architectural_ar_no",
+      "check": {
+       "field": "architectural_works",
+       "equals": "not_affected"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "architectural_en_yes",
+      "check": {
+       "field": "architectural_works",
+       "equals": "affected"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "architectural_en_no",
+      "check": {
+       "field": "architectural_works",
+       "equals": "not_affected"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "architectural_description_1",
+      "value": "architectural_works_description|lines:1-1",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "knockout": true
+     },
+     {
+      "slot": "architectural_description_2",
+      "value": "architectural_works_description|lines:2-",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "knockout": true
+     },
+     {
+      "slot": "structural_ar_yes",
+      "check": {
+       "field": "structural_works",
+       "equals": "affected"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "structural_ar_no",
+      "check": {
+       "field": "structural_works",
+       "equals": "not_affected"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "structural_en_yes",
+      "check": {
+       "field": "structural_works",
+       "equals": "affected"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "structural_en_no",
+      "check": {
+       "field": "structural_works",
+       "equals": "not_affected"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "structural_description_1",
+      "value": "structural_works_description|lines:1-1",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "knockout": true
+     },
+     {
+      "slot": "structural_description_2",
+      "value": "structural_works_description|lines:2-",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "right",
+      "knockout": true
      }
     ]
    },
@@ -15975,6 +16663,118 @@
        352.5,
        837.5
       ]
+     },
+     "architectural_ar_yes": {
+      "page": 0,
+      "rect": [
+       562.5,
+       446,
+       568.5,
+       452.5
+      ]
+     },
+     "architectural_ar_no": {
+      "page": 0,
+      "rect": [
+       411.5,
+       446,
+       417.5,
+       452.5
+      ]
+     },
+     "architectural_en_yes": {
+      "page": 0,
+      "rect": [
+       26.5,
+       446,
+       32.5,
+       452.5
+      ]
+     },
+     "architectural_en_no": {
+      "page": 0,
+      "rect": [
+       167.6,
+       446,
+       174.1,
+       452.5
+      ]
+     },
+     "architectural_description_1": {
+      "page": 0,
+      "rect": [
+       306,
+       463.2,
+       451,
+       474.7
+      ],
+      "baseline": 472.5
+     },
+     "architectural_description_2": {
+      "page": 0,
+      "rect": [
+       306,
+       481.5,
+       569,
+       493
+      ],
+      "baseline": 490.8
+     },
+     "structural_ar_yes": {
+      "page": 0,
+      "rect": [
+       562.5,
+       542.9,
+       568.5,
+       549.4
+      ]
+     },
+     "structural_ar_no": {
+      "page": 0,
+      "rect": [
+       411.5,
+       542.9,
+       417.5,
+       549.4
+      ]
+     },
+     "structural_en_yes": {
+      "page": 0,
+      "rect": [
+       26.5,
+       542.9,
+       32.5,
+       549.4
+      ]
+     },
+     "structural_en_no": {
+      "page": 0,
+      "rect": [
+       167.6,
+       542.9,
+       174.1,
+       549.4
+      ]
+     },
+     "structural_description_1": {
+      "page": 0,
+      "rect": [
+       306,
+       560.1,
+       451,
+       571.6
+      ],
+      "baseline": 569.4
+     },
+     "structural_description_2": {
+      "page": 0,
+      "rect": [
+       306,
+       578.4,
+       569,
+       589.9
+      ],
+      "baseline": 587.7
      }
     },
     "docx": null,

@@ -33,6 +33,18 @@
     "stamp": {
       "kind": "inline",
       "width": 10
+    },
+    "structural_text": {
+      "kind": "inline",
+      "dir": "rtl",
+      "width": 440,
+      "pad": 8
+    },
+    "architectural_text": {
+      "kind": "inline",
+      "dir": "rtl",
+      "width": 440,
+      "pad": 8
     }
   },
   "fields": [
@@ -124,6 +136,38 @@
         0,
         0
       ]
+    },
+    {
+      "slot": "structural_text",
+      "value": "structural_works_description",
+      "font": "sans",
+      "size": 16,
+      "minSize": 8,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "docxMaxWidth": 440
+    },
+    {
+      "slot": "architectural_text",
+      "value": "architectural_works_description",
+      "font": "sans",
+      "size": 16,
+      "minSize": 8,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "docxMaxWidth": 440
     },
     {
       "slot": "stamp",
