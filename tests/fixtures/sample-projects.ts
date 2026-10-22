@@ -55,6 +55,7 @@ export const sampleProject: ProjectFields = {
   needs_backfilling: 'no',
   permit_before_backfilling: 'yes',
   number_of_users_ar: 'أسرة واحدة فقط',
+  request_subject_ar: 'بناء فيلا جديدة في ارض خالية',
   applicant_role: 'consultant',
   plumbing_photos: [
     { path: 'test/photo1.jpg', details_ar: 'الواجهة الأمامية', notes_ar: 'تم تركيب خزانات المياه العلوية' },

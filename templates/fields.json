@@ -801,6 +801,20 @@
       "maxLength": 60
     },
     {
+      "key": "request_subject_ar",
+      "label": "What is requested (building request letter)",
+      "labelAr": "موضوع الطلب",
+      "type": "text",
+      "dir": "rtl",
+      "group": "document",
+      "scope": "template",
+      "templates": [
+        "bld-mun-building-request"
+      ],
+      "default": "بناء فيلا جديدة في ارض خالية",
+      "maxLength": 120
+    },
+    {
       "key": "applicant_role",
       "label": "Applicant (structural/architectural undertaking)",
       "type": "select",

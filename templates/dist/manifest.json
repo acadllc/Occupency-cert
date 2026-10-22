@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20",
+ "generated": "2026-10-22",
  "templates": [
   {
    "key": "archive-drawings-explanation",
@@ -376,7 +376,7 @@
   {
    "key": "bld-mun-building-request",
    "version": 1,
-   "baseSha256": "95af0eb3d8ccbf7ffcec84ede84a45fc0f5e1740e0e07ec78df594c97ef7e55f",
+   "baseSha256": "e353dbf26f6967ee1b308519e5bb5c2429116fc8d76649eeaebba3535ae8567e",
    "pageCount": 1
   },
   {

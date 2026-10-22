@@ -23,6 +23,12 @@
     "plot": {
       "kind": "cell"
     },
+    "request": {
+      "kind": "inline",
+      "dir": "rtl",
+      "width": 460,
+      "pad": 11
+    },
     "date": {
       "kind": "inline",
       "width": 110
@@ -92,6 +98,22 @@
         4,
         2
       ]
+    },
+    {
+      "slot": "request",
+      "value": "request_subject_ar",
+      "font": "sans",
+      "size": 16,
+      "minSize": 9,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "docxMaxWidth": 460
     },
     {
       "slot": "date",
