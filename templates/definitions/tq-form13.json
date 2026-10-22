@@ -7,6 +7,7 @@
   "description": "DMT form 13 (2 pages): project details, construction date, general plot description, the buildings to be legalized and the structural evaluation.",
   "projectType": "taqneen",
   "source": "private/taqneen/05 form13.pdf",
+  "fileName": "تقرير الاستشاري بالمعاينة الفنية لحالة تقنين وضع مباني قائمة",
   "format": "pdf",
   "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
   "sanitize": [

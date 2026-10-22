@@ -9,6 +9,7 @@
   "order": 4,
   "projectType": "occupancy",
   "source": "private/occupancy/occupant-load.docx",
+  "fileName": "OCCUPANT LOAD",
   "format": "docx",
   "sanitize": "private",
   "slots": {

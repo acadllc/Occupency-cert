@@ -19826,6 +19826,7 @@
     "order": 6,
     "projectType": "occupancy",
     "source": "private/occupancy/matching-drawings-request.docx",
+    "fileName": "طلب استخراج ارشيف مرة ثانيه",
     "format": "docx",
     "fields": [
      {
@@ -21801,6 +21802,7 @@
     "order": 4,
     "projectType": "occupancy",
     "source": "private/occupancy/occupant-load.docx",
+    "fileName": "OCCUPANT LOAD",
     "format": "docx",
     "fields": [
      {
@@ -25605,6 +25607,7 @@
     "order": 5,
     "projectType": "occupancy",
     "source": "private/occupancy/study-path-clarification.docx",
+    "fileName": "توضيح مسار الدفاع المدني للقسم المعماري",
     "format": "docx",
     "fields": [
      {
@@ -26360,6 +26363,7 @@
     "description": "Al Ain City Municipality checklist of the documents, drawings and technical reports for an existing building completion certificate.",
     "projectType": "taqneen",
     "source": "private/taqneen/13 checklist.pdf",
+    "fileName": "قائمة تدقيق متطلبات إصدار شهادة إتمام لمبنى قائم",
     "format": "pdf",
     "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
     "fields": [
@@ -26500,6 +26504,7 @@
     "description": "ACAD letter: every existing building shown on the drawings is 100% complete, listed one by one.",
     "projectType": "taqneen",
     "source": "private/taqneen/08 completion-percentage.pdf",
+    "fileName": "نسبة الإنجاز",
     "format": "pdf",
     "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
     "fields": [
@@ -26978,6 +26983,7 @@
     "description": "ACAD letter: the consultant undertakes that the drawings match the site.",
     "projectType": "taqneen",
     "source": "private/taqneen/09 drawings-match.pdf",
+    "fileName": "تعهد مطابقة المخططات",
     "format": "pdf",
     "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
     "fields": [
@@ -27118,6 +27124,7 @@
     "description": "DMT form 13 (2 pages): project details, construction date, general plot description, the buildings to be legalized and the structural evaluation.",
     "projectType": "taqneen",
     "source": "private/taqneen/05 form13.pdf",
+    "fileName": "تقرير الاستشاري بالمعاينة الفنية لحالة تقنين وضع مباني قائمة",
     "format": "pdf",
     "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
     "fields": [
@@ -28823,6 +28830,7 @@
     "description": "Form 2: request for a building completion certificate for existing buildings without a permit or previous completion certificate.",
     "projectType": "taqneen",
     "source": "private/taqneen/12 form2.pdf",
+    "fileName": "طلب شهادة إتمام بناء لمباني قائمة – نموذج رقم (2)",
     "format": "pdf",
     "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
     "fields": [
@@ -29119,6 +29127,7 @@
     "description": "Form 3: the owner declares full responsibility for the safety of the existing buildings on the plot.",
     "projectType": "taqneen",
     "source": "private/taqneen/14 form3.pdf",
+    "fileName": "إقرار وتعهد المالك – نموذج رقم (3)",
     "format": "pdf",
     "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
     "fields": [
@@ -29285,6 +29294,7 @@
     "description": "Form 4: the consultant declares the existing buildings on the plot are structurally safe for their purpose.",
     "projectType": "taqneen",
     "source": "private/taqneen/11 form4.pdf",
+    "fileName": "إقرار وتعهد – نموذج رقم (4)",
     "format": "pdf",
     "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
     "fields": [
@@ -29425,6 +29435,7 @@
     "description": "ACAD letter requesting the municipality inspection for the Taqneen (legalization) procedure.",
     "projectType": "taqneen",
     "source": "private/taqneen/07 inspection-request.pdf",
+    "fileName": "طلب تفتيش",
     "format": "pdf",
     "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
     "fields": [
@@ -29565,6 +29576,7 @@
     "description": "ACAD letter to Al Ain Distribution Company: all buildings need legalization, none need alterations or demolition.",
     "projectType": "taqneen",
     "source": "private/taqneen/10 justification.pdf",
+    "fileName": "مبرر طلب تقنين وضع",
     "format": "pdf",
     "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
     "fields": [
@@ -29705,6 +29717,7 @@
     "description": "ACAD letter: the owner undertakes to maintain the external facades of the existing buildings.",
     "projectType": "taqneen",
     "source": "private/taqneen/03 maintenance.pdf",
+    "fileName": "تعهد صيانة",
     "format": "pdf",
     "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
     "fields": [
@@ -29871,6 +29884,7 @@
     "description": "ACAD letter: owner and consultant undertake that no people of determination use the property.",
     "projectType": "taqneen",
     "source": "private/taqneen/01 people-of-determination.pdf",
+    "fileName": "تعهد بعدم وجود ذوي الهمم",
     "format": "pdf",
     "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
     "fields": [
@@ -30037,6 +30051,7 @@
     "description": "ACAD letter: owner and consultant undertake not to occupy or place services on roofs without parapets.",
     "projectType": "taqneen",
     "source": "private/taqneen/04 roofs.pdf",
+    "fileName": "تعهد بعدم إشغال الأسطح التي لا يتوفر فيها درابزين",
     "format": "pdf",
     "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
     "fields": [
@@ -30203,6 +30218,7 @@
     "description": "Owner approval for the municipality inspectors to enter the plot, take photos and survey the existing buildings.",
     "projectType": "taqneen",
     "source": "private/taqneen/15 site-entry.pdf",
+    "fileName": "الموافقة على دخول القسيمة",
     "format": "pdf",
     "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
     "fields": [

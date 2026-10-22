@@ -7,6 +7,7 @@
   "description": "ACAD letter: owner and consultant undertake not to occupy or place services on roofs without parapets.",
   "projectType": "taqneen",
   "source": "private/taqneen/04 roofs.pdf",
+  "fileName": "تعهد بعدم إشغال الأسطح التي لا يتوفر فيها درابزين",
   "format": "pdf",
   "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
   "sanitize": [

@@ -3,10 +3,14 @@ import { Link } from 'react-router-dom';
 import { analyzeMissing } from '@acad/engine';
 import { MIME, type Project } from '../lib/api';
 import { catalog, registry } from '../lib/config';
-import { formatBytes, saveBlob, zipFiles, safeSegment } from '../lib/files';
+import { downloadName, formatBytes, saveBlob, zipFiles, safeSegment } from '../lib/files';
 import { runGeneration, type ItemState, type OutputFormat } from '../lib/generation';
 import { useApi } from '../lib/session';
 import { Modal } from './ui';
+
+/** the original file's name (see downloadName) */
+const fileNameOf = (key: string, stored: string, ext: 'pdf' | 'docx') =>
+  downloadName(catalog.templates.find((t) => t.definition.key === key)?.definition, stored, ext);
 
 const entryOf = (key: string) => catalog.templates.find((t) => t.definition.key === key);
 const nameOf = (key: string) => entryOf(key)?.definition.name ?? key;
@@ -83,7 +87,7 @@ export function GenerateDialog({ project, templateKeys, onClose }: { project: Pr
         ) : phase === 'done' ? (
           <>
             {done.length > 1 && (
-              <button className="btn" onClick={async () => saveBlob(await zipFiles(done.map(([, s]) => ({ name: s.row.file_name, data: s.bytes }))), zipName)}>
+              <button className="btn" onClick={async () => saveBlob(await zipFiles(done.map(([key, s]) => ({ name: fileNameOf(key, s.row.file_name, s.format), data: s.bytes }))), zipName)}>
                 Download ZIP ({done.length})
               </button>
             )}
@@ -186,7 +190,7 @@ export function GenerateDialog({ project, templateKeys, onClose }: { project: Pr
                     {s.status === 'failed' && <div className="cell-sub" style={{ color: 'var(--danger)' }}>{s.error}</div>}
                   </div>
                   {s.status === 'done' && (
-                    <button className="btn btn-sm" onClick={() => saveBlob(new Blob([s.bytes as BlobPart], { type: MIME[s.format] }), s.row.file_name)}>
+                    <button className="btn btn-sm" onClick={() => saveBlob(new Blob([s.bytes as BlobPart], { type: MIME[s.format] }), fileNameOf(k, s.row.file_name, s.format))}>
                       Download
                     </button>
                   )}

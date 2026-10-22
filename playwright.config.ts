@@ -11,7 +11,11 @@ export default defineConfig({
     baseURL: 'http://localhost:4173/Occupency-cert/',
     acceptDownloads: true,
     trace: 'retain-on-failure',
-    launchOptions: existsSync(localChromium) ? { executablePath: localChromium } : {},
+    // a UTF-8 locale: without one Chromium on Linux saves Arabic download names as "download"
+    launchOptions: {
+      ...(existsSync(localChromium) ? { executablePath: localChromium } : {}),
+      env: { ...process.env, LANG: 'C.UTF-8', LC_ALL: 'C.UTF-8' },
+    },
   },
   webServer: {
     command: 'npm run e2e:serve',

@@ -7,6 +7,7 @@
   "description": "ACAD letter to Al Ain Distribution Company: all buildings need legalization, none need alterations or demolition.",
   "projectType": "taqneen",
   "source": "private/taqneen/10 justification.pdf",
+  "fileName": "مبرر طلب تقنين وضع",
   "format": "pdf",
   "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
   "sanitize": [

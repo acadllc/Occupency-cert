@@ -7,6 +7,7 @@
   "description": "Al Ain City Municipality checklist of the documents, drawings and technical reports for an existing building completion certificate.",
   "projectType": "taqneen",
   "source": "private/taqneen/13 checklist.pdf",
+  "fileName": "قائمة تدقيق متطلبات إصدار شهادة إتمام لمبنى قائم",
   "format": "pdf",
   "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
   "sanitize": [

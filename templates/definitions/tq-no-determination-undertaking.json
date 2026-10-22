@@ -7,6 +7,7 @@
   "description": "ACAD letter: owner and consultant undertake that no people of determination use the property.",
   "projectType": "taqneen",
   "source": "private/taqneen/01 people-of-determination.pdf",
+  "fileName": "تعهد بعدم وجود ذوي الهمم",
   "format": "pdf",
   "reviewNotes": "Scanned paper: the old project values are erased from the image (table lines and dotted leaders kept) and the owner signature removed; the consultant name, stamp and signature are part of the scan.",
   "sanitize": [
