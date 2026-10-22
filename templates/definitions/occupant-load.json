@@ -1,12 +1,14 @@
 {
-  "key": "tq-study-path-clarification",
+  "key": "occupant-load",
   "version": 1,
   "status": "verified",
-  "name": "Clarification: the study is within the procedure path",
-  "nameAr": "توضيح الدراسة ضمن المسار",
-  "description": "ACAD letter confirming the procedure path includes the civil defence study, asking to continue the transaction.",
-  "projectType": "taqneen",
-  "source": "private/taqneen/18 study-path-clarification.docx",
+  "name": "Clarification of the building occupant load",
+  "nameAr": "توضيح عدد المستخدمين للمبنى",
+  "description": "ACAD letter explaining the occupant load of the building, floor by floor (area / occupant load factor).",
+  "category": "ARCH REVIEW المراجعة المعمارية",
+  "order": 4,
+  "projectType": "occupancy",
+  "source": "private/occupancy/occupant-load.docx",
   "format": "docx",
   "sanitize": "private",
   "slots": {
@@ -29,9 +31,22 @@
     "plot": {
       "kind": "cell"
     },
-    "stamp": {
+    "occupancy": {
       "kind": "inline",
-      "width": 10
+      "dir": "rtl",
+      "width": 470,
+      "pad": 6,
+      "down": 120
+    },
+    "stamp": {
+      "kind": "rect",
+      "page": 0,
+      "rect": [
+        112.5,
+        622.5,
+        217.5,
+        727.5
+      ]
     }
   },
   "fields": [
@@ -125,12 +140,27 @@
       ]
     },
     {
+      "slot": "occupancy",
+      "value": "occupant_load_ar",
+      "font": "sans",
+      "size": 13,
+      "minSize": 8,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "valign": "top",
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
       "slot": "stamp",
       "stamp": {
         "size": 105,
-        "anchor": "marker",
-        "dx": 28,
-        "dy": 58
+        "anchor": "center"
       }
     }
   ]

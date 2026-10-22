@@ -165,6 +165,8 @@ export interface TemplateDefinition {
   nameAr?: string;
   description?: string;
   category?: string;
+  /** position inside its category in the picker (the number of the internal file, e.g. 01, 02) */
+  order?: number;
   /** picker tab (templates/project-types.json); default "occupancy" */
   projectType?: string;
   source: string;

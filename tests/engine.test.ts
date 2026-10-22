@@ -113,7 +113,7 @@ describe('field values', () => {
 describe('registry', () => {
   it('lists every template as generatable, under a known project-type tab', () => {
     const types = (JSON.parse(readFileSync(join(root, 'templates/project-types.json'), 'utf8')) as { types: { key: string }[] }).types.map((t) => t.key);
-    expect(catalog.templates.filter((t) => (t.definition.projectType ?? 'occupancy') === 'occupancy')).toHaveLength(18);
+    expect(catalog.templates.filter((t) => (t.definition.projectType ?? 'occupancy') === 'occupancy')).toHaveLength(21);
     const bank = catalog.templates.filter((t) => t.definition.projectType === 'bank');
     expect(bank.length).toBeGreaterThanOrEqual(55);
     // bank papers never carry the ACAD stamp, and print the bank's own project / loan number

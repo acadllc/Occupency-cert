@@ -141,19 +141,19 @@ test('full workflow: create, generate, download, history, edit, search', async (
   await page.getByRole('tab', { name: /Architectural/ }).click();
   await expect(page.getByLabel('Select all أوراق تقديم البلدية')).toBeVisible();
   await page.getByRole('tab', { name: /Taqneen/ }).click();
-  await expect(page.getByRole('button', { name: /Select all in tab \(18\)/ })).toBeVisible();
+  await expect(page.getByRole('button', { name: /Select all in tab \(14\)/ })).toBeVisible();
   await page.getByRole('tab', { name: /Contractor/ }).click();
   await expect(page.getByText(/No Contractor contracts documents yet/)).toBeVisible();
   await page.getByRole('tab', { name: /Occupancy certificate/ }).click();
   // select a whole category, then the whole tab
-  await page.getByLabel('Select all DMT undertakings').check();
-  await expect(page.getByText('(7/7)')).toBeVisible();
-  await page.getByRole('button', { name: /Select all in tab \(18\)/ }).click();
+  await page.getByLabel('Select all MECHANICAL REVIEW متطلبات المراجعة الميكانيكية').check();
+  await expect(page.getByText('(8/8)')).toBeVisible();
+  await page.getByRole('button', { name: /Select all in tab \(21\)/ }).click();
   await page.getByRole('button', { name: 'Save & generate' }).click();
   await page.getByRole('dialog').getByText('PDF', { exact: true }).click();
   await page.getByRole('dialog').getByRole('button', { name: 'Continue with blanks' }).click();
   await expect(page.getByRole('dialog').getByText('All documents were generated and saved privately.')).toBeVisible({ timeout: 150_000 });
-  await expect(page.getByRole('dialog').locator('.progress-item')).toHaveCount(18);
+  await expect(page.getByRole('dialog').locator('.progress-item')).toHaveCount(21);
   await page.getByRole('dialog').getByRole('button', { name: 'Close', exact: true }).click();
 
   // ---- search by Arabic owner name and by plot number
@@ -167,7 +167,7 @@ test('full workflow: create, generate, download, history, edit, search', async (
 
   // ---- dashboard reflects the work
   await page.getByRole('navigation').getByRole('link', { name: 'Dashboard' }).click();
-  await expect(page.locator('.stat', { hasText: 'Documents generated' }).locator('.value')).toHaveText('20');
+  await expect(page.locator('.stat', { hasText: 'Documents generated' }).locator('.value')).toHaveText('23');
 
   await page.getByRole('button', { name: 'Sign out' }).click();
   await expect(page.getByRole('heading', { name: 'Sign in' })).toBeVisible();

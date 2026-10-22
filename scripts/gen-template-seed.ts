@@ -33,6 +33,10 @@ on conflict (template_key) do update set
   page_count = excluded.page_count,
   required_fields = excluded.required_fields,
   updated_at = now();
+
+-- templates removed from the catalog (e.g. moved to another tab under a new key) can no longer be generated
+update public.template_registry set status = 'retired', updated_at = now()
+where template_key not in (${catalog.templates.map(({ definition: d }) => q(d.key)).join(', ')}) and status <> 'retired';
 `;
 writeFileSync(join(root, 'supabase/migrations/20261013000200_template_registry_seed.sql'), sql);
 console.log(`template_registry seed: ${rows.length} templates`);
