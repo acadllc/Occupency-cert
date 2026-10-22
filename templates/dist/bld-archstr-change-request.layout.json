@@ -1,9 +1,9 @@
 {
  "key": "bld-archstr-change-request",
- "version": 1,
+ "version": 2,
  "format": "docx",
  "sourceSha256": "f68f7599b45b5f30da14f8a0f566aef880087bd06702743efbc4eae09a98c446",
- "baseSha256": "182c7f594cc92e723ce7767a9f53140a897d5395749e63e8d7883aab6951cdec",
+ "baseSha256": "6f06e0d7fb1a18e935e745164b17af926fd3e54e206e3303faad883304e6edef",
  "pageCount": 1,
  "pages": [
   {

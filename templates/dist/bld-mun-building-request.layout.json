@@ -1,9 +1,9 @@
 {
  "key": "bld-mun-building-request",
- "version": 1,
+ "version": 2,
  "format": "docx",
  "sourceSha256": "88d7171a0d57bacc837acf08cb761d9aca5e8219f5390bec3f96e106687f2c07",
- "baseSha256": "e353dbf26f6967ee1b308519e5bb5c2429116fc8d76649eeaebba3535ae8567e",
+ "baseSha256": "3f45d828b04b82b4ba8bb187d75392d3e77f8af696eca84cc94d41c4ca60044e",
  "pageCount": 1,
  "pages": [
   {
