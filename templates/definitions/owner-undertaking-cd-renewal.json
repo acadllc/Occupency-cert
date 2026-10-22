@@ -1,6 +1,6 @@
 {
   "key": "owner-undertaking-cd-renewal",
-  "version": 2,
+  "version": 3,
   "status": "verified",
   "name": "Owner Undertaking – Annual Completion Certificate Renewal",
   "nameAr": "تعهد المالك بتجديد شهادة الإستيفاء سنوياً",
@@ -11,10 +11,6 @@
   "source": "01OWNER UNDERTAKE FOR CD ESTIFAA- تعهد المالك بتجديد شهادة الإستيفاء.docx",
   "format": "docx",
   "sanitize": [
-    {
-      "op": "copy_header",
-      "from": "02NOMBER OF USERS.docx"
-    },
     {
       "op": "date_field",
       "slot": "date"
