@@ -76,7 +76,7 @@ test('full workflow: create, generate, download, history, edit, search', async (
   await page.getByLabel(/Plot number/).fill('007');
   await page.getByLabel(/Project components \(Arabic\)/).fill('فيلا دورين + سور خارجي');
   // the derived Arabic location updates live
-  await expect(page.getByText('أبوظبي / السعادة / شرق 41 - 007')).toBeVisible();
+  await expect(page.getByText('أبوظبي / السعادة / شرق 41 - \u200e007')).toBeVisible();
 
   // invalid email blocks saving until corrected
   await page.getByRole('button', { name: 'Create project' }).first().click();
