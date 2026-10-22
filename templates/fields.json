@@ -767,6 +767,7 @@
     {
       "key": "needs_backfilling",
       "label": "Does the plot need backfilling / ground levelling work submitted by the municipality?",
+      "labelAr": "هل الأرض تحتاج إلى أعمال دفان وتسوية يتم تقديمها من قبل البلدية المعنية؟",
       "type": "yesno",
       "group": "document",
       "scope": "template",
@@ -778,6 +779,7 @@
     {
       "key": "permit_before_backfilling",
       "label": "If backfilling is needed and not started: issue the building permit before backfilling?",
+      "labelAr": "إن كانت الأرض تحتاج إلى أعمال دفان وتسوية يتم تقديمها من قبل البلدية، ولم تبدأ هذه الأعمال قبل إصدار ترخيص البناء، فهل ترغب بإصدار الترخيص؟",
       "type": "yesno",
       "group": "document",
       "scope": "template",
