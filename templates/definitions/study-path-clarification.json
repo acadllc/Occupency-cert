@@ -1,18 +1,22 @@
 {
-  "key": "tq-matching-drawings-request",
+  "key": "study-path-clarification",
   "version": 1,
   "status": "verified",
-  "name": "Request for archive drawings matching the plot",
-  "nameAr": "طلب استخراج مخططات مطابقة للمشروع",
-  "description": "ACAD letter: the archive drawings received do not match the plot; a new archive drawings request was submitted.",
-  "projectType": "taqneen",
-  "source": "private/taqneen/17 matching-drawings-request.docx",
+  "name": "Civil defence path clarification (architectural section)",
+  "nameAr": "توضيح مسار الدفاع المدني للقسم المعماري",
+  "description": "ACAD letter confirming the procedure path includes the civil defence study, asking to continue the transaction.",
+  "category": "ARCH REVIEW المراجعة المعمارية",
+  "projectType": "occupancy",
+  "source": "private/occupancy/study-path-clarification.docx",
   "format": "docx",
   "sanitize": "private",
   "slots": {
     "date": {
-      "kind": "inline",
-      "width": 110
+      "kind": "gap",
+      "width": 90
+    },
+    "project_id": {
+      "kind": "cell"
     },
     "owner": {
       "kind": "cell"
@@ -44,6 +48,21 @@
         0,
         0,
         0
+      ]
+    },
+    {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
       ]
     },
     {

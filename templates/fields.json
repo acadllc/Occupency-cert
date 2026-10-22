@@ -911,7 +911,7 @@
       "group": "document",
       "scope": "template",
       "templates": [
-        "tq-occupant-load"
+        "occupant-load"
       ],
       "maxLength": 800,
       "placeholder": "الأدوار السكنية: (أول + ثاني + روف)  (R2)\nبمساحة إجمالية 600\n600/18.5 = 33 شخص"

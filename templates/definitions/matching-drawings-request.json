@@ -1,21 +1,19 @@
 {
-  "key": "tq-occupant-load",
+  "key": "matching-drawings-request",
   "version": 1,
   "status": "verified",
-  "name": "Clarification of the building occupant load",
-  "nameAr": "توضيح عدد المستخدمين للمبنى",
-  "description": "ACAD letter explaining the occupant load of the building, floor by floor (area / occupant load factor).",
-  "projectType": "taqneen",
-  "source": "private/taqneen/19 occupant-load.docx",
+  "name": "Second archive drawings request",
+  "nameAr": "طلب استخراج أرشيف مرة ثانية",
+  "description": "ACAD letter: the archive drawings received do not match the plot; a new archive drawings request was submitted.",
+  "category": "ARCH REVIEW المراجعة المعمارية",
+  "projectType": "occupancy",
+  "source": "private/occupancy/matching-drawings-request.docx",
   "format": "docx",
   "sanitize": "private",
   "slots": {
     "date": {
-      "kind": "gap",
-      "width": 90
-    },
-    "project_id": {
-      "kind": "cell"
+      "kind": "inline",
+      "width": 110
     },
     "owner": {
       "kind": "cell"
@@ -29,22 +27,9 @@
     "plot": {
       "kind": "cell"
     },
-    "occupancy": {
-      "kind": "inline",
-      "dir": "rtl",
-      "width": 470,
-      "pad": 6,
-      "down": 120
-    },
     "stamp": {
-      "kind": "rect",
-      "page": 0,
-      "rect": [
-        112.5,
-        622.5,
-        217.5,
-        727.5
-      ]
+      "kind": "inline",
+      "width": 10
     }
   },
   "fields": [
@@ -60,21 +45,6 @@
         0,
         0,
         0
-      ]
-    },
-    {
-      "slot": "project_id",
-      "value": "project_id",
-      "font": "sans",
-      "size": 12,
-      "align": "right",
-      "dir": "ltr",
-      "multiline": true,
-      "padding": [
-        4,
-        2,
-        4,
-        2
       ]
     },
     {
@@ -138,27 +108,12 @@
       ]
     },
     {
-      "slot": "occupancy",
-      "value": "occupant_load_ar",
-      "font": "sans",
-      "size": 13,
-      "minSize": 8,
-      "align": "right",
-      "dir": "rtl",
-      "multiline": true,
-      "valign": "top",
-      "padding": [
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "slot": "stamp",
       "stamp": {
         "size": 105,
-        "anchor": "center"
+        "anchor": "marker",
+        "dx": 28,
+        "dy": 58
       }
     }
   ]

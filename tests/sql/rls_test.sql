@@ -139,6 +139,6 @@ reset role;
 -- 6. buckets are private and the seed loaded every template
 do $$ begin
   if exists (select 1 from storage.buckets where public) then raise exception 'public bucket'; end if;
-  if (select count(*) from public.template_registry) < 107 then raise exception 'template seed'; end if;
+  if (select count(*) from public.template_registry) < 106 then raise exception 'template seed'; end if;
 end $$;
 select 'ALL RLS TESTS PASSED' as result;
