@@ -39,7 +39,7 @@
       "font": "Arial"
     },
     {
-      "op": "remove_line_art",
+      "op": "clear_xobject",
       "page": 0,
       "rects": [
         [

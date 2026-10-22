@@ -101,6 +101,24 @@ class PdfSanitizer:
             self.pending_redactions.setdefault(op["page"], []).append((r, "lineart"))
         self.removed.append(f"[line art p{op['page']} x{len(op['rects'])}]")
 
+    def op_clear_xobject(self, op: dict):
+        """Empty the form XObjects (e.g. hand-placed tick marks drawn as small forms) whose box lies
+        inside the given rects; redaction does not reach drawings nested in forms."""
+        page = self.doc[op["page"]]
+        h = page.rect.height
+        for rect in op["rects"]:
+            r = fitz.Rect(rect)
+            hits = []
+            for xref, _name, _parent, bbox in page.get_xobjects():
+                box = fitz.Rect(bbox[0], h - bbox[3], bbox[2], h - bbox[1])
+                if r.contains(box):
+                    hits.append(xref)
+            if not hits:
+                raise PdfSanitizeError(f"no form XObject inside {rect} on page {op['page']}")
+            for xref in hits:
+                self.doc.update_stream(xref, b"")
+        self.removed.append(f"[form xobject p{op['page']} x{len(op['rects'])}]")
+
     def op_image_edit(self, op: dict):
         """Edit a scanned page image (forms delivered as screenshots).
 
