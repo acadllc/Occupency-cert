@@ -55,6 +55,11 @@ export const sampleProject: ProjectFields = {
   needs_backfilling: 'no',
   permit_before_backfilling: 'yes',
   number_of_users_ar: 'أسرة واحدة فقط',
+  request_subject_ar: 'بناء فيلا جديدة في ارض خالية',
+  architectural_works: 'not_affected',
+  architectural_works_description: 'لا يوجد',
+  structural_works: 'affected',
+  structural_works_description: 'إضافة جسر على المحور 3 لسقف الدور الأول\nتدعيم الأعمدة C2 و C3',
   applicant_role: 'consultant',
   plumbing_photos: [
     { path: 'test/photo1.jpg', details_ar: 'الواجهة الأمامية', notes_ar: 'تم تركيب خزانات المياه العلوية' },

@@ -801,6 +801,108 @@
       "maxLength": 60
     },
     {
+      "key": "request_subject_ar",
+      "label": "What is requested (building request letter)",
+      "labelAr": "موضوع الطلب",
+      "type": "text",
+      "dir": "rtl",
+      "group": "document",
+      "scope": "template",
+      "templates": [
+        "bld-mun-building-request"
+      ],
+      "default": "بناء فيلا جديدة في ارض خالية",
+      "maxLength": 120
+    },
+    {
+      "key": "architectural_works",
+      "label": "Architectural drawings – works",
+      "labelAr": "المخططات المعمارية",
+      "type": "select",
+      "group": "document",
+      "scope": "template",
+      "templates": [
+        "bld-mun-owner-approval",
+        "bld-arch-owner-approval",
+        "bld-archstr-owner-approval",
+        "bld-archstr-change-request"
+      ],
+      "options": [
+        {
+          "value": "affected",
+          "en": "Affected (works)",
+          "ar": "يوجد أعمال"
+        },
+        {
+          "value": "not_affected",
+          "en": "Not affected (no works)",
+          "ar": "لا يوجد أعمال"
+        }
+      ],
+      "optional": true
+    },
+    {
+      "key": "architectural_works_description",
+      "label": "Architectural works – detailed description",
+      "labelAr": "وصف الأعمال المعمارية بالتفصيل",
+      "type": "textarea",
+      "dir": "rtl",
+      "group": "document",
+      "scope": "template",
+      "templates": [
+        "bld-mun-owner-approval",
+        "bld-arch-owner-approval",
+        "bld-archstr-owner-approval",
+        "bld-archstr-change-request"
+      ],
+      "maxLength": 400,
+      "optional": true
+    },
+    {
+      "key": "structural_works",
+      "label": "Structural drawings – works",
+      "labelAr": "المخططات الإنشائية",
+      "type": "select",
+      "group": "document",
+      "scope": "template",
+      "templates": [
+        "bld-mun-owner-approval",
+        "bld-arch-owner-approval",
+        "bld-archstr-owner-approval",
+        "bld-archstr-change-request"
+      ],
+      "options": [
+        {
+          "value": "affected",
+          "en": "Affected (works)",
+          "ar": "يوجد أعمال"
+        },
+        {
+          "value": "not_affected",
+          "en": "Not affected (no works)",
+          "ar": "لا يوجد أعمال"
+        }
+      ],
+      "optional": true
+    },
+    {
+      "key": "structural_works_description",
+      "label": "Structural works – detailed description",
+      "labelAr": "وصف الأعمال الإنشائية بالتفصيل",
+      "type": "textarea",
+      "dir": "rtl",
+      "group": "document",
+      "scope": "template",
+      "templates": [
+        "bld-mun-owner-approval",
+        "bld-arch-owner-approval",
+        "bld-archstr-owner-approval",
+        "bld-archstr-change-request"
+      ],
+      "maxLength": 400,
+      "optional": true
+    },
+    {
       "key": "applicant_role",
       "label": "Applicant (structural/architectural undertaking)",
       "type": "select",
