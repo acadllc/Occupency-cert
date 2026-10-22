@@ -235,6 +235,7 @@ export class Engine {
   }
 
   private async drawText(d: DrawCtx, slot: SlotGeometry, text: string, style: TextStyle, slotName: string) {
+    text = text.replace(/\u2011/g, '-'); // non-breaking hyphen (Word only): lines break at spaces here anyway
     const fam = await this.family(style.font ?? 'sans', style.bold);
     if (style.knockoutSlot) {
       const [x0, y0, x1, y1] = slot.rect;
@@ -318,6 +319,8 @@ export class Engine {
   }
 
   private async drawBilingual(d: DrawCtx, slot: SlotGeometry, item: BilingualItem, en: string, ar: string) {
+    en = en.replace(/\u2011/g, '-');
+    ar = ar.replace(/\u2011/g, '-');
     if (!en && !ar) return;
     if (!en || !ar) {
       // only one language supplied: place it on its own side

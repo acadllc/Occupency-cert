@@ -144,17 +144,6 @@
       ],
       "baseline": 253.8
     },
-    "consultant_en": {
-      "kind": "rect",
-      "page": 0,
-      "rect": [
-        91,
-        256.5,
-        290,
-        268
-      ],
-      "baseline": 265.8
-    },
     "stamp_p1": {
       "kind": "rect",
       "page": 0,
@@ -480,21 +469,6 @@
       ],
       "dir": "rtl",
       "align": "right"
-    },
-    {
-      "slot": "consultant_en",
-      "value": "$consultant_name_en",
-      "font": "sans",
-      "size": 9,
-      "minSize": 6,
-      "padding": [
-        1,
-        0,
-        1,
-        0
-      ],
-      "dir": "ltr",
-      "align": "left"
     },
     {
       "slot": "stamp_p1",

@@ -260,7 +260,8 @@ export async function buildDocx(d: DocxDeps): Promise<DocxResult> {
         if (maxWidth) rPr = fitRunSize(rPr, v.text, maxWidth, entry.layout.slots[slotName]?.size);
         const body = v.text
           .split(/\r?\n/)
-          .map((line) => `<w:t xml:space="preserve">${escapeXml(line)}</w:t>`)
+          // U+2011 (plot numbers) becomes Word's own non-breaking hyphen
+          .map((line) => `<w:t xml:space="preserve">${escapeXml(line).replace(/\u2011/g, '</w:t><w:noBreakHyphen/><w:t xml:space="preserve">')}</w:t>`)
           .join('<w:br/>');
         return `<w:r>${rPr}${body}</w:r>`;
       }

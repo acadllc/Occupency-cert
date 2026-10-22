@@ -1,6 +1,6 @@
 {
   "key": "archive-drawings-explanation",
-  "version": 3,
+  "version": 4,
   "status": "verified",
   "name": "Explanation of Architectural & Structural Archive Drawings",
   "nameAr": "توضيح بخصوص مخططات الأرشيف المعمارية والإنشائية",
@@ -44,6 +44,14 @@
       "target": "media/image1.png"
     },
     {
+      "op": "text",
+      "contains": "رخصة البناء",
+      "old": ", أيضا تم إضافة  ملف يحتوي على رخصة البناء",
+      "slot": "note",
+      "reserve": 44,
+      "rtl": true
+    },
+    {
       "op": "insert_after",
       "contains": "الاستشاري",
       "occurrence": -1,
@@ -71,6 +79,10 @@
     },
     "area": {
       "kind": "cell"
+    },
+    "note": {
+      "kind": "gap",
+      "width": 240
     },
     "stamp": {
       "kind": "line_leftmost"
@@ -134,7 +146,7 @@
     },
     {
       "slot": "area",
-      "value": "area_ar",
+      "value": "{area_ar} / {sector_ar}",
       "font": "tajawal",
       "size": 11,
       "align": "center",
@@ -144,6 +156,20 @@
         1,
         3,
         1
+      ]
+    },
+    {
+      "slot": "note",
+      "value": ", {archive_note_ar}",
+      "font": "tajawal",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "padding": [
+        0,
+        0,
+        0,
+        0
       ]
     },
     {

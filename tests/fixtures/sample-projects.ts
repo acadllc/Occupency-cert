@@ -55,6 +55,8 @@ export const sampleProject: ProjectFields = {
   needs_backfilling: 'no',
   permit_before_backfilling: 'yes',
   number_of_users_ar: 'أسرة واحدة فقط',
+  building_has_lifts: 'no',
+  archive_note_ar: 'أيضا تم إضافة ملف يحتوي على رخصة البناء',
   request_subject_ar: 'بناء فيلا جديدة في ارض خالية',
   occ1_label: 'الادوار السكنيه : (اول + ثاني + روف)',
   occ1_group: 'R2',

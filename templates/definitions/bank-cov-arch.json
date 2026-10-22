@@ -74,7 +74,7 @@
     },
     {
       "slot": "location",
-      "value": "@project_address_or_location_en",
+      "value": "@project_location_en",
       "font": "sans",
       "size": 24,
       "minSize": 7,

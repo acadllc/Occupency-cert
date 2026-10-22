@@ -73,17 +73,6 @@
       ],
       "baseline": 151.9
     },
-    "address": {
-      "kind": "rect",
-      "page": 0,
-      "rect": [
-        100.3,
-        153.7,
-        511.8,
-        168.3
-      ],
-      "baseline": 163.4
-    },
     "owner": {
       "kind": "rect",
       "page": 0,
@@ -339,22 +328,6 @@
       "gap": 14
     },
     {
-      "slot": "address",
-      "en": "@project_address_or_location_en",
-      "ar": "@project_address_or_location_ar",
-      "font": "carlito",
-      "size": 10,
-      "minSize": 5.5,
-      "knockout": true,
-      "padding": [
-        1.5,
-        0,
-        1.5,
-        0
-      ],
-      "gap": 14
-    },
-    {
       "slot": "owner",
       "en": "owner_name_en",
       "ar": "owner_name_ar",
@@ -388,8 +361,6 @@
     },
     {
       "slot": "consultant",
-      "en": "$consultant_name_en",
-      "ar": "$consultant_name_ar",
       "font": "carlito",
       "size": 10,
       "minSize": 5.5,
@@ -400,7 +371,9 @@
         1.5,
         0
       ],
-      "gap": 14
+      "value": "$consultant_name_ar",
+      "dir": "rtl",
+      "align": "right"
     },
     {
       "slot": "contractor",

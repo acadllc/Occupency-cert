@@ -176,16 +176,6 @@
         254.0
       ]
     },
-    "consultant_en": {
-      "kind": "rect",
-      "page": 0,
-      "rect": [
-        22.9,
-        274.5,
-        300.5,
-        292.3
-      ]
-    },
     "consultant_ar": {
       "kind": "rect",
       "page": 0,
@@ -274,16 +264,6 @@
         440.7,
         534.6,
         453.9
-      ]
-    },
-    "consultant_en_p2": {
-      "kind": "rect",
-      "page": 1,
-      "rect": [
-        22.5,
-        103.1,
-        302.0,
-        120.9
       ]
     },
     "consultant_ar_p2": {
@@ -469,22 +449,6 @@
       "align": "center"
     },
     {
-      "slot": "consultant_en",
-      "value": "$consultant_name_en",
-      "font": "carlito",
-      "size": 10,
-      "minSize": 5.5,
-      "valign": "middle",
-      "padding": [
-        3,
-        0,
-        3,
-        0
-      ],
-      "dir": "ltr",
-      "align": "left"
-    },
-    {
       "slot": "consultant_ar",
       "value": "$consultant_name_ar",
       "font": "carlito",
@@ -499,22 +463,6 @@
       ],
       "dir": "rtl",
       "align": "right"
-    },
-    {
-      "slot": "consultant_en_p2",
-      "value": "$consultant_name_en",
-      "font": "carlito",
-      "size": 10,
-      "minSize": 5.5,
-      "valign": "middle",
-      "padding": [
-        3,
-        0,
-        3,
-        0
-      ],
-      "dir": "ltr",
-      "align": "left"
     },
     {
       "slot": "consultant_ar_p2",

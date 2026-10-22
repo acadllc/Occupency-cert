@@ -58,7 +58,7 @@ test('full workflow: create, generate, download, history, edit, search', async (
   await expect(page.getByLabel('Area / zone (English)')).toHaveValue('Central District');
   await expect(page.getByLabel(/Sector \(Arabic\)/)).toHaveValue('حي الحميرة');
   await expect(page.getByLabel('Owner name (English)')).toHaveValue('Salem Khalifa Rashed Salem Almansoori');
-  await expect(page.getByText('العين / وسط المدينة / حي الحميرة - 18-7-200-047')).toBeVisible();
+  await expect(page.getByText('العين / وسط المدينة / حي الحميرة - \u200e18\u20117\u2011200\u2011047')).toBeVisible();
 
   // ---- manual entry (Arabic + English entered separately) overrides imported values
   await page.getByLabel('Project ID').fill('B2N-2026-000777');
@@ -76,7 +76,7 @@ test('full workflow: create, generate, download, history, edit, search', async (
   await page.getByLabel(/Plot number/).fill('007');
   await page.getByLabel(/Project components \(Arabic\)/).fill('فيلا دورين + سور خارجي');
   // the derived Arabic location updates live
-  await expect(page.getByText('أبوظبي / السعادة / شرق 41 - 007')).toBeVisible();
+  await expect(page.getByText('أبوظبي / السعادة / شرق 41 - \u200e007')).toBeVisible();
 
   // invalid email blocks saving until corrected
   await page.getByRole('button', { name: 'Create project' }).first().click();
