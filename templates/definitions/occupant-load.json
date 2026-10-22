@@ -6,6 +6,7 @@
   "nameAr": "توضيح عدد المستخدمين للمبنى",
   "description": "ACAD letter explaining the occupant load of the building, floor by floor (area / occupant load factor).",
   "category": "ARCH REVIEW المراجعة المعمارية",
+  "order": 4,
   "projectType": "occupancy",
   "source": "private/occupancy/occupant-load.docx",
   "format": "docx",

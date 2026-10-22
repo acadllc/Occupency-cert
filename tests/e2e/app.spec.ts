@@ -146,8 +146,8 @@ test('full workflow: create, generate, download, history, edit, search', async (
   await expect(page.getByText(/No Contractor contracts documents yet/)).toBeVisible();
   await page.getByRole('tab', { name: /Occupancy certificate/ }).click();
   // select a whole category, then the whole tab
-  await page.getByLabel('Select all DMT undertakings').check();
-  await expect(page.getByText('(7/7)')).toBeVisible();
+  await page.getByLabel('Select all MECHANICAL REVIEW متطلبات المراجعة الميكانيكية').check();
+  await expect(page.getByText('(8/8)')).toBeVisible();
   await page.getByRole('button', { name: /Select all in tab \(21\)/ }).click();
   await page.getByRole('button', { name: 'Save & generate' }).click();
   await page.getByRole('dialog').getByText('PDF', { exact: true }).click();

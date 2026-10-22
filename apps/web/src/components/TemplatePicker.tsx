@@ -64,7 +64,9 @@ export function TemplatePicker({ selected, onChange }: { selected: string[]; onC
         </div>
       ) : (
         categories.map((cat) => {
-          const items = filtered.filter((t) => (t.definition.category ?? 'Other') === cat);
+          const items = filtered
+            .filter((t) => (t.definition.category ?? 'Other') === cat)
+            .sort((a, b) => (a.definition.order ?? Infinity) - (b.definition.order ?? Infinity));
           if (!items.length) return null;
           const keys = items.map((t) => t.definition.key);
           const allOn = keys.every((k) => selected.includes(k));

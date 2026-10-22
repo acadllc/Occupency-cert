@@ -6,6 +6,7 @@
   "nameAr": "توضيح مسار الدفاع المدني للقسم المعماري",
   "description": "ACAD letter confirming the procedure path includes the civil defence study, asking to continue the transaction.",
   "category": "ARCH REVIEW المراجعة المعمارية",
+  "order": 5,
   "projectType": "occupancy",
   "source": "private/occupancy/study-path-clarification.docx",
   "format": "docx",

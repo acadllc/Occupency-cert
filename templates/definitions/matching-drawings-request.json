@@ -6,6 +6,7 @@
   "nameAr": "طلب استخراج أرشيف مرة ثانية",
   "description": "ACAD letter: the archive drawings received do not match the plot; a new archive drawings request was submitted.",
   "category": "ARCH REVIEW المراجعة المعمارية",
+  "order": 6,
   "projectType": "occupancy",
   "source": "private/occupancy/matching-drawings-request.docx",
   "format": "docx",

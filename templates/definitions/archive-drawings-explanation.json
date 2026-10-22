@@ -6,6 +6,7 @@
   "nameAr": "توضيح بخصوص مخططات الأرشيف المعمارية والإنشائية",
   "description": "Letter explaining the archived architectural (ARCH.PDF) and structural (STRUC.PDF) drawings attached to the application.",
   "category": "ARCH REVIEW المراجعة المعمارية",
+  "order": 3,
   "projectType": "occupancy",
   "source": "03EXPLAIN FOR ARCHIVE.docx",
   "format": "docx",
