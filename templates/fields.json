@@ -24,6 +24,10 @@
     {
       "key": "document",
       "label": "Document-specific details"
+    },
+    {
+      "key": "occupant_load",
+      "label": "Occupant load – نسبة الإشغال للمبنى"
     }
   ],
   "fields": [
@@ -905,18 +909,187 @@
       "optional": true
     },
     {
-      "key": "occupant_load_ar",
-      "label": "Occupant load calculation (one line each)",
-      "labelAr": "توضيح نسبة الإشغال / عدد المستخدمين",
-      "type": "textarea",
+      "key": "occ1_label",
+      "label": "Part 1 – floors / use",
+      "labelAr": "الجزء 1 – الأدوار / الاستخدام",
+      "type": "text",
       "dir": "rtl",
-      "group": "document",
+      "maxLength": 120,
+      "group": "occupant_load",
       "scope": "template",
       "templates": [
         "occupant-load"
       ],
-      "maxLength": 800,
-      "placeholder": "الأدوار السكنية: (أول + ثاني + روف)  (R2)\nبمساحة إجمالية 600\n600/18.5 = 33 شخص"
+      "optional": true,
+      "default": "الادوار السكنيه : (اول + ثاني + ثالث + روف)"
+    },
+    {
+      "key": "occ1_group",
+      "label": "Part 1 – occupancy group",
+      "labelAr": "مجموعة الإشغال",
+      "type": "text",
+      "dir": "ltr",
+      "maxLength": 10,
+      "placeholder": "e.g. R2, M, B",
+      "group": "occupant_load",
+      "scope": "template",
+      "templates": [
+        "occupant-load"
+      ],
+      "optional": true,
+      "default": "R2"
+    },
+    {
+      "key": "occ1_area",
+      "label": "Part 1 – total area (m²)",
+      "labelAr": "المساحة الإجمالية",
+      "type": "text",
+      "dir": "ltr",
+      "maxLength": 20,
+      "placeholder": "e.g. 992.2",
+      "group": "occupant_load",
+      "scope": "template",
+      "templates": [
+        "occupant-load"
+      ],
+      "optional": true
+    },
+    {
+      "key": "occ1_factor",
+      "label": "Part 1 – occupant load factor (m² / person)",
+      "labelAr": "معامل الإشغال (م² لكل شخص)",
+      "type": "text",
+      "dir": "ltr",
+      "maxLength": 10,
+      "placeholder": "e.g. 18.5",
+      "group": "occupant_load",
+      "scope": "template",
+      "templates": [
+        "occupant-load"
+      ],
+      "optional": true,
+      "default": "18.5"
+    },
+    {
+      "key": "occ2_label",
+      "label": "Part 2 – floors / use",
+      "labelAr": "الجزء 2 – الأدوار / الاستخدام",
+      "type": "text",
+      "dir": "rtl",
+      "maxLength": 120,
+      "group": "occupant_load",
+      "scope": "template",
+      "templates": [
+        "occupant-load"
+      ],
+      "optional": true,
+      "default": "الدور الارضي : محلات"
+    },
+    {
+      "key": "occ2_group",
+      "label": "Part 2 – occupancy group",
+      "labelAr": "مجموعة الإشغال",
+      "type": "text",
+      "dir": "ltr",
+      "maxLength": 10,
+      "placeholder": "e.g. R2, M, B",
+      "group": "occupant_load",
+      "scope": "template",
+      "templates": [
+        "occupant-load"
+      ],
+      "optional": true,
+      "default": "M"
+    },
+    {
+      "key": "occ2_area",
+      "label": "Part 2 – total area (m²)",
+      "labelAr": "المساحة الإجمالية",
+      "type": "text",
+      "dir": "ltr",
+      "maxLength": 20,
+      "placeholder": "e.g. 992.2",
+      "group": "occupant_load",
+      "scope": "template",
+      "templates": [
+        "occupant-load"
+      ],
+      "optional": true
+    },
+    {
+      "key": "occ2_factor",
+      "label": "Part 2 – occupant load factor (m² / person)",
+      "labelAr": "معامل الإشغال (م² لكل شخص)",
+      "type": "text",
+      "dir": "ltr",
+      "maxLength": 10,
+      "placeholder": "e.g. 18.5",
+      "group": "occupant_load",
+      "scope": "template",
+      "templates": [
+        "occupant-load"
+      ],
+      "optional": true,
+      "default": "4.65"
+    },
+    {
+      "key": "occ3_label",
+      "label": "Part 3 – floors / use",
+      "labelAr": "الجزء 3 – الأدوار / الاستخدام",
+      "type": "text",
+      "dir": "rtl",
+      "maxLength": 120,
+      "group": "occupant_load",
+      "scope": "template",
+      "templates": [
+        "occupant-load"
+      ],
+      "optional": true
+    },
+    {
+      "key": "occ3_group",
+      "label": "Part 3 – occupancy group",
+      "labelAr": "مجموعة الإشغال",
+      "type": "text",
+      "dir": "ltr",
+      "maxLength": 10,
+      "placeholder": "e.g. R2, M, B",
+      "group": "occupant_load",
+      "scope": "template",
+      "templates": [
+        "occupant-load"
+      ],
+      "optional": true
+    },
+    {
+      "key": "occ3_area",
+      "label": "Part 3 – total area (m²)",
+      "labelAr": "المساحة الإجمالية",
+      "type": "text",
+      "dir": "ltr",
+      "maxLength": 20,
+      "placeholder": "e.g. 992.2",
+      "group": "occupant_load",
+      "scope": "template",
+      "templates": [
+        "occupant-load"
+      ],
+      "optional": true
+    },
+    {
+      "key": "occ3_factor",
+      "label": "Part 3 – occupant load factor (m² / person)",
+      "labelAr": "معامل الإشغال (م² لكل شخص)",
+      "type": "text",
+      "dir": "ltr",
+      "maxLength": 10,
+      "placeholder": "e.g. 18.5",
+      "group": "occupant_load",
+      "scope": "template",
+      "templates": [
+        "occupant-load"
+      ],
+      "optional": true
     },
     {
       "key": "applicant_role",
@@ -1063,6 +1236,23 @@
         "area_en",
         "sector_en",
         "plot_number"
+      ]
+    },
+    "occupant_load_text_ar": {
+      "label": "Occupant load (Arabic)",
+      "from": [
+        "occ1_label",
+        "occ1_group",
+        "occ1_area",
+        "occ1_factor",
+        "occ2_label",
+        "occ2_group",
+        "occ2_area",
+        "occ2_factor",
+        "occ3_label",
+        "occ3_group",
+        "occ3_area",
+        "occ3_factor"
       ]
     }
   }

@@ -22122,7 +22122,7 @@
      },
      {
       "slot": "occupancy",
-      "value": "occupant_load_ar",
+      "value": "@occupant_load_text_ar",
       "font": "sans",
       "size": 13,
       "minSize": 8,
