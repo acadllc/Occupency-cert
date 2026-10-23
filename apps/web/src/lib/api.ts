@@ -1,4 +1,4 @@
-import type { GenerationWarning, ProjectFields } from '@acad/engine';
+import type { CompanyImageName, GenerationWarning, ProjectFields } from '@acad/engine';
 import { supabase } from './supabase';
 
 export interface Project {
@@ -102,9 +102,15 @@ export interface DataApi {
   getStampSignature(): Promise<Blob | null>;
   saveStampSignature(png: Blob): Promise<void>;
   deleteStampSignature(): Promise<void>;
+  /** Other private company pictures (e.g. the engineer's licence card); null when not uploaded yet. */
+  getCompanyImage(name: CompanyImageName): Promise<Blob | null>;
+  saveCompanyImage(name: CompanyImageName, jpeg: Blob): Promise<void>;
+  deleteCompanyImage(name: CompanyImageName): Promise<void>;
 }
 
 export const STAMP_PATH = 'stamp-signature.png';
+/** file names in the private company-assets bucket (allow-listed by the storage policies) */
+export const COMPANY_IMAGE_PATHS: Record<CompanyImageName, string> = { engineer_license: 'engineer-license.jpg' };
 
 export class ConflictError extends Error {}
 
@@ -281,6 +287,22 @@ export class SupabaseApi implements DataApi {
   async deleteStampSignature() {
     const { error } = await this.db.storage.from('company-assets').remove([STAMP_PATH]);
     if (error) fail('Removing the stamp and signature', error);
+  }
+  async getCompanyImage(name: CompanyImageName) {
+    const { data, error } = await this.db.storage.from('company-assets').download(COMPANY_IMAGE_PATHS[name]);
+    if (error) {
+      if (/not.?found|does not exist/i.test(error.message ?? '')) return null;
+      fail('Loading the picture', error);
+    }
+    return data;
+  }
+  async saveCompanyImage(name: CompanyImageName, jpeg: Blob) {
+    const { error } = await this.db.storage.from('company-assets').upload(COMPANY_IMAGE_PATHS[name], jpeg, { contentType: 'image/jpeg', upsert: true, cacheControl: '0' });
+    if (error) fail('Saving the picture', error);
+  }
+  async deleteCompanyImage(name: CompanyImageName) {
+    const { error } = await this.db.storage.from('company-assets').remove([COMPANY_IMAGE_PATHS[name]]);
+    if (error) fail('Removing the picture', error);
   }
   async downloadPhoto(path: string) {
     const { data, error } = await this.db.storage.from('project-files').download(path);

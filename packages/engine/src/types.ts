@@ -66,6 +66,10 @@ export interface CompanyConfig {
   consultant_short_ar?: string;
   /** Brand name alone (very short dotted spaces) */
   consultant_brand_en?: string;
+  /** the office's designer engineer (Project Description form) */
+  designer_engineer_name_ar?: string;
+  designer_engineer_license?: string;
+  designer_engineer_phone?: string;
   cities: FieldOption[];
 }
 
@@ -147,7 +151,18 @@ export interface StampItem {
   };
 }
 
-export type MappingItem = TextItem | BilingualItem | CheckItem | PhotoItem | PhotoTextItem | StampItem;
+/**
+ * A fixed company picture kept in private storage (never bundled), e.g. the designer engineer's
+ * licence card on the Project Description form. Drawn whenever the template is generated.
+ */
+export interface CompanyImageItem {
+  slot: string;
+  companyImage: { name: CompanyImageName; padding?: number };
+}
+
+export type CompanyImageName = 'engineer_license';
+
+export type MappingItem = TextItem | BilingualItem | CheckItem | PhotoItem | PhotoTextItem | StampItem | CompanyImageItem;
 
 export interface GenerateOptions {
   title?: string;
@@ -220,7 +235,7 @@ export interface GenerationWarning {
 export interface Placement {
   slot: string;
   page: number;
-  kind: 'text' | 'check' | 'photo' | 'stamp';
+  kind: 'text' | 'check' | 'photo' | 'stamp' | 'image';
   text?: string;
   size?: number;
 }

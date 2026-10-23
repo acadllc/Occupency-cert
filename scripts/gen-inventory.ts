@@ -33,10 +33,11 @@ function describe(item: MappingItem): string {
   if ('check' in item) return `☑ ${label(item.check.field)} = ${item.check.option ?? item.check.equals}`;
   if ('stamp' in item) return `stamp & signature (optional, ${item.stamp.size}pt wide)`;
   if ('photo' in item) return `photo #${item.photo.index + 1}`;
+  if ('companyImage' in item) return `company picture: ${item.companyImage.name.replace('_', ' ')} (private, from Settings)`;
   if ('photoText' in item) return `photo #${item.photoText.index + 1} ${item.photoText.prop === 'details_ar' ? 'details' : 'notes'} (AR)`;
   if ('en' in item) return `EN: ${item.en.startsWith('$') ? 'company name (EN)' : item.en.startsWith('@') ? item.en.slice(1) : label(item.en)} · AR: ${item.ar.startsWith('$') ? 'company name (AR)' : item.ar.startsWith('@') ? item.ar.slice(1) : label(item.ar)}`;
   const v = item.value;
-  if (v.startsWith('$')) return v.includes('_ar') ? 'company name (AR)' : 'company name (EN)';
+  if (v.startsWith('$')) return v.startsWith('$consultant_') ? (v.includes('_ar') ? 'company name (AR)' : 'company name (EN)') : `company: ${v.slice(1)}`;
   if (v.startsWith('@')) return `${v.slice(1)} (derived)`;
   if (v.includes('?')) return `${keys.map(label).join(' / ')} (conditional)`;
   return keys.map(label).join(', ');

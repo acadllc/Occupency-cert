@@ -18,6 +18,11 @@ export function nodeAssets(root: string, images: Record<string, Uint8Array> = {}
       const local = join(root, 'templates', '.qa', 'stamp-signature.png');
       return new Uint8Array(readFileSync(process.env.ACAD_LOCAL_STAMP === '1' && existsSync(local) ? local : join(root, 'tests', 'fixtures', 'test-stamp.png')));
     },
+    // the engineer's licence card is never committed either: private local copy for QA, else a test photo
+    loadCompanyImage: async (name) => {
+      const local = join(root, 'templates', '.qa', `${name.replace('_', '-')}.jpg`);
+      return new Uint8Array(readFileSync(process.env.ACAD_LOCAL_STAMP === '1' && existsSync(local) ? local : join(root, 'tests', 'fixtures', 'photos', 'photo1.jpg')));
+    },
     loadDocxTemplate: async (key) => new Uint8Array(readFileSync(join(root, 'templates', 'dist', `${key}.docx`))),
     loadImage: async (path) => {
       const img = images[path];

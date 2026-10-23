@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { EngineerLicenseSettings } from '../components/EngineerLicenseSettings';
 import { StampSignatureSettings } from '../components/StampSignatureSettings';
 import { Confirm, Spinner, useToast } from '../components/ui';
 import type { TotpEnrollment } from '../lib/auth';
@@ -35,6 +36,7 @@ export default function SettingsPage() {
         </div>
       </div>
       <StampSignatureSettings />
+      <EngineerLicenseSettings />
       <section className="card card-pad stack">
         <h2>Two-step verification (recommended)</h2>
         <p className="muted small" style={{ margin: 0 }}>

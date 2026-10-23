@@ -3,9 +3,9 @@
  * and local demos (build flag VITE_DATA_MODE=mock). It is never bundled into
  * the production GitHub Pages build.
  */
-import type { ProjectFields } from '@acad/engine';
+import type { CompanyImageName, ProjectFields } from '@acad/engine';
 import type { DataApi, GeneratedDocumentRow, GenerationJob, NewDocument, Project, ProjectQuery } from './api';
-import { ConflictError, STAMP_PATH } from './api';
+import { COMPANY_IMAGE_PATHS, ConflictError, STAMP_PATH } from './api';
 
 interface Store {
   projects: Project[];
@@ -185,5 +185,14 @@ export class MockApi implements DataApi {
   }
   async deleteStampSignature() {
     files.delete(`company-assets/${STAMP_PATH}`);
+  }
+  async getCompanyImage(name: CompanyImageName) {
+    return files.get(`company-assets/${COMPANY_IMAGE_PATHS[name]}`) ?? null;
+  }
+  async saveCompanyImage(name: CompanyImageName, jpeg: Blob) {
+    files.set(`company-assets/${COMPANY_IMAGE_PATHS[name]}`, jpeg);
+  }
+  async deleteCompanyImage(name: CompanyImageName) {
+    files.delete(`company-assets/${COMPANY_IMAGE_PATHS[name]}`);
   }
 }
