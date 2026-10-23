@@ -159,7 +159,7 @@
     },
     {
       "slot": "area",
-      "value": "area_ar",
+      "value": "{area_ar} / {sector_ar}",
       "font": "tajawal",
       "size": 11,
       "align": "center",
