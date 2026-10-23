@@ -144,7 +144,9 @@ export async function buildDocx(d: DocxDeps): Promise<DocxResult> {
 
   for (const item of entry.definition.fields) {
     const slot = entry.layout.slots[item.slot];
-    if ('stamp' in item) {
+    if ('companyImage' in item) {
+      continue; // pictures from private storage are placed on PDF forms only
+    } else if ('stamp' in item) {
       if (!options.stamp || !d.loadStamp) continue;
       try {
         const box = stampBox(slot, item);

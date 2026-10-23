@@ -53,6 +53,8 @@ import type {
   SlotGeometry,
   TextItem,
   TextStyle,
+  CompanyImageItem,
+  CompanyImageName,
 } from './types';
 
 export interface EngineAssets {
@@ -63,6 +65,8 @@ export interface EngineAssets {
   loadImage?(path: string): Promise<Uint8Array>;
   /** Company stamp + signature PNG (kept in private storage, never bundled). */
   loadStamp?(): Promise<Uint8Array>;
+  /** Other private company pictures (e.g. the engineer's licence card); null when not uploaded yet. */
+  loadCompanyImage?(name: CompanyImageName): Promise<Uint8Array | null>;
   /** Editable Word template (templates/dist/<key>.docx) for Word-based templates. */
   loadDocxTemplate?(key: string, version: number): Promise<Uint8Array>;
 }
@@ -106,6 +110,7 @@ export class Engine {
   private subsetter: Subsetter | null = null;
   private templateCache = new Map<string, Promise<Uint8Array>>();
   private stampCache: Promise<Uint8Array> | undefined;
+  private imageCache = new Map<CompanyImageName, Promise<Uint8Array | null>>();
 
   private constructor(
     private assets: EngineAssets,
@@ -177,6 +182,7 @@ export class Engine {
         if (meta.stamp && !item.stamp.page) await this.drawStamp(dctx, slot, item);
       } else if ('check' in item) this.drawCheck(dctx, slot, item, fields);
       else if ('photo' in item) await this.drawPhoto(dctx, slot, item, fields);
+      else if ('companyImage' in item) await this.drawCompanyImage(dctx, slot, item);
       else if ('photoText' in item) {
         const list = (fields[item.photoText.field] as PhotoEntry[] | undefined) ?? [];
         const entry = list[item.photoText.index];
@@ -487,6 +493,7 @@ export class Engine {
   /** Forget the cached stamp image (call after it is replaced). */
   clearStampCache() {
     this.stampCache = undefined;
+    this.imageCache.clear();
   }
 
   private async drawStamp(d: DrawCtx, slot: SlotGeometry, item: StampItem) {
@@ -499,6 +506,43 @@ export class Engine {
     } catch (err) {
       d.warnings.push({ code: 'image_error', slot: item.slot, message: `Stamp and signature could not be added (${(err as Error).message}).` });
     }
+  }
+
+  private async drawCompanyImage(d: DrawCtx, slot: SlotGeometry, item: CompanyImageItem) {
+    const { name } = item.companyImage;
+    try {
+      if (!this.assets.loadCompanyImage) throw new Error('not available here');
+      let cached = this.imageCache.get(name);
+      if (!cached) {
+        cached = this.assets.loadCompanyImage(name).catch((err) => {
+          this.imageCache.delete(name);
+          throw err;
+        });
+        this.imageCache.set(name, cached);
+      }
+      const bytes = await cached;
+      if (!bytes) {
+        d.warnings.push({ code: 'image_error', slot: item.slot, message: 'The engineer licence card is not uploaded yet — add it under Settings.' });
+        return;
+      }
+      await this.drawImageIn(d, slot, bytes, item.companyImage.padding ?? 2);
+      d.placements.push({ slot: item.slot, page: d.pageIndex, kind: 'image' });
+    } catch (err) {
+      d.warnings.push({ code: 'image_error', slot: item.slot, message: `The engineer licence card could not be added (${(err as Error).message}).` });
+    }
+  }
+
+  /** Draw an image centred in the slot, as large as fits. */
+  private async drawImageIn(d: DrawCtx, slot: SlotGeometry, bytes: Uint8Array, pad: number) {
+    const isPng = bytes[0] === 0x89 && bytes[1] === 0x50;
+    const img = isPng ? await d.doc.embedPng(bytes) : await d.doc.embedJpg(bytes);
+    const [x0, y0, x1, y1] = slot.rect;
+    const bw = x1 - x0 - 2 * pad;
+    const bh = y1 - y0 - 2 * pad;
+    const scale = Math.min(bw / img.width, bh / img.height);
+    const w = img.width * scale;
+    const h = img.height * scale;
+    d.page.drawImage(img, { x: x0 + pad + (bw - w) / 2, y: d.pageHeight - (y0 + pad + (bh - h) / 2) - h, width: w, height: h });
   }
 
   private async drawPhoto(d: DrawCtx, slot: SlotGeometry, item: PhotoItem, fields: ProjectFields) {

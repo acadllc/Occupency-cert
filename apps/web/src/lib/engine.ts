@@ -25,6 +25,11 @@ export function getEngine(): Promise<Engine> {
           if (!blob) throw new Error('no stamp and signature uploaded yet — add it under Settings');
           return new Uint8Array(await blob.arrayBuffer());
         },
+        loadCompanyImage: async (name) => {
+          const { api } = await getBackend();
+          const blob = await api.getCompanyImage(name);
+          return blob ? new Uint8Array(await blob.arrayBuffer()) : null;
+        },
         loadDocxTemplate: (key, version) => fetchBytes(assetUrl(`templates/${key}.v${version}.docx`)),
         loadImage: async (path) => {
           const { api } = await getBackend();
@@ -42,7 +47,7 @@ export function getEngine(): Promise<Engine> {
   return engine;
 }
 
-/** Drop the cached stamp/signature after it was replaced in Settings. */
+/** Drop the cached stamp/signature and company pictures after one was replaced in Settings. */
 export function stampChanged() {
   void engine?.then((e) => e.clearStampCache()).catch(() => undefined);
 }

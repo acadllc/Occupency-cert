@@ -268,6 +268,45 @@
     352.5,
     837.5
    ]
+  },
+  "engineer_license_card": {
+   "page": 0,
+   "rect": [
+    21.5,
+    123.5,
+    174,
+    199.5
+   ]
+  },
+  "designer_engineer": {
+   "page": 0,
+   "rect": [
+    288,
+    135.5,
+    492,
+    147.0
+   ],
+   "baseline": 144.8
+  },
+  "engineer_registration": {
+   "page": 0,
+   "rect": [
+    305,
+    148.3,
+    500,
+    159.8
+   ],
+   "baseline": 157.6
+  },
+  "engineer_phone": {
+   "page": 0,
+   "rect": [
+    245,
+    161.0,
+    520,
+    172.5
+   ],
+   "baseline": 170.3
   }
  },
  "docx": null,

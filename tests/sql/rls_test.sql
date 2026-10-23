@@ -105,9 +105,11 @@ begin
   if n <> 1 then raise exception 'photo delete failed'; end if;
   -- company stamp/signature: one fixed file name, replaceable
   insert into storage.objects (bucket_id, name) values ('company-assets', 'stamp-signature.png');
+  -- and the engineer licence card (Project Description form)
+  insert into storage.objects (bucket_id, name) values ('company-assets', 'engineer-license.jpg');
   update storage.objects set name = name where bucket_id = 'company-assets';
   get diagnostics n = row_count;
-  if n <> 1 then raise exception 'stamp replace failed'; end if;
+  if n <> 2 then raise exception 'company assets replace failed'; end if;
   begin insert into storage.objects (bucket_id, name) values ('company-assets', 'other.png'); raise exception 'arbitrary company asset accepted';
   exception when insufficient_privilege then null; end;
 end $$;
