@@ -1,0 +1,139 @@
+{
+  "key": "structural-consultant-undertaking",
+  "version": 1,
+  "status": "verified",
+  "name": "Consultant declaration and undertaking (structural review)",
+  "nameAr": "تعهد الاستشاري",
+  "description": "ACAD letter: the consultant declares the existing building on the plot was inspected and is structurally safe for its purpose.",
+  "category": "STRUC REVIEW المراجعة الإنشائية",
+  "order": 4,
+  "projectType": "occupancy",
+  "source": "private/occupancy/تعهد الاستشاري.docx",
+  "format": "docx",
+  "layoutTolerance": 0.003,
+  "sanitize": "private",
+  "slots": {
+    "date": {
+      "kind": "inline",
+      "width": 110
+    },
+    "project_id": {
+      "kind": "cell"
+    },
+    "owner": {
+      "kind": "cell"
+    },
+    "consultant": {
+      "kind": "cell"
+    },
+    "location": {
+      "kind": "cell"
+    },
+    "plot": {
+      "kind": "cell"
+    },
+    "stamp": {
+      "kind": "line_leftmost"
+    }
+  },
+  "fields": [
+    {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+        4,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "slot": "stamp",
+      "stamp": {
+        "size": 110,
+        "anchor": "below",
+        "dy": 4,
+        "page": "last"
+      }
+    }
+  ]
+}
