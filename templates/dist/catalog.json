@@ -25844,6 +25844,1827 @@
   },
   {
    "definition": {
+    "key": "structural-consultant-undertaking",
+    "version": 1,
+    "status": "verified",
+    "name": "Consultant declaration and undertaking (structural review)",
+    "nameAr": "تعهد الاستشاري",
+    "description": "ACAD letter: the consultant declares the existing building on the plot was inspected and is structurally safe for its purpose.",
+    "category": "STRUC REVIEW المراجعة الإنشائية",
+    "order": 4,
+    "projectType": "occupancy",
+    "source": "private/occupancy/تعهد الاستشاري.docx",
+    "format": "docx",
+    "layoutTolerance": 0.003,
+    "fields": [
+     {
+      "slot": "date",
+      "value": "date",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "padding": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "consultant",
+      "value": "$consultant_name_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "location",
+      "value": "@project_location_ar",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "rtl",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "size": 12,
+      "align": "right",
+      "dir": "ltr",
+      "multiline": true,
+      "padding": [
+       4,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 110,
+       "anchor": "below",
+       "dy": 4,
+       "page": "last"
+      }
+     }
+    ]
+   },
+   "layout": {
+    "key": "structural-consultant-undertaking",
+    "version": 1,
+    "format": "docx",
+    "sourceSha256": "9ac54c815c9f109c34154767bc1eecd57728c73f72ea7c0f18b1db054e2f9809",
+    "baseSha256": "31e441d64bab25e59e179d4dc83cb0b17501c3abd869a2b930d7511cb43876ba",
+    "pageCount": 2,
+    "pages": [
+     {
+      "width": 612,
+      "height": 792
+     },
+     {
+      "width": 612,
+      "height": 792
+     }
+    ],
+    "slots": {
+     "date": {
+      "page": 0,
+      "baseline": 85.15,
+      "size": 14,
+      "rect": [
+       429.92,
+       70.48,
+       539.92,
+       90.1
+      ]
+     },
+     "project_id": {
+      "page": 0,
+      "baseline": 222.9,
+      "size": 11,
+      "rect": [
+       94.4,
+       204.75,
+       404.6,
+       240.95
+      ]
+     },
+     "owner": {
+      "page": 0,
+      "baseline": 259.1,
+      "size": 11,
+      "rect": [
+       94.4,
+       240.95,
+       404.6,
+       277.15
+      ]
+     },
+     "consultant": {
+      "page": 0,
+      "baseline": 295.3,
+      "size": 11,
+      "rect": [
+       94.4,
+       277.15,
+       404.6,
+       313.35
+      ]
+     },
+     "location": {
+      "page": 0,
+      "baseline": 331.5,
+      "size": 11,
+      "rect": [
+       94.4,
+       313.35,
+       404.6,
+       349.55
+      ]
+     },
+     "plot": {
+      "page": 0,
+      "baseline": 367.7,
+      "size": 11,
+      "rect": [
+       94.4,
+       349.55,
+       404.6,
+       385.75
+      ]
+     },
+     "stamp": {
+      "page": 1,
+      "baseline": 138.25,
+      "size": 16,
+      "rect": [
+       138.4,
+       101.57,
+       146.05,
+       134.29
+      ]
+     }
+    },
+    "docx": {
+     "markers": {
+      "QZ1ZQ": "date",
+      "QZ2ZQ": "project_id",
+      "QZ3ZQ": "owner",
+      "QZ4ZQ": "consultant",
+      "QZ5ZQ": "location",
+      "QZ6ZQ": "plot",
+      "QZ7ZQ": "stamp"
+     }
+    },
+    "build": {
+     "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+     "layoutDiff": 0.002271
+    }
+   }
+  },
+  {
+   "definition": {
+    "key": "structural-inspection-report",
+    "version": 1,
+    "status": "verified",
+    "name": "Consultant's Report on the Technical Inspection of Existing Buildings' Structural Condition (Form 30)",
+    "nameAr": "تقرير الاستشاري بالمعاينة الفنية للحالة الإنشائية للمباني القائمة",
+    "description": "DMT form 30: project details, general plot description, existing buildings, structural evaluation, consultant undertaking and the attached photos (4 pages).",
+    "category": "STRUC REVIEW المراجعة الإنشائية",
+    "order": 3,
+    "projectType": "occupancy",
+    "source": "private/occupancy/03 Consultant's Report Buildings Structural Condition Existing n the Technical Inspection of theoThe.pdf",
+    "format": "pdf",
+    "reviewNotes": "Blank Department of Municipalities and Transport form (no historical values); document metadata scrubbed.",
+    "fields": [
+     {
+      "slot": "project_id_en",
+      "value": "project_id",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "project_id",
+      "value": "project_id",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "date_en_day",
+      "value": "{date|day}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "date_en_month",
+      "value": "{date|month}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "date_en_year",
+      "value": "{date|year}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "date_day",
+      "value": "{date|day}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "date_month",
+      "value": "{date|month}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "date_year",
+      "value": "{date|year}",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "description",
+      "value": "project_description_ar",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "center"
+     },
+     {
+      "slot": "owner",
+      "value": "owner_name_ar",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "center"
+     },
+     {
+      "slot": "developer",
+      "value": "developer_name_ar",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "center"
+     },
+     {
+      "slot": "area",
+      "value": "area_ar",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "center"
+     },
+     {
+      "slot": "sector",
+      "value": "sector_ar",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "center"
+     },
+     {
+      "slot": "plot",
+      "value": "plot_number",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center"
+     },
+     {
+      "slot": "land_usage",
+      "value": "land_building_usage_ar",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "rtl",
+      "align": "center"
+     },
+     {
+      "slot": "plot_desc_1",
+      "value": "taqneen_buildings|lines:1-1",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "auto",
+      "align": "right"
+     },
+     {
+      "slot": "plot_desc_2",
+      "value": "taqneen_buildings|lines:2-2",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "auto",
+      "align": "right"
+     },
+     {
+      "slot": "plot_desc_3",
+      "value": "taqneen_buildings|lines:3-3",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "auto",
+      "align": "right"
+     },
+     {
+      "slot": "plot_desc_4",
+      "value": "taqneen_buildings|lines:4-4",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "auto",
+      "align": "right"
+     },
+     {
+      "slot": "plot_desc_5",
+      "value": "taqneen_buildings|lines:5-",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "auto",
+      "align": "right"
+     },
+     {
+      "slot": "bld_no_1",
+      "value": "taqneen_buildings|number|lines:1-1",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "bld_use_1",
+      "value": "taqneen_buildings|lines:1-1",
+      "font": "sans",
+      "size": 9,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "auto",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "bld_no_2",
+      "value": "taqneen_buildings|number|lines:2-2",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "bld_use_2",
+      "value": "taqneen_buildings|lines:2-2",
+      "font": "sans",
+      "size": 9,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "auto",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "bld_no_3",
+      "value": "taqneen_buildings|number|lines:3-3",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "bld_use_3",
+      "value": "taqneen_buildings|lines:3-3",
+      "font": "sans",
+      "size": 9,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "auto",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "bld_no_4",
+      "value": "taqneen_buildings|number|lines:4-4",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "bld_use_4",
+      "value": "taqneen_buildings|lines:4-4",
+      "font": "sans",
+      "size": 9,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "auto",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "bld_no_5",
+      "value": "taqneen_buildings|number|lines:5-5",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "ltr",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "bld_use_5",
+      "value": "taqneen_buildings|lines:5-5",
+      "font": "sans",
+      "size": 9,
+      "minSize": 5,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "auto",
+      "align": "center",
+      "valign": "middle"
+     },
+     {
+      "slot": "arch_description",
+      "value": "taqneen_architectural_description",
+      "font": "sans",
+      "size": 11,
+      "minSize": 6,
+      "padding": [
+       2,
+       3.2,
+       2,
+       0
+      ],
+      "dir": "auto",
+      "align": "center",
+      "multiline": true,
+      "lineHeight": 2,
+      "valign": "top"
+     },
+     {
+      "slot": "member_foundations_ar",
+      "check": {
+       "field": "structural_members",
+       "option": "foundations"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "member_foundations_en",
+      "check": {
+       "field": "structural_members",
+       "option": "foundations"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "member_ground_beams_ar",
+      "check": {
+       "field": "structural_members",
+       "option": "ground_beams"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "member_ground_beams_en",
+      "check": {
+       "field": "structural_members",
+       "option": "ground_beams"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "member_columns_ar",
+      "check": {
+       "field": "structural_members",
+       "option": "columns"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "member_columns_en",
+      "check": {
+       "field": "structural_members",
+       "option": "columns"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "member_upper_beams_ar",
+      "check": {
+       "field": "structural_members",
+       "option": "upper_beams"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "member_upper_beams_en",
+      "check": {
+       "field": "structural_members",
+       "option": "upper_beams"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "member_concrete_slabs_ar",
+      "check": {
+       "field": "structural_members",
+       "option": "concrete_slabs"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "member_concrete_slabs_en",
+      "check": {
+       "field": "structural_members",
+       "option": "concrete_slabs"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "member_steel_roof_ar",
+      "check": {
+       "field": "structural_members",
+       "option": "steel_roof"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "member_steel_roof_en",
+      "check": {
+       "field": "structural_members",
+       "option": "steel_roof"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "member_others_ar",
+      "check": {
+       "field": "structural_members",
+       "option": "others"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "member_others_en",
+      "check": {
+       "field": "structural_members",
+       "option": "others"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "members_other_1",
+      "value": "structural_members_other|lines:1-1",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "auto",
+      "align": "right"
+     },
+     {
+      "slot": "members_other_2",
+      "value": "structural_members_other|lines:2-",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "auto",
+      "align": "right"
+     },
+     {
+      "slot": "adequate_yes_ar",
+      "check": {
+       "field": "structural_members_adequate",
+       "equals": "yes"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "adequate_no_ar",
+      "check": {
+       "field": "structural_members_adequate",
+       "equals": "no"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "adequate_yes_en",
+      "check": {
+       "field": "structural_members_adequate",
+       "equals": "yes"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "adequate_no_en",
+      "check": {
+       "field": "structural_members_adequate",
+       "equals": "no"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "safe_yes_ar",
+      "check": {
+       "field": "buildings_structurally_safe",
+       "equals": "yes"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "safe_no_ar",
+      "check": {
+       "field": "buildings_structurally_safe",
+       "equals": "no"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "safe_yes_en",
+      "check": {
+       "field": "buildings_structurally_safe",
+       "equals": "yes"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "safe_no_en",
+      "check": {
+       "field": "buildings_structurally_safe",
+       "equals": "no"
+      },
+      "style": "tick",
+      "size": 8
+     },
+     {
+      "slot": "notes_1",
+      "value": "structural_notes|lines:1-1",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "auto",
+      "align": "right"
+     },
+     {
+      "slot": "notes_2",
+      "value": "structural_notes|lines:2-2",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "auto",
+      "align": "right"
+     },
+     {
+      "slot": "notes_3",
+      "value": "structural_notes|lines:3-3",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "auto",
+      "align": "right"
+     },
+     {
+      "slot": "notes_4",
+      "value": "structural_notes|lines:4-",
+      "font": "sans",
+      "size": 10,
+      "minSize": 6,
+      "padding": [
+       1,
+       0,
+       1,
+       0
+      ],
+      "dir": "auto",
+      "align": "right"
+     },
+     {
+      "slot": "stamp",
+      "stamp": {
+       "size": 105,
+       "anchor": "center"
+      }
+     },
+     {
+      "slot": "photo_0",
+      "photo": {
+       "field": "structural_photos",
+       "index": 0
+      },
+      "padding": 4
+     },
+     {
+      "slot": "photo_1",
+      "photo": {
+       "field": "structural_photos",
+       "index": 1
+      },
+      "padding": 4
+     },
+     {
+      "slot": "photo_2",
+      "photo": {
+       "field": "structural_photos",
+       "index": 2
+      },
+      "padding": 4
+     },
+     {
+      "slot": "photo_3",
+      "photo": {
+       "field": "structural_photos",
+       "index": 3
+      },
+      "padding": 4
+     },
+     {
+      "slot": "photo_4",
+      "photo": {
+       "field": "structural_photos",
+       "index": 4
+      },
+      "padding": 4
+     },
+     {
+      "slot": "photo_5",
+      "photo": {
+       "field": "structural_photos",
+       "index": 5
+      },
+      "padding": 4
+     },
+     {
+      "slot": "photo_6",
+      "photo": {
+       "field": "structural_photos",
+       "index": 6
+      },
+      "padding": 4
+     },
+     {
+      "slot": "photo_7",
+      "photo": {
+       "field": "structural_photos",
+       "index": 7
+      },
+      "padding": 4
+     },
+     {
+      "slot": "photo_8",
+      "photo": {
+       "field": "structural_photos",
+       "index": 8
+      },
+      "padding": 4
+     },
+     {
+      "slot": "photo_9",
+      "photo": {
+       "field": "structural_photos",
+       "index": 9
+      },
+      "padding": 4
+     },
+     {
+      "slot": "photo_10",
+      "photo": {
+       "field": "structural_photos",
+       "index": 10
+      },
+      "padding": 4
+     },
+     {
+      "slot": "photo_11",
+      "photo": {
+       "field": "structural_photos",
+       "index": 11
+      },
+      "padding": 4
+     }
+    ]
+   },
+   "layout": {
+    "key": "structural-inspection-report",
+    "version": 1,
+    "format": "pdf",
+    "sourceSha256": "dbb71a5b7d8306bd373f580004376e7de65c2ae9001e654d39920b499e987996",
+    "baseSha256": "63af89bf1e701a586eb1b49e0c426d09e80c598d39a2c5d8b98e7c6641e96dce",
+    "pageCount": 4,
+    "pages": [
+     {
+      "width": 595.32,
+      "height": 841.92
+     },
+     {
+      "width": 595.32,
+      "height": 841.92
+     },
+     {
+      "width": 595.32,
+      "height": 841.92
+     },
+     {
+      "width": 595.32,
+      "height": 841.92
+     }
+    ],
+    "slots": {
+     "project_id_en": {
+      "page": 0,
+      "rect": [
+       78,
+       94.2,
+       185,
+       105.7
+      ],
+      "baseline": 103.5
+     },
+     "project_id": {
+      "page": 0,
+      "rect": [
+       417,
+       94.2,
+       525,
+       105.7
+      ],
+      "baseline": 103.5
+     },
+     "date_en_day": {
+      "page": 0,
+      "rect": [
+       55,
+       106.4,
+       96,
+       117.9
+      ],
+      "baseline": 115.7
+     },
+     "date_en_month": {
+      "page": 0,
+      "rect": [
+       101,
+       106.4,
+       143,
+       117.9
+      ],
+      "baseline": 115.7
+     },
+     "date_en_year": {
+      "page": 0,
+      "rect": [
+       148,
+       106.4,
+       184,
+       117.9
+      ],
+      "baseline": 115.7
+     },
+     "date_day": {
+      "page": 0,
+      "rect": [
+       490,
+       106.4,
+       544,
+       117.9
+      ],
+      "baseline": 115.7
+     },
+     "date_month": {
+      "page": 0,
+      "rect": [
+       461,
+       106.4,
+       486,
+       117.9
+      ],
+      "baseline": 115.7
+     },
+     "date_year": {
+      "page": 0,
+      "rect": [
+       417,
+       106.4,
+       457,
+       117.9
+      ],
+      "baseline": 115.7
+     },
+     "description": {
+      "page": 0,
+      "rect": [
+       110,
+       127.5,
+       511,
+       139
+      ],
+      "baseline": 136.8
+     },
+     "owner": {
+      "page": 0,
+      "rect": [
+       97,
+       157.4,
+       525,
+       168.9
+      ],
+      "baseline": 166.7
+     },
+     "developer": {
+      "page": 0,
+      "rect": [
+       140,
+       184.9,
+       492,
+       196.4
+      ],
+      "baseline": 194.2
+     },
+     "area": {
+      "page": 0,
+      "rect": [
+       56,
+       209.6,
+       144,
+       221.1
+      ],
+      "baseline": 218.9
+     },
+     "sector": {
+      "page": 0,
+      "rect": [
+       225,
+       209.6,
+       299,
+       221.1
+      ],
+      "baseline": 218.9
+     },
+     "plot": {
+      "page": 0,
+      "rect": [
+       385,
+       209.6,
+       524,
+       221.1
+      ],
+      "baseline": 218.9
+     },
+     "land_usage": {
+      "page": 0,
+      "rect": [
+       85,
+       231.5,
+       512,
+       243
+      ],
+      "baseline": 240.8
+     },
+     "plot_desc_1": {
+      "page": 0,
+      "rect": [
+       306,
+       310.2,
+       560,
+       321.7
+      ],
+      "baseline": 319.5
+     },
+     "plot_desc_2": {
+      "page": 0,
+      "rect": [
+       306,
+       328.6,
+       560,
+       340.1
+      ],
+      "baseline": 337.9
+     },
+     "plot_desc_3": {
+      "page": 0,
+      "rect": [
+       306,
+       346.8,
+       560,
+       358.3
+      ],
+      "baseline": 356.1
+     },
+     "plot_desc_4": {
+      "page": 0,
+      "rect": [
+       306,
+       365.2,
+       560,
+       376.7
+      ],
+      "baseline": 374.5
+     },
+     "plot_desc_5": {
+      "page": 0,
+      "rect": [
+       306,
+       383.4,
+       560,
+       394.9
+      ],
+      "baseline": 392.7
+     },
+     "bld_no_1": {
+      "page": 0,
+      "rect": [
+       509.8,
+       493.3,
+       568.3,
+       516.1
+      ]
+     },
+     "bld_use_1": {
+      "page": 0,
+      "rect": [
+       438.9,
+       493.3,
+       507.8,
+       516.1
+      ]
+     },
+     "bld_no_2": {
+      "page": 0,
+      "rect": [
+       509.8,
+       518.1,
+       568.3,
+       541.1
+      ]
+     },
+     "bld_use_2": {
+      "page": 0,
+      "rect": [
+       438.9,
+       518.1,
+       507.8,
+       541.1
+      ]
+     },
+     "bld_no_3": {
+      "page": 0,
+      "rect": [
+       509.8,
+       543.1,
+       568.3,
+       566.1
+      ]
+     },
+     "bld_use_3": {
+      "page": 0,
+      "rect": [
+       438.9,
+       543.1,
+       507.8,
+       566.1
+      ]
+     },
+     "bld_no_4": {
+      "page": 0,
+      "rect": [
+       509.8,
+       568.1,
+       568.3,
+       590.9
+      ]
+     },
+     "bld_use_4": {
+      "page": 0,
+      "rect": [
+       438.9,
+       568.1,
+       507.8,
+       590.9
+      ]
+     },
+     "bld_no_5": {
+      "page": 0,
+      "rect": [
+       509.8,
+       592.9,
+       568.3,
+       615.9
+      ]
+     },
+     "bld_use_5": {
+      "page": 0,
+      "rect": [
+       438.9,
+       592.9,
+       507.8,
+       615.9
+      ]
+     },
+     "arch_description": {
+      "page": 0,
+      "rect": [
+       30,
+       650,
+       568,
+       780
+      ]
+     },
+     "member_foundations_ar": {
+      "page": 1,
+      "rect": [
+       560.5,
+       126.6,
+       569,
+       140.7
+      ]
+     },
+     "member_foundations_en": {
+      "page": 1,
+      "rect": [
+       25.8,
+       126.6,
+       34.3,
+       140.7
+      ]
+     },
+     "member_ground_beams_ar": {
+      "page": 1,
+      "rect": [
+       414,
+       126.6,
+       422.5,
+       140.7
+      ]
+     },
+     "member_ground_beams_en": {
+      "page": 1,
+      "rect": [
+       173.1,
+       126.6,
+       181.6,
+       140.7
+      ]
+     },
+     "member_columns_ar": {
+      "page": 1,
+      "rect": [
+       560.5,
+       143.8,
+       569,
+       157.8
+      ]
+     },
+     "member_columns_en": {
+      "page": 1,
+      "rect": [
+       25.8,
+       143.8,
+       34.3,
+       157.8
+      ]
+     },
+     "member_upper_beams_ar": {
+      "page": 1,
+      "rect": [
+       413.9,
+       143.8,
+       422.3,
+       157.8
+      ]
+     },
+     "member_upper_beams_en": {
+      "page": 1,
+      "rect": [
+       173.7,
+       143.8,
+       182.2,
+       157.8
+      ]
+     },
+     "member_concrete_slabs_ar": {
+      "page": 1,
+      "rect": [
+       560.5,
+       160.9,
+       569,
+       174.9
+      ]
+     },
+     "member_concrete_slabs_en": {
+      "page": 1,
+      "rect": [
+       25.8,
+       160.9,
+       34.3,
+       174.9
+      ]
+     },
+     "member_steel_roof_ar": {
+      "page": 1,
+      "rect": [
+       414.8,
+       160.9,
+       423.3,
+       174.9
+      ]
+     },
+     "member_steel_roof_en": {
+      "page": 1,
+      "rect": [
+       173.6,
+       160.9,
+       182.1,
+       174.9
+      ]
+     },
+     "member_others_ar": {
+      "page": 1,
+      "rect": [
+       558.2,
+       178,
+       566.7,
+       192
+      ]
+     },
+     "member_others_en": {
+      "page": 1,
+      "rect": [
+       25.8,
+       178,
+       34.3,
+       192
+      ]
+     },
+     "members_other_1": {
+      "page": 1,
+      "rect": [
+       305,
+       199.9,
+       568,
+       211.4
+      ],
+      "baseline": 209.2
+     },
+     "members_other_2": {
+      "page": 1,
+      "rect": [
+       305,
+       212.1,
+       568,
+       223.6
+      ],
+      "baseline": 221.4
+     },
+     "adequate_yes_ar": {
+      "page": 1,
+      "rect": [
+       560.5,
+       260.6,
+       569,
+       274.6
+      ]
+     },
+     "adequate_no_ar": {
+      "page": 1,
+      "rect": [
+       428.6,
+       260.6,
+       437.1,
+       274.6
+      ]
+     },
+     "adequate_yes_en": {
+      "page": 1,
+      "rect": [
+       25.8,
+       260.6,
+       34.3,
+       274.6
+      ]
+     },
+     "adequate_no_en": {
+      "page": 1,
+      "rect": [
+       166.1,
+       260.6,
+       174.6,
+       274.6
+      ]
+     },
+     "safe_yes_ar": {
+      "page": 1,
+      "rect": [
+       560.5,
+       317,
+       569,
+       331
+      ]
+     },
+     "safe_no_ar": {
+      "page": 1,
+      "rect": [
+       428.6,
+       317,
+       437.1,
+       331
+      ]
+     },
+     "safe_yes_en": {
+      "page": 1,
+      "rect": [
+       25.8,
+       318.3,
+       34.3,
+       332.4
+      ]
+     },
+     "safe_no_en": {
+      "page": 1,
+      "rect": [
+       166.1,
+       318.3,
+       174.6,
+       332.4
+      ]
+     },
+     "notes_1": {
+      "page": 1,
+      "rect": [
+       305,
+       372.8,
+       568,
+       384.3
+      ],
+      "baseline": 382.1
+     },
+     "notes_2": {
+      "page": 1,
+      "rect": [
+       305,
+       391.1,
+       568,
+       402.6
+      ],
+      "baseline": 400.4
+     },
+     "notes_3": {
+      "page": 1,
+      "rect": [
+       305,
+       409.4,
+       568,
+       420.9
+      ],
+      "baseline": 418.7
+     },
+     "notes_4": {
+      "page": 1,
+      "rect": [
+       305,
+       427.7,
+       568,
+       439.2
+      ],
+      "baseline": 437
+     },
+     "stamp": {
+      "page": 1,
+      "rect": [
+       247.5,
+       622.5,
+       352.5,
+       727.5
+      ]
+     },
+     "photo_0": {
+      "page": 2,
+      "rect": [
+       297.7,
+       95.7,
+       573.7,
+       285.9
+      ]
+     },
+     "photo_1": {
+      "page": 2,
+      "rect": [
+       20.7,
+       95.7,
+       296.7,
+       285.9
+      ]
+     },
+     "photo_2": {
+      "page": 2,
+      "rect": [
+       297.7,
+       308.1,
+       573.7,
+       498.5
+      ]
+     },
+     "photo_3": {
+      "page": 2,
+      "rect": [
+       20.7,
+       308.1,
+       296.7,
+       498.5
+      ]
+     },
+     "photo_4": {
+      "page": 2,
+      "rect": [
+       297.7,
+       520.2,
+       573.7,
+       747
+      ]
+     },
+     "photo_5": {
+      "page": 2,
+      "rect": [
+       20.7,
+       520.2,
+       296.7,
+       747
+      ]
+     },
+     "photo_6": {
+      "page": 3,
+      "rect": [
+       297.7,
+       54.1,
+       573.7,
+       244.3
+      ]
+     },
+     "photo_7": {
+      "page": 3,
+      "rect": [
+       20.7,
+       54.1,
+       296.7,
+       244.3
+      ]
+     },
+     "photo_8": {
+      "page": 3,
+      "rect": [
+       297.7,
+       288.2,
+       573.7,
+       478.6
+      ]
+     },
+     "photo_9": {
+      "page": 3,
+      "rect": [
+       20.7,
+       288.2,
+       296.7,
+       478.6
+      ]
+     },
+     "photo_10": {
+      "page": 3,
+      "rect": [
+       297.7,
+       521.5,
+       573.7,
+       698.6
+      ]
+     },
+     "photo_11": {
+      "page": 3,
+      "rect": [
+       20.7,
+       521.5,
+       296.7,
+       698.6
+      ]
+     }
+    },
+    "docx": null,
+    "build": {
+     "engine": "pymupdf 1.28.2"
+    }
+   }
+  },
+  {
+   "definition": {
     "key": "study-path-clarification",
     "version": 2,
     "status": "verified",

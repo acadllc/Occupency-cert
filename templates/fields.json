@@ -383,7 +383,7 @@
       "scope": "shared",
       "maxLength": 800,
       "placeholder": "VILLA\nSERVICE BLOCK\nMAJLIS",
-      "help": "Taqneen: one building per line. Printed numbered in the general plot description and the buildings table of Form 13, in the completion percentage letter (each at 100%), and counted in Form 2."
+      "help": "One building per line. Printed in the general plot description and the buildings table (Taqneen Form 13, Occupancy Form 30), in the Taqneen completion percentage letter (each at 100%), and counted in Taqneen Form 2."
     },
     {
       "key": "taqneen_architectural_description",
@@ -911,6 +911,120 @@
       ],
       "maxLength": 400,
       "optional": true
+    },
+    {
+      "key": "structural_members",
+      "label": "Existing structural members (Form 30)",
+      "labelAr": "العناصر الإنشائية المتوفرة",
+      "type": "multiselect",
+      "group": "document",
+      "scope": "template",
+      "templates": [
+        "structural-inspection-report"
+      ],
+      "optional": true,
+      "options": [
+        {
+          "value": "foundations",
+          "en": "Foundations",
+          "ar": "قواعد"
+        },
+        {
+          "value": "ground_beams",
+          "en": "Ground / tie beams",
+          "ar": "جسور أرضية"
+        },
+        {
+          "value": "columns",
+          "en": "Columns",
+          "ar": "أعمدة"
+        },
+        {
+          "value": "upper_beams",
+          "en": "Upper beams",
+          "ar": "جسور ربط علوية"
+        },
+        {
+          "value": "concrete_slabs",
+          "en": "Concrete slabs",
+          "ar": "سقف خرسانة"
+        },
+        {
+          "value": "steel_roof",
+          "en": "Steel roof",
+          "ar": "سقف معدني"
+        },
+        {
+          "value": "others",
+          "en": "Others",
+          "ar": "عناصر أخرى"
+        }
+      ]
+    },
+    {
+      "key": "structural_members_other",
+      "label": "Other structural members (Form 30)",
+      "labelAr": "عناصر أخرى",
+      "type": "textarea",
+      "dir": "rtl",
+      "group": "document",
+      "scope": "template",
+      "templates": [
+        "structural-inspection-report"
+      ],
+      "optional": true,
+      "maxLength": 300
+    },
+    {
+      "key": "structural_members_adequate",
+      "label": "The structural members are adequate and structurally safe",
+      "labelAr": "العناصر الإنشائية كافية وآمنة إنشائياً",
+      "type": "yesno",
+      "group": "document",
+      "scope": "template",
+      "templates": [
+        "structural-inspection-report"
+      ],
+      "default": "yes"
+    },
+    {
+      "key": "buildings_structurally_safe",
+      "label": "The existing buildings are structurally safe and adequate for their purpose",
+      "labelAr": "المباني القائمة صالحة إنشائياً للغرض الذي خصصت له",
+      "type": "yesno",
+      "group": "document",
+      "scope": "template",
+      "templates": [
+        "structural-inspection-report"
+      ],
+      "default": "yes"
+    },
+    {
+      "key": "structural_notes",
+      "label": "Notes (Form 30)",
+      "labelAr": "ملاحظات",
+      "type": "textarea",
+      "dir": "rtl",
+      "group": "document",
+      "scope": "template",
+      "templates": [
+        "structural-inspection-report"
+      ],
+      "optional": true,
+      "maxLength": 600
+    },
+    {
+      "key": "structural_photos",
+      "label": "Form 30 – attached photos (in the form's order)",
+      "type": "photos",
+      "group": "document",
+      "scope": "template",
+      "templates": [
+        "structural-inspection-report"
+      ],
+      "maxItems": 12,
+      "optional": true,
+      "help": "In this order: 1 general shape of the buildings, 2 front elevation, 3 side elevation, 4 back elevation, 5 corner footing, 6 edge footing, 7–8 roof components, 9–11 core test samples, 12 other pictures."
     },
     {
       "key": "occ1_label",

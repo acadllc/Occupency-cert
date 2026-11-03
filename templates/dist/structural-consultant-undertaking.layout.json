@@ -1,0 +1,112 @@
+{
+ "key": "structural-consultant-undertaking",
+ "version": 1,
+ "format": "docx",
+ "sourceSha256": "9ac54c815c9f109c34154767bc1eecd57728c73f72ea7c0f18b1db054e2f9809",
+ "baseSha256": "31e441d64bab25e59e179d4dc83cb0b17501c3abd869a2b930d7511cb43876ba",
+ "pageCount": 2,
+ "pages": [
+  {
+   "width": 612.0,
+   "height": 792.0
+  },
+  {
+   "width": 612.0,
+   "height": 792.0
+  }
+ ],
+ "slots": {
+  "date": {
+   "page": 0,
+   "baseline": 85.15,
+   "size": 14.0,
+   "rect": [
+    429.92,
+    70.48,
+    539.92,
+    90.1
+   ]
+  },
+  "project_id": {
+   "page": 0,
+   "baseline": 222.9,
+   "size": 11.0,
+   "rect": [
+    94.4,
+    204.75,
+    404.6,
+    240.95
+   ]
+  },
+  "owner": {
+   "page": 0,
+   "baseline": 259.1,
+   "size": 11.0,
+   "rect": [
+    94.4,
+    240.95,
+    404.6,
+    277.15
+   ]
+  },
+  "consultant": {
+   "page": 0,
+   "baseline": 295.3,
+   "size": 11.0,
+   "rect": [
+    94.4,
+    277.15,
+    404.6,
+    313.35
+   ]
+  },
+  "location": {
+   "page": 0,
+   "baseline": 331.5,
+   "size": 11.0,
+   "rect": [
+    94.4,
+    313.35,
+    404.6,
+    349.55
+   ]
+  },
+  "plot": {
+   "page": 0,
+   "baseline": 367.7,
+   "size": 11.0,
+   "rect": [
+    94.4,
+    349.55,
+    404.6,
+    385.75
+   ]
+  },
+  "stamp": {
+   "page": 1,
+   "baseline": 138.25,
+   "size": 16.0,
+   "rect": [
+    138.4,
+    101.57,
+    146.05,
+    134.29
+   ]
+  }
+ },
+ "docx": {
+  "markers": {
+   "QZ1ZQ": "date",
+   "QZ2ZQ": "project_id",
+   "QZ3ZQ": "owner",
+   "QZ4ZQ": "consultant",
+   "QZ5ZQ": "location",
+   "QZ6ZQ": "plot",
+   "QZ7ZQ": "stamp"
+  }
+ },
+ "build": {
+  "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+  "layoutDiff": 0.002271
+ }
+}

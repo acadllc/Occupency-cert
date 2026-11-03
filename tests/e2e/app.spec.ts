@@ -149,12 +149,12 @@ test('full workflow: create, generate, download, history, edit, search', async (
   // select a whole category, then the whole tab
   await page.getByLabel('Select all MECHANICAL REVIEW متطلبات المراجعة الميكانيكية').check();
   await expect(page.getByText('(8/8)')).toBeVisible();
-  await page.getByRole('button', { name: /Select all in tab \(21\)/ }).click();
+  await page.getByRole('button', { name: /Select all in tab \(23\)/ }).click();
   await page.getByRole('button', { name: 'Save & generate' }).click();
   await page.getByRole('dialog').getByText('PDF', { exact: true }).click();
   await page.getByRole('dialog').getByRole('button', { name: 'Continue with blanks' }).click();
   await expect(page.getByRole('dialog').getByText('All documents were generated and saved privately.')).toBeVisible({ timeout: 150_000 });
-  await expect(page.getByRole('dialog').locator('.progress-item')).toHaveCount(21);
+  await expect(page.getByRole('dialog').locator('.progress-item')).toHaveCount(23);
   await page.getByRole('dialog').getByRole('button', { name: 'Close', exact: true }).click();
 
   // ---- search by Arabic owner name and by plot number
@@ -168,7 +168,7 @@ test('full workflow: create, generate, download, history, edit, search', async (
 
   // ---- dashboard reflects the work
   await page.getByRole('navigation').getByRole('link', { name: 'Dashboard' }).click();
-  await expect(page.locator('.stat', { hasText: 'Documents generated' }).locator('.value')).toHaveText('23');
+  await expect(page.locator('.stat', { hasText: 'Documents generated' }).locator('.value')).toHaveText('25');
 
   await page.getByRole('button', { name: 'Sign out' }).click();
   await expect(page.getByRole('heading', { name: 'Sign in' })).toBeVisible();

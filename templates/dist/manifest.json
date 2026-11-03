@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23",
+ "generated": "2026-11-03",
  "templates": [
   {
    "key": "archive-drawings-explanation",
@@ -534,6 +534,18 @@
    "version": 3,
    "baseSha256": "c20ca02e440f56e4e5e5b61ba15447343ee12a6f9297a28be201794c79b8af0d",
    "pageCount": 1
+  },
+  {
+   "key": "structural-consultant-undertaking",
+   "version": 1,
+   "baseSha256": "31e441d64bab25e59e179d4dc83cb0b17501c3abd869a2b930d7511cb43876ba",
+   "pageCount": 2
+  },
+  {
+   "key": "structural-inspection-report",
+   "version": 1,
+   "baseSha256": "63af89bf1e701a586eb1b49e0c426d09e80c598d39a2c5d8b98e7c6641e96dce",
+   "pageCount": 4
   },
   {
    "key": "study-path-clarification",
